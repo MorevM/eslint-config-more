@@ -55,6 +55,8 @@
 		"eslint": "^8.7.0"
 	},
 	"dependencies": {
+		"@babel/core": "^7.16.12",
+		"@babel/eslint-parser": "^7.16.5",
 		"eslint-plugin-jsonc": "^2.0.0",
 		"eslint-plugin-no-autofix": "^1.2.3",
 		"eslint-plugin-sonarjs": "^0.11.0",
