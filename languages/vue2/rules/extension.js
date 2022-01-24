@@ -29,7 +29,7 @@ const rulesToExtend = [
 	'+object-curly-newline',
 	'+object-curly-spacing',
 	'+object-property-newline',
-	// '!object-shorthand' // not released yet
+	// '!object-shorthand', // not released yet
 	'+operator-linebreak',
 	'!prefer-template', // autofix works strange sometimes
 	// '+quote-props', // not released yet
