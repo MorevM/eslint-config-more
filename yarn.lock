@@ -1271,6 +1271,14 @@ eslint-plugin-jsonc@^2.0.0:
     jsonc-eslint-parser "^2.0.1"
     natural-compare "^1.4.0"
 
+eslint-plugin-no-autofix@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-no-autofix/-/eslint-plugin-no-autofix-1.2.3.tgz#95cda2766bae7cd46b9b4206dd1383ef8fa6adff"
+  integrity sha512-JFSYe82Da2A8Krh+Gfq7+3X2pchTScKgmrlMKIA4HmV6t5xGBF/kgjiFL3YTWRQXQ0NB9eOqpcxh6SuLtQUFjQ==
+  dependencies:
+    eslint-rule-composer "^0.3.0"
+    find-up "^5.0.0"
+
 eslint-plugin-sonarjs@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-sonarjs/-/eslint-plugin-sonarjs-0.11.0.tgz#46d18bc4066c66e490de057253b9cc97bde9f176"
@@ -1315,6 +1323,11 @@ eslint-plugin-yml@^0.12.0:
     lodash "^4.17.21"
     natural-compare "^1.4.0"
     yaml-eslint-parser "^0.5.0"
+
+eslint-rule-composer@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-rule-composer/-/eslint-rule-composer-0.3.0.tgz#79320c927b0c5c0d3d3d2b76c8b4a488f25bbaf9"
+  integrity sha512-bt+Sh8CtDmn2OajxvNO+BX7Wn4CIWMpTRm3MaiKPCQcnnlm0CS2mhui6QaoeQugs+3Kj2ESKEEGJUdVafwhiCg==
 
 eslint-scope@^7.0.0, eslint-scope@^7.1.0:
   version "7.1.0"

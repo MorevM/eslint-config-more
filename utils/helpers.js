@@ -22,11 +22,13 @@ const autofixableRulesToOff = (rules, autofixableList) => Object.fromEntries(
 const extensionFromBase = ({ prefix, baseRules, rulesToExtend }) => {
 	const rules = rulesToExtend.reduce((acc, rule) => {
 		const cleanRule = rule.replace(/^[!+]/, '');
+		const realValue = baseRules[`no-autofix/${cleanRule}`] || baseRules[cleanRule];
+		if (!realValue) return acc;
+
 		const autofixablePrefix = (cleanRule === rule) ? '' : rule[0];
-		if (!baseRules[cleanRule]) return acc;
 		return {
 			...acc,
-			[`${autofixablePrefix}${prefix}/${cleanRule}`]: baseRules[cleanRule],
+			[`${autofixablePrefix}${prefix}/${cleanRule}`]: realValue,
 		 };
 	}, {});
 
@@ -35,6 +37,7 @@ const extensionFromBase = ({ prefix, baseRules, rulesToExtend }) => {
 
 const processExports = ({ autofixable, context, initial, parts }) => {
 	const mergedParts = _mergeWith(
+		{ plugins: ['no-autofix'] },
 		{ ...initial },
 		...parts.map(part => require(resolve(context, part))),
 		(ov, sv) => (Array.isArray(ov) ? [...sv, ...ov] : undefined),
@@ -42,7 +45,13 @@ const processExports = ({ autofixable, context, initial, parts }) => {
 
 	const rules = Object.fromEntries(
 		Object.entries(mergedParts.rules)
-			.map(([key, value]) => [key.replace(/^\+|!/, ''), value]),
+			.reduce((acc, [rule, value]) => {
+				if (rule.startsWith('!')) {
+					const cleanRule = rule.slice(1);
+					return [...acc, [cleanRule, 'off'], [`no-autofix/${cleanRule}`, value]];
+				}
+				return [...acc, [rule.replace(/^[!+]/, ''), value]];
+			}, []),
 	);
 
 	if (autofixable === 'bypass') return { ...mergedParts, rules };
