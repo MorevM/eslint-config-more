@@ -1,0 +1,21 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules
+
+# Log Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+todo
+
+# Editors
+.vscode/settings.json
+
+# TODO
+vue3

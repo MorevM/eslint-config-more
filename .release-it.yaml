@@ -1,0 +1,19 @@
+git:
+  commitMessage: 'release: Release version ${version}'
+  tagAnnotation: 'Release version ${version}'
+  tagName: 'v${version}'
+
+npm:
+  publish: false
+
+plugins:
+  '@release-it/conventional-changelog':
+    preset: angular
+    infile: CHANGELOG.md
+
+hooks:
+  before:init:
+    - yarn lint:fix
+  after:init:
+    - yarn lint
+    # - yarn test

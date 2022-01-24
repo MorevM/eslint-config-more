@@ -1,0 +1,76 @@
+{
+	"name": "@morev/eslint-config-more",
+	"description": "Yet another strict shareable ESLint configuration",
+	"version": "0.0.0",
+	"private": false,
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"author": {
+		"name": "Maxim Morev",
+		"email": "max.seainside@gmail.com"
+	},
+	"homepage": "https://github.com/MorevM/eslint-config-more#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MorevM/eslint-config-more"
+	},
+	"keywords": [
+		"eslint",
+		"eslintconfig",
+		"config",
+		"codestyle",
+		"more"
+	],
+	"files": [
+		"languages",
+		"utils",
+		".eslintrc.js"
+	],
+	"exports": {
+		".": "./index.js",
+		"./js": "./languages/js/js.js",
+		"./js/off-autofixable": "./languages/js/js-off-autofixable.js",
+		"./js/warn-autofixable": "./languages/js/js-warn-autofixable.js",
+		"./vue2": "./languages/vue2/vue2.js",
+		"./vue2/off-autofixable": "./languages/vue2/vue2-off-autofixable.js",
+		"./vue2/warn-autofixable": "./languages/vue2/vue2-warn-autofixable.js",
+		"./yaml": "./languages/yaml/yaml.js",
+		"./yaml/off-autofixable": "./languages/yaml/yaml-off-autofixable.js",
+		"./yaml/warn-autofixable": "./languages/yaml/yaml-warn-autofixable.js",
+		"./json": "./languages/json/json.js",
+		"./json/off-autofixable": "./languages/json/json-off-autofixable.js",
+		"./json/warn-autofixable": "./languages/json/json-warn-autofixable.js"
+	},
+	"main": "./.eslintrc.js",
+	"scripts": {
+		"prepare": "husky install ./.husky",
+		"lint": "eslint **/*.js",
+		"lint:fix": "eslint **/*.js --fix",
+		"release": "release-it --disable-metrics"
+	},
+	"peerDependencies": {
+		"eslint": "^8.7.0"
+	},
+	"dependencies": {
+		"eslint-plugin-jsonc": "^2.0.0",
+		"eslint-plugin-sonarjs": "^0.11.0",
+		"eslint-plugin-unicorn": "^40.0.1",
+		"eslint-plugin-vue": "^8.2.0",
+		"eslint-plugin-yml": "^0.12.0",
+		"jsonc-eslint-parser": "^2.1.0",
+		"lodash.mergewith": "^4.6.2",
+		"vue-eslint-parser": "^8.1.0",
+		"yaml-eslint-parser": "^0.5.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^16.1.0",
+		"@release-it/conventional-changelog": "^4.1.0",
+		"eslint": "^8.7.0",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.2.2",
+		"release-it": "^14.12.3"
+	}
+}
