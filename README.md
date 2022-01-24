@@ -22,10 +22,10 @@ Create [ESLint configuration file](https://eslint.org/docs/user-guide/configurin
 module.exports = {
   root: true,
   extends: [
-    '@morevm/eslint-config-more/js/warn-autofixable',
-    '@morevm/eslint-config-more/vue2/warn-autofixable',
-    '@morevm/eslint-config-more/yaml/warn-autofixable',
-    '@morevm/eslint-config-more/json/warn-autofixable',
+    '@morev/eslint-config-more/js/warn-autofixable',
+    '@morev/eslint-config-more/vue2/warn-autofixable',
+    '@morev/eslint-config-more/yaml/warn-autofixable',
+    '@morev/eslint-config-more/json/warn-autofixable',
   ],
 };
 ```
@@ -42,10 +42,10 @@ Each ruleset can be used in three ways, depending on how you feel about errors t
   module.exports = {
     root: true,
     extends: [
-      '@morevm/eslint-config-more/js',
-      '@morevm/eslint-config-more/vue2',
-      '@morevm/eslint-config-more/yaml',
-      '@morevm/eslint-config-more/json',
+      '@morev/eslint-config-more/js',
+      '@morev/eslint-config-more/vue2',
+      '@morev/eslint-config-more/yaml',
+      '@morev/eslint-config-more/json',
     ],
   };
   ```
@@ -59,10 +59,10 @@ Each ruleset can be used in three ways, depending on how you feel about errors t
   module.exports = {
     root: true,
     extends: [
-      '@morevm/eslint-config-more/js/warn-autofixable',
-      '@morevm/eslint-config-more/vue2/warn-autofixable',
-      '@morevm/eslint-config-more/yaml/warn-autofixable',
-      '@morevm/eslint-config-more/json/warn-autofixable',
+      '@morev/eslint-config-more/js/warn-autofixable',
+      '@morev/eslint-config-more/vue2/warn-autofixable',
+      '@morev/eslint-config-more/yaml/warn-autofixable',
+      '@morev/eslint-config-more/json/warn-autofixable',
     ],
   };
   ```
@@ -74,10 +74,10 @@ Each ruleset can be used in three ways, depending on how you feel about errors t
   module.exports = {
     root: true,
     extends: [
-      '@morevm/eslint-config-more/js/off-autofixable',
-      '@morevm/eslint-config-more/vue2/off-autofixable',
-      '@morevm/eslint-config-more/yaml/off-autofixable',
-      '@morevm/eslint-config-more/json/off-autofixable',
+      '@morev/eslint-config-more/js/off-autofixable',
+      '@morev/eslint-config-more/vue2/off-autofixable',
+      '@morev/eslint-config-more/yaml/off-autofixable',
+      '@morev/eslint-config-more/json/off-autofixable',
     ],
   };
   ```
