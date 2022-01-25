@@ -361,7 +361,8 @@ module.exports = {
 
 		// Prefer `String#slice()` over `String#substr()` and `String#substring()` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-slice.md
-		'+unicorn/prefer-string-slice': 'error',
+		// Note: Autofix works strange replacing `s.substring(0, start)` to `s.slice(0, Math.max(0, start))` that impairs readability
+		'!unicorn/prefer-string-slice': 'error',
 
 		// Prefer `String#startsWith()` && `String#endsWith()` over `RegExp#test()` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-starts-ends-with.md
