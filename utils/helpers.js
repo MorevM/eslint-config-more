@@ -1,5 +1,9 @@
 const { resolve } = require('path');
 const _mergeWith = require('lodash.mergewith');
+const _get = require('lodash.get');
+const _clonedeep = require('lodash.clonedeep');
+
+const mergeWithArrayComparer = (ov, sv) => (Array.isArray(ov) ? [...sv, ...ov] : undefined);
 
 const autofixableRulesToWarn = (rules, autofixableList) => Object.fromEntries(
 	Object.entries(rules)
@@ -35,12 +39,27 @@ const extensionFromBase = ({ prefix, baseRules, rulesToExtend }) => {
 	return { rules };
 };
 
-const processExports = ({ autofixable, context, initial, parts }) => {
+const getProcessedRules = ({ autofixable, base, rules }) => {
+	if (autofixable === 'bypass') return rules;
+
+	const autofixableRules = Object.entries(base.rules)
+		.filter(([key]) => key.startsWith('+'))
+		.map(([key]) => key.slice(1));
+
+	return autofixable === 'warn'
+		? autofixableRulesToWarn(rules, autofixableRules)
+		: autofixableRulesToOff(rules, autofixableRules);
+};
+
+const processExports = ({
+	autofixable, context, initial, parts, mergeBase = null,
+}) => {
+	const initialClone = _clonedeep(initial);
+
 	const mergedParts = _mergeWith(
 		{ plugins: ['no-autofix'] },
-		{ ...initial },
 		...parts.map(part => require(resolve(context, part))),
-		(ov, sv) => (Array.isArray(ov) ? [...sv, ...ov] : undefined),
+		mergeWithArrayComparer,
 	);
 
 	const rules = Object.fromEntries(
@@ -54,17 +73,25 @@ const processExports = ({ autofixable, context, initial, parts }) => {
 			}, []),
 	);
 
-	if (autofixable === 'bypass') return { ...mergedParts, rules };
+	const processedRules = getProcessedRules({ autofixable, base: mergedParts, rules });
 
-	const autofixableRules = Object.entries(mergedParts.rules)
-		.filter(([key]) => key.startsWith('+'))
-		.map(([key]) => key.slice(1));
+	if (!mergeBase) {
+		return _mergeWith(
+			initialClone,
+			{ ...mergedParts, rules: processedRules },
+			mergeWithArrayComparer,
+		);
+	}
 
-	const processedRules = autofixable === 'warn'
-		? autofixableRulesToWarn(rules, autofixableRules)
-		: autofixableRulesToOff(rules, autofixableRules);
+	const mergeObject = _get(initialClone, mergeBase, {});
+	// Mutates intentionally, it's safe due it's cloned value
+	_mergeWith(
+		mergeObject,
+		{ ...mergedParts, rules: processedRules },
+		mergeWithArrayComparer,
+	);
 
-	return { ...mergedParts, rules: processedRules };
+	return initialClone;
 };
 
 

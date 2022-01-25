@@ -5,5 +5,6 @@ module.exports = {
 		'./languages/vue2/vue2-warn-autofixable.js',
 		'./languages/yaml/yaml-warn-autofixable.js',
 		'./languages/json/json-warn-autofixable.js',
+		'./languages/jest/jest-warn-autofixable.js',
 	],
 };
