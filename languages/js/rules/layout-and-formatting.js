@@ -111,7 +111,8 @@ module.exports = {
 
 		// Enforce the location of arrow function bodies (autofixable)
 		// https://eslint.org/docs/rules/implicit-arrow-linebreak
-		'+implicit-arrow-linebreak': ['error', 'beside'],
+		// Note: Doesn't care about max-len when autofix
+		'!implicit-arrow-linebreak': ['off', 'beside'],
 
 		// Enforce consistent indentation (autofixable)
 		// https://eslint.org/docs/rules/indent
