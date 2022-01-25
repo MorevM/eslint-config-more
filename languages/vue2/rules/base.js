@@ -7,7 +7,7 @@ module.exports = {
 	rules: {
 		// Support comment-directives in <template>
 		// https://eslint.vuejs.org/rules/comment-directive.html
-		'vue/comment-directive': ['error', {
+		'vue/comment-directive': ['warn', {
 			reportUnusedDisableDirectives: true,
 		}],
 
