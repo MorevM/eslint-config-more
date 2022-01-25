@@ -6,7 +6,7 @@ const parts = [
 const initial = {
 	plugins: ['jsonc'],
 	overrides: [{
-		files: ['**/*.json', '**/*.jsonc', '**/*.json5'],
+		files: ['*.json', '*.jsonc', '*.json5'],
 		parser: 'jsonc-eslint-parser',
 	}, {
 		files: ['*.jsonc'],
