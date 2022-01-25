@@ -176,7 +176,7 @@ module.exports = {
 		// Enforce a maximum number of statements allowed per line
 		// https://eslint.org/docs/rules/max-statements-per-line
 		'max-statements-per-line': ['warn', {
-			max: 2,
+			max: 3,
 		}],
 
 		// Enforce newlines between operands of ternary expressions (autofixable)
