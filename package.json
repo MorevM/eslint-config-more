@@ -1,7 +1,7 @@
 {
 	"name": "@morev/eslint-config-more",
 	"description": "Yet another strict shareable ESLint configuration",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"private": false,
 	"license": "MIT",
 	"publishConfig": {
