@@ -47,8 +47,8 @@
 	"main": "./.eslintrc.js",
 	"scripts": {
 		"prepare": "husky install ./.husky",
-		"lint": "eslint **/*.js",
-		"lint:fix": "eslint **/*.js --fix",
+		"lint": "eslint \"**/*.js\"",
+		"lint:fix": "eslint \"**/*.js\" --fix",
 		"release": "release-it --disable-metrics"
 	},
 	"peerDependencies": {
