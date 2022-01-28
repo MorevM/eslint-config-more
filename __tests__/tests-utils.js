@@ -1,9 +1,9 @@
 const { resolve } = require('node:path');
 const _mergeWith = require('lodash.mergewith');
 const { processExports } = require('../utils/helpers');
-const baseConfigParts = require('../configurations/js/_parts');
+const baseConfigParts = require('../configurations/base/_parts');
 
-const PATH_TO_JS_CONFIG = '../configurations/js/';
+const PATH_TO_JS_CONFIG = '../configurations/base/';
 
 const getRulesAsWritten = () => _mergeWith(
 	{},

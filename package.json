@@ -31,9 +31,9 @@
 	],
 	"exports": {
 		".": "./index.js",
-		"./js": "./configurations/js/js.js",
-		"./js/off-autofixable": "./configurations/js/js-off-autofixable.js",
-		"./js/warn-autofixable": "./configurations/js/js-warn-autofixable.js",
+		"./base": "./configurations/base/base.js",
+		"./base/off-autofixable": "./configurations/base/base-off-autofixable.js",
+		"./base/warn-autofixable": "./configurations/base/base-warn-autofixable.js",
 		"./jest": "./configurations/jest/jest.js",
 		"./jest/off-autofixable": "./configurations/jest/jest-off-autofixable.js",
 		"./jest/warn-autofixable": "./configurations/jest/jest-warn-autofixable.js",

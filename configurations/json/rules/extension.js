@@ -1,4 +1,4 @@
-const base = require('../../js/js');
+const base = require('../../base/base');
 const { extensionFromBase } = require('../../../utils/helpers');
 
 const rulesToExtend = [
