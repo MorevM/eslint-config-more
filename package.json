@@ -51,8 +51,8 @@
 	"scripts": {
 		"prepare": "husky install ./.husky",
 		"test": "jest",
-		"lint": "eslint \"**/*.js\"",
-		"lint:fix": "eslint \"**/*.js\" --fix",
+		"lint": "eslint \"**/*.{js,json,json5,jsonc,yml,yaml}\"",
+		"lint:fix": "eslint \"**/*.{js,json,json5,jsonc,yml,yaml}\" --fix",
 		"release": "release-it --disable-metrics"
 	},
 	"peerDependencies": {
