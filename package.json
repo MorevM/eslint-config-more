@@ -25,27 +25,27 @@
 		"more"
 	],
 	"files": [
-		"languages",
+		"configurations",
 		"utils",
 		".eslintrc.js"
 	],
 	"exports": {
 		".": "./index.js",
-		"./js": "./languages/js/js.js",
-		"./js/off-autofixable": "./languages/js/js-off-autofixable.js",
-		"./js/warn-autofixable": "./languages/js/js-warn-autofixable.js",
-		"./jest": "./languages/jest/jest.js",
-		"./jest/off-autofixable": "./languages/jest/jest-off-autofixable.js",
-		"./jest/warn-autofixable": "./languages/jest/jest-warn-autofixable.js",
-		"./vue2": "./languages/vue2/vue2.js",
-		"./vue2/off-autofixable": "./languages/vue2/vue2-off-autofixable.js",
-		"./vue2/warn-autofixable": "./languages/vue2/vue2-warn-autofixable.js",
-		"./yaml": "./languages/yaml/yaml.js",
-		"./yaml/off-autofixable": "./languages/yaml/yaml-off-autofixable.js",
-		"./yaml/warn-autofixable": "./languages/yaml/yaml-warn-autofixable.js",
-		"./json": "./languages/json/json.js",
-		"./json/off-autofixable": "./languages/json/json-off-autofixable.js",
-		"./json/warn-autofixable": "./languages/json/json-warn-autofixable.js"
+		"./js": "./configurations/js/js.js",
+		"./js/off-autofixable": "./configurations/js/js-off-autofixable.js",
+		"./js/warn-autofixable": "./configurations/js/js-warn-autofixable.js",
+		"./jest": "./configurations/jest/jest.js",
+		"./jest/off-autofixable": "./configurations/jest/jest-off-autofixable.js",
+		"./jest/warn-autofixable": "./configurations/jest/jest-warn-autofixable.js",
+		"./vue2": "./configurations/vue2/vue2.js",
+		"./vue2/off-autofixable": "./configurations/vue2/vue2-off-autofixable.js",
+		"./vue2/warn-autofixable": "./configurations/vue2/vue2-warn-autofixable.js",
+		"./yaml": "./configurations/yaml/yaml.js",
+		"./yaml/off-autofixable": "./configurations/yaml/yaml-off-autofixable.js",
+		"./yaml/warn-autofixable": "./configurations/yaml/yaml-warn-autofixable.js",
+		"./json": "./configurations/json/json.js",
+		"./json/off-autofixable": "./configurations/json/json-off-autofixable.js",
+		"./json/warn-autofixable": "./configurations/json/json-warn-autofixable.js"
 	},
 	"main": "./.eslintrc.js",
 	"scripts": {

@@ -1,10 +1,10 @@
 module.exports = {
 	root: true,
 	extends: [
-		'./languages/js/js-warn-autofixable.js',
-		'./languages/vue2/vue2-warn-autofixable.js',
-		'./languages/yaml/yaml-warn-autofixable.js',
-		'./languages/json/json-warn-autofixable.js',
-		'./languages/jest/jest-warn-autofixable.js',
+		'./configurations/js/js-warn-autofixable.js',
+		'./configurations/vue2/vue2-warn-autofixable.js',
+		'./configurations/yaml/yaml-warn-autofixable.js',
+		'./configurations/json/json-warn-autofixable.js',
+		'./configurations/jest/jest-warn-autofixable.js',
 	],
 };
