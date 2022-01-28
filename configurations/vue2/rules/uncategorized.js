@@ -3,7 +3,7 @@
  * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
  */
 
-const SPECIAL_CHARACTERS = require('../../../utils/special-characters.js');
+const { SPECIAL_CHARACTERS } = require('../../../utils/constants');
 
 module.exports = {
 	rules: {

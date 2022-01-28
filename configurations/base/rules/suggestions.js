@@ -3,7 +3,7 @@
  * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
  */
 
-const confusingBrowserGlobals = require('../../../utils/confusing-browser-globals');
+const { CONFUSING_BROWSER_GLOBALS } = require('../../../utils/constants');
 
 module.exports = {
 	rules: {
@@ -452,7 +452,7 @@ module.exports = {
 			// 	name: 'isNaN',
 			// 	message: 'Use Number.isNaN instead of global isNaN',
 			// },
-			...confusingBrowserGlobals,
+			...CONFUSING_BROWSER_GLOBALS,
 		],
 
 		// Disallow specified modules when loaded by `import`

@@ -3,7 +3,7 @@
  * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
  */
 
-const INLINE_ELEMENTS = require('../../../utils/inline-elements.js');
+const { INLINE_ELEMENTS } = require('../../../utils/constants');
 
 module.exports = {
 	rules: {
