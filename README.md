@@ -1,6 +1,11 @@
 # eslint-config-more
 
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/MorevM/eslint-config-more/build/master)
+![Stability of "master" branch](https://img.shields.io/github/workflow/status/MorevM/eslint-config-more/Build/master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Last commit](https://img.shields.io/github/last-commit/morevm/eslint-config-more)
+![Release version](https://img.shields.io/github/v/release/morevm/eslint-config-more?include_prereleases)
+![GitHub Release Date](https://img.shields.io/github/release-date/morevm/eslint-config-more)
+![Keywords](https://img.shields.io/github/package-json/keywords/morevm/eslint-config-more)
 
 Strict shareable ESLint configuration that I personally use.
 
