@@ -670,8 +670,7 @@ module.exports = {
 
 		// Require `const` declarations for variables that are never reassigned after declared (autofixable)
 		// https://eslint.org/docs/rules/prefer-const
-		// Note: maybe should be `off`, confusing a bit
-		'+prefer-const': ['error', {
+		'!prefer-const': ['warn', {
 			destructuring: 'any',
 			ignoreReadBeforeAssign: true,
 		}],
