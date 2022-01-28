@@ -50,6 +50,7 @@
 	"main": "./.eslintrc.js",
 	"scripts": {
 		"prepare": "husky install ./.husky",
+		"test": "jest",
 		"lint": "eslint \"**/*.js\"",
 		"lint:fix": "eslint \"**/*.js\" --fix",
 		"release": "release-it --disable-metrics"

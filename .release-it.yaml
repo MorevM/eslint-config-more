@@ -16,4 +16,4 @@ hooks:
     - yarn lint:fix
   after:init:
     - yarn lint
-    # - yarn test
+    - yarn test
