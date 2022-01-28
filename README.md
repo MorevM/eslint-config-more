@@ -1,5 +1,7 @@
 # eslint-config-more
 
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/MorevM/eslint-config-more/build/master)
+
 Strict shareable ESLint configuration that I personally use.
 
 ## Install
