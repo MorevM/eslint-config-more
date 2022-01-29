@@ -306,11 +306,6 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-negative-index.md
 		'+unicorn/prefer-negative-index': 'error',
 
-		// Prefer using the node: protocol when importing Node.js builtin modules (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-node-protocol.md
-		// Note: can fail on old Node
-		'!unicorn/prefer-node-protocol': 'off',
-
 		// Prefer `Number` static properties over global ones (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-number-properties.md
 		// Note: what's the problem with global functions? I'm serious.
@@ -412,9 +407,6 @@ module.exports = {
 				},
 				msg: {
 					message: true,
-				},
-				pkg: {
-					package: true,
 				},
 				tbl: {
 					table: true,
