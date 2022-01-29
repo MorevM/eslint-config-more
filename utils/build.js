@@ -8,7 +8,10 @@ const pkg = require('../package.json');
 const { makeConfig } = require('./tools');
 
 const [CONFIGS_DIR_REL, PRESETS_DIR_REL] = ['./build/configurations/', './build/presets/'];
-const [CONFIGS_DIR, PRESETS_DIR] = [resolve('..', CONFIGS_DIR_REL), resolve('..', PRESETS_DIR_REL)];
+const [CONFIGS_DIR, PRESETS_DIR] = [
+	resolve(__dirname, '..', CONFIGS_DIR_REL),
+	resolve(__dirname, '..', PRESETS_DIR_REL),
+];
 
 [CONFIGS_DIR, PRESETS_DIR].forEach(dir => {
 	fs.rmSync(dir, { recursive: true, force: true });
