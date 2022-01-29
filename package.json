@@ -15,10 +15,10 @@
 		"name": "Maxim Morev",
 		"email": "max.seainside@gmail.com"
 	},
-	"homepage": "https://github.com/MorevM/eslint-config-more#readme",
+	"homepage": "https://github.com/MorevM/eslint-config#readme",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/MorevM/eslint-config-more"
+		"url": "https://github.com/MorevM/eslint-config"
 	},
 	"keywords": [
 		"eslint",
