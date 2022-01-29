@@ -263,38 +263,14 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-default-parameters.md
 		'+unicorn/prefer-default-parameters': 'error',
 
-		// Prefer `Node#append()` over `Node#appendChild()` (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-append.md
-		'+unicorn/prefer-dom-node-append': 'error',
-
-		// Prefer using `.dataset` on DOM elements over `.setAttribute(…)` (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-dataset.md
-		'+unicorn/prefer-dom-node-dataset': 'error',
-
-		// Prefer `childNode.remove()` over `parentNode.removeChild(childNode)` (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-remove.md
-		'+unicorn/prefer-dom-node-remove': 'error',
-
-		// Prefer `.textContent` over `.innerText`
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-text-content.md
-		'unicorn/prefer-dom-node-text-content': 'error',
-
 		// Prefer `.includes()` over `.indexOf()` and `Array#some()` when checking for existence or non-existence
 		// (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes.md
 		'+unicorn/prefer-includes': 'error',
 
-		// Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode` (partly autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md
-		'+unicorn/prefer-keyboard-event-key': 'error',
-
 		// Enforce the use of `Math.trunc` instead of bitwise operators (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-trunc.md
 		'+unicorn/prefer-math-trunc': 'error',
-
-		// Prefer modern DOM APIs (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-dom-apis.md
-		'+unicorn/prefer-modern-dom-apis': 'error',
 
 		// Prefer JavaScript modules (ESM) over CommonJS
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-module.md

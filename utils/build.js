@@ -12,6 +12,7 @@ const BUILD_DIR = resolve(process.cwd(), 'build');
 const configurations = [
 	{ name: 'base' },
 	{ name: 'node' },
+	{ name: 'browser' },
 	{ name: 'jest' },
 	{ name: 'json' },
 	{ name: 'json/jsonc', output: 'jsonc' },

@@ -2,6 +2,7 @@ const { makeConfig } = require('./utils/tools');
 
 module.exports = makeConfig([
 	{ name: 'base' },
+	{ name: 'browser' },
 	{ name: 'node' },
 	{
 		name: 'jest',
