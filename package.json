@@ -33,6 +33,7 @@
 		".eslintrc.js"
 	],
 	"exports": {
+		".": "./.eslintrc.js",
 		"./base": "./build/base.js",
 		"./base/warn-autofixable": "./build/base-warn-autofixable.js",
 		"./base/off-autofixable": "./build/base-off-autofixable.js",

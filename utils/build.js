@@ -22,7 +22,9 @@ const configurations = [
 fs.rmSync(BUILD_DIR, { recursive: true, force: true });
 fs.mkdirSync(BUILD_DIR, { recursive: true });
 
-const exportsField = {};
+const exportsField = {
+	'.': './.eslintrc.js',
+};
 
 (async () => {
 	await configurations.forEach(async (config) => {
