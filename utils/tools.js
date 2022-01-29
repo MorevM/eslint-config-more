@@ -2,8 +2,7 @@ const _mergeWith = require('lodash.mergewith');
 const { resolve, sep } = require('path');
 const { mergeWithArrayComparer } = require('../utils/helpers');
 
-const ROOT_PATH = resolve(process.cwd());
-const CONFIGS_PATH = resolve(ROOT_PATH, 'configurations');
+const CONFIGS_PATH = resolve(__dirname, '../configurations');
 
 const CONFIGURATION_DEFAULTS = { autofixable: 'warn' };
 
