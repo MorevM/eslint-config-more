@@ -4,6 +4,7 @@ Thumbs.db
 
 # Artifacts
 coverage
+build
 
 # Dependencies
 node_modules

@@ -1,4 +1,4 @@
-const base = require('../../base/base');
+const base = require('../../base');
 const { extensionFromBase } = require('../../../utils/helpers');
 
 const rulesToExtend = [
@@ -41,6 +41,6 @@ const rulesToExtend = [
 
 module.exports = extensionFromBase({
 	prefix: 'vue',
-	baseRules: base.rules,
+	baseRules: base('bypass').rules,
 	rulesToExtend,
 });

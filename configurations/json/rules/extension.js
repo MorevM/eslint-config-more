@@ -1,4 +1,4 @@
-const base = require('../../base/base');
+const base = require('../../base');
 const { extensionFromBase } = require('../../../utils/helpers');
 
 const rulesToExtend = [
@@ -28,7 +28,7 @@ const rulesToExtend = [
 
 const extensionRules = extensionFromBase({
 	prefix: 'jsonc',
-	baseRules: base.rules,
+	baseRules: base('bypass').rules,
 	rulesToExtend,
 });
 

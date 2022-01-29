@@ -1,6 +1,4 @@
-const { resolve } = require('path');
 const _mergeWith = require('lodash.mergewith');
-const _get = require('lodash.get');
 const _clonedeep = require('lodash.clonedeep');
 
 const mergeWithArrayComparer = (ov, sv) => (Array.isArray(ov) ? [...new Set([...sv, ...ov])] : undefined);
@@ -51,14 +49,11 @@ const getProcessedRules = ({ autofixable, base, rules }) => {
 		: autofixableRulesToOff(rules, autofixableRules);
 };
 
-const processExports = ({
-	autofixable, context, initial, parts, mergeBase = null,
-}) => {
-	const initialClone = _clonedeep(initial);
-
+const processExports = ({ autofixable, base, parts }) => {
+	const initialClone = _clonedeep(base);
 	const mergedParts = _mergeWith(
 		{ plugins: ['no-autofix'] },
-		...parts.map(part => require(resolve(context, part))),
+		...(parts || []),
 		mergeWithArrayComparer,
 	);
 
@@ -75,24 +70,12 @@ const processExports = ({
 
 	const processedRules = getProcessedRules({ autofixable, base: mergedParts, rules });
 
-	if (!mergeBase) {
-		return _mergeWith(
-			initialClone,
-			{ ...mergedParts, rules: processedRules },
-			mergeWithArrayComparer,
-		);
-	}
-
-	const mergeObject = _get(initialClone, mergeBase, {});
-	// Mutates intentionally, it's safe due it's cloned value
-	_mergeWith(
-		mergeObject,
+	return _mergeWith(
+		initialClone,
 		{ ...mergedParts, rules: processedRules },
 		mergeWithArrayComparer,
 	);
-
-	return initialClone;
 };
 
 
-module.exports = { processExports, extensionFromBase };
+module.exports = { processExports, extensionFromBase, mergeWithArrayComparer };
