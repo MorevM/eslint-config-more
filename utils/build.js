@@ -11,6 +11,7 @@ const BUILD_DIR = resolve(process.cwd(), 'build');
 
 const configurations = [
 	{ name: 'base' },
+	{ name: 'node' },
 	{ name: 'jest' },
 	{ name: 'json' },
 	{ name: 'json/jsonc', output: 'jsonc' },
@@ -31,7 +32,6 @@ const exportsField = {
 		await ['bypass', 'warn', 'off'].forEach(async (autofixable) => {
 			let configSource = makeConfig([{ ...config, autofixable }]);
 			configSource = `module.exports = ${JSON.stringify(configSource, null, '\t')}`;
-			// configSource = lintResults[0].output;
 
 			const filename = (autofixable === 'bypass')
 				? `${config.output || config.name}.js`
