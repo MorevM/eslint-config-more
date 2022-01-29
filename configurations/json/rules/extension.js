@@ -18,7 +18,7 @@ const rulesToExtend = [
 	'+object-curly-newline',
 	'+object-curly-spacing',
 	'+object-property-newline',
-	'+sort-keys',
+	// '+sort-keys', // may rewrite `package.json` sort options
 	'+space-unary-ops',
 	// Conflict with JSON
 	// 'comma-dangle',
