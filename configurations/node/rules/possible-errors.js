@@ -54,15 +54,18 @@ module.exports = {
 
 		// Disallow unsupported ECMAScript built-ins on the specified version
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-builtins.md
-		'node/no-unsupported-features/es-builtins': 'error',
+		// Note: seems it doesn't work
+		'node/no-unsupported-features/es-builtins': 'off',
 
 		// Disallow unsupported ECMAScript syntax on the specified version
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md
-		'node/no-unsupported-features/es-syntax': 'error',
+		// Note: seems it doesn't work
+		'node/no-unsupported-features/es-syntax': 'off',
 
 		// Disallow unsupported Node.js built-in APIs on the specified version
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/node-builtins.md
-		'node/no-unsupported-features/node-builtins': 'error',
+		// Note: seems it doesn't work
+		'node/no-unsupported-features/node-builtins': 'off',
 
 		// Make `process.exit()` expressions the same code path as `throw`
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/process-exit-as-throw.md
