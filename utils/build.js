@@ -83,7 +83,7 @@ const presets = [
 	},
 ];
 
-const exportsField = {};
+let exportsField = {};
 
 const getNames = (config, autofixable, isPresets = false) => {
 	const resolvedName = config.output || config.name;
@@ -94,14 +94,9 @@ const getNames = (config, autofixable, isPresets = false) => {
 
 	const exportsPrefix = isPresets ? 'preset/' : '';
 
-	let exportsName = (autofixable === 'bypass')
+	const exportsName = (autofixable === 'bypass')
 		? `./${exportsPrefix}${resolvedName}`
 		: `./${exportsPrefix}${resolvedName}/${autofixable}-autofixable`;
-
-	// Main export
-	if (isPresets && resolvedName === 'all' && autofixable === 'bypass') {
-		exportsName = exportsName.replace('/preset/all', '');
-	}
 
 	return { filename, exportsName };
 };
@@ -132,6 +127,12 @@ const getNames = (config, autofixable, isPresets = false) => {
 			fs.writeFileSync(`${CONFIGS_DIR}/${filename}`, configSource);
 		});
 	});
+
+	// Main export aliasing `/presets/all`
+	exportsField = {
+		'.': exportsField['./preset/all'],
+		...exportsField,
+	};
 
 	pkg.exports = exportsField;
 	pkg.main = exportsField['.'];

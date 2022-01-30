@@ -35,6 +35,7 @@
 	],
 	"exports": {
 		".": "./build/presets/all.js",
+		"./preset/all": "./build/presets/all.js",
 		"./preset/all/warn-autofixable": "./build/presets/all-warn-autofixable.js",
 		"./preset/all/off-autofixable": "./build/presets/all-off-autofixable.js",
 		"./preset/jest": "./build/presets/jest.js",
