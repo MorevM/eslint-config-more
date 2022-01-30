@@ -1,4 +1,4 @@
-# eslint-config-more
+# @morev/eslint-config
 
 ![Stability of "master" branch](https://img.shields.io/github/workflow/status/MorevM/eslint-config-more/Build/master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -28,25 +28,23 @@ pnpm add -D eslint @morev/eslint-config
 
 ## Package contents
 
-The package provides many configurations, each can be used in three variations depending on how you feel about errors that can be fixed automatically ([details about autofixable mechanics](./#autofixable-mechanics)). 
+The package provides many configurations, each can be used in three variations depending on how you feel about errors that can be fixed automatically ([details about autofixable mechanics](#autofixable-mechanics)). 
 
 The rules don't intersect, so if you are working with `Vue2`, you need to include `vue2` and `base` configurations both.
 
 ### Configurations
 
-Configurations are available with path which includes package name (`@morev/eslint-config`) and configuration name (e.g. `@morev/eslint-config/base`). \
-Don't be surprised that these files aren't in the root of repository - look at the `exports` sections of [`package.json`](./package.json).
+* [`@morev/eslint-config/base`](./configurations/base) - base ESLint configuration
+* [`@morev/eslint-config/browser`](./configurations/browser) - for projects that use DOM and other browser APIs
+* [`@morev/eslint-config/node`](./configurations/node) - for projects that use [Node.js](https://nodejs.org/)
+* [`@morev/eslint-config/vue2`](./configurations/vue2) - for projects that use [Vue 2](https://vuejs.org/)
+* [`@morev/eslint-config/jest`](./configurations/jest) - for projects that use [Jest](https://jestjs.io/)
+* [`@morev/eslint-config/json`](./configurations/json) - for projects that use [JSON files](https://en.wikipedia.org/wiki/JSON)
+  * `@morev/eslint-config/jsonc` - superset of `json` for `.jsonc` and `.json5` files
+  * `@morev/eslint-config/package-json` - superset of `json` for `package.json` file to keep consistent order of fields
+* [`@morev/eslint-config/yaml`](./configurations/yaml) - for projects that use [YAML files](https://en.wikipedia.org/wiki/YAML)
 
-#### Configurations list
-* [`base`](./configurations/base/index.js) - base ESLint configuration
-* [`browser`](./configurations/browser/index.js) - for projects that use DOM and other browser APIs
-* [`node`](./configurations/node/index.js) - for projects that use [Node.js](https://nodejs.org/)
-* [`vue2`](./configurations/vue2/index.js) - for projects that use [Vue 2](https://vuejs.org/)
-* [`jest`](./configurations/jest/index.js) - for projects that use [Jest](https://jestjs.io/)
-* [`json`](./configurations/json/index.js) - for projects that use [JSON files](https://en.wikipedia.org/wiki/JSON)
-  * [`jsonc`](./configurations/json/jsonc.js) - superset of `json` for `.jsonc` and `.json5` files
-  * [`package-json`](./configurations/json/package-json.js) - superset of `json` for `package.json` file to keep consistent order of fields
-* [`yaml`](./configurations/yaml/index.js) - for projects that use [YAML files](https://en.wikipedia.org/wiki/YAML)
+> Don't be surprised that these files aren't in the root of repository - look at the `exports` sections of [`package.json`](./package.json).
 
 ### Presets
 
@@ -54,7 +52,7 @@ For proper work, performance and false positives prevention you need to apply co
 ```js
 module.exports = {
   root: true,
-  extends: ['@morev'],
+  extends: ['@morev/eslint-config/base'],
   overrides: [
     {
       files: ['*.yml', '*.yaml'],
@@ -69,9 +67,10 @@ module.exports = {
 }
 ```
 
-It can be annoying and verbose to write it all the time (although it has advantages, explicit is better than implicit). \
-Usually you want to lint all `json` and `yaml` files based on its extension, all `vue` files usually have `.vue` extension, tests placed in `__tests__` folder or contains `.test.js`, etc. \
-So, presets just pre-configured configurations with default overrides.
+It can be annoying and verbose to write it all the time (although it has advantages, explicit is better than implicit). 
+
+Usually you want to lint all `json` and `yaml` files based on its extension, all `vue` files have `.vue` extension, tests placed in `__tests__` folder or named with pattern `*.test.js`, etc. \
+So, presets just configurations with pre-defined `overrides`.
 
 All presets comes with `/warn-autofixable` and `/off-autofixable` variants exactly the same as individual configurations.
 
@@ -122,6 +121,7 @@ All presets comes with `/warn-autofixable` and `/off-autofixable` variants exact
     root: true,
     extends: ['@morev/eslint-config/preset/assistive'],
   };
+
   // It's the same as:
   module.exports = {
     root: true,
@@ -154,6 +154,7 @@ All presets comes with `/warn-autofixable` and `/off-autofixable` variants exact
     root: true,
     extends: ['@morev/eslint-config/preset/jest'],
   };
+
   // It's the same as:
   module.exports = {
     root: true,
@@ -165,14 +166,6 @@ All presets comes with `/warn-autofixable` and `/off-autofixable` variants exact
     ],
   };
   ```
-
-```js
-// .eslintrc.js
-module.exports = {
-  root: true,
-  extends: ['@morev'],
-};
-```
 
 ## Autofixable mechanics
 
