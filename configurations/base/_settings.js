@@ -23,6 +23,7 @@ const parts = [
 	'./plugins/unicorn.js',
 	'./plugins/sonarjs.js',
 	'./plugins/import.js',
+	'./plugins/jsdoc.js',
 ].map(part => require(part));
 
 module.exports = { base, parts };
