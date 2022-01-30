@@ -24,6 +24,7 @@ const parts = [
 	'./plugins/sonarjs.js',
 	'./plugins/import.js',
 	'./plugins/jsdoc.js',
+	'./plugins/eslint-comments.js',
 ].map(part => require(part));
 
 module.exports = { base, parts };
