@@ -1,6 +1,6 @@
 const { makeConfig } = require('./utils/tools');
 
-module.exports = makeConfig([
+const config = makeConfig([
 	{ name: 'base' },
 	{ name: 'browser' },
 	{ name: 'node' },
@@ -35,3 +35,14 @@ module.exports = makeConfig([
 		},
 	},
 ]);
+
+config.overrides = config.overrides || [];
+config.overrides.push({
+	files: ['*.js'],
+	rules: {
+		'node/global-require': 'off',
+		'import/no-dynamic-require': 'off',
+	},
+});
+
+module.exports = config;

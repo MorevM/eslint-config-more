@@ -1,6 +1,6 @@
-const _mergeWith = require('lodash.mergewith');
 const { resolve, sep } = require('path');
-const { mergeWithArrayComparer } = require('../utils/helpers');
+const _mergeWith = require('lodash.mergewith');
+const { mergeWithArrayComparer } = require('./helpers');
 
 const CONFIGS_PATH = resolve(__dirname, '../configurations');
 

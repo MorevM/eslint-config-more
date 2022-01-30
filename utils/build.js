@@ -1,6 +1,7 @@
 const { resolve } = require('path');
 const fs = require('fs');
 const { ESLint } = require('eslint');
+
 const eslint = new ESLint({ fix: true });
 
 const pkg = require('../package.json');
