@@ -179,7 +179,7 @@ module.exports = {
 
 		// Disallow unused object properties
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-properties.md
-		'unicorn/no-unused-properties': 'error',
+		'unicorn/no-unused-properties': 'warn',
 
 		// Disallow useless array length check (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-length-check.md
