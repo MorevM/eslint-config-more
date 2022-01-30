@@ -2,7 +2,7 @@ module.exports = {
 	plugins: ['import'],
 	rules: {
 		/**
-		 * Static analysis
+		 * Static analysis.
 		 */
 
 		// Ensure imports point to a file/module that can be resolved
@@ -70,7 +70,7 @@ module.exports = {
 		'import/no-relative-packages': 'off',
 
 		/**
-		 * Helpful warnings
+		 * Helpful warnings.
 		 */
 
 		// Report any invalid exports, i.e. re-export of the same name
@@ -103,7 +103,7 @@ module.exports = {
 		'import/no-unused-modules': 'off',
 
 		/**
-		 * Module systems
+		 * Module systems.
 		 */
 
 		// Report potentially ambiguous parse goal (`script` vs. `module`)
@@ -129,7 +129,7 @@ module.exports = {
 		'import/no-import-module-exports': 'error',
 
 		/**
-		 * Style guide
+		 * Style guide.
 		 */
 
 		// Ensure all imports appear before other statements (autofixable, but `import/order` does it better)
