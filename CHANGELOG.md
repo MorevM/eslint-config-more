@@ -1,3 +1,16 @@
+# [2.1.0](https://github.com/MorevM/eslint-config/compare/v2.0.0...v2.1.0) (2022-01-30)
+
+
+### Bug Fixes
+
+* **base:** Downgrade severity 'unicorn/no-unused-properties' to warn ([5b3e4aa](https://github.com/MorevM/eslint-config/commit/5b3e4aa5e2dbc6fc73804090ced0505cbec343b7))
+* **node:** Turn off rules under category `no-unsupported-features` ([28407c0](https://github.com/MorevM/eslint-config/commit/28407c06107ce7e553de7be1dd93077314e0f2a9))
+
+
+### Features
+
+* **preset/all:** Add `vue2` config to preset `all` ([4f435ed](https://github.com/MorevM/eslint-config/commit/4f435ed53e645b7bdd55c8e1f5cf394ddde1a54e))
+
 # [2.0.0](https://github.com/MorevM/eslint-config/compare/v1.1.1...v2.0.0) (2022-01-30)
 
 
