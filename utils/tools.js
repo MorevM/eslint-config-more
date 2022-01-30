@@ -16,7 +16,6 @@ const makeConfig = (_configs) => {
 	let result = {};
 
 	configs.forEach(({ name, autofixable, overrides }) => {
-		// eslint-disable-next-line node/global-require
 		const configFactory = require(resolve(CONFIGS_PATH, name));
 		let processed = configFactory(autofixable);
 
