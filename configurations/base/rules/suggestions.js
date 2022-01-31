@@ -644,7 +644,7 @@ module.exports = {
 		// https://eslint.org/docs/rules/object-shorthand
 		'+object-shorthand': ['error', 'always', {
 			ignoreConstructors: false,
-			avoidQuotes: true,
+			avoidQuotes: false,
 		}],
 
 		// Enforce variables to be declared either together or separately in functions (autofixable)
