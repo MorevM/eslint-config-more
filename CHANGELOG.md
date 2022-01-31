@@ -1,3 +1,20 @@
+# [3.1.0](https://github.com/MorevM/eslint-config/compare/v3.0.0...v3.1.0) (2022-01-31)
+
+
+### Bug Fixes
+
+* **base:** `avoidQuotes` option in `object-shorthand` rule should be `false` ([1af2f49](https://github.com/MorevM/eslint-config/commit/1af2f493b81e7dc8d85ef492c52c755db1f55a7d))
+* **base:** Add `pathGroups` option to `import/order` rule ([6d18a8c](https://github.com/MorevM/eslint-config/commit/6d18a8cbb2d230b0a9259defaf6fb4a2bf717bd6))
+* **base:** Rule `import/no-unassigned-import` turned off ([d76ca31](https://github.com/MorevM/eslint-config/commit/d76ca31759d9eb8d41f3dee5f8c8f1d478866fe8))
+* **base:** Rule `jsdoc/require-description-complete-sentence` turned off ([26c7d1a](https://github.com/MorevM/eslint-config/commit/26c7d1a0dd0c04cb0bde0199859fd6dae0b758e9))
+* **base:** Rule `unicorn/prefer-string-replace-all` turned off for a while ([aed36c3](https://github.com/MorevM/eslint-config/commit/aed36c324e412d373146f6838da949b15b682f12))
+* **node:** Reverse rule `node/file-extension-in-import` ([1b41b4e](https://github.com/MorevM/eslint-config/commit/1b41b4e1cb59a16799b81352aa56e2dc0ceea071))
+
+
+### Features
+
+* **vue:** Add babel plugin to transform JSX syntax ([4a07eaa](https://github.com/MorevM/eslint-config/commit/4a07eaa0bb95b680d54ff79433a96d662fce2ec9))
+
 # [3.0.0](https://github.com/MorevM/eslint-config/compare/v2.1.0...v3.0.0) (2022-01-31)
 
 
