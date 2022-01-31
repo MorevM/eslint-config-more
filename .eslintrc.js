@@ -5,6 +5,12 @@ const config = makeConfig([
 	{ name: 'browser' },
 	{ name: 'node' },
 	{
+		name: 'vue/vue2',
+		overrides: {
+			files: ['*.vue'],
+		},
+	},
+	{
 		name: 'jest',
 		overrides: {
 			files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
