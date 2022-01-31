@@ -216,7 +216,7 @@ module.exports = {
 			args: 'none',
 			ignoreRestSiblings: true,
 			argsIgnorePattern: '^_*$',
-			varsIgnorePattern: '^_*$',
+			varsIgnorePattern: '^_',
 		}],
 
 		// Disallow early use
