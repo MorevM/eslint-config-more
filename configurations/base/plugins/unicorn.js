@@ -328,7 +328,8 @@ module.exports = {
 		// Prefer `String#replaceAll()` over regex searches with the global flag (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-replace-all.md
 		// Fails on Node 14
-		'!unicorn/prefer-string-replace-all': 'warn',
+		// TODO: [2023-01-01] Review it again
+		'!unicorn/prefer-string-replace-all': 'off',
 
 		// Prefer `String#slice()` over `String#substr()` and `String#substring()` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-slice.md
