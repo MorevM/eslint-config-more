@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/MorevM/eslint-config/compare/v3.1.0...v3.1.1) (2022-01-31)
+
+
+### Bug Fixes
+
+* **base:** Allow variables which starts with `_` be unused ([ffd01db](https://github.com/MorevM/eslint-config/commit/ffd01db2c32cd072073d6cd9bd92d0a6e6413b0d))
+
 # [3.1.0](https://github.com/MorevM/eslint-config/compare/v3.0.0...v3.1.0) (2022-01-31)
 
 
