@@ -18,6 +18,10 @@ module.exports = {
 			multiline: 'always',
 		}],
 
+		// Enforce component API style
+		// https://eslint.vuejs.org/rules/component-api-style.html
+		'vue/component-api-style': 'off',
+
 		// Enforce specific casing for the component naming style in template (autofixable)
 		// https://eslint.vuejs.org/rules/component-name-in-template-casing.html
 		'+vue/component-name-in-template-casing': ['error', 'kebab-case', {
@@ -90,7 +94,7 @@ module.exports = {
 			directives: ['v-text'],
 		}],
 
-		// Disallow boolean defaults (autofixable, but may be unsafe)
+		// Disallow boolean defaults (autofixable but may be unsafe)
 		// https://eslint.vuejs.org/rules/no-boolean-default.html
 		'!vue/no-boolean-default': ['error', 'default-false'],
 
@@ -105,6 +109,10 @@ module.exports = {
 		// Disallow the `<template>` `<script>` `<style>` block to be empty
 		// https://eslint.vuejs.org/rules/no-empty-component-block.html
 		'vue/no-empty-component-block': 'error',
+
+		// Disallow asynchronously registered expose
+		// https://eslint.vuejs.org/rules/no-expose-after-await.html
+		'vue/no-expose-after-await': 'error',
 
 		// Require valid keys in model option
 		// https://eslint.vuejs.org/rules/no-invalid-model-keys.html
@@ -126,12 +134,18 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/no-reserved-component-names.html
 		'vue/no-reserved-component-names': ['error', {
 			disallowVueBuiltInComponents: true,
+			// It's Vue3-related, but there is no reasons to use `<teleport />`
+			// or <suspense /> in Vue2 as well
 			disallowVue3BuiltInComponents: true,
 		}],
 
 		// Disallow specific block
 		// https://eslint.vuejs.org/rules/no-restricted-block.html
 		'vue/no-restricted-block': 'off',
+
+		// Disallow asynchronously called restricted methods
+		// https://eslint.vuejs.org/rules/no-restricted-call-after-await.html
+		'vue/no-restricted-call-after-await': 'off',
 
 		// Disallow specific classes in Vue components
 		// https://eslint.vuejs.org/rules/no-restricted-class.html
@@ -174,9 +188,21 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/no-this-in-before-route-enter.html
 		'vue/no-this-in-before-route-enter': 'error',
 
-		// Disallow using components that are not registered inside templates
-		// https://eslint.vuejs.org/rules/no-unregistered-components.html
-		'vue/no-unregistered-components': 'off',
+		// Disallow use of undefined components in <template>
+		// https://eslint.vuejs.org/rules/no-undef-components.html
+		// TODO: [2022-05-11] Not released yet
+		// 'vue/no-undef-components': 'off',
+
+		// Disallow undefined properties
+		// https://eslint.vuejs.org/rules/no-undef-properties.html
+		'vue/no-undef-properties': ['error', {
+			ignores: ['/^\\$/'],
+		}],
+
+		// Disallow unsupported Vue.js syntax on the specified version
+		// https://eslint.vuejs.org/rules/no-unsupported-features.html
+		// Note: should be configured individually
+		'vue/no-unsupported-features': 'off',
 
 		// Disallow unused properties
 		// https://eslint.vuejs.org/rules/no-unused-properties.html
@@ -208,6 +234,11 @@ module.exports = {
 			ignoreStringEscape: false,
 		}],
 
+		// Disallow `v-text` / `v-html` on component
+		// https://eslint.vuejs.org/rules/no-v-text.html
+		// TODO: [2022-05-11] Not released yet
+		// 'vue/no-v-text-v-html-on-component': 'error',
+
 		// Disallow use of `v-text`
 		// https://eslint.vuejs.org/rules/no-v-text.html
 		'vue/no-v-text': 'error',
@@ -216,11 +247,26 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/padding-line-between-blocks.html
 		'+vue/padding-line-between-blocks': ['error', 'always'],
 
+		// Require static class names in template to be in a separate `class` attribute
+		// (autofixable but is it really needed?)
+		// https://eslint.vuejs.org/rules/prefer-separate-static-class.html
+		'!vue/prefer-separate-static-class': 'off',
+
 		// Require the component to be directly exported
 		// https://eslint.vuejs.org/rules/require-direct-export.html
 		'vue/require-direct-export': ['error', {
 			disallowFunctionalComponentFunction: false,
 		}],
+
+		// Require type definitions in emits
+		// https://eslint.vuejs.org/rules/require-emit-validator.html
+		// Vue3 only
+		// 'vue/require-emit-validator': 'error',
+
+		// Require declare public properties using `expose`
+		// https://eslint.vuejs.org/rules/require-expose.html
+		// Vue3 only
+		// 'vue/require-expose': 'error',
 
 		// Require a name property in Vue components
 		// https://eslint.vuejs.org/rules/require-name-property.html
@@ -252,9 +298,5 @@ module.exports = {
 		'+vue/v-on-function-call': ['error', 'never', {
 			ignoreIncludesComment: true,
 		}],
-
-		// Enforce valid nextTick function calls (autofixable)
-		// https://eslint.vuejs.org/rules/valid-next-tick.html
-		'+vue/valid-next-tick': 'warn',
 	},
 };

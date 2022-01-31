@@ -17,6 +17,13 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/component-definition-name-casing.html
 		'+vue/component-definition-name-casing': ['error', 'kebab-case'],
 
+		// Enforce the location of first attribute (autofixable)
+		// https://eslint.vuejs.org/rules/first-attribute-linebreak.html
+		'+vue/first-attribute-linebreak': ['error', {
+			singleline: 'ignore',
+			multiline: 'below',
+		}],
+
 		// Require or disallow a line break before tag's closing brackets (autofixable)
 		// https://eslint.vuejs.org/rules/html-closing-bracket-newline.html
 		'+vue/html-closing-bracket-newline': ['error', {
@@ -137,12 +144,6 @@ module.exports = {
 			atComponent: 'shorthand',
 			default: 'shorthand',
 			named: 'shorthand',
-		}],
-
-		// Require `emits` option with name triggered by `$emit()`
-		// https://eslint.vuejs.org/rules/require-explicit-emits.html
-		'vue/require-explicit-emits': ['warn', {
-			allowProps: false,
 		}],
 	},
 };

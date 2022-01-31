@@ -27,14 +27,21 @@ const availableConfigs = [
 	{ name: 'json' },
 	{ name: 'json/jsonc', output: 'jsonc' },
 	{ name: 'json/package-json', output: 'package-json' },
-	{ name: 'vue2' },
+	{ name: 'vue/vue2', output: 'vue2' },
+	{ name: 'vue/vue3', output: 'vue3' },
 	{ name: 'yaml' },
 ];
 
 const rulesets = {
 	vue2: [
 		{
-			name: 'vue2',
+			name: 'vue/vue2',
+			overrides: { files: ['*.vue'] },
+		},
+	],
+	vue3: [
+		{
+			name: 'vue/vue3',
 			overrides: { files: ['*.vue'] },
 		},
 	],
@@ -71,9 +78,20 @@ const presets = [
 			{ name: 'base' },
 			{ name: 'node' },
 			{ name: 'browser' },
-			...rulesets.vue2,
 			...rulesets.jest,
 			...rulesets.assistive,
+		],
+	},
+	{
+		name: 'vue2',
+		configurations: [
+			...rulesets.vue2,
+		],
+	},
+	{
+		name: 'vue3',
+		configurations: [
+			...rulesets.vue3,
 		],
 	},
 	{

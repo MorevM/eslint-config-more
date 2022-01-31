@@ -29,10 +29,10 @@ const rulesToExtend = [
 	'+object-curly-newline',
 	'+object-curly-spacing',
 	'+object-property-newline',
-	// '!object-shorthand', // not released yet
+	// '!object-shorthand', // TODO: [2022-05-11] Not released yet
 	'+operator-linebreak',
 	'!prefer-template', // autofix works strange sometimes
-	// '+quote-props', // not released yet
+	// '+quote-props', // TODO: [2022-05-11] Not released yet
 	'+space-in-parens',
 	'+space-infix-ops',
 	'+space-unary-ops',

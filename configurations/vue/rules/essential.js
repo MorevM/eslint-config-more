@@ -5,6 +5,12 @@
 
 module.exports = {
 	rules: {
+		// Require component names to be always multi-word
+		// https://eslint.vuejs.org/rules/multi-word-component-names.html
+		'vue/multi-word-component-names': ['error', {
+			ignores: [],
+		}],
+
 		// Disallow using arrow functions to define watcher
 		// https://eslint.vuejs.org/rules/no-arrow-functions-in-watch.html
 		'vue/no-arrow-functions-in-watch': 'error',
@@ -12,6 +18,10 @@ module.exports = {
 		// Disallow asynchronous actions in computed properties
 		// https://eslint.vuejs.org/rules/no-async-in-computed-properties.html
 		'vue/no-async-in-computed-properties': 'error',
+
+		// Disallow accessing computed properties in `data`
+		// https://eslint.vuejs.org/rules/no-computed-properties-in-data.html
+		'vue/no-computed-properties-in-data': 'error',
 
 		// Disallow duplication of field names
 		// https://eslint.vuejs.org/rules/no-dupe-keys.html
@@ -86,6 +96,10 @@ module.exports = {
 			groups: [],
 		}],
 
+		// Disallow reserved names in props
+		// https://eslint.vuejs.org/rules/no-reserved-props.html
+		// Note: different between vue 2 and 3, included separately
+
 		// Enforce component's `data` property to be a function (autofixable)
 		// https://eslint.vuejs.org/rules/no-shared-component-data.html
 		'+vue/no-shared-component-data': 'error',
@@ -120,6 +134,10 @@ module.exports = {
 			allowUsingIterationVar: false,
 		}],
 
+		// Disallow useless attribute on `<template>`
+		// https://eslint.vuejs.org/rules/no-useless-template-attributes.html
+		'vue/no-useless-template-attributes': 'error',
+
 		// Require `v-bind:is` of `<component>` elements
 		// https://eslint.vuejs.org/rules/require-component-is.html
 		'vue/require-component-is': 'error',
@@ -149,6 +167,10 @@ module.exports = {
 		// Enforce usage of `exact` modifier on `v-on`
 		// https://eslint.vuejs.org/rules/use-v-on-exact.html
 		'vue/use-v-on-exact': 'error',
+
+		// Enforce valid `nextTick` function calls (autofixable)
+		// https://eslint.vuejs.org/rules/valid-next-tick.html
+		'+vue/valid-next-tick': 'error',
 
 		// Enforce valid template root
 		// https://eslint.vuejs.org/rules/valid-template-root.html
@@ -213,25 +235,5 @@ module.exports = {
 		// Enforce valid `v-text` directives
 		// https://eslint.vuejs.org/rules/valid-v-text.html
 		'vue/valid-v-text': 'error',
-
-		// Disallow custom modifiers on v-model used on the component
-		// https://eslint.vuejs.org/rules/no-custom-modifiers-on-v-model.html
-		'vue/no-custom-modifiers-on-v-model': 'error',
-
-		// Disallow adding multiple root nodes to the template
-		// https://eslint.vuejs.org/rules/no-multiple-template-root.html
-		'vue/no-multiple-template-root': 'error',
-
-		// Disallow `key` attribute on `<template v-for>`
-		// https://eslint.vuejs.org/rules/no-v-for-template-key.html
-		'vue/no-v-for-template-key': 'error',
-
-		// Disallow adding an argument to v-model used in custom component
-		// https://eslint.vuejs.org/rules/no-v-model-argument.html
-		'vue/no-v-model-argument': 'error',
-
-		// Enforce valid `.sync` modifier on `v-bind` directives
-		// https://eslint.vuejs.org/rules/valid-v-bind-sync.html
-		'vue/valid-v-bind-sync': 'error',
 	},
 };
