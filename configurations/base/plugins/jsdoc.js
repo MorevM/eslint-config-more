@@ -124,7 +124,7 @@ module.exports = {
 		// in complete sentences (autofixable but works incorrect)
 		// Related issue: https://github.com/gajus/eslint-plugin-jsdoc/issues/779
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-description-complete-sentence
-		'!jsdoc/require-description-complete-sentence': 'warn',
+		'!jsdoc/require-description-complete-sentence': 'off',
 
 		// Requires that all functions have a description
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-description
