@@ -201,7 +201,8 @@ module.exports = {
 
 		// Forbid unassigned imports
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unassigned-import.md
-		'import/no-unassigned-import': 'warn',
+		// Note: well, imports with side-effects are bad, but what about importing style files?
+		'import/no-unassigned-import': 'off',
 
 		// Forbid named default exports
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-named-default.md
