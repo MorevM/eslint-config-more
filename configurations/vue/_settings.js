@@ -3,9 +3,12 @@ const base = {
 	parser: 'vue-eslint-parser',
 	parserOptions: {
 		parser: '@babel/eslint-parser',
-		ecmaVersion: 11,
+		ecmaVersion: 2021,
 		sourceType: 'module',
 		requireConfigFile: false,
+		babelOptions: {
+			plugins: ['@babel/plugin-syntax-jsx'],
+		},
 	},
 	rules: {
 		indent: 'off',
