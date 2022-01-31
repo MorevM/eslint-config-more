@@ -172,6 +172,16 @@ module.exports = {
 				'sibling',
 				'index',
 			],
+			'pathGroups': [
+				{
+					pattern: '~*/**/*.*',
+					group: 'external',
+				},
+				{
+					pattern: '@*/**/*.*',
+					group: 'external',
+				},
+			],
 			'newlines-between': 'ignore',
 		}],
 
