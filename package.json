@@ -34,10 +34,10 @@
 		".eslintrc.js"
 	],
 	"exports": {
-		".": "./build/presets/all.js",
-		"./preset/all": "./build/presets/all.js",
-		"./preset/all/warn-autofixable": "./build/presets/all-warn-autofixable.js",
-		"./preset/all/off-autofixable": "./build/presets/all-off-autofixable.js",
+		".": "./build/presets/common.js",
+		"./preset/common": "./build/presets/common.js",
+		"./preset/common/warn-autofixable": "./build/presets/common-warn-autofixable.js",
+		"./preset/common/off-autofixable": "./build/presets/common-off-autofixable.js",
 		"./preset/vue2": "./build/presets/vue2.js",
 		"./preset/vue2/warn-autofixable": "./build/presets/vue2-warn-autofixable.js",
 		"./preset/vue2/off-autofixable": "./build/presets/vue2-off-autofixable.js",
@@ -81,7 +81,7 @@
 		"./yaml/warn-autofixable": "./build/configurations/yaml-warn-autofixable.js",
 		"./yaml/off-autofixable": "./build/configurations/yaml-off-autofixable.js"
 	},
-	"main": "./build/presets/all.js",
+	"main": "./build/presets/common.js",
 	"scripts": {
 		"prepare": "husky install ./.husky",
 		"build": "node utils/build.js",

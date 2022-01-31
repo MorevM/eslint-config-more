@@ -73,7 +73,7 @@ const rulesets = {
 
 const presets = [
 	{
-		name: 'all',
+		name: 'common',
 		configurations: [
 			{ name: 'base' },
 			{ name: 'node' },
@@ -153,9 +153,9 @@ const getNames = (config, autofixable, isPresets = false) => {
 		});
 	});
 
-	// Main export aliasing `/presets/all`
+	// Main export aliasing `/presets/base`
 	exportsField = {
-		'.': exportsField['./preset/all'],
+		'.': exportsField['./preset/common'],
 		...exportsField,
 	};
 

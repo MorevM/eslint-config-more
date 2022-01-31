@@ -34,15 +34,17 @@ The rules don't intersect, so if you are working with `Vue2`, you need to includ
 
 ### Configurations
 
-* [`@morev/eslint-config/base`](./configurations/base) - base ESLint configuration
-* [`@morev/eslint-config/browser`](./configurations/browser) - for projects that use DOM and other browser APIs
-* [`@morev/eslint-config/node`](./configurations/node) - for projects that use [Node.js](https://nodejs.org/)
-* [`@morev/eslint-config/vue2`](./configurations/vue2) - for projects that use [Vue 2](https://vuejs.org/)
-* [`@morev/eslint-config/jest`](./configurations/jest) - for projects that use [Jest](https://jestjs.io/)
-* [`@morev/eslint-config/json`](./configurations/json) - for projects that use [JSON files](https://en.wikipedia.org/wiki/JSON)
+* `@morev/eslint-config/base` - base ESLint configuration
+* `@morev/eslint-config/browser` - for projects that use DOM and other browser APIs
+* `@morev/eslint-config/node` - for projects that use [Node.js](https://nodejs.org/)
+* `@morev/eslint-config/jest` - for projects that use [Jest](https://jestjs.io/)
+* For projects that use [VueJS](https://vuejs.org/)
+  * `@morev/eslint-config/vue2` - rules for `Vue 2.*`
+  * `@morev/eslint-config/vue3` - rules for `Vue 3.*`
+* `@morev/eslint-config/json` - for projects that use [JSON files](https://en.wikipedia.org/wiki/JSON)
   * `@morev/eslint-config/jsonc` - superset of `json` for `.jsonc` and `.json5` files
   * `@morev/eslint-config/package-json` - superset of `json` for `package.json` file to keep consistent order of fields
-* [`@morev/eslint-config/yaml`](./configurations/yaml) - for projects that use [YAML files](https://en.wikipedia.org/wiki/YAML)
+* `@morev/eslint-config/yaml` - for projects that use [YAML files](https://en.wikipedia.org/wiki/YAML)
 
 > Don't be surprised that these files aren't in the root of repository - look at the `exports` sections of [`package.json`](./package.json).
 
@@ -62,7 +64,7 @@ module.exports = {
       files: ['*.json'],
       extends: ['@morev/eslint-config/json']
     },
-    // More overrides
+    // ...more overrides
   ]
 }
 ```
@@ -74,13 +76,23 @@ So, presets just configurations with pre-defined `overrides`.
 
 All presets comes with `/warn-autofixable` and `/off-autofixable` variants exactly the same as individual configurations.
 
-* `all` \
-  Default preset which includes all available rules with default `overrides`.
+* `common` \
+  Default preset which includes frequently used rules with default `overrides`. \
+  It includes configurations:
+  * `base`
+  * `node`
+  * `browser`
+  * `jest`
+  * `yaml`
+  * `json`
+  * `jsonc`
+  * `package-json`
   ```js
   module.exports = {
     root: true,
-    extends: ['@morev/eslint-config/preset/all'], // or just '@morev'
+    extends: ['@morev/eslint-config/preset/common'], // or just '@morev' - it is default export
   };
+  
   // It's the same as:
   module.exports = {
     root: true,
@@ -115,7 +127,13 @@ All presets comes with `/warn-autofixable` and `/off-autofixable` variants exact
   ```
   
 * `assistive` \
-  `Assistive` preset works the same as `all`, but includes only assistive files (`.json` and `.yaml`) overrides.
+  `Assistive` preset works the same as `common`, but includes only assistive files (`.json` and `.yaml`) overrides.
+  Configurations inside:
+  * `yaml`
+  * `json`
+  * `jsonc`
+  * `package-json`
+  
   ```js
   module.exports = {
     root: true,
@@ -147,7 +165,7 @@ All presets comes with `/warn-autofixable` and `/off-autofixable` variants exact
   ```
   
 * `jest` \
-  `jest` preset works the same as `all`, but includes only `jest` configuration. \
+  `jest` preset works the same as `common`, but includes only `jest` configuration. \
   Files glob pattern is the same as [`Jest testMatch` default option](https://jestjs.io/ru/docs/configuration#testmatch-arraystring)
   ```js
   module.exports = {
@@ -162,6 +180,46 @@ All presets comes with `/warn-autofixable` and `/off-autofixable` variants exact
       {
         files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
         extends: ['@morev/eslint-config/jest'],
+      },
+    ],
+  };
+  ```
+  
+* `vue2` \
+  `vue2` preset includes `vue2` rules for Vue files.
+  ```js
+  module.exports = {
+    root: true,
+    extends: ['@morev/eslint-config/preset/vue2'],
+  };
+
+  // It's the same as:
+  module.exports = {
+    root: true,
+    overrides: [
+      {
+        files: ['*.vue'],
+        extends: ['@morev/eslint-config/vue2'],
+      },
+    ],
+  };
+  ```
+  
+* `vue3` \
+  `vue3` preset includes `vue3` rules for Vue files.
+  ```js
+  module.exports = {
+    root: true,
+    extends: ['@morev/eslint-config/preset/vue3'],
+  };
+
+  // It's the same as:
+  module.exports = {
+    root: true,
+    overrides: [
+      {
+        files: ['*.vue'],
+        extends: ['@morev/eslint-config/vue3'],
       },
     ],
   };
@@ -186,15 +244,18 @@ Thats why all configurations and presets have a three variants:
   '@morev/eslint-config/node'
   '@morev/eslint-config/jest'
   '@morev/eslint-config/vue2'
+  '@morev/eslint-config/vue3'
   '@morev/eslint-config/yaml'
   '@morev/eslint-config/json'
   '@morev/eslint-config/jsonc'
   '@morev/eslint-config/package-json'
   
   # Presets
-  '@morev/eslint-config/preset/all' # Also available as '@morev' - default export
+  '@morev/eslint-config/preset/common' # Also available as '@morev' - default export
   '@morev/eslint-config/preset/jest'
   '@morev/eslint-config/preset/assistive'
+  '@morev/eslint-config/preset/vue2'
+  '@morev/eslint-config/preset/vue3'
   ```
 * `Warn autofixable` \
   The recommended option to use. \
@@ -211,15 +272,18 @@ Thats why all configurations and presets have a three variants:
   '@morev/eslint-config/node/warn-autofixable'
   '@morev/eslint-config/jest/warn-autofixable'
   '@morev/eslint-config/vue2/warn-autofixable'
+  '@morev/eslint-config/vue3/warn-autofixable'
   '@morev/eslint-config/yaml/warn-autofixable'
   '@morev/eslint-config/json/warn-autofixable'
   '@morev/eslint-config/jsonc/warn-autofixable'
   '@morev/eslint-config/package-json/warn-autofixable'
   
   # Presets
-  '@morev/eslint-config/preset/all/warn-autofixable'
+  '@morev/eslint-config/preset/common/warn-autofixable'
   '@morev/eslint-config/preset/jest/warn-autofixable'
   '@morev/eslint-config/preset/assistive/warn-autofixable'
+  '@morev/eslint-config/preset/vue2/warn-autofixable'
+  '@morev/eslint-config/preset/vue3/warn-autofixable'
   ```
   
 * Off autofixable \
@@ -235,15 +299,18 @@ Thats why all configurations and presets have a three variants:
   '@morev/eslint-config/node/off-autofixable'
   '@morev/eslint-config/jest/off-autofixable'
   '@morev/eslint-config/vue2/off-autofixable'
+  '@morev/eslint-config/vue3/off-autofixable'
   '@morev/eslint-config/yaml/off-autofixable'
   '@morev/eslint-config/json/off-autofixable'
   '@morev/eslint-config/jsonc/off-autofixable'
   '@morev/eslint-config/package-json/off-autofixable'
   
   # Presets
-  '@morev/eslint-config/preset/all/off-autofixable'
+  '@morev/eslint-config/preset/common/off-autofixable'
   '@morev/eslint-config/preset/jest/off-autofixable'
   '@morev/eslint-config/preset/assistive/off-autofixable'
+  '@morev/eslint-config/preset/vue2/off-autofixable'
+  '@morev/eslint-config/preset/vue3/off-autofixable'
   ```
   
 ## Usage
