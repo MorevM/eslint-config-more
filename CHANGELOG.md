@@ -1,3 +1,21 @@
+# [3.0.0](https://github.com/MorevM/eslint-config/compare/v2.1.0...v3.0.0) (2022-01-31)
+
+
+### Code Refactoring
+
+* Change `all` preset name to `common` excluding `vue` configuration from it ([8e01cd3](https://github.com/MorevM/eslint-config/commit/8e01cd39f8c46061abeba8e09ec8b52fb92e851f))
+
+
+### Features
+
+* **package-json:** Add all fields from current NPM release ([60f1b15](https://github.com/MorevM/eslint-config/commit/60f1b15e1845688ca1478907468bf0371ddd44d7))
+* **vue:** Review `vue2` rules and implement `vue3` rules ([b6074ff](https://github.com/MorevM/eslint-config/commit/b6074ff0783c773d46e8706befe1ff1f604072fb))
+
+
+### BREAKING CHANGES
+
+* Preset `all` no longer exists
+
 # [2.1.0](https://github.com/MorevM/eslint-config/compare/v2.0.0...v2.1.0) (2022-01-30)
 
 
