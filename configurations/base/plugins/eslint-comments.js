@@ -20,9 +20,9 @@ module.exports = {
 		// Note: It's usually obvious what's wrong here
 		'eslint-comments/no-unlimited-disable': 'off',
 
-		// Disallow unused `eslint-disable` comments
+		// Disallow unused `eslint-disable` comments (autofixable but confusing)
 		// https://mysticatea.github.io/eslint-plugin-eslint-comments/rules/no-unused-disable.html
-		'eslint-comments/no-unused-disable': 'warn',
+		'+eslint-comments/no-unused-disable': 'warn',
 
 		// Disallow unused `eslint-enable` comments
 		// https://mysticatea.github.io/eslint-plugin-eslint-comments/rules/no-unused-enable.html
