@@ -134,7 +134,7 @@ module.exports = {
 		// It allows nested, but they should be wrapped in parentheses (thats correct).
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-nested-ternary.md
 		'no-nested-ternary': 'off',
-		'+unicorn/no-nested-ternary': 'error',
+		'+unicorn/no-nested-ternary': 'off',
 
 		// Disallow `new Array()` (partly autofixable)
 		// Note: no need, it's clear if only one parameter as defined in base `no-array-constructor`
