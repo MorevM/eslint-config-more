@@ -1,3 +1,10 @@
+## [3.1.3](https://github.com/MorevM/eslint-config/compare/v3.1.2...v3.1.3) (2022-02-02)
+
+
+### Bug Fixes
+
+* **comments:** Disable autofix for rule `eslint-comments/no-unused-disable` ([ffcbfc7](https://github.com/MorevM/eslint-config/commit/ffcbfc772f5d12927758f879d566bc73c60906fb))
+
 ## [3.1.2](https://github.com/MorevM/eslint-config/compare/v3.1.1...v3.1.2) (2022-02-02)
 
 
