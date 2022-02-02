@@ -31,7 +31,10 @@ const rulesToExtend = [
 	'+object-property-newline',
 	// '!object-shorthand', // TODO: [2022-05-11] Not released yet
 	'+operator-linebreak',
-	'!prefer-template', // autofix works strange sometimes
+	// It seems https://github.com/JuniorTour/vue-template-babel-compiler
+	// not stable, turned off for a white
+	// TODO: [2022-05-11] Try again with vue-template-babel-compiler
+	// '!prefer-template', // autofix works strange sometimes
 	// '+quote-props', // TODO: [2022-05-11] Not released yet
 	'+space-in-parens',
 	'+space-infix-ops',
