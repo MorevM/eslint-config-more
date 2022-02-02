@@ -69,6 +69,7 @@ module.exports = {
 				'^(?:n|N|no|No|NO)$',
 				'^(?:on|On|ON|off|Off|OFF)$',
 				'^[.]$',
+				'^/',
 			],
 		}],
 
