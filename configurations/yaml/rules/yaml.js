@@ -70,6 +70,7 @@ module.exports = {
 				'^(?:on|On|ON|off|Off|OFF)$',
 				'^[.]$',
 				'^/',
+				'^[0-9\-.+]+(?:T[0-9\-.+]+)?Z?$', // eslint-disable-line no-useless-escape
 			],
 		}],
 
