@@ -195,7 +195,9 @@ module.exports = {
 
 		// Disallow undefined properties
 		// https://eslint.vuejs.org/rules/no-undef-properties.html
-		'vue/no-undef-properties': ['error', {
+		// TODO: [2022-05-11] Doesn't work well with Vuex, has issue, review it later
+		// Issue link: https://github.com/vuejs/eslint-plugin-vue/issues/1675
+		'vue/no-undef-properties': ['off', {
 			ignores: ['/^\\$/'],
 		}],
 
