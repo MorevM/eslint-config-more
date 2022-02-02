@@ -71,6 +71,7 @@ module.exports = {
 				'^[.]$',
 				'^/',
 				'^[0-9\-.+]+(?:T[0-9\-.+]+)?Z?$', // eslint-disable-line no-useless-escape
+				'^[0-9_]+$',
 			],
 		}],
 
