@@ -1,3 +1,10 @@
+## [3.1.4](https://github.com/MorevM/eslint-config/compare/v3.1.3...v3.1.4) (2022-02-02)
+
+
+### Bug Fixes
+
+* Add `node 15` to package json `engines` field ([519a9e8](https://github.com/MorevM/eslint-config/commit/519a9e8469b238bf4b5cbe20e6703d0d9873a509))
+
 ## [3.1.3](https://github.com/MorevM/eslint-config/compare/v3.1.2...v3.1.3) (2022-02-02)
 
 
