@@ -1,3 +1,17 @@
+## [3.1.2](https://github.com/MorevM/eslint-config/compare/v3.1.1...v3.1.2) (2022-02-02)
+
+
+### Bug Fixes
+
+* **base:** Turn off rule `unicorn/no-nested-ternary` ([fafd820](https://github.com/MorevM/eslint-config/commit/fafd8208529f830daeb2bd00820aa1ec8597b735))
+* **comments:** Disable autofix for rule `eslint-comments/no-unused-disable` ([899af24](https://github.com/MorevM/eslint-config/commit/899af2409130e34c2716e3c8c4e5b0cc78fb0f62))
+* **vue:** Disable `vue/preder-template` (blocking `vue-template-babel-compiler`) ([0e5ced0](https://github.com/MorevM/eslint-config/commit/0e5ced06ef524dcce160445e9c87cffc0394ddf8))
+* **vue:** Turn off `no-undef-properties` due lack of Vuex support ([275f98f](https://github.com/MorevM/eslint-config/commit/275f98fd916b03f7f1cbc38ea360c311d1673b1c))
+* **yaml:** Disable `yml/plain-scalar` for date-like strings ([3d2fcfc](https://github.com/MorevM/eslint-config/commit/3d2fcfcf6a8dc8e3f0b67f93474f3c4cd0a2cbae))
+* **yaml:** Disable `yml/plain-scalar` rule for keys starts with `/` ([6aaa4f2](https://github.com/MorevM/eslint-config/commit/6aaa4f2563bb74d43b0c815050cadfa811ebceca))
+* **yaml:** Disable `yml/plain-scalar` rule for string which can be interpeted as numbers with `_` ([7c9d85b](https://github.com/MorevM/eslint-config/commit/7c9d85b226980ad9169f01218c2f5bb9965cc1e6))
+* **yaml:** Increase limit for `max-len` rule and downgrade severity to `warn` for yaml files ([0f98c16](https://github.com/MorevM/eslint-config/commit/0f98c16149dc469521f9b63b565495321d5b477a))
+
 ## [3.1.1](https://github.com/MorevM/eslint-config/compare/v3.1.0...v3.1.1) (2022-01-31)
 
 
