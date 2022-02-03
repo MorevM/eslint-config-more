@@ -1,3 +1,10 @@
+## [3.1.5](https://github.com/MorevM/eslint-config/compare/v3.1.4...v3.1.5) (2022-02-03)
+
+
+### Bug Fixes
+
+* **base:** Downgrade severity of `unicorn/push-push` rule to `warn`, disable autofix for that rule ([fa0a902](https://github.com/MorevM/eslint-config/commit/fa0a90253504c6aa79c13e2e6fefdf01b857a098))
+
 ## [3.1.4](https://github.com/MorevM/eslint-config/compare/v3.1.3...v3.1.4) (2022-02-02)
 
 
