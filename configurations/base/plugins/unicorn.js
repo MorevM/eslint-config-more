@@ -90,9 +90,9 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-method-this-argument.md
 		'+unicorn/no-array-method-this-argument': 'error',
 
-		// Enforce combining multiple `Array#push()` into one call (partly autofixable)
+		// Enforce combining multiple `Array#push()` into one call (autofixable but doesn't care about comments, may be confusing)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-push-push.md
-		'+unicorn/no-array-push-push': 'error',
+		'!unicorn/no-array-push-push': 'warn',
 
 		// Disallow `Array#reduce()` and `Array#reduceRight()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-reduce.md
