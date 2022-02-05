@@ -11,5 +11,4 @@ updates:
     commit-message:
       prefix: chore
     labels: [dependencies]
-    reviewers:
-      - MorevM
+    open-pull-requests-limit: 10
