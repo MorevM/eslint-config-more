@@ -4,7 +4,7 @@ const { mergeWithArrayComparer } = require('./helpers');
 
 const CONFIGS_PATH = resolve(__dirname, '../configurations');
 
-const CONFIGURATION_DEFAULTS = { autofixable: 'warn' };
+const CONFIGURATION_DEFAULTS = { mode: 'default' };
 
 const makeConfig = (_configs) => {
 	const configs = _configs.map(c => ({
@@ -15,9 +15,9 @@ const makeConfig = (_configs) => {
 
 	let result = {};
 
-	configs.forEach(({ name, autofixable, overrides }) => {
+	configs.forEach(({ name, mode, overrides }) => {
 		const configFactory = require(resolve(CONFIGS_PATH, name));
-		let processed = configFactory(autofixable);
+		let processed = configFactory(mode);
 
 		if (overrides) {
 			processed = { overrides: [_mergeWith({}, processed, overrides, mergeWithArrayComparer)] };

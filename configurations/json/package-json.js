@@ -4,8 +4,8 @@
  */
 const { processExports } = require('../../utils/helpers');
 
-module.exports = (autofixable) => processExports({
-	autofixable,
+module.exports = (mode) => processExports({
+	mode,
 	base: {
 		plugins: ['jsonc'],
 		parser: 'jsonc-eslint-parser',

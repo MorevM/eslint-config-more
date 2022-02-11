@@ -8,4 +8,4 @@ const vue2Parts = [
 
 const parts = [...commonParts, ...vue2Parts];
 
-module.exports = (autofixable) => processExports({ autofixable, base,	parts });
+module.exports = (mode) => processExports({ mode, base,	parts });

@@ -85,6 +85,7 @@ const presets = [
 			{ name: 'base' },
 			{ name: 'node' },
 			{ name: 'browser' },
+			...rulesets.typescript,
 			...rulesets.jest,
 			...rulesets.assistive,
 		],
@@ -123,18 +124,18 @@ const presets = [
 
 let exportsField = {};
 
-const getNames = (config, autofixable, isPresets = false) => {
+const getNames = (config, mode, isPresets = false) => {
 	const resolvedName = config.output || config.name;
 
-	const filename = (autofixable === 'bypass')
+	const filename = (mode === 'default')
 		? `${resolvedName}.js`
-		: `${resolvedName}-${autofixable}-autofixable.js`;
+		: `${resolvedName}-${mode}.js`;
 
 	const exportsPrefix = isPresets ? 'preset/' : '';
 
-	const exportsName = (autofixable === 'bypass')
+	const exportsName = (mode === 'default')
 		? `./${exportsPrefix}${resolvedName}`
-		: `./${exportsPrefix}${resolvedName}/${autofixable}-autofixable`;
+		: `./${exportsPrefix}${resolvedName}/${mode}`;
 
 	return { filename, exportsName };
 };
@@ -142,11 +143,11 @@ const getNames = (config, autofixable, isPresets = false) => {
 (async () => {
 	// Create presets
 	await presets.forEach(async (preset) => {
-		await ['bypass', 'warn', 'off'].forEach(async (autofixable) => {
-			let configSource = makeConfig(preset.configurations.map(c => ({ ...c, autofixable })));
+		await ['default', 'strict', 'quiet'].forEach(async (mode) => {
+			let configSource = makeConfig(preset.configurations.map(c => ({ ...c, mode })));
 			configSource = `module.exports = ${JSON.stringify(configSource, null, '\t')}`;
 
-			const { filename, exportsName } = getNames(preset, autofixable, true);
+			const { filename, exportsName } = getNames(preset, mode, true);
 			exportsField[exportsName] = `${PRESETS_DIR_REL}${filename}`;
 
 			fs.writeFileSync(`${PRESETS_DIR}/${filename}`, configSource);
@@ -155,18 +156,18 @@ const getNames = (config, autofixable, isPresets = false) => {
 
 	// Create configurations
 	await availableConfigs.forEach(async (config) => {
-		await ['bypass', 'warn', 'off'].forEach(async (autofixable) => {
-			let configSource = makeConfig([{ ...config, autofixable }]);
+		await ['default', 'strict', 'quiet'].forEach(async (mode) => {
+			let configSource = makeConfig([{ ...config, mode }]);
 			configSource = `module.exports = ${JSON.stringify(configSource, null, '\t')}`;
 
-			const { filename, exportsName } = getNames(config, autofixable);
+			const { filename, exportsName } = getNames(config, mode);
 			exportsField[exportsName] = `${CONFIGS_DIR_REL}${filename}`;
 
 			fs.writeFileSync(`${CONFIGS_DIR}/${filename}`, configSource);
 		});
 	});
 
-	// Main export aliasing `/presets/base`
+	// Main export aliasing `/presets/common`
 	exportsField = {
 		'.': exportsField['./preset/common'],
 		...exportsField,

@@ -37,19 +37,19 @@ const extensionFromBase = ({ prefix, baseRules, rulesToExtend }) => {
 	return { rules };
 };
 
-const getProcessedRules = ({ autofixable, base, rules }) => {
-	if (autofixable === 'bypass') return rules;
+const getProcessedRules = ({ mode, base, rules }) => {
+	if (mode === 'strict') return rules;
 
 	const autofixableRules = Object.entries(base.rules)
 		.filter(([key]) => key.startsWith('+'))
 		.map(([key]) => key.slice(1));
 
-	return autofixable === 'warn'
-		? autofixableRulesToWarn(rules, autofixableRules)
-		: autofixableRulesToOff(rules, autofixableRules);
+	return mode === 'default'
+		? autofixableRulesToWarn(rules, autofixableRules) // default
+		: autofixableRulesToOff(rules, autofixableRules); // quiet
 };
 
-const processExports = ({ autofixable, base, parts }) => {
+const processExports = ({ mode, base, parts }) => {
 	const initialClone = _clonedeep(base);
 	const mergedParts = _mergeWith(
 		{ plugins: ['no-autofix'] },
@@ -68,7 +68,7 @@ const processExports = ({ autofixable, base, parts }) => {
 			}, []),
 	);
 
-	const processedRules = getProcessedRules({ autofixable, base: mergedParts, rules });
+	const processedRules = getProcessedRules({ mode, base: mergedParts, rules });
 
 	return _mergeWith(
 		initialClone,

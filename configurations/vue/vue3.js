@@ -9,4 +9,4 @@ const vue3Parts = [
 
 const parts = [...commonParts, ...vue3Parts];
 
-module.exports = (autofixable) => processExports({ autofixable, base,	parts });
+module.exports = (mode) => processExports({ mode, base,	parts });
