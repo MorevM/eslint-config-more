@@ -34,6 +34,12 @@ const availableConfigs = [
 ];
 
 const rulesets = {
+	typescript: [
+		{
+			name: 'typescript',
+			overrides: { files: ['*.ts'] },
+		},
+	],
 	vue2: [
 		{
 			name: 'vue/vue2',
@@ -105,6 +111,12 @@ const presets = [
 		name: 'assistive',
 		configurations: [
 			...rulesets.assistive,
+		],
+	},
+	{
+		name: 'typescript',
+		configurations: [
+			...rulesets.typescript,
 		],
 	},
 ];

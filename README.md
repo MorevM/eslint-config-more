@@ -37,6 +37,7 @@ The rules don't intersect, so if you are working with `Vue2`, you need to includ
 * `@morev/eslint-config/base` - base ESLint configuration
 * `@morev/eslint-config/browser` - for projects that use DOM and other browser APIs
 * `@morev/eslint-config/node` - for projects that use [Node.js](https://nodejs.org/)
+* `@morev/eslint-config/typescript` - for projects that use [Typescript](https://www.typescriptlang.org/)
 * `@morev/eslint-config/jest` - for projects that use [Jest](https://jestjs.io/)
 * For projects that use [VueJS](https://vuejs.org/)
   * `@morev/eslint-config/vue2` - rules for `Vue 2.*`
