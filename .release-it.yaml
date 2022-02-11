@@ -8,7 +8,7 @@ npm:
 
 plugins:
   '@release-it/conventional-changelog':
-    preset: angular
+    preset: conventionalcommits
     infile: CHANGELOG.md
 
 hooks:
