@@ -1,3 +1,10 @@
+### [4.0.1](https://github.com/MorevM/eslint-config/compare/v4.0.0...v4.0.1) (2022-02-11)
+
+
+### Bug Fixes
+
+* Add `typescript` preset ([afb7068](https://github.com/MorevM/eslint-config/commit/afb70689ac34161c4413cd4b6001b840946b8714))
+
 ## [4.0.0](https://github.com/MorevM/eslint-config/compare/v3.1.7...v4.0.0) (2022-02-11)
 
 
