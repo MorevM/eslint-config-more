@@ -1,3 +1,14 @@
+## [4.0.0](https://github.com/MorevM/eslint-config/compare/v3.1.7...v4.0.0) (2022-02-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add `typescript` configuration
+
+### Features
+
+* Add `typescript` configuration ([9c37323](https://github.com/MorevM/eslint-config/commit/9c37323fa5028d7b18d7985f1fa2f36ad622255a))
+
 ## [3.1.7](https://github.com/MorevM/eslint-config/compare/v3.1.6...v3.1.7) (2022-02-05)
 
 ## [3.1.6](https://github.com/MorevM/eslint-config/compare/v3.1.5...v3.1.6) (2022-02-05)
