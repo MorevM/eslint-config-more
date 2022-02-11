@@ -1,3 +1,21 @@
+## [5.0.0](https://github.com/MorevM/eslint-config/compare/v4.0.1...v5.0.0) (2022-02-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* Change naming convention of `configurations` and `presets`
+
+### Features
+
+* Change naming convention of `configurations` and `presets` ([525c5bb](https://github.com/MorevM/eslint-config/commit/525c5bb878505eec06a3cf038220281b70446485))
+
+
+### Bug Fixes
+
+* Correct `.editorconfig` ([5ab7af2](https://github.com/MorevM/eslint-config/commit/5ab7af290e451e19db3f21e675fa6d79e3c2f1f7))
+* Downgrade severity of multiple rules ([751253b](https://github.com/MorevM/eslint-config/commit/751253b6e3a3ca0bf4f56db79aad10842b6a6e5c))
+* Upgade `README.md` ([87db1d5](https://github.com/MorevM/eslint-config/commit/87db1d5e94e3d13286f859c366b79451a0b41a53))
+
 ### [4.0.1](https://github.com/MorevM/eslint-config/compare/v4.0.0...v4.0.1) (2022-02-11)
 
 
