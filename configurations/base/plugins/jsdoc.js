@@ -7,7 +7,7 @@ module.exports = {
 
 		// Reports invalid alignment of JSDoc block asterisks (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-alignment
-		'+jsdoc/check-alignment': 'error',
+		'+jsdoc/check-alignment': 'warn',
 
 		// Ensures that (JavaScript) examples within JSDoc adhere to ESLint rules
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-examples
@@ -57,7 +57,7 @@ module.exports = {
 		// Expects the following tags to be empty of any content
 		// (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#empty-tags
-		'+jsdoc/empty-tags': 'error',
+		'+jsdoc/empty-tags': 'warn',
 
 		// Reports an issue with any non-constructor function using `@implements`
 		// https://github.com/gajus/eslint-plugin-jsdoc#implements-on-classes
@@ -75,14 +75,14 @@ module.exports = {
 		// Controls how and whether jsdoc blocks can be expressed
 		// as single or multiple line blocks (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#multiline-blocks
-		'+jsdoc/multiline-blocks': ['error', {
+		'+jsdoc/multiline-blocks': ['warn', {
 			noMultilineBlocks: false,
 			noSingleLineBlocks: true,
 		}],
 
 		// Enforces a consistent padding of the block description (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#newline-after-description
-		'+jsdoc/newline-after-description': ['error', 'always'],
+		'+jsdoc/newline-after-description': ['warn', 'always'],
 
 		// Checks for multi-line-style comments which fail
 		// to meet the criteria of a jsdoc block (autofixable)
@@ -92,7 +92,7 @@ module.exports = {
 		// Reports defaults being used on the relevant portion
 		// of `@param` or `@default` (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-defaults
-		'+jsdoc/no-defaults': 'error',
+		'+jsdoc/no-defaults': 'warn',
 
 		// Report if certain always expected comment structures are missing
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-missing-syntax
@@ -141,7 +141,7 @@ module.exports = {
 		// Requires (or disallows) a hyphen before the `@param` description
 		// (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-hyphen-before-param-description
-		'+jsdoc/require-hyphen-before-param-description': ['error', 'never'],
+		'+jsdoc/require-hyphen-before-param-description': ['warn', 'never'],
 
 		// Checks for presence of jsdoc comments
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-jsdoc

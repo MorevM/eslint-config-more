@@ -58,7 +58,7 @@ module.exports = {
 
 		// Require following curly brace conventions (autofixable)
 		// https://eslint.org/docs/rules/curly
-		'+curly': ['error', 'multi-line'],
+		'+curly': ['warn', 'multi-line'],
 
 		// Require `default` case in `switch` statements
 		// https://eslint.org/docs/rules/default-case
@@ -76,7 +76,7 @@ module.exports = {
 
 		// Enforce dot notation whenever possible (autofixable)
 		// https://eslint.org/docs/rules/dot-notation
-		'+dot-notation': ['error', {
+		'+dot-notation': ['warn', {
 			allowKeywords: true,
 		}],
 
@@ -219,7 +219,7 @@ module.exports = {
 
 		// Disallow `return` before `else` (autofixable)
 		// https://eslint.org/docs/rules/no-else-return
-		'+no-else-return': ['error', {
+		'+no-else-return': ['warn', {
 			allowElseIf: true,
 		}],
 
@@ -262,7 +262,7 @@ module.exports = {
 
 		// Disallow unnecessary semicolons (autofixable)
 		// https://eslint.org/docs/rules/no-extra-semi
-		'+no-extra-semi': 'error',
+		'+no-extra-semi': 'warn',
 
 		// Disallow floating decimals (autofixable but...I just hate leading zeros)
 		// https://eslint.org/docs/rules/no-floating-decimal
@@ -692,7 +692,7 @@ module.exports = {
 
 		// Disallow the use of `Math.pow` in favor of the `**` operator (autofixable)
 		// https://eslint.org/docs/rules/prefer-exponentiation-operator
-		'+prefer-exponentiation-operator': 'error',
+		'+prefer-exponentiation-operator': 'warn',
 
 		// Enforce using named capture group in regular expression
 		// https://eslint.org/docs/rules/prefer-named-capture-group
@@ -737,7 +737,7 @@ module.exports = {
 		// Require quotes around object literal property names (autofixable)
 		// https://eslint.org/docs/rules/quote-props
 		// Note: should be consistent, but prefer without quotes
-		'+quote-props': ['error', 'consistent-as-needed', {
+		'+quote-props': ['warn', 'consistent-as-needed', {
 			keywords: false,
 			unnecessary: false,
 			numbers: true,

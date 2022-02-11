@@ -46,7 +46,7 @@ module.exports = {
 
 		// Enforce order of properties in components (autofixable)
 		// https://eslint.vuejs.org/rules/order-in-components.html
-		'+vue/order-in-components': ['error', {
+		'+vue/order-in-components': ['warn', {
 			order: [
 				'el',
 				'name',

@@ -31,7 +31,7 @@ module.exports = {
 
 		// Enforce no spaces between braces (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/empty-brace-spaces.md
-		'+unicorn/empty-brace-spaces': 'error',
+		'+unicorn/empty-brace-spaces': 'warn',
 
 		// Enforce passing a `message` value when creating a built-in error
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/error-message.md
@@ -39,7 +39,7 @@ module.exports = {
 
 		// Require escape sequences to use uppercase values (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/escape-case.md
-		'+unicorn/escape-case': 'error',
+		'+unicorn/escape-case': 'warn',
 
 		// Add expiration conditions to TODO comments
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/expiring-todo-comments.md
@@ -69,7 +69,7 @@ module.exports = {
 		// Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol` and `BigInt`
 		// (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/new-for-builtins.md
-		'+unicorn/new-for-builtins': 'error',
+		'+unicorn/new-for-builtins': 'warn',
 
 		// Enforce specifying rules to disable in `eslint-disable` comments
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-abusive-eslint-disable.md
@@ -88,7 +88,7 @@ module.exports = {
 
 		// Disallow using the this argument in array methods (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-method-this-argument.md
-		'+unicorn/no-array-method-this-argument': 'error',
+		'+unicorn/no-array-method-this-argument': 'warn',
 
 		// Enforce combining multiple `Array#push()` into one call (autofixable but doesn't care about comments, may be confusing)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-push-push.md
@@ -101,7 +101,7 @@ module.exports = {
 
 		// Do not use leading/trailing space between `console.log` parameters (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-console-spaces.md
-		'+unicorn/no-console-spaces': 'error',
+		'+unicorn/no-console-spaces': 'warn',
 
 		// Do not use `document.cookie` directly
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-document-cookie.md
@@ -115,7 +115,7 @@ module.exports = {
 
 		// Enforce the use of Unicode escapes instead of hexadecimal escapes (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-hex-escape.md
-		'+unicorn/no-hex-escape': 'error',
+		'+unicorn/no-hex-escape': 'warn',
 
 		// Require `Array.isArray()` instead of `instanceof Array` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-instanceof-array.md
@@ -201,7 +201,7 @@ module.exports = {
 
 		// Enforce proper case for numeric literals (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/number-literal-case.md
-		'+unicorn/number-literal-case': 'error',
+		'+unicorn/number-literal-case': 'warn',
 
 		// Enforce the style of numeric separators by correctly grouping digits (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/numeric-separators-style.md
@@ -233,31 +233,31 @@ module.exports = {
 
 		// Prefer `.find(…)` over the first element from `.filter(…)` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-find.md
-		'+unicorn/prefer-array-find': 'error',
+		'+unicorn/prefer-array-find': 'warn',
 
 		// Prefer `Array#flat()` over legacy techniques to flatten arrays (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-flat.md
-		'+unicorn/prefer-array-flat': 'error',
+		'+unicorn/prefer-array-flat': 'warn',
 
 		// Prefer `.flatMap(…)` over `.map(…).flat()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-flat-map.md
-		'+unicorn/prefer-array-flat-map': 'error',
+		'+unicorn/prefer-array-flat-map': 'warn',
 
 		// Prefer `Array#indexOf()` over `Array#findIndex()` when looking for the index of an item (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-index-of.md
-		'+unicorn/prefer-array-index-of': 'error',
+		'+unicorn/prefer-array-index-of': 'warn',
 
 		// Prefer `.some(…)` over `.filter(…).length` check and `.find(…)` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-some.md
-		'+unicorn/prefer-array-some': 'error',
+		'+unicorn/prefer-array-some': 'warn',
 
 		// Prefer `.at()` method for index access and `String#charAt()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-at.md
-		'+unicorn/prefer-at': 'error',
+		'+unicorn/prefer-at': 'warn',
 
 		// Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-date-now.md
-		'+unicorn/prefer-date-now': 'error',
+		'+unicorn/prefer-date-now': 'warn',
 
 		// Prefer default parameters over reassignment (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-default-parameters.md
@@ -270,7 +270,7 @@ module.exports = {
 
 		// Enforce the use of `Math.trunc` instead of bitwise operators (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-trunc.md
-		'+unicorn/prefer-math-trunc': 'error',
+		'+unicorn/prefer-math-trunc': 'warn',
 
 		// Prefer JavaScript modules (ESM) over CommonJS
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-module.md
@@ -342,7 +342,7 @@ module.exports = {
 
 		// Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimLeft()` / `String#trimRight()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-trim-start-end.md
-		'+unicorn/prefer-string-trim-start-end': 'error',
+		'+unicorn/prefer-string-trim-start-end': 'warn',
 
 		// Prefer `switch` over multiple `else-if` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-switch.md
@@ -367,7 +367,7 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md
 		// Note: it mostly personal preferences, I'm absolutely fine with any common abbreviations
 		//       which makes code less verbose, but some of them are just annoying to read.
-		'+unicorn/prevent-abbreviations': ['error', {
+		'+unicorn/prevent-abbreviations': ['warn', {
 			extendDefaultReplacements: false,
 			replacements: {
 				btn: {

@@ -2,7 +2,7 @@ module.exports = {
 	rules: {
 		// Enforce consistent line breaks inside braces (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/flow-mapping-curly-newline.html
-		'+yml/flow-mapping-curly-newline': ['error', {
+		'+yml/flow-mapping-curly-newline': ['warn', {
 			multiline: true,
 			minProperties: 6,
 			consistent: true,
@@ -41,7 +41,7 @@ module.exports = {
 
 		// Disallow multiple empty lines (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/no-multiple-empty-lines.html
-		'+yml/no-multiple-empty-lines': ['error', {
+		'+yml/no-multiple-empty-lines': ['warn', {
 			max: 2,
 			maxEOF: 1,
 			maxBOF: 0,
@@ -54,7 +54,7 @@ module.exports = {
 
 		// Enforce consistent spacing after the # in a comment (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/spaced-comment.html
-		'+yml/spaced-comment': ['error', 'always', {
+		'+yml/spaced-comment': ['warn', 'always', {
 			exceptions: [],
 			markers: [],
 		}],

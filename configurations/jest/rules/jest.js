@@ -146,15 +146,15 @@ module.exports = {
 
 		// Suggest using `toBe()` for primitive literals (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-be.md
-		'+jest/prefer-to-be': 'error',
+		'+jest/prefer-to-be': 'warn',
 
 		// Suggest using `toContain()` (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-contain.md
-		'+jest/prefer-to-contain': 'error',
+		'+jest/prefer-to-contain': 'warn',
 
 		// Suggest using `toHaveLength()` (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-have-length.md
-		'+jest/prefer-to-have-length': 'error',
+		'+jest/prefer-to-have-length': 'warn',
 
 		// Suggest using `test.todo` (autofixable but may be confusing)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-todo.md
@@ -190,7 +190,7 @@ module.exports = {
 
 		// Enforce valid titles (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/valid-title.md
-		'+jest/valid-title': 'error',
+		'+jest/valid-title': 'warn',
 
 		// Enable all of the rules of `jest-formatting`, all is autofixable:
 		// * padding-around-after-all-blocks

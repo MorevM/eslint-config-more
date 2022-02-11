@@ -8,11 +8,11 @@ module.exports = {
 	rules: {
 		// Enforce linebreaks after opening and before closing array brackets (autofixable)
 		// https://eslint.org/docs/rules/array-bracket-newline
-		'+array-bracket-newline': ['error', 'consistent'],
+		'+array-bracket-newline': ['warn', 'consistent'],
 
 		// Enforce spacing inside array brackets (autofixable)
 		// https://eslint.org/docs/rules/array-bracket-spacing
-		'+array-bracket-spacing': ['error', 'never'],
+		'+array-bracket-spacing': ['warn', 'never'],
 
 		// Enforce line breaks between array elements (autofixable)
 		// https://eslint.org/docs/rules/array-element-newline
@@ -26,25 +26,25 @@ module.exports = {
 
 		// Enforce spacing before and after the arrow in arrow functions (autofixable)
 		// https://eslint.org/docs/rules/arrow-spacing
-		'+arrow-spacing': ['error', {
+		'+arrow-spacing': ['warn', {
 			before: true,
 			after: true,
 		}],
 
 		// Enforce spacing inside single-line blocks (autofixable)
 		// https://eslint.org/docs/rules/block-spacing
-		'+block-spacing': ['error', 'always'],
+		'+block-spacing': ['warn', 'always'],
 
 		// Enforce brace style for blocks (autofixable)
 		// https://eslint.org/docs/rules/brace-style
 		// Note: 1true style
-		'+brace-style': ['error', '1tbs', {
+		'+brace-style': ['warn', '1tbs', {
 			allowSingleLine: true,
 		}],
 
 		// Require or disallow trailing commas (autofixable)
 		// https://eslint.org/docs/rules/comma-dangle
-		'+comma-dangle': ['error', {
+		'+comma-dangle': ['warn', {
 			arrays: 'always-multiline',
 			objects: 'always-multiline',
 			imports: 'always-multiline',
@@ -54,7 +54,7 @@ module.exports = {
 
 		// Enforce spacing before and after commas (autofixable)
 		// https://eslint.org/docs/rules/comma-spacing
-		'+comma-spacing': ['error', {
+		'+comma-spacing': ['warn', {
 			before: false,
 			after: true,
 		}],
@@ -62,7 +62,7 @@ module.exports = {
 		// Enforce comma style (autofixable)
 		// https://eslint.org/docs/rules/comma-style
 		// Note: 1true style
-		'+comma-style': ['error', 'last', {
+		'+comma-style': ['warn', 'last', {
 			exceptions: {
 				ArrayExpression: false,
 				ArrayPattern: false,
@@ -80,7 +80,7 @@ module.exports = {
 
 		// Enforce spacing inside computed property brackets (autofixable)
 		// https://eslint.org/docs/rules/computed-property-spacing
-		'+computed-property-spacing': ['error', 'never'],
+		'+computed-property-spacing': ['warn', 'never'],
 
 		// Enforces consistent newlines before or after dots (autofixable)
 		// https://eslint.org/docs/rules/dot-location
@@ -88,23 +88,23 @@ module.exports = {
 
 		// Require or disallow newline at the end of files (autofixable)
 		// https://eslint.org/docs/rules/eol-last
-		'+eol-last': ['error', 'always'],
+		'+eol-last': ['warn', 'always'],
 
 		// Require or disallow spacing between function identifiers and their invocations (autofixable)
 		// https://eslint.org/docs/rules/func-call-spacing
-		'+func-call-spacing': ['error', 'never'],
+		'+func-call-spacing': ['warn', 'never'],
 
 		// Enforce linebreaks between arguments of a function call (autofixable)
 		// https://eslint.org/docs/rules/function-call-argument-newline
-		'+function-call-argument-newline': ['error', 'consistent'],
+		'+function-call-argument-newline': ['warn', 'consistent'],
 
 		// Enforce consistent linebreaks inside function parentheses (autofixable)
 		// https://eslint.org/docs/rules/function-paren-newline
-		'+function-paren-newline': ['error', 'consistent'],
+		'+function-paren-newline': ['warn', 'consistent'],
 
 		// Enforce spacing around `*` operators in generator functions (autofixable)
 		// https://eslint.org/docs/rules/generator-star-spacing
-		'+generator-star-spacing': ['error', {
+		'+generator-star-spacing': ['warn', {
 			before: false,
 			after: true,
 		}],
@@ -117,24 +117,24 @@ module.exports = {
 		// Enforce consistent indentation (autofixable)
 		// https://eslint.org/docs/rules/indent
 		// Note: let's care about all people
-		'+indent': ['error', 'tab', {
+		'+indent': ['warn', 'tab', {
 			SwitchCase: 1,
 		}],
 
 		// Enforce the consistent use of either double or single quotes in JSX attributes (autofixable)
 		// https://eslint.org/docs/rules/jsx-quotes
-		'+jsx-quotes': ['error', 'prefer-double'],
+		'+jsx-quotes': ['warn', 'prefer-double'],
 
 		// Enforces spacing between keys and values in object literal properties (autofixable)
 		// https://eslint.org/docs/rules/key-spacing
-		'+key-spacing': ['error', {
+		'+key-spacing': ['warn', {
 			beforeColon: false,
 			afterColon: true,
 		}],
 
 		// Enforce spacing before and after certain keywords (autofixable)
 		// https://eslint.org/docs/rules/keyword-spacing
-		'+keyword-spacing': ['error', {
+		'+keyword-spacing': ['warn', {
 			before: true,
 			after: true,
 			overrides: {
@@ -205,7 +205,7 @@ module.exports = {
 		// Disallow use of multiple spaces (autofixable)
 		// https://eslint.org/docs/rules/no-multi-spaces
 		// Note: sometimes `fancy formatting` can really increase readability
-		'+no-multi-spaces': ['error', {
+		'+no-multi-spaces': ['warn', {
 			exceptions: {
 				Property: true,
 				VariableDeclarator: true,
@@ -216,7 +216,7 @@ module.exports = {
 		// Disallow multiple empty lines (autofixable)
 		// https://eslint.org/docs/rules/no-multiple-empty-lines
 		// Note: only one newline at the end, and no new lines at the beginning
-		'+no-multiple-empty-lines': ['error', {
+		'+no-multiple-empty-lines': ['warn', {
 			max: 2,
 			maxBOF: 0,
 			maxEOF: 0,
@@ -246,7 +246,7 @@ module.exports = {
 
 		// Enforce linebreaks after opening and before closing braces (autofixable)
 		// https://eslint.org/docs/rules/object-curly-newline
-		'+object-curly-newline': ['error', {
+		'+object-curly-newline': ['warn', {
 			ObjectExpression: { minProperties: 5, multiline: true, consistent: true },
 			ObjectPattern: { minProperties: 5, multiline: true, consistent: true },
 			ImportDeclaration: { minProperties: 5, multiline: true, consistent: true },
@@ -255,7 +255,7 @@ module.exports = {
 
 		// Enforce spacing inside braces (autofixable)
 		// https://eslint.org/docs/rules/object-curly-spacing
-		'+object-curly-spacing': ['error', 'always'],
+		'+object-curly-spacing': ['warn', 'always'],
 
 		// Enforce `same line` or `multiple line` on object properties (autofixable but unsafe cause indent)
 		// https://eslint.org/docs/rules/object-property-newline
@@ -266,7 +266,7 @@ module.exports = {
 		// Requires operator at the beginning of the line in multiline statements (autofixable)
 		// https://eslint.org/docs/rules/operator-linebreak
 		// Note: personal issues
-		'+operator-linebreak': ['error', 'before', {
+		'+operator-linebreak': ['warn', 'before', {
 			overrides: {
 				'=': 'none',
 			},
@@ -274,7 +274,7 @@ module.exports = {
 
 		// Require or disallow padding within blocks (autofixable)
 		// https://eslint.org/docs/rules/padded-blocks
-		'+padded-blocks': ['error', {
+		'+padded-blocks': ['warn', {
 			blocks: 'never',
 			classes: 'never',
 			switches: 'never',
@@ -288,14 +288,14 @@ module.exports = {
 
 		// Enforce use of either backticks, double, or single quotes (autofixable)
 		// https://eslint.org/docs/rules/quotes
-		'+quotes': ['error', 'single', {
+		'+quotes': ['warn', 'single', {
 			avoidEscape: true,
 			allowTemplateLiterals: true,
 		}],
 
 		// Enforce spacing between rest and spread operators and their expressions (autofixable)
 		// https://eslint.org/docs/rules/rest-spread-spacing
-		'+rest-spread-spacing': ['error', 'never'],
+		'+rest-spread-spacing': ['warn', 'never'],
 
 		// Require or disallow use of semicolons instead of ASI (autofixable)
 		// https://eslint.org/docs/rules/semi
@@ -303,7 +303,7 @@ module.exports = {
 
 		// Enforce spacing before and after semicolons (autofixable)
 		// https://eslint.org/docs/rules/semi-spacing
-		'+semi-spacing': ['error', {
+		'+semi-spacing': ['warn', {
 			before: false,
 			after: true,
 		}],
@@ -314,11 +314,11 @@ module.exports = {
 
 		// Enforce spacing before blocks (autofixable)
 		// https://eslint.org/docs/rules/space-before-blocks
-		'+space-before-blocks': 'error',
+		'+space-before-blocks': 'warn',
 
 		// Require or disallow space before function opening parenthesis (autofixable)
 		// https://eslint.org/docs/rules/space-before-function-paren
-		'+space-before-function-paren': ['error', {
+		'+space-before-function-paren': ['warn', {
 			anonymous: 'always',
 			named: 'never',
 			asyncArrow: 'always',
@@ -326,15 +326,15 @@ module.exports = {
 
 		// Enforce consistent spacing inside parentheses (autofixable)
 		// https://eslint.org/docs/rules/space-in-parens
-		'+space-in-parens': ['error', 'never'],
+		'+space-in-parens': ['warn', 'never'],
 
 		// Require spacing around infix operators (autofixable)
 		// https://eslint.org/docs/rules/space-infix-ops
-		'+space-infix-ops': 'error',
+		'+space-infix-ops': 'warn',
 
 		// Enforce spacing before or after unary operators (autofixable)
 		// https://eslint.org/docs/rules/space-unary-ops
-		'+space-unary-ops': ['error', {
+		'+space-unary-ops': ['warn', {
 			words: true,
 			nonwords: false,
 			overrides: {},
@@ -342,18 +342,18 @@ module.exports = {
 
 		// Enforce spacing around colons of switch statements (autofixable)
 		// https://eslint.org/docs/rules/switch-colon-spacing
-		'+switch-colon-spacing': ['error', {
+		'+switch-colon-spacing': ['warn', {
 			after: true,
 			before: false,
 		}],
 
 		// Require or disallow spacing around embedded expressions of template strings (autofixable)
 		// https://eslint.org/docs/rules/template-curly-spacing
-		'+template-curly-spacing': ['error', 'never'],
+		'+template-curly-spacing': ['warn', 'never'],
 
 		// Require or disallow spacing between template tags and their literals (autofixable)
 		// https://eslint.org/docs/rules/template-tag-spacing
-		'+template-tag-spacing': ['error', 'never'],
+		'+template-tag-spacing': ['warn', 'never'],
 
 		// Require or disallow Unicode byte order mark (BOM) (autofixable)
 		// https://eslint.org/docs/rules/unicode-bom
@@ -361,7 +361,7 @@ module.exports = {
 
 		// Require parentheses around immediate `function` invocations (autofixable)
 		// https://eslint.org/docs/rules/wrap-iife
-		'+wrap-iife': ['error', 'outside', {
+		'+wrap-iife': ['warn', 'outside', {
 			functionPrototypeMethods: false,
 		}],
 
@@ -371,6 +371,6 @@ module.exports = {
 
 		// Require or disallow spacing around the `*` in `yield*` expressions (autofixable)
 		// https://eslint.org/docs/rules/yield-star-spacing
-		'+yield-star-spacing': ['error', 'after'],
+		'+yield-star-spacing': ['warn', 'after'],
 	},
 };

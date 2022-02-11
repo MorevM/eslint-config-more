@@ -49,7 +49,7 @@ module.exports = {
 
 		// Enforce unified line brake in HTML comments (autofixable)
 		// https://eslint.vuejs.org/rules/html-comment-content-newline.html
-		'+vue/html-comment-content-newline': ['error', {
+		'+vue/html-comment-content-newline': ['warn', {
 			singleline: 'never',
 			multiline: 'ignore',
 		}, {
@@ -58,7 +58,7 @@ module.exports = {
 
 		// Enforce unified spacing in HTML comments (autofixable)
 		// https://eslint.vuejs.org/rules/html-comment-content-spacing.html
-		'+vue/html-comment-content-spacing': ['error', 'always', {
+		'+vue/html-comment-content-spacing': ['warn', 'always', {
 			exceptions: [],
 		}],
 
@@ -293,11 +293,11 @@ module.exports = {
 
 		// Enforce `v-for` directive's delimiter style (autofixable)
 		// https://eslint.vuejs.org/rules/v-for-delimiter-style.html
-		'+vue/v-for-delimiter-style': ['error', 'in'],
+		'+vue/v-for-delimiter-style': ['warn', 'in'],
 
 		// Enforce or forbid parentheses after method calls without arguments in `v-on` directives (autofixable)
 		// https://eslint.vuejs.org/rules/v-on-function-call.html
-		'+vue/v-on-function-call': ['error', 'never', {
+		'+vue/v-on-function-call': ['warn', 'never', {
 			ignoreIncludesComment: true,
 		}],
 	},
