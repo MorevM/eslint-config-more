@@ -9,11 +9,11 @@ const getEntriesForRulesStartsWith = (sign) =>
 		.filter(([rule, value]) => rule.startsWith(sign))
 		.map(([rule, value]) => [rule.slice(1), value]);
 
-const setupAutofixableTests = (autofixable) => {
+const setupAutofixableTests = (mode) => {
 	const autofixableEntries = getEntriesForRulesStartsWith('+');
 	const autofixableRules = autofixableEntries.map(([rule]) => rule);
 
-	const processedConfig = processExports({ autofixable, ...baseConfig });
+	const processedConfig = processExports({ mode, ...baseConfig });
 
 	const autofixedEntries = Object.entries(processedConfig.rules)
 		.filter(([rule, value]) => autofixableRules.includes(rule));
@@ -21,11 +21,11 @@ const setupAutofixableTests = (autofixable) => {
 	return { autofixableEntries, autofixedEntries };
 };
 
-const setupNonAutofixableTests = (autofixable) => {
+const setupNonAutofixableTests = (mode) => {
 	const nonAutofixableEntries = getEntriesForRulesStartsWith('!');
 	const nonAutofixableRules = nonAutofixableEntries.map(([rule]) => rule);
 
-	const processedConfig = processExports({ autofixable, ...baseConfig });
+	const processedConfig = processExports({ mode, ...baseConfig });
 
 	const processedEntries = Object.entries(processedConfig.rules)
 		.filter(([rule, value]) => nonAutofixableRules.some(r => rule.includes(r)));

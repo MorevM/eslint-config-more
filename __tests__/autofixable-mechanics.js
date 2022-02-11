@@ -3,7 +3,7 @@ const { setupAutofixableTests } = require('./tests-utils');
 describe('Autofixable mechanics', () => {
 	// Common
 	it('Processes all rules marked as `autofixable` with `+` sign', () => {
-		const { autofixableEntries, autofixedEntries } = setupAutofixableTests('warn');
+		const { autofixableEntries, autofixedEntries } = setupAutofixableTests('default');
 
 		expect(autofixableEntries).toHaveLength(autofixedEntries.length);
 	});
@@ -11,7 +11,7 @@ describe('Autofixable mechanics', () => {
 	// Autofixable to `warn`
 	describe('`Autofixable rules to warn` mechanic', () => {
 		it('Doesn\'t set severity to `warn` if base rule severity is `off`', () => {
-			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('warn');
+			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('default');
 
 			const offRules = autofixableEntries
 				.filter(([rule, value]) => (Array.isArray(value) ? value[0] === 'off' : value === 'off'));
@@ -23,7 +23,7 @@ describe('Autofixable mechanics', () => {
 		});
 
 		it('Sets severity to `warn` for string rule notation', () => {
-			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('warn');
+			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('default');
 
 			const stringWarnRules = autofixableEntries
 				.filter(([rule, value]) => !Array.isArray(value) && value !== 'off')
@@ -36,7 +36,7 @@ describe('Autofixable mechanics', () => {
 		});
 
 		it('Sets severity to `warn` for array rule notation', () => {
-			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('warn');
+			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('default');
 
 			const stringWarnRules = autofixableEntries
 				.filter(([rule, value]) => Array.isArray(value) && value[0] !== 'off')
@@ -52,7 +52,7 @@ describe('Autofixable mechanics', () => {
 	// Autofixable to `off`
 	describe('`Autofixable rules to off` mechanic', () => {
 		it('Sets severity to `off` for string rule notation', () => {
-			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('off');
+			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('quiet');
 
 			const stringWarnRules = autofixableEntries
 				.filter(([rule, value]) => !Array.isArray(value))
@@ -65,7 +65,7 @@ describe('Autofixable mechanics', () => {
 		});
 
 		it('Sets severity to `off` for array rule notation', () => {
-			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('off');
+			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('quiet');
 
 			const stringWarnRules = autofixableEntries
 				.filter(([rule, value]) => Array.isArray(value))
