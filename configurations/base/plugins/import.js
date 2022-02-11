@@ -155,6 +155,8 @@ module.exports = {
 			js: 'never',
 			mjs: 'never',
 			jsx: 'never',
+			ts: 'never',
+			tsx: 'never',
 		}],
 
 		// Enforce a convention in module import order (autofixable)

@@ -22,7 +22,9 @@ module.exports = {
 
 		// Disallow `import` declarations which import non-existence modules
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-import.md
-		'node/no-missing-import': 'error',
+		'node/no-missing-import': ['off', {
+			tryExtensions: ['.js', '.jsx', '.ts', '.tsx'],
+		}],
 
 		// Disallow `require()` declarations which import non-existence modules
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-require.md

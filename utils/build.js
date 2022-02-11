@@ -30,6 +30,7 @@ const availableConfigs = [
 	{ name: 'vue/vue2', output: 'vue2' },
 	{ name: 'vue/vue3', output: 'vue3' },
 	{ name: 'yaml' },
+	{ name: 'typescript' },
 ];
 
 const rulesets = {
@@ -58,7 +59,7 @@ const rulesets = {
 		},
 		{
 			name: 'json/jsonc',
-			overrides: { files: ['*.jsonc', '*.json5'] },
+			overrides: { files: ['*.jsonc', '*.json5', 'jsconfig.json', 'tsconfig.json'] },
 		},
 		{
 			name: 'json/package-json',
@@ -68,7 +69,7 @@ const rulesets = {
 			name: 'yaml',
 			overrides: { files: ['*.yaml', '*.yml'] },
 		},
-	],
+	].reverse(),
 };
 
 const presets = [

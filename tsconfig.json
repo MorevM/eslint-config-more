@@ -1,0 +1,20 @@
+// The file is needed here to test the functionality of typescript
+// rules that require type information
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"esModuleInterop": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"outDir": "./dist",
+		"checkJs": false,
+		"allowJs": false,
+		"skipLibCheck": true
+	},
+	"exclude": [
+		"__tests__",
+		"build"
+	]
+}

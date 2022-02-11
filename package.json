@@ -79,24 +79,30 @@
 		"./vue3/off-autofixable": "./build/configurations/vue3-off-autofixable.js",
 		"./yaml": "./build/configurations/yaml.js",
 		"./yaml/warn-autofixable": "./build/configurations/yaml-warn-autofixable.js",
-		"./yaml/off-autofixable": "./build/configurations/yaml-off-autofixable.js"
+		"./yaml/off-autofixable": "./build/configurations/yaml-off-autofixable.js",
+		"./typescript": "./build/configurations/typescript.js",
+		"./typescript/warn-autofixable": "./build/configurations/typescript-warn-autofixable.js",
+		"./typescript/off-autofixable": "./build/configurations/typescript-off-autofixable.js"
 	},
 	"main": "./build/presets/common.js",
 	"scripts": {
 		"prepare": "husky install ./.husky",
 		"build": "node utils/build.js",
 		"test": "jest",
-		"lint": "eslint \"**/*.{js,json,json5,jsonc,yml,yaml}\"",
-		"lint:fix": "eslint \"**/*.{js,json,json5,jsonc,yml,yaml}\" --fix",
+		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml}\"",
+		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml}\" --fix",
 		"release": "release-it --disable-metrics"
 	},
 	"peerDependencies": {
-		"eslint": "^8.7.0"
+		"eslint": "^8.7.0",
+		"typescript": "^4.5.5"
 	},
 	"dependencies": {
 		"@babel/core": "^7.16.12",
 		"@babel/eslint-parser": "^7.16.5",
 		"@babel/plugin-syntax-jsx": "^7.16.7",
+		"@typescript-eslint/eslint-plugin": "^5.11.0",
+		"@typescript-eslint/parser": "^5.11.0",
 		"eslint-plugin-eslint-comments": "^3.2.0",
 		"eslint-plugin-import": "^2.25.4",
 		"eslint-plugin-jest": "^26.0.0",
@@ -123,6 +129,7 @@
 		"husky": "^7.0.4",
 		"jest": "^27.4.7",
 		"lint-staged": "^12.2.2",
-		"release-it": "^14.12.3"
+		"release-it": "^14.12.3",
+		"typescript": "^4.5.5"
 	}
 }

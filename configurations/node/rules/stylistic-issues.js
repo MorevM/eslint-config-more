@@ -14,6 +14,7 @@ module.exports = {
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/file-extension-in-import.md
 		'+node/file-extension-in-import': ['error', 'always', {
 			'.js': 'never',
+			'.ts': 'never',
 		}],
 
 		// Enforce `require()` calls to be placed at top-level module scope

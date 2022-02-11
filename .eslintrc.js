@@ -24,9 +24,7 @@ const config = makeConfig([
 	},
 	{
 		name: 'json/jsonc',
-		overrides: {
-			files: ['*.jsonc', '*.json5'],
-		},
+		overrides: { files: ['*.jsonc', '*.json5', 'jsconfig.json', 'tsconfig.json'] },
 	},
 	{
 		name: 'json/package-json',
@@ -40,7 +38,13 @@ const config = makeConfig([
 			files: ['*.yaml', '*.yml'],
 		},
 	},
-]);
+	{
+		name: 'typescript',
+		overrides: {
+			files: ['*.ts'],
+		},
+	},
+].reverse());
 
 config.overrides = config.overrides || [];
 config.overrides.push({
