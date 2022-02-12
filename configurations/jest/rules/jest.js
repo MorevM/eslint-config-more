@@ -68,10 +68,6 @@ module.exports = {
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-identical-title.md
 		'jest/no-identical-title': 'error',
 
-		// Disallow conditional logic
-		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-if.md
-		'jest/no-if': 'warn',
-
 		// Disallow string interpolation inside snapshots
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-interpolation-in-snapshots.md
 		'jest/no-interpolation-in-snapshots': 'error',
