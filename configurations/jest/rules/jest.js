@@ -31,6 +31,10 @@ module.exports = {
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-conditional-expect.md
 		'jest/no-conditional-expect': 'warn',
 
+		// Disallow conditional logic in tests
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-conditional-in-test.md
+		'jest/no-conditional-in-test': 'warn',
+
 		// Disallow use of deprecated functions (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-deprecated-functions.md
 		'+jest/no-deprecated-functions': 'error',
