@@ -185,13 +185,13 @@ module.exports = {
 		'@typescript-eslint/naming-convention': ['error',
 			{
 				selector: 'default',
-				format: ['strictCamelCase'],
+				format: ['camelCase'],
 				leadingUnderscore: 'allow',
 				trailingUnderscore: 'allow',
 			},
 			{
 				selector: 'variable',
-				format: ['strictCamelCase', 'UPPER_CASE'],
+				format: ['camelCase', 'UPPER_CASE'],
 				leadingUnderscore: 'allow',
 				trailingUnderscore: 'allow',
 			},
