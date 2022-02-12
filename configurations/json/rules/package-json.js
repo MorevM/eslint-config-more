@@ -31,6 +31,7 @@ module.exports = {
 				'module',
 				'browser',
 				'unpkg',
+				'types',
 				'man',
 				'config',
 				'scripts',
