@@ -1,3 +1,10 @@
+### [5.1.1](https://github.com/MorevM/eslint-config/compare/v5.1.0...v5.1.1) (2022-02-12)
+
+
+### Bug fixes
+
+* **typescript:** Allow to use `Function` type ([721bf90](https://github.com/MorevM/eslint-config/commit/721bf90676c7078c57f1c48f8199f1ad8cd781c9))
+
 ## [5.1.0](https://github.com/MorevM/eslint-config/compare/v5.0.1...v5.1.0) (2022-02-12)
 
 
