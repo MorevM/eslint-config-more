@@ -140,6 +140,10 @@ module.exports = {
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-lowercase-title.md
 		'+jest/prefer-lowercase-title': 'off',
 
+		// Prefer including a hint with external snapshots
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-snapshot-hint.md
+		'jest/prefer-snapshot-hint': ['warn', 'always'],
+
 		// Suggest using `jest.spyOn()` (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-spy-on.md
 		'+jest/prefer-spy-on': 'error',
