@@ -422,23 +422,19 @@ module.exports = {
 
 		// Disallows assigning any to variables and properties
 		// https://typescript-eslint.io/rules/no-unsafe-assignment
-		// Note: too radically to be an `error`, but reminder doesn't hurts
 		'@typescript-eslint/no-unsafe-assignment': 'off',
 
 		// Disallows calling an any type value
 		// https://typescript-eslint.io/rules/no-unsafe-call
-		// Note: too radically to be an `error`, but reminder doesn't hurts
-		'@typescript-eslint/no-unsafe-call': 'warn',
+		'@typescript-eslint/no-unsafe-call': 'off',
 
 		// Disallows member access on any typed variables
 		// https://typescript-eslint.io/rules/no-unsafe-member-access
-		// Note: too radically to be an `error`, but reminder doesn't hurts
-		'@typescript-eslint/no-unsafe-member-access': 'warn',
+		'@typescript-eslint/no-unsafe-member-access': 'off',
 
 		// Disallows returning any from a function
 		// https://typescript-eslint.io/rules/no-unsafe-return
-		// Note: too radically to be an `error`, but reminder doesn't hurts
-		'@typescript-eslint/no-unsafe-return': 'warn',
+		'@typescript-eslint/no-unsafe-return': 'off',
 
 		// Disallow unused expressions
 		// https://typescript-eslint.io/rules/no-unused-expressions
