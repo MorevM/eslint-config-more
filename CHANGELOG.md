@@ -1,3 +1,33 @@
+## [5.1.0](https://github.com/MorevM/eslint-config/compare/v5.0.1...v5.1.0) (2022-02-12)
+
+
+### Features
+
+* **jest:** Add new `jest/no-conditional-in-test` rule ([e60eb37](https://github.com/MorevM/eslint-config/commit/e60eb37736ddae62734784d17130f5dddd82838a))
+* **jest:** Add new `jest/prefer-snapshot-hint` rule ([c193ce9](https://github.com/MorevM/eslint-config/commit/c193ce935e1c3593acc30ef32a1e2bf2c00a9f02))
+
+
+### Bug fixes
+
+* **jest:** Remove deprecated `no-if` in favor of using `no-conditional-in-test` ([6b6e618](https://github.com/MorevM/eslint-config/commit/6b6e618120dabc40e6c6bb68dc99a3f2f61abd53))
+* **typescript:** Turn off all rules started with `no-unsafe` ([8eff032](https://github.com/MorevM/eslint-config/commit/8eff0321c70234a5036627a4ec78ba6edcb13beb))
+
+
+### Chores
+
+* bump @babel/core from 7.17.0 to 7.17.2 ([#10](https://github.com/MorevM/eslint-config/issues/10)) ([f8966c4](https://github.com/MorevM/eslint-config/commit/f8966c4118b2a75798f756d30d2f6ed039212500))
+* bump @morev/commitlint-config from 0.0.7 to 0.1.0 ([#12](https://github.com/MorevM/eslint-config/issues/12)) ([ac18139](https://github.com/MorevM/eslint-config/commit/ac18139c5aff71ca9c5f446cc3375d0790013967))
+* bump eslint from 8.8.0 to 8.9.0 ([#13](https://github.com/MorevM/eslint-config/issues/13)) ([dfc01f3](https://github.com/MorevM/eslint-config/commit/dfc01f3fad246eafe2fcc36941d451c8354f0dd4))
+* bump eslint-plugin-jest from 26.0.0 to 26.1.0 ([#9](https://github.com/MorevM/eslint-config/issues/9)) ([91229dd](https://github.com/MorevM/eslint-config/commit/91229ddffab2ff4bd856b9c477b67abf39feac0d))
+* bump eslint-plugin-jsdoc from 37.7.1 to 37.9.0 ([#8](https://github.com/MorevM/eslint-config/issues/8)) ([3f6dbd3](https://github.com/MorevM/eslint-config/commit/3f6dbd3157423e9752b64b75598f74009550c801))
+* bump jest from 27.5.0 to 27.5.1 ([#11](https://github.com/MorevM/eslint-config/issues/11)) ([23f608f](https://github.com/MorevM/eslint-config/commit/23f608f363268e17394db145adbf70ffdb16a5ca))
+* **release-it:** Upgrade `conventional-changelog` for better changelog ([a3bf69b](https://github.com/MorevM/eslint-config/commit/a3bf69b29b096c3331e84dc6d05b9a5c1341ef3e))
+
+
+### Tests
+
+* Fix false positives of new rule ([38eb64c](https://github.com/MorevM/eslint-config/commit/38eb64c3ff3cf2c5dcba6a76151494d03fb99789))
+
 ### [5.0.1](https://github.com/MorevM/eslint-config/compare/v5.0.0...v5.0.1) (2022-02-12)
 
 
