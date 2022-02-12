@@ -1,3 +1,11 @@
+### [5.0.1](https://github.com/MorevM/eslint-config/compare/v5.0.0...v5.0.1) (2022-02-12)
+
+
+### Bug Fixes
+
+* **package-json:** Respect `types` field in `package.json` ([8f479d3](https://github.com/MorevM/eslint-config/commit/8f479d31d3be1c3e2815fdcd32d3452a2c8f9047))
+* **typescript:** Soften the variables naming convention to `camelCase` (was `strictCamelCase`) ([fab1bda](https://github.com/MorevM/eslint-config/commit/fab1bda8e7c23acff6082e62d2bb0fc5325714fc))
+
 ## [5.0.0](https://github.com/MorevM/eslint-config/compare/v4.0.1...v5.0.0) (2022-02-11)
 
 
