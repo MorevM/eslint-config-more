@@ -14,6 +14,7 @@ describe('Autofixable mechanics', () => {
 			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('default');
 
 			const offRules = autofixableEntries
+				// eslint-disable-next-line jest/no-conditional-in-test
 				.filter(([rule, value]) => (Array.isArray(value) ? value[0] === 'off' : value === 'off'));
 
 			const autofixed = Object.fromEntries(autofixedEntries);
@@ -26,6 +27,7 @@ describe('Autofixable mechanics', () => {
 			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('default');
 
 			const stringWarnRules = autofixableEntries
+				// eslint-disable-next-line jest/no-conditional-in-test
 				.filter(([rule, value]) => !Array.isArray(value) && value !== 'off')
 				.map(([rule]) => rule);
 
@@ -39,6 +41,7 @@ describe('Autofixable mechanics', () => {
 			const { autofixableEntries, autofixedEntries } = setupAutofixableTests('default');
 
 			const stringWarnRules = autofixableEntries
+				// eslint-disable-next-line jest/no-conditional-in-test
 				.filter(([rule, value]) => Array.isArray(value) && value[0] !== 'off')
 				.map(([rule]) => rule);
 
