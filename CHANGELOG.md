@@ -1,3 +1,10 @@
+### [5.1.2](https://github.com/MorevM/eslint-config/compare/v5.1.1...v5.1.2) (2022-02-14)
+
+
+### Bug fixes
+
+* **base:** Turn off `unicorn/prefer-at` rule ([d2dc345](https://github.com/MorevM/eslint-config/commit/d2dc345216d5c36b34f8eee9ca2c85cdfb3c6a71))
+
 ### [5.1.1](https://github.com/MorevM/eslint-config/compare/v5.1.0...v5.1.1) (2022-02-12)
 
 
