@@ -253,7 +253,9 @@ module.exports = {
 
 		// Prefer `.at()` method for index access and `String#charAt()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-at.md
-		'+unicorn/prefer-at': 'warn',
+		// Fails on Node 14
+		// TODO: [2023-01-01] Review it again
+		'!unicorn/prefer-at': 'off',
 
 		// Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-date-now.md
