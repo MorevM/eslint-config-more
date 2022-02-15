@@ -152,9 +152,9 @@ module.exports = {
 		// Ensure consistent use of file extension within the import path
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md
 		'import/extensions': ['error', 'ignorePackages', {
-			js: 'never',
-			mjs: 'never',
-			jsx: 'never',
+			js: 'always',
+			mjs: 'always',
+			jsx: 'always',
 			ts: 'never',
 			tsx: 'never',
 		}],
