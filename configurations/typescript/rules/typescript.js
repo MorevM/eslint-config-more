@@ -227,13 +227,7 @@ module.exports = {
 
 		// Enforces naming conventions for everything across a codebase
 		// https://typescript-eslint.io/rules/naming-convention
-		'@typescript-eslint/naming-convention': ['error',
-			{
-				selector: 'default',
-				format: ['camelCase'],
-				leadingUnderscore: 'allow',
-				trailingUnderscore: 'allow',
-			},
+		'@typescript-eslint/naming-convention': ['warn',
 			{
 				selector: 'variable',
 				format: ['camelCase', 'UPPER_CASE'],
