@@ -1,3 +1,16 @@
+## [5.2.0](https://github.com/MorevM/eslint-config/compare/v5.1.2...v5.2.0) (2022-02-15)
+
+
+### Features
+
+* **base:** Expicit file extensions for all except `ts` files ([5c47475](https://github.com/MorevM/eslint-config/commit/5c4747538c3b6b00dc8504d8c85b638e0dfbd6fe))
+
+
+### Bug fixes
+
+* Downgrade severity of `import/extensions` rule ([a37081a](https://github.com/MorevM/eslint-config/commit/a37081a0c1620f5da11e59dd4892385a008d2843))
+* **typescript:** Smooth `naming-convention` rule ([1cff963](https://github.com/MorevM/eslint-config/commit/1cff9639f5683c7ae80ac463a398d2c0e00cb727))
+
 ### [5.1.2](https://github.com/MorevM/eslint-config/compare/v5.1.1...v5.1.2) (2022-02-14)
 
 
