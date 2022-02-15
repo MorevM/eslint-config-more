@@ -6,7 +6,7 @@ const eslint = new ESLint({ fix: true });
 
 const pkg = require('../package.json');
 
-const { makeConfig } = require('./tools');
+const { makeConfig } = require('./tools.js');
 
 const [CONFIGS_DIR_REL, PRESETS_DIR_REL] = ['./build/configurations/', './build/presets/'];
 const [CONFIGS_DIR, PRESETS_DIR] = [

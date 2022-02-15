@@ -1,6 +1,6 @@
 const _mergeWith = require('lodash.mergewith');
-const { processExports } = require('../utils/helpers');
-const baseConfig = require('../configurations/base/_settings');
+const { processExports } = require('../utils/helpers.js');
+const baseConfig = require('../configurations/base/_settings.js');
 
 const getRulesAsWritten = () => _mergeWith({}, ...(baseConfig.parts || [])).rules;
 

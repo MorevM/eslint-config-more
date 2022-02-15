@@ -1,4 +1,4 @@
-const { makeConfig } = require('../../../utils/tools');
+const { makeConfig } = require('../../../utils/tools.js');
 
 const base = makeConfig([{ name: 'base', autofixable: 'bypass' }]).rules;
 

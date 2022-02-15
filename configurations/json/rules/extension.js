@@ -1,5 +1,5 @@
-const base = require('../../base');
-const { extensionFromBase } = require('../../../utils/helpers');
+const base = require('../../base/index.js');
+const { extensionFromBase } = require('../../../utils/helpers.js');
 
 const rulesToExtend = [
 	'+array-bracket-newline',

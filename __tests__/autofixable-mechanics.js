@@ -1,4 +1,4 @@
-const { setupAutofixableTests } = require('./tests-utils');
+const { setupAutofixableTests } = require('./tests-utils.js');
 
 describe('Autofixable mechanics', () => {
 	// Common

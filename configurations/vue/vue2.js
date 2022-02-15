@@ -1,5 +1,5 @@
-const { processExports } = require('../../utils/helpers');
-const { base, parts: commonParts } = require('./_settings');
+const { processExports } = require('../../utils/helpers.js');
+const { base, parts: commonParts } = require('./_settings.js');
 
 const vue2Parts = [
 	'./rules/vue2/essential.js',

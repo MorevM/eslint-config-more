@@ -3,7 +3,7 @@
  * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
  */
 
-const { CONFUSING_BROWSER_GLOBALS } = require('../../../utils/constants');
+const { CONFUSING_BROWSER_GLOBALS } = require('../../../utils/constants.js');
 
 module.exports = {
 	rules: {

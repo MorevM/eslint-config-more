@@ -1,4 +1,4 @@
-const { setupNonAutofixableTests } = require('./tests-utils');
+const { setupNonAutofixableTests } = require('./tests-utils.js');
 
 describe('`No autofix` mechanic', () => {
 	it('Processes all rules marked as `non-autofixable` with `!` sign', () => {

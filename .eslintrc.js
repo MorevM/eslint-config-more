@@ -1,4 +1,4 @@
-const { makeConfig } = require('./utils/tools');
+const { makeConfig } = require('./utils/tools.js');
 
 const config = makeConfig([
 	{ name: 'base' },

@@ -1,4 +1,4 @@
-const { processExports } = require('../../utils/helpers');
+const { processExports } = require('../../utils/helpers.js');
 
 /**
  * JSONC and JSON5 are supersets of JSON, it allows to use comments.
