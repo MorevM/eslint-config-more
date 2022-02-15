@@ -151,7 +151,7 @@ module.exports = {
 
 		// Ensure consistent use of file extension within the import path
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md
-		'import/extensions': ['error', 'ignorePackages', {
+		'import/extensions': ['warn', 'ignorePackages', {
 			js: 'always',
 			mjs: 'always',
 			jsx: 'always',
