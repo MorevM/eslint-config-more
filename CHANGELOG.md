@@ -1,3 +1,11 @@
+### [6.0.1](https://github.com/MorevM/eslint-config/compare/v6.0.0...v6.0.1) (2022-02-17)
+
+
+### Bug fixes
+
+* `typescript` config in preset `common` ([70ef0c9](https://github.com/MorevM/eslint-config/commit/70ef0c98c48907f5ae3629c1c5d56fa59756621d))
+* Only `build` files in npm package ([7ce4acc](https://github.com/MorevM/eslint-config/commit/7ce4acce93d71a5f1582c2108115818bec82a499))
+
 ## [6.0.0](https://github.com/MorevM/eslint-config/compare/v5.2.0...v6.0.0) (2022-02-17)
 
 
