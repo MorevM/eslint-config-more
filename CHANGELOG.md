@@ -1,3 +1,14 @@
+## [6.0.0](https://github.com/MorevM/eslint-config/compare/v5.2.0...v6.0.0) (2022-02-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Exclude `typescript` from `common` preset
+
+### Bug fixes
+
+* Exclude `typescript` from `common` preset ([dd10c08](https://github.com/MorevM/eslint-config/commit/dd10c0823dda6dbe489514dfcfa0024627319846))
+
 ## [5.2.0](https://github.com/MorevM/eslint-config/compare/v5.1.2...v5.2.0) (2022-02-15)
 
 
