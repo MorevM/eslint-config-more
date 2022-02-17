@@ -84,7 +84,6 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
   * `node`
   * `browser`
   * `jest`
-  * `typescript`
   * `yaml`
   * `json`
   * `jsonc`
@@ -226,6 +225,27 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
       {
         files: ['*.vue'],
         extends: ['@morev/eslint-config/vue3'],
+      },
+    ],
+  };
+  ```
+
+* `typescript` \
+  Includes `typescript` rules for TS files. \
+
+  ```js
+  module.exports = {
+    root: true,
+    extends: ['@morev/eslint-config/preset/typescript'],
+  };
+
+  // It's the same as:
+  module.exports = {
+    root: true,
+    overrides: [
+      {
+        files: ['*.ts'],
+        extends: ['@morev/eslint-config/typescript'],
       },
     ],
   };
