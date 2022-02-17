@@ -85,6 +85,7 @@ const presets = [
 			{ name: 'base' },
 			{ name: 'node' },
 			{ name: 'browser' },
+			...rulesets.typescript,
 			...rulesets.jest,
 			...rulesets.assistive,
 		],
