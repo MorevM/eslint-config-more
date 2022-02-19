@@ -87,7 +87,7 @@ module.exports = {
 
 		// Functions should not have identical implementations (autofixable but may be confusing)
 		// https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-identical-functions.md
-		'!sonarjs/no-identical-functions': 'warn',
+		'!sonarjs/no-identical-functions': ['warn', 3],
 
 		// Boolean checks should not be inverted (autofixable but may be confusing to autofix)
 		// https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-inverted-boolean-check.md
