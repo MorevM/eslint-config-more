@@ -1,3 +1,24 @@
+### [6.0.2](https://github.com/MorevM/eslint-config/compare/v6.0.1...v6.0.2) (2022-02-19)
+
+
+### Chores
+
+* bump @babel/core from 7.17.2 to 7.17.5 ([#14](https://github.com/MorevM/eslint-config/issues/14)) ([9f82c0f](https://github.com/MorevM/eslint-config/commit/9f82c0ff47678c6b31ad230e9413c3ac233ef825))
+* bump @typescript-eslint/eslint-plugin from 5.11.0 to 5.12.0 ([#15](https://github.com/MorevM/eslint-config/issues/15)) ([28d2512](https://github.com/MorevM/eslint-config/commit/28d2512c4f1ca3aaf487e7eb6f8ad8d0f5ec66c2))
+* bump @typescript-eslint/parser from 5.11.0 to 5.12.0 ([#21](https://github.com/MorevM/eslint-config/issues/21)) ([db3ca71](https://github.com/MorevM/eslint-config/commit/db3ca71951a438f9550097f70f4dfea6be72faf0))
+* bump eslint-plugin-jest from 26.1.0 to 26.1.1 ([#22](https://github.com/MorevM/eslint-config/issues/22)) ([cedc398](https://github.com/MorevM/eslint-config/commit/cedc398e805a84e0f0a2dcac22abb7bb5ce391d0))
+* bump eslint-plugin-jsdoc from 37.9.0 to 37.9.4 ([#16](https://github.com/MorevM/eslint-config/issues/16)) ([e5f82ed](https://github.com/MorevM/eslint-config/commit/e5f82edec83ebbef6f77ab16e7ad8cefe500720e))
+* bump eslint-plugin-jsonc from 2.1.0 to 2.2.1 ([#18](https://github.com/MorevM/eslint-config/issues/18)) ([6b4ded5](https://github.com/MorevM/eslint-config/commit/6b4ded56f2ed4ee15a0703923ec155f523d409ed))
+* bump eslint-plugin-sonarjs from 0.11.0 to 0.12.0 ([#20](https://github.com/MorevM/eslint-config/issues/20)) ([b94fe32](https://github.com/MorevM/eslint-config/commit/b94fe3209f79d2143e81646d0275b39542cbc436))
+* bump eslint-plugin-unicorn from 40.1.0 to 41.0.0 ([#19](https://github.com/MorevM/eslint-config/issues/19)) ([8a53941](https://github.com/MorevM/eslint-config/commit/8a53941b3c09a05fe87f36c6ee4fc51828a67a4d))
+* bump eslint-plugin-yml from 0.13.0 to 0.14.0 ([#23](https://github.com/MorevM/eslint-config/issues/23)) ([ea334ca](https://github.com/MorevM/eslint-config/commit/ea334ca8ba9b462980c1786b01adc8df73dfc104))
+* bump lint-staged from 12.3.3 to 12.3.4 ([#17](https://github.com/MorevM/eslint-config/issues/17)) ([6403fad](https://github.com/MorevM/eslint-config/commit/6403fadcb2f2aa69f6f420011d69633e38806668))
+
+
+### Bug fixes
+
+* Explicit number of lines in `sonars/no-identical-functions` ([f7b1622](https://github.com/MorevM/eslint-config/commit/f7b162214a569a1fbaf643247eabe368cc1cb282))
+
 ### [6.0.1](https://github.com/MorevM/eslint-config/compare/v6.0.0...v6.0.1) (2022-02-17)
 
 
