@@ -1,3 +1,14 @@
+## [7.0.0](https://github.com/MorevM/eslint-config/compare/v6.0.2...v7.0.0) (2022-02-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* It extends `common` config making it more strict
+
+### Features
+
+* Add `html` configuration ([f4f96fa](https://github.com/MorevM/eslint-config/commit/f4f96fa2f8be67aa33739467792fc19aaea86409))
+
 ### [6.0.2](https://github.com/MorevM/eslint-config/compare/v6.0.1...v6.0.2) (2022-02-19)
 
 
