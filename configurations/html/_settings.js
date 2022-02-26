@@ -1,6 +1,10 @@
 const base = {
 	plugins: ['@html-eslint'],
 	parser: '@html-eslint/parser',
+	rules: {
+		'capitalized-comments': 'off',
+		'spaced-comment': 'off',
+	},
 };
 
 const parts = [
