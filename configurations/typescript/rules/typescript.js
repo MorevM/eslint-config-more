@@ -411,7 +411,10 @@ module.exports = {
 
 		// Disallow variable declarations from shadowing variables declared in the outer scope
 		// https://typescript-eslint.io/rules/no-shadow
-		...extendFromBase('no-shadow'),
+		// TODO: `ESLint` introduced new `ignoreOnInitialization` option in v8.10.0 that isn't implemented yet here.
+		// When it comes, replace with `extendFromBase` call.
+		// ...extendFromBase('no-shadow'),
+		'@typescript-eslint/no-shadow': 'error',
 
 		// Disallow aliasing `this`
 		// https://typescript-eslint.io/rules/no-this-alias

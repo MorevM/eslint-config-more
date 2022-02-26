@@ -531,7 +531,9 @@ module.exports = {
 
 		// Disallow declaration of variables already declared in the outer scope
 		// https://eslint.org/docs/rules/no-shadow
-		'no-shadow': 'error',
+		'no-shadow': ['error', {
+			ignoreOnInitialization: true,
+		}],
 
 		// Disallow identifiers from shadowing restricted names e.g. `arguments`
 		// https://eslint.org/docs/rules/no-shadow-restricted-names
