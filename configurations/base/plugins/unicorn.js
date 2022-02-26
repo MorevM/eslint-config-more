@@ -99,6 +99,10 @@ module.exports = {
 		// Note: if you can't read reduce calls - just practice more
 		'unicorn/no-array-reduce': 'off',
 
+		// Forbid member access from await expression (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-expression-member.md
+		'+unicorn/no-await-expression-member': 'error',
+
 		// Do not use leading/trailing space between `console.log` parameters (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-console-spaces.md
 		'+unicorn/no-console-spaces': 'warn',
@@ -107,6 +111,11 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-document-cookie.md
 		// `js-cookie` just 1.5kb and no worries
 		'unicorn/no-document-cookie': 'error',
+
+		// Disallow empty files
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-empty-file.md
+		// Note: some files may be intentionally empty, but it's good to have a rule that will show them
+		'unicorn/no-empty-file': 'warn',
 
 		// Do not use a for loop that can be replaced with a for-of loop (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-for-loop.md
@@ -120,6 +129,10 @@ module.exports = {
 		// Require `Array.isArray()` instead of `instanceof Array` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-instanceof-array.md
 		'+unicorn/no-instanceof-array': 'error',
+
+		// Prevent calling `EventTarget#removeEventListener()` with the result of an expression.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-remove-event-listener.md
+		'+unicorn/no-invalid-remove-event-listener': 'error',
 
 		// Disallow identifiers starting with new or class
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-keyword-prefix.md
@@ -163,6 +176,10 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-static-only-class.md
 		'unicorn/no-static-only-class': 'error',
 
+		// Disallow `then` property
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-thenable.md
+		'unicorn/no-thenable': 'error',
+
 		// Disallow assigning `this` to a variable
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-this-assignment.md
 		// Note: too radical to be a strict rule
@@ -181,9 +198,17 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-properties.md
 		'unicorn/no-unused-properties': 'warn',
 
+		// Forbid useless fallback when spreading in object literals (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-fallback-in-spread.md
+		'+unicorn/no-useless-fallback-in-spread': 'warn',
+
 		// Disallow useless array length check (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-length-check.md
 		'+unicorn/no-useless-length-check': 'off',
+
+		// Disallow returning/yielding P`romise.resolve/reject()` in async functions or promise callbacks (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-promise-resolve-reject.md
+		'+unicorn/no-useless-promise-resolve-reject': 'warn',
 
 		// Disallow useless spread (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-spread.md
@@ -257,6 +282,10 @@ module.exports = {
 		// TODO: [2023-01-01] Review it again
 		'!unicorn/prefer-at': 'off',
 
+		// Prefer `String#codePointAt(…)` over `String#charCodeAt(…)` and `String.fromCodePoint(…)` over `String.fromCharCode(…)`.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-code-point.md
+		'unicorn/prefer-code-point': 'error',
+
 		// Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-date-now.md
 		'+unicorn/prefer-date-now': 'warn',
@@ -265,10 +294,20 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-default-parameters.md
 		'+unicorn/prefer-default-parameters': 'error',
 
+		// Prefer `export…from` when re-exporting (autofixable but might be confusing during development flow)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-export-from.md
+		'!unicorn/prefer-export-from': ['warn', {
+			ignoreUsedVariables: true,
+		}],
+
 		// Prefer `.includes()` over `.indexOf()` and `Array#some()` when checking for existence or non-existence
 		// (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes.md
 		'+unicorn/prefer-includes': 'error',
+
+		// Prefer reading a JSON file as a buffer (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-json-parse-buffer.md
+		'+unicorn/prefer-json-parse-buffer': 'warn',
 
 		// Enforce the use of `Math.trunc` instead of bitwise operators (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-trunc.md
@@ -393,6 +432,11 @@ module.exports = {
 			},
 		}],
 
+		// Enforce consistent relative URL style (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/relative-url-style.md
+		// Note: explicit indication more clear than implicit
+		'+unicorn/relative-url-style': ['warn', 'always'],
+
 		// Enforce using the separator argument with `Array#join()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-array-join-separator.md
 		'+unicorn/require-array-join-separator': 'error',
@@ -408,6 +452,33 @@ module.exports = {
 		// Enforce better string content
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/string-content.md
 		'unicorn/string-content': 'off',
+
+		// Fix whitespace-insensitive template indentation (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/template-indent.md
+		// Note: this is default configuration but I have a feeling that changes will be needed, so the options are explicit
+		'+unicorn/template-indent': ['warn', {
+			tags: [
+				'outdent',
+				'dedent',
+				'gql',
+				'sql',
+				'html',
+				'styled',
+			],
+			functions: [
+				'dedent',
+				'stripIndent',
+			],
+			selectors: [],
+			comments: [
+				'HTML',
+				'indent',
+			],
+		}],
+
+		// Enforce consistent case for text encoding identifiers
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/text-encoding-identifier-case.md
+		'unicorn/text-encoding-identifier-case': 'warn',
 
 		// Require new when throwing an error (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md

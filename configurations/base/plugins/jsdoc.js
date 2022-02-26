@@ -54,6 +54,10 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-types
 		'+jsdoc/check-types': 'error',
 
+		// Reports invalid types
+		// https://github.com/gajus/eslint-plugin-jsdoc#check-values
+		'jsdoc/check-values': 'error',
+
 		// Expects the following tags to be empty of any content
 		// (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#empty-tags
@@ -213,6 +217,11 @@ module.exports = {
 		// (or yield with a value) is present in the function body
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-yields-check
 		'jsdoc/require-yields-check': 'error',
+
+		// Sorts tags by a specified sequence according to tag name (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc#sort-tags
+		// Note: let it be here with default order for a while
+		'+jsdoc/sort-tags': 'warn',
 
 		// Enforces lines (or no lines) between tags (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#tag-lines

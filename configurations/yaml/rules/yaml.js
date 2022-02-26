@@ -75,6 +75,11 @@ module.exports = {
 			],
 		}],
 
+		// Require sequence values to be sorted
+		// https://ota-meshi.github.io/eslint-plugin-yml/rules/sort-sequence-values.html
+		// Note: should be configured individually
+		'yml/sort-sequence-values': 'off',
+
 		// Enforce the consistent use of either double, or single quotes (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/quotes.html
 		'+yml/quotes': ['warn', {

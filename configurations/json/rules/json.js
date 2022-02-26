@@ -1,5 +1,10 @@
 module.exports = {
 	rules: {
+		// Apply jsonc rules similar to your configured ESLint core rules
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/auto.html
+		// Note: Extension rules handled manually for more control
+		'jsonc/auto': 'off',
+
 		// Enforce naming convention to property key names
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/key-name-casing.html
 		// Reason: JSON is widely used for completely opposite things
@@ -72,6 +77,11 @@ module.exports = {
 		// Disallow Unicode code point escape sequences (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-unicode-codepoint-escapes.html
 		'+jsonc/no-unicode-codepoint-escapes': 'error',
+
+		// Require array values to be sorted (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/sort-array-values.html
+		// Note: should be configured individually
+		'+jsonc/sort-array-values': 'off',
 
 		// Disallow invalid number for JSON (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/valid-json-number.html

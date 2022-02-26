@@ -29,13 +29,13 @@ const rulesToExtend = [
 	'+object-curly-newline',
 	'+object-curly-spacing',
 	'+object-property-newline',
-	// '!object-shorthand', // TODO: [2022-05-11] Not released yet
+	'object-shorthand',
 	'+operator-linebreak',
 	// It seems https://github.com/JuniorTour/vue-template-babel-compiler
-	// not stable, turned off for a white
+	// not stable, turned off for a while
 	// TODO: [2022-05-11] Try again with vue-template-babel-compiler
 	// '!prefer-template', // autofix works strange sometimes
-	// '+quote-props', // TODO: [2022-05-11] Not released yet
+	'+quote-props',
 	'+space-in-parens',
 	'+space-infix-ops',
 	'+space-unary-ops',

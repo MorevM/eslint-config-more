@@ -188,10 +188,9 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/no-this-in-before-route-enter.html
 		'vue/no-this-in-before-route-enter': 'error',
 
-		// Disallow use of undefined components in <template>
+		// Disallow use of undefined components in `<template>`
 		// https://eslint.vuejs.org/rules/no-undef-components.html
-		// TODO: [2022-05-11] Not released yet
-		// 'vue/no-undef-components': 'off',
+		'vue/no-undef-components': 'error',
 
 		// Disallow undefined properties
 		// https://eslint.vuejs.org/rules/no-undef-properties.html
@@ -238,8 +237,7 @@ module.exports = {
 
 		// Disallow `v-text` / `v-html` on component
 		// https://eslint.vuejs.org/rules/no-v-text.html
-		// TODO: [2022-05-11] Not released yet
-		// 'vue/no-v-text-v-html-on-component': 'error',
+		'vue/no-v-text-v-html-on-component': 'error',
 
 		// Disallow use of `v-text`
 		// https://eslint.vuejs.org/rules/no-v-text.html
@@ -253,6 +251,10 @@ module.exports = {
 		// (autofixable but is it really needed?)
 		// https://eslint.vuejs.org/rules/prefer-separate-static-class.html
 		'!vue/prefer-separate-static-class': 'off',
+
+		// Require shorthand form attribute when v-bind value is true
+		// https://eslint.vuejs.org/rules/prefer-true-attribute-shorthand.html
+		'vue/prefer-true-attribute-shorthand': 'warn',
 
 		// Require the component to be directly exported
 		// https://eslint.vuejs.org/rules/require-direct-export.html
