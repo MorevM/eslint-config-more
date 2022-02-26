@@ -195,6 +195,7 @@ module.exports = {
 		// https://eslint.org/docs/rules/no-confusing-arrow
 		'+no-confusing-arrow': ['error', {
 			allowParens: true,
+			onlyOneSimpleParam: true,
 		}],
 
 		// Disallow the use of `console`
