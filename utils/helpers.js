@@ -1,7 +1,10 @@
 const _mergeWith = require('lodash.mergewith');
 const _clonedeep = require('lodash.clonedeep');
 
-const mergeWithArrayComparer = (ov, sv) => (Array.isArray(ov) ? [...new Set([...sv, ...ov])] : undefined);
+const mergeWithArrayComparer = (ov, sv, key) =>
+	Array.isArray(ov) && ['plugins', 'overrides'].includes(key)
+		? [...new Set([...sv, ...ov])]
+		: undefined;
 
 const autofixableRulesToWarn = (rules, autofixableList) => Object.fromEntries(
 	Object.entries(rules)

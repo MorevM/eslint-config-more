@@ -11,6 +11,13 @@ const config = makeConfig([
 		},
 	},
 	{
+		name: 'vue/vue3',
+		overrides: {
+			 // There is no such extension, just needed to test all things working correct
+			files: ['*.vue3'],
+		},
+	},
+	{
 		name: 'jest',
 		overrides: {
 			files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
