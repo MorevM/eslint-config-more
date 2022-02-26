@@ -44,6 +44,12 @@ const config = makeConfig([
 			files: ['*.ts'],
 		},
 	},
+	{
+		name: 'html',
+		overrides: {
+			files: ['*.html'],
+		},
+	},
 ].reverse());
 
 config.overrides = config.overrides || [];

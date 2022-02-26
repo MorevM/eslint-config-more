@@ -50,6 +50,9 @@
 		"./preset/typescript": "./build/presets/typescript.js",
 		"./preset/typescript/strict": "./build/presets/typescript-strict.js",
 		"./preset/typescript/quiet": "./build/presets/typescript-quiet.js",
+		"./preset/html": "./build/presets/html.js",
+		"./preset/html/strict": "./build/presets/html-strict.js",
+		"./preset/html/quiet": "./build/presets/html-quiet.js",
 		"./base": "./build/configurations/base.js",
 		"./base/strict": "./build/configurations/base-strict.js",
 		"./base/quiet": "./build/configurations/base-quiet.js",
@@ -82,7 +85,10 @@
 		"./yaml/quiet": "./build/configurations/yaml-quiet.js",
 		"./typescript": "./build/configurations/typescript.js",
 		"./typescript/strict": "./build/configurations/typescript-strict.js",
-		"./typescript/quiet": "./build/configurations/typescript-quiet.js"
+		"./typescript/quiet": "./build/configurations/typescript-quiet.js",
+		"./html": "./build/configurations/html.js",
+		"./html/strict": "./build/configurations/html-strict.js",
+		"./html/quiet": "./build/configurations/html-quiet.js"
 	},
 	"main": "./build/presets/common.js",
 	"scripts": {
@@ -101,6 +107,8 @@
 		"@babel/core": "^7.16.12",
 		"@babel/eslint-parser": "^7.16.5",
 		"@babel/plugin-syntax-jsx": "^7.16.7",
+		"@html-eslint/eslint-plugin": "^0.13.1",
+		"@html-eslint/parser": "^0.13.1",
 		"@typescript-eslint/eslint-plugin": "^5.11.0",
 		"@typescript-eslint/parser": "^5.11.0",
 		"eslint-plugin-eslint-comments": "^3.2.0",

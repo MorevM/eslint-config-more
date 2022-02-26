@@ -46,6 +46,7 @@ The rules don't intersect, so if you are working with `Vue2`, you need to includ
   * `@morev/eslint-config/jsonc` - superset of `json` for `.jsonc` and `.json5` files (also suitable for `[jt]sconfig.json` files)
   * `@morev/eslint-config/package-json` - superset of `json` for `package.json` file to keep consistent order of fields
 * `@morev/eslint-config/yaml` - for projects that use [YAML files](https://en.wikipedia.org/wiki/YAML)
+* `@morev/eslint-config/html` - for projects that use pure HTML files
 
 > Don't be surprised that these files aren't in the root of repository - look at the `exports` sections of [`package.json`](./package.json).
 
@@ -88,6 +89,7 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
   * `json`
   * `jsonc`
   * `package-json`
+  * `html`
 
   ```js
   module.exports = {
@@ -123,6 +125,10 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
       {
         files: ['package.json'],
         extends: ['@morev/eslint-config/package-json'],
+      },
+      {
+        files: ['*.html*'],
+        extends: ['@morev/eslint-config/html'],
       },
     ],
   };
@@ -251,6 +257,27 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
   };
   ```
 
+* `html` \
+  Includes `html` rules for HTML files. \
+
+  ```js
+  module.exports = {
+    root: true,
+    extends: ['@morev/eslint-config/preset/html'],
+  };
+
+  // It's the same as:
+  module.exports = {
+    root: true,
+    overrides: [
+      {
+        files: ['*.html'],
+        extends: ['@morev/eslint-config/html'],
+      },
+    ],
+  };
+  ```
+
 ## Autofixable mechanics
 
 Let's take a look on [`no-trailing-spaces`](https://eslint.org/docs/rules/no-trailing-spaces) rule. \
@@ -284,6 +311,7 @@ Thats why all configurations and presets have a three variants:
   '@morev/eslint-config/json'
   '@morev/eslint-config/jsonc'
   '@morev/eslint-config/package-json'
+  '@morev/eslint-config/html'
 
   # Presets
   '@morev/eslint-config/preset/common' # Also available as '@morev' - default export
@@ -292,6 +320,7 @@ Thats why all configurations and presets have a three variants:
   '@morev/eslint-config/preset/assistive'
   '@morev/eslint-config/preset/vue2'
   '@morev/eslint-config/preset/vue3'
+  '@morev/eslint-config/preset/html'
   ```
 
 * `Strict` \
@@ -311,6 +340,7 @@ Thats why all configurations and presets have a three variants:
   '@morev/eslint-config/json/strict'
   '@morev/eslint-config/jsonc/strict'
   '@morev/eslint-config/package-json/strict'
+  '@morev/eslint-config/html/strict'
 
   # Presets
   '@morev/eslint-config/preset/common/strict'
@@ -319,6 +349,7 @@ Thats why all configurations and presets have a three variants:
   '@morev/eslint-config/preset/assistive/strict'
   '@morev/eslint-config/preset/vue2/strict'
   '@morev/eslint-config/preset/vue3/strict'
+  '@morev/eslint-config/preset/html/strict'
   ```
 
 * `Quiet` \
@@ -344,6 +375,7 @@ Thats why all configurations and presets have a three variants:
   '@morev/eslint-config/json/quiet'
   '@morev/eslint-config/jsonc/quiet'
   '@morev/eslint-config/package-json/quiet'
+  '@morev/eslint-config/html/quiet'
 
   # Presets
   '@morev/eslint-config/preset/common/quiet'
@@ -352,6 +384,7 @@ Thats why all configurations and presets have a three variants:
   '@morev/eslint-config/preset/assistive/quiet'
   '@morev/eslint-config/preset/vue2/quiet'
   '@morev/eslint-config/preset/vue3/quiet'
+  '@morev/eslint-config/preset/html/quiet'
   ```
 
 ## Usage
@@ -375,11 +408,7 @@ module.exports = {
       extends: ['@morev/eslint-config/node']
     },
     {
-      files: ['./server/**/*.js'],
-      extends: ['@morev/eslint-config/node']
-    },
-    {
-      files: ['./**/*.ts'],
+      files: ['*.ts'],
       extends: ['@morev/eslint-config/typescript'],
       parserOptions: {
         project: './tsconfig.json',
@@ -400,6 +429,10 @@ module.exports = {
     {
       files: ['package.json'],
       extends: ['@morev/eslint-config/package-json'],
+    },
+    {
+      files: ['*.html'],
+      extends: ['@morev/eslint-config/html'],
     },
   ]
 }

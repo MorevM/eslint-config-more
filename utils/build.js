@@ -31,6 +31,7 @@ const availableConfigs = [
 	{ name: 'vue/vue3', output: 'vue3' },
 	{ name: 'yaml' },
 	{ name: 'typescript' },
+	{ name: 'html' },
 ];
 
 const rulesets = {
@@ -56,6 +57,12 @@ const rulesets = {
 		{
 			name: 'jest',
 			overrides: { files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'] },
+		},
+	],
+	html: [
+		{
+			name: 'html',
+			overrides: { files: ['*.html'] },
 		},
 	],
 	assistive: [
@@ -88,6 +95,7 @@ const presets = [
 			...rulesets.typescript,
 			...rulesets.jest,
 			...rulesets.assistive,
+			...rulesets.html,
 		],
 	},
 	{
@@ -118,6 +126,12 @@ const presets = [
 		name: 'typescript',
 		configurations: [
 			...rulesets.typescript,
+		],
+	},
+	{
+		name: 'html',
+		configurations: [
+			...rulesets.html,
 		],
 	},
 ];
