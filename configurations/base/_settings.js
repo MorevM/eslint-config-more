@@ -25,6 +25,7 @@ const parts = [
 	'./plugins/import.js',
 	'./plugins/jsdoc.js',
 	'./plugins/eslint-comments.js',
+	'./plugins/no-secrets.js',
 ].map(part => require(part));
 
 module.exports = { base, parts };
