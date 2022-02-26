@@ -1,4 +1,46 @@
-## [7.0.0](https://github.com/MorevM/eslint-config/compare/v6.0.2...v7.0.0) (2022-02-26)
+undefined
+
+## [8.0.0](https://github.com/MorevM/eslint-config/compare/v7.0.0...v8.0.0) (2022-02-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* There was a many unused rules in `base`, `jest`, `json` and `vue` configurations.
+All rules are covered, configurations become more strict
+
+### Features
+
+* Add mistakenly unused rules ([38145bb](https://github.com/MorevM/eslint-config/commit/38145bbe0684314bf7b62daf51b1420ee4991a8f))
+* **base:** Add new option to `no-confusing-arrow` rule ([968a04b](https://github.com/MorevM/eslint-config/commit/968a04bfa1928c6f7b037697e5b8f47bb5699f99))
+* **base:** Add new option to `no-shadow` rule ([6b83993](https://github.com/MorevM/eslint-config/commit/6b8399354ecc434c2f52a6b631b0cec37c08e292))
+
+
+### Chores
+
+* bump @release-it/conventional-changelog from 4.1.0 to 4.2.0 ([#25](https://github.com/MorevM/eslint-config/issues/25)) ([00405c2](https://github.com/MorevM/eslint-config/commit/00405c27afe11b2d8eb51647cc0eebed92649c23))
+* bump @types/jest from 27.4.0 to 27.4.1 ([#24](https://github.com/MorevM/eslint-config/issues/24)) ([6848b5c](https://github.com/MorevM/eslint-config/commit/6848b5c4d5f984590eb962a7de04487a3ef3d077))
+* bump @typescript-eslint/eslint-plugin from 5.12.0 to 5.12.1 ([#28](https://github.com/MorevM/eslint-config/issues/28)) ([090c745](https://github.com/MorevM/eslint-config/commit/090c745f28ad2c86853dfe9c1480553eb7fee694))
+* bump @typescript-eslint/parser from 5.12.0 to 5.12.1 ([#26](https://github.com/MorevM/eslint-config/issues/26)) ([c78bec6](https://github.com/MorevM/eslint-config/commit/c78bec6aa873135182cd2927c6bf3a0b381bc968))
+* bump eslint from 8.9.0 to 8.10.0 ([#31](https://github.com/MorevM/eslint-config/issues/31)) ([cc33be6](https://github.com/MorevM/eslint-config/commit/cc33be6bc86f1e1818ccff496ef64b73786efe93))
+* bump eslint-plugin-vue from 8.4.1 to 8.5.0 ([#30](https://github.com/MorevM/eslint-config/issues/30)) ([c239cbc](https://github.com/MorevM/eslint-config/commit/c239cbc34a49edda7e9f06c7af6a6992bf60051d))
+* bump release-it from 14.12.4 to 14.12.5 ([#29](https://github.com/MorevM/eslint-config/issues/29)) ([5e13a3e](https://github.com/MorevM/eslint-config/commit/5e13a3e467569a2261dcc07bc633c5de05873c2f))
+* bump vue-eslint-parser from 8.2.0 to 8.3.0 ([#27](https://github.com/MorevM/eslint-config/issues/27)) ([78c6638](https://github.com/MorevM/eslint-config/commit/78c663861d29eb43d89f865dcdedf3cb63d8b344))
+
+
+### Refactoring
+
+* Better project structure ([d2e41ff](https://github.com/MorevM/eslint-config/commit/d2e41ff9c9097b7bcf2597994433f1e916520397))
+
+
+### Tests
+
+* Add test for unused and deprecated rules ([21fc9b5](https://github.com/MorevM/eslint-config/commit/21fc9b5ee0b9f24796ebc45db45885a911ef7828))
+
+
+### Bug fixes
+
+* **base:** Add `no-secrets` plugin ([fdae263](https://github.com/MorevM/eslint-config/commit/fdae26318fc655366cd471a5a5bea53d81829c23))
+* **html:** Disable ESLint rules related to comments in `HTML` files ([6b19a59](https://github.com/MorevM/eslint-config/commit/6b19a59396de49dffdf4ca9505436251258f1e00))## [7.0.0](https://github.com/MorevM/eslint-config/compare/v6.0.2...v7.0.0) (2022-02-26)
 
 
 ### ⚠ BREAKING CHANGES
