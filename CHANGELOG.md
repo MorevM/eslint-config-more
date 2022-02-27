@@ -1,5 +1,12 @@
 undefined
 
+### [8.0.1](https://github.com/MorevM/eslint-config/compare/v8.0.0...v8.0.1) (2022-02-27)
+
+
+### Bug fixes
+
+* Extension rules ([0ac6bb0](https://github.com/MorevM/eslint-config/commit/0ac6bb0a4cbc035c5385b055b62d928b7291cab1))undefined
+
 ## [8.0.0](https://github.com/MorevM/eslint-config/compare/v7.0.0...v8.0.0) (2022-02-26)
 
 
