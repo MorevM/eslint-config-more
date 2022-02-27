@@ -1,6 +1,6 @@
 const { makeConfig } = require('../../../utils/tools.js');
 
-const base = makeConfig([{ name: 'base', autofixable: 'bypass' }]).rules;
+const base = makeConfig([{ name: 'base', mode: 'strict' }]).rules;
 
 const extendFromBase = (rule, extendWith = null) => {
 	const cleanRule = rule.replace(/^[!+]/, '');

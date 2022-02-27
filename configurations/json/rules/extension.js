@@ -28,7 +28,7 @@ const rulesToExtend = [
 
 const extensionRules = extensionFromBase({
 	prefix: 'jsonc',
-	baseRules: base('bypass').rules,
+	baseRules: base('default').rules,
 	rulesToExtend,
 });
 
