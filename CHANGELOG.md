@@ -1,5 +1,12 @@
 undefined
 
+### [8.0.2](https://github.com/MorevM/eslint-config/compare/v8.0.1...v8.0.2) (2022-03-05)
+
+
+### Bug fixes
+
+* **base:** Drastically increase `no-secrets` tolerance ([8cb4766](https://github.com/MorevM/eslint-config/commit/8cb4766ee58e8a3ffd9c022323617f8788633d5a))undefined
+
 ### [8.0.1](https://github.com/MorevM/eslint-config/compare/v8.0.0...v8.0.1) (2022-02-27)
 
 
