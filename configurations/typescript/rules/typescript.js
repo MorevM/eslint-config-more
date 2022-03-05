@@ -401,6 +401,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-redeclare
 		...extendFromBase('no-redeclare'),
 
+		// Disallow members of unions and intersections that do nothing or override type information
+		// https://typescript-eslint.io/rules/no-redundant-type-constituents
+		'@typescript-eslint/no-redundant-type-constituents': 'error',
+
 		// Disallows invocation of `require()`
 		// https://typescript-eslint.io/rules/no-require-imports
 		'@typescript-eslint/no-require-imports': 'error',
@@ -497,6 +501,11 @@ module.exports = {
 		// Disallow unnecessary constructors
 		// https://typescript-eslint.io/rules/no-useless-constructor
 		...extendFromBase('no-useless-constructor'),
+
+		// Disallow empty exports that don't change anything in a module file
+		// (autofixable but might be confusing during development)
+		// https://typescript-eslint.io/rules/no-useless-empty-export/
+		'!@typescript-eslint/no-useless-empty-export': 'warn',
 
 		// Disallows the use of require statements except in import statements
 		// https://typescript-eslint.io/rules/no-var-requires
@@ -642,6 +651,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/sort-type-union-intersection-members
 		// Note: developer knows better
 		'@typescript-eslint/sort-type-union-intersection-members': 'off',
+
+		// Enforces consistent spacing before blocks (autofixable)
+		// https://typescript-eslint.io/rules/space-before-blocks/
+		...extendFromBase('+space-before-blocks'),
 
 		// Enforces consistent spacing before function parenthesis (autofixable)
 		// https://typescript-eslint.io/rules/space-before-function-paren
