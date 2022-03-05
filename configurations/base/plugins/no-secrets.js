@@ -9,7 +9,7 @@ module.exports = {
 		 * TODO: [2022-05-11] Review
 		 */
 		'no-secrets/no-secrets': ['error', {
-			tolerance: 5,
+			tolerance: 99,
 			additionalRegexes: {},
 			ignoreContent: '^ABCD',
 			ignoreModules: true,
