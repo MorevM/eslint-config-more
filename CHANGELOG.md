@@ -1,4 +1,21 @@
-undefined
+
+
+## [8.2.0](https://github.com/MorevM/eslint-config/compare/v8.1.0...v8.2.0) (2022-03-12)
+
+
+### Features
+
+* **base:** Add `destructuredArrayIgnorePattern` option to `no-unused-vars` ([3b86a06](https://github.com/MorevM/eslint-config/commit/3b86a060b08a13365c9af88f749d59c236b3c649))
+* **base:** Smooth `destructuring` option of `prefer-const` rule ([70d3aa6](https://github.com/MorevM/eslint-config/commit/70d3aa6fbb2ec24b416fba9b56504e237ed29bcc))
+
+
+### Chores
+
+* bump @release-it/conventional-changelog from 4.2.0 to 4.2.2 ([#41](https://github.com/MorevM/eslint-config/issues/41)) ([8d30b4b](https://github.com/MorevM/eslint-config/commit/8d30b4b3da79055f3b3ca5b59739818c452ccd22))
+* bump @typescript-eslint/eslint-plugin from 5.13.0 to 5.14.0 ([#37](https://github.com/MorevM/eslint-config/issues/37)) ([b698ad0](https://github.com/MorevM/eslint-config/commit/b698ad010f84b8bdcb8b862263164a8c239faebb))
+* bump @typescript-eslint/parser from 5.13.0 to 5.14.0 ([#40](https://github.com/MorevM/eslint-config/issues/40)) ([9cd7456](https://github.com/MorevM/eslint-config/commit/9cd7456753276f14accf890a126912e8c065f5c8))
+* bump eslint from 8.10.0 to 8.11.0 ([#39](https://github.com/MorevM/eslint-config/issues/39)) ([a0f09aa](https://github.com/MorevM/eslint-config/commit/a0f09aa9236c3870e31ec53495ec7283aea2e168))
+* bump eslint-plugin-jsdoc from 37.9.6 to 38.0.2 ([#38](https://github.com/MorevM/eslint-config/issues/38)) ([42f6b04](https://github.com/MorevM/eslint-config/commit/42f6b047e33cf4781e84aeb3d3ab5db8475c6c00))undefined
 
 ## [8.1.0](https://github.com/MorevM/eslint-config/compare/v8.0.2...v8.1.0) (2022-03-05)
 
