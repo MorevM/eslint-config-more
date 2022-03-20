@@ -3,6 +3,7 @@ const configurations = [
 	{ name: 'node' },
 	{ name: 'browser' },
 	{ name: 'jest' },
+	{ name: 'cypress' },
 	{ name: 'json' },
 	{ name: 'json/jsonc', output: 'jsonc' },
 	{ name: 'json/package-json', output: 'package-json' },
@@ -35,7 +36,19 @@ const withOverrides = {
 	jest: [
 		{
 			name: 'jest',
-			overrides: { files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'] },
+			overrides: {
+				files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+				ignorePatterns: ['**/cypress/**/*'],
+			},
+		},
+	],
+	cypress: [
+		{
+			name: 'cypress',
+			overrides: {
+				files: ['**/cypress/integration/**/*.*'],
+				ignorePatterns: ['*.hot-update.js'],
+			},
 		},
 	],
 	html: [
@@ -73,6 +86,7 @@ const presets = [
 			{ name: 'browser' },
 			...withOverrides.typescript,
 			...withOverrides.jest,
+			...withOverrides.cypress,
 			...withOverrides.assistive,
 			...withOverrides.html,
 		],
@@ -93,6 +107,12 @@ const presets = [
 		name: 'jest',
 		configurations: [
 			...withOverrides.jest,
+		],
+	},
+	{
+		name: 'cypress',
+		configurations: [
+			...withOverrides.cypress,
 		],
 	},
 	{
