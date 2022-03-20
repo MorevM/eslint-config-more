@@ -4,7 +4,7 @@
 	"version": "9.0.0",
 	"private": false,
 	"engines": {
-		"node": "^12.20.0 || ^14.13.1 || ^15.0.0 || >=16.0.0"
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
 	"license": "MIT",
 	"publishConfig": {
@@ -125,6 +125,7 @@
 		"eslint-plugin-jest-formatting": "^3.1.0",
 		"eslint-plugin-jsdoc": "^38.0.2",
 		"eslint-plugin-jsonc": "^2.0.0",
+		"eslint-plugin-markdownlint": "^0.3.3",
 		"eslint-plugin-no-autofix": "^1.2.3",
 		"eslint-plugin-no-secrets": "^0.8.9",
 		"eslint-plugin-node": "^11.1.0",

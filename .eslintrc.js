@@ -57,6 +57,12 @@ const config = makeConfig([
 			files: ['*.html'],
 		},
 	},
+	{
+		name: 'markdown',
+		overrides: {
+			files: ['*.md'],
+		},
+	},
 ].reverse());
 
 config.overrides = config.overrides || [];
@@ -65,6 +71,13 @@ config.overrides.push({
 	rules: {
 		'node/global-require': 'off',
 		'import/no-dynamic-require': 'off',
+	},
+}, {
+	files: ['*.md'],
+	rules: {
+		// Doesn't respect HTML element indentation
+		'markdownlint/md007': 'off',
+		'no-autofix/markdownlint/md007': 'off',
 	},
 });
 

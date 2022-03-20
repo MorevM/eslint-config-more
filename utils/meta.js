@@ -12,6 +12,7 @@ const configurations = [
 	{ name: 'yaml' },
 	{ name: 'typescript' },
 	{ name: 'html' },
+	{ name: 'markdown' },
 ];
 
 const withOverrides = {
@@ -74,7 +75,17 @@ const withOverrides = {
 			name: 'yaml',
 			overrides: { files: ['*.yaml', '*.yml'] },
 		},
+		{
+			name: 'markdown',
+			overrides: { files: ['*.md'] },
+		},
 	].reverse(),
+	markdown: [
+		{
+			name: 'markdown',
+			overrides: { files: ['*.md'] },
+		},
+	],
 };
 
 const presets = [
@@ -131,6 +142,12 @@ const presets = [
 		name: 'html',
 		configurations: [
 			...withOverrides.html,
+		],
+	},
+	{
+		name: 'markdown',
+		configurations: [
+			...withOverrides.markdown,
 		],
 	},
 ];

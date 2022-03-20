@@ -12,23 +12,27 @@ Strict shareable ESLint configuration that I personally use.
 ## Install
 
 ### Using `yarn`
+
 ```bash
 yarn add eslint @morev/eslint-config --dev
 ```
 
 ### Using `npm`
+
 ```bash
 npm install -D eslint @morev/eslint-config
 ```
 
 ### Using `pnpm`
+
 ```bash
 pnpm add -D eslint @morev/eslint-config
 ```
 
 ## Package contents
 
-The package provides many configurations, each can be used in three variations depending on how you feel about errors that can be fixed automatically ([details about autofixable mechanics](#autofixable-mechanics)).
+The package provides many configurations, each can be used in three variations depending on how you feel
+about errors that can be fixed automatically ([details about autofixable mechanics](#autofixable-mechanics)).
 
 The rules don't intersect, so if you are working with `Vue2`, you need to include `vue2` and `base` configurations both.
 
@@ -40,6 +44,7 @@ The rules don't intersect, so if you are working with `Vue2`, you need to includ
 * `@morev/eslint-config/typescript` - for projects that use [Typescript](https://www.typescriptlang.org/)
 * `@morev/eslint-config/jest` - for projects that use [Jest](https://jestjs.io/)
 * `@morev/eslint-config/cypress` - for projects that use [Cypress](https://www.cypress.io/)
+* `@morev/eslint-config/markdown` - for projects that use [Markdown](https://en.wikipedia.org/wiki/Markdown)
 * For projects that use [VueJS](https://vuejs.org/)
   * `@morev/eslint-config/vue2` - rules for `Vue 2.*`
   * `@morev/eslint-config/vue3` - rules for `Vue 3.*`
@@ -53,7 +58,9 @@ The rules don't intersect, so if you are working with `Vue2`, you need to includ
 
 ### Presets
 
-For proper work, performance and false positives prevention you need to apply configurations **only** to needed parts of your application with [`overrides` ESLint setting](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-based-on-glob-patterns), like:
+For proper work, performance and false positives prevention you need to apply configurations **only** to needed parts of your application with
+[`overrides` ESLint setting](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-based-on-glob-patterns), like:
+
 ```js
 module.exports = {
   root: true,
@@ -74,7 +81,8 @@ module.exports = {
 
 It can be annoying and verbose to write it all the time (although it has advantages, explicit is better than implicit).
 
-Usually you want to lint all `json` and `yaml` files based on its extension, all `vue` files have `.vue` extension, tests placed in `__tests__` folder or named with pattern `*.test.js`, etc. \
+Usually you want to lint all `json` and `yaml` files based on its extension, all `vue` files have `.vue` extension,
+tests placed in `__tests__` folder or named with pattern `*.test.js`, etc. \
 So, presets just configurations with pre-defined `overrides`.
 
 All presets comes with `/strict` and `/quiet` variants exactly the same as individual configurations.
@@ -91,6 +99,7 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
     * `typescript`
     * `jest`
     * `cypress`
+    * `markdown`
     * `yaml`
     * `json`
     * `jsonc`
@@ -148,9 +157,14 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
           files: ['*.html*'],
           extends: ['@morev/eslint-config/html'],
         },
+        {
+          files: ['*.md'],
+          extends: ['@morev/eslint-config/markdown'],
+        },
       ],
     };
     ```
+
   </details>
 
 * <details>
@@ -160,6 +174,7 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
     Configurations inside:
 
     * `yaml`
+    * `markdown`
     * `json`
     * `jsonc`
     * `package-json`
@@ -192,9 +207,14 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
           files: ['package.json'],
           extends: ['@morev/eslint-config/package-json'],
         },
+        {
+          files: ['*.md'],
+          extends: ['@morev/eslint-config/markdown'],
+        },
       ],
     };
     ```
+
   </details>
 
 * <details>
@@ -224,6 +244,7 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
       ],
     };
     ```
+
   </details>
 
 * <details>
@@ -251,6 +272,7 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
       ],
     };
     ```
+
   </details>
 
 * <details>
@@ -277,6 +299,7 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
       ],
     };
     ```
+
   </details>
 
 * <details>
@@ -330,6 +353,7 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
       ],
     };
     ```
+
   </details>
 
 * <details>
@@ -362,7 +386,8 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
 ## Autofixable mechanics
 
 Let's take a look on [`no-trailing-spaces`](https://eslint.org/docs/rules/no-trailing-spaces) rule. \
-In my opinion, this rule should definitely have a maximum level of severity (`error`) because if at some point these spaces will be removed, then the git diff becomes completely unreadable.
+In my opinion, this rule should definitely have a maximum level of severity (`error`) because if at some point these spaces will be removed,
+then the git diff becomes completely unreadable.
 It makes review harder or forces to have commits only for linting that feels like unpleasant behavior.
 
 But, at the same time, do you need constant red underlines during development for a rule that can be easily fixed automatically? \
@@ -371,14 +396,17 @@ Thats why all configurations and presets have a three variants:
 * `Default` \
   The recommended option to use. \
   All errors that can be fixed automatically are given a "warning" level.
-  Thus, the every developer can clearly see which codestyle is considered good, but at the same time not overloaded with an abundance of "red underlines". \
+  Thus, the every developer can clearly see which codestyle is considered good,
+  but at the same time not overloaded with an abundance of "red underlines". \
   It's also recommended to use the "formatOnSave" editor feature (below) along with this option.
 
   > Keep in mind that many autofixable rules are actually "partially autofixable",
   > meaning running the command `eslint --fix` will not reduce the number of warnings to zero in most cases.
-
-  > Also keep in mind that some rules marked as `autofixable` in the `ESLint` / `ESLint plugin` documentation will not be fixed when run with the `--fix` flag.
-  > For example, the [eqeqeq](https://eslint.org/docs/rules/eqeqeq) rule can be fixed automatically, but this is dangerous because it can change the application logic. \
+  >
+  > Also keep in mind that some rules marked as `autofixable` in the `ESLint` / `ESLint plugin` documentation
+  > will not be fixed when run with the `--fix` flag. \
+  > For example, the [eqeqeq](https://eslint.org/docs/rules/eqeqeq) rule can be fixed automatically,
+  > but this is dangerous because it can change the application logic. \
   > Such rules marked with `!` sign in source.
 
   Configurations and presets that use this option are available without any suffix, just name.
@@ -400,6 +428,7 @@ Thats why all configurations and presets have a three variants:
     '@morev/eslint-config/jsonc'
     '@morev/eslint-config/package-json'
     '@morev/eslint-config/html'
+    '@morev/eslint-config/markdown'
 
     # Presets
     '@morev/eslint-config/preset/common' # Also available as '@morev' - default export
@@ -409,7 +438,9 @@ Thats why all configurations and presets have a three variants:
     '@morev/eslint-config/preset/vue2'
     '@morev/eslint-config/preset/vue3'
     '@morev/eslint-config/preset/html'
+    '@morev/eslint-config/preset/markdown'
     ```
+
   </details>
 
 * `Strict` \
@@ -433,6 +464,7 @@ Thats why all configurations and presets have a three variants:
     '@morev/eslint-config/jsonc/strict'
     '@morev/eslint-config/package-json/strict'
     '@morev/eslint-config/html/strict'
+    '@morev/eslint-config/markdown/strict'
 
     # Presets
     '@morev/eslint-config/preset/common/strict'
@@ -442,7 +474,9 @@ Thats why all configurations and presets have a three variants:
     '@morev/eslint-config/preset/vue2/strict'
     '@morev/eslint-config/preset/vue3/strict'
     '@morev/eslint-config/preset/html/strict'
+    '@morev/eslint-config/preset/markdown/strict'
     ```
+
   </details>
 
 * `Quiet` \
@@ -472,6 +506,7 @@ Thats why all configurations and presets have a three variants:
     '@morev/eslint-config/jsonc/quiet'
     '@morev/eslint-config/package-json/quiet'
     '@morev/eslint-config/html/quiet'
+    '@morev/eslint-config/markdown/quiet'
 
     # Presets
     '@morev/eslint-config/preset/common/quiet'
@@ -481,7 +516,9 @@ Thats why all configurations and presets have a three variants:
     '@morev/eslint-config/preset/vue2/quiet'
     '@morev/eslint-config/preset/vue3/quiet'
     '@morev/eslint-config/preset/html/quiet'
+    '@morev/eslint-config/preset/markdown/quiet'
     ```
+
   </details>
 
 ## Usage
@@ -531,6 +568,10 @@ module.exports = {
       files: ['*.html'],
       extends: ['@morev/eslint-config/html'],
     },
+    {
+      files: ['*.md'],
+      extends: ['@morev/eslint-config/markdown'],
+    },
   ]
 }
 ```
@@ -538,19 +579,22 @@ module.exports = {
 ## Configure VSCode to auto-format on save (like `prettier`):
 
 Create `.vscode/settings.json`:
+
 ```json
 {
-	"prettier.enable": false,
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true,
-	},
-	"eslint.format.enable": true,
-	"eslint.validate": [
-		"json",
-		"jsonc",
-		"json5",
-		"yaml",
-		"vue",
-	]
+  "prettier.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "yaml"
+  ]
 }
 ```
