@@ -16,6 +16,8 @@ const KNOWN_UNUSED = [
 	// It seems https://github.com/JuniorTour/vue-template-babel-compiler not stable,
 	// turned off for a while
 	'vue/prefer-template',
+	// Turned off due of wrong implementation, now replaced with standard `no-multiple-empty-lines`
+	'markdownlint/md012',
 ];
 const TEMP_FILE = `.tmp-config.js`;
 
