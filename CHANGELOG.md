@@ -1,6 +1,23 @@
 
 
-## [8.2.0](https://github.com/MorevM/eslint-config/compare/v8.1.0...v8.2.0) (2022-03-12)
+## [9.0.0](https://github.com/MorevM/eslint-config/compare/v8.2.0...v9.0.0) (2022-03-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* Preset `common` includes new `cypress` configuration, so default preset becomes more strict.
+
+### Chores
+
+* bump @babel/core from 7.17.5 to 7.17.8 ([#45](https://github.com/MorevM/eslint-config/issues/45)) ([0387f42](https://github.com/MorevM/eslint-config/commit/0387f42c0d3ca62a93d7760dba3c52ae1515693c))
+* bump @typescript-eslint/eslint-plugin from 5.14.0 to 5.15.0 ([#43](https://github.com/MorevM/eslint-config/issues/43)) ([4a26347](https://github.com/MorevM/eslint-config/commit/4a263476b7d10b752b99518c67ade95f85a98d36))
+* bump @typescript-eslint/parser from 5.14.0 to 5.15.0 ([#42](https://github.com/MorevM/eslint-config/issues/42)) ([3bd4e05](https://github.com/MorevM/eslint-config/commit/3bd4e0513111ee7edf575b826ac41a7eb5bb724c))
+* bump eslint-plugin-jsdoc from 38.0.2 to 38.0.5 ([#47](https://github.com/MorevM/eslint-config/issues/47)) ([4950f96](https://github.com/MorevM/eslint-config/commit/4950f961afdc9031aa8f80cf35f8320eb80378ae))
+* bump eslint-plugin-unicorn from 41.0.0 to 41.0.1 ([#46](https://github.com/MorevM/eslint-config/issues/46)) ([dd0782f](https://github.com/MorevM/eslint-config/commit/dd0782f3424567a51ed954745e347105e1a03be6))
+* bump lint-staged from 12.3.5 to 12.3.7 ([#44](https://github.com/MorevM/eslint-config/issues/44)) ([57f0424](https://github.com/MorevM/eslint-config/commit/57f042451ad3805e6e54c6ec3cda1508ef8fbbc6))
+
+
+* Feature/cypress (#48) ([e20637c](https://github.com/MorevM/eslint-config/commit/e20637cf2b8df3bf5e8ce2ab4a4565ae004b5d8c)), closes [#48](https://github.com/MorevM/eslint-config/issues/48)## [8.2.0](https://github.com/MorevM/eslint-config/compare/v8.1.0...v8.2.0) (2022-03-12)
 
 
 ### Features
