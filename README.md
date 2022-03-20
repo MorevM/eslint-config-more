@@ -87,6 +87,7 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
     * `base`
     * `node`
     * `browser`
+    * `typescript`
     * `jest`
     * `yaml`
     * `json`
@@ -106,11 +107,15 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
     module.exports = {
       root: true,
       extends: [
-        '@morev/base',
-        '@morev/node',
-        '@morev/browser',
+        '@morev/eslint-config/base',
+        '@morev/eslint-config/node',
+        '@morev/eslint-config/browser',
       ],
       overrides: [
+        {
+          files: ['*.ts'],
+          extends: ['@morev/eslint-config/typescript'],
+        },
         {
           files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
           extends: ['@morev/eslint-config/jest'],
