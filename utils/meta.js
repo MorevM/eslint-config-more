@@ -1,18 +1,18 @@
 const configurations = [
 	{ name: 'base' },
-	{ name: 'node' },
 	{ name: 'browser' },
-	{ name: 'jest' },
 	{ name: 'cypress' },
+	{ name: 'html' },
+	{ name: 'jest' },
 	{ name: 'json' },
 	{ name: 'json/jsonc', output: 'jsonc' },
 	{ name: 'json/package-json', output: 'package-json' },
+	{ name: 'markdown' },
+	{ name: 'node' },
+	{ name: 'typescript' },
 	{ name: 'vue/vue2', output: 'vue2' },
 	{ name: 'vue/vue3', output: 'vue3' },
 	{ name: 'yaml' },
-	{ name: 'typescript' },
-	{ name: 'html' },
-	{ name: 'markdown' },
 ];
 
 const withOverrides = {
@@ -72,12 +72,12 @@ const withOverrides = {
 			overrides: { files: ['package.json'] },
 		},
 		{
-			name: 'yaml',
-			overrides: { files: ['*.yaml', '*.yml'] },
-		},
-		{
 			name: 'markdown',
 			overrides: { files: ['*.md'] },
+		},
+		{
+			name: 'yaml',
+			overrides: { files: ['*.yaml', '*.yml'] },
 		},
 	].reverse(),
 	markdown: [
@@ -103,21 +103,9 @@ const presets = [
 		],
 	},
 	{
-		name: 'vue2',
+		name: 'assistive',
 		configurations: [
-			...withOverrides.vue2,
-		],
-	},
-	{
-		name: 'vue3',
-		configurations: [
-			...withOverrides.vue3,
-		],
-	},
-	{
-		name: 'jest',
-		configurations: [
-			...withOverrides.jest,
+			...withOverrides.assistive,
 		],
 	},
 	{
@@ -127,9 +115,21 @@ const presets = [
 		],
 	},
 	{
-		name: 'assistive',
+		name: 'html',
 		configurations: [
-			...withOverrides.assistive,
+			...withOverrides.html,
+		],
+	},
+	{
+		name: 'jest',
+		configurations: [
+			...withOverrides.jest,
+		],
+	},
+	{
+		name: 'markdown',
+		configurations: [
+			...withOverrides.markdown,
 		],
 	},
 	{
@@ -139,15 +139,15 @@ const presets = [
 		],
 	},
 	{
-		name: 'html',
+		name: 'vue2',
 		configurations: [
-			...withOverrides.html,
+			...withOverrides.vue2,
 		],
 	},
 	{
-		name: 'markdown',
+		name: 'vue3',
 		configurations: [
-			...withOverrides.markdown,
+			...withOverrides.vue3,
 		],
 	},
 ];
