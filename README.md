@@ -39,6 +39,7 @@ The rules don't intersect, so if you are working with `Vue2`, you need to includ
 * `@morev/eslint-config/node` - for projects that use [Node.js](https://nodejs.org/)
 * `@morev/eslint-config/typescript` - for projects that use [Typescript](https://www.typescriptlang.org/)
 * `@morev/eslint-config/jest` - for projects that use [Jest](https://jestjs.io/)
+* `@morev/eslint-config/cypress` - for projects that use [Cypress](https://www.cypress.io/)
 * For projects that use [VueJS](https://vuejs.org/)
   * `@morev/eslint-config/vue2` - rules for `Vue 2.*`
   * `@morev/eslint-config/vue3` - rules for `Vue 3.*`
@@ -87,7 +88,9 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
     * `base`
     * `node`
     * `browser`
+    * `typescript`
     * `jest`
+    * `cypress`
     * `yaml`
     * `json`
     * `jsonc`
@@ -106,14 +109,24 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
     module.exports = {
       root: true,
       extends: [
-        '@morev/base',
-        '@morev/node',
-        '@morev/browser',
+        '@morev/eslint-config/base',
+        '@morev/eslint-config/node',
+        '@morev/eslint-config/browser',
       ],
       overrides: [
         {
+          files: ['*.ts'],
+          extends: ['@morev/eslint-config/typescript'],
+        },
+        {
           files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+          ignorePatterns: ['**/cypress/**/*'],
           extends: ['@morev/eslint-config/jest'],
+        },
+        {
+          files: ['**/cypress/integration/**/*.*'],
+          ignorePatterns: ['*.hot-update.js'],
+          extends: ['@morev/eslint-config/cypress'],
         },
         {
           files: ['*.yml', '*.yaml'],
@@ -188,7 +201,8 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
     <summary><code>jest</code></summary>
 
     This preset includes only `jest` configuration. \
-    Files glob pattern is the same as [`Jest testMatch` default option](https://jestjs.io/ru/docs/configuration#testmatch-arraystring)
+    Files glob pattern is the same as [`Jest testMatch` default option](https://jestjs.io/ru/docs/configuration#testmatch-arraystring). \
+    It ignores the `cypress` directory to prevent conflicts.
 
     <br />
 
@@ -204,7 +218,35 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
       overrides: [
         {
           files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+          ignorePatterns: ['**/cypress/**/*'],
           extends: ['@morev/eslint-config/jest'],
+        },
+      ],
+    };
+    ```
+  </details>
+
+* <details>
+    <summary><code>cypress</code></summary>
+
+    This preset includes only `cypress` configuration.
+
+    <br />
+
+    ```js
+    module.exports = {
+      root: true,
+      extends: ['@morev/eslint-config/preset/cypress'],
+    };
+
+    // It's the same as:
+    module.exports = {
+      root: true,
+      overrides: [
+        {
+          files: ['**/cypress/integration/**/*.*'],
+          ignorePatterns: ['*.hot-update.js'],
+          extends: ['@morev/eslint-config/cypress'],
         },
       ],
     };
