@@ -1,6 +1,35 @@
 
 
-## [9.0.0](https://github.com/MorevM/eslint-config/compare/v8.2.0...v9.0.0) (2022-03-20)
+## [10.0.0](https://github.com/MorevM/eslint-config/compare/v9.0.0...v10.0.0) (2022-03-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* Presets `common` and `assistive` have become more strict due new `markdown` config
+
+### Features
+
+* Add `markdown` configuration ([1002c98](https://github.com/MorevM/eslint-config/commit/1002c98ab9f8b202d3a37c8cd99cb481384a5db5))
+
+
+### Documentation
+
+* Sort configurations and presets alphabetically ([25575da](https://github.com/MorevM/eslint-config/commit/25575da6daf590e998deee06c0caf28180a51e52))
+
+
+### Refactoring
+
+* Sort exports alpabetically ([8f61be5](https://github.com/MorevM/eslint-config/commit/8f61be544734269415c206ff1b7d57294948924e))
+
+
+### Tests
+
+* Add `md012` to known unused rules list ([077ed36](https://github.com/MorevM/eslint-config/commit/077ed36c8afe7f2ab2ddf9fd4b7e55573589ba6e))
+
+
+### Chores
+
+* Dependencies upgrade ([76dc3d9](https://github.com/MorevM/eslint-config/commit/76dc3d932033f7576542550863b003eff8b05125))## [9.0.0](https://github.com/MorevM/eslint-config/compare/v8.2.0...v9.0.0) (2022-03-20)
 
 
 ### ⚠ BREAKING CHANGES
