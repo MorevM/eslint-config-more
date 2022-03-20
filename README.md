@@ -40,19 +40,19 @@ The rules don't intersect, so if you are working with `Vue2`, you need to includ
 
 * `@morev/eslint-config/base` - base ESLint configuration with plugins related to `js` files
 * `@morev/eslint-config/browser` - for projects that use DOM and other browser APIs
-* `@morev/eslint-config/node` - for projects that use [Node.js](https://nodejs.org/)
-* `@morev/eslint-config/typescript` - for projects that use [Typescript](https://www.typescriptlang.org/)
-* `@morev/eslint-config/jest` - for projects that use [Jest](https://jestjs.io/)
 * `@morev/eslint-config/cypress` - for projects that use [Cypress](https://www.cypress.io/)
-* `@morev/eslint-config/markdown` - for projects that use [Markdown](https://en.wikipedia.org/wiki/Markdown)
-* For projects that use [VueJS](https://vuejs.org/)
-  * `@morev/eslint-config/vue2` - rules for `Vue 2.*`
-  * `@morev/eslint-config/vue3` - rules for `Vue 3.*`
+* `@morev/eslint-config/html` - for projects that use pure HTML files
+* `@morev/eslint-config/jest` - for projects that use [Jest](https://jestjs.io/)
 * `@morev/eslint-config/json` - for projects that use [JSON files](https://en.wikipedia.org/wiki/JSON)
   * `@morev/eslint-config/jsonc` - superset of `json` for `.jsonc` and `.json5` files (also suitable for `[jt]sconfig.json` files)
   * `@morev/eslint-config/package-json` - superset of `json` for `package.json` file to keep consistent order of fields
+* `@morev/eslint-config/markdown` - for projects that use [Markdown](https://en.wikipedia.org/wiki/Markdown)
+* `@morev/eslint-config/node` - for projects that use [Node.js](https://nodejs.org/)
+* `@morev/eslint-config/typescript` - for projects that use [Typescript](https://www.typescriptlang.org/)
+* For projects that use [VueJS](https://vuejs.org/)
+  * `@morev/eslint-config/vue2` - rules for `Vue 2.*`
+  * `@morev/eslint-config/vue3` - rules for `Vue 3.*`
 * `@morev/eslint-config/yaml` - for projects that use [YAML files](https://en.wikipedia.org/wiki/YAML)
-* `@morev/eslint-config/html` - for projects that use pure HTML files
 
 > Don't be surprised that these files aren't in the root of repository - look at the `exports` sections of [`package.json`](./package.json).
 
@@ -67,12 +67,12 @@ module.exports = {
   extends: ['@morev/eslint-config/base'],
   overrides: [
     {
-      files: ['*.yml', '*.yaml'],
-      extends: ['@morev/eslint-config/yaml']
-    },
-    {
       files: ['*.json'],
       extends: ['@morev/eslint-config/json']
+    },
+    {
+      files: ['*.yml', '*.yaml'],
+      extends: ['@morev/eslint-config/yaml']
     },
     // ...more overrides
   ]
@@ -94,17 +94,17 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
     It includes configurations:
 
     * `base`
-    * `node`
     * `browser`
-    * `typescript`
-    * `jest`
     * `cypress`
-    * `markdown`
-    * `yaml`
+    * `html`
+    * `jest`
     * `json`
     * `jsonc`
     * `package-json`
-    * `html`
+    * `markdown`
+    * `node`
+    * `typescript`
+    * `yaml`
 
     <br />
 
@@ -119,27 +119,23 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
       root: true,
       extends: [
         '@morev/eslint-config/base',
-        '@morev/eslint-config/node',
         '@morev/eslint-config/browser',
+        '@morev/eslint-config/node',
       ],
       overrides: [
-        {
-          files: ['*.ts'],
-          extends: ['@morev/eslint-config/typescript'],
-        },
-        {
-          files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-          ignorePatterns: ['**/cypress/**/*'],
-          extends: ['@morev/eslint-config/jest'],
-        },
         {
           files: ['**/cypress/integration/**/*.*'],
           ignorePatterns: ['*.hot-update.js'],
           extends: ['@morev/eslint-config/cypress'],
         },
         {
-          files: ['*.yml', '*.yaml'],
-          extends: ['@morev/eslint-config/yaml'],
+          files: ['*.html*'],
+          extends: ['@morev/eslint-config/html'],
+        },
+        {
+          files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+          ignorePatterns: ['**/cypress/**/*'],
+          extends: ['@morev/eslint-config/jest'],
         },
         {
           files: ['*.json', '*.json5', '*.jsonc'],
@@ -154,12 +150,16 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
           extends: ['@morev/eslint-config/package-json'],
         },
         {
-          files: ['*.html*'],
-          extends: ['@morev/eslint-config/html'],
-        },
-        {
           files: ['*.md'],
           extends: ['@morev/eslint-config/markdown'],
+        },
+        {
+          files: ['*.ts'],
+          extends: ['@morev/eslint-config/typescript'],
+        },
+        {
+          files: ['*.yml', '*.yaml'],
+          extends: ['@morev/eslint-config/yaml'],
         },
       ],
     };
@@ -170,14 +170,14 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
 * <details>
     <summary><code>assistive</code></summary>
 
-    This preset includes only assistive files (`.json` and `.yaml`) overrides. \
+    This preset includes only assistive files (`.json`, `.md` and `.yaml`) overrides. \
     Configurations inside:
 
-    * `yaml`
-    * `markdown`
     * `json`
     * `jsonc`
     * `package-json`
+    * `markdown`
+    * `yaml`
 
     <br />
 
@@ -192,10 +192,6 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
       root: true,
       overrides: [
         {
-          files: ['*.yml', '*.yaml'],
-          extends: ['@morev/eslint-config/yaml'],
-        },
-        {
           files: ['*.json', '*.json5', '*.jsonc'],
           extends: ['@morev/eslint-config/json'],
         },
@@ -210,6 +206,10 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
         {
           files: ['*.md'],
           extends: ['@morev/eslint-config/markdown'],
+        },
+        {
+          files: ['*.yml', '*.yaml'],
+          extends: ['@morev/eslint-config/yaml'],
         },
       ],
     };
@@ -418,27 +418,29 @@ Thats why all configurations and presets have a three variants:
     # Configurations
     '@morev/eslint-config/base'
     '@morev/eslint-config/browser'
-    '@morev/eslint-config/node'
+    '@morev/eslint-config/cypress'
+    '@morev/eslint-config/html'
     '@morev/eslint-config/jest'
+    '@morev/eslint-config/json'
+    '@morev/eslint-config/jsonc'
+    '@morev/eslint-config/package-json'
+    '@morev/eslint-config/markdown'
+    '@morev/eslint-config/node'
     '@morev/eslint-config/typescript'
     '@morev/eslint-config/vue2'
     '@morev/eslint-config/vue3'
     '@morev/eslint-config/yaml'
-    '@morev/eslint-config/json'
-    '@morev/eslint-config/jsonc'
-    '@morev/eslint-config/package-json'
-    '@morev/eslint-config/html'
-    '@morev/eslint-config/markdown'
 
     # Presets
     '@morev/eslint-config/preset/common' # Also available as '@morev' - default export
-    '@morev/eslint-config/preset/jest'
-    '@morev/eslint-config/preset/typescript'
     '@morev/eslint-config/preset/assistive'
+    '@morev/eslint-config/preset/cypress'
+    '@morev/eslint-config/preset/html'
+    '@morev/eslint-config/preset/jest'
+    '@morev/eslint-config/preset/markdown'
+    '@morev/eslint-config/preset/typescript'
     '@morev/eslint-config/preset/vue2'
     '@morev/eslint-config/preset/vue3'
-    '@morev/eslint-config/preset/html'
-    '@morev/eslint-config/preset/markdown'
     ```
 
   </details>
@@ -454,27 +456,29 @@ Thats why all configurations and presets have a three variants:
     # Configurations
     '@morev/eslint-config/base/strict'
     '@morev/eslint-config/browser/strict'
-    '@morev/eslint-config/node/strict'
+    '@morev/eslint-config/cypress/strict'
+    '@morev/eslint-config/html/strict'
     '@morev/eslint-config/jest/strict'
+    '@morev/eslint-config/json/strict'
+    '@morev/eslint-config/jsonc/strict'
+    '@morev/eslint-config/package-json/strict'
+    '@morev/eslint-config/markdown/strict'
+    '@morev/eslint-config/node/strict'
     '@morev/eslint-config/typescript/strict'
     '@morev/eslint-config/vue2/strict'
     '@morev/eslint-config/vue3/strict'
     '@morev/eslint-config/yaml/strict'
-    '@morev/eslint-config/json/strict'
-    '@morev/eslint-config/jsonc/strict'
-    '@morev/eslint-config/package-json/strict'
-    '@morev/eslint-config/html/strict'
-    '@morev/eslint-config/markdown/strict'
 
     # Presets
     '@morev/eslint-config/preset/common/strict'
-    '@morev/eslint-config/preset/jest/strict'
-    '@morev/eslint-config/preset/typescript/strict'
     '@morev/eslint-config/preset/assistive/strict'
+    '@morev/eslint-config/preset/cypress/strict'
+    '@morev/eslint-config/preset/html/strict'
+    '@morev/eslint-config/preset/jest/strict'
+    '@morev/eslint-config/preset/markdown/strict'
+    '@morev/eslint-config/preset/typescript/strict'
     '@morev/eslint-config/preset/vue2/strict'
     '@morev/eslint-config/preset/vue3/strict'
-    '@morev/eslint-config/preset/html/strict'
-    '@morev/eslint-config/preset/markdown/strict'
     ```
 
   </details>
@@ -496,27 +500,29 @@ Thats why all configurations and presets have a three variants:
     # Configurations
     '@morev/eslint-config/base/quiet'
     '@morev/eslint-config/browser/quiet'
-    '@morev/eslint-config/node/quiet'
+    '@morev/eslint-config/cypress/quiet'
+    '@morev/eslint-config/html/quiet'
     '@morev/eslint-config/jest/quiet'
+    '@morev/eslint-config/json/quiet'
+    '@morev/eslint-config/jsonc/quiet'
+    '@morev/eslint-config/package-json/quiet'
+    '@morev/eslint-config/markdown/quiet'
+    '@morev/eslint-config/node/quiet'
     '@morev/eslint-config/typescript/quiet'
     '@morev/eslint-config/vue2/quiet'
     '@morev/eslint-config/vue3/quiet'
     '@morev/eslint-config/yaml/quiet'
-    '@morev/eslint-config/json/quiet'
-    '@morev/eslint-config/jsonc/quiet'
-    '@morev/eslint-config/package-json/quiet'
-    '@morev/eslint-config/html/quiet'
-    '@morev/eslint-config/markdown/quiet'
 
     # Presets
     '@morev/eslint-config/preset/common/quiet'
-    '@morev/eslint-config/preset/jest/quiet'
-    '@morev/eslint-config/preset/typescript/quiet'
     '@morev/eslint-config/preset/assistive/quiet'
+    '@morev/eslint-config/preset/cypress/quiet'
+    '@morev/eslint-config/preset/html/quiet'
+    '@morev/eslint-config/preset/jest/quiet'
+    '@morev/eslint-config/preset/markdown/quiet'
+    '@morev/eslint-config/preset/typescript/quiet'
     '@morev/eslint-config/preset/vue2/quiet'
     '@morev/eslint-config/preset/vue3/quiet'
-    '@morev/eslint-config/preset/html/quiet'
-    '@morev/eslint-config/preset/markdown/quiet'
     ```
 
   </details>
@@ -538,19 +544,8 @@ module.exports = {
       extends: ['@morev/eslint-config/browser']
     },
     {
-      files: ['./server/**/*.js'],
-      extends: ['@morev/eslint-config/node']
-    },
-    {
-      files: ['*.ts'],
-      extends: ['@morev/eslint-config/typescript'],
-      parserOptions: {
-        project: './tsconfig.json',
-      }
-    },
-    {
-      files: ['*.yml', '*.yaml'],
-      extends: ['@morev/eslint-config/yaml'],
+      files: ['*.html'],
+      extends: ['@morev/eslint-config/html'],
     },
     {
       files: ['*.json'],
@@ -565,12 +560,23 @@ module.exports = {
       extends: ['@morev/eslint-config/package-json'],
     },
     {
-      files: ['*.html'],
-      extends: ['@morev/eslint-config/html'],
-    },
-    {
       files: ['*.md'],
       extends: ['@morev/eslint-config/markdown'],
+    },
+    {
+      files: ['./server/**/*.js'],
+      extends: ['@morev/eslint-config/node']
+    },
+    {
+      files: ['*.ts'],
+      extends: ['@morev/eslint-config/typescript'],
+      parserOptions: {
+        project: './tsconfig.json',
+      }
+    },
+    {
+      files: ['*.yml', '*.yaml'],
+      extends: ['@morev/eslint-config/yaml'],
     },
   ]
 }
