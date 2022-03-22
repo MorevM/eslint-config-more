@@ -1,6 +1,16 @@
 
 
-## [10.0.0](https://github.com/MorevM/eslint-config/compare/v9.0.0...v10.0.0) (2022-03-20)
+### [10.0.1](https://github.com/MorevM/eslint-config/compare/v10.0.0...v10.0.1) (2022-03-22)
+
+
+### Bug fixes
+
+* Replace `ignorePatterns` to `excludedFiles` in preset `overrides` ([3d3de41](https://github.com/MorevM/eslint-config/commit/3d3de419905a979a23de57bd6adc991b0fb4cad7))
+
+
+### Chores
+
+* Repo local `.eslintrc` extends builded config ([ada0d15](https://github.com/MorevM/eslint-config/commit/ada0d1503c516b2f5ae1b031e8bb2f34f222b7b9))## [10.0.0](https://github.com/MorevM/eslint-config/compare/v9.0.0...v10.0.0) (2022-03-20)
 
 
 ### ⚠ BREAKING CHANGES
