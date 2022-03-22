@@ -1,6 +1,11 @@
 
 
-### [10.0.1](https://github.com/MorevM/eslint-config/compare/v10.0.0...v10.0.1) (2022-03-22)
+### [10.0.2](https://github.com/MorevM/eslint-config/compare/v10.0.1...v10.0.2) (2022-03-22)
+
+
+### CI improvements
+
+* Add / coorect order of build step to all CI workflows ([7ae4f0c](https://github.com/MorevM/eslint-config/commit/7ae4f0c9b6c73ad09f9f9eb905bb74585f3877bd))### [10.0.1](https://github.com/MorevM/eslint-config/compare/v10.0.0...v10.0.1) (2022-03-22)
 
 
 ### Bug fixes
