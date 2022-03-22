@@ -39,7 +39,7 @@ const withOverrides = {
 			name: 'jest',
 			overrides: {
 				files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-				ignorePatterns: ['**/cypress/**/*'],
+				excludedFiles: ['**/cypress/**/*'],
 			},
 		},
 	],
@@ -48,7 +48,7 @@ const withOverrides = {
 			name: 'cypress',
 			overrides: {
 				files: ['**/cypress/integration/**/*.*'],
-				ignorePatterns: ['*.hot-update.js'],
+				excludedFiles: ['*.hot-update.js'],
 			},
 		},
 	],
