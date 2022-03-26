@@ -105,10 +105,11 @@
 	"main": "./build/presets/common.js",
 	"scripts": {
 		"prepare": "husky install ./.husky",
+		"vscode-settings": "cp .vscode/settings.template.json .vscode/settings.json",
 		"build": "node utils/build.js",
 		"test": "yarn build && jest",
-		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml}\"",
-		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml}\" --fix",
+		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\"",
+		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\" --fix",
 		"release": "release-it --disable-metrics"
 	},
 	"peerDependencies": {
