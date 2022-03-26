@@ -529,8 +529,8 @@ Thats why all configurations and presets have a three variants:
 
 ## Usage
 
-Create [ESLint configuration file or write `eslintConfig` key in your `package.json`](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats)
-and put the needed rules or presets in `extends / overrides` sections:
+Create [ESLint configuration file](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats)
+or write `eslintConfig` key in your `package.json`, and put the needed rules or presets in `extends / overrides` sections:
 
 ```js
 module.exports = {

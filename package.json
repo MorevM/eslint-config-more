@@ -105,10 +105,11 @@
 	"main": "./build/presets/common.js",
 	"scripts": {
 		"prepare": "husky install ./.husky",
+		"vscode-settings": "cp .vscode/settings.template.json .vscode/settings.json",
 		"build": "node utils/build.js",
-		"test": "jest",
-		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml}\"",
-		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml}\" --fix",
+		"test": "yarn build && jest",
+		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\"",
+		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\" --fix",
 		"release": "release-it --disable-metrics"
 	},
 	"peerDependencies": {
@@ -146,11 +147,13 @@
 		"yaml-eslint-parser": "^0.5.0"
 	},
 	"devDependencies": {
+		"@eslint/eslintrc": "^1.2.1",
 		"@morev/commitlint-config": "^0.1.0",
 		"@release-it/conventional-changelog": "^4.1.0",
 		"@types/jest": "^27.4.0",
 		"eslint": "^8.7.0",
 		"eslint-find-rules": "^4.1.0",
+		"glob": "^7.2.0",
 		"husky": "^7.0.4",
 		"jest": "^27.4.7",
 		"lint-staged": "^12.2.2",
