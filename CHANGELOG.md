@@ -1,6 +1,16 @@
 
 
-### [10.0.2](https://github.com/MorevM/eslint-config/compare/v10.0.1...v10.0.2) (2022-03-22)
+### [10.0.3](https://github.com/MorevM/eslint-config/compare/v10.0.2...v10.0.3) (2022-03-26)
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 5.15.0 to 5.16.0 ([#53](https://github.com/MorevM/eslint-config/issues/53)) ([f7dd734](https://github.com/MorevM/eslint-config/commit/f7dd734951c45182afdcfe46454e1f65c65d6f52))
+* bump @typescript-eslint/parser from 5.15.0 to 5.16.0 ([#50](https://github.com/MorevM/eslint-config/issues/50)) ([818a99c](https://github.com/MorevM/eslint-config/commit/818a99cf4bbb428a81cd5344aac61c436eea8722))
+* bump eslint from 8.11.0 to 8.12.0 ([#51](https://github.com/MorevM/eslint-config/issues/51)) ([aa0c91c](https://github.com/MorevM/eslint-config/commit/aa0c91ca912f6c6af223eb0a12a6398744a0d11a))
+* bump eslint-plugin-jest from 26.1.2 to 26.1.3 ([#52](https://github.com/MorevM/eslint-config/issues/52)) ([b5f2e81](https://github.com/MorevM/eslint-config/commit/b5f2e8130e5642d8156f57863612ae6a9d572828))
+* bump eslint-plugin-jsdoc from 38.0.6 to 38.0.7 ([#54](https://github.com/MorevM/eslint-config/issues/54)) ([f300d76](https://github.com/MorevM/eslint-config/commit/f300d76883f56cdaeedcd2f85d9e9a887bfa15c3))
+* bump typescript from 4.6.2 to 4.6.3 ([#55](https://github.com/MorevM/eslint-config/issues/55)) ([a8507da](https://github.com/MorevM/eslint-config/commit/a8507da01d123322c0fff9fa44981fbd63d14562))### [10.0.2](https://github.com/MorevM/eslint-config/compare/v10.0.1...v10.0.2) (2022-03-22)
 
 
 ### CI improvements
