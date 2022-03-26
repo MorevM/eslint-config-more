@@ -10,22 +10,25 @@ describe('Build', () => {
 		const { ConfigValidator } = Legacy;
 		const validator = new ConfigValidator();
 
-		const isValid = await Promise.all(glob.sync(`${BUILD_PATH}/**/*`, { nodir: true }).map((file) => (
+		const errors = await Promise.allSettled(glob.sync(`${BUILD_PATH}/**/*`, { nodir: true }).map((file) => (
 			new Promise((resolve, reject) => {
 				const config = require(file);
 				const source = file.split('/').slice(-2).join('/');
 
 				try {
 					validator.validateConfigSchema(config, source);
-					resolve();
-				} catch (err) {
-					reject(err);
+					resolve(source);
+				} catch {
+					reject(source);
 				}
 			})
 		)))
-			.then(() => true)
-			.catch(() => false);
+			.then((results) => (
+				results
+					.filter(({ status }) => status === 'rejected')
+					.map(({ reason }) => reason)
+			));
 
-		expect(isValid).toBe(true);
+		expect(errors).toHaveLength(0);
 	});
 });
