@@ -2455,10 +2455,10 @@ eslint-plugin-jsonc@^2.0.0:
     jsonc-eslint-parser "^2.0.4"
     natural-compare "^1.4.0"
 
-eslint-plugin-markdownlint@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-markdownlint/-/eslint-plugin-markdownlint-0.3.3.tgz#75d94123fe79d36467a11f1ea99627a5d96babaa"
-  integrity sha512-9U5C6/84AUcn9d8B2861pKbD2VhFscDCa+tn61DTnvIwNHu2AFNS4yjzh0X9lMwXgDOcOz0PIwvGhfHGpU/WBg==
+eslint-plugin-markdownlint@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-markdownlint/-/eslint-plugin-markdownlint-0.3.4.tgz#b7d9b28e5af2ae000cc98e0146fed72bb87084b4"
+  integrity sha512-EXO3faMyV9RffE+cC3Irr4JDqu3+qMUjAgXZ4eLblyZPvb6/b0SDLS0DymfRsDOywc+i8wpvvUaH7DYCab1uUA==
   dependencies:
     markdownlint "0.25.1"
 
