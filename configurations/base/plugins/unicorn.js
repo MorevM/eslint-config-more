@@ -190,6 +190,11 @@ module.exports = {
 		// Note: developer knows better
 		'+unicorn/no-unreadable-array-destructuring': 'off',
 
+		// Disallow unreadable IIFEs
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-iife.md
+		// Note: developer knows better
+		'unicorn/no-unreadable-iife': 'off',
+
 		// Disallow unsafe regular expressions
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-regex.md
 		'unicorn/no-unsafe-regex': 'warn',
@@ -213,6 +218,10 @@ module.exports = {
 		// Disallow useless spread (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-spread.md
 		'+unicorn/no-useless-spread': 'error',
+
+		// Disallow useless case in switch statements
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-switch-case.md
+		'unicorn/no-useless-switch-case': 'error',
 
 		// Disallow useless undefined (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-undefined.md
@@ -313,10 +322,18 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-trunc.md
 		'+unicorn/prefer-math-trunc': 'warn',
 
+		// Prefer modern `Math` APIs over legacy patterns (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-math-apis.md
+		'+unicorn/prefer-modern-math-apis': 'warn',
+
 		// Prefer JavaScript modules (ESM) over CommonJS
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-module.md
 		// Note: todo: a bit later
 		'unicorn/prefer-module': 'off',
+
+		// Prefer using `String`, `Number`, `BigInt`, `Boolean`, and `Symbol` directly (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-native-coercion-functions.md
+		'+unicorn/prefer-native-coercion-functions': 'warn',
 
 		// Prefer negative index over `.length - index` for `{String,Array,TypedArray}#slice()`,
 		// `Array#splice()` and `Array#at()` (autofixable)
