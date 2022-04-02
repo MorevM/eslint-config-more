@@ -1,6 +1,37 @@
 
 
-### [10.0.3](https://github.com/MorevM/eslint-config/compare/v10.0.2...v10.0.3) (2022-03-26)
+## [11.0.0](https://github.com/MorevM/eslint-config/compare/v10.0.3...v11.0.0) (2022-04-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* As `base` config and `common` preset includes updated `unicorn` parts it become more strict
+
+### Features
+
+* Add new rules from `unicrorn` plugin v42 release ([91c57f2](https://github.com/MorevM/eslint-config/commit/91c57f2399f6d3ee0999204c46cdf9ba846a0c6a))
+* **typescript:** `no-unused-vars` inherits from base config ([9837287](https://github.com/MorevM/eslint-config/commit/98372876f9403ffa5ab9e81011089032a075c729))
+
+
+### Tests
+
+* Add test for checking built configs validity ([f26ad30](https://github.com/MorevM/eslint-config/commit/f26ad30fe707c5754c1d524ab9f59ae91487e3ba))
+
+
+### Chores
+
+* bump @morev/commitlint-config from 0.1.0 to 0.1.1 ([#56](https://github.com/MorevM/eslint-config/issues/56)) ([fae10ee](https://github.com/MorevM/eslint-config/commit/fae10ee46c5dbf5818eadaee31905046e74143fc))
+* bump eslint-plugin-jsdoc from 38.0.7 to 38.1.6 ([#57](https://github.com/MorevM/eslint-config/issues/57)) ([9fcae13](https://github.com/MorevM/eslint-config/commit/9fcae133ff6810e731e2fbc9359ea195fb7c3d0b))
+* bump eslint-plugin-markdownlint from 0.3.3 to 0.3.4 ([#61](https://github.com/MorevM/eslint-config/issues/61)) ([cdeaacd](https://github.com/MorevM/eslint-config/commit/cdeaacdb590ef8f366715ee3e08f5265ec7e450c))
+* bump eslint-plugin-sonarjs from 0.12.0 to 0.13.0 ([#63](https://github.com/MorevM/eslint-config/issues/63)) ([4384145](https://github.com/MorevM/eslint-config/commit/4384145c844e2dd05408dfbd0642a35f42a541bd))
+* bump release-it from 14.13.1 to 14.14.0 ([#59](https://github.com/MorevM/eslint-config/issues/59)) ([cfbabce](https://github.com/MorevM/eslint-config/commit/cfbabcefba6062e567c54b0df97cc65a0b55840f))
+* Update `dependabot` settings ([5c12338](https://github.com/MorevM/eslint-config/commit/5c12338641fa4345723a4944ddbb304a4b00d8be))
+* Upgrade `eslint-plugin-unicorn` to v42 ([a95412d](https://github.com/MorevM/eslint-config/commit/a95412d01abc3a29310857bf9443b84d1a769bc0))
+
+
+### Bug fixes
+
+* **base:** Disable `unicorn/text-encoding-identifier-case` ([145a741](https://github.com/MorevM/eslint-config/commit/145a7418125b3976c20ddc53ef8f846c5b455444))### [10.0.3](https://github.com/MorevM/eslint-config/compare/v10.0.2...v10.0.3) (2022-03-26)
 
 
 ### Chores
