@@ -488,16 +488,7 @@ module.exports = {
 
 		// Disallow unused variables
 		// https://typescript-eslint.io/rules/no-unused-vars
-		// TODO: `ESLint` introduced new `destructuredArrayIgnorePattern` option in v8.11.0 that isn't implemented yet here.
-		// When it comes, replace with `extendFromBase` call.
-		// ...extendFromBase('no-unused-vars'),
-		'@typescript-eslint/no-unused-vars': ['warn', {
-			args: 'none',
-			ignoreRestSiblings: true,
-			argsIgnorePattern: '^_*$',
-			varsIgnorePattern: '^_',
-		}],
-
+		...extendFromBase('no-unused-vars'),
 
 		// Disallow the use of variables before they are defined
 		// https://typescript-eslint.io/rules/no-use-before-define
