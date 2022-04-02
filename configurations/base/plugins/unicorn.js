@@ -493,9 +493,10 @@ module.exports = {
 			],
 		}],
 
-		// Enforce consistent case for text encoding identifiers
+		// Enforce consistent case for text encoding identifiers (autofixable but implementation is dumb simple)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/text-encoding-identifier-case.md
-		'unicorn/text-encoding-identifier-case': 'warn',
+		// Note: All that this rule does - replaces `utf-8` strings to `utf8`, no matter where it placed
+		'!unicorn/text-encoding-identifier-case': 'off',
 
 		// Require new when throwing an error (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md
