@@ -159,6 +159,10 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/no-restricted-custom-event.html
 		'vue/no-restricted-custom-event': 'off',
 
+		// Disallow specific HTML elements
+		// https://eslint.vuejs.org/rules/no-restricted-html-elements.html
+		'vue/no-restricted-html-elements': 'off',
+
 		// Disallow specific props
 		// https://eslint.vuejs.org/rules/no-restricted-props.html
 		'vue/no-restricted-props': 'off',
