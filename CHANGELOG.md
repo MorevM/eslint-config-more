@@ -1,6 +1,24 @@
 
 
-## [11.0.0](https://github.com/MorevM/eslint-config/compare/v10.0.3...v11.0.0) (2022-04-02)
+## [11.1.0](https://github.com/MorevM/eslint-config/compare/v11.0.0...v11.1.0) (2022-04-09)
+
+
+### Features
+
+* **typescript:** Rule `no-shadow` inherits all options from base config ([dee52e0](https://github.com/MorevM/eslint-config/commit/dee52e0dfda8d755688a1bb964c45899a6588e62))
+* **vue:** Add `vue/no-restricted-html-elements` rule ([593c6f7](https://github.com/MorevM/eslint-config/commit/593c6f7878da957f7735a22acf7c2681629104b4))
+* **vue:** Add `vue/prefer-prop-type-boolean-first` rule ([37c6861](https://github.com/MorevM/eslint-config/commit/37c68610e8c559626f27d81cee4a606387b52544))
+* **vue:** Make `vue/component-tags-order` autofixable ([9d63619](https://github.com/MorevM/eslint-config/commit/9d63619ddfed3317371fc2885465777cae4f7af7))
+
+
+### Chores
+
+* bump @babel/core from 7.17.8 to 7.17.9 ([#64](https://github.com/MorevM/eslint-config/issues/64)) ([951ffd2](https://github.com/MorevM/eslint-config/commit/951ffd25a885448706511ae3fa7d1524cf0da942))
+* bump eslint from 8.12.0 to 8.13.0 ([#67](https://github.com/MorevM/eslint-config/issues/67)) ([9bd19da](https://github.com/MorevM/eslint-config/commit/9bd19da4d1a13a1bda4bf61e88849e570fd52264))
+* bump eslint-plugin-import from 2.25.4 to 2.26.0 ([#66](https://github.com/MorevM/eslint-config/issues/66)) ([e53d510](https://github.com/MorevM/eslint-config/commit/e53d5106e2d6fec93cbfce4957845b4182ef3d7c))
+* bump eslint-plugin-jest from 26.1.3 to 26.1.4 ([#65](https://github.com/MorevM/eslint-config/issues/65)) ([2ed4c51](https://github.com/MorevM/eslint-config/commit/2ed4c5145fdab51bd7ea1b0e5270e2fe3c2a014c))
+* bump eslint-plugin-jsdoc from 38.1.6 to 39.0.1 ([#71](https://github.com/MorevM/eslint-config/issues/71)) ([0eb8738](https://github.com/MorevM/eslint-config/commit/0eb87383079b0a819d50a24f55b82540f7453218))
+* Bump eslint-plugin-vue from 8.5.0 to 8.6.0 ([e624814](https://github.com/MorevM/eslint-config/commit/e6248147dbe92fed8b3f8a2f356e19cbc74f7b45))## [11.0.0](https://github.com/MorevM/eslint-config/compare/v10.0.3...v11.0.0) (2022-04-02)
 
 
 ### ⚠ BREAKING CHANGES
