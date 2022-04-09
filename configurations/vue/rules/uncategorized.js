@@ -247,6 +247,10 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/padding-line-between-blocks.html
 		'+vue/padding-line-between-blocks': ['error', 'always'],
 
+		// Enforce `Boolean` comes first in component prop types
+		// https://eslint.vuejs.org/rules/prefer-prop-type-boolean-first.html
+		'vue/prefer-prop-type-boolean-first': 'error',
+
 		// Require static class names in template to be in a separate `class` attribute
 		// (autofixable but is it really needed?)
 		// https://eslint.vuejs.org/rules/prefer-separate-static-class.html
