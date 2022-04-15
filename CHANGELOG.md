@@ -1,6 +1,11 @@
 
 
-## [11.1.0](https://github.com/MorevM/eslint-config/compare/v11.0.0...v11.1.0) (2022-04-09)
+### [11.1.1](https://github.com/MorevM/eslint-config/compare/v11.1.0...v11.1.1) (2022-04-15)
+
+
+### Bug fixes
+
+* **typescript:** Disable `unicorn/prefer-json-parse-buffer` for TS files due it's incompatible ([16781ca](https://github.com/MorevM/eslint-config/commit/16781cab8397b2c02981268f20f45a94e571b682))## [11.1.0](https://github.com/MorevM/eslint-config/compare/v11.0.0...v11.1.0) (2022-04-09)
 
 
 ### Features
