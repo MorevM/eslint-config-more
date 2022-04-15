@@ -17,7 +17,9 @@ const base = {
 		'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx', '.d.ts'],
 		'import/external-module-folders': ['node_modules', 'node_modules/@types'],
 	},
-	rules: {},
+	rules: {
+		'unicorn/prefer-json-parse-buffer': 'off',
+	},
 };
 
 const parts = [
