@@ -1,5 +1,23 @@
 
 
+### [11.1.2](https://github.com/MorevM/eslint-config/compare/v11.1.1...v11.1.2) (2022-04-20)
+
+
+### Chores
+
+* bump @release-it/conventional-changelog from 4.2.2 to 4.3.0 ([#78](https://github.com/MorevM/eslint-config/issues/78)) ([70448fb](https://github.com/MorevM/eslint-config/commit/70448fb52a435f25811ef1828fceebac02ae0b1d))
+* bump @typescript-eslint/eslint-plugin from 5.18.0 to 5.19.0 ([#73](https://github.com/MorevM/eslint-config/issues/73)) ([dc14652](https://github.com/MorevM/eslint-config/commit/dc146529b361dce6e94f45a82b6309852a4c1f35))
+* bump @typescript-eslint/parser from 5.18.0 to 5.19.0 ([#72](https://github.com/MorevM/eslint-config/issues/72)) ([48db319](https://github.com/MorevM/eslint-config/commit/48db319d851ff4184867b04ea55f2e9851c39e0a))
+* bump eslint-plugin-jsdoc from 39.0.1 to 39.2.1 ([#77](https://github.com/MorevM/eslint-config/issues/77)) ([4d1050a](https://github.com/MorevM/eslint-config/commit/4d1050a7197ac19ddf9585c932242d73bca0a2fe))
+* bump glob from 7.2.0 to 8.0.1 ([#74](https://github.com/MorevM/eslint-config/issues/74)) ([c987f72](https://github.com/MorevM/eslint-config/commit/c987f727ac7a3b7f1c931be49acdd3add598e611))
+* bump lint-staged from 12.3.7 to 12.3.8 ([#75](https://github.com/MorevM/eslint-config/issues/75)) ([a23aa0a](https://github.com/MorevM/eslint-config/commit/a23aa0a5e3f665ee4da1c435adb4547d5ffb70fc))
+* bump release-it from 14.14.0 to 14.14.2 ([#76](https://github.com/MorevM/eslint-config/issues/76)) ([40b393d](https://github.com/MorevM/eslint-config/commit/40b393de9dc123f3bccd209cd629b4bcaa7ed853))
+
+
+### Bug fixes
+
+* **base:** Disable autofix for `unicorn/no-lonely-if` rule ([aa0e416](https://github.com/MorevM/eslint-config/commit/aa0e41610e460c1ddc8bf9afd7ed85702ff9c841))
+
 ### [11.1.1](https://github.com/MorevM/eslint-config/compare/v11.1.0...v11.1.1) (2022-04-15)
 
 
