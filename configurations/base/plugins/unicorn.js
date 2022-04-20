@@ -141,7 +141,7 @@ module.exports = {
 
 		// Disallow `if` statements as the only statement in `if` blocks without `else` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-lonely-if.md
-		'+unicorn/no-lonely-if': 'error',
+		'!unicorn/no-lonely-if': 'warn',
 
 		// Disallow nested ternary expressions (partly autofixable).
 		// It allows nested, but they should be wrapped in parentheses (thats correct).
