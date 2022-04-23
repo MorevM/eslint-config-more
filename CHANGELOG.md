@@ -1,5 +1,27 @@
 
 
+## [11.2.0](https://github.com/MorevM/eslint-config/compare/v11.1.2...v11.2.0) (2022-04-23)
+
+
+### Features
+
+* Add node v18 ([c4ff19b](https://github.com/MorevM/eslint-config/commit/c4ff19bb4c233e37371d8f6a78facc8b11320195))
+* **base:** Add `no-constant-binary-expression` rule ([3f5f77d](https://github.com/MorevM/eslint-config/commit/3f5f77d06354af9f57f1135e4313c0fbb3d65d60))
+* **vue3:** Add `vue/define-macros-order` ([535607f](https://github.com/MorevM/eslint-config/commit/535607ff602acc22fd53ca6dbf657540b18a015f))
+* **vue:** Add `vue/match-component-import-name` rule ([dcd5cd9](https://github.com/MorevM/eslint-config/commit/dcd5cd960754d4464d398a3c3338f3f4a0491641))
+
+
+### Chores
+
+* bump @eslint/eslintrc from 1.2.1 to 1.2.2 ([#83](https://github.com/MorevM/eslint-config/issues/83)) ([aecd26f](https://github.com/MorevM/eslint-config/commit/aecd26fd549f81b07f1cad6c9ec3529786780195))
+* bump @typescript-eslint/eslint-plugin from 5.19.0 to 5.20.0 ([#82](https://github.com/MorevM/eslint-config/issues/82)) ([19bb207](https://github.com/MorevM/eslint-config/commit/19bb207f2700d4a136b78e8998cbaefae8052f3b))
+* bump @typescript-eslint/parser from 5.19.0 to 5.20.0 ([#80](https://github.com/MorevM/eslint-config/issues/80)) ([0a44cd4](https://github.com/MorevM/eslint-config/commit/0a44cd4b305fc2c7e2245d83848a8782c4dcb95b))
+* bump eslint from 8.13.0 to 8.14.0 ([2b2e6c6](https://github.com/MorevM/eslint-config/commit/2b2e6c6cf2c6a13af5481ab0f31e22765ce35d6a))
+* bump eslint-plugin-jest from 26.1.4 to 26.1.5 ([#85](https://github.com/MorevM/eslint-config/issues/85)) ([a52dc06](https://github.com/MorevM/eslint-config/commit/a52dc06130be79585b3c54663be132fc99af8ece))
+* bump eslint-plugin-jsdoc from 39.2.1 to 39.2.7 ([#79](https://github.com/MorevM/eslint-config/issues/79)) ([09b8817](https://github.com/MorevM/eslint-config/commit/09b8817364259a31c0400f04c1233708fbdc3c17))
+* bump eslint-plugin-vue from 8.6.0 to 8.7.1 ([d0b16d5](https://github.com/MorevM/eslint-config/commit/d0b16d51632885137b47e87774acb356754e35ee))
+* bump lint-staged from 12.3.8 to 12.4.0 ([#86](https://github.com/MorevM/eslint-config/issues/86)) ([a329dde](https://github.com/MorevM/eslint-config/commit/a329ddeb20286a4d7790810eda2f91e1b273aebe))
+
 ### [11.1.2](https://github.com/MorevM/eslint-config/compare/v11.1.1...v11.1.2) (2022-04-20)
 
 
