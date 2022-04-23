@@ -73,6 +73,10 @@ module.exports = {
 			shouldMatchCase: true,
 		}],
 
+		// Require the registered component name to match the imported component name
+		// https://eslint.vuejs.org/rules/match-component-import-name.html
+		'vue/match-component-import-name': 'error',
+
 		// Enforce new lines between multi-line properties in Vue components (autofixable)
 		// https://eslint.vuejs.org/rules/new-line-between-multi-line-property.html
 		// Note: developer knows better
