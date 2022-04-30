@@ -517,6 +517,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/padding-line-between-statements
 		...extendFromBase('+padding-line-between-statements'),
 
+		// Require or disallow the use of parameter properties in class constructors
+		// https://typescript-eslint.io/rules/parameter-properties
+		'@typescript-eslint/parameter-properties': 'off',
+
 		// Prefer usage of `as const` over literal type (autofixable)
 		// https://typescript-eslint.io/rules/prefer-as-const
 		'+@typescript-eslint/prefer-as-const': 'warn',
