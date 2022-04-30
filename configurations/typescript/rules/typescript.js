@@ -393,10 +393,6 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-non-null-assertion
 		'@typescript-eslint/no-non-null-assertion': 'error',
 
-		// Disallow the use of parameter properties in class constructors
-		// https://typescript-eslint.io/rules/no-parameter-properties
-		'@typescript-eslint/no-parameter-properties': 'off',
-
 		// Disallow variable re-declaration
 		// https://typescript-eslint.io/rules/no-redeclare
 		...extendFromBase('no-redeclare'),
