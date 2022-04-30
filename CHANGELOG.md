@@ -1,5 +1,27 @@
 
 
+## [11.3.0](https://github.com/MorevM/eslint-config/compare/v11.2.0...v11.3.0) (2022-04-30)
+
+
+### Features
+
+* **typescript:** Add `parameter-properties` rule ([44472e6](https://github.com/MorevM/eslint-config/commit/44472e636547d4a9f4d0a1e981b0c18ed81f8496))
+
+
+### Bug fixes
+
+* **typescript:** Remove deprecated `no-parameter-properties` rule ([c7b990c](https://github.com/MorevM/eslint-config/commit/c7b990cc93db593ad5d12c80d5c5d9f403d8fa44))
+
+
+### Chores
+
+* bump @babel/core from 7.17.9 to 7.17.10 ([#90](https://github.com/MorevM/eslint-config/issues/90)) ([bfd8a49](https://github.com/MorevM/eslint-config/commit/bfd8a490f57f8f7082be3b06c4eb0e2b2999df6a))
+* bump eslint-plugin-jsdoc from 39.2.7 to 39.2.9 ([#89](https://github.com/MorevM/eslint-config/issues/89)) ([0abd2c5](https://github.com/MorevM/eslint-config/commit/0abd2c5fac42340620fa505a3169d9a0bedade99))
+* bump lint-staged from 12.4.0 to 12.4.1 ([#87](https://github.com/MorevM/eslint-config/issues/87)) ([8e92a8d](https://github.com/MorevM/eslint-config/commit/8e92a8da1c5cf0aff649f8093f3f146fd63675b5))
+* bump release-it from 14.14.2 to 14.14.3 ([#94](https://github.com/MorevM/eslint-config/issues/94)) ([110c7f1](https://github.com/MorevM/eslint-config/commit/110c7f105d53e7c173dfaa02f827ad42782c1cf7))
+* bump typescript from 4.6.3 to 4.6.4 ([#92](https://github.com/MorevM/eslint-config/issues/92)) ([ce27839](https://github.com/MorevM/eslint-config/commit/ce27839520470970ca24ffa9243ba97ba525dca4))
+* Update `typescript` plugin and parser ([0294ad4](https://github.com/MorevM/eslint-config/commit/0294ad4dcf0f7d28561d566b2fab84cf8ecd3ed4))
+
 ## [11.2.0](https://github.com/MorevM/eslint-config/compare/v11.1.2...v11.2.0) (2022-04-23)
 
 
