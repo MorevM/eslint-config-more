@@ -264,6 +264,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-dupe-class-members
 		...extendFromBase('no-dupe-class-members'),
 
+		// Disallow duplicate enum member values
+		// https://typescript-eslint.io/rules/no-duplicate-enum-values
+		'@typescript-eslint/no-duplicate-enum-values': 'error',
+
 		// Disallow duplicate imports
 		// https://typescript-eslint.io/rules/no-duplicate-imports
 		...extendFromBase('no-duplicate-imports'),
