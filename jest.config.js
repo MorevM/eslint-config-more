@@ -13,7 +13,4 @@ module.exports = {
 	testPathIgnorePatterns: [
 		'__tests__/tests-utils.js',
 	],
-	moduleNameMapper: {
-		'eslint/use-at-your-own-risk': 'eslint/lib/unsupported-api.js',
-	},
 };

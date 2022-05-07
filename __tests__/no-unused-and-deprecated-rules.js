@@ -21,12 +21,23 @@ const KNOWN_UNUSED = [
 ];
 const TEMP_FILE = `.tmp-config.js`;
 
+// Smth wrong with it since jest 28, affects nothing in this test
+const removeNoAutofixPlugin = (config) => {
+	delete config.env['jest/globals'];
+	config.plugins = config.plugins.filter(p => p !== 'no-autofix');
+	config.rules = Object.fromEntries(
+		Object.entries(config.rules).filter(([key, value]) => !key.startsWith('no-autofix')),
+	);
+};
+
 describe('Check unused and deprecated props', () => {
 	let ruleFinder = null;
 
 	// That's rough, but `eslint-find-rules` requires config to be in file :\
 	beforeAll(async () => {
 		const config = makeConfig(configurations);
+		removeNoAutofixPlugin(config);
+
 		fs.writeFileSync(
 			TEMP_FILE,
 			`module.exports = ${JSON.stringify(config, null, '\t')}`,
@@ -41,15 +52,13 @@ describe('Check unused and deprecated props', () => {
 	});
 
 	it('Has no deprecated rules', async () => {
-		const deprecatedRules = ruleFinder.getDeprecatedRules()
-			.filter(r => !r.startsWith('no-autofix'));
+		const deprecatedRules = ruleFinder.getDeprecatedRules();
 
 		expect(deprecatedRules).toHaveLength(0);
 	});
 
 	it('Has no unused rules', async () => {
 		const unusedRules = ruleFinder.getUnusedRules()
-			.filter(rule => !rule.startsWith('no-autofix'))
 			.filter(rule => !KNOWN_UNUSED.includes(rule));
 
 		expect(unusedRules).toHaveLength(0);
