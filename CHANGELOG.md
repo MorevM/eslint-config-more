@@ -1,5 +1,28 @@
 
 
+## [11.4.0](https://github.com/MorevM/eslint-config/compare/v11.3.0...v11.4.0) (2022-05-07)
+
+
+### Features
+
+* **typescript:** Add `no-duplicate-enum-values` rule ([163e7f0](https://github.com/MorevM/eslint-config/commit/163e7f0524d907e28f899cd035cf55d614704e41))
+
+
+### Chores
+
+* bump @eslint/eslintrc from 1.2.2 to 1.2.3 ([#96](https://github.com/MorevM/eslint-config/issues/96)) ([977c582](https://github.com/MorevM/eslint-config/commit/977c582ebc5b9ab37d3e79bf52764d3dee2ee9cb))
+* bump @types/jest from 27.4.1 to 27.5.0 ([#99](https://github.com/MorevM/eslint-config/issues/99)) ([3bacc4f](https://github.com/MorevM/eslint-config/commit/3bacc4f722738ea710c623375869dd80932f27f1))
+* bump @typescript-eslint/eslint-plugin from 5.21.0 to 5.22.0 ([#97](https://github.com/MorevM/eslint-config/issues/97)) ([fb56ad5](https://github.com/MorevM/eslint-config/commit/fb56ad53544f306991d3af28eca4258609186d91))
+* bump @typescript-eslint/parser from 5.21.0 to 5.22.0 ([#95](https://github.com/MorevM/eslint-config/issues/95)) ([76ef2e4](https://github.com/MorevM/eslint-config/commit/76ef2e46894a8e56d0f53e068f5a94150a091d77))
+* bump eslint from 8.14.0 to 8.15.0 ([#100](https://github.com/MorevM/eslint-config/issues/100)) ([704e848](https://github.com/MorevM/eslint-config/commit/704e848e3b1757248a18e9cfd225e3ce0c3c2598))
+* bump jest from 27.5.1 to 28.1.0 ([ac35829](https://github.com/MorevM/eslint-config/commit/ac35829db8ba05eda2e1df7ccdcb0aa71b4a225f))
+* bump release-it and @release-it/conventional-changelog ([#98](https://github.com/MorevM/eslint-config/issues/98)) ([532d03e](https://github.com/MorevM/eslint-config/commit/532d03e77991cbf01f01ec03273e45aa9763ef2d))
+
+
+### Tests
+
+* Fix `no-unused-and-deprecated-rules` test after jest update ([70d19a9](https://github.com/MorevM/eslint-config/commit/70d19a96483f94bc9a03e2eac456d8e0449932e8))
+
 ## [11.3.0](https://github.com/MorevM/eslint-config/compare/v11.2.0...v11.3.0) (2022-04-30)
 
 
