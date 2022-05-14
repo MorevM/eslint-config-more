@@ -1,5 +1,19 @@
 
 
+### [11.4.1](https://github.com/MorevM/eslint-config/compare/v11.4.0...v11.4.1) (2022-05-14)
+
+
+### Chores
+
+* bump @types/jest from 27.5.0 to 27.5.1 ([#106](https://github.com/MorevM/eslint-config/issues/106)) ([535ef5e](https://github.com/MorevM/eslint-config/commit/535ef5e1364c3c98d947d8b54bd2ac6011c8a1a4))
+* bump @typescript-eslint/eslint-plugin from 5.22.0 to 5.23.0 ([#107](https://github.com/MorevM/eslint-config/issues/107)) ([9108ffd](https://github.com/MorevM/eslint-config/commit/9108ffd902ddddce8d8b0904419114e662f643ea))
+* bump @typescript-eslint/parser from 5.22.0 to 5.23.0 ([#108](https://github.com/MorevM/eslint-config/issues/108)) ([d8eb6f2](https://github.com/MorevM/eslint-config/commit/d8eb6f22ccbbbb5c82f5d5d76620323e821814d1))
+* bump eslint-plugin-jest from 26.1.5 to 26.2.1 ([#105](https://github.com/MorevM/eslint-config/issues/105)) ([5f86f7c](https://github.com/MorevM/eslint-config/commit/5f86f7c87c92c0f81c5a02bda85d63eb4dba0b74))
+* bump eslint-plugin-yml from 0.14.0 to 0.15.0 ([#102](https://github.com/MorevM/eslint-config/issues/102)) ([58549ae](https://github.com/MorevM/eslint-config/commit/58549ae294644c3d194a4902dd0248c15e83002b))
+* bump glob from 8.0.1 to 8.0.3 ([#104](https://github.com/MorevM/eslint-config/issues/104)) ([b7b3ced](https://github.com/MorevM/eslint-config/commit/b7b3cedf6999a04d541b458bfb3d5297840ea90b))
+* bump husky from 7.0.4 to 8.0.1 ([#103](https://github.com/MorevM/eslint-config/issues/103)) ([15b912c](https://github.com/MorevM/eslint-config/commit/15b912cc52a6cbce6f20215ba9c9864b69b6e5f0))
+* bump vue-eslint-parser from 8.3.0 to 9.0.1 ([#109](https://github.com/MorevM/eslint-config/issues/109)) ([7ba1aa7](https://github.com/MorevM/eslint-config/commit/7ba1aa7cf8753ae9a8834f63d479753c7c43bd37))
+
 ## [11.4.0](https://github.com/MorevM/eslint-config/compare/v11.3.0...v11.4.0) (2022-05-07)
 
 
