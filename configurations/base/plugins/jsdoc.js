@@ -11,7 +11,7 @@ module.exports = {
 
 		// Ensures that (JavaScript) examples within JSDoc adhere to ESLint rules
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-examples
-		// TODO: [2022-05-11] Doesn't work with ESLint 8, waiting for resolve
+		// TODO: [2023-05-11] Doesn't work with ESLint 8, waiting for resolve
 		'jsdoc/check-examples': 'off',
 
 		// Reports invalid padding inside JSDoc blocks

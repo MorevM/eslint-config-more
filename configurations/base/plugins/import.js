@@ -15,12 +15,12 @@ module.exports = {
 
 		// Ensure a default export is present, given a default import
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/default.md
-		// TODO: [2022-05-11] Maybe off, keep tracking usage
+		// TODO: [2023-05-11] Maybe off, keep tracking usage
 		'import/default': 'error',
 
 		// Ensure imported namespaces contain dereferenced properties as they are dereferenced
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/namespace.md
-		// TODO: [2022-05-11] Maybe off, keep tracking usage
+		// TODO: [2023-05-11] Maybe off, keep tracking usage
 		'import/namespace': 'error',
 
 		// Restrict which files can be imported in a given folde
@@ -52,7 +52,7 @@ module.exports = {
 
 		// Forbid a module from importing a module with a dependency path back to itself
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-cycle.md
-		// TODO: Set maxDepth if performance issues
+		// Note: Set `maxDepth` if performance issues
 		'import/no-cycle': 'error',
 
 		// Prevent unnecessary path segments in import and require statements

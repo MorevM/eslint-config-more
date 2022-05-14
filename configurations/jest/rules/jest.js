@@ -61,7 +61,7 @@ module.exports = {
 
 		// Disallow setup and teardown hooks
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-hooks.md
-		// @TODO [2022-05-11]: Think about it later
+		// Note: it depends
 		'jest/no-hooks': 'off',
 
 		// Disallow identical titles
@@ -82,7 +82,7 @@ module.exports = {
 
 		// Disallow large snapshots
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-large-snapshots.md
-		// @TODO [2022-05-11]: Think about it later
+		// @TODO [2023-05-11]: Think about it later
 		'jest/no-large-snapshots': ['off', { maxSize: 12, inlineMaxSize: 6 }],
 
 		// Disallow manually importing from `__mocks__`
@@ -119,7 +119,7 @@ module.exports = {
 
 		// Suggest using `expect.assertions()` OR `expect.hasAssertions()`
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-expect-assertions.md
-		// @TODO [2022-05-11] Review it later
+		// Note: Seems an overengineering in common case
 		'jest/prefer-expect-assertions': ['off', {
 			onlyFunctionsWithAsyncKeyword: true,
 		}],

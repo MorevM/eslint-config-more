@@ -202,8 +202,9 @@ module.exports = {
 
 		// Disallow undefined properties
 		// https://eslint.vuejs.org/rules/no-undef-properties.html
-		// TODO: [2022-05-11] Doesn't work well with Vuex, has issue, review it later
+		// Reason to be `off`: Doesn't work well with Vuex
 		// Issue link: https://github.com/vuejs/eslint-plugin-vue/issues/1675
+		// Note: Doesn't look like a problem anymore, Pinia works correctly
 		'vue/no-undef-properties': ['off', {
 			ignores: ['/^\\$/'],
 		}],
