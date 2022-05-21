@@ -118,10 +118,6 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/no-expose-after-await.html
 		'vue/no-expose-after-await': 'error',
 
-		// Require valid keys in model option
-		// https://eslint.vuejs.org/rules/no-invalid-model-keys.html
-		'vue/no-invalid-model-keys': 'error',
-
 		// Disallow to pass multiple objects into array to class
 		// https://eslint.vuejs.org/rules/no-multiple-objects-in-class.html
 		'vue/no-multiple-objects-in-class': 'error',

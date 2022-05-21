@@ -22,6 +22,10 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/no-v-model-argument.html
 		'vue/no-v-model-argument': 'error',
 
+		// Require valid keys in model option
+		// https://eslint.vuejs.org/rules/valid-model-definition.html
+		'vue/valid-model-definition': 'error',
+
 		// Enforce valid `.sync` modifier on `v-bind` directives
 		// https://eslint.vuejs.org/rules/valid-v-bind-sync.html
 		'vue/valid-v-bind-sync': 'error',
