@@ -1,5 +1,39 @@
 
 
+## [12.0.0](https://github.com/MorevM/eslint-config/compare/v11.4.1...v12.0.0) (2022-05-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vue:** Add `vue/valid-attribute-name` rule
+
+### Features
+
+* **vue:** Add `vue/valid-attribute-name` rule ([c5bef67](https://github.com/MorevM/eslint-config/commit/c5bef67b19661532563575b63a1ad67a95de6566))
+
+
+### Chores
+
+* bump @babel/core from 7.17.10 to 7.18.0 ([#116](https://github.com/MorevM/eslint-config/issues/116)) ([1c29842](https://github.com/MorevM/eslint-config/commit/1c2984292e91c161b190a999175d19c8cd33bf52))
+* bump @babel/plugin-syntax-jsx from 7.16.7 to 7.17.12 ([#114](https://github.com/MorevM/eslint-config/issues/114)) ([2bedc29](https://github.com/MorevM/eslint-config/commit/2bedc290925ab9052541c8f3654cc1aeb8654a47))
+* bump @eslint/eslintrc from 1.2.3 to 1.3.0 ([#112](https://github.com/MorevM/eslint-config/issues/112)) ([9d31b77](https://github.com/MorevM/eslint-config/commit/9d31b7787a51ecd6b83899070e1f7cdd32f39372))
+* bump @typescript-eslint/eslint-plugin from 5.23.0 to 5.25.0 ([c0da261](https://github.com/MorevM/eslint-config/commit/c0da2618a51084b1bf4e3a6b031d75dcb5c78c65))
+* bump @typescript-eslint/parser from 5.23.0 to 5.25.0 ([#115](https://github.com/MorevM/eslint-config/issues/115)) ([26d1bc7](https://github.com/MorevM/eslint-config/commit/26d1bc709235da6f7e523d1ae8c9899e3ef8279c))
+* bump eslint from 8.15.0 to 8.16.0 ([#111](https://github.com/MorevM/eslint-config/issues/111)) ([1e44225](https://github.com/MorevM/eslint-config/commit/1e442252e168a897541c1b28d6526172b5b88969))
+* bump eslint-plugin-jest from 26.2.1 to 26.2.2 ([#110](https://github.com/MorevM/eslint-config/issues/110)) ([ab845c6](https://github.com/MorevM/eslint-config/commit/ab845c60dc7fcda30a73d5133b47ba0869a6e24a))
+* bump eslint-plugin-jsdoc from 39.2.9 to 39.3.0 ([#117](https://github.com/MorevM/eslint-config/issues/117)) ([35125b4](https://github.com/MorevM/eslint-config/commit/35125b460ede0cc50c4331e502975abd63eb65f5))
+* bump eslint-plugin-vue from 8.7.1 to 9.0.1 ([826e42c](https://github.com/MorevM/eslint-config/commit/826e42caf55bc5407e98db5275603ac0fee20437))
+* bump eslint-plugin-yml from 0.15.0 to 1.0.0 ([#120](https://github.com/MorevM/eslint-config/issues/120)) ([9bb8b5b](https://github.com/MorevM/eslint-config/commit/9bb8b5bf0f90837c37dde1ae3da28e124059a333))
+* bump vue-eslint-parser from 9.0.1 to 9.0.2 ([#121](https://github.com/MorevM/eslint-config/issues/121)) ([703f1c4](https://github.com/MorevM/eslint-config/commit/703f1c443c6a950f6f50aeefe2a8f22b2d7fdb1c))
+* bump yaml-eslint-parser from 0.5.0 to 1.0.1 ([#113](https://github.com/MorevM/eslint-config/issues/113)) ([e5ea5ea](https://github.com/MorevM/eslint-config/commit/e5ea5ea505f469071fc2214b12001e208fa1485a))
+
+
+### Bug fixes
+
+* **typescript:** Remove deprecated `no-duplicate-imports` ([1ff8e07](https://github.com/MorevM/eslint-config/commit/1ff8e07eae2e30710aa133be7e07223493ea48de))
+* **vue:** Remove deprecated `vue/script-setup-uses-vars` ([88d0a76](https://github.com/MorevM/eslint-config/commit/88d0a76d53d9a68285ed2e35a722664c87952fb8))
+* **vue:** Replace deprecated `vue/no-invalid-model-keys` to added `vue/valid-model-definition` ([dbe5251](https://github.com/MorevM/eslint-config/commit/dbe5251e62774eb3111b6837fa67d1c491f77fee))
+
 ### [11.4.1](https://github.com/MorevM/eslint-config/compare/v11.4.0...v11.4.1) (2022-05-14)
 
 
