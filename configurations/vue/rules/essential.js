@@ -168,6 +168,10 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/use-v-on-exact.html
 		'vue/use-v-on-exact': 'error',
 
+		// Require valid attribute names
+		// https://eslint.vuejs.org/rules/valid-attribute-name.html
+		'vue/valid-attribute-name': 'error',
+
 		// Enforce valid `nextTick` function calls (autofixable)
 		// https://eslint.vuejs.org/rules/valid-next-tick.html
 		'+vue/valid-next-tick': 'error',
