@@ -268,10 +268,6 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-duplicate-enum-values
 		'@typescript-eslint/no-duplicate-enum-values': 'error',
 
-		// Disallow duplicate imports
-		// https://typescript-eslint.io/rules/no-duplicate-imports
-		...extendFromBase('no-duplicate-imports'),
-
 		// Disallow the delete operator with computed key expressions (autofixable)
 		// https://typescript-eslint.io/rules/no-dynamic-delete
 		'+@typescript-eslint/no-dynamic-delete': 'error',
