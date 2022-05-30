@@ -1,5 +1,12 @@
 
 
+### [12.1.1](https://github.com/MorevM/eslint-config/compare/v12.1.0...v12.1.1) (2022-05-30)
+
+
+### Chores
+
+* bump @typescript-eslint/parser from 5.25.0 to 5.26.0 ([#122](https://github.com/MorevM/eslint-config/issues/122)) ([d49727a](https://github.com/MorevM/eslint-config/commit/d49727ad1a7a58dd1fb76103b148d4f521af1184))
+
 ## [12.1.0](https://github.com/MorevM/eslint-config/compare/v12.0.0...v12.1.0) (2022-05-30)
 
 
