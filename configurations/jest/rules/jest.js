@@ -128,6 +128,10 @@ module.exports = {
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-expect-resolves.md
 		'+jest/prefer-expect-resolves': 'error',
 
+		// Prefer having hooks in a consistent order
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-hooks-in-order.md
+		'jest/prefer-hooks-in-order': 'warn',
+
 		// Suggest having hooks before any test cases
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-hooks-on-top.md
 		'jest/prefer-hooks-on-top': 'error',
