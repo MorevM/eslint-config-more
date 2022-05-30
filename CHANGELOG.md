@@ -1,5 +1,25 @@
 
 
+## [12.1.0](https://github.com/MorevM/eslint-config/compare/v12.0.0...v12.1.0) (2022-05-30)
+
+
+### Features
+
+* **jest:** Add `prefer-hooks-in-order` rule ([15f78bb](https://github.com/MorevM/eslint-config/commit/15f78bb508fba703a9f93e4b374cdbf55edb1098))
+
+
+### Chores
+
+* bump @babel/core from 7.18.0 to 7.18.2 ([#129](https://github.com/MorevM/eslint-config/issues/129)) ([68a301e](https://github.com/MorevM/eslint-config/commit/68a301e193f6ae0b37a12852e969289ddee39fbd))
+* bump @babel/eslint-parser from 7.17.0 to 7.18.2 ([#123](https://github.com/MorevM/eslint-config/issues/123)) ([a06e1b1](https://github.com/MorevM/eslint-config/commit/a06e1b10cbc8a732dc419f25fb2fbbbce916655b))
+* bump @typescript-eslint/eslint-plugin from 5.25.0 to 5.26.0 ([#126](https://github.com/MorevM/eslint-config/issues/126)) ([6569901](https://github.com/MorevM/eslint-config/commit/65699017d7b25272915e2b9b9e3c46ed8444c5d8))
+* bump eslint-plugin-jest from 26.2.2 to 26.4.5 ([1e56d74](https://github.com/MorevM/eslint-config/commit/1e56d74bc8905368adc9e571c9962857c49e2d3a))
+* bump eslint-plugin-jsdoc from 39.3.0 to 39.3.2 ([#125](https://github.com/MorevM/eslint-config/issues/125)) ([3678937](https://github.com/MorevM/eslint-config/commit/3678937d4f4a6b187cb9fd75d6f436fddb90d6be))
+* bump eslint-plugin-jsonc from 2.2.1 to 2.3.0 ([#127](https://github.com/MorevM/eslint-config/issues/127)) ([ee97031](https://github.com/MorevM/eslint-config/commit/ee97031de0a5219bb66aeb7c091feca771beb6da))
+* bump lint-staged from 12.4.1 to 12.4.2 ([#130](https://github.com/MorevM/eslint-config/issues/130)) ([56f364f](https://github.com/MorevM/eslint-config/commit/56f364f51be553c70d9d28af261e4b9440694405))
+* bump typescript from 4.6.4 to 4.7.2 ([#128](https://github.com/MorevM/eslint-config/issues/128)) ([7ea4477](https://github.com/MorevM/eslint-config/commit/7ea447782983953bf3bbb827512d4cc445d1ca54))
+* Regenerate lockfile ([0222236](https://github.com/MorevM/eslint-config/commit/02222362576cd787cafb16a649bd8b49da4d509d))
+
 ## [12.0.0](https://github.com/MorevM/eslint-config/compare/v11.4.1...v12.0.0) (2022-05-21)
 
 
