@@ -230,6 +230,7 @@ module.exports = {
 			functions: true,
 			classes: true,
 			variables: true,
+			allowNamedExports: true,
 		}],
 
 		// Disallow useless backreferences in regular expressions
