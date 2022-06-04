@@ -1,5 +1,24 @@
 
 
+## [12.2.0](https://github.com/MorevM/eslint-config/compare/v12.1.1...v12.2.0) (2022-06-04)
+
+
+### Features
+
+* **base:** Add new option `allowNamedExports` to `no-use-before-define` rule ([6753e20](https://github.com/MorevM/eslint-config/commit/6753e207e29bbde96e1b5735c4f6576f65a15200))
+
+
+### Chores
+
+* bump @types/jest from 27.5.1 to 28.1.0 ([#135](https://github.com/MorevM/eslint-config/issues/135)) ([dc27fa9](https://github.com/MorevM/eslint-config/commit/dc27fa949b5da4d665c6d7e8f303b0ec2ccfac97))
+* bump @typescript-eslint/eslint-plugin from 5.26.0 to 5.27.0 ([#137](https://github.com/MorevM/eslint-config/issues/137)) ([2b3950b](https://github.com/MorevM/eslint-config/commit/2b3950be31b1390d0998aceef8e80da4c74d8d47))
+* bump @typescript-eslint/parser from 5.26.0 to 5.27.0 ([#132](https://github.com/MorevM/eslint-config/issues/132)) ([2898a1f](https://github.com/MorevM/eslint-config/commit/2898a1fd7008a59e65eab268d49289ab1128cc9b))
+* bump eslint from 8.16.0 to 8.17.0 ([#136](https://github.com/MorevM/eslint-config/issues/136)) ([c2a4a50](https://github.com/MorevM/eslint-config/commit/c2a4a5023d8ba4790387287dd11ae01f6935d178))
+* bump eslint-plugin-jest from 26.4.5 to 26.4.6 ([#134](https://github.com/MorevM/eslint-config/issues/134)) ([1825dff](https://github.com/MorevM/eslint-config/commit/1825dff85a243ccb2b9066cd037116b423ea214f))
+* bump eslint-plugin-vue from 9.0.1 to 9.1.0 ([#131](https://github.com/MorevM/eslint-config/issues/131)) ([efbb01a](https://github.com/MorevM/eslint-config/commit/efbb01a374b154d52f76efa3bde13fa3a4e57a69))
+* bump lint-staged from 12.4.2 to 13.0.0 ([#138](https://github.com/MorevM/eslint-config/issues/138)) ([ddc06e7](https://github.com/MorevM/eslint-config/commit/ddc06e7599ef1388e1d639bddfd85ae96634e5fd))
+* bump typescript from 4.7.2 to 4.7.3 ([#133](https://github.com/MorevM/eslint-config/issues/133)) ([c7e8534](https://github.com/MorevM/eslint-config/commit/c7e8534fa7d715bf87578f20e1d3a7e3deb3c0b4))
+
 ### [12.1.1](https://github.com/MorevM/eslint-config/compare/v12.1.0...v12.1.1) (2022-05-30)
 
 
