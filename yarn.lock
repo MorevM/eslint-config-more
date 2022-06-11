@@ -481,10 +481,10 @@
   resolved "https://registry.yarnpkg.com/@html-eslint/eslint-plugin/-/eslint-plugin-0.13.1.tgz#342233c2e19d10962d34c1f808643fddd40cca6c"
   integrity sha512-D2pum/w6cfahxoGtueZVCLIC4OoG0mOfisxgSC4hsIpuapZHVNpTy4owizwoww1ZALHy6OMkWzTsp7zXIv3SbQ==
 
-"@html-eslint/parser@^0.13.1":
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/@html-eslint/parser/-/parser-0.13.1.tgz#bb7891224dbedd7ef5057b5af4fc85c0afb29411"
-  integrity sha512-FEBWYE+ifxjSn13Dd6gjW1RYmcMNRObvw9zWpWP6bdJYGHTegxil5VcOX9GaJ4LPatw6a2sOb850DJvnIUKr4g==
+"@html-eslint/parser@^0.13.2":
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@html-eslint/parser/-/parser-0.13.2.tgz#2829c805fda9663646551c4eabdcca553f526e4e"
+  integrity sha512-DESYDCWOo8JkpLCLpSgoTd437ReTxA955T//dGm7+dnW1UnVs6M2Axpd40smF7ucyBqjTUj7YaE/eMRjlLMoPg==
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
