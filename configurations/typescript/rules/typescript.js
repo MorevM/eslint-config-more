@@ -118,6 +118,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/comma-spacing
 		...extendFromBase('+comma-spacing'),
 
+		// Enforces specifying generic type arguments on type annotation or constructor name of a constructor call (autofixable)
+		// https://typescript-eslint.io/rules/consistent-generic-constructors
+		'+@typescript-eslint/consistent-generic-constructors': ['warn', 'constructor'],
+
 		// Enforce or disallow the use of the record type (autofixable)
 		// https://typescript-eslint.io/rules/consistent-indexed-object-style
 		// TODO: [2023-05-11] Take a look
