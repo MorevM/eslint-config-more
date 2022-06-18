@@ -151,7 +151,7 @@
 		"@morev/commitlint-config": "^0.1.1",
 		"@release-it/conventional-changelog": "^5.0.0",
 		"@types/jest": "^28.1.1",
-		"eslint": "^8.17.0",
+		"eslint": "^8.18.0",
 		"eslint-find-rules": "^4.1.0",
 		"glob": "^8.0.3",
 		"husky": "^8.0.1",
