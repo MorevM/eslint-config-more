@@ -10,19 +10,22 @@ describe('Build', () => {
 		const { ConfigValidator } = Legacy;
 		const validator = new ConfigValidator();
 
-		const errors = await Promise.allSettled(glob.sync(`${BUILD_PATH}/**/*`, { nodir: true }).map((file) => (
-			new Promise((resolve, reject) => {
-				const config = require(file);
-				const source = file.split('/').slice(-2).join('/');
+		const errors = await Promise.allSettled(
+			glob.sync(`${BUILD_PATH}/!(utils)/**/*`, { nodir: true })
+				.map((file) => (
+					new Promise((resolve, reject) => {
+						const config = require(file);
+						const source = file.split('/').slice(-2).join('/');
 
-				try {
-					validator.validateConfigSchema(config, source);
-					resolve(source);
-				} catch {
-					reject(source);
-				}
-			})
-		)))
+						try {
+							validator.validateConfigSchema(config, source);
+							resolve(source);
+						} catch {
+							reject(source);
+						}
+					})
+				)),
+		)
 			.then((results) => (
 				results
 					.filter(({ status }) => status === 'rejected')
