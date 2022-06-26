@@ -1,4 +1,4 @@
-const { resolve } = require('path');
+const { resolve, join } = require('path');
 const fs = require('fs');
 const { ESLint } = require('eslint');
 
@@ -8,16 +8,28 @@ const pkg = require('../package.json');
 const { makeConfig } = require('./tools.js');
 const { configurations, presets } = require('./meta.js');
 
-const [CONFIGS_DIR_REL, PRESETS_DIR_REL] = ['./build/configurations/', './build/presets/'];
-const [CONFIGS_DIR, PRESETS_DIR] = [
-	resolve(__dirname, '..', CONFIGS_DIR_REL),
-	resolve(__dirname, '..', PRESETS_DIR_REL),
+const ROOT_DIR = resolve(__dirname, '..');
+const [CONFIGS_DIR_REL, PRESETS_DIR_REL, UTILS_DIR_REL] = [
+	'./build/configurations/',
+	'./build/presets/',
+	'./build/utils/',
 ];
 
-[CONFIGS_DIR, PRESETS_DIR].forEach(dir => {
+const [CONFIGS_DIR, PRESETS_DIR, UTILS_DIR] = [
+	join(ROOT_DIR, CONFIGS_DIR_REL),
+	join(ROOT_DIR, PRESETS_DIR_REL),
+	join(ROOT_DIR, UTILS_DIR_REL),
+];
+
+[CONFIGS_DIR, PRESETS_DIR, UTILS_DIR].forEach(dir => {
 	fs.rmSync(dir, { recursive: true, force: true });
 	fs.mkdirSync(dir, { recursive: true });
 });
+
+fs.copyFileSync(
+	join(ROOT_DIR, 'utils', 'eslint-plugin-import-resolver.js'),
+	join(UTILS_DIR, 'eslint-plugin-import-resolver.js'),
+);
 
 let exportsField = {};
 
@@ -37,12 +49,18 @@ const getNames = (config, mode, isPresets = false) => {
 	return { filename, exportsName };
 };
 
+const toConfigExports = (content) => {
+	const withUnwrappedPath = JSON.stringify(content, null, '\t').replace(/"(\[path\.resolve.*)"/gm, '$1');
+	return `const path = require('path');\n\nmodule.exports = ${withUnwrappedPath};`;
+};
+
 (async () => {
 	// Create presets
 	await presets.forEach(async (preset) => {
 		await ['default', 'strict', 'quiet'].forEach(async (mode) => {
-			let configSource = makeConfig(preset.configurations.map(c => ({ ...c, mode })));
-			configSource = `module.exports = ${JSON.stringify(configSource, null, '\t')}`;
+			const configSource = toConfigExports(
+				makeConfig(preset.configurations.map(c => ({ ...c, mode }))),
+			);
 
 			const { filename, exportsName } = getNames(preset, mode, true);
 			exportsField[exportsName] = `${PRESETS_DIR_REL}${filename}`;
@@ -54,8 +72,7 @@ const getNames = (config, mode, isPresets = false) => {
 	// Create configurations
 	await configurations.forEach(async (config) => {
 		await ['default', 'strict', 'quiet'].forEach(async (mode) => {
-			let configSource = makeConfig([{ ...config, mode }]);
-			configSource = `module.exports = ${JSON.stringify(configSource, null, '\t')}`;
+			const configSource = toConfigExports(makeConfig([{ ...config, mode }]));
 
 			const { filename, exportsName } = getNames(config, mode);
 			exportsField[exportsName] = `${CONFIGS_DIR_REL}${filename}`;

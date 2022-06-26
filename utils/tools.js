@@ -13,7 +13,13 @@ const makeConfig = (_configs) => {
 		name: c?.name.includes('/') ? c.name : `${c.name}${sep}index`,
 	}));
 
-	let result = {};
+	let result = {
+		settings: {
+			'import/resolver': {
+				'[path.resolve(__dirname, \'../utils/eslint-plugin-import-resolver.js\')]': {}, // will be unwrapped during build
+			},
+		},
+	};
 
 	configs.forEach(({ name, mode, overrides }) => {
 		const configFactory = require(resolve(CONFIGS_PATH, name));
