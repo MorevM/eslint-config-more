@@ -1,5 +1,26 @@
 
 
+## [12.4.0](https://github.com/MorevM/eslint-config/compare/v12.3.0...v12.4.0) (2022-06-26)
+
+
+### Features
+
+* Add custom resolver for `package.json > exports` field ([b0ac9a6](https://github.com/MorevM/eslint-config/commit/b0ac9a67b6d59ae67f0ae1a2b77ba67e48bb4a03))
+
+
+### Chores
+
+* bump @types/jest from 28.1.2 to 28.1.3 ([#157](https://github.com/MorevM/eslint-config/issues/157)) ([715c83d](https://github.com/MorevM/eslint-config/commit/715c83dd4771806b11f0c2af9abea36951d56c28))
+* bump @typescript-eslint/eslint-plugin from 5.28.0 to 5.29.0 ([#159](https://github.com/MorevM/eslint-config/issues/159)) ([8e476d0](https://github.com/MorevM/eslint-config/commit/8e476d0ac5e4984c1519d31e75e3fb3a1ffa6ff4))
+* bump lint-staged from 13.0.2 to 13.0.3 ([#160](https://github.com/MorevM/eslint-config/issues/160)) ([a683cac](https://github.com/MorevM/eslint-config/commit/a683cac6dd2cefdc87023427059f13715cbb2103))
+* bump release-it from 15.0.0 to 15.1.0 ([#158](https://github.com/MorevM/eslint-config/issues/158)) ([43ade5d](https://github.com/MorevM/eslint-config/commit/43ade5dbe056089031772bf5e2f86dfb320d9d54))
+* bump vue-eslint-parser from 9.0.2 to 9.0.3 ([#155](https://github.com/MorevM/eslint-config/issues/155)) ([a402ab9](https://github.com/MorevM/eslint-config/commit/a402ab9ec87a380585751d953389657ea825bfe0))
+
+
+### Tests
+
+* Fix config validity test after implementation of custom resolver ([1e8ea66](https://github.com/MorevM/eslint-config/commit/1e8ea660612cfc376074990f655353fb3d3f1b91))
+
 ## [12.3.0](https://github.com/MorevM/eslint-config/compare/v12.2.0...v12.3.0) (2022-06-18)
 
 
