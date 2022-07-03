@@ -19,6 +19,8 @@ const base = {
 	},
 	rules: {
 		'unicorn/prefer-json-parse-buffer': 'off',
+		'jsdoc/require-returns-type': 'off',
+		'jsdoc/require-param-type': 'off',
 	},
 };
 
