@@ -28,5 +28,10 @@ module.exports = {
 		// Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md
 		'+unicorn/prefer-keyboard-event-key': 'error',
+
+		// Prefer using a logical operator over a ternary
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md
+		// TODO: [2023-05-11] Enable when environment for most projects is ready
+		'unicorn/prefer-logical-operator-over-ternary': 'off',
 	},
 };
