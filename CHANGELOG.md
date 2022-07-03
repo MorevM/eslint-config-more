@@ -1,5 +1,36 @@
 
 
+## [13.0.0](https://github.com/MorevM/eslint-config/compare/v12.4.0...v13.0.0) (2022-07-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add `unicorn/prefer-event-target` rule
+
+### Features
+
+* Add `unicorn/prefer-event-target` rule ([074694a](https://github.com/MorevM/eslint-config/commit/074694a6f8af281f9e00f3c711d9fc74ed7e67ac))
+* Add `unicorn/prefer-logical-operator-over-ternary` ([204a8ad](https://github.com/MorevM/eslint-config/commit/204a8adc4c07d239c1dd86b0fb4130d70d31c556))
+
+
+### Chores
+
+* bump @babel/core from 7.18.5 to 7.18.6 ([#164](https://github.com/MorevM/eslint-config/issues/164)) ([892365e](https://github.com/MorevM/eslint-config/commit/892365e695532992d215284f64e9f8f34526fe97))
+* bump @babel/plugin-syntax-jsx from 7.17.12 to 7.18.6 ([#167](https://github.com/MorevM/eslint-config/issues/167)) ([af42541](https://github.com/MorevM/eslint-config/commit/af4254192e17789f9000a1bfba47e1d798ae999d))
+* bump @typescript-eslint/eslint-plugin from 5.29.0 to 5.30.3 ([#166](https://github.com/MorevM/eslint-config/issues/166)) ([ddbd1aa](https://github.com/MorevM/eslint-config/commit/ddbd1aa44926edcf4c127113d996f61d1c365b29))
+* bump @typescript-eslint/parser from 5.29.0 to 5.30.3 ([#161](https://github.com/MorevM/eslint-config/issues/161)) ([66611ce](https://github.com/MorevM/eslint-config/commit/66611ce0af460b65e3d697b526b640373863eb74))
+* bump eslint from 8.18.0 to 8.19.0 ([#168](https://github.com/MorevM/eslint-config/issues/168)) ([422b6b1](https://github.com/MorevM/eslint-config/commit/422b6b1a9d6b6cb8944c31e22fb24078da71f617))
+* bump eslint-plugin-jsonc from 2.3.0 to 2.3.1 ([4aebe18](https://github.com/MorevM/eslint-config/commit/4aebe184f66eecca12e6e173e7a4dadadf82e4b4))
+* bump eslint-plugin-unicorn from 42.0.0 to 43.0.0 ([37f8f82](https://github.com/MorevM/eslint-config/commit/37f8f82da529911d698978d6588e5bdbbaffae5d))
+* bump jest and @types/jest ([#162](https://github.com/MorevM/eslint-config/issues/162)) ([122c2a2](https://github.com/MorevM/eslint-config/commit/122c2a20af43112fc4e8228f12cc8ee7c9c4549e))
+* bump release-it from 15.1.0 to 15.1.1 ([#165](https://github.com/MorevM/eslint-config/issues/165)) ([6385a04](https://github.com/MorevM/eslint-config/commit/6385a0408ef68cb35219e162983986e0bb52b536))
+
+
+### Bug fixes
+
+* Disabled `jsdoc/require-X-type` rules for TS files ([2709518](https://github.com/MorevM/eslint-config/commit/270951877bd57b821dbcb483d6bbe609ca575bfe))
+* Remove deprecated `unicorn/import-index` ([44661b9](https://github.com/MorevM/eslint-config/commit/44661b9b9a4e948e5c4c728fb6f93013a50b779c))
+
 ## [12.4.0](https://github.com/MorevM/eslint-config/compare/v12.3.0...v12.4.0) (2022-06-26)
 
 
