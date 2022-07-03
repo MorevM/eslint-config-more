@@ -17,6 +17,10 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-text-content.md
 		'unicorn/prefer-dom-node-text-content': 'error',
 
+		// Prefer `EventTarget` over `EventEmitter`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-event-target.md
+		'unicorn/prefer-event-target': 'error',
+
 		// Prefer modern DOM APIs (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-dom-apis.md
 		'+unicorn/prefer-modern-dom-apis': 'warn',
