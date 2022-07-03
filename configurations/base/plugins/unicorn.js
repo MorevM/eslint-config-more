@@ -56,11 +56,6 @@ module.exports = {
 			ignore: [],
 		}],
 
-		// Enforce importing index files with `.`
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/import-index.md
-		// Note: don't think its a good idea...
-		'unicorn/import-index': 'off',
-
 		// Enforce specific import styles per module
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/import-style.md
 		// Note: it depends, developer knows better
