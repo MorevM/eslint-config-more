@@ -1,5 +1,30 @@
 
 
+## [14.0.0](https://github.com/MorevM/eslint-config/compare/v13.0.0...v14.0.0) (2022-07-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **markdown:** Add `md051` rule
+
+### Features
+
+* **markdown:** Add `md051` rule ([6d7d9c1](https://github.com/MorevM/eslint-config/commit/6d7d9c1858440a6e28dde1a3faabf21ec7370e58))
+
+
+### Chores
+
+* bump `[@typescript-eslint](https://github.com/typescript-eslint)` from 5.30.5 to 5.30.6 ([b536ab2](https://github.com/MorevM/eslint-config/commit/b536ab251b568a74c79fd0cbc807cdfa00b2bf7c))
+* bump `eslint-plugin-markdownlint` from 0.3.4 to 0.4.0 ([d25aa76](https://github.com/MorevM/eslint-config/commit/d25aa767315219c655a67cb026c32d3e8ccbee70))
+* bump `eslint-plugin-unicorn` from 43.0.0 to 43.0.1 ([7c54b49](https://github.com/MorevM/eslint-config/commit/7c54b4940409a7d32f7e3c1b222ddf7819c5502d))
+* bump `eslint-plugin-vue` from 9.1.1 to 9.2.0 ([384e1b1](https://github.com/MorevM/eslint-config/commit/384e1b152536122b5ca4a10d05b1ed9bcf28afef))
+
+
+### Bug fixes
+
+* **base:** Decrease severity of `object-curly-newline` rule ([bd8ffcf](https://github.com/MorevM/eslint-config/commit/bd8ffcf5e9d8bb86f4b62f08cefa6c5f02fce188))
+* **markdown:** Disable `md051` rule ([137c7db](https://github.com/MorevM/eslint-config/commit/137c7dbf66827a4b9532c68f3b8568a87f7a1677))
+
 ## [13.0.0](https://github.com/MorevM/eslint-config/compare/v12.4.0...v13.0.0) (2022-07-03)
 
 
