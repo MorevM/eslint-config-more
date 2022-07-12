@@ -247,10 +247,10 @@ module.exports = {
 		// Enforce linebreaks after opening and before closing braces (autofixable)
 		// https://eslint.org/docs/rules/object-curly-newline
 		'+object-curly-newline': ['warn', {
-			ObjectExpression: { minProperties: 5, multiline: true, consistent: true },
-			ObjectPattern: { minProperties: 5, multiline: true, consistent: true },
-			ImportDeclaration: { minProperties: 5, multiline: true, consistent: true },
-			ExportDeclaration: { minProperties: 5, multiline: true, consistent: true },
+			ObjectExpression: { consistent: true },
+			ObjectPattern: { consistent: true },
+			ImportDeclaration: { consistent: true },
+			ExportDeclaration: { consistent: true },
 		}],
 
 		// Enforce spacing inside braces (autofixable)
