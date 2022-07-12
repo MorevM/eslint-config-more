@@ -255,5 +255,11 @@ module.exports = {
 		'+markdownlint/md050': ['error', {
 			style: 'asterisk',
 		}],
+
+		// Link fragments should be valid
+		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md051
+		'markdownlint/md051': 'error',
+
+		// TODO: 52, 53
 	},
 };
