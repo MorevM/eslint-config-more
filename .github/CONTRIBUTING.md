@@ -3,7 +3,7 @@
 [In English](#custom-prefix-english) | [На русском](#custom-prefix-russian)
 
 <!-- markdownlint-disable-next-line -->
-<div id="custom-prefix-english"></div>
+<a id="custom-prefix-english"></a>
 
 Thank you for thinking of contributing to this project! 👏
 
@@ -43,7 +43,7 @@ There are various templates for asking a question, reporting a bug or requesting
 <br />
 
 <!-- markdownlint-disable-next-line -->
-<div id="custom-prefix-russian"></div>
+<a id="custom-prefix-russian"></a>
 
 Спасибо, что решили внести свой вклад! 👏
 
