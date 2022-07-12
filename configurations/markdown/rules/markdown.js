@@ -258,8 +258,7 @@ module.exports = {
 
 		// Link fragments should be valid
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md051
-		'markdownlint/md051': 'error',
-
-		// TODO: 52, 53
+		// 'markdownlint/md051': 'error',
+		// https://gitlab.com/pawelbbdrozd/eslint-plugin-markdownlint/-/issues/10
 	},
 };
