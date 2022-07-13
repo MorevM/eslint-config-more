@@ -1,5 +1,12 @@
 
 
+### [14.0.1](https://github.com/MorevM/eslint-config/compare/v14.0.0...v14.0.1) (2022-07-13)
+
+
+### Bug fixes
+
+* Correctly resolve full paths in custom resolver ([24d93e2](https://github.com/MorevM/eslint-config/commit/24d93e274bd67a03fe9f4cd766509ef890f4bb5d))
+
 ## [14.0.0](https://github.com/MorevM/eslint-config/compare/v13.0.0...v14.0.0) (2022-07-12)
 
 
