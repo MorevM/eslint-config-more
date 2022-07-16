@@ -3,11 +3,13 @@ const fs = require('fs');
 const { builtinModules } = require('module');
 const { resolve: resolveExports } = require('resolve.exports');
 
-const builtins = new Set(builtinModules);
+const allBuiltins = builtinModules.flatMap(m => [m, `node:${m}`]);
 
 const resolve = (source, file, _config) => {
 	// Needed for proper `import/order` work
-	if (builtins.has(source)) return { found: true, path: null };
+	if (allBuiltins.includes(source)) return { found: true, path: null };
+	// `moduleId` (below) resolves to non-existed package with `node:` prefix
+	if (source.startsWith('node:') && !allBuiltins.includes(source)) return { found: false };
 
 	try {
 		const moduleId = require.resolve(source, { paths: [path.dirname(file)] });
