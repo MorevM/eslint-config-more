@@ -1,5 +1,28 @@
 
 
+## [15.0.0](https://github.com/MorevM/eslint-config/compare/v14.0.1...v15.0.0) (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* **jest:** Add `jest/max-expects` rule
+
+### Features
+
+* **jest:** Add `jest/max-expects` rule ([0c0be1c](https://github.com/MorevM/eslint-config/commit/0c0be1caf2041996d88447f15369b44165008de0))
+
+
+### Bug fixes
+
+* **resolver:** Allow to use `node:`-prefixed internals with no errors ([b15559b](https://github.com/MorevM/eslint-config/commit/b15559b4f8cf0cd1bdc05660ea7b6505de154c08))
+
+
+### Chores
+
+* bump eslint-plugin-jest from 26.5.3 to 26.6.0 ([25d872b](https://github.com/MorevM/eslint-config/commit/25d872ba6a1826238f64a70593ba07fcc269a6ce))
+* bump jest and @types/jest ([#176](https://github.com/MorevM/eslint-config/issues/176)) ([deb8675](https://github.com/MorevM/eslint-config/commit/deb86759852be98502e6ef45f7e4fef1ac99b09c))
+* bump release-it from 15.1.1 to 15.1.2 ([#177](https://github.com/MorevM/eslint-config/issues/177)) ([37a5f17](https://github.com/MorevM/eslint-config/commit/37a5f17fed100b88b8b3e30f97871afc2bfe9d5b))
+
 ### [14.0.1](https://github.com/MorevM/eslint-config/compare/v14.0.0...v14.0.1) (2022-07-13)
 
 
