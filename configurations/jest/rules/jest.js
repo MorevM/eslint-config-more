@@ -15,6 +15,10 @@ module.exports = {
 			additionalTestBlockFunctions: [],
 		}],
 
+		// Enforces a maximum number assertion calls in a test body
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/max-expects.md
+		'jest/max-expects': ['error', { max: 5 }],
+
 		// Enforces a maximum depth to nested describe calls
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/max-nested-describe.md
 		'jest/max-nested-describe': ['warn', { max: 3 }],
