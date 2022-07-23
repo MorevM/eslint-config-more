@@ -1,5 +1,29 @@
 
 
+## [15.1.0](https://github.com/MorevM/eslint-config/compare/v15.0.0...v15.1.0) (2022-07-23)
+
+
+### Features
+
+* **typescript:** Disable `no-duplicate-imports` for TS files ([7596213](https://github.com/MorevM/eslint-config/commit/7596213e70bceab9031c986a2af163d77aa0933a))
+
+
+### Chores
+
+* bump @babel/core from 7.18.6 to 7.18.9 ([#179](https://github.com/MorevM/eslint-config/issues/179)) ([02674b5](https://github.com/MorevM/eslint-config/commit/02674b540680dbb93f9fe2e64125f7fcfe5c1ecd))
+* bump @babel/eslint-parser from 7.18.2 to 7.18.9 ([#184](https://github.com/MorevM/eslint-config/issues/184)) ([1d5ffb4](https://github.com/MorevM/eslint-config/commit/1d5ffb4d35fb51a53266b397d2ae126fa0c0f63a))
+* bump @typescript-eslint/eslint-plugin from 5.30.6 to 5.30.7 ([#183](https://github.com/MorevM/eslint-config/issues/183)) ([8f49fa2](https://github.com/MorevM/eslint-config/commit/8f49fa2bed311846d4c00b254335ea4dbadc01a7))
+* bump @typescript-eslint/parser from 5.30.6 to 5.30.7 ([#186](https://github.com/MorevM/eslint-config/issues/186)) ([d0b5b03](https://github.com/MorevM/eslint-config/commit/d0b5b03098256a75f559e9f0f9a5b2667218626a))
+* bump eslint from 8.19.0 to 8.20.0 ([#182](https://github.com/MorevM/eslint-config/issues/182)) ([ffb5f6d](https://github.com/MorevM/eslint-config/commit/ffb5f6dd56e0825bdd2103aa364d816467dea43d))
+* bump eslint-plugin-sonarjs from 0.13.0 to 0.14.0 ([#180](https://github.com/MorevM/eslint-config/issues/180)) ([ece1694](https://github.com/MorevM/eslint-config/commit/ece1694f7ecec14b2c4dc8ff3c0dafe4338a368b))
+* bump eslint-plugin-unicorn from 43.0.1 to 43.0.2 ([#185](https://github.com/MorevM/eslint-config/issues/185)) ([c2759af](https://github.com/MorevM/eslint-config/commit/c2759af5c604707c765f7cf3187532d66947eb5a))
+* bump release-it from 15.1.2 to 15.1.3 ([#181](https://github.com/MorevM/eslint-config/issues/181)) ([1e99328](https://github.com/MorevM/eslint-config/commit/1e99328b71d6953b37068e67aadb3a6f14800d38))
+
+
+### Bug fixes
+
+* **jest:** Disable `jest/max-expects` rule ([d26f5dc](https://github.com/MorevM/eslint-config/commit/d26f5dc8f2447e849493f617e0858874cd1a6b36))
+
 ## [15.0.0](https://github.com/MorevM/eslint-config/compare/v14.0.1...v15.0.0) (2022-07-16)
 
 
