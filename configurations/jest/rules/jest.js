@@ -144,6 +144,10 @@ module.exports = {
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-lowercase-title.md
 		'+jest/prefer-lowercase-title': 'off',
 
+		// Prefer mock resolved/rejected shorthands for promises (autofixable)
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-mock-promise-shorthand.md
+		'+jest/prefer-mock-promise-shorthand': 'warn',
+
 		// Prefer including a hint with external snapshots
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-snapshot-hint.md
 		'jest/prefer-snapshot-hint': ['warn', 'always'],
