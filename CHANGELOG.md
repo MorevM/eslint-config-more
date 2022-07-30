@@ -1,5 +1,23 @@
 
 
+## [15.2.0](https://github.com/MorevM/eslint-config/compare/v15.1.0...v15.2.0) (2022-07-30)
+
+
+### Features
+
+* **jest:** Add `jest/prefer-mock-promise-shorthand` rule ([45fa775](https://github.com/MorevM/eslint-config/commit/45fa7754025fc3a9f31336ab2e0c98662be476c3))
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 5.30.7 to 5.31.0 ([#192](https://github.com/MorevM/eslint-config/issues/192)) ([945df04](https://github.com/MorevM/eslint-config/commit/945df04b83fa6dbe2eeb5b9f083eda188bf6846f))
+* bump @typescript-eslint/parser from 5.30.7 to 5.31.0 ([#191](https://github.com/MorevM/eslint-config/issues/191)) ([a37c76f](https://github.com/MorevM/eslint-config/commit/a37c76ffcb74b2eaef17b87e88951846a39cabee))
+* bump eslint-plugin-jest from 26.6.0 to 26.7.0 ([e8a839f](https://github.com/MorevM/eslint-config/commit/e8a839f48f250e1f6c354012db0c9fe26088ba8c))
+* bump eslint-plugin-jsdoc from 39.3.3 to 39.3.4 ([#188](https://github.com/MorevM/eslint-config/issues/188)) ([99fb38a](https://github.com/MorevM/eslint-config/commit/99fb38a3cf4fc57297cd3ea8a0f0c6ee4772888d))
+* bump eslint-plugin-vue from 9.2.0 to 9.3.0 ([#194](https://github.com/MorevM/eslint-config/issues/194)) ([ddd35f9](https://github.com/MorevM/eslint-config/commit/ddd35f95d7f93abeaacbca1c24d7f71bd43fd149))
+* bump eslint-plugin-yml from 1.0.0 to 1.1.0 ([#190](https://github.com/MorevM/eslint-config/issues/190)) ([d56c7a6](https://github.com/MorevM/eslint-config/commit/d56c7a6fd2d857d4619be6c78c5efeec5fd8dd2f))
+* bump release-it from 15.1.3 to 15.2.0 ([#187](https://github.com/MorevM/eslint-config/issues/187)) ([2d61f61](https://github.com/MorevM/eslint-config/commit/2d61f61fcf48c208baca11633c6229754d82b2f8))
+
 ## [15.1.0](https://github.com/MorevM/eslint-config/compare/v15.0.0...v15.1.0) (2022-07-23)
 
 
