@@ -1,5 +1,19 @@
 
 
+### [15.2.1](https://github.com/MorevM/eslint-config/compare/v15.2.0...v15.2.1) (2022-08-09)
+
+
+### Chores
+
+* bump @babel/core from 7.18.9 to 7.18.10 ([#195](https://github.com/MorevM/eslint-config/issues/195)) ([9abfb9f](https://github.com/MorevM/eslint-config/commit/9abfb9f9a199895363ffe68ba1732f8432a6b127))
+* bump `[@typescript-eslint](https://github.com/typescript-eslint)` from 5.31.0 to 5.33.0 ([599339a](https://github.com/MorevM/eslint-config/commit/599339a909960c385d84732deae5eb55ca54899c))
+* bump eslint from 8.20.0 to 8.21.0 ([#198](https://github.com/MorevM/eslint-config/issues/198)) ([84a7045](https://github.com/MorevM/eslint-config/commit/84a7045ee6d9b9f1ec311ce351fecdeab8e74e09))
+
+
+### Bug fixes
+
+* **typescript:** Extend `no-use-before-define` from base config ([e0618c9](https://github.com/MorevM/eslint-config/commit/e0618c95c482fdd4c9c87928841117f96da46570))
+
 ## [15.2.0](https://github.com/MorevM/eslint-config/compare/v15.1.0...v15.2.0) (2022-07-30)
 
 
