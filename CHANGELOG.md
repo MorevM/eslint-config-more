@@ -1,5 +1,12 @@
 
 
+## [15.3.0](https://github.com/MorevM/eslint-config/compare/v15.2.1...v15.3.0) (2022-08-09)
+
+
+### Features
+
+* **package.json:** Add support for yarn `resolutions` field ([bb7cb6c](https://github.com/MorevM/eslint-config/commit/bb7cb6c7f86d980e88d4624fcf56c51837de129b))
+
 ### [15.2.1](https://github.com/MorevM/eslint-config/compare/v15.2.0...v15.2.1) (2022-08-09)
 
 
