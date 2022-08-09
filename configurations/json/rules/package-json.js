@@ -41,6 +41,7 @@ module.exports = {
 				'peerDependenciesMeta',
 				'bundledDependencies',
 				'overrides',
+				'resolutions',
 				'dependencies',
 				'devDependencies',
 				'optionalDependencies',
