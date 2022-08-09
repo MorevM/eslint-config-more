@@ -489,22 +489,11 @@ module.exports = {
 
 		// Disallow the use of variables before they are defined
 		// https://typescript-eslint.io/rules/no-use-before-define
-		// TODO: Replace when option `allowNamedExports` comes to typescript-eslint
-		'@typescript-eslint/no-use-before-define': ['error', {
-			// base
-			functions: true,
-			classes: true,
-			variables: true,
-			// ts
+		...extendFromBase('no-use-before-define', {
 			enums: true,
 			typedefs: true,
 			ignoreTypeReferences: false,
-		}],
-		// ...extendFromBase('no-use-before-define', {
-		// enums: true,
-		// typedefs: true,
-		// ignoreTypeReferences: false,
-		// }),
+		}),
 
 		// Disallow unnecessary constructors
 		// https://typescript-eslint.io/rules/no-useless-constructor
