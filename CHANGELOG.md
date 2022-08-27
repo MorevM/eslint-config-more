@@ -1,5 +1,38 @@
 
 
+## [15.4.0](https://github.com/MorevM/eslint-config/compare/v15.3.0...v15.4.0) (2022-08-27)
+
+
+### Features
+
+* **base:** Add `allowEmptyCase` option to `no-fallthrough` rule ([c2b9480](https://github.com/MorevM/eslint-config/commit/c2b94805f1b31e1087b4697cab25a68bd3926252))
+
+
+### Chores
+
+* bump @babel/core from 7.18.10 to 7.18.13 ([8b55b59](https://github.com/MorevM/eslint-config/commit/8b55b5948fe7e474b915f614c7d71cf5d572ae5f))
+* bump @eslint/eslintrc from 1.3.0 to 1.3.1 ([#219](https://github.com/MorevM/eslint-config/issues/219)) ([3fbac85](https://github.com/MorevM/eslint-config/commit/3fbac8565e6c0cd0ba026172ca758ae35cd3a02b))
+* bump @release-it/conventional-changelog from 5.0.0 to 5.1.0 ([#206](https://github.com/MorevM/eslint-config/issues/206)) ([9cf1256](https://github.com/MorevM/eslint-config/commit/9cf1256ceac15b5edd010eeca1497ed7febbe518))
+* bump @types/jest from 28.1.6 to 28.1.7 ([#207](https://github.com/MorevM/eslint-config/issues/207)) ([bef27a4](https://github.com/MorevM/eslint-config/commit/bef27a4589b5a96ced8f253eb0ac0e014ac06084))
+* bump @types/jest from 28.1.7 to 28.1.8 ([e165ac5](https://github.com/MorevM/eslint-config/commit/e165ac545ef9f01bc9a440b26551fb0e513cbb19))
+* bump @typescript-eslint/eslint-plugin from 5.33.0 to 5.33.1 ([#209](https://github.com/MorevM/eslint-config/issues/209)) ([e87aafe](https://github.com/MorevM/eslint-config/commit/e87aafe75b2f96d5fce8496a418f8227e48212cb))
+* bump @typescript-eslint/eslint-plugin from 5.33.1 to 5.35.1 ([#217](https://github.com/MorevM/eslint-config/issues/217)) ([7cced1e](https://github.com/MorevM/eslint-config/commit/7cced1e27e7544789fb51056c0d9e506b0acc075))
+* bump @typescript-eslint/parser from 5.33.0 to 5.33.1 ([#208](https://github.com/MorevM/eslint-config/issues/208)) ([7ee9669](https://github.com/MorevM/eslint-config/commit/7ee96698fe3871769e150fb8d4d1861734c57ebb))
+* bump @typescript-eslint/parser from 5.33.1 to 5.35.1 ([ef375d6](https://github.com/MorevM/eslint-config/commit/ef375d656654066d59adc111919fb1cad01a9a2f))
+* bump eslint from 8.21.0 to 8.22.0 ([#203](https://github.com/MorevM/eslint-config/issues/203)) ([693b0ad](https://github.com/MorevM/eslint-config/commit/693b0ad59a6e909f988b61f75f019084a47b1b54))
+* bump eslint from 8.22.0 to 8.23.0 ([#213](https://github.com/MorevM/eslint-config/issues/213)) ([7abacde](https://github.com/MorevM/eslint-config/commit/7abacde4db93a0e75d6faa6401f2f6c4ddf97f0a))
+* bump eslint-plugin-jest from 26.7.0 to 26.8.2 ([#199](https://github.com/MorevM/eslint-config/issues/199)) ([9e18bab](https://github.com/MorevM/eslint-config/commit/9e18bab1b4b0cfcdda4b7ec19558bc348a4efb41))
+* bump eslint-plugin-jest from 26.8.2 to 26.8.4 ([#204](https://github.com/MorevM/eslint-config/issues/204)) ([6a7316c](https://github.com/MorevM/eslint-config/commit/6a7316cef60c3022870d66c5812b37afc80b5a07))
+* bump eslint-plugin-jest from 26.8.4 to 26.8.7 ([#215](https://github.com/MorevM/eslint-config/issues/215)) ([55c059d](https://github.com/MorevM/eslint-config/commit/55c059de6894628f7dc8dac9783ff02e8a72b650))
+* bump eslint-plugin-jsdoc from 39.3.4 to 39.3.6 ([#202](https://github.com/MorevM/eslint-config/issues/202)) ([20d3a2d](https://github.com/MorevM/eslint-config/commit/20d3a2df139361fc45fbad535d182c4aebc7051e))
+* bump eslint-plugin-jsonc from 2.3.1 to 2.4.0 ([#205](https://github.com/MorevM/eslint-config/issues/205)) ([95ab592](https://github.com/MorevM/eslint-config/commit/95ab5928ac1269d476db3ae1688b3c18cfdb43db))
+* bump eslint-plugin-sonarjs from 0.14.0 to 0.15.0 ([#201](https://github.com/MorevM/eslint-config/issues/201)) ([42af0ea](https://github.com/MorevM/eslint-config/commit/42af0ea7e799b006f65fe4718179fd193c046dab))
+* bump eslint-plugin-vue from 9.3.0 to 9.4.0 ([#211](https://github.com/MorevM/eslint-config/issues/211)) ([5b38971](https://github.com/MorevM/eslint-config/commit/5b38971ec2d77c8ce2c2a5c52e0bdfe1412df7d5))
+* bump jest from 28.1.3 to 29.0.1 ([0eb3bc8](https://github.com/MorevM/eslint-config/commit/0eb3bc8061f39b20b20bdc035c5afcbc3246e8f5))
+* bump release-it from 15.2.0 to 15.3.0 ([#200](https://github.com/MorevM/eslint-config/issues/200)) ([2445bba](https://github.com/MorevM/eslint-config/commit/2445bba9e71932d19d5826acf15df14c20649943))
+* bump release-it from 15.3.0 to 15.4.0 ([#210](https://github.com/MorevM/eslint-config/issues/210)) ([1739e36](https://github.com/MorevM/eslint-config/commit/1739e36351e00329b3f9e39422206b74c62b7ced))
+* bump typescript from 4.7.4 to 4.8.2 ([#212](https://github.com/MorevM/eslint-config/issues/212)) ([b5dd326](https://github.com/MorevM/eslint-config/commit/b5dd32615608c8aa2bade6dabb34f7ce0a8db7f9))
+
 ## [15.3.0](https://github.com/MorevM/eslint-config/compare/v15.2.1...v15.3.0) (2022-08-09)
 
 
