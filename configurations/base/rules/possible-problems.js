@@ -104,7 +104,9 @@ module.exports = {
 
 		// Disallow `case` statement fallthrough
 		// https://eslint.org/docs/rules/no-fallthrough
-		'no-fallthrough': 'error',
+		'no-fallthrough': ['error', {
+			allowEmptyCase: true,
+		}],
 
 		// Disallow reassigning function declaration
 		// https://eslint.org/docs/rules/no-func-assign
