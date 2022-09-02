@@ -1,5 +1,34 @@
 
 
+## [16.0.0](https://github.com/MorevM/eslint-config/compare/v15.4.0...v16.0.0) (2022-09-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **jest:** With new `jest/prefer-each` rule `jest` configuration and `common` and `jest` presets becomes more strict.
+
+### Features
+
+* **jest:** Add `jest/prefer-each` rule introduced in 26.9.9 ([f076f97](https://github.com/MorevM/eslint-config/commit/f076f9755489a21152971a6353bd5bd74dfe090d))
+
+
+### Bug fixes
+
+* **jest:** Remove `jest/no-jest-import` rule which no longer exists since 29.0.0 ([f4f4e66](https://github.com/MorevM/eslint-config/commit/f4f4e6612ca42ab9777b44dde367e4f8a69d4be8))
+* **jest:** Turn off the `jest/unbound-method` rule ([cc3147e](https://github.com/MorevM/eslint-config/commit/cc3147e8dc3343841ccddaaa75a18e3118ed9dbb))
+* **typescript:** Disable `no-floating-promises` rule ([f565e0a](https://github.com/MorevM/eslint-config/commit/f565e0a41237d4332640344170f7c42a956a0996))
+* **typescript:** Disable `promise-function-async` rule ([62ae987](https://github.com/MorevM/eslint-config/commit/62ae9871c2f0989a9cf21104cf8d2a17a7835097))
+
+
+### Chores
+
+* bump @types/jest from 28.1.8 to 29.0.0 ([#221](https://github.com/MorevM/eslint-config/issues/221)) ([2ef00ef](https://github.com/MorevM/eslint-config/commit/2ef00ef9e83483773ef75a747dd48e8c655c601e))
+* bump @typescript-eslint/eslint-plugin from 5.35.1 to 5.36.1 ([#223](https://github.com/MorevM/eslint-config/issues/223)) ([47e93c1](https://github.com/MorevM/eslint-config/commit/47e93c195972c56cb332975d870b50bc3a1719f3))
+* bump @typescript-eslint/parser from 5.35.1 to 5.36.1 ([#224](https://github.com/MorevM/eslint-config/issues/224)) ([5b9280d](https://github.com/MorevM/eslint-config/commit/5b9280d3533777166903d2ddce108fb05b7eecfd))
+* bump eslint-plugin-jest from 26.8.7 to 27.0.1 ([9eef14c](https://github.com/MorevM/eslint-config/commit/9eef14c090aed00c8132e49612d8f03aeb337a30))
+* bump release-it from 15.4.0 to 15.4.1 ([#222](https://github.com/MorevM/eslint-config/issues/222)) ([453e017](https://github.com/MorevM/eslint-config/commit/453e0172dd4b2f5f503aef37a2ab9ddf1a652484))
+* Change the order of `release-it` hooks ([e48e4fd](https://github.com/MorevM/eslint-config/commit/e48e4fd4044e344a62a8d721dffd39598f59a90c))
+
 ## [15.4.0](https://github.com/MorevM/eslint-config/compare/v15.3.0...v15.4.0) (2022-08-27)
 
 
