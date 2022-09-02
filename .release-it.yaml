@@ -40,8 +40,8 @@ plugins:
 
 hooks:
   before:init:
-    - yarn lint:fix
     - yarn build
+    - yarn lint:fix
   after:init:
     - yarn lint
     - yarn test
