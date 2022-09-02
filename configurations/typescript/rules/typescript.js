@@ -601,7 +601,7 @@ module.exports = {
 
 		// Requires any function or method that returns a `Promise` to be marked `async` (autofixable but may be confusing)
 		// https://typescript-eslint.io/rules/promise-function-async
-		'!@typescript-eslint/promise-function-async': ['error', {
+		'@typescript-eslint/promise-function-async': ['off', {
 			allowedPromiseNames: ['Thenable'],
 			checkArrowFunctions: true,
 			checkFunctionDeclarations: true,
