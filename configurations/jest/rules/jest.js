@@ -80,10 +80,6 @@ module.exports = {
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-jasmine-globals.md
 		'+jest/no-jasmine-globals': 'error',
 
-		// Disallow importing Jest
-		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-jest-import.md
-		'jest/no-jest-import': 'error',
-
 		// Disallow large snapshots
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-large-snapshots.md
 		// @TODO [2023-05-11]: Think about it later
