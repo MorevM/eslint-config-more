@@ -117,6 +117,10 @@ module.exports = {
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-comparison-matcher.md
 		'+jest/prefer-comparison-matcher': 'warn',
 
+		// Prefer using `.each` rather than manual loops
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-each.md
+		'jest/prefer-each': 'error',
+
 		// Suggest using the built-in equality matchers
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-equality-matcher.md
 		'jest/prefer-equality-matcher': 'warn',
