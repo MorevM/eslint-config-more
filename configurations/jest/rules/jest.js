@@ -215,7 +215,7 @@ module.exports = {
 		// Enforces unbound methods are called with their expected scope
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/unbound-method.md
 		'@typescript-eslint/unbound-method': 'off',
-		'jest/unbound-method': 'error', // has no options unlike `@typescript-eslint/unbound-method`
+		'jest/unbound-method': 'off', // has no options unlike `@typescript-eslint/unbound-method`
 
 		// Enable all of the rules of `jest-formatting`, all is autofixable:
 		// * padding-around-after-all-blocks
