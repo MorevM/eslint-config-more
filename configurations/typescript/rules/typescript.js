@@ -314,7 +314,7 @@ module.exports = {
 
 		// Requires Promise-like values to be handled appropriately
 		// https://typescript-eslint.io/rules/no-floating-promises
-		'@typescript-eslint/no-floating-promises': ['error', {
+		'@typescript-eslint/no-floating-promises': ['off', {
 			ignoreIIFE: true,
 			ignoreVoid: true,
 		}],
