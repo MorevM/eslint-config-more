@@ -136,6 +136,7 @@
 		"eslint-plugin-no-autofix": "^1.2.3",
 		"eslint-plugin-no-secrets": "^0.8.9",
 		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-regexp": "^1.9.0",
 		"eslint-plugin-sonarjs": "^0.15.0",
 		"eslint-plugin-unicorn": "^43.0.2",
 		"eslint-plugin-vue": "^9.4.0",

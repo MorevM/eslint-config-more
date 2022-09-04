@@ -20,6 +20,7 @@ const parts = [
 	'./rules/suggestions.js',
 	'./rules/layout-and-formatting.js',
 
+	'./plugins/regexp.js',
 	'./plugins/unicorn.js',
 	'./plugins/sonarjs.js',
 	'./plugins/import.js',
