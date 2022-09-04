@@ -242,7 +242,7 @@ module.exports = {
 		// Disallow assignments that can lead to race conditions due to usage of `await` or `yield`
 		// https://eslint.org/docs/rules/require-atomic-updates
 		// Note: may be buggy according to `airbnb` config
-		'require-atomic-updates': 'error',
+		'require-atomic-updates': 'off',
 
 		// Require calls to `isNaN()` when checking for `NaN`
 		// https://eslint.org/docs/rules/use-isnan
