@@ -1,5 +1,21 @@
 
 
+## [17.0.0](https://github.com/MorevM/eslint-config/compare/v16.0.0...v17.0.0) (2022-09-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Preset `common` and `base` configuration became more strict.
+
+### Features
+
+* Add `eslint-plugin-regexp` ([6f988d5](https://github.com/MorevM/eslint-config/commit/6f988d53bab9aaa6444e7b52c9d08e5f1337b7c5))
+
+
+### Refactoring
+
+* Relint files after last update ([26dd361](https://github.com/MorevM/eslint-config/commit/26dd361cf4175092451c505499370acab08b17a3))
+
 ## [16.0.0](https://github.com/MorevM/eslint-config/compare/v15.4.0...v16.0.0) (2022-09-02)
 
 
