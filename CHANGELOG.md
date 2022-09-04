@@ -1,5 +1,12 @@
 
 
+### [17.0.1](https://github.com/MorevM/eslint-config/compare/v17.0.0...v17.0.1) (2022-09-04)
+
+
+### Bug fixes
+
+* **base:** Turn off the `require-atomic-updates` rule ([148f7cd](https://github.com/MorevM/eslint-config/commit/148f7cd883652bd43df9fd5f42156ed5d0d93b74))
+
 ## [17.0.0](https://github.com/MorevM/eslint-config/compare/v16.0.0...v17.0.0) (2022-09-04)
 
 
