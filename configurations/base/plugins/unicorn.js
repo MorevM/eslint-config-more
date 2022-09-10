@@ -4,7 +4,7 @@ module.exports = {
 		// Improve regexes by making them shorter, consistent, and safer (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/better-regex.md
 		'+unicorn/better-regex': ['warn', {
-			sortCharacterClasses: true,
+			sortCharacterClasses: false,
 		}],
 
 		// Enforce a specific parameter name in catch clauses (autofixable)
