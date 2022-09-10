@@ -1,5 +1,9 @@
 module.exports = {
 	rules: {
+		// Enforce consistent line breaks after `:` indicator (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-yml/rules/block-mapping-colon-indicator-newline.html
+		'+yml/block-mapping-colon-indicator-newline': ['warn', 'never'],
+
 		// Enforce consistent line breaks after `?` indicator (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/block-mapping-question-indicator-newline.html
 		'+yml/block-mapping-question-indicator-newline': ['error', 'never'],
