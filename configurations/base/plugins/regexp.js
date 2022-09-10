@@ -98,7 +98,8 @@ module.exports = {
 
 		// Disallow not strictly valid regular expressions (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/strict.html
-		'+regexp/strict': 'error',
+		// Note: Conflicts with time-tested `unicorn/better-regex` rule
+		'!regexp/strict': 'off',
 
 		// BEST PRACTICES
 
