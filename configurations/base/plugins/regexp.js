@@ -77,7 +77,8 @@ module.exports = {
 
 		// Disallow quantifiers that cause quadratic moves
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-super-linear-move.html
-		'regexp/no-super-linear-move': ['warn', { // maybe even off
+		// Note: too much panic
+		'regexp/no-super-linear-move': ['off', {
 			report: 'certain',
 			ignoreSticky: true,
 			ignorePartial: true,
