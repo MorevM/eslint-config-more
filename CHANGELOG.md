@@ -1,5 +1,15 @@
 
 
+### [17.1.1](https://github.com/MorevM/eslint-config/compare/v17.1.0...v17.1.1) (2022-09-10)
+
+
+### Bug fixes
+
+* **base:** Disable `unicorn/better-regex` sorting ([b93f727](https://github.com/MorevM/eslint-config/commit/b93f727f88ee09e7d241128206b0d6490195c6f4))
+* **base:** Turn of the `regexp/strict` rule ([77481af](https://github.com/MorevM/eslint-config/commit/77481aff40495693ff9b23ded3ae99fec5e2a4b7))
+* **base:** Turn off `regexp/no-obscure-range` rule ([92162bd](https://github.com/MorevM/eslint-config/commit/92162bd606cf7bbd546de014eb426a934d2b6d40))
+* **base:** Turn off `regexp/no-super-linear-move` rule ([d766156](https://github.com/MorevM/eslint-config/commit/d7661562d4a0c41bc896bad32fcf1dbf3d8866fd))
+
 ## [17.1.0](https://github.com/MorevM/eslint-config/compare/v17.0.1...v17.1.0) (2022-09-10)
 
 
