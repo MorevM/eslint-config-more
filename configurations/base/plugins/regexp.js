@@ -133,7 +133,9 @@ module.exports = {
 
 		// Disallow obscure character ranges
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-obscure-range.html
-		'regexp/no-obscure-range': ['error', {
+		// Note: Fires on a range containing cyrillic characters
+		// Russia gogo
+		'regexp/no-obscure-range': ['off', {
 			allowed: 'alphanumeric',
 		}],
 
