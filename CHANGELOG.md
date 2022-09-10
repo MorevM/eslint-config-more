@@ -1,5 +1,25 @@
 
 
+## [17.1.0](https://github.com/MorevM/eslint-config/compare/v17.0.1...v17.1.0) (2022-09-10)
+
+
+### Features
+
+* **yaml:** Add `yml/block-mapping-colon-indicator-newline` rule ([4dfe4b4](https://github.com/MorevM/eslint-config/commit/4dfe4b494c2c037d30ecfdc776e6094f5e5fc044))
+* **yaml:** Add `yml/file-extension` rule ([2c27208](https://github.com/MorevM/eslint-config/commit/2c27208cf39967eacff67c0b4926260fab43b3a4))
+
+
+### Chores
+
+* bump @babel/core from 7.18.13 to 7.19.0 ([#229](https://github.com/MorevM/eslint-config/issues/229)) ([61947e2](https://github.com/MorevM/eslint-config/commit/61947e28003a7e822ecc976be3e5f8ab00c878e4))
+* bump @typescript-eslint/eslint-plugin from 5.36.1 to 5.36.2 ([d76dc12](https://github.com/MorevM/eslint-config/commit/d76dc120f11b07c348d19ab0efb94ff69c2bc972))
+* bump @typescript-eslint/parser from 5.36.1 to 5.36.2 ([#225](https://github.com/MorevM/eslint-config/issues/225)) ([ee721dc](https://github.com/MorevM/eslint-config/commit/ee721dc03113077b8536b830ad2a66ce486e08a9))
+* bump eslint-plugin-jest from 27.0.1 to 27.0.3 ([#231](https://github.com/MorevM/eslint-config/issues/231)) ([32eb999](https://github.com/MorevM/eslint-config/commit/32eb999f3d1936b93871e0becfbf807d0dd9315f))
+* bump eslint-plugin-yml from 1.1.0 to 1.2.0 ([724c9bf](https://github.com/MorevM/eslint-config/commit/724c9bf417e081cd90140301194dc26add025871))
+* bump jest from 29.0.1 to 29.0.2 ([#232](https://github.com/MorevM/eslint-config/issues/232)) ([ea93e79](https://github.com/MorevM/eslint-config/commit/ea93e79d410e5b8dadecc31311724cfd8fabbb2d))
+* bump typescript from 4.8.2 to 4.8.3 ([#227](https://github.com/MorevM/eslint-config/issues/227)) ([161150f](https://github.com/MorevM/eslint-config/commit/161150fef356e3f9d1277151effc5cacc52c6bec))
+* bump vue-eslint-parser from 9.0.3 to 9.1.0 ([#228](https://github.com/MorevM/eslint-config/issues/228)) ([1dd37d8](https://github.com/MorevM/eslint-config/commit/1dd37d822b28af6e60bd96324a1680990c309c2c))
+
 ### [17.0.1](https://github.com/MorevM/eslint-config/compare/v17.0.0...v17.0.1) (2022-09-04)
 
 
