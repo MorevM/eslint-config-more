@@ -27,6 +27,13 @@ module.exports = {
 			multiline: 'ignore',
 		}],
 
+		// Enforce YAML file extension
+		// https://ota-meshi.github.io/eslint-plugin-yml/rules/file-extension.html
+		'yml/file-extension': ['warn', {
+			extension: 'yaml',
+			caseSensitive: true,
+		}],
+
 		// Enforce consistent indentation (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/indent.html
 		'+yml/indent': ['error', 2],
