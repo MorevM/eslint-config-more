@@ -13,6 +13,14 @@ const base = {
 			ignoreTemplateLiterals: true,
 		}],
 	},
+	overrides: [
+		{
+			files: ['dependabot.yml', '.gitlab-ci.yml'],
+			rules: {
+				'yml/file-extension': 'off',
+			},
+		},
+	],
 };
 
 const parts = [
