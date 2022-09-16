@@ -487,10 +487,12 @@
   resolved "https://registry.yarnpkg.com/@html-eslint/eslint-plugin/-/eslint-plugin-0.13.2.tgz#5e7e6242b912c740467266671026e06019325249"
   integrity sha512-44r088HnispQAAT7Mfb+tCy/T7qEAhDb313KsOSUIFwOgw8A2ITLMZRoZWDJjYgyAMnp1FovTB4A+ujKD11RKA==
 
-"@html-eslint/parser@^0.13.2":
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/@html-eslint/parser/-/parser-0.13.2.tgz#2829c805fda9663646551c4eabdcca553f526e4e"
-  integrity sha512-DESYDCWOo8JkpLCLpSgoTd437ReTxA955T//dGm7+dnW1UnVs6M2Axpd40smF7ucyBqjTUj7YaE/eMRjlLMoPg==
+"@html-eslint/parser@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@html-eslint/parser/-/parser-0.14.0.tgz#024303a60a040d89b4379e4ca1461ef5a72c03ef"
+  integrity sha512-eKIesB0MFeZt9Bw3zU25XytN1e21aWd6GwHgRSDwJPdURzc1iTPcLwqqbl1WR+n/ANkAxhlOGke+sYJ3oeEiHw==
+  dependencies:
+    es-html-parser "^0.0.7"
 
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
@@ -2494,6 +2496,11 @@ es-get-iterator@^1.0.2:
     is-set "^2.0.2"
     is-string "^1.0.5"
     isarray "^2.0.5"
+
+es-html-parser@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/es-html-parser/-/es-html-parser-0.0.7.tgz#46997740e04591dd583cbbf3d458b2543edc5fec"
+  integrity sha512-fk5lrFhVQtCN97YRjV5ClFc1pIlbsOP6Vx0J7RERTHk2yiHA9IWuws6Crx1Ueo9ZpBAY8aBbqyYyDitn584U+Q==
 
 es-shim-unscopables@^1.0.0:
   version "1.0.0"
