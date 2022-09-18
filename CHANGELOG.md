@@ -1,5 +1,35 @@
 
 
+## [17.2.0](https://github.com/MorevM/eslint-config/compare/v17.1.1...v17.2.0) (2022-09-18)
+
+
+### Features
+
+* **vue:** Add `vue/define-emits-declaration` rule ([835c365](https://github.com/MorevM/eslint-config/commit/835c365419a7c75c34d75061230fa9a9dca5c4ff))
+* **vue:** Add `vue/define-props-declaration` rule ([5465c2d](https://github.com/MorevM/eslint-config/commit/5465c2d68a1ffea9556e199337c894b89d998d16))
+* **vue:** Add `vue/no-ref-object-destructure` rule ([1815a99](https://github.com/MorevM/eslint-config/commit/1815a997342b4822f37621c598d69fff7c358829))
+* **vue:** Add `vue/padding-line-between-tags` rule ([318a660](https://github.com/MorevM/eslint-config/commit/318a660abd6ad3c5c1c4a312be0dedd69c0fc7b6))
+
+
+### Bug fixes
+
+* **yaml:** Ignore `.yaml` file extension for some environments ([36b6f91](https://github.com/MorevM/eslint-config/commit/36b6f9154981bd02df96aebb1a2825eb8fbd80d1))
+
+
+### Chores
+
+* bump @babel/core from 7.19.0 to 7.19.1 ([#243](https://github.com/MorevM/eslint-config/issues/243)) ([96982d7](https://github.com/MorevM/eslint-config/commit/96982d7cc3b1abe09eee030b50b3bf8033bb8fbe))
+* bump @babel/eslint-parser from 7.18.9 to 7.19.1 ([#235](https://github.com/MorevM/eslint-config/issues/235)) ([6fa6626](https://github.com/MorevM/eslint-config/commit/6fa66266d0d03f388f2257a78ea5eddeffb38d8c))
+* bump @html-eslint/eslint-plugin from 0.13.2 to 0.14.1 ([#233](https://github.com/MorevM/eslint-config/issues/233)) ([e8530fb](https://github.com/MorevM/eslint-config/commit/e8530fb14bbf62de821f9593b2992bc5302cef4d))
+* bump @html-eslint/parser from 0.13.2 to 0.14.0 ([#236](https://github.com/MorevM/eslint-config/issues/236)) ([c43ef0f](https://github.com/MorevM/eslint-config/commit/c43ef0fdf239be9dbf169d665fceb9a559a99223))
+* bump @typescript-eslint/eslint-plugin from 5.36.2 to 5.37.0 ([#242](https://github.com/MorevM/eslint-config/issues/242)) ([0451475](https://github.com/MorevM/eslint-config/commit/0451475db779ed891f8ac7a409e59a758f14030b))
+* bump @typescript-eslint/parser from 5.36.2 to 5.37.0 ([#234](https://github.com/MorevM/eslint-config/issues/234)) ([aa1154d](https://github.com/MorevM/eslint-config/commit/aa1154d186c54ac9bf5ba38a739bf92d0d37ee19))
+* bump eslint from 8.23.0 to 8.23.1 ([#241](https://github.com/MorevM/eslint-config/issues/241)) ([d19642a](https://github.com/MorevM/eslint-config/commit/d19642ae984504a85f9ec10062013b019fc7e1f8))
+* bump eslint-plugin-jest from 27.0.3 to 27.0.4 ([#244](https://github.com/MorevM/eslint-config/issues/244)) ([d15b451](https://github.com/MorevM/eslint-config/commit/d15b451cd7a4a6a14bde9fc85d71c5d9b760b761))
+* bump eslint-plugin-vue from 9.4.0 to 9.5.1 ([a6ff8ed](https://github.com/MorevM/eslint-config/commit/a6ff8ed4add94d9caf56fbf19733c0834b442153))
+* bump jest and @types/jest ([#240](https://github.com/MorevM/eslint-config/issues/240)) ([4c7a32e](https://github.com/MorevM/eslint-config/commit/4c7a32ed5b97d359a16e3bb628beca3ec2d163a8))
+* bump release-it from 15.4.1 to 15.4.2 ([#237](https://github.com/MorevM/eslint-config/issues/237)) ([230af28](https://github.com/MorevM/eslint-config/commit/230af2872626d52f789a0d5f2d208d8b3539eaba))
+
 ### [17.1.1](https://github.com/MorevM/eslint-config/compare/v17.1.0...v17.1.1) (2022-09-10)
 
 
