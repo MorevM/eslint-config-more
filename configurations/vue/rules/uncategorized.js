@@ -43,6 +43,10 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/define-emits-declaration.html
 		'vue/define-emits-declaration': ['warn', 'type-based'],
 
+		// Enforce declaration style of defineProps
+		// https://eslint.vuejs.org/rules/define-props-declaration.html
+		'vue/define-props-declaration': ['warn', 'type-based'],
+
 		// Disallow usage of button without an explicit type attribute
 		// https://eslint.vuejs.org/rules/html-button-has-type.html
 		'vue/html-button-has-type': ['error', {
