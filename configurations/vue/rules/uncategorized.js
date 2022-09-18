@@ -130,6 +130,10 @@ module.exports = {
 			threshold: 1,
 		}],
 
+		// Disallow destructuring of ref objects that can lead to loss of reactivity/
+		// https://eslint.vuejs.org/rules/no-ref-object-destructure.html
+		'vue/no-ref-object-destructure': 'error',
+
 		// Disallow the use of reserved names in component definitions
 		// https://eslint.vuejs.org/rules/no-reserved-component-names.html
 		'vue/no-reserved-component-names': ['error', {
