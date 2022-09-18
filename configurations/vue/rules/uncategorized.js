@@ -264,6 +264,12 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/padding-line-between-blocks.html
 		'+vue/padding-line-between-blocks': ['error', 'always'],
 
+		// Require or disallow newlines between sibling tags in template (autofixable)
+		// https://eslint.vuejs.org/rules/padding-line-between-blocks.html
+		'+vue/padding-line-between-tags': ['off', [
+			// { blankLine: 'always', prev: '*', next: '*' },
+		]],
+
 		// Enforce `Boolean` comes first in component prop types
 		// https://eslint.vuejs.org/rules/prefer-prop-type-boolean-first.html
 		'vue/prefer-prop-type-boolean-first': 'error',
