@@ -1,5 +1,12 @@
 
 
+### [17.2.1](https://github.com/MorevM/eslint-config/compare/v17.2.0...v17.2.1) (2022-09-19)
+
+
+### Bug fixes
+
+* **typescript:** Turn off `@typescript-eslint/no-non-null-assertion` rule ([47f6310](https://github.com/MorevM/eslint-config/commit/47f63100022b2d714fc8b34f79d257435a810272))
+
 ## [17.2.0](https://github.com/MorevM/eslint-config/compare/v17.1.1...v17.2.0) (2022-09-18)
 
 
