@@ -395,7 +395,7 @@ module.exports = {
 
 		// Disallows non-null assertions using the `!` postfix operator
 		// https://typescript-eslint.io/rules/no-non-null-assertion
-		'@typescript-eslint/no-non-null-assertion': 'error',
+		'@typescript-eslint/no-non-null-assertion': 'off',
 
 		// Disallow variable re-declaration
 		// https://typescript-eslint.io/rules/no-redeclare
