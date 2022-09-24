@@ -1,5 +1,19 @@
 
 
+## [17.3.0](https://github.com/MorevM/eslint-config/compare/v17.2.1...v17.3.0) (2022-09-24)
+
+
+### Features
+
+* **base:** Take account of `logical-assignment-operators` rule ([6496c29](https://github.com/MorevM/eslint-config/commit/6496c29f089a88f15ac0b2cbe23cc0a1990215da))
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 5.37.0 to 5.38.0 ([#245](https://github.com/MorevM/eslint-config/issues/245)) ([efc5e20](https://github.com/MorevM/eslint-config/commit/efc5e20153361c16a3d031b3ae837e783740c646))
+* bump @typescript-eslint/parser from 5.37.0 to 5.38.0 ([#246](https://github.com/MorevM/eslint-config/issues/246)) ([ef94c46](https://github.com/MorevM/eslint-config/commit/ef94c4614954fd85db8dfeaae5b761b2bd5ce4ee))
+* bump eslint from 8.23.1 to 8.24.0 ([9c44cef](https://github.com/MorevM/eslint-config/commit/9c44ceff250757ad3ee7e41388f8a77da4634bae))
+
 ### [17.2.1](https://github.com/MorevM/eslint-config/compare/v17.2.0...v17.2.1) (2022-09-19)
 
 
