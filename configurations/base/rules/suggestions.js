@@ -127,6 +127,14 @@ module.exports = {
 		// Reason for `off`: developer knows better
 		'init-declarations': 'off',
 
+		// require or disallow initialization in variable declarations
+		// https://eslint.org/docs/rules/init-declarations
+		// TODO[2023-05-11]: Should be turned on but a bit later
+		// 'logical-assignment-operators': ['always', 'always', {
+		// 	enforceForIfStatements: true,
+		// }],
+		'logical-assignment-operators': 'off',
+
 		// Enforce a maximum number of classes per file
 		// https://eslint.org/docs/rules/max-classes-per-file
 		// Note: disabled because legacy code :(
