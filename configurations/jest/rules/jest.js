@@ -184,7 +184,7 @@ module.exports = {
 
 		// Require a message for `toThrow()`
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/require-to-throw-message.md
-		'jest/require-to-throw-message': 'error',
+		'jest/require-to-throw-message': 'off',
 
 		// Require test cases and hooks to be inside a `describe` block
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/require-top-level-describe.md
