@@ -1,5 +1,12 @@
 
 
+### [17.3.1](https://github.com/MorevM/eslint-config/compare/v17.3.0...v17.3.1) (2022-09-25)
+
+
+### Bug fixes
+
+* **jest:** Disable `require-to-throw-message` rule ([013bd08](https://github.com/MorevM/eslint-config/commit/013bd08ace26e514aef6ad8c2abbda3823cc8230))
+
 ## [17.3.0](https://github.com/MorevM/eslint-config/compare/v17.2.1...v17.3.0) (2022-09-24)
 
 
