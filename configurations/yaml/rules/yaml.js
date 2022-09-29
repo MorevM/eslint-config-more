@@ -99,7 +99,7 @@ module.exports = {
 		}],
 
 		// Disallow mapping keys other than strings
-		// https://ota-meshi.github.io/e slint-plugin-yml/rules/require-string-key.html
+		// https://ota-meshi.github.io/eslint-plugin-yml/rules/require-string-key.html
 		'yml/require-string-key': 'off',
 
 		// Disallow parsing errors in Vue custom blocks
