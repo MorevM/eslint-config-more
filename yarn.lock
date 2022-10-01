@@ -492,12 +492,12 @@
   resolved "https://registry.yarnpkg.com/@html-eslint/eslint-plugin/-/eslint-plugin-0.14.1.tgz#699ce4805f527cd5bf068ad7b5f7e7fbe1ab63c7"
   integrity sha512-J67inXUVt05gN4SoCSrY4ZwzdZiUiBZZhgJPM1t2H7oiNtutxJtTGephY7vP0tYMxZc/rwcU/fwH77uJxPGECQ==
 
-"@html-eslint/parser@^0.14.0":
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/@html-eslint/parser/-/parser-0.14.0.tgz#024303a60a040d89b4379e4ca1461ef5a72c03ef"
-  integrity sha512-eKIesB0MFeZt9Bw3zU25XytN1e21aWd6GwHgRSDwJPdURzc1iTPcLwqqbl1WR+n/ANkAxhlOGke+sYJ3oeEiHw==
+"@html-eslint/parser@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@html-eslint/parser/-/parser-0.15.0.tgz#a64f7c8c96edf40475ae0bcb259a644b23713e0c"
+  integrity sha512-fA+HQtWnODhOIK6j1p4XWqltINx7hM0WNNTM2RvlH/2glzeRDCcYq3vEmeQhnytvGocidu4ofTzNk80cLnnyiw==
   dependencies:
-    es-html-parser "^0.0.7"
+    es-html-parser "^0.0.8"
 
 "@humanwhocodes/config-array@^0.10.5":
   version "0.10.5"
@@ -2461,10 +2461,10 @@ es-get-iterator@^1.0.2:
     is-string "^1.0.5"
     isarray "^2.0.5"
 
-es-html-parser@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/es-html-parser/-/es-html-parser-0.0.7.tgz#46997740e04591dd583cbbf3d458b2543edc5fec"
-  integrity sha512-fk5lrFhVQtCN97YRjV5ClFc1pIlbsOP6Vx0J7RERTHk2yiHA9IWuws6Crx1Ueo9ZpBAY8aBbqyYyDitn584U+Q==
+es-html-parser@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/es-html-parser/-/es-html-parser-0.0.8.tgz#52563d7778ed2485a073990aa360d94c7a011f68"
+  integrity sha512-kjMH23xhvTBw/7Ve1Dtb/7yZdFajfvwOpdsgRHmnyt8yvTsDJnkFjUgEEaMZFW+e1OhN/eoZrvF9wehq+waTGg==
 
 es-shim-unscopables@^1.0.0:
   version "1.0.0"
