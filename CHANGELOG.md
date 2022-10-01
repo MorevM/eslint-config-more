@@ -1,5 +1,28 @@
 
 
+## [17.4.0](https://github.com/MorevM/eslint-config/compare/v17.3.1...v17.4.0) (2022-10-01)
+
+
+### Features
+
+* **base:** Add `unicorn/no-unnecessary-await` rule ([267e61d](https://github.com/MorevM/eslint-config/commit/267e61d3c997ac9cd524aa0ba89a166c3949e4d2))
+* **base:** Add `unicorn/switch-case-braces` rule ([e74e79c](https://github.com/MorevM/eslint-config/commit/e74e79cbaebc2569a936498d87cfb1b9faf370eb))
+* **html:** Add `@html-eslint/no-trailing-spaces` rule ([8c7ca16](https://github.com/MorevM/eslint-config/commit/8c7ca1675c8205b00085dea59b9dcd89e681b021))
+* **html:** Enforce a space before self-closing ([98f299a](https://github.com/MorevM/eslint-config/commit/98f299a11e6330fb21e562eda6c11b5ba1b3a0ba))
+* **html:** Enforce self-closing tag on custom elements ([dcf5bd3](https://github.com/MorevM/eslint-config/commit/dcf5bd3dadbda76452eb42f743528f3decca3462))
+
+
+### Chores
+
+* bump @babel/core from 7.19.1 to 7.19.3 ([#250](https://github.com/MorevM/eslint-config/issues/250)) ([cf1e103](https://github.com/MorevM/eslint-config/commit/cf1e103f19371ede25c348ef0fb02675a8977591))
+* bump @html-eslint/eslint-plugin from 0.14.1 to 0.15.0 ([1f66999](https://github.com/MorevM/eslint-config/commit/1f66999b5f07a8b65d03c9f93cf51822fc8ce040))
+* bump @html-eslint/parser from 0.14.0 to 0.15.0 ([#255](https://github.com/MorevM/eslint-config/issues/255)) ([c0ae2a1](https://github.com/MorevM/eslint-config/commit/c0ae2a166ef147375ddc31351295246d1023de22))
+* bump @typescript-eslint/eslint-plugin from 5.38.0 to 5.38.1 ([#249](https://github.com/MorevM/eslint-config/issues/249)) ([eb4b94e](https://github.com/MorevM/eslint-config/commit/eb4b94e6625dbff61430f5e524e97614a8047c64))
+* bump @typescript-eslint/parser from 5.38.0 to 5.38.1 ([#252](https://github.com/MorevM/eslint-config/issues/252)) ([a66aaf5](https://github.com/MorevM/eslint-config/commit/a66aaf55fe0630339394fc29b12219a4dbe5f5e6))
+* bump eslint-plugin-unicorn from 43.0.2 to 44.0.0 ([60f3a94](https://github.com/MorevM/eslint-config/commit/60f3a94ee473d2b8a1e208ac537ad5cb60bfc1b9))
+* bump jest and @types/jest ([#253](https://github.com/MorevM/eslint-config/issues/253)) ([e79d29a](https://github.com/MorevM/eslint-config/commit/e79d29af2eac31fcce1ed0acffc9b5e5d6720a8e))
+* bump typescript from 4.8.3 to 4.8.4 ([#251](https://github.com/MorevM/eslint-config/issues/251)) ([a3de2e3](https://github.com/MorevM/eslint-config/commit/a3de2e3773a20a79fe467ec06e219c502bd4dc35))
+
 ### [17.3.1](https://github.com/MorevM/eslint-config/compare/v17.3.0...v17.3.1) (2022-09-25)
 
 
