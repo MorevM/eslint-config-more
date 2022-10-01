@@ -468,6 +468,10 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/string-content.md
 		'unicorn/string-content': 'off',
 
+		// Enforce consistent brace style for `case` clauses (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/switch-case-braces.md
+		'+unicorn/switch-case-braces': ['warn', 'always'],
+
 		// Fix whitespace-insensitive template indentation (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/template-indent.md
 		// Note: this is default configuration but I have a feeling that changes will be needed, so the options are explicit
