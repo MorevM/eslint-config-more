@@ -25,5 +25,9 @@ module.exports = {
 		// Disallows the use of multiple empty lines (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-multiple-empty-lines
 		'+@html-eslint/no-multiple-empty-lines': ['warn', { max: 2 }],
+
+		// Disallow trailing whitespaces at the end of lines (autofixable)
+		// https://yeonjuan.github.io/html-eslint/docs/rules/no-trailing-spaces
+		'+@html-eslint/no-trailing-spaces': ['error'],
 	},
 };
