@@ -2,7 +2,9 @@ module.exports = {
 	rules: {
 		// Disallow extra spaces around attributes (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-extra-spacing-attrs
-		'+@html-eslint/no-extra-spacing-attrs': 'warn',
+		'+@html-eslint/no-extra-spacing-attrs': ['warn', {
+			enforceBeforeSelfClose: true,
+		}],
 
 		// Require newline between elements (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/element-newline
