@@ -22,8 +22,9 @@ module.exports = {
 
 		// Require use of closing tag (autofixable for `void` elements)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-closing-tags
-		'+@html-eslint/require-closing-tags': ['error', {
+		'+@html-eslint/require-closing-tags': ['warn', {
 			selfClosing: 'always',
+			allowSelfClosingCustom: true,
 		}],
 
 		// Enforce to use `<meta charset="...">` in the `<head></head>`
