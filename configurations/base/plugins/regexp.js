@@ -69,9 +69,9 @@ module.exports = {
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-potentially-useless-backreference.html
 		'regexp/no-potentially-useless-backreference': 'error',
 
-		// Disallow exponential and polynomial backtracking (autofixable)
+		// Disallow exponential and polynomial backtracking (autofixable but too strict)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-super-linear-backtracking.html
-		'+regexp/no-super-linear-backtracking': ['error', {
+		'+regexp/no-super-linear-backtracking': ['off', {
 			report: 'certain',
 		}],
 
