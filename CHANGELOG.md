@@ -1,5 +1,12 @@
 
 
+### [17.4.1](https://github.com/MorevM/eslint-config/compare/v17.4.0...v17.4.1) (2022-10-03)
+
+
+### Bug fixes
+
+* **base:** Disable `regexp/no-super-linear-backtracking` rule ([4b73de4](https://github.com/MorevM/eslint-config/commit/4b73de4cc97982404c37c4490b545362fd26716e))
+
 ## [17.4.0](https://github.com/MorevM/eslint-config/compare/v17.3.1...v17.4.0) (2022-10-01)
 
 
