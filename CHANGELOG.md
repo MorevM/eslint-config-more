@@ -1,5 +1,12 @@
 
 
+### [17.4.3](https://github.com/MorevM/eslint-config/compare/v17.4.2...v17.4.3) (2022-10-04)
+
+
+### Bug fixes
+
+* **typescript:** Allow leading/trailing underscores in type/interface names ([e748183](https://github.com/MorevM/eslint-config/commit/e748183da16c2df3d28fa180b4b24abc0ced56bb))
+
 ### [17.4.2](https://github.com/MorevM/eslint-config/compare/v17.4.1...v17.4.2) (2022-10-04)
 
 
