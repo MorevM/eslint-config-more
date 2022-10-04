@@ -470,7 +470,7 @@ module.exports = {
 
 		// Enforce consistent brace style for `case` clauses (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/switch-case-braces.md
-		'+unicorn/switch-case-braces': ['warn', 'always'],
+		'+unicorn/switch-case-braces': ['warn', 'avoid'],
 
 		// Fix whitespace-insensitive template indentation (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/template-indent.md
