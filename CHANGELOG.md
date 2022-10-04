@@ -1,5 +1,12 @@
 
 
+### [17.4.2](https://github.com/MorevM/eslint-config/compare/v17.4.1...v17.4.2) (2022-10-04)
+
+
+### Bug fixes
+
+* **base:** Avoid braces in switch statements (`unicorn/switch-case-braces`) ([8afecc3](https://github.com/MorevM/eslint-config/commit/8afecc3e95b35505fe92575299b6e20153fff9ef))
+
 ### [17.4.1](https://github.com/MorevM/eslint-config/compare/v17.4.0...v17.4.1) (2022-10-03)
 
 
