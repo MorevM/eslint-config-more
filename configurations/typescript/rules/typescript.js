@@ -241,6 +241,8 @@ module.exports = {
 			{
 				selector: 'typeLike',
 				format: ['PascalCase'],
+				leadingUnderscore: 'allow',
+				trailingUnderscore: 'allow',
 			}],
 
 		// Disallow generic Array constructors (autofixable)
