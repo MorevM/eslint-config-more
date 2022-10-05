@@ -13,6 +13,9 @@ const base = {
 			node: {
 				extensions: ['.mjs', '.js', '.json', '.ts', '.d.ts'],
 			},
+			// Let it be done like that for a while
+			// Take a look on `eslint-import-resolver-typescript` if smth wrong
+			typescript: {},
 		},
 		'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx', '.d.ts'],
 		'import/external-module-folders': ['node_modules', 'node_modules/@types'],
