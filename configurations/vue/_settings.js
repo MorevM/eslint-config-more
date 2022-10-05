@@ -2,8 +2,11 @@ const base = {
 	plugins: ['vue'],
 	parser: 'vue-eslint-parser',
 	parserOptions: {
-		parser: '@babel/eslint-parser',
-		ecmaVersion: 2021,
+		parser: {
+			js: '@babel/eslint-parser',
+			ts: '@typescript-eslint/parser',
+		},
+		ecmaVersion: 'latest',
 		sourceType: 'module',
 		requireConfigFile: false,
 		babelOptions: {
