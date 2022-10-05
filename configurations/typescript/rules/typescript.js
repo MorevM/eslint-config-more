@@ -186,6 +186,7 @@ module.exports = {
 
 		// Require or disallow spacing between function identifiers and their invocations (autofixable)
 		// https://typescript-eslint.io/rules/func-call-spacing
+		'func-call-spacing': 'off',
 		...extendFromBase('+func-call-spacing'),
 
 		// Enforce consistent indentation (autofixable)
