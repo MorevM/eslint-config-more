@@ -487,6 +487,7 @@ module.exports = {
 
 		// Disallow unused variables
 		// https://typescript-eslint.io/rules/no-unused-vars
+		'no-unused-vars': 'off',
 		...extendFromBase('no-unused-vars'),
 
 		// Disallow the use of variables before they are defined
