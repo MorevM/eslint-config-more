@@ -1,5 +1,20 @@
 
 
+## [17.5.0](https://github.com/MorevM/eslint-config/compare/v17.4.3...v17.5.0) (2022-10-05)
+
+
+### Features
+
+* **typescript:** Add support for path aliases resolving ([519f0ee](https://github.com/MorevM/eslint-config/commit/519f0eee3f982362ce2b1f142cd5082c02ed35b7))
+* **vue:** Add different parsers for `lang="ts"` and just `<script>` ([7014ed6](https://github.com/MorevM/eslint-config/commit/7014ed6f44650d39a98c09c82559221c746b5397))
+
+
+### Bug fixes
+
+* **typescript:** Disable `func-call-spacing` rule for `.ts` files ([779bb3a](https://github.com/MorevM/eslint-config/commit/779bb3ac37a658ea0ab853ba3b6081bde7e9baa2))
+* **typescript:** Disable `no-undef` rule for `.ts` files ([dc90081](https://github.com/MorevM/eslint-config/commit/dc9008164a9a4f201fd0c561ca6d4ac2cc8b6c0d))
+* **typescript:** Disable `no-unused-vars` rule for `.ts` files ([dbd8fbc](https://github.com/MorevM/eslint-config/commit/dbd8fbc6f483db8ed4603bdb275d07e1c5ac78e5))
+
 ### [17.4.3](https://github.com/MorevM/eslint-config/compare/v17.4.2...v17.4.3) (2022-10-04)
 
 
