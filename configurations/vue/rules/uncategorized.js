@@ -138,9 +138,15 @@ module.exports = {
 			threshold: 1,
 		}],
 
-		// Disallow destructuring of ref objects that can lead to loss of reactivity/
+		// Disallow destructuring of ref objects that can lead to loss of reactivity
 		// https://eslint.vuejs.org/rules/no-ref-object-destructure.html
 		'vue/no-ref-object-destructure': 'error',
+
+		// Enforce props with default values to be optional (autofixable)
+		// https://eslint.vuejs.org/rules/no-required-prop-with-default.html
+		'vue/no-required-prop-with-default': ['warn', {
+			autofix: true,
+		}],
 
 		// Disallow the use of reserved names in component definitions
 		// https://eslint.vuejs.org/rules/no-reserved-component-names.html
