@@ -89,6 +89,10 @@ module.exports = {
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-mocks-import.md
 		'jest/no-mocks-import': 'error',
 
+		// Disallow specific `jest.` methods
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-restricted-jest-methods.md
+		'jest/no-restricted-jest-methods': 'off',
+
 		// Disallow specific matchers & modifiers
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-restricted-matchers.md
 		'jest/no-restricted-matchers': 'off',
