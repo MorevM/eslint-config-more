@@ -1,5 +1,23 @@
 
 
+## [17.6.0](https://github.com/MorevM/eslint-config/compare/v17.5.0...v17.6.0) (2022-10-06)
+
+
+### Features
+
+* **jest:** Take account of of `no-restricted-jest-methods` rule ([ba1d328](https://github.com/MorevM/eslint-config/commit/ba1d328425c574afdbe36c20d16f471053cbe23f))
+* **vue:** Add `no-required-prop-with-default` rule ([25651d8](https://github.com/MorevM/eslint-config/commit/25651d8186ae71f2e0fab6be9e8a23cd7398352d))
+
+
+### Chores
+
+* Regenerate lockfile ([bbe0ec2](https://github.com/MorevM/eslint-config/commit/bbe0ec28fb107b29df8ae1925db91ccd1eed6254))
+
+
+### Bug fixes
+
+* **typescript:** Correct imports resolving by installing `eslint-import-resolver-typescript` ([dfd628d](https://github.com/MorevM/eslint-config/commit/dfd628d41ec13d0d787bc03029090f051628b1bb))
+
 ## [17.5.0](https://github.com/MorevM/eslint-config/compare/v17.4.3...v17.5.0) (2022-10-05)
 
 
