@@ -52,8 +52,10 @@ module.exports = {
 
 		// Forbid a module from importing a module with a dependency path back to itself
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-cycle.md
-		// Note: Set `maxDepth` if performance issues
-		'import/no-cycle': 'error',
+		// Note: Set `maxDepth` if more performance issues
+		'import/no-cycle': ['error', {
+			ignoreExternal: true,
+		}],
 
 		// Prevent unnecessary path segments in import and require statements
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-useless-path-segments.md
