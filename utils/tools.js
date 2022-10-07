@@ -18,6 +18,9 @@ const makeConfig = (_configs) => {
 			'import/resolver': {
 				'[path.resolve(__dirname, \'../utils/eslint-plugin-import-resolver.js\')]': {}, // will be unwrapped during build
 			},
+			'import/ignore': [
+				'node_modules',
+			],
 		},
 	};
 
