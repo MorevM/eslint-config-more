@@ -1,5 +1,13 @@
 
 
+### [17.6.1](https://github.com/MorevM/eslint-config/compare/v17.6.0...v17.6.1) (2022-10-07)
+
+
+### Bug fixes
+
+* **base:** Ignore external deps in `import/no-cycle` due to performance issues ([b1b9cc0](https://github.com/MorevM/eslint-config/commit/b1b9cc0ba456bde2ae72c6fdd4cc93d462e3d38c))
+* Explicit `node_modules` ignorance with `import/ignore` for all entities ([aa6ef85](https://github.com/MorevM/eslint-config/commit/aa6ef85e5ae728d76fa98306bda5eee0f4bd3708))
+
 ## [17.6.0](https://github.com/MorevM/eslint-config/compare/v17.5.0...v17.6.0) (2022-10-06)
 
 
