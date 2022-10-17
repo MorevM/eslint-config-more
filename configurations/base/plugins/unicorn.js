@@ -408,7 +408,7 @@ module.exports = {
 
 		// Prefer ternary expressions over simple if-else statements (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-ternary.md
-		'+unicorn/prefer-ternary': ['error', 'always'],
+		'+unicorn/prefer-ternary': ['error', 'only-single-line'],
 
 		// Prefer top-level await over top-level promises and async function calls
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
