@@ -1,5 +1,22 @@
 
 
+### [17.6.2](https://github.com/MorevM/eslint-config/compare/v17.6.1...v17.6.2) (2022-10-17)
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 5.39.0 to 5.40.0 ([#266](https://github.com/MorevM/eslint-config/issues/266)) ([f3f3fca](https://github.com/MorevM/eslint-config/commit/f3f3fcad6978c305d578889674ad086830b2a49f))
+* bump @typescript-eslint/parser from 5.39.0 to 5.40.0 ([#265](https://github.com/MorevM/eslint-config/issues/265)) ([0fbaaea](https://github.com/MorevM/eslint-config/commit/0fbaaea25908a228ecf046bef9a6ed3b0a9f76f0))
+* bump eslint from 8.24.0 to 8.25.0 ([#261](https://github.com/MorevM/eslint-config/issues/261)) ([d39f6c4](https://github.com/MorevM/eslint-config/commit/d39f6c49b1bb01bad032ee8e9aadb5737130b1d2))
+* bump eslint-plugin-jest from 27.1.0 to 27.1.2 ([#262](https://github.com/MorevM/eslint-config/issues/262)) ([863be36](https://github.com/MorevM/eslint-config/commit/863be36633a2bac92dba127db432e5c1cce6ee0a))
+* bump eslint-plugin-sonarjs from 0.15.0 to 0.16.0 ([#264](https://github.com/MorevM/eslint-config/issues/264)) ([bc38c4e](https://github.com/MorevM/eslint-config/commit/bc38c4e1c94312a13d1b3f3dcc62e16ae2212739))
+* bump eslint-plugin-unicorn from 44.0.1 to 44.0.2 ([#259](https://github.com/MorevM/eslint-config/issues/259)) ([094e1ba](https://github.com/MorevM/eslint-config/commit/094e1ba91d59b384d8bfdca752dc2d0f7c7ce38d))
+
+
+### Bug fixes
+
+* **base:** Prefer ternary operator only for single-line statements ([3b25e4a](https://github.com/MorevM/eslint-config/commit/3b25e4a4330b5b825ea0a61f2f740944ba52a650))
+
 ### [17.6.1](https://github.com/MorevM/eslint-config/compare/v17.6.0...v17.6.1) (2022-10-07)
 
 
