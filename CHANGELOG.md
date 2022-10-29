@@ -1,5 +1,25 @@
 
 
+## [18.0.0](https://github.com/MorevM/eslint-config/compare/v17.6.3...v18.0.0) (2022-10-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* **typescript:** With new rule `@typescript-eslint/no-unsafe-declaration-merging` Typescript configuration becomes more strict as well as presets `common` and `typescript`.
+* **json:** With new rule `jsonc/no-irregular-whitespace` presets `common` and `assistive` becomes more strict as well as `json` configuration.
+
+### Features
+
+* **json:** Add `jsonc/no-irregular-whitespace` rule ([2b29e49](https://github.com/MorevM/eslint-config/commit/2b29e491e22623ffecc290f5c74a92e7890f28f4))
+* **typescript:** Add `@typescript-eslint/no-unsafe-declaration-merging` rule ([eaa2737](https://github.com/MorevM/eslint-config/commit/eaa2737afac33f7eed49ceaf9305097d6be75c9f))
+
+
+### Chores
+
+* bump [@typescript-eslint](https://github.com/typescript-eslint) packages from 5.40.1 to 5.41.0 ([116a9f7](https://github.com/MorevM/eslint-config/commit/116a9f7480f9858c4e12e51c2d86fd8ebafd2d1c))
+* bump eslint-plugin-jsdoc from 39.3.14 to 39.3.25 ([#276](https://github.com/MorevM/eslint-config/issues/276)) ([9d3ae44](https://github.com/MorevM/eslint-config/commit/9d3ae448a2ba3f8b651ab1aea127062d6a4e21bd))
+* bump eslint-plugin-jsonc from 2.4.0 to 2.5.0 ([b5bce4a](https://github.com/MorevM/eslint-config/commit/b5bce4a261cda59d21f2fdf7028f7ea5073d344d))
+
 ### [17.6.3](https://github.com/MorevM/eslint-config/compare/v17.6.2...v17.6.3) (2022-10-25)
 
 
