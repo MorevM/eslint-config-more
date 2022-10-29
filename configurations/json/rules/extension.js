@@ -10,6 +10,7 @@ const rulesToExtend = [
 	'+key-spacing',
 	'no-dupe-keys',
 	'+no-floating-decimal',
+	'no-irregular-whitespace',
 	'no-multi-str',
 	'no-octal-escape',
 	'no-octal',
