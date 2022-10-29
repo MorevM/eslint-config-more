@@ -474,6 +474,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-unsafe-call
 		'@typescript-eslint/no-unsafe-call': 'off',
 
+		// Disallow unsafe declaration merging
+		// https://typescript-eslint.io/rules/no-unsafe-declaration-merging
+		'@typescript-eslint/no-unsafe-declaration-merging': 'error',
+
 		// Disallows member access on any typed variables
 		// https://typescript-eslint.io/rules/no-unsafe-member-access
 		'@typescript-eslint/no-unsafe-member-access': 'off',
