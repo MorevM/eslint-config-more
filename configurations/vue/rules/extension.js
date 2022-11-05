@@ -18,6 +18,7 @@ const rulesToExtend = [
 	'+key-spacing',
 	'+keyword-spacing',
 	'max-len',
+	'+multiline-ternary',
 	'no-constant-condition',
 	'no-empty-pattern',
 	'+no-extra-parens',

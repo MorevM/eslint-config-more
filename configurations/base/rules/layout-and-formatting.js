@@ -182,7 +182,7 @@ module.exports = {
 
 		// Enforce newlines between operands of ternary expressions (autofixable)
 		// https://eslint.org/docs/rules/multiline-ternary
-		'+multiline-ternary': ['error', 'always-multiline'],
+		'+multiline-ternary': ['warn', 'always-multiline'],
 
 		// Enforce or disallow parentheses when invoking a constructor with no arguments (autofixable)
 		// https://eslint.org/docs/rules/new-parens
