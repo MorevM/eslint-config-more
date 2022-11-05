@@ -47,7 +47,10 @@ const withOverrides = {
 		{
 			name: 'cypress',
 			overrides: {
-				files: ['**/cypress/integration/**/*.*'],
+				files: [
+					'**/cypress/integration/**/*.*', // Cypress < 10 defaults
+					'**/cypress/e2e/**/*.*', // Cypress >= 10 defaults
+				],
 				excludedFiles: ['*.hot-update.js'],
 			},
 		},
