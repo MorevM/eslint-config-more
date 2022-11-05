@@ -1,5 +1,12 @@
 
 
+### [18.1.1](https://github.com/MorevM/eslint-config/compare/v18.1.0...v18.1.1) (2022-11-05)
+
+
+### Bug fixes
+
+* **typescript:** Allow imports in type annotations ([8f361e6](https://github.com/MorevM/eslint-config/commit/8f361e6ed85e422a989746418a9f3e06907cf861))
+
 ## [18.1.0](https://github.com/MorevM/eslint-config/compare/v18.0.0...v18.1.0) (2022-11-05)
 
 
