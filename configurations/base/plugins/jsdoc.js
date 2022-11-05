@@ -229,6 +229,13 @@ module.exports = {
 		// Related: https://github.com/gajus/eslint-plugin-jsdoc/issues/782
 		'+jsdoc/tag-lines': ['off', 'never'],
 
+		// Auto-escape certain characters that are input within block and tag descriptions (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/master/README.md#text-escaping
+		'+jsdoc/text-escaping': ['warn', {
+			escapeHTML: true,
+			escapeMarkdown: false, // For a while, seems nothing wrong with it
+		}],
+
 		// Requires all types to be valid JSDoc, Closure, or TypeScript compiler
 		// types without syntax errors
 		// https://github.com/gajus/eslint-plugin-jsdoc#valid-types
