@@ -648,6 +648,11 @@ module.exports = {
 			allowRegExp: true,
 		}],
 
+		// Enforce constituents of a type union/intersection to be sorted alphabetically (autofixable)
+		// https://typescript-eslint.io/rules/sort-type-constituents
+		// Note: The ordering is good, but alphabetical sort within...
+		'@typescript-eslint/sort-type-constituents': 'off',
+
 		// Enforces consistent returning of awaited values (autofixable but may change behavior)
 		// https://typescript-eslint.io/rules/return-await
 		'!@typescript-eslint/return-await': ['error', 'in-try-catch'],
