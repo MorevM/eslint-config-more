@@ -329,5 +329,10 @@ module.exports = {
 		// Enforce `v-for` directive's delimiter style (autofixable)
 		// https://eslint.vuejs.org/rules/v-for-delimiter-style.html
 		'+vue/v-for-delimiter-style': ['warn', 'in'],
+
+		// Enforce writing style for handlers in v-on directives (autofixable)
+		// https://eslint.vuejs.org/rules/v-on-handler-style.html
+		// Note: this rule tries to limit too much at once :(
+		'+vue/v-on-handler-style': 'off',
 	},
 };
