@@ -1,5 +1,30 @@
 
 
+## [18.1.0](https://github.com/MorevM/eslint-config/compare/v18.0.0...v18.1.0) (2022-11-05)
+
+
+### Features
+
+* **base:** Add `eslint-plugin-jsdoc/text-escaping` rule ([0e1a7a2](https://github.com/MorevM/eslint-config/commit/0e1a7a2c345049fa01f9bef3e64ce95a3a522331))
+* **typescript:** Take account of new `@typescript-eslint/sort-type-constituents` rule ([a856273](https://github.com/MorevM/eslint-config/commit/a8562735e4157ff8195197171bdf2d40a07a7676))
+* **vue:** Add `vue/multiline-ternary` rule ([e577879](https://github.com/MorevM/eslint-config/commit/e5778797be20f6b74a4c9f6973cfeccbbac11ffb))
+* **vue:** Take account of `vue/v-on-handler-style` ([c6d1087](https://github.com/MorevM/eslint-config/commit/c6d1087ff30795326d9dd1a4fd3300f81a65d3e1))
+
+
+### Chores
+
+* bump eslint-plugin-jest from 27.1.3 to 27.1.4 ([#280](https://github.com/MorevM/eslint-config/issues/280)) ([5ac15b6](https://github.com/MorevM/eslint-config/commit/5ac15b66378aeb959657f4e4eb7e37b6e9aadb19))
+* bump eslint-plugin-jsdoc from 39.3.25 to 39.6.2 ([7fef145](https://github.com/MorevM/eslint-config/commit/7fef1459ba85869dbcfc2e85d296106fa30f115e))
+* bump eslint-plugin-vue from 9.6.0 to 9.7.0 ([99c7a8a](https://github.com/MorevM/eslint-config/commit/99c7a8a6df10f3e610af38534104448ce877ba57))
+* bump `[@typescript-eslint](https://github.com/typescript-eslint)` packages from 5.41.0 to 5.42.0 ([a7940dd](https://github.com/MorevM/eslint-config/commit/a7940dd93b8f3aa58f7841bf51d02d0339b11d8b))
+
+
+### Bug fixes
+
+* **cypress:** Extend default spec paths to fit new Cypress 10 defaults ([c3b4f3c](https://github.com/MorevM/eslint-config/commit/c3b4f3c90fe40e9100ada46d0abf100cbbabff44))
+* **typescript:** Remove deprecated (renamed) `@typescript-eslint/sort-type-union-intersection-members` ([2b988ba](https://github.com/MorevM/eslint-config/commit/2b988ba65eba37f4b554ee43583cc2aa1e460132))
+* **vue:** Drop deprecated `vue/v-on-function-call` rule ([2ead551](https://github.com/MorevM/eslint-config/commit/2ead551e5fe9450a0328bdc42757a984d675cb6e))
+
 ## [18.0.0](https://github.com/MorevM/eslint-config/compare/v17.6.3...v18.0.0) (2022-10-29)
 
 
