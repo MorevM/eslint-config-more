@@ -149,7 +149,7 @@ module.exports = {
 		// https://typescript-eslint.io/rules/consistent-type-imports
 		'+@typescript-eslint/consistent-type-imports': ['warn', {
 			prefer: 'type-imports',
-			disallowTypeAnnotations: true,
+			disallowTypeAnnotations: false,
 		}],
 
 		// Enforce default parameters to be last
