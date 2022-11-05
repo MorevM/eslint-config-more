@@ -661,11 +661,6 @@ module.exports = {
 		// https://typescript-eslint.io/rules/semi
 		...extendFromBase('+semi'),
 
-		// Enforces that members of a type union/intersection are sorted alphabetically
-		// https://typescript-eslint.io/rules/sort-type-union-intersection-members
-		// Note: developer knows better
-		'@typescript-eslint/sort-type-union-intersection-members': 'off',
-
 		// Enforces consistent spacing before blocks (autofixable)
 		// https://typescript-eslint.io/rules/space-before-blocks/
 		...extendFromBase('+space-before-blocks'),
