@@ -329,11 +329,5 @@ module.exports = {
 		// Enforce `v-for` directive's delimiter style (autofixable)
 		// https://eslint.vuejs.org/rules/v-for-delimiter-style.html
 		'+vue/v-for-delimiter-style': ['warn', 'in'],
-
-		// Enforce or forbid parentheses after method calls without arguments in `v-on` directives (autofixable)
-		// https://eslint.vuejs.org/rules/v-on-function-call.html
-		'+vue/v-on-function-call': ['warn', 'never', {
-			ignoreIncludesComment: true,
-		}],
 	},
 };
