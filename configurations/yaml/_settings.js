@@ -13,6 +13,8 @@ const base = {
 			ignoreTemplateLiterals: true,
 		}],
 	},
+	// This is required since these files
+	// don't work with full `.yaml` extension.
 	overrides: [
 		{
 			files: ['dependabot.yml', '.gitlab-ci.yml'],
