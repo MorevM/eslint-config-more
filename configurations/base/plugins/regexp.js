@@ -61,6 +61,12 @@ module.exports = {
 			fixable: true,
 		}],
 
+		// Disallow missing `g` flag in patterns used in `String#matchAll` and `String#replaceAll` (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-missing-g-flag.html
+		'+regexp/no-missing-g-flag': ['error', {
+			strictTypes: true,
+		}],
+
 		// Disallow optional assertions
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-optional-assertion.html
 		'regexp/no-optional-assertion': 'error',
