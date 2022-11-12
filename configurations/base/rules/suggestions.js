@@ -244,6 +244,10 @@ module.exports = {
 			allow: ['arrowFunctions'],
 		}],
 
+		// Disallow empty static blocks
+		// https://eslint.org/docs/latest/rules/no-empty-static-block
+		'no-empty-static-block': 'warn',
+
 		// Disallow `null` comparisons without type-checking operators
 		// https://eslint.org/docs/rules/no-eq-null
 		'no-eq-null': 'error',
