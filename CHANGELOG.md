@@ -1,5 +1,30 @@
 
 
+## [19.0.0](https://github.com/MorevM/eslint-config/compare/v18.1.1...v19.0.0) (2022-11-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **base:** With new rule `regexp/no-missing-g-flag` preset `common` became more strict as well as `base` configuration.
+
+### Features
+
+* **base:** Add `no-empty-static-block` rule ([fd3c5ba](https://github.com/MorevM/eslint-config/commit/fd3c5babcdbca0ca4ffab1fd9c22e63029db1667))
+* **base:** Add `no-new-native-nonconstructor` rule ([1e13ab4](https://github.com/MorevM/eslint-config/commit/1e13ab4739618a4ff7ffb94e9e089b1187bd4601))
+* **base:** Add `regexp/no-missing-g-flag` rule ([abd6db6](https://github.com/MorevM/eslint-config/commit/abd6db6af34fa68fe6d7f4b0e1d81af24387a093))
+
+
+### Chores
+
+* bump [@typescript-eslint](https://github.com/typescript-eslint) packages from 5.42.0 to 5.42.1 ([047cd42](https://github.com/MorevM/eslint-config/commit/047cd424901c1239f1e0f01d7123c6e3a7355d6a))
+* bump eslint from 8.26.0 to 8.27.0 ([b6298d5](https://github.com/MorevM/eslint-config/commit/b6298d5df123a520b8c9034a49d1a0f0f0fa26a6))
+* bump eslint-plugin-jest from 27.1.4 to 27.1.5 ([#292](https://github.com/MorevM/eslint-config/issues/292)) ([a431ca1](https://github.com/MorevM/eslint-config/commit/a431ca1f5507e993d514bb12ecb0a8c6c2647f33))
+* bump eslint-plugin-regexp from 1.9.0 to 1.10.0 ([f628867](https://github.com/MorevM/eslint-config/commit/f628867a41e5cd3be1ac95aa05e45b90ceb447fc))
+
+### Refactoring
+
+* Add comment explaining `yaml` overrides ([2f8310b](https://github.com/MorevM/eslint-config/commit/2f8310b1518b51eee0df94a8784bf553bf01426c))
+
 ### [18.1.1](https://github.com/MorevM/eslint-config/compare/v18.1.0...v18.1.1) (2022-11-05)
 
 
