@@ -136,6 +136,10 @@ module.exports = {
 		// https://eslint.org/docs/rules/no-misleading-character-class
 		'no-misleading-character-class': 'error',
 
+		// Disallow `new` operators with global non-constructor functions
+		// https://eslint.org/docs/latest/rules/no-new-native-nonconstructor
+		'no-new-native-nonconstructor': 'error',
+
 		// Disallow `Symbol` constructor
 		// https://eslint.org/docs/rules/no-new-symbol
 		'no-new-symbol': 'error',
