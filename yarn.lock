@@ -2678,10 +2678,10 @@ eslint-plugin-node@^11.1.0:
     resolve "^1.10.1"
     semver "^6.1.0"
 
-eslint-plugin-regexp@^1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-regexp/-/eslint-plugin-regexp-1.9.0.tgz#692476a4f620e16634f747bf5c4bfbcd480ff6d9"
-  integrity sha512-Che49IZ07w9KcKvrMiqfwBYv44VBunA4NqUo+UTLluYbCos9Du3+pnhkPTLTAx6ZoZ1Rmz7u7o2iC6g6qCuvxw==
+eslint-plugin-regexp@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-regexp/-/eslint-plugin-regexp-1.10.0.tgz#925fecf94311ef68ef20639a3e6cf83d46bd1880"
+  integrity sha512-9HPSmKlxc19csfpCBEPRMuGme767uypOzWxP9zplRXC7RnBluB1Xk8ggcuB4ZV0ZcpJA3znCKLeyUrRyk2YlQg==
   dependencies:
     comment-parser "^1.1.2"
     eslint-utils "^3.0.0"
