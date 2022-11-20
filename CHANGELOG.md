@@ -1,5 +1,19 @@
 
 
+### [19.0.1](https://github.com/MorevM/eslint-config/compare/v19.0.0...v19.0.1) (2022-11-20)
+
+
+### Bug fixes
+
+* **base:** Disable `jsdoc/text-escaping` rule ([de1499b](https://github.com/MorevM/eslint-config/commit/de1499b43bfdad6f9c965df56c05fe759b19485e))
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 5.42.1 to 5.43.0 ([#297](https://github.com/MorevM/eslint-config/issues/297)) ([9035d6c](https://github.com/MorevM/eslint-config/commit/9035d6c2804e9f95354000c1e6148f449ab4bc57))
+* bump @typescript-eslint/parser from 5.42.1 to 5.43.0 ([#294](https://github.com/MorevM/eslint-config/issues/294)) ([faf7d3f](https://github.com/MorevM/eslint-config/commit/faf7d3f8801201961b6b3f92861aa96992e95467))
+* bump eslint from 8.27.0 to 8.28.0 ([12817a7](https://github.com/MorevM/eslint-config/commit/12817a70980504448efe1b2c5ed4a5157e62b188))
+
 ## [19.0.0](https://github.com/MorevM/eslint-config/compare/v18.1.1...v19.0.0) (2022-11-12)
 
 
