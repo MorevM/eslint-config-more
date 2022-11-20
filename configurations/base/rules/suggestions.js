@@ -337,7 +337,7 @@ module.exports = {
 
 		// Disallow magic numbers
 		// https://eslint.org/docs/rules/no-magic-numbers
-		// Note: some `magic` numbers aren't actually `magic`
+		// Note: most "magic" numbers aren't actually "magic".
 		'no-magic-numbers': 'off',
 
 		// Disallow mixes of different operators
