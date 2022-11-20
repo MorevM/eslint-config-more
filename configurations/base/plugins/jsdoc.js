@@ -231,7 +231,8 @@ module.exports = {
 
 		// Auto-escape certain characters that are input within block and tag descriptions (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/master/README.md#text-escaping
-		'+jsdoc/text-escaping': ['warn', {
+		// Note: HTML tags should mostly be enclosed in backticks, and HTML tags display fine inside them.
+		'+jsdoc/text-escaping': ['off', {
 			escapeHTML: true,
 			escapeMarkdown: false, // For a while, seems nothing wrong with it
 		}],
