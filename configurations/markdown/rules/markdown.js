@@ -204,7 +204,8 @@ module.exports = {
 
 		// First line in a file should be a top-level heading
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md041
-		'markdownlint/md041': ['error', {
+		// Note: It's pretty annoying to disable it all the time considering assistive role of most MD files.
+		'markdownlint/md041': ['off', {
 			level: 1,
 			front_matter_title: '^\s*"?title"?\s*[:=]',
 		}],
