@@ -1,5 +1,12 @@
 
 
+### [19.0.2](https://github.com/MorevM/eslint-config/compare/v19.0.1...v19.0.2) (2022-11-22)
+
+
+### Bug fixes
+
+* **markdown:** Disable `markdownlint/md041` rule ([b96ec06](https://github.com/MorevM/eslint-config/commit/b96ec06962a11b89d439ca4092ef84fc8be2db71))
+
 ### [19.0.1](https://github.com/MorevM/eslint-config/compare/v19.0.0...v19.0.1) (2022-11-20)
 
 
