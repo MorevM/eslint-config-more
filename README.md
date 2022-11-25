@@ -597,6 +597,7 @@ Create `.vscode/settings.json`:
     "javascriptreact",
     "typescript",
     "typescriptreact",
+    "json",
     "html",
     "vue",
     "markdown",
