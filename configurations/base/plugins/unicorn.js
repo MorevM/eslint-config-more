@@ -138,6 +138,12 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-lonely-if.md
 		'!unicorn/no-lonely-if': 'warn',
 
+		// Disallow negated conditions (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-condition.md
+		// Note: this is `no-negated-condition` with autofix capacity.
+		'no-negated-condition': 'off',
+		'+unicorn/no-negated-condition': 'warn',
+
 		// Disallow nested ternary expressions (partly autofixable).
 		// It allows nested, but they should be wrapped in parentheses (thats correct).
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-nested-ternary.md
