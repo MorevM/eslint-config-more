@@ -385,6 +385,10 @@ module.exports = {
 		// Note: Set needed when Set needed, Array needed when Array needed...
 		'!unicorn/prefer-set-has': 'off',
 
+		// Prefer using `Set#size` instead of `Array#length` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-size.md
+		'+unicorn/prefer-set-size': 'warn',
+
 		// Prefer the spread operator over `Array.from(…)`, `Array#concat(…)` and `Array#slice()` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-spread.md
 		'+unicorn/prefer-spread': 'error',
