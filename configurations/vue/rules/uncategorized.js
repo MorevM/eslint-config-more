@@ -309,6 +309,13 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/require-name-property.html
 		'vue/require-name-property': 'error',
 
+		// Require props to have a comment
+		// https://eslint.vuejs.org/rules/require-prop-comment.html
+		// Note: this is too verbose for outsourcing projects.
+		'vue/require-prop-comment': ['off', {
+			type: 'any',
+		}],
+
 		// Enforce consistent indentation in `<script>` (autofixable)
 		// https://eslint.vuejs.org/rules/script-indent.html
 		'+vue/script-indent': ['error', 'tab', {
