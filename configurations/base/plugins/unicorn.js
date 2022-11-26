@@ -180,6 +180,13 @@ module.exports = {
 		// Note: too radical to be a strict rule
 		'unicorn/no-this-assignment': 'off',
 
+		// Disallow comparing `undefined` using `typeof` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-typeof-undefined.md
+		// Note: `undefined` itself actually can be overwritten using scoped blocks / contexts,
+		// also using `globalThis` to compare raises the browser support level to "non-IE11" (it's too early for that)
+		// TODO: [2024-05-11] Maybe enable if no IE11 support is required now.
+		'+unicorn/no-typeof-undefined': 'off',
+
 		// Disallow awaiting non-promise values (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-await.md
 		'+unicorn/no-unnecessary-await': 'warn',
