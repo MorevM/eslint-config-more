@@ -1,5 +1,35 @@
 
 
+## [20.0.0](https://github.com/MorevM/eslint-config/compare/v19.0.2...v20.0.0) (2022-11-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* **base:** With new rule `regexp/no-extra-lookaround-assertions` preset `common` and configuration `base` became more strict.
+
+### Features
+
+* **base:** Add `regexp/no-extra-lookaround-assertions` rule ([5c3d67b](https://github.com/MorevM/eslint-config/commit/5c3d67ba394edfa745944ddc838ad5248af32435))
+* **base:** Add `unicorn/no-negated-condition` rule ([4bce2d1](https://github.com/MorevM/eslint-config/commit/4bce2d19e3a92525eb09b78c85e97643d6b81c42))
+* **base:** Add `unicorn/prefer-set-size` rule ([d1d3daf](https://github.com/MorevM/eslint-config/commit/d1d3daf4c29d45d8cbdae213e0a4e11c5ace3f61))
+* **base:** Take account of `unicorn/no-typeof-undefined` rule ([3a20ce6](https://github.com/MorevM/eslint-config/commit/3a20ce68f78d6a85b7e7155ff96be94de9ffe1f2))
+* **vue:** Take account of `vue/require-prop-comment` rule ([f7d71a5](https://github.com/MorevM/eslint-config/commit/f7d71a514333a3237d343d6d7e06c967545fd692))
+
+
+### Documentation
+
+* Update VSCode settings template ([310c4f4](https://github.com/MorevM/eslint-config/commit/310c4f445afd6076e9a3ffa95b1ec31acfd0c984))
+
+
+### Chores
+
+* bump [@typescript-eslint](https://github.com/typescript-eslint) packages from 5.43.0 to 5.44.0 ([8c68150](https://github.com/MorevM/eslint-config/commit/8c6815097d6ce13a3726eb8c4df41915e4e34f05))
+* bump eslint-plugin-jest from 27.1.5 to 27.1.6 ([#306](https://github.com/MorevM/eslint-config/issues/306)) ([930c55d](https://github.com/MorevM/eslint-config/commit/930c55d3d8569b16640ab65dee3c0068ba401758))
+* bump eslint-plugin-jsdoc from 39.6.2 to 39.6.4 ([#301](https://github.com/MorevM/eslint-config/issues/301)) ([e28dbb1](https://github.com/MorevM/eslint-config/commit/e28dbb19cb33bc7c1199780789b180591f6ed486))
+* bump eslint-plugin-regexp from 1.10.0 to 1.11.0 ([eab4613](https://github.com/MorevM/eslint-config/commit/eab4613ec11e5b6520caa268905612839b70cbb6))
+* bump eslint-plugin-unicorn from 44.0.2 to 45.0.0 ([d1a2a62](https://github.com/MorevM/eslint-config/commit/d1a2a6285ba130acf85b350e86d5388bd9ed6f42))
+* bump eslint-plugin-vue from 9.7.0 to 9.8.0 ([f26ffb1](https://github.com/MorevM/eslint-config/commit/f26ffb1063af2b53601d5452fc62f4757da85611))
+
 ### [19.0.2](https://github.com/MorevM/eslint-config/compare/v19.0.1...v19.0.2) (2022-11-22)
 
 
