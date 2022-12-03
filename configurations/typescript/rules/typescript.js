@@ -228,7 +228,7 @@ module.exports = {
 
 		// Enforces using a particular method signature syntax (autofixable)
 		// https://typescript-eslint.io/rules/method-signature-style
-		'@typescript-eslint/method-signature-style': ['error', 'property'],
+		'!@typescript-eslint/method-signature-style': ['error', 'property'],
 
 		// Enforces naming conventions for everything across a codebase
 		// https://typescript-eslint.io/rules/naming-convention
