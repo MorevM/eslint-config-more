@@ -361,7 +361,7 @@ module.exports = {
 
 		// Require parentheses around immediate `function` invocations (autofixable)
 		// https://eslint.org/docs/rules/wrap-iife
-		'+wrap-iife': ['warn', 'outside', {
+		'+wrap-iife': ['warn', 'inside', {
 			functionPrototypeMethods: false,
 		}],
 
