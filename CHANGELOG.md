@@ -1,5 +1,14 @@
 
 
+### [20.0.2](https://github.com/MorevM/eslint-config/compare/v20.0.1...v20.0.2) (2022-12-04)
+
+
+### Bug fixes
+
+* **base:** Add `vite-ignore` directive to `jsdoc/no-bad-blocks` rule ([c73d101](https://github.com/MorevM/eslint-config/commit/c73d101b9c4f8f24468cce7db912d74276ca8f33))
+* **base:** Reverse `wrap-iife` rule ([a94cadb](https://github.com/MorevM/eslint-config/commit/a94cadb2bb3c95e0f81aa92ef107f1370c92a597))
+* **typescript:** Disable unsafe autofix for `@typescript-eslint/method-signature-style` rule ([8ed4437](https://github.com/MorevM/eslint-config/commit/8ed44370b587f712fe69665bacf2083b5342c510))
+
 ### [20.0.1](https://github.com/MorevM/eslint-config/compare/v20.0.0...v20.0.1) (2022-12-03)
 
 
