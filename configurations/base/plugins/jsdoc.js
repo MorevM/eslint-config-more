@@ -91,7 +91,9 @@ module.exports = {
 		// Checks for multi-line-style comments which fail
 		// to meet the criteria of a jsdoc block (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-bad-blocks
-		'+jsdoc/no-bad-blocks': 'error',
+		'+jsdoc/no-bad-blocks': ['error', {
+			ignore: ['ts-check', 'ts-expect-error', 'ts-ignore', 'ts-nocheck', 'vite-ignore'],
+		}],
 
 		// Reports defaults being used on the relevant portion
 		// of `@param` or `@default` (autofixable)
