@@ -262,7 +262,7 @@ module.exports = {
 
 		// Requires expressions of type void to appear in statement position (autofixable)
 		// https://typescript-eslint.io/rules/no-confusing-void-expression
-		'+@typescript-eslint/no-confusing-void-expression': ['warn', {
+		'+@typescript-eslint/no-confusing-void-expression': ['off', {
 			ignoreArrowShorthand: true,
 			ignoreVoidOperator: false,
 		}],
