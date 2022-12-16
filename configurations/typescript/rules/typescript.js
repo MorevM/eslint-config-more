@@ -706,6 +706,8 @@ module.exports = {
 
 		// Warns for any two overloads that could be unified into one by using a union or an optional/rest parameter
 		// https://typescript-eslint.io/rules/unified-signatures
-		'@typescript-eslint/unified-signatures': 'warn',
+		'@typescript-eslint/unified-signatures': ['warn', {
+			ignoreDifferentlyNamedParameters: true,
+		}],
 	},
 };
