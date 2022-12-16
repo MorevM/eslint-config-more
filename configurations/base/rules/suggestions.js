@@ -369,8 +369,7 @@ module.exports = {
 
 		// Disallow negated conditions
 		// https://eslint.org/docs/rules/no-negated-condition
-		// Note: not an error actually, but reminder is required
-		'no-negated-condition': 'warn',
+		'no-negated-condition': 'off',
 
 		// Disallow nested ternary expressions
 		// https://eslint.org/docs/rules/no-nested-ternary

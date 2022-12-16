@@ -142,7 +142,7 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-condition.md
 		// Note: this is `no-negated-condition` with autofix capacity.
 		'no-negated-condition': 'off',
-		'+unicorn/no-negated-condition': 'warn',
+		'+unicorn/no-negated-condition': 'off',
 
 		// Disallow nested ternary expressions (partly autofixable).
 		// It allows nested, but they should be wrapped in parentheses (thats correct).
