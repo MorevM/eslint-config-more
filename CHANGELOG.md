@@ -1,5 +1,25 @@
 
 
+### [20.0.3](https://github.com/MorevM/eslint-config/compare/v20.0.2...v20.0.3) (2022-12-17)
+
+
+### Bug fixes
+
+* **base:** Turn off `no-negated-condition` rule ([ead3901](https://github.com/MorevM/eslint-config/commit/ead3901bb1e1007fa43a2ed5852ad6c714e933af))
+* **typescript:** Add `ignoreDifferentlyNamedParameters` setting to `@typescript-eslint/unified-signatures` ([49222b0](https://github.com/MorevM/eslint-config/commit/49222b085233f875ef4ed056f32ecab1f169c865))
+* **typescript:** Turn off `@typescript-eslint/no-confusing-void-expression` ([8187b44](https://github.com/MorevM/eslint-config/commit/8187b4402834103aaaf51893b0dd35ea2c40eb89))
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 5.45.0 to 5.46.1 ([#320](https://github.com/MorevM/eslint-config/issues/320)) ([68f597b](https://github.com/MorevM/eslint-config/commit/68f597b78cac85b0de60e3fb39d5257a02864042))
+* bump @typescript-eslint/parser from 5.45.0 to 5.46.1 ([#321](https://github.com/MorevM/eslint-config/issues/321)) ([3bb359a](https://github.com/MorevM/eslint-config/commit/3bb359a8ad6d7c08b62e029bb744e90ce41fc484))
+* bump eslint from 8.29.0 to 8.30.0 ([#324](https://github.com/MorevM/eslint-config/issues/324)) ([a34bc20](https://github.com/MorevM/eslint-config/commit/a34bc203e91880dac0d3275991d777614de90a1a))
+* bump eslint-plugin-jest from 27.1.6 to 27.1.7 ([#325](https://github.com/MorevM/eslint-config/issues/325)) ([c65b27a](https://github.com/MorevM/eslint-config/commit/c65b27a74305ade71278e4ad99e1b20d8aadade3))
+* bump eslint-plugin-sonarjs from 0.16.0 to 0.17.0 ([#316](https://github.com/MorevM/eslint-config/issues/316)) ([259fe76](https://github.com/MorevM/eslint-config/commit/259fe767e1af83522045a12016e42f3313b4929f))
+* bump eslint-plugin-unicorn from 45.0.1 to 45.0.2 ([#323](https://github.com/MorevM/eslint-config/issues/323)) ([57e57b0](https://github.com/MorevM/eslint-config/commit/57e57b09012495a5d5389f1c20195d8d387ce47c))
+* bump eslint-plugin-yml from 1.2.0 to 1.3.0 ([#313](https://github.com/MorevM/eslint-config/issues/313)) ([5c845a4](https://github.com/MorevM/eslint-config/commit/5c845a4b77b992a80778414d4eee3c843b73674a))
+
 ### [20.0.2](https://github.com/MorevM/eslint-config/compare/v20.0.1...v20.0.2) (2022-12-04)
 
 
