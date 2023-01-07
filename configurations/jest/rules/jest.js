@@ -109,6 +109,11 @@ module.exports = {
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-test-return-statement.md
 		'jest/no-test-return-statement': 'error',
 
+		// Disallow using `jest.mock()` factories without an explicit type parameter (autofixable)
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-untyped-mock-factory.md
+		// NOTE: Should be an error, but it can be applied to TS files only (so it is not suitable for mixed codebases)
+		'jest/no-untyped-mock-factory': 'off',
+
 		// Suggest using `toBeCalledWith()` or `toHaveBeenCalledWith()`
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-called-with.md
 		'jest/prefer-called-with': 'off',
