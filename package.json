@@ -156,7 +156,7 @@
 		"eslint": "^8.31.0",
 		"eslint-find-rules": "^4.1.0",
 		"glob": "^8.0.3",
-		"husky": "^8.0.2",
+		"husky": "^8.0.3",
 		"jest": "^29.3.1",
 		"lint-staged": "^13.1.0",
 		"release-it": "^15.6.0",
