@@ -1,6 +1,6 @@
 # @morev/eslint-config
 
-![Stability of "master" branch](https://img.shields.io/github/workflow/status/MorevM/eslint-config/Build/master)
+![Stability of "master" branch](https://img.shields.io/github/actions/workflow/status/MorevM/eslint-config/build.yaml?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Last commit](https://img.shields.io/github/last-commit/morevm/eslint-config)
 ![Release version](https://img.shields.io/github/v/release/morevm/eslint-config?include_prereleases)
