@@ -1,5 +1,27 @@
 
 
+## [21.0.0](https://github.com/MorevM/eslint-config/compare/v20.0.3...v21.0.0) (2023-01-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* **base:** With new rule `regexp/no-misleading-capturing-group` preset `common` and configuration `base` became more strict.
+
+### Features
+
+* **base:** Add `regexp/no-misleading-capturing-group` rule ([91663d2](https://github.com/MorevM/eslint-config/commit/91663d218e9a4a0c90a63a146ee6d76ed6bcd4c0))
+* **jest:** Take account of `jest/no-untyped-mock-factory` rule ([7594379](https://github.com/MorevM/eslint-config/commit/7594379e4da27e1d08bee7f53368fa6ee03de5b2))
+
+
+### Chores
+
+* bump `[@typescript-eslint](https://github.com/typescript-eslint)` packages from 5.46.1 to 5.48.0 ([0d197dd](https://github.com/MorevM/eslint-config/commit/0d197ddfe6f5c4df9f70851decff4fbb8680dc73))
+* bump eslint from 8.30.0 to 8.31.0 ([#330](https://github.com/MorevM/eslint-config/issues/330)) ([0669319](https://github.com/MorevM/eslint-config/commit/066931924aee7cb79c2fcfb316ceeed2454e97ec))
+* bump eslint-plugin-jest from 27.1.7 to 27.2.1 ([8cbe45e](https://github.com/MorevM/eslint-config/commit/8cbe45ea8aae389a6b01745f05564112df5f33b6))
+* bump eslint-plugin-jsonc from 2.5.0 to 2.6.0 ([#336](https://github.com/MorevM/eslint-config/issues/336)) ([f8b23e5](https://github.com/MorevM/eslint-config/commit/f8b23e5ad9bd72bcff6aad74a84b42280abde13b))
+* bump eslint-plugin-regexp from 1.11.0 to 1.12.0 ([be4367c](https://github.com/MorevM/eslint-config/commit/be4367c1a74200d2d9181039cda191808577ccbd))
+* bump eslint-plugin-yml from 1.3.0 to 1.4.0 ([#331](https://github.com/MorevM/eslint-config/issues/331)) ([6759f53](https://github.com/MorevM/eslint-config/commit/6759f53eb153f54c1d81d99b1760387a2806531b))
+
 ### [20.0.3](https://github.com/MorevM/eslint-config/compare/v20.0.2...v20.0.3) (2022-12-17)
 
 
