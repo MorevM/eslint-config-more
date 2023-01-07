@@ -55,6 +55,12 @@ module.exports = {
 			ignorePartial: true,
 		}],
 
+		// Disallow capturing groups that don't behave as one would expect
+		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-misleading-capturing-group.html
+		'regexp/no-misleading-capturing-group': ['error', {
+			reportBacktrackingEnds: true,
+		}],
+
 		// Disallow multi-code-point characters in character classes and quantifiers (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-misleading-unicode-character.html
 		'+regexp/no-misleading-unicode-character': ['error', {
