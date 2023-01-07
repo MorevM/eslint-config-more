@@ -300,7 +300,7 @@ module.exports = {
 		// Prefer `.at()` method for index access and `String#charAt()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-at.md
 		// Fails on Node 14
-		// TODO: [2023-01-01] Review it again
+		// TODO: [2024-01-01] Review it again
 		'!unicorn/prefer-at': 'off',
 
 		// Prefer `String#codePointAt(…)` over `String#charCodeAt(…)` and `String.fromCodePoint(…)` over `String.fromCharCode(…)`.
@@ -402,7 +402,7 @@ module.exports = {
 		// Prefer `String#replaceAll()` over regex searches with the global flag (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-replace-all.md
 		// Fails on Node 14
-		// TODO: [2023-01-01] Review it again
+		// TODO: [2024-01-01] Review it again
 		'!unicorn/prefer-string-replace-all': 'off',
 
 		// Prefer `String#slice()` over `String#substr()` and `String#substring()` (partly autofixable)

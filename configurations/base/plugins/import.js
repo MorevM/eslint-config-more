@@ -110,7 +110,6 @@ module.exports = {
 
 		// Report potentially ambiguous parse goal (`script` vs. `module`)
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/unambiguous.md
-		// @TODO: [2023-01-01] Review it later
 		'import/unambiguous': 'off',
 
 		// Report CommonJS `require()` calls and `module.exports` or `exports.*`
