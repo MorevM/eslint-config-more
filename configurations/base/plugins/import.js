@@ -153,9 +153,9 @@ module.exports = {
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/exports-last.md
 		'import/exports-last': 'error',
 
-		// Report repeated import of the same module in multiple places
+		// Report repeated import of the same module in multiple places (autofixable)
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-duplicates.md
-		'import/no-duplicates': 'error',
+		'+import/no-duplicates': 'error',
 
 		// Forbid namespace (a.k.a. "wildcard" `*`) imports (autofixable)
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-namespace.md
