@@ -55,6 +55,7 @@ module.exports = {
 		// Note: Set `maxDepth` if more performance issues
 		'import/no-cycle': ['error', {
 			ignoreExternal: true,
+			allowUnsafeDynamicCyclicDependency: false,
 		}],
 
 		// Prevent unnecessary path segments in import and require statements
