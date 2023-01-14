@@ -135,6 +135,10 @@ module.exports = {
 		 * Style guide.
 		 */
 
+		// Enforce or ban the use of inline type-only markers for named imports (autofixable)
+		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/consistent-type-specifier-style.md
+		'+import/consistent-type-specifier-style': ['warn', 'prefer-top-level'],
+
 		// Ensure all imports appear before other statements (autofixable, but `import/order` does it better)
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/first.md
 		'import/first': 'error',
