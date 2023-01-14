@@ -28,8 +28,10 @@ module.exports = {
 		// Note: should be defined individually if needed
 		'import/no-restricted-paths': 'off',
 
-		// Forbid import of modules using absolute paths
+		// Forbid import of modules using absolute paths (autofixable but disabled)
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-absolute-path.md
+		// Note: Autofix is not enabled intentionally because the relative path to the local folder is
+		// as harmful as the path from the root, but after transformation will be considered valid.
 		'import/no-absolute-path': 'error',
 
 		// Forbid `require()` calls with expressions
