@@ -93,6 +93,10 @@ module.exports = {
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-deprecated.md
 		'import/no-deprecated': 'warn',
 
+		// Forbid empty named import blocks (autofixable)
+		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-empty-named-blocks.md
+		'+import/no-empty-named-blocks': 'warn',
+
 		// Forbid the use of extraneous packages
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
 		'import/no-extraneous-dependencies': 'error',
