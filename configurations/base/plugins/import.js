@@ -190,7 +190,7 @@ module.exports = {
 
 		// Enforce a newline after import statements (autofixable)
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/newline-after-import.md
-		'+import/newline-after-import': 'error',
+		'+import/newline-after-import': 'warn',
 
 		// Prefer a default export if module exports a single name
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
