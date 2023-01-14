@@ -56,6 +56,7 @@ module.exports = {
 		'import/no-cycle': ['error', {
 			ignoreExternal: true,
 			allowUnsafeDynamicCyclicDependency: false,
+			// maxDepth: 5,
 		}],
 
 		// Prevent unnecessary path segments in import and require statements
