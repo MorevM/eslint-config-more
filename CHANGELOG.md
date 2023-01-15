@@ -1,5 +1,39 @@
 
 
+## [21.1.0](https://github.com/MorevM/eslint-config/compare/v21.0.0...v21.1.0) (2023-01-15)
+
+
+### Features
+
+* **base:** Add `import/consistent-type-specifier-style` rule ([4ca90a4](https://github.com/MorevM/eslint-config/commit/4ca90a434e8a75bd514e1c30a04dd872cb41a437))
+* **base:** Add `import/no-empty-named-blocks` rule ([e34e87c](https://github.com/MorevM/eslint-config/commit/e34e87c56f875f7a5c27c49372610c4dd4ce8e25))
+* **base:** Enable new option `considerComments` for a rule `import/newline-after-import` ([b3c4f13](https://github.com/MorevM/eslint-config/commit/b3c4f1336bd279da8d363c821649d677078aed8a))
+* **base:** Take care of new option `allowUnsafeDynamicCyclicDependency` of `import/no-cycle` rule ([6686f4d](https://github.com/MorevM/eslint-config/commit/6686f4d49ef08aeba4b5fd858c6416ee4acb6796))
+* **base:** Take care of the new fixer for `import/no-absolute-path` rule ([6447653](https://github.com/MorevM/eslint-config/commit/644765343de35c3ffebc180c7ed8ebfebdc0f75a))
+* **vue:** Add `vue/array-element-newline` rule ([409febc](https://github.com/MorevM/eslint-config/commit/409febcdd17e46b3bcf75f7a69f9158bdce46e22))
+* **vue:** Add new rule `vue/padding-lines-in-component-definition` ([dc2c5f8](https://github.com/MorevM/eslint-config/commit/dc2c5f8639a8904116c605c4dd3a2fb601438235))
+* **vue:** Extend `vue/attributes-order` rule with newly added options ([dff2bee](https://github.com/MorevM/eslint-config/commit/dff2bee4e684457a81f902a15f2df7d4d3833160))
+
+
+### Bug fixes
+
+* **base:** Mark `import/no-duplicates` as autofixable since it is ([34af850](https://github.com/MorevM/eslint-config/commit/34af850898cb06621d0942a60162bb277c087d5f))
+* **base:** Set severity of `import/newline-after-import` to `warn` since it's only style-related ([507a5c7](https://github.com/MorevM/eslint-config/commit/507a5c735021f5362498b342088d82960cc0f6ff))
+
+
+### Refactoring
+
+* **base:** Change the order of section/rules inside plugin `import` to fit its docs (seems alphabetical) ([a2b5219](https://github.com/MorevM/eslint-config/commit/a2b52197feccb5d74da78cbbef0a9ff162b91109))
+
+
+### Chores
+
+* bump `[@typescript-eslint](https://github.com/typescript-eslint)` from 5.48.0 to 5.48.1 ([f16e051](https://github.com/MorevM/eslint-config/commit/f16e0512506aee3f91c8f83ac36ef7cda6dcb38c))
+* bump eslint-import-resolver-typescript from 3.5.2 to 3.5.3 ([#349](https://github.com/MorevM/eslint-config/issues/349)) ([6a61b84](https://github.com/MorevM/eslint-config/commit/6a61b84262ec5b116775b22a50155aaceb6277b9))
+* bump eslint-plugin-import from 2.26.0 to 2.27.4 ([3ec54fd](https://github.com/MorevM/eslint-config/commit/3ec54fd7e84f9251801821509f5357c4472967e5))
+* bump eslint-plugin-sonarjs from 0.17.0 to 0.18.0 ([#348](https://github.com/MorevM/eslint-config/issues/348)) ([f7c16bc](https://github.com/MorevM/eslint-config/commit/f7c16bc283b5f60759480dd1fb72d6d21e584db8))
+* bump eslint-plugin-vue from 9.8.0 to 9.9.0 ([96e19c8](https://github.com/MorevM/eslint-config/commit/96e19c82723da38dad769b96d518961131296f03))
+
 ## [21.0.0](https://github.com/MorevM/eslint-config/compare/v20.0.3...v21.0.0) (2023-01-07)
 
 
