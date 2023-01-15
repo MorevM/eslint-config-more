@@ -1,5 +1,8 @@
 module.exports = {
-	extends: ['./build/presets/common.js'],
+	extends: [
+		'./build/presets/common.js',
+		'./build/presets/vue2.js',
+	],
 	overrides: [
 		{
 			files: ['*.js'],
