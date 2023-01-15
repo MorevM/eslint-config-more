@@ -276,6 +276,20 @@ module.exports = {
 			// { blankLine: 'always', prev: '*', next: '*' },
 		]],
 
+		// Require or disallow padding lines in component definition (autofixable)
+		// https://eslint.vuejs.org/rules/padding-lines-in-component-definition.html
+		'+vue/padding-lines-in-component-definition': ['warn', {
+			betweenOptions: 'always',
+			withinOption: {
+				props: 'never',
+				emits: 'never',
+				data: 'ignore',
+				methods: 'always',
+				computed: 'always',
+			},
+			groupSingleLineProperties: true,
+		}],
+
 		// Enforce `Boolean` comes first in component prop types
 		// https://eslint.vuejs.org/rules/prefer-prop-type-boolean-first.html
 		'vue/prefer-prop-type-boolean-first': 'error',
