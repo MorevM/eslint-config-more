@@ -5,13 +5,7 @@ const base = {
 		'spaced-comment': 'off',
 		'no-multiple-empty-lines': 'off',
 		'no-multi-spaces': 'off',
-		'max-len': ['warn', 150, 2, {
-			ignoreUrls: true,
-			ignoreComments: true,
-			ignoreRegExpLiterals: true,
-			ignoreStrings: true,
-			ignoreTemplateLiterals: true,
-		}],
+		'max-len': 'off',
 	},
 	// This is required since these files
 	// don't work with full `.yaml` extension.
