@@ -1,5 +1,19 @@
 
 
+### [21.1.1](https://github.com/MorevM/eslint-config/compare/v21.1.0...v21.1.1) (2023-01-21)
+
+
+### Chores
+
+* bump @typescript-eslint from 5.48.1 to 5.48.2 ([a1b6f22](https://github.com/MorevM/eslint-config/commit/a1b6f229eb9b5a7b598e4a4ec6ba052393e46f63))
+* bump eslint from 8.31.0 to 8.32.0 ([#350](https://github.com/MorevM/eslint-config/issues/350)) ([973327c](https://github.com/MorevM/eslint-config/commit/973327cf200de33ef1b68ccab23680d557a316f2))
+* bump eslint-plugin-import from 2.27.4 to 2.27.5 ([#352](https://github.com/MorevM/eslint-config/issues/352)) ([7820abf](https://github.com/MorevM/eslint-config/commit/7820abfe939fdc92db81a879aec5feb7f3b68af9))
+* bump eslint-plugin-jsdoc from 39.6.4 to 39.6.7 ([#351](https://github.com/MorevM/eslint-config/issues/351)) ([d3b19f4](https://github.com/MorevM/eslint-config/commit/d3b19f40adff609f1ced85b0f453f651263b8d99))
+
+### Bug fixes
+
+* **yaml:** Disable `max-len` for `yaml` files ([8c9e631](https://github.com/MorevM/eslint-config/commit/8c9e6310fcf1f9dfa2d6ab08badc36d1456b5f47))
+
 ## [21.1.0](https://github.com/MorevM/eslint-config/compare/v21.0.0...v21.1.0) (2023-01-15)
 
 
