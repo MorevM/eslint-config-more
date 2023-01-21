@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const { builtinModules } = require('module');
-const { resolve: resolveExports } = require('resolve.exports');
+const { exports: resolveExports } = require('resolve.exports');
 
 const allBuiltins = builtinModules.flatMap(m => [m, `node:${m}`]);
 
