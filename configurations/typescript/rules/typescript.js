@@ -198,6 +198,11 @@ module.exports = {
 		// https://typescript-eslint.io/rules/init-declarations
 		...extendFromBase('init-declarations'),
 
+		// Enforce consistent spacing between property names
+		// and type annotations in types and interfaces. (autofixable)
+		// https://typescript-eslint.io/rules/key-spacing/
+		...extendFromBase('+key-spacing'),
+
 		// Enforce consistent spacing before and after keywords (autofixable)
 		// https://typescript-eslint.io/rules/keyword-spacing/
 		...extendFromBase('+keyword-spacing'),
