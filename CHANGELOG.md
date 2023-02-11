@@ -1,5 +1,28 @@
 
 
+## [21.2.0](https://github.com/MorevM/eslint-config/compare/v21.1.1...v21.2.0) (2023-02-11)
+
+
+### Features
+
+* **typescript:** Add `@typescript-eslint/key-spacing` rule ([c56b08e](https://github.com/MorevM/eslint-config/commit/c56b08e01c71c623f436d2a53e428c9c69772d85))
+* **typescript:** Add `@typescript-eslint/no-import-type-side-effects` rule ([b4f69af](https://github.com/MorevM/eslint-config/commit/b4f69afad1bb4df7f0ba88de69eebb29985f097c))
+
+
+### Bug fixes
+
+* **vue:** Change the order of attrs in `vue/attributes-order` ([fe746fc](https://github.com/MorevM/eslint-config/commit/fe746fc32a4624a8a192f3ae189fe7906421e79e))
+* **vue:** Extend special characters list with `$` and `№` chars ([38b8ad3](https://github.com/MorevM/eslint-config/commit/38b8ad3074959cbc74646e5924d7c986d0c38328))
+
+
+### Chores
+
+* bump @typescript-eslint from 5.48.2 to 5.51.0 ([d9684ba](https://github.com/MorevM/eslint-config/commit/d9684ba9a89ac4d5944a3e2c436290f2c8823b0b))
+* bump @html-eslint from 0.15.0 to 0.16.0 ([#358](https://github.com/MorevM/eslint-config/issues/358)) ([bede205](https://github.com/MorevM/eslint-config/commit/bede205d88ffa2b03b8e456f3a0c75395a8e4f0f))
+* bump eslint from 8.32.0 to 8.34.0 ([#373](https://github.com/MorevM/eslint-config/issues/373)) ([3e70601](https://github.com/MorevM/eslint-config/commit/3e70601f09810de115ede678e1c65944158bf7e3))
+* bump eslint-plugin-jsdoc from 39.6.7 to 39.8.0 ([#367](https://github.com/MorevM/eslint-config/issues/367)) ([ec7b1be](https://github.com/MorevM/eslint-config/commit/ec7b1bea50dfb051ffe0ff7c0ad61c30860e91d2))
+* bump eslint-plugin-yml from 1.4.0 to 1.5.0 ([#369](https://github.com/MorevM/eslint-config/issues/369)) ([66051c4](https://github.com/MorevM/eslint-config/commit/66051c43c6d62f73bef3c462fc2a240c0400c3d3))
+
 ### [21.1.1](https://github.com/MorevM/eslint-config/compare/v21.1.0...v21.1.1) (2023-01-21)
 
 
