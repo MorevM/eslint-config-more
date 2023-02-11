@@ -331,6 +331,11 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-for-in-array
 		'@typescript-eslint/no-for-in-array': 'error',
 
+		// Enforce the use of top-level import type qualifier
+		// when an import only has specifiers with inline type qualifiers (autofixable).
+		// https://typescript-eslint.io/rules/no-import-type-side-effects
+		'+@typescript-eslint/no-import-type-side-effects': 'error',
+
 		// Disallow the use of `eval()`-like methods
 		// https://typescript-eslint.io/rules/no-implied-eval
 		...extendFromBase('no-implied-eval'),
