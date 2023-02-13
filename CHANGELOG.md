@@ -1,5 +1,12 @@
 
 
+### [21.2.1](https://github.com/MorevM/eslint-config/compare/v21.2.0...v21.2.1) (2023-02-13)
+
+
+### Bug fixes
+
+* **vue:** Ignore padding lines between options using Options API ([8dba95e](https://github.com/MorevM/eslint-config/commit/8dba95ecaadb74ab2f7bf214d3927546fcad634f))
+
 ## [21.2.0](https://github.com/MorevM/eslint-config/compare/v21.1.1...v21.2.0) (2023-02-11)
 
 
