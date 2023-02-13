@@ -1,5 +1,13 @@
 
 
+### [21.2.2](https://github.com/MorevM/eslint-config/compare/v21.2.1...v21.2.2) (2023-02-13)
+
+
+### Bug fixes
+
+* **typescript:** Disable `@typescript-eslint/no-import-type-side-effects` rule ([b9cb5a7](https://github.com/MorevM/eslint-config/commit/b9cb5a79043f73beb92529fa6a02643bef0c1d06))
+* **typescript:** Disable the base `key-spacing` rule for TS files ([a4efaae](https://github.com/MorevM/eslint-config/commit/a4efaae72e5cef67ada6cf5a4d4a40eb9c555685))
+
 ### [21.2.1](https://github.com/MorevM/eslint-config/compare/v21.2.0...v21.2.1) (2023-02-13)
 
 
