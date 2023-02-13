@@ -279,7 +279,7 @@ module.exports = {
 		// Require or disallow padding lines in component definition (autofixable)
 		// https://eslint.vuejs.org/rules/padding-lines-in-component-definition.html
 		'+vue/padding-lines-in-component-definition': ['warn', {
-			betweenOptions: 'always',
+			betweenOptions: 'ignore',
 			withinOption: {
 				props: 'never',
 				emits: 'never',
