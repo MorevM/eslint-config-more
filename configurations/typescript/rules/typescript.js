@@ -388,7 +388,7 @@ module.exports = {
 
 		// Avoid using promises in places not designed to handle them
 		// https://typescript-eslint.io/rules/no-misused-promises
-		'@typescript-eslint/no-misused-promises': ['error', {
+		'@typescript-eslint/no-misused-promises': ['off', {
 			checksConditionals: true,
 			checksVoidReturn: true,
 		}],
