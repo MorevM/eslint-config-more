@@ -1,5 +1,12 @@
 
 
+### [21.2.3](https://github.com/MorevM/eslint-config/compare/v21.2.2...v21.2.3) (2023-02-14)
+
+
+### Bug fixes
+
+* **typescript:** Disable `@typescript-eslint/no-misused-promises` ([645bf63](https://github.com/MorevM/eslint-config/commit/645bf63308ecc4af7c83e76bfa3597b0030d8e6f))
+
 ### [21.2.2](https://github.com/MorevM/eslint-config/compare/v21.2.1...v21.2.2) (2023-02-13)
 
 
