@@ -98,6 +98,11 @@ module.exports = {
 			extendDefaults: false,
 		}],
 
+		// Disallow or enforce spaces inside of blocks
+		// after opening block and before closing block (autofixable)
+		// https://typescript-eslint.io/rules/block-spacing
+		...extendFromBase('+block-spacing'),
+
 		// Enforce consistent brace style for blocks (autofixable)
 		// https://typescript-eslint.io/rules/brace-style
 		...extendFromBase('+brace-style'),
