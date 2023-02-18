@@ -1,5 +1,18 @@
 
 
+## [21.3.0](https://github.com/MorevM/eslint-config/compare/v21.2.3...v21.3.0) (2023-02-18)
+
+
+### Features
+
+* **typescript:** Add `@typescript-eslint/block-spacing` rule ([a32584c](https://github.com/MorevM/eslint-config/commit/a32584cf4d411b78f52564321945f405c20fcff2))
+
+
+### Chores
+
+* bump `@typescript-eslint` from 5.51.0 to 5.52.0 ([8ca5a6d](https://github.com/MorevM/eslint-config/commit/8ca5a6dbdcf986c12cf30e149622d0b6fca6bf68))
+* bump eslint-plugin-jsdoc from 39.8.0 to 40.0.0 ([#379](https://github.com/MorevM/eslint-config/issues/379)) ([a525fde](https://github.com/MorevM/eslint-config/commit/a525fde68a5bc3efe4e02c27a82c983789f5142a))
+
 ### [21.2.3](https://github.com/MorevM/eslint-config/compare/v21.2.2...v21.2.3) (2023-02-14)
 
 
