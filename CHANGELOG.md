@@ -1,5 +1,18 @@
 
 
+## [21.4.0](https://github.com/MorevM/eslint-config/compare/v21.3.0...v21.4.0) (2023-02-25)
+
+
+### Features
+
+* **typescript:** Add `no-mixed-enums` rule ([ba20610](https://github.com/MorevM/eslint-config/commit/ba20610491f372811fe8415b829e687251330223))
+
+
+### Chores
+
+* bump @babel/core from 7.20.12 to 7.21.0 ([#380](https://github.com/MorevM/eslint-config/issues/380)) ([cf21017](https://github.com/MorevM/eslint-config/commit/cf21017b26795fe04979ee7691e116ca9e712cb5))
+* bump @typescript-eslint from 5.52.0 to 5.53.0 ([5fe55e9](https://github.com/MorevM/eslint-config/commit/5fe55e9e56de68422c083ef19b9a32ab55a0a4f1))
+
 ## [21.3.0](https://github.com/MorevM/eslint-config/compare/v21.2.3...v21.3.0) (2023-02-18)
 
 
