@@ -149,7 +149,7 @@
 		"yaml-eslint-parser": "^1.0.1"
 	},
 	"devDependencies": {
-		"@eslint/eslintrc": "^1.4.1",
+		"@eslint/eslintrc": "^2.0.0",
 		"@morev/commitlint-config": "^0.1.1",
 		"@release-it/conventional-changelog": "^5.1.1",
 		"@types/jest": "^29.4.0",
