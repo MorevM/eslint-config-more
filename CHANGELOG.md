@@ -1,5 +1,22 @@
 
 
+## [21.5.0](https://github.com/MorevM/eslint-config/compare/v21.4.1...v21.5.0) (2023-03-11)
+
+
+### Features
+
+* **html:** Take account of `@html-eslint/require-attrs` rule ([6d01a71](https://github.com/MorevM/eslint-config/commit/6d01a717ffe485662e1c77052847e557bd7f8b57))
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 5.54.0 to 5.54.1 ([#395](https://github.com/MorevM/eslint-config/issues/395)) ([2932874](https://github.com/MorevM/eslint-config/commit/293287486989006afc5abdc940e6451e4a659624))
+* bump @typescript-eslint/parser from 5.54.0 to 5.54.1 ([#396](https://github.com/MorevM/eslint-config/issues/396)) ([a634854](https://github.com/MorevM/eslint-config/commit/a63485410e2f31379c4a7c04606482c2c477b923))
+* bump `@html-eslint` packages from 0.16.0 to 0.17.1 ([2a924e2](https://github.com/MorevM/eslint-config/commit/2a924e271b230cdcfcb0a7dcf8617ee4f0f9532a))
+* bump eslint from 8.35.0 to 8.36.0 ([#394](https://github.com/MorevM/eslint-config/issues/394)) ([a6b4ef4](https://github.com/MorevM/eslint-config/commit/a6b4ef4a05d16b67b31c4cfb8a6cdcf8393d6466))
+* bump jsonc-eslint-parser from 2.1.0 to 2.2.0 ([#391](https://github.com/MorevM/eslint-config/issues/391)) ([9aa6975](https://github.com/MorevM/eslint-config/commit/9aa6975bd6e15abfc5be84a1e0c9799d89f8da7a))
+* bump yaml-eslint-parser from 1.1.0 to 1.2.0 ([#401](https://github.com/MorevM/eslint-config/issues/401)) ([1336f27](https://github.com/MorevM/eslint-config/commit/1336f27b2063f7d673ce7fd213ce27324dd0b564))
+
 ### [21.4.1](https://github.com/MorevM/eslint-config/compare/v21.4.0...v21.4.1) (2023-03-04)
 
 ### Chores
