@@ -47,5 +47,10 @@ module.exports = {
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-restricted-attrs
 		// Note: should be configured individually if needed
 		'@html-eslint/no-restricted-attrs': 'off',
+
+		// Enforces the use of tag with specified attributes
+		// https://github.com/yeonjuan/html-eslint/blob/main/docs/rules/require-attrs.md
+		// Note: should be configured individually if needed
+		'@html-eslint/require-attrs': 'off',
 	},
 };
