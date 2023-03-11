@@ -146,7 +146,7 @@
 		"lodash.mergewith": "^4.6.2",
 		"resolve.exports": "^2.0.1",
 		"vue-eslint-parser": "^9.1.0",
-		"yaml-eslint-parser": "^1.0.1"
+		"yaml-eslint-parser": "^1.2.0"
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^2.0.1",
