@@ -1,5 +1,21 @@
 
 
+## [21.6.0](https://github.com/MorevM/eslint-config/compare/v21.5.0...v21.6.0) (2023-03-18)
+
+
+### Features
+
+* **typescript:** Add `@typescript-eslint/lines-around-comment` rule ([99064b2](https://github.com/MorevM/eslint-config/commit/99064b26f5cd58cf4e2088cde0cd3d94e3c02fde))
+
+
+### Chores
+
+* bump eslint-plugin-jsdoc from 40.0.1 to 40.0.3 ([#406](https://github.com/MorevM/eslint-config/issues/406)) ([f01cb9c](https://github.com/MorevM/eslint-config/commit/f01cb9c930a3fd69c54a50555add1aa99e55eb4f))
+* bump eslint-plugin-jsonc from 2.6.0 to 2.7.0 ([#409](https://github.com/MorevM/eslint-config/issues/409)) ([4076f83](https://github.com/MorevM/eslint-config/commit/4076f83009019bc1033f0fdf8881e6f38d665523))
+* bump eslint-plugin-regexp from 1.12.0 to 1.13.0 ([#413](https://github.com/MorevM/eslint-config/issues/413)) ([7e120fd](https://github.com/MorevM/eslint-config/commit/7e120fd3af84c9ca272ba21ec4d09ddbcf444be8))
+* bump typescript from 4.9.5 to 5.0.2 ([#403](https://github.com/MorevM/eslint-config/issues/403)) ([b4ab3b5](https://github.com/MorevM/eslint-config/commit/b4ab3b555216cb70f8afd61f4919d1950ffa2fb1))
+* bump typescript-eslint from 5.54.1 to 5.55.0 ([e1d903b](https://github.com/MorevM/eslint-config/commit/e1d903b3c6b4354065c49f77fbb5e0a26aff3bf5))
+
 ## [21.5.0](https://github.com/MorevM/eslint-config/compare/v21.4.1...v21.5.0) (2023-03-11)
 
 
