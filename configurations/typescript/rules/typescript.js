@@ -213,6 +213,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/keyword-spacing/
 		...extendFromBase('+keyword-spacing'),
 
+		// Require empty lines around comments (autofixable)
+		// https://typescript-eslint.io/rules/lines-around-comment/
+		...extendFromBase('+lines-around-comment'),
+
 		// Require or disallow an empty line between class members (autofixable)
 		// https://typescript-eslint.io/rules/lines-between-class-members
 		// Note: has additional options, but the defaults are good
