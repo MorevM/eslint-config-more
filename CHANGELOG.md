@@ -1,5 +1,12 @@
 
 
+### [21.6.1](https://github.com/MorevM/eslint-config/compare/v21.6.0...v21.6.1) (2023-03-25)
+
+
+### Chores
+
+Minor bump of dependencies. :)
+
 ## [21.6.0](https://github.com/MorevM/eslint-config/compare/v21.5.0...v21.6.0) (2023-03-18)
 
 
