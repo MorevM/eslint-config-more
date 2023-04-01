@@ -132,9 +132,9 @@ module.exports = {
 		// TODO: [2023-05-11] Take a look
 		'+@typescript-eslint/consistent-indexed-object-style': 'off',
 
-		// Enforces consistent usage of type assertions
+		// Enforces consistent usage of type assertions (autofixable)
 		// https://typescript-eslint.io/rules/consistent-type-assertions
-		'@typescript-eslint/consistent-type-assertions': ['warn', {
+		'+@typescript-eslint/consistent-type-assertions': ['warn', {
 			assertionStyle: 'as',
 			objectLiteralTypeAssertions: 'allow',
 		}],
