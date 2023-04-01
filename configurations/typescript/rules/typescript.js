@@ -290,6 +290,13 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-duplicate-enum-values
 		'@typescript-eslint/no-duplicate-enum-values': 'error',
 
+		// Disallow duplicate constituents of union or intersection types (autofixable)
+		// https://typescript-eslint.io/rules/no-duplicate-type-constituents
+		'+@typescript-eslint/no-duplicate-type-constituents': ['error', {
+			ignoreIntersections: false,
+			ignoreUnions: false,
+		}],
+
 		// Disallow the delete operator with computed key expressions (autofixable)
 		// https://typescript-eslint.io/rules/no-dynamic-delete
 		'+@typescript-eslint/no-dynamic-delete': 'error',
