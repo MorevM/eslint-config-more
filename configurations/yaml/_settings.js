@@ -7,11 +7,11 @@ const base = {
 		'no-multi-spaces': 'off',
 		'max-len': 'off',
 	},
-	// This is required since these files
-	// don't work with full `.yaml` extension.
+	// This is required since these files don't work with full `.yaml` extension.
+	// `lefthook` actually works, but the documentation suggests to use `.yml`
 	overrides: [
 		{
-			files: ['dependabot.yml', '.gitlab-ci.yml'],
+			files: ['dependabot.yml', '.gitlab-ci.yml', 'lefthook.yml'],
 			rules: {
 				'yml/file-extension': 'off',
 			},
