@@ -13,6 +13,10 @@ module.exports = {
 		// https://github.com/cypress-io/eslint-plugin-cypress/blob/HEAD/docs/rules/no-async-tests.md
 		'cypress/no-async-tests': 'error',
 
+		// Prevent chaining from unsafe to chain commands
+		// https://github.com/cypress-io/eslint-plugin-cypress/blob/master/docs/rules/unsafe-to-chain-command.md
+		'cypress/unsafe-to-chain-command': 'error',
+
 		// Disallow using `force: true` with action commands
 		// https://github.com/cypress-io/eslint-plugin-cypress/blob/HEAD/docs/rules/no-force.md
 		'cypress/no-force': 'error',
