@@ -1,5 +1,29 @@
 
 
+## [21.7.0](https://github.com/MorevM/eslint-config/compare/v21.6.1...v21.7.0) (2023-04-01)
+
+
+### Features
+
+* **cypress:** Add `cypress/unsafe-to-chain-command` rule ([ee9ede0](https://github.com/MorevM/eslint-config/commit/ee9ede0c8bb5f75b7776a2488af8df07dd63e06b))
+* **typescript:** Add `@typescript-eslint/no-duplicate-type-constituents` rule ([ef9afda](https://github.com/MorevM/eslint-config/commit/ef9afda404d1cb1405a817fd2a6c57f164b336db))
+
+
+### Chores
+
+* bump @typescript-eslint from 5.56.0 to 5.57.0 ([ce22d1a](https://github.com/MorevM/eslint-config/commit/ce22d1aaa85ff72409ca8e18ffba4572c7f24642))
+* bump `eslint-plugin-cypress` from 2.12.1 to 2.13.2 ([e05738a](https://github.com/MorevM/eslint-config/commit/e05738a13438dca44d55b36ddf512f1555f53019))
+* bump eslint from 8.36.0 to 8.37.0 ([#424](https://github.com/MorevM/eslint-config/issues/424)) ([9bf9d7b](https://github.com/MorevM/eslint-config/commit/9bf9d7b997e1e01b28125f3b2af841b0c1fd7bdf))
+* bump eslint-import-resolver-typescript from 3.5.3 to 3.5.4 ([#432](https://github.com/MorevM/eslint-config/issues/432)) ([576d985](https://github.com/MorevM/eslint-config/commit/576d9858f51228fd1fe28b7a87427900c158e519))
+* bump eslint-plugin-jsdoc from 40.1.0 to 40.1.1 ([#427](https://github.com/MorevM/eslint-config/issues/427)) ([c418727](https://github.com/MorevM/eslint-config/commit/c4187278a786e43aa4cfd0e20bb3063509a0fc53))
+* bump eslint-plugin-regexp from 1.13.0 to 1.14.0 ([#431](https://github.com/MorevM/eslint-config/issues/431)) ([7a648b2](https://github.com/MorevM/eslint-config/commit/7a648b29da997f008290100452cbb44243981b75))
+* bump typescript from 5.0.2 to 5.0.3 ([#428](https://github.com/MorevM/eslint-config/issues/428)) ([0ff3480](https://github.com/MorevM/eslint-config/commit/0ff3480df7621d062c04d9b4a404f8378018a13a))
+
+### Bug fixes
+
+* Mark `@typescript-eslint/consistent-type-assertions` as autofixable ([f198a1e](https://github.com/MorevM/eslint-config/commit/f198a1e998cd8840bb4799b75c0c34f9ce8b2682))
+* **yaml:** Add `lefthook.yml` to the list of files that ignore `yml/file-extension` rule ([cc272db](https://github.com/MorevM/eslint-config/commit/cc272db0dd4516b845871aedf341503c5b47d525))
+
 ### [21.6.1](https://github.com/MorevM/eslint-config/compare/v21.6.0...v21.6.1) (2023-03-25)
 
 
