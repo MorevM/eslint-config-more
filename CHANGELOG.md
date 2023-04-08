@@ -1,5 +1,19 @@
 
 
+### [21.7.1](https://github.com/MorevM/eslint-config/compare/v21.7.0...v21.7.1) (2023-04-08)
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 5.57.0 to 5.57.1 ([#436](https://github.com/MorevM/eslint-config/issues/436)) ([4761550](https://github.com/MorevM/eslint-config/commit/47615505009bf1e5f4d8c7932b9a8aef44d9694e))
+* bump @typescript-eslint/parser from 5.57.0 to 5.57.1 ([#439](https://github.com/MorevM/eslint-config/issues/439)) ([db07388](https://github.com/MorevM/eslint-config/commit/db073884dc6eb2d2a7d8a74d45e1c15168c955c8))
+* bump eslint from 8.37.0 to 8.38.0 ([#442](https://github.com/MorevM/eslint-config/issues/442)) ([62dc28a](https://github.com/MorevM/eslint-config/commit/62dc28ac593751f948c960b51353edcdd7f57130))
+* bump eslint-import-resolver-typescript from 3.5.4 to 3.5.5 ([#443](https://github.com/MorevM/eslint-config/issues/443)) ([5ca82c0](https://github.com/MorevM/eslint-config/commit/5ca82c0a3053681bece143eb547d1ee7efaa35e3))
+
+### Bug fixes
+
+* **typescript:** Turn off `@typescript-eslint/no-invalid-void-type` rule ([7eb8d3c](https://github.com/MorevM/eslint-config/commit/7eb8d3c56611a3d14b457ec8a174fa07a1f75dba))
+
 ## [21.7.0](https://github.com/MorevM/eslint-config/compare/v21.6.1...v21.7.0) (2023-04-01)
 
 
