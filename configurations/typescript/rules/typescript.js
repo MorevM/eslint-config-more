@@ -371,7 +371,7 @@ module.exports = {
 
 		// Disallows usage of `void` type outside of generic or return types
 		// https://typescript-eslint.io/rules/no-invalid-void-type
-		'@typescript-eslint/no-invalid-void-type': ['error', {
+		'@typescript-eslint/no-invalid-void-type': ['off', {
 			allowAsThisParameter: true,
 			allowInGenericTypeArguments: true,
 		}],
