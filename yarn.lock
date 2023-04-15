@@ -501,10 +501,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.38.0.tgz#73a8a0d8aa8a8e6fe270431c5e72ae91b5337892"
   integrity sha512-IoD2MfUnOV58ghIHCiil01PcohxjbYR/qCxsoC+xNgUwh1EY8jOOrYmu3d3a71+tJJ23uscEV4X2HJWMsPJu4g==
 
-"@html-eslint/eslint-plugin@^0.17.2":
-  version "0.17.2"
-  resolved "https://registry.yarnpkg.com/@html-eslint/eslint-plugin/-/eslint-plugin-0.17.2.tgz#04444f7bf91142ac165ee20061f07619fedf0051"
-  integrity sha512-tK5cPTqQ42+spT/hEfTLP06jw8dE/taJTmIEQNXU01YwH5NBnvpu6xVaaH1kQ7Xs2se69PWzsGlVuV5rfh462w==
+"@html-eslint/eslint-plugin@^0.18.0":
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/@html-eslint/eslint-plugin/-/eslint-plugin-0.18.0.tgz#3e650aca85aa212c596f14b8dbc4860dfe1059ce"
+  integrity sha512-41O4n2MOUry4hdeS5L+RII59ZcAFRzfuZIX0dVbp0xStHsv4OY7S+89FKqeVmrY8HEyAD3EEk5NXZdlMdAV0Zw==
 
 "@html-eslint/parser@^0.18.0":
   version "0.18.0"
