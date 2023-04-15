@@ -67,6 +67,10 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#implements-on-classes
 		'jsdoc/implements-on-classes': 'error',
 
+		// Reports on JSDoc texts that serve only to restart their attached name.
+		// https://github.com/gajus/eslint-plugin-jsdoc#informative-docs
+		'jsdoc/informative-docs': 'off',
+
 		// Enforces a regular expression pattern on descriptions
 		// https://github.com/gajus/eslint-plugin-jsdoc#match-description
 		'jsdoc/match-description': 'off',
