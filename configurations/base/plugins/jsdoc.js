@@ -95,6 +95,12 @@ module.exports = {
 			ignore: ['ts-check', 'ts-expect-error', 'ts-ignore', 'ts-nocheck', 'vite-ignore'],
 		}],
 
+		// If tags are present, this rule will prevent empty lines in the block description.
+		// If no tags are present, this rule will prevent extra empty lines in the block description.
+		// (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc#no-blank-block-descriptions
+		'+jsdoc/no-blank-block-descriptions': ['warn'],
+
 		// Reports defaults being used on the relevant portion
 		// of `@param` or `@default` (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-defaults
