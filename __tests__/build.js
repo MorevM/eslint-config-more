@@ -1,5 +1,5 @@
 const path = require('path');
-const glob = require('glob');
+const { glob } = require('glob');
 const { Legacy } = require('@eslint/eslintrc');
 
 const ROOT_PATH = path.resolve(__dirname, '../').replace(/\\/g, '/');
