@@ -1,5 +1,27 @@
 
 
+## [22.0.0](https://github.com/MorevM/eslint-config/compare/v21.7.1...v22.0.0) (2023-04-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **typescript:** With new `@typescript-eslint/no-unsafe-enum-comparison` rule default config become more strict.
+
+### Features
+
+* **base:** Add `jsdoc/no-blank-block-descriptions` rule ([a8cb74b](https://github.com/MorevM/eslint-config/commit/a8cb74bc377f7716e157d5457ab0d9900a1f186c))
+* **base:** Take account of `jsdoc/informative-docs` rule ([18c0e3f](https://github.com/MorevM/eslint-config/commit/18c0e3f3a260e258e36931dfe2d02b002bbe3311))
+* **typescript:** Add `@typescript-eslint/no-unsafe-enum-comparison` rule ([d03173e](https://github.com/MorevM/eslint-config/commit/d03173e66afad01d65c562e43d4e35c2e41000be))
+
+
+### Chores
+
+* bump @typescript-eslint packages from 5.57.1 to 5.58.0 ([a2ff2db](https://github.com/MorevM/eslint-config/commit/a2ff2db62fcf35ea433aec334c6445ffa54aaf18))
+* bump @html-eslint/eslint-plugin from 0.17.2 to 0.18.0 ([#448](https://github.com/MorevM/eslint-config/issues/448)) ([167997d](https://github.com/MorevM/eslint-config/commit/167997d9e642e0c1d1be7eb6b0b87b28dd8f1571))
+* bump @html-eslint/parser from 0.17.1 to 0.18.0 ([#446](https://github.com/MorevM/eslint-config/issues/446)) ([ba1471a](https://github.com/MorevM/eslint-config/commit/ba1471ad4382a7c7450bdabc3ca728875b64e601))
+* bump eslint-plugin-jsdoc from 40.1.1 to 41.1.1 ([2202d28](https://github.com/MorevM/eslint-config/commit/2202d28c3aa8301e79d2641d31eb71085f1c803e))
+* bump eslint-plugin-vue from 9.10.0 to 9.11.0 ([#450](https://github.com/MorevM/eslint-config/issues/450)) ([b79a984](https://github.com/MorevM/eslint-config/commit/b79a9840b1a605f99583620676f5f35c9976e947))
+
 ### [21.7.1](https://github.com/MorevM/eslint-config/compare/v21.7.0...v21.7.1) (2023-04-08)
 
 
