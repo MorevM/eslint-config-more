@@ -509,6 +509,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-unsafe-declaration-merging
 		'@typescript-eslint/no-unsafe-declaration-merging': 'error',
 
+		// Disallow comparing an enum value with a non-enum value
+		// https://typescript-eslint.io/rules/no-unsafe-enum-comparison
+		'@typescript-eslint/no-unsafe-enum-comparison': 'error',
+
 		// Disallows member access on any typed variables
 		// https://typescript-eslint.io/rules/no-unsafe-member-access
 		'@typescript-eslint/no-unsafe-member-access': 'off',
