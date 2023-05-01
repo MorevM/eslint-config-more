@@ -1,5 +1,22 @@
 
 
+## [22.1.0](https://github.com/MorevM/eslint-config/compare/v22.0.0...v22.1.0) (2023-05-01)
+
+
+### Features
+
+* **base:** Configure `jsdoc/tag-lines` and `jsdoc/sort-tags` rules individually ([fe7ee97](https://github.com/MorevM/eslint-config/commit/fe7ee97656322472370f0bb374cc5203fcf5d11e))
+
+
+### Chores
+
+* bump @typescript-eslint packages from 5.58.0 to 5.59.1 ([b5ae14e](https://github.com/MorevM/eslint-config/commit/b5ae14ecedd413610e4186874413fb8114b254b2))
+* bump eslint from 8.38.0 to 8.39.0 ([#453](https://github.com/MorevM/eslint-config/issues/453)) ([2881915](https://github.com/MorevM/eslint-config/commit/28819154dafa3194168bce48d82796db33221dd5))
+* bump eslint-plugin-cypress from 2.13.2 to 2.13.3 ([#464](https://github.com/MorevM/eslint-config/issues/464)) ([07a5647](https://github.com/MorevM/eslint-config/commit/07a5647043bb24b08d30539bb927c517c9a9491e))
+* bump eslint-plugin-jsdoc from 41.1.1 to 43.0.7 ([427d9e8](https://github.com/MorevM/eslint-config/commit/427d9e8ad2d4bc9aaee8d84e21c68adf4b535658))
+* bump glob from 10.1.0 to 10.2.2 ([#461](https://github.com/MorevM/eslint-config/issues/461)) ([d62c54d](https://github.com/MorevM/eslint-config/commit/d62c54d1a92cc0d02ecacd6f90026e6230df798a))
+* bump lefthook from 1.3.10 to 1.3.12 ([#463](https://github.com/MorevM/eslint-config/issues/463)) ([1f4b33d](https://github.com/MorevM/eslint-config/commit/1f4b33d6e88fa330564f55c5290f6ac90faefb0a))
+
 ## [22.0.0](https://github.com/MorevM/eslint-config/compare/v21.7.1...v22.0.0) (2023-04-15)
 
 
