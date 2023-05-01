@@ -88,10 +88,6 @@ module.exports = {
 			noSingleLineBlocks: true,
 		}],
 
-		// Enforces a consistent padding of the block description (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#newline-after-description
-		'+jsdoc/newline-after-description': ['warn', 'always'],
-
 		// Checks for multi-line-style comments which fail
 		// to meet the criteria of a jsdoc block (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-bad-blocks
@@ -233,13 +229,200 @@ module.exports = {
 		// Sorts tags by a specified sequence according to tag name (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#sort-tags
 		// Note: let it be here with default order for a while
-		'+jsdoc/sort-tags': 'warn',
+		'+jsdoc/sort-tags': ['warn', {
+			tagSequence: [
+				{
+					tags: [
+						// Brief descriptions
+						'summary',
+						'typeSummary',
+					],
+				},
+				{
+					tags: [
+						// Supplementary descriptions
+						'see',
+						'example',
+					],
+				},
+				{
+					tags: [
+						// Non-Closure metadata
+						'ignore',
+						'author',
+						'version',
+						'variation',
+						'since',
+						'deprecated',
+						'todo',
+					],
+				}, {
+					tags: [
+						// Module/file-level
+						'module',
+						'exports',
+						'file',
+						'fileoverview',
+						'overview',
+						// Identifying (name, type)
+						'typedef',
+						'interface',
+						'record',
+						'template',
+						'name',
+						'kind',
+						'type',
+						'alias',
+						'external',
+						'host',
+						'callback',
+						'func',
+						'function',
+						'method',
+						'class',
+						'constructor',
+						// Relationships
+						'modifies',
+						'mixes',
+						'mixin',
+						'mixinClass',
+						'mixinFunction',
+						'namespace',
+						'borrows',
+						'constructs',
+						'lends',
+						'implements',
+						'requires',
+					],
+				},
+				{
+					tags: [
+						// Long descriptions
+						'desc',
+						'description',
+						'classdesc',
+						'tutorial',
+						'copyright',
+						'license',
+					],
+				},
+				{
+					tags: [
+						// Simple annotations
+						'const',
+						'constant',
+						'final',
+						'global',
+						'readonly',
+						'abstract',
+						'virtual',
+						'var',
+						'member',
+						'memberof',
+						'memberof!',
+						'inner',
+						'instance',
+						'inheritdoc',
+						'inheritDoc',
+						'override',
+						'hideconstructor',
+					],
+				},
+				{
+					tags: [
+						// Core function/object info
+						'param',
+						'arg',
+						'argument',
+						'prop',
+						'property',
+					],
+				},
+				{
+					tags: [
+						'return',
+						'returns',
+					],
+				},
+				{
+					tags: [
+						// Important behavior details
+						'async',
+						'generator',
+						'default',
+						'defaultvalue',
+						'enum',
+						'augments',
+						'extends',
+						'throws',
+						'exception',
+						'yield',
+						'yields',
+						'event',
+						'fires',
+						'emits',
+						'listens',
+						'this',
+						// Access
+						'static',
+						'private',
+						'protected',
+						'public',
+						'access',
+						'package',
+					],
+				},
+				{
+					tags: [
+						'-other',
+					],
+				},
+				{
+					tags: [
+						// Other Closure (undocumented) metadata
+						'closurePrimitive',
+						'customElement',
+						'expose',
+						'hidden',
+						'idGenerator',
+						'meaning',
+						'ngInject',
+						'owner',
+						'wizaction',
+
+						// Other Closure (documented) metadata
+						'define',
+						'dict',
+						'export',
+						'externs',
+						'implicitCast',
+						'noalias',
+						'nocollapse',
+						'nocompile',
+						'noinline',
+						'nosideeffects',
+						'polymer',
+						'polymerBehavior',
+						'preserve',
+						'struct',
+						'suppress',
+						'unrestricted',
+
+						// @homer0/prettier-plugin-jsdoc metadata
+						'category',
+					],
+				},
+			],
+		}],
 
 		// Enforces lines (or no lines) between tags (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#tag-lines
-		// Note: `off` because there is no way to force an one empty line before `@returns`
+		// Note: `any` because of previous `sort-tags` rule, which handles this much more granular
 		// Related: https://github.com/gajus/eslint-plugin-jsdoc/issues/782
-		'+jsdoc/tag-lines': ['off', 'never'],
+		'+jsdoc/tag-lines': ['warn', 'any', {
+			startLines: 1,
+			endLines: 0,
+		}],
 
 		// Auto-escape certain characters that are input within block and tag descriptions (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/master/README.md#text-escaping
