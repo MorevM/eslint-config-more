@@ -101,6 +101,10 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-blank-block-descriptions
 		'+jsdoc/no-blank-block-descriptions': ['warn'],
 
+		// Reports and optionally removes blocks with whitespace only (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-blank-blocks.md
+		'+jsdoc/no-blank-blocks': ['warn', { enableFixer: true }],
+
 		// Reports defaults being used on the relevant portion
 		// of `@param` or `@default` (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-defaults
