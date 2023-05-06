@@ -303,6 +303,10 @@ module.exports = {
 		// TODO: [2024-01-01] Review it again
 		'!unicorn/prefer-at': 'off',
 
+		// Prefer `Blob#arrayBuffer()` over F`ileReader#readAsArrayBuffer(…)` and `Blob#text()` over `FileReader#readAsText(…)`.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-blob-reading-methods.md
+		'unicorn/prefer-blob-reading-methods': 'error',
+
 		// Prefer `String#codePointAt(…)` over `String#charCodeAt(…)` and `String.fromCodePoint(…)` over `String.fromCharCode(…)`.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-code-point.md
 		'unicorn/prefer-code-point': 'error',
