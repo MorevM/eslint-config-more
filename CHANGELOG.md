@@ -1,5 +1,33 @@
 
 
+## [23.0.0](https://github.com/MorevM/eslint-config/compare/v22.1.0...v23.0.0) (2023-05-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* **base:** With the new rule `unicorn/prefer-blob-reading-methods` preset `common` becomes more strict.
+
+### Features
+
+* **base:** Add `unicorn/prefer-blob-reading-methods` ([c259d64](https://github.com/MorevM/eslint-config/commit/c259d64c1739eaea8c3cb7271c66052de86dab30))
+* **base:** Add new stylistic rule `jsdoc/no-blank-blocks` ([0b10418](https://github.com/MorevM/eslint-config/commit/0b104181cfb9bafde1a7dd4c72a8d9b595a3f958))
+
+
+### Bug fixes
+
+* **base:** Disable `object-property-newline` rule ([5ed1a50](https://github.com/MorevM/eslint-config/commit/5ed1a50ef483c5c2adb0612a27abb932594dee66))
+
+
+### Chores
+
+* bump @babel/eslint-parser from 7.21.3 to 7.21.8 ([#469](https://github.com/MorevM/eslint-config/issues/469)) ([87bed11](https://github.com/MorevM/eslint-config/commit/87bed1128cd9702b62c3055db1008445ba7e109d))
+* bump @typescript-eslint/eslint-plugin from 5.59.1 to 5.59.2 ([#466](https://github.com/MorevM/eslint-config/issues/466)) ([e171c3b](https://github.com/MorevM/eslint-config/commit/e171c3b6e6a7418b01a74dd8fb5c703d48c42cc0))
+* bump @typescript-eslint/parser from 5.59.1 to 5.59.2 ([#465](https://github.com/MorevM/eslint-config/issues/465)) ([f6f737a](https://github.com/MorevM/eslint-config/commit/f6f737aa7be453562dfeb3ed76b5d7e0da67fdb0))
+* bump eslint from 8.39.0 to 8.40.0 ([bd1db74](https://github.com/MorevM/eslint-config/commit/bd1db74891822e99dd8a7e34bb785518d12a8712))
+* bump eslint-plugin-jsdoc from 43.0.7 to 43.2.0 ([0f36b4b](https://github.com/MorevM/eslint-config/commit/0f36b4b5f7fa01d809a26cba49ea56b71a835fb8))
+* bump eslint-plugin-unicorn from 46.0.0 to 47.0.0 ([d05bdf9](https://github.com/MorevM/eslint-config/commit/d05bdf9b32b797f6aac6d9f9dc519f0376638c56))
+* bump vue-eslint-parser from 9.1.1 to 9.2.0 ([#470](https://github.com/MorevM/eslint-config/issues/470)) ([27c423f](https://github.com/MorevM/eslint-config/commit/27c423fefc2c60ec361f3f7c6017b11158585ae5))
+
 ## [22.1.0](https://github.com/MorevM/eslint-config/compare/v22.0.0...v22.1.0) (2023-05-01)
 
 
