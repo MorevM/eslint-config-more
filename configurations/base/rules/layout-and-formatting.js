@@ -259,7 +259,7 @@ module.exports = {
 
 		// Enforce `same line` or `multiple line` on object properties (autofixable but unsafe cause indent)
 		// https://eslint.org/docs/rules/object-property-newline
-		'!object-property-newline': ['error', {
+		'object-property-newline': ['off', {
 			allowAllPropertiesOnSameLine: true,
 		}],
 
