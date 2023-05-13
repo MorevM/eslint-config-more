@@ -71,6 +71,10 @@ module.exports = {
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/no-tab-indent.html
 		'yml/no-tab-indent': 'error',
 
+		// Disallow trailing zeros for floats (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-yml/rules/no-tab-indent.html
+		'+yml/no-trailing-zeros': 'error',
+
 		// Require or disallow plain style scalar (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/plain-scalar.html
 		'+yml/plain-scalar': ['warn', 'always', {
