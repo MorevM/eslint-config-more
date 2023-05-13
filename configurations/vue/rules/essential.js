@@ -40,7 +40,9 @@ module.exports = {
 
 		// Disallow mutation of component props
 		// https://eslint.vuejs.org/rules/no-mutating-props.html
-		'vue/no-mutating-props': 'error',
+		'vue/no-mutating-props': ['error', {
+			shallowOnly: true,
+		}],
 
 		// Disallow parsing errors in `<template>`
 		// https://eslint.vuejs.org/rules/no-parsing-error.html
