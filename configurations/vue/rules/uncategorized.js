@@ -193,6 +193,12 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/no-restricted-v-bind.html
 		'vue/no-restricted-v-bind': 'off',
 
+		// Disallow v-if directives on `root` element
+		// https://eslint.vuejs.org/rules/no-root-v-if.html
+		// Although this is obviously should be an error in a new projects (especially written in TS),
+		// there are a lot of legacy projects that use such functionality and do it conveniently.
+		'vue/no-root-v-if': 'off',
+
 		// Disallow static inline style attributes
 		// https://eslint.vuejs.org/rules/no-static-inline-styles.html
 		'vue/no-static-inline-styles': ['warn', {
