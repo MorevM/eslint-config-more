@@ -17,5 +17,9 @@ module.exports = {
 		// Require type definitions in emits
 		// https://eslint.vuejs.org/rules/require-emit-validator.html
 		'vue/require-emit-validator': 'error',
+
+		// Enforce valid `defineOptions` compiler macro
+		// https://eslint.vuejs.org/rules/valid-define-options.html
+		'vue/valid-define-options': 'error',
 	},
 };
