@@ -129,8 +129,7 @@ module.exports = {
 
 		// Enforce or disallow the use of the record type (autofixable)
 		// https://typescript-eslint.io/rules/consistent-indexed-object-style
-		// TODO: [2023-05-11] Take a look
-		'+@typescript-eslint/consistent-indexed-object-style': 'off',
+		'+@typescript-eslint/consistent-indexed-object-style': ['warn', 'record'],
 
 		// Enforces consistent usage of type assertions (autofixable)
 		// https://typescript-eslint.io/rules/consistent-type-assertions
