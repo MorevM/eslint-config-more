@@ -473,7 +473,7 @@ module.exports = {
 
 		// Prevents conditionals where the type is always truthy or always falsy (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-condition
-		'+@typescript-eslint/no-unnecessary-condition': 'warn',
+		'+@typescript-eslint/no-unnecessary-condition': 'off',
 
 		// Warns when a namespace qualifier is unnecessary (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-qualifier
