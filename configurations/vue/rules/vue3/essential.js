@@ -111,6 +111,10 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/no-watch-after-await.html
 		'vue/no-watch-after-await': 'error',
 
+		// Enforce import from `vue` instead of import from `@vue/*`
+		// https://eslint.vuejs.org/rules/prefer-import-from-vue.html
+		'vue/prefer-import-from-vue': 'error',
+
 		// Enforce properties of `$slots` to be used as a function
 		// https://eslint.vuejs.org/rules/require-slots-as-functions.html
 		'vue/require-slots-as-functions': 'error',
