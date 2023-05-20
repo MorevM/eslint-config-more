@@ -35,7 +35,7 @@ const rulesToExtend = [
 	'+operator-linebreak',
 	// It seems https://github.com/JuniorTour/vue-template-babel-compiler
 	// not stable, turned off for a while
-	// TODO: [2023-05-11] Try again with vue-template-babel-compiler
+	// TODO: [2024-05-11] Try again with vue-template-babel-compiler
 	// '!prefer-template', // autofix works strange sometimes
 	'+quote-props',
 	'+space-in-parens',

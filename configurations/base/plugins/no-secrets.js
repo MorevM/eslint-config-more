@@ -6,7 +6,7 @@ module.exports = {
 		 * Now i'm too busy to investigate into it, but anyway rule reports
 		 * well-known secrets like AWS fine
 		 *
-		 * TODO: [2023-05-11] Review
+		 * TODO: [2024-05-11] Review
 		 */
 		'no-secrets/no-secrets': ['error', {
 			tolerance: 99,

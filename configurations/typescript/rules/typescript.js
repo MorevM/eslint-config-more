@@ -140,7 +140,7 @@ module.exports = {
 
 		// Consistent with type definition either interface or type (autofixable)
 		// https://typescript-eslint.io/rules/consistent-type-definitions
-		// TODO: [2023-05-11] Let this rule be turned off for a while
+		// Note: I believe it's really debatable on a holywar level
 		'+@typescript-eslint/consistent-type-definitions': 'off',
 
 		// Enforces consistent usage of type exports (autofixable) (SETTINGS)
@@ -180,7 +180,6 @@ module.exports = {
 
 		// Require explicit accessibility modifiers on class properties and methods (autofixable but confusing)
 		// https://typescript-eslint.io/rules/explicit-member-accessibility
-		// TODO: [2023-05-11] Watch later MIXED
 		'!@typescript-eslint/explicit-member-accessibility': 'error',
 
 		// MIXED
@@ -237,7 +236,7 @@ module.exports = {
 
 		// Require a consistent member declaration order
 		// https://typescript-eslint.io/rules/member-ordering
-		// TODO: [2023-05-11] Way too long for now :D
+		// Note: I believe developer knows better
 		'@typescript-eslint/member-ordering': 'off',
 
 		// Enforces using a particular method signature syntax (autofixable)
@@ -463,7 +462,6 @@ module.exports = {
 
 		// Disallow the use of type aliases
 		// https://typescript-eslint.io/rules/no-type-alias
-		// TODO: [2023-05-11]
 		'@typescript-eslint/no-type-alias': 'off',
 
 		// Flags unnecessary equality comparisons against boolean literals

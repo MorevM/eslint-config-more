@@ -82,7 +82,7 @@ module.exports = {
 
 		// Disallow large snapshots
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-large-snapshots.md
-		// @TODO [2023-05-11]: Think about it later
+		// @TODO [2024-05-11]: Think about it later
 		'jest/no-large-snapshots': ['off', { maxSize: 12, inlineMaxSize: 6 }],
 
 		// Disallow manually importing from `__mocks__`
