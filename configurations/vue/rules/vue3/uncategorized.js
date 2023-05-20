@@ -6,6 +6,10 @@ module.exports = {
 			order: ['defineProps', 'defineEmits'],
 		}],
 
+		// Enforce use of `defineOptions` instead of default export (autofixable)
+		// https://eslint.vuejs.org/rules/prefer-define-options.html
+		'+vue/prefer-define-options': 'error',
+
 		// Require declare public properties using `expose`
 		// https://eslint.vuejs.org/rules/require-expose.html
 		'vue/require-expose': 'error',
