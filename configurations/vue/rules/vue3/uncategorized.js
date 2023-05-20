@@ -3,7 +3,7 @@ module.exports = {
 		// Enforce order of `defineEmits` and `defineProps` compiler macros (autofixable)
 		// https://eslint.vuejs.org/rules/define-macros-order.html
 		'+vue/define-macros-order': ['warn', {
-			order: ['defineProps', 'defineEmits'],
+			order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'],
 		}],
 
 		// Enforce use of `defineOptions` instead of default export (autofixable)
