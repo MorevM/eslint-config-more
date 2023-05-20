@@ -1,5 +1,31 @@
 
 
+## [24.0.0](https://github.com/MorevM/eslint-config/compare/v23.0.0...v24.0.0) (2023-05-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vue3:** With new rule `vue/valid-define-options` vue3 configs/presets become more strict.
+* **vue3:** With new rule `vue/prefer-define-options` vue3 configs/presets become more strict. Although the rule is autofixable, there may be significant side-effects.
+
+### Features
+
+* **base:** Enable `logical-assignment-operators` rule ([9b2b8e2](https://github.com/MorevM/eslint-config/commit/9b2b8e20f0a269887a9f554f15771672f341c79b))
+* **base:** Enable `unicorn/prefer-logical-operator-over-ternary` rule ([128ef15](https://github.com/MorevM/eslint-config/commit/128ef15db4d9e03c1494a031c11b28cc17850490))
+* **typescript:** Enable `@typescript-eslint/consistent-indexed-object-style` rule ([16f7ae2](https://github.com/MorevM/eslint-config/commit/16f7ae22bf2818a382607922389491172d6f0dab))
+* **typescript:** Enable `@typescript-eslint/no-unnecessary-boolean-literal-compare` rule ([01c2ef4](https://github.com/MorevM/eslint-config/commit/01c2ef4422f8b1cf2c2ed2d0202b600b20c00ab1))
+* **vue3:** Add `vue/prefer-define-options` rule ([b55666e](https://github.com/MorevM/eslint-config/commit/b55666ef3f266746f80f43e98e8155ed98f73bd5))
+* **vue3:** Add `vue/valid-define-options` rule ([85d8879](https://github.com/MorevM/eslint-config/commit/85d88795695a2e9ed476c904426c165f2eaf456e))
+* **vue3:** Take care about `defineOptions` and `defineSlots` in `vue/define-macros-order` ([9fd0281](https://github.com/MorevM/eslint-config/commit/9fd02819c451e527455d471e7ad696fa51da776a))
+* **vue:** Allow to modify a prop property inside child components ([0825269](https://github.com/MorevM/eslint-config/commit/08252690563f3eca587760e0afc4b5e703d1f0bf))
+* **vue:** Take care of `vue/no-root-v-if` rule ([6e7375e](https://github.com/MorevM/eslint-config/commit/6e7375e071933d5264ff0c2f8fb452ade1d1f850))
+* **yaml:** Add `yml/no-trailing-zeros` rule ([1c9fc0b](https://github.com/MorevM/eslint-config/commit/1c9fc0b1f46973526696059ff2474ebb1ba97cc2))
+
+### Refactoring
+
+* Take care about past TODO comments ([c73fc7c](https://github.com/MorevM/eslint-config/commit/c73fc7c8129835bb8c0ac08498091f6135c29f95))
+* **vue3:** Better rules consistency across the categories ([aef2d40](https://github.com/MorevM/eslint-config/commit/aef2d4062efb2147acaf4fcdf30d9f6a5cf3ecd2))
+
 ## [23.0.0](https://github.com/MorevM/eslint-config/compare/v22.1.0...v23.0.0) (2023-05-07)
 
 
