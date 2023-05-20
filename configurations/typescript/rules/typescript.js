@@ -464,10 +464,12 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-type-alias
 		'@typescript-eslint/no-type-alias': 'off',
 
-		// Flags unnecessary equality comparisons against boolean literals
+		// Flags unnecessary equality comparisons against boolean literals (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
-		// TODO: [2023-05-11]
-		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
+		'+@typescript-eslint/no-unnecessary-boolean-literal-compare': ['warn', {
+			allowComparingNullableBooleansToTrue: true,
+			allowComparingNullableBooleansToFalse: true,
+		}],
 
 		// Prevents conditionals where the type is always truthy or always falsy (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-condition
