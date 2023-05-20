@@ -505,10 +505,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@8.40.0":
-  version "8.40.0"
-  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.40.0.tgz#3ba73359e11f5a7bd3e407f70b3528abfae69cec"
-  integrity sha512-ElyB54bJIhXQYVKjDSvCkPO1iU1tSAeVQJbllWJq1XQSmmA4dgFk8CbiBGpiOPxleE48vDogxCtmMYku4HSVLA==
+"@eslint/js@8.41.0":
+  version "8.41.0"
+  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.41.0.tgz#080321c3b68253522f7646b55b577dd99d2950b3"
+  integrity sha512-LxcyMGxwmTh2lY9FwHPGWOHmYFCZvbrFCBZL4FzSSsxsRPuhrYUg/49/0KDfW8tnIEaEHtfmn6+NPN+1DqaNmA==
 
 "@html-eslint/eslint-plugin@^0.19.0":
   version "0.19.0"
@@ -2869,15 +2869,15 @@ eslint-visitor-keys@^3.0.0, eslint-visitor-keys@^3.3.0, eslint-visitor-keys@^3.4
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.4.1.tgz#c22c48f48942d08ca824cc526211ae400478a994"
   integrity sha512-pZnmmLwYzf+kWaM/Qgrvpen51upAktaaiI01nsJD/Yr3lMOdNtq0cxkrrg16w64VtisN6okbs7Q8AfGqj4c9fA==
 
-eslint@^8.40.0:
-  version "8.40.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.40.0.tgz#a564cd0099f38542c4e9a2f630fa45bf33bc42a4"
-  integrity sha512-bvR+TsP9EHL3TqNtj9sCNJVAFK3fBN8Q7g5waghxyRsPLIMwL73XSKnZFK0hk/O2ANC+iAoq6PWMQ+IfBAJIiQ==
+eslint@^8.41.0:
+  version "8.41.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.41.0.tgz#3062ca73363b4714b16dbc1e60f035e6134b6f1c"
+  integrity sha512-WQDQpzGBOP5IrXPo4Hc0814r4/v2rrIsB0rhT7jtunIalgg6gYXWhRMOejVO8yH21T/FGaxjmFjBMNqcIlmH1Q==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@eslint-community/regexpp" "^4.4.0"
     "@eslint/eslintrc" "^2.0.3"
-    "@eslint/js" "8.40.0"
+    "@eslint/js" "8.41.0"
     "@humanwhocodes/config-array" "^0.11.8"
     "@humanwhocodes/module-importer" "^1.0.1"
     "@nodelib/fs.walk" "^1.2.8"
@@ -2897,13 +2897,12 @@ eslint@^8.40.0:
     find-up "^5.0.0"
     glob-parent "^6.0.2"
     globals "^13.19.0"
-    grapheme-splitter "^1.0.4"
+    graphemer "^1.4.0"
     ignore "^5.2.0"
     import-fresh "^3.0.0"
     imurmurhash "^0.1.4"
     is-glob "^4.0.0"
     is-path-inside "^3.0.3"
-    js-sdsl "^4.1.4"
     js-yaml "^4.1.0"
     json-stable-stringify-without-jsonify "^1.0.1"
     levn "^0.4.1"
@@ -3337,15 +3336,15 @@ glob-parent@^6.0.2:
   dependencies:
     is-glob "^4.0.3"
 
-glob@^10.2.3:
-  version "10.2.3"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-10.2.3.tgz#aa6765963fe6c5936d5c2e00943e7af06302a1a7"
-  integrity sha512-Kb4rfmBVE3eQTAimgmeqc2LwSnN0wIOkkUL6HmxEFxNJ4fHghYHVbFba/HcGcRjE6s9KoMNK3rSOwkL4PioZjg==
+glob@^10.2.5:
+  version "10.2.5"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-10.2.5.tgz#73c1850ac8f077810d8370ba414b382ad1a86083"
+  integrity sha512-Gj+dFYPZ5hc5dazjXzB0iHg2jKWJZYMjITXYPBRQ/xc2Buw7H0BINknRTwURJ6IC6MEFpYbLvtgVb3qD+DwyuA==
   dependencies:
     foreground-child "^3.1.0"
     jackspeak "^2.0.3"
     minimatch "^9.0.0"
-    minipass "^5.0.0"
+    minipass "^5.0.0 || ^6.0.2"
     path-scurry "^1.7.0"
 
 glob@^7.0.0, glob@^7.1.3, glob@^7.1.4, glob@^7.2.0:
@@ -3445,6 +3444,11 @@ grapheme-splitter@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
   integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
+
+graphemer@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
+  integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
 handlebars@^4.7.7:
   version "4.7.7"
@@ -4403,11 +4407,6 @@ jest@^29.5.0:
     import-local "^3.0.2"
     jest-cli "^29.5.0"
 
-js-sdsl@^4.1.4:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/js-sdsl/-/js-sdsl-4.1.5.tgz#1ff1645e6b4d1b028cd3f862db88c9d887f26e2a"
-  integrity sha512-08bOAKweV2NUC1wqTtf3qZlnpOX/R2DU9ikpjOHs0H+ibQv3zpncVQg6um4uYtRtrwIX8M4Nh3ytK4HGlYAq7Q==
-
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -4555,59 +4554,59 @@ latest-version@^7.0.0:
   dependencies:
     package-json "^8.1.0"
 
-lefthook-darwin-arm64@1.3.13:
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/lefthook-darwin-arm64/-/lefthook-darwin-arm64-1.3.13.tgz#72bbe2393dcfc2eccfae34bd5c127b44109f9690"
-  integrity sha512-Hzp/Y7wvphOOsIoAKb5DZaFi6UFSOrYrMd+iR/4p8WxtQGMvO8XEklQe3bt/jElYKDJWFJz4dQPumGwk6Qqijw==
+lefthook-darwin-arm64@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lefthook-darwin-arm64/-/lefthook-darwin-arm64-1.4.0.tgz#5971993edfc7c3ed2d8006735f68dba9fa200ea7"
+  integrity sha512-twHaNz/QLB2UWvYh/+a630uzfjqs1hBn1EB+uPoL+I2eWjndXTi7DLoXpWgkVNCns+hqtrJy3HF5ZHOTS+DstQ==
 
-lefthook-darwin-x64@1.3.13:
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/lefthook-darwin-x64/-/lefthook-darwin-x64-1.3.13.tgz#24157a127615294457aa7ff0f9b89fadf036435c"
-  integrity sha512-NBSsmvlp7zYiuRJS5l21fqFTVdEIARnzsiy6QmdNOjGmtw5kodjXK3f8HCbZeR5ZfM1XcrOKd0hTiOTO98Aizw==
+lefthook-darwin-x64@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lefthook-darwin-x64/-/lefthook-darwin-x64-1.4.0.tgz#1f30a2cce71646e1b8e0557ef0a5c931b6b60b5c"
+  integrity sha512-NU8Kq9rtZqcrnWsBOQm9lpzFxIiYSHiOutjZx4u82ewuyC3xjKFNDCNwbnuzOLb1teqbGQIPPVrA9LbEoHE9wg==
 
-lefthook-freebsd-arm64@1.3.13:
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/lefthook-freebsd-arm64/-/lefthook-freebsd-arm64-1.3.13.tgz#16a64b050c556380e3a46204136829f737301308"
-  integrity sha512-etFhJ7Y5EvFTF5oOnlZ6I0hdT6vCjbyLRucHu8VhH5sO/P9xF0sTGJfCNcMEfyg+DaO3bMU9p+8ibOSHo0g04g==
+lefthook-freebsd-arm64@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lefthook-freebsd-arm64/-/lefthook-freebsd-arm64-1.4.0.tgz#fbb932196f3a5f6be4482e4e969ecc0968762422"
+  integrity sha512-yVn1z3zznU4JKe+TBQn7MFELsmtJk0rv4zMmqwExCQZeDBn8bhpNiUKYyCEzVUfLSJ8GMpJ/GZArNI5NReaXzA==
 
-lefthook-freebsd-x64@1.3.13:
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/lefthook-freebsd-x64/-/lefthook-freebsd-x64-1.3.13.tgz#396f5a771ae5c2b24f06fd2de1fd540a309bb0ee"
-  integrity sha512-qK8kySLBsZ76s+AEbKWrB9BQJLw295MgD0/HoKljTEoifmNQLPG/lS/R/9loZUwEuvi95BGiIZXPmlc1qee5nA==
+lefthook-freebsd-x64@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lefthook-freebsd-x64/-/lefthook-freebsd-x64-1.4.0.tgz#92c11d3593d75e0cd4816f42a653ee09c100d8ab"
+  integrity sha512-6oO17qqRxAfHpJkDocgBpHkm2FxBqAkksBbt2FpBupBeuRB9SLhHEZIaGRtPVK4+m6mKxxsQmSUPqYU2O7Kv+w==
 
-lefthook-linux-arm64@1.3.13:
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/lefthook-linux-arm64/-/lefthook-linux-arm64-1.3.13.tgz#c326998012229ba5778e96114758ade19e1f1fc4"
-  integrity sha512-9jIRV5w2TwzHNwC4HVdeWKP14zmdQ2aPjlWlYmUbToyA8flVcOHGYo+EyzrIlmEvUDyosaygTAdKIbPvf+VnxQ==
+lefthook-linux-arm64@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lefthook-linux-arm64/-/lefthook-linux-arm64-1.4.0.tgz#155cf19bdefcdf0bad4faeb6bb615169f9362ffc"
+  integrity sha512-eB1y0xGVZc9D3O4CNlUmcHHEMGKRhfGQL4BqOXB9XrniCNgasemAT329UZ31XgARjj/1Jj1aGkCZuu3aV6O4Ow==
 
-lefthook-linux-x64@1.3.13:
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/lefthook-linux-x64/-/lefthook-linux-x64-1.3.13.tgz#2c37a55b87d01b647bcfdfadebb141b2cc17436d"
-  integrity sha512-vJq+6RCSsS0BsE3lJuZwBOFMbCpRajFwUrN+igGlQTR//9kPFzNLgd4541zI9+a9BW888J66urrAnWT9sLrrYw==
+lefthook-linux-x64@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lefthook-linux-x64/-/lefthook-linux-x64-1.4.0.tgz#fdd049a608724696328a2d2e9663354dd0737795"
+  integrity sha512-mjIuowW1RDeerYzX59+EEcjnElErnpsBNpGf6CpRCnXJmn2oSJZVAZFcB+PxWhQM8GQVfBcuTLqAMhCTOAhwRw==
 
-lefthook-windows-arm64@1.3.13:
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/lefthook-windows-arm64/-/lefthook-windows-arm64-1.3.13.tgz#b148f60f44fb7b5724d35cbe249232bea82af554"
-  integrity sha512-PsH1r2lAxcFONMvQKDOXrFOa5poilS4J4XkImn/NDnz3inHmLTU48JzSbBaK7ckgtd6firCTkgdBibgynmikFA==
+lefthook-windows-arm64@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lefthook-windows-arm64/-/lefthook-windows-arm64-1.4.0.tgz#567d39754629a6aea1775b99bfd1d606dfce61ca"
+  integrity sha512-oR0L+lg9WOQx6h4w8qn2QvAT8YDqdPZhkMwINiMWYNwys1W+6nBzR5i/cH+3MYbFVQEQD65Ew2pMaAj3PQIwNg==
 
-lefthook-windows-x64@1.3.13:
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/lefthook-windows-x64/-/lefthook-windows-x64-1.3.13.tgz#eabc343ab417a43a96d99b886f36fc3e1d3bef30"
-  integrity sha512-/9dGrg/l1ddaqIWYS3jl3CI85KE5gULQV5WJIAcjJLwUuPIwVcdxHTc0txrnhNevWhJ1tutJRSJChvcXQ3MFqw==
+lefthook-windows-x64@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lefthook-windows-x64/-/lefthook-windows-x64-1.4.0.tgz#34672b8ee625dddb9a6dbb796577c0a20b465aac"
+  integrity sha512-EyznZ+hukQKcFFRHX/SjWj5AVm5XDkEKL41cZTkcsU4b/GwYSBcyFE66tyOH8LGJBvizj+nUjC+n02jKUoZHVg==
 
-lefthook@^1.3.13:
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/lefthook/-/lefthook-1.3.13.tgz#960ceaef35e443191eadf1824d80ae6cfc92a283"
-  integrity sha512-ENRzmh6Mqjh6y5ZhHal+A9q8Wa9MlWxKQnLEdKvqi4XndaNEaB1M7Rrzi1SRNa/2SCPdTlbg3PWnrXGXfLVQ6A==
+lefthook@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lefthook/-/lefthook-1.4.0.tgz#9139f10f0367fc87a54792445a677a025d31e624"
+  integrity sha512-StVaMN+u8xORPAKzsmvgRcH825xgvJvoTsXTo3hE2Pha1r3SikQkJmQG8EZeqmQM50b6zv8ydUEM4anCs+cY+w==
   optionalDependencies:
-    lefthook-darwin-arm64 "1.3.13"
-    lefthook-darwin-x64 "1.3.13"
-    lefthook-freebsd-arm64 "1.3.13"
-    lefthook-freebsd-x64 "1.3.13"
-    lefthook-linux-arm64 "1.3.13"
-    lefthook-linux-x64 "1.3.13"
-    lefthook-windows-arm64 "1.3.13"
-    lefthook-windows-x64 "1.3.13"
+    lefthook-darwin-arm64 "1.4.0"
+    lefthook-darwin-x64 "1.4.0"
+    lefthook-freebsd-arm64 "1.4.0"
+    lefthook-freebsd-x64 "1.4.0"
+    lefthook-linux-arm64 "1.4.0"
+    lefthook-linux-x64 "1.4.0"
+    lefthook-windows-arm64 "1.4.0"
+    lefthook-windows-x64 "1.4.0"
 
 leven@^3.1.0:
   version "3.1.0"
@@ -4952,6 +4951,11 @@ minipass@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-5.0.0.tgz#3e9788ffb90b694a5d0ec94479a45b5d8738133d"
   integrity sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==
+
+"minipass@^5.0.0 || ^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/minipass/-/minipass-6.0.2.tgz#542844b6c4ce95b202c0995b0a471f1229de4c81"
+  integrity sha512-MzWSV5nYVT7mVyWCwn2o7JH13w2TBRmmSqSRCKzTw+lmft9X4z+3wjvs06Tzijo5z4W/kahUCDpRXTF+ZrmF/w==
 
 modify-values@^1.0.0:
   version "1.0.1"
