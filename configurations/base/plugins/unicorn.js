@@ -334,6 +334,10 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-json-parse-buffer.md
 		'+unicorn/prefer-json-parse-buffer': 'warn',
 
+		// Prefer using a logical operator over a ternary (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-logical-operator-over-ternary.md
+		'+unicorn/prefer-logical-operator-over-ternary': 'warn',
+
 		// Enforce the use of `Math.trunc` instead of bitwise operators (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-trunc.md
 		'+unicorn/prefer-math-trunc': 'warn',
