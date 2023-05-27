@@ -789,8 +789,7 @@ module.exports = {
 
 		// Enforce consistent spacing after the `//` or `/*` in a comment (autofixable)
 		// https://eslint.org/docs/rules/spaced-comment
-		// Note: just inherited from `airbnb` config
-		'spaced-comment': ['error', 'always', {
+		'+spaced-comment': ['warn', 'always', {
 			line: {
 				exceptions: ['-', '+', '='],
 				markers: ['=', '!', '/'], // slash for TS /// comments
