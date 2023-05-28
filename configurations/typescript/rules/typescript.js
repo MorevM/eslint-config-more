@@ -129,7 +129,10 @@ module.exports = {
 
 		// Enforce or disallow the use of the record type (autofixable)
 		// https://typescript-eslint.io/rules/consistent-indexed-object-style
-		'+@typescript-eslint/consistent-indexed-object-style': ['warn', 'record'],
+		// Note: `record` is preferred as more readable, but the `index-signature` option
+		// provides extra information about the key name, that is necessary sometimes.
+		// In other words, "developer knows better"
+		'+@typescript-eslint/consistent-indexed-object-style': ['off', 'record'],
 
 		// Enforces consistent usage of type assertions (autofixable)
 		// https://typescript-eslint.io/rules/consistent-type-assertions
