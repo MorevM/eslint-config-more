@@ -1,5 +1,21 @@
 
 
+## [24.0.1](https://github.com/MorevM/eslint-config/compare/v24.0.0...v24.0.1) (2023-05-28)
+
+
+### Chores
+
+* bump @typescript-eslint 5.59.6 to 5.59.7 ([#497](https://github.com/MorevM/eslint-config/issues/497)) ([836d71a](https://github.com/MorevM/eslint-config/commit/836d71a585be6151b023ca1c80bd604a990a5113))
+* bump eslint-plugin-jsdoc from 44.2.4 to 44.2.7 ([#500](https://github.com/MorevM/eslint-config/issues/500)) ([1e04576](https://github.com/MorevM/eslint-config/commit/1e045762de047b07646dc4d4a87314f004ac7642))
+* Bump eslint-plugin-vue from 9.13.0 to 9.14.1 ([75ff421](https://github.com/MorevM/eslint-config/commit/75ff42149b2e742a9018dd8bc79617afc9c5c5db))
+
+
+### Bug fixes
+
+* **base:** Add autofix and decrease severity for `spaced-comment` rule ([66692dd](https://github.com/MorevM/eslint-config/commit/66692dd0f157ae150fd8d2f9f60a159c45aff1de))
+* **typescript:** Disable `@typescript-eslint/consistent-indexed-object-style` rule ([29e0caa](https://github.com/MorevM/eslint-config/commit/29e0caaf17cd50a28b755f4f725e8d55ac3d3e6e))
+* **typescript:** Disable `@typescript-eslint/no-unnecessary-condition` rule ([09f1f71](https://github.com/MorevM/eslint-config/commit/09f1f7143d104f92755fd31f27b2cbd19e3727e8))
+
 ## [24.0.0](https://github.com/MorevM/eslint-config/compare/v23.0.0...v24.0.0) (2023-05-20)
 
 
