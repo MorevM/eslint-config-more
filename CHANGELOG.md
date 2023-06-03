@@ -1,5 +1,20 @@
 
 
+## [24.1.0](https://github.com/MorevM/eslint-config/compare/v24.0.1...v24.1.0) (2023-06-03)
+
+
+### Features
+
+* **base:** Add `jsdoc/imports-as-dependencies` rule ([151613a](https://github.com/MorevM/eslint-config/commit/151613ae4f7e6e3f38c05c7d960ea8f94022b468))
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 5.59.7 to 5.59.8 ([#504](https://github.com/MorevM/eslint-config/issues/504)) ([465bc84](https://github.com/MorevM/eslint-config/commit/465bc842a6c1326723aea6e5152d9a3b068bfd56))
+* bump @typescript-eslint/parser from 5.59.7 to 5.59.8 ([#510](https://github.com/MorevM/eslint-config/issues/510)) ([a580e9f](https://github.com/MorevM/eslint-config/commit/a580e9f2e91bceb13ce33cb170548f1b2a13313c))
+* bump eslint from 8.41.0 to 8.42.0 ([#507](https://github.com/MorevM/eslint-config/issues/507)) ([0e37f00](https://github.com/MorevM/eslint-config/commit/0e37f0064d34bc1956ddf09e005e1849c754edf4))
+* bump eslint-plugin-jsdoc from 44.2.7 to 46.2.0 ([758c14c](https://github.com/MorevM/eslint-config/commit/758c14c1a06623f3b1c7bba02d42f08bfa735316))
+
 ## [24.0.1](https://github.com/MorevM/eslint-config/compare/v24.0.0...v24.0.1) (2023-05-28)
 
 
