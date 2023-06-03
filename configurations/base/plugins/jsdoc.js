@@ -68,6 +68,11 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#implements-on-classes
 		'jsdoc/implements-on-classes': 'error',
 
+		// This rule will report an issue if JSDoc `import()` statements point to
+		// a package which is not listed in `dependencies` or `devDependencies`.
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/imports-as-dependencies.md
+		'jsdoc/imports-as-dependencies': 'error',
+
 		// Reports on JSDoc texts that serve only to restart their attached name.
 		// https://github.com/gajus/eslint-plugin-jsdoc#informative-docs
 		'jsdoc/informative-docs': 'off',
