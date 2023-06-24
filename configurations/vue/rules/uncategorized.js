@@ -236,7 +236,7 @@ module.exports = {
 
 		// Disallow unused properties
 		// https://eslint.vuejs.org/rules/no-unused-properties.html
-		'vue/no-unused-properties': ['error', {
+		'vue/no-unused-properties': ['warn', {
 			groups: ['props', 'data', 'computed', 'methods'],
 			deepData: false, // some external libraries defaults
 			ignorePublicMembers: true,
