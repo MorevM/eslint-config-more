@@ -169,6 +169,10 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/no-restricted-class.html
 		'vue/no-restricted-class': 'off',
 
+		// Disallow specific component names
+		// https://eslint.vuejs.org/rules/no-restricted-component-names.html
+		'vue/no-restricted-component-names': 'off',
+
 		// Disallow specific component option
 		// https://eslint.vuejs.org/rules/no-restricted-component-options.html
 		'vue/no-restricted-component-options': 'off',
