@@ -85,6 +85,10 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/match-component-import-name.html
 		'vue/match-component-import-name': 'error',
 
+		// Enforce maximum number of lines in Vue SFC blocks
+		// https://eslint.vuejs.org/rules/max-lines-per-block.html
+		'vue/max-lines-per-block': 'off',
+
 		// Enforce new lines between multi-line properties in Vue components (autofixable)
 		// https://eslint.vuejs.org/rules/new-line-between-multi-line-property.html
 		// Note: developer knows better
