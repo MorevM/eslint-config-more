@@ -325,6 +325,16 @@ module.exports = {
 		// Vue3 only
 		// 'vue/require-expose': 'error',
 
+		// Require a certain macro variable name
+		// https://eslint.vuejs.org/rules/require-macro-variable-name.html
+		'vue/require-macro-variable-name': ['error', {
+			defineProps: '$props',
+			defineEmits: '$emit',
+			defineSlots: '$slots',
+			useSlots: '$slots',
+			useAttrs: '$attrs',
+		}],
+
 		// Require a name property in Vue components
 		// https://eslint.vuejs.org/rules/require-name-property.html
 		'vue/require-name-property': 'error',
