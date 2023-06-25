@@ -354,6 +354,10 @@ module.exports = {
 			type: 'any',
 		}],
 
+		// Require `ref` and `shallowRef` functions to be strongly typed
+		// https://eslint.vuejs.org/rules/require-typed-ref.html
+		'vue/require-typed-ref': 'warn',
+
 		// Enforce consistent indentation in `<script>` (autofixable)
 		// https://eslint.vuejs.org/rules/script-indent.html
 		'+vue/script-indent': ['error', 'tab', {
