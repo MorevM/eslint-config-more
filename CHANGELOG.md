@@ -1,5 +1,35 @@
 
 
+## [24.2.0](https://github.com/MorevM/eslint-config/compare/v24.1.0...v24.2.0) (2023-06-25)
+
+
+### Features
+
+* **vue:** Add `vue/no-console` rule that extends the base ESLint `no-console` ([951b476](https://github.com/MorevM/eslint-config/commit/951b4762679f1cd4a6c7260bceec57783d0e0e83))
+* **vue:** Add `vue/require-macro-variable-name` rule ([727530d](https://github.com/MorevM/eslint-config/commit/727530d99de31153b151cec2a7f137a502ab40ed))
+* **vue:** Add `vue/require-typed-ref` rule ([6473da1](https://github.com/MorevM/eslint-config/commit/6473da158eb9311c1fdbbb74ca1fb224d0251a48))
+* **vue:** Take account of `vue/max-lines-per-block` rule ([937a8e2](https://github.com/MorevM/eslint-config/commit/937a8e220a48bf2cde4783b8c96c125ec14b0cdf))
+* **vue:** Take account of `vue/no-restricted-component-names` rule ([f6d9e60](https://github.com/MorevM/eslint-config/commit/f6d9e605b341f42256b319d830ebdcf9afee261e))
+
+
+### Bug fixes
+
+* **base:** Set `max-len` rule severity to `warn` ([52c39b6](https://github.com/MorevM/eslint-config/commit/52c39b6b0734f328f5936260fcfd2842327d756a))
+* **vue:** Set severity of `vue/no-unused-properties` to `warn` ([b77a201](https://github.com/MorevM/eslint-config/commit/b77a20145bb5e756914c5d042f11ed1316887445))
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 5.59.11 to 5.60.0 ([#531](https://github.com/MorevM/eslint-config/issues/531)) ([b195a68](https://github.com/MorevM/eslint-config/commit/b195a68ac7d4b8f230adad4bce5515e58a2cc604))
+* bump @typescript-eslint/parser from 5.59.11 to 5.60.0 ([#528](https://github.com/MorevM/eslint-config/issues/528)) ([7af9c0e](https://github.com/MorevM/eslint-config/commit/7af9c0ef73908f9e8c719452870848b07548f489))
+* bump eslint-plugin-vue from 9.14.1 to 9.15.1 ([56d52fb](https://github.com/MorevM/eslint-config/commit/56d52fbd2ad92e3068147c7e724ef145376e31d4))
+* bump eslint from 8.42.0 to 8.43.0 ([#525](https://github.com/MorevM/eslint-config/issues/525)) ([fda4d0a](https://github.com/MorevM/eslint-config/commit/fda4d0a97dabf07fc0f14b5a0248de7df7a5fec9))
+* bump eslint-plugin-jest from 27.2.1 to 27.2.2 ([#529](https://github.com/MorevM/eslint-config/issues/529)) ([59a4b8d](https://github.com/MorevM/eslint-config/commit/59a4b8dab2c13908065c0549e358dd099ae68f73))
+* bump eslint-plugin-jsdoc from 46.2.0 to 46.2.6 ([#512](https://github.com/MorevM/eslint-config/issues/512)) ([563d575](https://github.com/MorevM/eslint-config/commit/563d575ac6bb6a84baf8410c31db00392a10f693))
+* bump eslint-plugin-jsonc from 2.8.0 to 2.9.0 ([#521](https://github.com/MorevM/eslint-config/issues/521)) ([a5f072a](https://github.com/MorevM/eslint-config/commit/a5f072aec74f8fca03a4b9244c2691153ff3e59d))
+* bump eslint-plugin-yml from 1.7.0 to 1.8.0 ([#519](https://github.com/MorevM/eslint-config/issues/519)) ([dbf4af3](https://github.com/MorevM/eslint-config/commit/dbf4af3d6d0a48901f11357b15384f5faffdc3f1))
+* bump vue-eslint-parser from 9.3.0 to 9.3.1 ([#523](https://github.com/MorevM/eslint-config/issues/523)) ([2a69263](https://github.com/MorevM/eslint-config/commit/2a69263c3b408e3d29ac68ec38fcf7561b73c042))
+
 ## [24.1.0](https://github.com/MorevM/eslint-config/compare/v24.0.1...v24.1.0) (2023-06-03)
 
 
