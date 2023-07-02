@@ -298,9 +298,9 @@ module.exports = {
 			ignoreUnions: false,
 		}],
 
-		// Disallow the delete operator with computed key expressions (autofixable)
+		// Disallow the delete operator with computed key expressions
 		// https://typescript-eslint.io/rules/no-dynamic-delete
-		'+@typescript-eslint/no-dynamic-delete': 'error',
+		'@typescript-eslint/no-dynamic-delete': 'off',
 
 		// Disallow empty functions
 		// https://typescript-eslint.io/rules/no-empty-function
