@@ -1,5 +1,19 @@
 
 
+## [24.2.1](https://github.com/MorevM/eslint-config/compare/v24.2.0...v24.2.1) (2023-07-02)
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 5.60.0 to 5.60.1 ([#537](https://github.com/MorevM/eslint-config/issues/537)) ([bd21c0c](https://github.com/MorevM/eslint-config/commit/bd21c0c87e530e292246d43273f0d2f67c2ed7d3))
+* bump @typescript-eslint/parser from 5.60.0 to 5.60.1 ([#532](https://github.com/MorevM/eslint-config/issues/532)) ([4a4fa57](https://github.com/MorevM/eslint-config/commit/4a4fa577dac12f7e649ba9aad716340a93682228))
+* bump eslint from 8.43.0 to 8.44.0 ([#533](https://github.com/MorevM/eslint-config/issues/533)) ([3a2719e](https://github.com/MorevM/eslint-config/commit/3a2719eed296a9e028b44150278a8e2e2582b1e7))
+* bump eslint-plugin-jsdoc from 46.2.6 to 46.4.3 ([#538](https://github.com/MorevM/eslint-config/issues/538)) ([7a3ca33](https://github.com/MorevM/eslint-config/commit/7a3ca33043744a271c7bd060a7668eabf7154a61))
+
+### Bug fixes
+
+* **typescript:** Disable `@typescript-eslint/no-dynamic-delete` rule ([4c8bb9a](https://github.com/MorevM/eslint-config/commit/4c8bb9a78316ceb208ca51fcae1d687945c80990))
+
 ## [24.2.0](https://github.com/MorevM/eslint-config/compare/v24.1.0...v24.2.0) (2023-06-25)
 
 
