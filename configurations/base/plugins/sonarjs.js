@@ -138,7 +138,7 @@ module.exports = {
 
 		// Return of boolean expressions should not be wrapped into an "if-then-else" statement
 		// https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/prefer-single-boolean-return.md
-		'sonarjs/prefer-single-boolean-return': 'error',
+		'sonarjs/prefer-single-boolean-return': 'off',
 
 		// A "while" loop should be used instead of a "for" loop (autofixable)
 		// https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/prefer-while.md
