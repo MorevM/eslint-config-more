@@ -1,5 +1,20 @@
 
 
+## [24.2.2](https://github.com/MorevM/eslint-config/compare/v24.2.1...v24.2.2) (2023-07-08)
+
+
+### Chores
+
+* bump @babel/eslint-parser from 7.22.5 to 7.22.7 ([#539](https://github.com/MorevM/eslint-config/issues/539)) ([77fe701](https://github.com/MorevM/eslint-config/commit/77fe701903ed2c812b6aeae1731c27bb41a3b436))
+* bump @release-it/conventional-changelog from 5.1.1 to 6.0.0 ([#542](https://github.com/MorevM/eslint-config/issues/542)) ([9144dbf](https://github.com/MorevM/eslint-config/commit/9144dbf114707cb5c4ae7cc5cbcb893ce681bbbb))
+* bump @typescript-eslint/eslint-plugin from 5.60.1 to 5.61.0 ([#540](https://github.com/MorevM/eslint-config/issues/540)) ([6ab5c94](https://github.com/MorevM/eslint-config/commit/6ab5c94c254dd002fb1980529c159689a7ab4463))
+* bump @typescript-eslint/parser from 5.60.1 to 5.61.0 ([#541](https://github.com/MorevM/eslint-config/issues/541)) ([62609b4](https://github.com/MorevM/eslint-config/commit/62609b454b71c9239ebb3d94b5de9045a5c3a319))
+
+
+### Bug fixes
+
+* **base:** Disable `sonarjs/prefer-single-boolean-return` rule ([c27f762](https://github.com/MorevM/eslint-config/commit/c27f762c8ef810497f7cea90963f734c45d6d6d1))
+
 ## [24.2.1](https://github.com/MorevM/eslint-config/compare/v24.2.0...v24.2.1) (2023-07-02)
 
 
