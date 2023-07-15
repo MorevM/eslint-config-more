@@ -152,7 +152,7 @@
 		"@eslint/eslintrc": "^2.0.3",
 		"@morev/commitlint-config": "^0.2.2",
 		"@release-it/conventional-changelog": "^7.0.0",
-		"@types/jest": "^29.5.2",
+		"@types/jest": "^29.5.3",
 		"eslint": "^8.45.0",
 		"eslint-find-rules": "^4.1.0",
 		"glob": "^10.3.3",
