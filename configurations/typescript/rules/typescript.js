@@ -463,10 +463,6 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-throw-literal
 		...extendFromBase('no-throw-literal'),
 
-		// Disallow the use of type aliases
-		// https://typescript-eslint.io/rules/no-type-alias
-		'@typescript-eslint/no-type-alias': 'off',
-
 		// Flags unnecessary equality comparisons against boolean literals (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
 		'+@typescript-eslint/no-unnecessary-boolean-literal-compare': ['warn', {
