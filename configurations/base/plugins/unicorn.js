@@ -207,10 +207,6 @@ module.exports = {
 		// Note: developer knows better
 		'unicorn/no-unreadable-iife': 'off',
 
-		// Disallow unsafe regular expressions
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-regex.md
-		'unicorn/no-unsafe-regex': 'warn',
-
 		// Disallow unused object properties
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-properties.md
 		'unicorn/no-unused-properties': 'warn',
