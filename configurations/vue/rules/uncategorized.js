@@ -11,6 +11,12 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/block-lang.html
 		'vue/block-lang': 'off',
 
+		// Enforce order of component top-level elements (autofixable)
+		// https://eslint.vuejs.org/rules/block-order.html
+		'+vue/block-order': ['warn', {
+			order: ['template', 'script', 'style', 'i18n'],
+		}],
+
 		// Enforce line breaks after opening and before closing block-level tags (autofixable)
 		// https://eslint.vuejs.org/rules/block-tag-newline.html
 		'+vue/block-tag-newline': ['warn', {

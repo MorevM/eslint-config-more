@@ -26,12 +26,6 @@ module.exports = {
 			alphabetical: false,
 		}],
 
-		// Enforce order of component top-level elements (autofixable)
-		// https://eslint.vuejs.org/rules/component-tags-order.html
-		'+vue/component-tags-order': ['warn', {
-			order: ['template', 'script', 'style', 'i18n'],
-		}],
-
 		// Disallow unnecessary `<template>`
 		// https://eslint.vuejs.org/rules/no-lone-template.html
 		'vue/no-lone-template': ['error', {
