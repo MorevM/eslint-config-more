@@ -6,6 +6,12 @@ module.exports = {
 			order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'],
 		}],
 
+		// Disallow deprecated `model` definition (in Vue.js 3.0.0+)
+		// https://eslint.vuejs.org/rules/no-deprecated-model-definition.html
+		'vue/no-deprecated-model-definition': ['error', {
+			allowVue3Compat: false,
+		}],
+
 		// Enforce use of `defineOptions` instead of default export (autofixable)
 		// https://eslint.vuejs.org/rules/prefer-define-options.html
 		'+vue/prefer-define-options': 'error',
