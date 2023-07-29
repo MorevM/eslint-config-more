@@ -358,6 +358,10 @@ module.exports = {
 			type: 'any',
 		}],
 
+		// Enforce adding type declarations to object props
+		// https://eslint.vuejs.org/rules/require-typed-object-prop.html
+		'vue/require-typed-object-prop': 'error',
+
 		// Require `ref` and `shallowRef` functions to be strongly typed
 		// https://eslint.vuejs.org/rules/require-typed-ref.html
 		'vue/require-typed-ref': 'warn',
