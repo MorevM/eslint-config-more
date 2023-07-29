@@ -138,7 +138,7 @@
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-regexp": "^1.15.0",
 		"eslint-plugin-sonarjs": "^0.19.0",
-		"eslint-plugin-unicorn": "^47.0.0",
+		"eslint-plugin-unicorn": "^48.0.1",
 		"eslint-plugin-vue": "^9.15.1",
 		"eslint-plugin-yml": "^1.8.0",
 		"jsonc-eslint-parser": "^2.3.0",
