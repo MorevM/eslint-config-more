@@ -1,5 +1,36 @@
 
 
+## [24.3.0](https://github.com/MorevM/eslint-config/compare/v24.2.2...v24.3.0) (2023-07-29)
+
+
+### Features
+
+* **typescript:** Take account of `@typescript-eslint/class-methods-use-this` rule ([515a77f](https://github.com/MorevM/eslint-config/commit/515a77f244d77c8d5c04531323202f46d50bd304))
+* **vue3:** Add `vue/no-deprecated-model-definition` rule ([6cd6667](https://github.com/MorevM/eslint-config/commit/6cd66672fd547c8ca365d84934bfd019190eb8d4))
+* **vue:** Add `vue/no-use-v-else-with-v-for` rule ([6d9248a](https://github.com/MorevM/eslint-config/commit/6d9248a3f5b919b7c0b2cb9abbfa2a86837f06f9))
+* **vue:** Add `vue/require-typed-object-prop` rule ([bbf87d3](https://github.com/MorevM/eslint-config/commit/bbf87d3aeee6ec42f286c2f8ba24309dc848078d))
+
+
+### Bug fixes
+
+* **base:** Remove deprecated `no-return-await` rule ([d34dd70](https://github.com/MorevM/eslint-config/commit/d34dd709d68bca1743a499b4140577b9b607eae0))
+* **base:** Remove deprecated `unicorn/no-unsafe-regex` rule ([148999e](https://github.com/MorevM/eslint-config/commit/148999efb5211d6673d20500a7a729a860589277))
+* **typescript:** Remove deprecated `@typescript-eslint/no-type-alias` rule ([b9a7551](https://github.com/MorevM/eslint-config/commit/b9a75514427f66363335b66c393abb9e10b1b51e))
+* **vue:** Replace `vue/component-tags-order` rule with new `vue/block-order` ([12767a4](https://github.com/MorevM/eslint-config/commit/12767a44d3d4d4cf2250588e0584954d53786746))
+
+
+### Chores
+
+* bump @html-eslint/eslint-plugin from 0.19.0 to 0.19.1 ([#559](https://github.com/MorevM/eslint-config/issues/559)) ([721e705](https://github.com/MorevM/eslint-config/commit/721e705f3c95d795d763d68705de54b876e5816a))
+* bump @html-eslint/parser from 0.19.0 to 0.19.1 ([#558](https://github.com/MorevM/eslint-config/issues/558)) ([1e38dc4](https://github.com/MorevM/eslint-config/commit/1e38dc4e93e916aadad55bf87b48ffefe7fbb49f))
+* Bump `[@typescript-eslint](https://github.com/typescript-eslint)` from 5.62.0 to 6.2.0 ([b4f1f02](https://github.com/MorevM/eslint-config/commit/b4f1f02c451b04f45578114af2e8f34de69e354a))
+* Bump `eslint-plugin-unicorn` from 47.0.0 to 48.0.1 ([b7a827f](https://github.com/MorevM/eslint-config/commit/b7a827fe13cb634ca2c9bbbdd5f3e5942fca915a))
+* Bump `eslint-plugin-vue` from 9.15.1 to 9.16.0 ([9ab93d1](https://github.com/MorevM/eslint-config/commit/9ab93d1d192c5766a9d5cb44e5ccbb1aad700c80))
+* Bump `eslint` from 8.44.0 to 8.46.0 ([37fb5c1](https://github.com/MorevM/eslint-config/commit/37fb5c102ca34e7458c7346e749181076e6b3af6))
+* bump eslint-plugin-import from 2.27.5 to 2.28.0 ([#565](https://github.com/MorevM/eslint-config/issues/565)) ([2e726ec](https://github.com/MorevM/eslint-config/commit/2e726ecabe60130a742349ac7c3ba70885317713))
+* bump eslint-plugin-jest from 27.2.2 to 27.2.3 ([#554](https://github.com/MorevM/eslint-config/issues/554)) ([02e3047](https://github.com/MorevM/eslint-config/commit/02e3047421cdf8a397afc6e5d161d0fec59d6860))
+* bump eslint-plugin-jsdoc from 46.4.3 to to 46.4.5 ([#564](https://github.com/MorevM/eslint-config/issues/564)) ([105da9c](https://github.com/MorevM/eslint-config/commit/105da9c0dd614b8874bdbbc863fc5304f898fe65))
+
 ## [24.2.2](https://github.com/MorevM/eslint-config/compare/v24.2.1...v24.2.2) (2023-07-08)
 
 
