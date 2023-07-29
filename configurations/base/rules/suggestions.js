@@ -526,10 +526,6 @@ module.exports = {
 		// https://eslint.org/docs/rules/no-return-assign
 		'no-return-assign': ['error', 'except-parens'],
 
-		// Disallow redundant `return await`
-		// https://eslint.org/docs/rules/no-return-await
-		'no-return-await': 'error',
-
 		// Disallow use of `javascript:` urls
 		// https://eslint.org/docs/rules/no-script-url
 		'no-script-url': 'error',
