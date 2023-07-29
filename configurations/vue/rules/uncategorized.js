@@ -254,6 +254,10 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/no-unused-refs.html
 		'vue/no-unused-refs': 'error',
 
+		// Disallow using `v-else-if` / `v-else` on the same element as `v-for`
+		// https://eslint.vuejs.org/rules/no-use-v-else-with-v-for.html
+		'vue/no-use-v-else-with-v-for': 'error',
+
 		// Disallow use computed property like method
 		// https://eslint.vuejs.org/rules/no-use-computed-property-like-method.html
 		'vue/no-use-computed-property-like-method': 'error',
