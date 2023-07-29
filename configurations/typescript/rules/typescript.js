@@ -111,6 +111,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/class-literal-property-style
 		'@typescript-eslint/class-literal-property-style': ['error', 'fields'],
 
+		// Enforce that class methods utilize `this` (autofixable)
+		// https://typescript-eslint.io/rules/class-methods-use-this
+		...extendFromBase('+class-methods-use-this'),
+
 		// Require or disallow trailing comma (autofixable)
 		// https://typescript-eslint.io/rules/comma-dangle
 		...extendFromBase('+comma-dangle', {
