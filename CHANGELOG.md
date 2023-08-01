@@ -1,5 +1,12 @@
 
 
+## [24.3.1](https://github.com/MorevM/eslint-config/compare/v24.3.0...v24.3.1) (2023-08-01)
+
+
+### Bug fixes
+
+* **vue3:** Disable `vue/no-setup-props-destructure` due to incorrect behavior ([cb80fdb](https://github.com/MorevM/eslint-config/commit/cb80fdbf5e30f189a1c03639a6aea2351b2adc63))
+
 ## [24.3.0](https://github.com/MorevM/eslint-config/compare/v24.2.2...v24.3.0) (2023-07-29)
 
 
