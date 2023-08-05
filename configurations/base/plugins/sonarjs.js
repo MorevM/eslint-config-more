@@ -75,7 +75,10 @@ module.exports = {
 
 		// String literals should not be duplicated
 		// https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-duplicate-string.md
-		'sonarjs/no-duplicate-string': ['warn', 5],
+		'sonarjs/no-duplicate-string': ['warn', {
+			threshold: 5,
+			// ignoreStrings: 'application/json', // default value
+		}],
 
 		// Two branches in a conditional structure should not have exactly the same implementation
 		// https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-duplicated-branches.md
