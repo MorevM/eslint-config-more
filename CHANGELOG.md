@@ -1,5 +1,21 @@
 
 
+## [24.3.2](https://github.com/MorevM/eslint-config/compare/v24.3.1...v24.3.2) (2023-08-05)
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 6.2.0 to 6.2.1 ([#569](https://github.com/MorevM/eslint-config/issues/569)) ([b6cde4c](https://github.com/MorevM/eslint-config/commit/b6cde4c0eccdc42496ed0ed17849e28c8984782a))
+* bump @typescript-eslint/parser from 6.2.0 to 6.2.1 ([#573](https://github.com/MorevM/eslint-config/issues/573)) ([ef3bcc9](https://github.com/MorevM/eslint-config/commit/ef3bcc9925ebf47b6a1934e341039ea41f03fa28))
+* Bump `eslint-plugin-sonarjs` from 0.19.0 to 0.20.0 ([8301733](https://github.com/MorevM/eslint-config/commit/8301733cabf66421b4d75a5f967d5d2b5b37b167))
+* bump eslint-plugin-jsdoc from 46.4.5 to 46.4.6 ([#571](https://github.com/MorevM/eslint-config/issues/571)) ([964a1ec](https://github.com/MorevM/eslint-config/commit/964a1ecff6b71ab96aa62d4ae95d289cf353db52))
+* bump eslint-plugin-vue from 9.16.0 to 9.16.1 ([#572](https://github.com/MorevM/eslint-config/issues/572)) ([e614230](https://github.com/MorevM/eslint-config/commit/e614230da256d4d572c789824b1fa757fd936b2a))
+
+
+### Refactoring
+
+* **base:** Correct signature of `sonarjs/no-duplicate-string` after update ([3b55f7e](https://github.com/MorevM/eslint-config/commit/3b55f7e9aea69cf67aea9fa55b2fbd4cf47758b5))
+
 ## [24.3.1](https://github.com/MorevM/eslint-config/compare/v24.3.0...v24.3.1) (2023-08-01)
 
 
