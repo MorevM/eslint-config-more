@@ -123,7 +123,7 @@
 		"@html-eslint/parser": "^0.19.1",
 		"@typescript-eslint/eslint-plugin": "^6.2.1",
 		"@typescript-eslint/parser": "^6.2.1",
-		"eslint-import-resolver-typescript": "^3.5.5",
+		"eslint-import-resolver-typescript": "^3.6.0",
 		"eslint-plugin-chai-friendly": "^0.7.2",
 		"eslint-plugin-cypress": "^2.13.3",
 		"eslint-plugin-eslint-comments": "^3.2.0",
