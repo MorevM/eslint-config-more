@@ -1,5 +1,22 @@
 
 
+## [24.3.3](https://github.com/MorevM/eslint-config/compare/v24.3.2...v24.3.3) (2023-08-12)
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 6.2.1 to 6.3.0 ([#583](https://github.com/MorevM/eslint-config/issues/583)) ([e84b57d](https://github.com/MorevM/eslint-config/commit/e84b57d158710556360ec8e2d761348e9781a653))
+* bump @typescript-eslint/parser from 6.2.1 to 6.3.0 ([#576](https://github.com/MorevM/eslint-config/issues/576)) ([8269a95](https://github.com/MorevM/eslint-config/commit/8269a95ad01be9ca3181c896aed1bd75321921e0))
+* Bump `eslint-plugin-vue` from 9.16.1 to 9.17.0 ([f3015a8](https://github.com/MorevM/eslint-config/commit/f3015a82c60772310a6bd23aeb68d152bbfaabc3))
+* bump eslint from 8.46.0 to 8.47.0 ([#578](https://github.com/MorevM/eslint-config/issues/578)) ([38da4dc](https://github.com/MorevM/eslint-config/commit/38da4dc7b09606d2296a049a7db7f5189e5aa3df))
+* bump eslint-import-resolver-typescript from 3.5.5 to 3.6.0 ([#584](https://github.com/MorevM/eslint-config/issues/584)) ([daa66be](https://github.com/MorevM/eslint-config/commit/daa66be97bc7ec7375e9ad3bcc7752e09de5fa40))
+* bump eslint-plugin-cypress from 2.13.3 to 2.14.0 ([#577](https://github.com/MorevM/eslint-config/issues/577)) ([d4de2ba](https://github.com/MorevM/eslint-config/commit/d4de2ba6be453e422d1588fc29a812a9f81c8ae7))
+
+
+### Bug fixes
+
+* **vue:** Rename deprecated rules `no-setup-props-destructure` and `no-ref-object-destructure` ([ef0d9f4](https://github.com/MorevM/eslint-config/commit/ef0d9f458724c85a68bcecf10a1dd2aebd61d3fb))
+
 ## [24.3.2](https://github.com/MorevM/eslint-config/compare/v24.3.1...v24.3.2) (2023-08-05)
 
 
