@@ -149,8 +149,8 @@ module.exports = {
 		}],
 
 		// Disallow destructuring of ref objects that can lead to loss of reactivity
-		// https://eslint.vuejs.org/rules/no-ref-object-destructure.html
-		'vue/no-ref-object-destructure': 'error',
+		// https://eslint.vuejs.org/rules/no-ref-object-reactivity-loss.html
+		'vue/no-ref-object-reactivity-loss': 'error',
 
 		// Enforce props with default values to be optional (autofixable)
 		// https://eslint.vuejs.org/rules/no-required-prop-with-default.html

@@ -100,9 +100,9 @@ module.exports = {
 		'+vue/no-ref-as-operand': 'error',
 
 		// Disallow destructuring of props passed to setup
-		// https://eslint.vuejs.org/rules/no-setup-props-destructure.html
+		// https://eslint.vuejs.org/rules/no-setup-props-reactivity-loss.html
 		// Reason to off: https://github.com/vuejs/eslint-plugin-vue/issues/2259
-		'vue/no-setup-props-destructure': 'off',
+		'vue/no-setup-props-reactivity-loss': 'off',
 
 		// Disallow key of `<template v-for>` placed on child elements
 		// https://eslint.vuejs.org/rules/no-v-for-template-key-on-child.html
