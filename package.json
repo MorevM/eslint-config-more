@@ -151,7 +151,7 @@
 	"devDependencies": {
 		"@eslint/eslintrc": "^2.1.2",
 		"@morev/commitlint-config": "^0.2.2",
-		"@release-it/conventional-changelog": "^7.0.0",
+		"@release-it/conventional-changelog": "^7.0.1",
 		"@types/jest": "^29.5.4",
 		"eslint": "^8.48.0",
 		"eslint-find-rules": "^4.1.0",
