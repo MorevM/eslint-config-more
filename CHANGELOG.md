@@ -1,5 +1,13 @@
 
 
+## [24.4.0](https://github.com/MorevM/eslint-config/compare/v24.3.3...v24.4.0) (2023-09-17)
+
+
+### Features
+
+* **jest:** Add `jest/no-confusing-set-timeout` rule ([dbed11f](https://github.com/MorevM/eslint-config/commit/dbed11f26dfc1e61738923bff27fea70a4ca181b))
+
+
 ## [24.3.3](https://github.com/MorevM/eslint-config/compare/v24.3.2...v24.3.3) (2023-08-12)
 
 
