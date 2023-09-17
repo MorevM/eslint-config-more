@@ -39,6 +39,10 @@ module.exports = {
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-conditional-in-test.md
 		'jest/no-conditional-in-test': 'warn',
 
+		// Disallow confusing usages of jest.setTimeout
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-confusing-set-timeout.md
+		'jest/no-confusing-set-timeout': 'error',
+
 		// Disallow use of deprecated functions (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-deprecated-functions.md
 		'+jest/no-deprecated-functions': 'error',
