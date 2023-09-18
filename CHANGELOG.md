@@ -1,5 +1,12 @@
 
 
+## [24.4.1](https://github.com/MorevM/eslint-config/compare/v24.4.0...v24.4.1) (2023-09-18)
+
+
+### Bug fixes
+
+* **typescript:** Allow usage of `any` type in `@typescript-eslint/restrict-template-expressions` ([73a9972](https://github.com/MorevM/eslint-config/commit/73a9972fe184517a3c5f78812501ef3f9d47d7e7))
+
 ## [24.4.0](https://github.com/MorevM/eslint-config/compare/v24.3.3...v24.4.0) (2023-09-17)
 
 
