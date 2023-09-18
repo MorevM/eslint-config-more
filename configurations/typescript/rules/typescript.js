@@ -680,7 +680,7 @@ module.exports = {
 		'@typescript-eslint/restrict-template-expressions': ['error', {
 			allowNumber: true,
 			allowBoolean: false,
-			allowAny: false,
+			allowAny: true,
 			allowNullish: false,
 			allowRegExp: true,
 		}],
