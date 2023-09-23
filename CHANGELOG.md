@@ -1,5 +1,17 @@
 
 
+## [24.5.0](https://github.com/MorevM/eslint-config/compare/v24.4.1...v24.5.0) (2023-09-23)
+
+
+### Features
+
+* **base:** Add new `no-object-constructor` rule (as a replacement for `no-new-object`) ([5c22306](https://github.com/MorevM/eslint-config/commit/5c223063d1394182e9b1f4bc05bfe0fd942b6d85))
+
+
+### Bug fixes
+
+* **base:** Remove deprecated `no-new-object` rule ([2d2744c](https://github.com/MorevM/eslint-config/commit/2d2744c00905f9774edca43f8ffb54e67cf54e9f))
+
 ## [24.4.1](https://github.com/MorevM/eslint-config/compare/v24.4.0...v24.4.1) (2023-09-18)
 
 
