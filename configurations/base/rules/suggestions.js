@@ -383,10 +383,6 @@ module.exports = {
 		// Note: nobody writes functions this way, but if, then there are no other options.
 		'no-new-func': 'off',
 
-		// Disallow `Object` constructors
-		// https://eslint.org/docs/rules/no-new-object
-		'no-new-object': 'error',
-
 		// Disallow `new` operators with the `String`, `Number`, and `Boolean` objects
 		// https://eslint.org/docs/rules/no-new-wrappers
 		'no-new-wrappers': 'error',
