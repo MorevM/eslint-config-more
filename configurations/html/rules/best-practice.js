@@ -20,6 +20,10 @@ module.exports = {
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-obsolete-tags
 		'@html-eslint/no-obsolete-tags': 'error',
 
+		// Disallow specified attribute values
+		// https://yeonjuan.github.io/html-eslint/docs/rules/no-restricted-attr-values/
+		'@html-eslint/no-restricted-attr-values': 'off',
+
 		// Require use of closing tag (autofixable for `void` elements)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-closing-tags
 		'+@html-eslint/require-closing-tags': ['warn', {
