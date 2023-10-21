@@ -544,6 +544,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-useless-constructor
 		...extendFromBase('no-useless-constructor'),
 
+		// Require destructuring from arrays and/or objects (autofixable)
+		// https://typescript-eslint.io/rules/prefer-destructuring
+		...extendFromBase('+prefer-destructuring'),
+
 		// Disallow empty exports that don't change anything in a module file
 		// (autofixable but might be confusing during development)
 		// https://typescript-eslint.io/rules/no-useless-empty-export/
