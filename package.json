@@ -141,7 +141,7 @@
 		"eslint-plugin-unicorn": "^48.0.1",
 		"eslint-plugin-vue": "^9.17.0",
 		"eslint-plugin-yml": "^1.10.0",
-		"jsonc-eslint-parser": "^2.3.0",
+		"jsonc-eslint-parser": "^2.4.0",
 		"lodash.clonedeep": "^4.5.0",
 		"lodash.mergewith": "^4.6.2",
 		"resolve.exports": "^2.0.2",
