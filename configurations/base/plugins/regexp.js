@@ -262,6 +262,10 @@ module.exports = {
 
 		// STYLISTIC ISSUES
 
+		// Enforce single grapheme in string literal
+		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/grapheme-string-literal.html
+		'regexp/grapheme-string-literal': 'off',
+
 		// Enforce consistent usage of hexadecimal escape (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/hexadecimal-escape.html
 		'+regexp/hexadecimal-escape': ['error', 'never'],
