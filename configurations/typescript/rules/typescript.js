@@ -227,6 +227,14 @@ module.exports = {
 		// Note: has additional options, but the defaults are good
 		...extendFromBase('+lines-between-class-members'),
 
+		// Enforce a maximum number of parameters in function definitions
+		// https://typescript-eslint.io/rules/max-params
+		'max-params': 'off',
+		'@typescript-eslint/max-params': ['warn', {
+			countVoidThis: false,
+			maximum: 5,
+		}],
+
 		// Require a specific member delimiter style for interfaces and type literals (autofixable)
 		// https://typescript-eslint.io/rules/member-delimiter-style
 		'+@typescript-eslint/member-delimiter-style': ['error', {
