@@ -260,6 +260,10 @@ module.exports = {
 		// It's not always better in terms of readability and understanding
 		'regexp/prefer-regexp-test': 'off',
 
+		// Prefer character class set operations instead of lookarounds (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-set-operation.html
+		'+regexp/prefer-set-operation': 'warn',
+
 		// Enforce the use of the `u` flag (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/require-unicode-regexp.html
 		'!regexp/require-unicode-regexp': 'off',
