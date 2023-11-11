@@ -210,6 +210,10 @@ module.exports = {
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-set-operand.html
 		'+regexp/no-useless-set-operand': 'warn',
 
+		// Disallow string disjunction of single characters in `\q{...}` (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-string-literal.html
+		'+regexp/no-useless-string-literal': 'warn',
+
 		// Disallow unnecessary `{n,m}` quantifier (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-two-nums-quantifier.html
 		'+regexp/no-useless-two-nums-quantifier': 'error',
