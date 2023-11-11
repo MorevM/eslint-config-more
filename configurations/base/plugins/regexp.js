@@ -206,6 +206,10 @@ module.exports = {
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-range.html
 		'+regexp/no-useless-range': 'error',
 
+		// Disallow unnecessary elements in expression character classes (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-set-operand.html
+		'+regexp/no-useless-set-operand': 'warn',
+
 		// Disallow unnecessary `{n,m}` quantifier (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-two-nums-quantifier.html
 		'+regexp/no-useless-two-nums-quantifier': 'error',
