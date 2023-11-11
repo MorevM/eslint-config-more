@@ -132,6 +132,10 @@ module.exports = {
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-dupe-characters-character-class.html
 		'+regexp/no-dupe-characters-character-class': 'error',
 
+		// Disallow empty string literals in character classes
+		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-empty-string-literal.html
+		'regexp/no-empty-string-literal': 'off',
+
 		// Disallow unnecessary nested lookaround assertions (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-extra-lookaround-assertions.html
 		'+regexp/no-extra-lookaround-assertions': 'error',
