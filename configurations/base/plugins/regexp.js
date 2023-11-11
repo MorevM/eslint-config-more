@@ -272,6 +272,10 @@ module.exports = {
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/require-unicode-sets-regexp.html
 		'+regexp/require-unicode-sets-regexp': 'warn',
 
+		// Require simplify set operations (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/simplify-set-operations.html
+		'+regexp/simplify-set-operations': 'warn',
+
 		// Sort alternatives if order doesn't matter (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/sort-alternatives.html
 		'+regexp/sort-alternatives': 'warn',
