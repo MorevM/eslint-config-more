@@ -268,6 +268,10 @@ module.exports = {
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/require-unicode-regexp.html
 		'!regexp/require-unicode-regexp': 'off',
 
+		// Enforce the use of the `u` flag (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/require-unicode-sets-regexp.html
+		'+regexp/require-unicode-sets-regexp': 'warn',
+
 		// Sort alternatives if order doesn't matter (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/sort-alternatives.html
 		'+regexp/sort-alternatives': 'warn',
