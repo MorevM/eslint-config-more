@@ -27,7 +27,7 @@ const autofixableRulesToOff = (rules, autofixableList) => Object.fromEntries(
 
 const extensionFromBase = ({ prefix, baseRules, rulesToExtend }) => {
 	const rules = rulesToExtend.reduce((acc, rule) => {
-		const cleanRule = rule.replace(/^[!+]/, '');
+		const cleanRule = rule.replace(/^[!+]/v, '');
 
 		const toSearch = ESLINT_FORMATTING_RULES.includes(cleanRule)
 			? `@stylistic/js/${cleanRule}`
@@ -72,7 +72,7 @@ const processExports = ({ mode, base, parts }) => {
 					const cleanRule = rule.slice(1);
 					return [...acc, [cleanRule, 'off'], [`no-autofix/${cleanRule}`, value]];
 				}
-				return [...acc, [rule.replace(/^[!+]/, ''), value]];
+				return [...acc, [rule.replace(/^[!+]/v, ''), value]];
 			}, []),
 	);
 

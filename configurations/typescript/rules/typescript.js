@@ -4,7 +4,7 @@ const { ESLINT_FORMATTING_RULES } = require('../../../utils/constants.js');
 const base = makeConfig([{ name: 'base', mode: 'strict' }]).rules;
 
 const extendFromBase = (rule, extendWith = null) => {
-	const cleanRule = rule.replace(/^[!+]/, '');
+	const cleanRule = rule.replace(/^[!+]/v, '');
 	const autofixablePrefix = ['!', '+'].includes(rule[0]) ? rule[0] : '';
 	const baseRulename = base[cleanRule]
 		? cleanRule

@@ -50,10 +50,11 @@ const getNames = (config, mode, isPresets = false) => {
 };
 
 const toConfigExports = (content) => {
-	const withUnwrappedPath = JSON.stringify(content, null, '\t').replace(/"(\[path\.resolve.*)"/g, '$1');
+	const withUnwrappedPath = JSON.stringify(content, null, '\t').replace(/"(\[path\.resolve.*)"/gv, '$1');
 	return `const path = require('path');\n\nmodule.exports = ${withUnwrappedPath};`;
 };
 
+// eslint-disable-next-line unicorn/prefer-top-level-await
 (async () => {
 	// Create presets
 	await presets.forEach(async (preset) => {
