@@ -1,6 +1,7 @@
 const fs = require('fs');
 const RuleFinderFactory = require('eslint-find-rules');
 
+const { ESLINT_FORMATTING_RULES } = require('../utils/constants.js');
 const { makeConfig } = require('../utils/tools.js');
 const { configurations } = require('../utils/meta.js');
 
@@ -18,7 +19,19 @@ const KNOWN_UNUSED = [
 	'vue/prefer-template',
 	// Turned off due of wrong implementation, now replaced with standard `no-multiple-empty-lines`
 	'markdownlint/md012',
+	// Due of deprecation of stylistic rules
+	// https://eslint.org/blog/2023/10/deprecating-formatting-rules/
+	...ESLINT_FORMATTING_RULES,
+	// And a TS versions as well
+	...ESLINT_FORMATTING_RULES.map((rule) => `@typescript-eslint/${rule}`),
 ];
+
+// eslint-disable-next-line unicorn/no-useless-spread
+const KNOWN_DEPRECATED = [
+	// As `vue-eslint-plugin` only wraps a core rules, they become deprecated
+	...ESLINT_FORMATTING_RULES.map((rule) => `vue/${rule}`),
+];
+
 const TEMP_FILE = `.tmp-config.js`;
 
 // Smth wrong with it since jest 28, affects nothing in this test
@@ -52,7 +65,8 @@ describe('Check unused and deprecated props', () => {
 	});
 
 	it('Has no deprecated rules', async () => {
-		const deprecatedRules = ruleFinder.getDeprecatedRules();
+		const deprecatedRules = ruleFinder.getDeprecatedRules()
+			.filter((rule) => !KNOWN_DEPRECATED.includes(rule));
 
 		expect(deprecatedRules).toHaveLength(0);
 	});
