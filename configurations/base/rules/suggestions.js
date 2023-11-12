@@ -197,13 +197,6 @@ module.exports = {
 		// https://eslint.org/docs/rules/no-case-declarations
 		'no-case-declarations': 'error',
 
-		// Disallow arrow functions where they could be confused with comparisons (autofixable)
-		// https://eslint.org/docs/rules/no-confusing-arrow
-		'+no-confusing-arrow': ['error', {
-			allowParens: true,
-			onlyOneSimpleParam: true,
-		}],
-
 		// Disallow the use of `console`
 		// https://eslint.org/docs/rules/no-console
 		'no-console': ['warn', {
@@ -271,14 +264,6 @@ module.exports = {
 		// https://eslint.org/docs/rules/no-extra-label
 		'!no-extra-label': 'error',
 
-		// Disallow unnecessary semicolons (autofixable)
-		// https://eslint.org/docs/rules/no-extra-semi
-		'+no-extra-semi': 'warn',
-
-		// Disallow floating decimals (autofixable but...I just hate leading zeros)
-		// https://eslint.org/docs/rules/no-floating-decimal
-		'!no-floating-decimal': 'off',
-
 		// Disallow assignment to native objects or read-only global variables
 		// https://eslint.org/docs/rules/no-global-assign
 		'no-global-assign': 'error',
@@ -337,25 +322,6 @@ module.exports = {
 		// https://eslint.org/docs/rules/no-magic-numbers
 		// Note: most "magic" numbers aren't actually "magic".
 		'no-magic-numbers': 'off',
-
-		// Disallow mixes of different operators
-		// https://eslint.org/docs/rules/no-mixed-operators
-		'no-mixed-operators': ['error', {
-			// the list of arithmetic groups disallows mixing `%` and `**`
-			// with other arithmetic operators.
-			groups: [
-				['%', '**'],
-				['%', '+'],
-				['%', '-'],
-				['%', '*'],
-				['%', '/'],
-				['/', '*'],
-				['&', '|', '<<', '>>', '>>>'],
-				['==', '!=', '===', '!=='],
-				['&&', '||'],
-			],
-			allowSamePrecedence: true,
-		}],
 
 		// Disallow use of chained assignment expressions
 		// https://eslint.org/docs/rules/no-multi-assign
@@ -659,10 +625,6 @@ module.exports = {
 		// Note: set to `separately`
 		'+one-var': ['error', 'never'],
 
-		// Require or disallow newlines around variable declarations (autofixable)
-		// https://eslint.org/docs/rules/one-var-declaration-per-line
-		'+one-var-declaration-per-line': ['error', 'always'],
-
 		// Require or disallow assignment operator shorthand where possible (autofixable)
 		// https://eslint.org/docs/rules/operator-assignment
 		// Note: on the conscience of the developer
@@ -741,15 +703,6 @@ module.exports = {
 		// https://eslint.org/docs/rules/prefer-template
 		'!prefer-template': 'error',
 
-		// Require quotes around object literal property names (autofixable)
-		// https://eslint.org/docs/rules/quote-props
-		// Note: should be consistent, but prefer without quotes
-		'+quote-props': ['warn', 'consistent-as-needed', {
-			keywords: false,
-			unnecessary: false,
-			numbers: true,
-		}],
-
 		// Require use of the second argument for `parseInt()`
 		// https://eslint.org/docs/rules/radix
 		'radix': 'error',
@@ -782,20 +735,6 @@ module.exports = {
 		// Require variables within the same declaration block to be sorted (autofixable)
 		// https://eslint.org/docs/rules/sort-vars
 		'+sort-vars': 'off',
-
-		// Enforce consistent spacing after the `//` or `/*` in a comment (autofixable)
-		// https://eslint.org/docs/rules/spaced-comment
-		'+spaced-comment': ['warn', 'always', {
-			line: {
-				exceptions: ['-', '+', '='],
-				markers: ['=', '!', '/'], // slash for TS /// comments
-			},
-			block: {
-				exceptions: ['-', '+', '='],
-				markers: ['=', '!', ':', '::'],
-				balanced: true,
-			},
-		}],
 
 		// Require or disallow `strict` mode directives (autofixable)
 		// https://eslint.org/docs/rules/strict

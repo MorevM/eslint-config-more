@@ -2,8 +2,8 @@ const base = {
 	parser: 'eslint-plugin-markdownlint/parser',
 	plugins: ['markdownlint'],
 	rules: {
-		'no-trailing-spaces': 'off',
-		'max-len': 'off',
+		'@stylistic/js/no-trailing-spaces': 'off',
+		'@stylistic/js/max-len': 'off',
 		'unicorn/filename-case': 'off',
 	},
 };

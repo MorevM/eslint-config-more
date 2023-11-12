@@ -14,7 +14,7 @@ const base = {
 		},
 	},
 	rules: {
-		indent: 'off',
+		'@stylistic/js/indent': 'off',
 	},
 };
 

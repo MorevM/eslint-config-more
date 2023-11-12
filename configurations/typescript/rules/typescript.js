@@ -1,14 +1,22 @@
 const { makeConfig } = require('../../../utils/tools.js');
+const { ESLINT_FORMATTING_RULES } = require('../../../utils/constants.js');
 
 const base = makeConfig([{ name: 'base', mode: 'strict' }]).rules;
 
 const extendFromBase = (rule, extendWith = null) => {
 	const cleanRule = rule.replace(/^[!+]/, '');
-	const prefix = ['!', '+'].includes(rule[0]) ? rule[0] : '';
-	const baseRule = base[cleanRule];
-	if (!baseRule) throw new Error(`There is no rule ${rule} in base configuration`);
+	const autofixablePrefix = ['!', '+'].includes(rule[0]) ? rule[0] : '';
+	const baseRulename = base[cleanRule]
+		? cleanRule
+		: base[`@stylistic/js/${cleanRule}`]
+			? `@stylistic/js/${cleanRule}`
+			: null;
+	if (!baseRulename) throw new Error(`There is no rule ${cleanRule} in a base configuration`);
 
-	const result = { [cleanRule]: 'off' }; // Disable base rule
+	const baseRule = base[baseRulename];
+
+	const result = { [baseRulename]: 'off' }; // Disable the base rule
+
 	const severity = Array.isArray(baseRule) ? baseRule[0] : baseRule;
 	const baseOptions = Array.isArray(baseRule) ? baseRule.slice(1) : [];
 
@@ -16,7 +24,12 @@ const extendFromBase = (rule, extendWith = null) => {
 		? [{ ...baseOptions?.[0], ...extendWith }]
 		: baseOptions;
 
-	result[`${prefix}@typescript-eslint/${cleanRule}`] = [severity, ...newOptions];
+	const isStylistic = ESLINT_FORMATTING_RULES.includes(cleanRule);
+	const name = isStylistic
+		? `${autofixablePrefix}@stylistic/ts/${cleanRule}`
+		: `${autofixablePrefix}@typescript-eslint/${cleanRule}`;
+
+	result[name] = [severity, ...newOptions];
 
 	return result;
 };
@@ -196,7 +209,6 @@ module.exports = {
 
 		// Require or disallow spacing between function identifiers and their invocations (autofixable)
 		// https://typescript-eslint.io/rules/func-call-spacing
-		'func-call-spacing': 'off',
 		...extendFromBase('+func-call-spacing'),
 
 		// Enforce consistent indentation (autofixable)
@@ -211,7 +223,6 @@ module.exports = {
 		// Enforce consistent spacing between property names
 		// and type annotations in types and interfaces. (autofixable)
 		// https://typescript-eslint.io/rules/key-spacing/
-		'key-spacing': 'off',
 		...extendFromBase('+key-spacing'),
 
 		// Enforce consistent spacing before and after keywords (autofixable)

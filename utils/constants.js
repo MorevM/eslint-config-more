@@ -24,4 +24,25 @@ const SPECIAL_CHARACTERS = [
 	'\u00B7', '\u2022', '\u2010', '\u2013', '\u2014', '\u2212',
 ];
 
-module.exports = { CONFUSING_BROWSER_GLOBALS, INLINE_ELEMENTS, SPECIAL_CHARACTERS };
+const ESLINT_FORMATTING_RULES = [
+	'array-bracket-newline', 'array-bracket-spacing', 'array-element-newline',
+	'arrow-parens', 'arrow-spacing', 'block-spacing', 'brace-style',
+	'comma-dangle', 'comma-spacing', 'comma-style', 'computed-property-spacing',
+	'dot-location', 'eol-last', 'func-call-spacing', 'function-call-argument-newline',
+	'function-paren-newline', 'generator-star-spacing', 'implicit-arrow-linebreak',
+	'indent', 'jsx-quotes', 'key-spacing', 'keyword-spacing', 'linebreak-style',
+	'lines-between-class-members', 'lines-around-comment', 'max-len', 'max-statements-per-line',
+	'multiline-ternary', 'new-parens', 'newline-per-chained-call',
+	'no-confusing-arrow', 'no-extra-parens', 'no-extra-semi', 'no-floating-decimal', 'no-mixed-operators',
+	'no-mixed-spaces-and-tabs', 'no-multi-spaces', 'no-multiple-empty-lines',
+	'no-tabs', 'no-trailing-spaces', 'no-whitespace-before-property',
+	'nonblock-statement-body-position', 'object-curly-newline', 'object-curly-spacing', 'object-property-newline',
+	'one-var-declaration-per-line', 'operator-linebreak', 'padded-blocks', 'padding-line-between-statements',
+	'quote-props', 'quotes', 'rest-spread-spacing',
+	'semi', 'semi-spacing', 'semi-style',
+	'space-before-blocks', 'space-before-function-paren', 'space-in-parens', 'space-infix-ops', 'space-unary-ops',
+	'spaced-comment', 'switch-colon-spacing', 'template-curly-spacing', 'template-tag-spacing',
+	'wrap-iife', 'wrap-regex', 'yield-star-spacing',
+];
+
+module.exports = { CONFUSING_BROWSER_GLOBALS, INLINE_ELEMENTS, SPECIAL_CHARACTERS, ESLINT_FORMATTING_RULES };

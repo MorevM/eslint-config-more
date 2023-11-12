@@ -3,7 +3,7 @@ const base = {
 	parser: '@html-eslint/parser',
 	rules: {
 		'capitalized-comments': 'off',
-		'spaced-comment': 'off',
+		'@stylistic/js/spaced-comment': 'off',
 	},
 };
 

@@ -1,5 +1,8 @@
 const base = {
-	plugins: ['@typescript-eslint'],
+	plugins: [
+		'@typescript-eslint',
+		'@stylistic/ts',
+	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		project: './tsconfig.json',

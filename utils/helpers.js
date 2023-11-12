@@ -1,5 +1,6 @@
 const _mergeWith = require('lodash.mergewith');
 const _clonedeep = require('lodash.clonedeep');
+const { ESLINT_FORMATTING_RULES } = require('./constants');
 
 const mergeWithArrayComparer = (ov, sv, key) =>
 	Array.isArray(ov) && ['plugins', 'overrides'].includes(key)
@@ -27,7 +28,11 @@ const autofixableRulesToOff = (rules, autofixableList) => Object.fromEntries(
 const extensionFromBase = ({ prefix, baseRules, rulesToExtend }) => {
 	const rules = rulesToExtend.reduce((acc, rule) => {
 		const cleanRule = rule.replace(/^[!+]/, '');
-		const realValue = baseRules[`no-autofix/${cleanRule}`] || baseRules[cleanRule];
+
+		const toSearch = ESLINT_FORMATTING_RULES.includes(cleanRule)
+			? `@stylistic/js/${cleanRule}`
+			: cleanRule;
+		const realValue = baseRules[`no-autofix/${toSearch}`] || baseRules[toSearch];
 		if (!realValue) return acc;
 
 		const autofixablePrefix = (cleanRule === rule) ? '' : rule[0];
