@@ -266,7 +266,7 @@ module.exports = {
 
 		// Enforce the use of the `u` flag (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/require-unicode-regexp.html
-		'!regexp/require-unicode-regexp': 'off',
+		'+regexp/require-unicode-regexp': 'warn',
 
 		// Enforce the use of the `u` flag (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/require-unicode-sets-regexp.html
