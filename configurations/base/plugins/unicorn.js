@@ -433,8 +433,7 @@ module.exports = {
 
 		// Prefer top-level await over top-level promises and async function calls
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
-		// TODO: [2023-10-10] Enable it
-		'unicorn/prefer-top-level-await': 'off',
+		'unicorn/prefer-top-level-await': 'error',
 
 		// Enforce throwing `TypeError` in type checking conditions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-type-error.md
