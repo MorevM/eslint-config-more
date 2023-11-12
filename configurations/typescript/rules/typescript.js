@@ -248,7 +248,7 @@ module.exports = {
 
 		// Require a specific member delimiter style for interfaces and type literals (autofixable)
 		// https://typescript-eslint.io/rules/member-delimiter-style
-		'+@typescript-eslint/member-delimiter-style': ['error', {
+		'+@stylistic/ts/member-delimiter-style': ['error', {
 			multiline: {
 				delimiter: 'semi',
 				requireLast: true,
@@ -752,7 +752,7 @@ module.exports = {
 		// Require consistent spacing around type annotations (autofixable)
 		// https://typescript-eslint.io/rules/type-annotation-spacing
 		// Note: good with default options
-		'+@typescript-eslint/type-annotation-spacing': 'warn',
+		'+@stylistic/ts/type-annotation-spacing': 'warn',
 
 		// Requires type annotations to exist
 		// https://typescript-eslint.io/rules/typedef
