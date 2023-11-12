@@ -1,5 +1,41 @@
 
 
+## [25.0.0](https://github.com/MorevM/eslint-config/compare/v24.5.0...v25.0.0) (2023-11-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **base:** With new `eslint-plugin-regex` rules base configs and presets become more strict.
+* Migration to the `@stylistic/eslint-plugin` is not a breaking change per se, it seriously alters the package contents and can have unexpected consequences.
+* Drop Node 16 support
+
+### Features
+
+* Switching to `eslint-plugin-stylistic` due of deprecation of `ESlint` formatting rules ([9044a37](https://github.com/MorevM/eslint-config/commit/9044a37c8bb98171a2618de27938bce742655dd9))
+* **base:** Add `regexp/no-useless-set-operand` rule ([70d09e5](https://github.com/MorevM/eslint-config/commit/70d09e532bd25786ee76577ecd3361e5574c1a9d))
+* **base:** Add `regexp/no-useless-string-literal` rule ([100d3a0](https://github.com/MorevM/eslint-config/commit/100d3a086186226576288feab7e37a7d95440e23))
+* **base:** Add `regexp/prefer-set-operation` rule ([34ff310](https://github.com/MorevM/eslint-config/commit/34ff310192fb850e7ac410b77af8417ec767a3c9))
+* **base:** Add `regexp/require-unicode-sets-regexp` rule ([1827b79](https://github.com/MorevM/eslint-config/commit/1827b79a70edc79410bbbc1b7d56b6939c7453b5))
+* **base:** Add `regexp/simplify-set-operations` rule ([4aafdb4](https://github.com/MorevM/eslint-config/commit/4aafdb44e408a02849388f81371a1d622b3d1074))
+* **base:** Enable `regexp/require-unicode-regexp` rule ([4034585](https://github.com/MorevM/eslint-config/commit/4034585267b2e29e33459d14966274f660e259f9))
+* **base:** Enable `unicorn/prefer-top-level-await` rule ([6dc45c4](https://github.com/MorevM/eslint-config/commit/6dc45c4c755cedf5a20a2eab3a00a13bb3d6ea9d))
+* **base:** Take account of `regexp/grapheme-string-literal` rule ([513e416](https://github.com/MorevM/eslint-config/commit/513e4165a8915909f4697e50dc65319c66fa6e34))
+* **base:** Take account of `regexp/no-empty-string-literal` rule ([4cb1f3c](https://github.com/MorevM/eslint-config/commit/4cb1f3cc85564599e8d2a0284228196cfe2af7a6))
+* **html:** Take account of `@html-eslint/no-restricted-attr-values` rule ([4cc986a](https://github.com/MorevM/eslint-config/commit/4cc986ab2392388cda65a8a6f35feabf571e223d))
+* **typescript:** Add `@typescript-eslint/max-params` rule ([180fedb](https://github.com/MorevM/eslint-config/commit/180fedbac6c7654293eb23ae684948d3d7ccd5be))
+* **typescript:** Add `@typescript-eslint/prefer-destructuring` rule ([053c01c](https://github.com/MorevM/eslint-config/commit/053c01c788b40fadf84c3d144b935d259d584925))
+
+
+### Refactoring
+
+* **typescript:** Move `member-delimiter-style` and `type-annotation-spacing` to the stylistic scope ([ee81533](https://github.com/MorevM/eslint-config/commit/ee81533509cd3e2083037fd7bf1399a4da5ec63a))
+
+
+### Tests
+
+* Add known TS unused rules that mugrated to the stylistic scope ([f76ba03](https://github.com/MorevM/eslint-config/commit/f76ba03db7e16f82b70f1325ed8fc5e6c4fc7efd))
+* Take account of deprecated ESLint formatting rules ([d57c732](https://github.com/MorevM/eslint-config/commit/d57c732b777952b59749e2aba1de5e60fa9eeca5))
+
 ## [24.5.0](https://github.com/MorevM/eslint-config/compare/v24.4.1...v24.5.0) (2023-09-23)
 
 
