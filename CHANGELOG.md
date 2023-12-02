@@ -1,5 +1,43 @@
 
 
+## [26.0.0](https://github.com/MorevM/eslint-config/compare/v25.0.0...v26.0.0) (2023-12-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vue:** WIth new rule `vue/no-unused-emit-declarations` all configurations and presets related to `vue` become more strict.
+* **vue2:** With new rule `vue/v-if-else-key` all configurations and presets related to `vue2` become more strict.
+
+### Features
+
+* **base, typescript:** Add a `function-call-spacing` rule instead of `func-call-spacing` ([6484a08](https://github.com/MorevM/eslint-config/commit/6484a08b9ccfc8665cafd6e6f5194569275b6bc0))
+* **html:** Add `@html-eslint/lowercase` rule ([a0393c1](https://github.com/MorevM/eslint-config/commit/a0393c143782e0f372cdc694f6f6943eee781c32))
+* **html:** Add `@html-eslint/no-script-style-type` rule ([e4cd737](https://github.com/MorevM/eslint-config/commit/e4cd737427cbcddb7dcc20eeb517a430f0b5b8df))
+* **html:** Take account of `@html-eslint/require-open-graph-protocol` rule ([8145a66](https://github.com/MorevM/eslint-config/commit/8145a662a40b9f6816c9b3f9645d9118c67aebcc))
+* **html:** Take account of `@html-eslint/sort-attrs` rule ([9eb80f0](https://github.com/MorevM/eslint-config/commit/9eb80f0bbec830290a2e64138c03b1cca8eb7973))
+* **vue2:** Add `vue/v-if-else-key` rule ([097b890](https://github.com/MorevM/eslint-config/commit/097b8903e104e2195a0d3d9dccf5e9b03047318b))
+* **vue:** Add `vue/no-unused-emit-declarations` rule ([794daaa](https://github.com/MorevM/eslint-config/commit/794daaabbe36cfb332f7896843764fb227c09552))
+
+
+### Bug fixes
+
+* **base, typescript:** Disable stylistic rule `func-call-spacing` since it has been renamed to `function-call-spacing` ([9e15fc3](https://github.com/MorevM/eslint-config/commit/9e15fc3f2c48fa16980f9a729543119570106d3d))
+* **vue:** Enforce new type-literal variant of emits declaration for `vue/define-emits-declaration` ([84323d4](https://github.com/MorevM/eslint-config/commit/84323d41ad30d7793638b87ead9a34cd62c87152))
+
+
+### Chores
+
+* Bump `[@html-eslint](https://github.com/html-eslint)`-related packages from 0.20.0 to 0.21.0 ([8a4430c](https://github.com/MorevM/eslint-config/commit/8a4430c44672a97ccdd69582caff70ef160f04ac))
+* Bump `@stylistic/eslint-plugin` from 1.3.3 to 1.4.1 ([5e13cad](https://github.com/MorevM/eslint-config/commit/5e13cadaee0dc56b5f1b369f5d646e1d7b009e09))
+* Bump `eslint-plugin-vue` from 9.18.1 to 9.19.2 ([0a3e4f5](https://github.com/MorevM/eslint-config/commit/0a3e4f55f03d09dcd0a3b49af6239bcce1f4275d))
+* Bump `eslint` from 8.53.0 to 8.55.0 ([26948c6](https://github.com/MorevM/eslint-config/commit/26948c6052c6f875480ceeb48d521f3e01766d02))
+* Run Github actions using Node 20 ([cdb6e74](https://github.com/MorevM/eslint-config/commit/cdb6e74add64b16532c1e801c5de573364236d97))
+
+
+### Refactoring
+
+* **html:** Sort rules within categories alphabetically to align with the website ([7bc980e](https://github.com/MorevM/eslint-config/commit/7bc980ef8864605df87e2f23a9d03acd224a8214))
+
 ## [25.0.0](https://github.com/MorevM/eslint-config/compare/v24.5.0...v25.0.0) (2023-11-12)
 
 
