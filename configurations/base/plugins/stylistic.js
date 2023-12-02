@@ -87,7 +87,7 @@ module.exports = {
 
 		// Require or disallow spacing between function identifiers and their invocations (autofixable)
 		// https://eslint.style/rules/js/func-call-spacing
-		'+@stylistic/js/func-call-spacing': ['warn', 'never'],
+		'+@stylistic/js/func-call-spacing': 'off',
 
 		// Enforce linebreaks between arguments of a function call (autofixable)
 		// https://eslint.style/rules/js/function-call-argument-newline
