@@ -14,6 +14,10 @@ module.exports = {
 		// https://yeonjuan.github.io/html-eslint/docs/rules/indent
 		'+@html-eslint/indent': ['warn', 'tab'],
 
+		// Enforce to use lowercase for tag and attribute names (autofixable)
+		// https://html-eslint.org/docs/rules/lowercase
+		'+@html-eslint/lowercase': 'warn',
+
 		// Enforce consistent quoting attributes with double or single (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/quotes
 		'+@html-eslint/quotes': ['warn', 'double'],
