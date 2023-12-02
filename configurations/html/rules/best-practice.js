@@ -52,6 +52,10 @@ module.exports = {
 		// Note: should be configured individually if needed
 		'@html-eslint/no-restricted-attrs': 'off',
 
+		// Disallow usage of type attributes for stylesheets and scripts (autofixable)
+		// https://html-eslint.org/docs/rules/no-script-style-type
+		'+@html-eslint/no-script-style-type': 'warn',
+
 		// Enforces the use of tag with specified attributes
 		// https://github.com/yeonjuan/html-eslint/blob/main/docs/rules/require-attrs.md
 		// Note: should be configured individually if needed
