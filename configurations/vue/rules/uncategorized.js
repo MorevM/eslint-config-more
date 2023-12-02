@@ -47,7 +47,7 @@ module.exports = {
 
 		// Enforce declaration style of defineEmits
 		// https://eslint.vuejs.org/rules/define-emits-declaration.html
-		'vue/define-emits-declaration': ['warn', 'type-based'],
+		'vue/define-emits-declaration': ['warn', 'type-literal'],
 
 		// Enforce declaration style of defineProps
 		// https://eslint.vuejs.org/rules/define-props-declaration.html
