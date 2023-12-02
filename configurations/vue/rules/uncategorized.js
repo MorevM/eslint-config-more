@@ -248,6 +248,10 @@ module.exports = {
 		// Note: should be configured individually
 		'vue/no-unsupported-features': 'off',
 
+		// Disallow unused emit declarations
+		// https://eslint.vuejs.org/rules/no-unused-emit-declarations.html
+		'vue/no-unused-emit-declarations': 'error',
+
 		// Disallow unused properties
 		// https://eslint.vuejs.org/rules/no-unused-properties.html
 		'vue/no-unused-properties': ['warn', {
