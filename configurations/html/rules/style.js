@@ -22,6 +22,10 @@ module.exports = {
 		// https://yeonjuan.github.io/html-eslint/docs/rules/quotes
 		'+@html-eslint/quotes': ['warn', 'double'],
 
+		// Enforce attributes alphabetical sorting (autofixable)
+		// https://html-eslint.org/docs/rules/sort-attrs
+		'+@html-eslint/sort-attrs': 'off',
+
 		// Enforce naming conventions for `id` attributes
 		// https://yeonjuan.github.io/html-eslint/docs/rules/id-naming-convention
 		// Note: should be configured individually
