@@ -28,7 +28,7 @@ const ESLINT_FORMATTING_RULES = [
 	'array-bracket-newline', 'array-bracket-spacing', 'array-element-newline',
 	'arrow-parens', 'arrow-spacing', 'block-spacing', 'brace-style',
 	'comma-dangle', 'comma-spacing', 'comma-style', 'computed-property-spacing',
-	'dot-location', 'eol-last', 'func-call-spacing', 'function-call-argument-newline',
+	'dot-location', 'eol-last', 'func-call-spacing', 'function-call-spacing', 'function-call-argument-newline',
 	'function-paren-newline', 'generator-star-spacing', 'implicit-arrow-linebreak',
 	'indent', 'jsx-quotes', 'key-spacing', 'keyword-spacing', 'linebreak-style',
 	'lines-between-class-members', 'lines-around-comment', 'max-len', 'max-statements-per-line',

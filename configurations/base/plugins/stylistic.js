@@ -93,6 +93,10 @@ module.exports = {
 		// https://eslint.style/rules/js/function-call-argument-newline
 		'+@stylistic/js/function-call-argument-newline': ['warn', 'consistent'],
 
+		// Require or disallow spacing between function identifiers and their invocations (autofixable)
+		// https://eslint.style/rules/default/function-call-spacing
+		'+@stylistic/js/function-call-spacing': ['warn', 'never'],
+
 		// Enforce consistent linebreaks inside function parentheses (autofixable)
 		// https://eslint.style/rules/js/function-paren-newline
 		'+@stylistic/js/function-paren-newline': ['warn', 'consistent'],
