@@ -640,7 +640,7 @@ module.exports = {
 		// Requires that private members are marked as `readonly` if they're
 		// never modified outside of the constructor (autofixable but may be confusing while developing)
 		// https://typescript-eslint.io/rules/prefer-readonly
-		'+@typescript-eslint/prefer-readonly': ['warn', {
+		'!@typescript-eslint/prefer-readonly': ['warn', {
 			onlyInlineLambdas: false,
 		}],
 
