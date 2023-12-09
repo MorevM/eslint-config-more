@@ -610,10 +610,10 @@
   resolved "https://registry.yarnpkg.com/@html-eslint/eslint-plugin/-/eslint-plugin-0.22.0.tgz#c727c58b0f1cacd38a60e19d32cf85e21f876bff"
   integrity sha512-6Q3uW5XeVmUGwH2t5lmt0q51x7dNiaV1GuYReuHOPn01tSn9vJ5OKs71t+OsQzhg+hUqpVrmBizkBJZkcpX/sA==
 
-"@html-eslint/parser@^0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@html-eslint/parser/-/parser-0.21.0.tgz#f7edbf1815591b0ec5a2eba74c3cc8e4b6f37fa6"
-  integrity sha512-MzmIP/yq/4UVeRgUTFnKmPbomRu6NthcCT/68yrZi1GWhFwW0h3CIDy0wQI+gj3MDlcROzV8QOAG5uxCjCYA+A==
+"@html-eslint/parser@^0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@html-eslint/parser/-/parser-0.22.0.tgz#c2038ceae5a81a91e07b33ddaf86d57651f24a42"
+  integrity sha512-1XNYNgysZJfpLEYx+ao4I67F5+8gQDQbBt38/Ylcn5L8ij5xHfRDWvOIBvejqEgNQRRzM5s7UOhPSj+02YtMsQ==
   dependencies:
     es-html-parser "^0.0.9"
 
