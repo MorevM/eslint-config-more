@@ -3040,10 +3040,10 @@ eslint-plugin-node@^11.1.0:
     resolve "^1.10.1"
     semver "^6.1.0"
 
-eslint-plugin-regexp@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-regexp/-/eslint-plugin-regexp-2.1.1.tgz#55211db1992eda01eddf249dfb75b2939540802c"
-  integrity sha512-FGa/idrL5tzMCnGylyx8DCWTX3vDuEtE/CVqTx+yYwe5qY3JRppbNVkOVGIkQF0klVlrG+LxwAXRXTUr5yU5uA==
+eslint-plugin-regexp@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-regexp/-/eslint-plugin-regexp-2.1.2.tgz#1a4e152636245d5fe846a2e934d86d914d063029"
+  integrity sha512-nnhNqHblaD8YTJiEHfyVRhiw8sm0eFQ9h+ee3rMqJhf2R9sJWbSXkjrLxIeCNZSNqitUOdaYFfrPVyvS9i72AA==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@eslint-community/regexpp" "^4.9.1"
