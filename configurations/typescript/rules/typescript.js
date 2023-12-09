@@ -546,6 +546,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-unsafe-return
 		'@typescript-eslint/no-unsafe-return': 'off',
 
+		// Require unary negation to take a number
+		// https://typescript-eslint.io/rules/no-unsafe-unary-minus/
+		'@typescript-eslint/no-unsafe-unary-minus': 'error',
+
 		// Disallow unused expressions
 		// https://typescript-eslint.io/rules/no-unused-expressions
 		...extendFromBase('no-unused-expressions'),
