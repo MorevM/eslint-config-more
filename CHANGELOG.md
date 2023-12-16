@@ -1,5 +1,20 @@
 
 
+## [26.1.1](https://github.com/MorevM/eslint-config/compare/v26.1.0...v26.1.1) (2023-12-16)
+
+
+### Chores
+
+* bump @stylistic/eslint-plugin-js from 1.5.0 to 1.5.1 ([#718](https://github.com/MorevM/eslint-config/issues/718)) ([b7da3b1](https://github.com/MorevM/eslint-config/commit/b7da3b1653d80011b45e78f3dc0a3595267c1107))
+* bump @stylistic/eslint-plugin-ts from 1.5.0 to 1.5.1 ([#715](https://github.com/MorevM/eslint-config/issues/715)) ([73208ab](https://github.com/MorevM/eslint-config/commit/73208ab63715690586f911ff1cef747c6290e24d))
+* bump @typescript-eslint/eslint-plugin from 6.10.0 to 6.14.0 ([#719](https://github.com/MorevM/eslint-config/issues/719)) ([074e1da](https://github.com/MorevM/eslint-config/commit/074e1da0ee640b89d7aa9906af3adc17cc95c659))
+* bump @typescript-eslint/parser from 6.13.2 to 6.14.0 ([#713](https://github.com/MorevM/eslint-config/issues/713)) ([9c03e9f](https://github.com/MorevM/eslint-config/commit/9c03e9f63b133c361e5eeabafff4e544c43b6ba0))
+* bump eslint from 8.55.0 to 8.56.0 ([#714](https://github.com/MorevM/eslint-config/issues/714)) ([ae16506](https://github.com/MorevM/eslint-config/commit/ae16506e91e8d9c0ccd6b3bd4c41af0b482db0e5))
+* bump eslint-plugin-import from 2.29.0 to 2.29.1 ([#720](https://github.com/MorevM/eslint-config/issues/720)) ([09edee5](https://github.com/MorevM/eslint-config/commit/09edee5d79466fc45eb2d0e439f850c70a54c05f))
+* bump eslint-plugin-jsdoc from 46.9.0 to 46.9.1 ([#716](https://github.com/MorevM/eslint-config/issues/716)) ([e046828](https://github.com/MorevM/eslint-config/commit/e04682823b93d53f01812a25604eaecc626794c9))
+* bump eslint-plugin-jsonc from 2.10.0 to 2.11.1 ([#712](https://github.com/MorevM/eslint-config/issues/712)) ([fb78551](https://github.com/MorevM/eslint-config/commit/fb78551df0fd83156702a79143e5c5325b56b9ee))
+* bump eslint-plugin-yml from 1.10.0 to 1.11.0 ([#717](https://github.com/MorevM/eslint-config/issues/717)) ([ea55ca7](https://github.com/MorevM/eslint-config/commit/ea55ca7a621be9fca603c604053444aa381e51a3))
+
 ## [26.1.0](https://github.com/MorevM/eslint-config/compare/v26.0.0...v26.1.0) (2023-12-16)
 
 
