@@ -1,5 +1,27 @@
 
 
+## [26.1.0](https://github.com/MorevM/eslint-config/compare/v26.0.0...v26.1.0) (2023-12-16)
+
+
+### Features
+
+* **typescript:** Add @typescript-eslint/no-unsafe-unary-minus` rule ([d7ee7ba](https://github.com/MorevM/eslint-config/commit/d7ee7ba6b86c0cdc6f4d117971c7b5c9566faf7a))
+
+
+### Bug fixes
+
+* **typescript:** Disable autofix for `@typescript-eslint/prefer-readonly` ([f02fb0b](https://github.com/MorevM/eslint-config/commit/f02fb0b0835fee919b7bb32fff3f6e7c25c97135))
+
+
+### Chores
+
+* bump @html-eslint/eslint-plugin from 0.21.0 to 0.22.0 ([#707](https://github.com/MorevM/eslint-config/issues/707)) ([0cedec9](https://github.com/MorevM/eslint-config/commit/0cedec93ac6e6a2336fef8ef17450007a079d90e))
+* bump @html-eslint/parser from 0.21.0 to 0.22.0 ([#710](https://github.com/MorevM/eslint-config/issues/710)) ([c494923](https://github.com/MorevM/eslint-config/commit/c494923c783801d25871eabea5e7388c8426e2b9))
+* bump @stylistic/eslint-plugin-ts from 1.4.1 to 1.5.0 ([#711](https://github.com/MorevM/eslint-config/issues/711)) ([140ff72](https://github.com/MorevM/eslint-config/commit/140ff7272807bd819b9155f203c7a2959e1215ab))
+* bump @typescript-eslint/parser from 6.10.0 to 6.13.2 ([#703](https://github.com/MorevM/eslint-config/issues/703)) ([272873d](https://github.com/MorevM/eslint-config/commit/272873d8b8c47f52ba596bc156df863cd08dcb13))
+* Bump `@typescript-eslint/eslint-plugin` from 6.10.0 to 6.13.2 ([21764e7](https://github.com/MorevM/eslint-config/commit/21764e7af70bd1541aade28abbc5bfcd80987976))
+* bump eslint-plugin-regexp from 2.1.1 to 2.1.2 ([#702](https://github.com/MorevM/eslint-config/issues/702)) ([110abc5](https://github.com/MorevM/eslint-config/commit/110abc5bb60e0a1b05cd36850889adc6468ca8c3))
+
 ## [26.0.0](https://github.com/MorevM/eslint-config/compare/v25.0.0...v26.0.0) (2023-12-02)
 
 
