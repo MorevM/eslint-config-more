@@ -197,6 +197,10 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-await.md
 		'+unicorn/no-unnecessary-await': 'warn',
 
+		// Enforce the use of built-in methods instead of unnecessary polyfills
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-polyfills.md
+		'+unicorn/no-unnecessary-polyfills': 'warn',
+
 		// Disallow unreadable array destructuring (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-array-destructuring.md
 		// Note: developer knows better
