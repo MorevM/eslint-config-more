@@ -580,6 +580,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-useless-empty-export/
 		'!@typescript-eslint/no-useless-empty-export': 'warn',
 
+		// Disallow unnecessary template literals
+		// https://typescript-eslint.io/rules/no-useless-template-literals
+		'@typescript-eslint/no-useless-template-literals': 'warn',
+
 		// Disallows the use of require statements except in import statements
 		// https://typescript-eslint.io/rules/no-var-requires
 		'@typescript-eslint/no-var-requires': 'error',
