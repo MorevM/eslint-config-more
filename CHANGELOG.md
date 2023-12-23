@@ -1,5 +1,20 @@
 
 
+## [26.2.0](https://github.com/MorevM/eslint-config/compare/v26.1.1...v26.2.0) (2023-12-23)
+
+
+### Features
+
+* **base:** Add `unicorn/no-unnecessary-polyfills` rule ([c6a7ba3](https://github.com/MorevM/eslint-config/commit/c6a7ba3ecd4dd5d1f83d6f3daec6cf6ee50d6079))
+* **typescript:** Add `@typescript-eslint/no-useless-template-literals` rule ([931ea47](https://github.com/MorevM/eslint-config/commit/931ea47ba61e165b781226bc062acb2e5b6d48b4))
+
+
+### Chores
+
+* Bump `@typescript-eslint` packages from 6.14.0 to 6.15.0 ([ac0d78c](https://github.com/MorevM/eslint-config/commit/ac0d78c3a773ab29d00741c76ef0795cbb0e21f7))
+* Bump `eslint-plugin-unicorn` from 49.0.0 to 50.0.1 ([03b41e2](https://github.com/MorevM/eslint-config/commit/03b41e20944188c2a2842f2ff339b2c5995d99ac))
+* Bump eslint-plugin-jsonc from 2.11.1 to 2.11.2 ([#724](https://github.com/MorevM/eslint-config/issues/724)) ([3a8c8b9](https://github.com/MorevM/eslint-config/commit/3a8c8b9ab83a54430271b2c7d314af4af5f5c5b6))
+
 ## [26.1.1](https://github.com/MorevM/eslint-config/compare/v26.1.0...v26.1.1) (2023-12-16)
 
 
