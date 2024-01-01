@@ -266,11 +266,13 @@ module.exports = {
 
 		// Enforce the use of the `u` flag (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/require-unicode-regexp.html
-		'+regexp/require-unicode-regexp': 'warn',
+		// @TODO: [2025-01-01] Review
+		'regexp/require-unicode-regexp': 'off',
 
 		// Enforce the use of the `u` flag (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/require-unicode-sets-regexp.html
-		'+regexp/require-unicode-sets-regexp': 'warn',
+		// @TODO: [2025-01-01] Review
+		'regexp/require-unicode-sets-regexp': 'off',
 
 		// Require simplify set operations (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/simplify-set-operations.html
