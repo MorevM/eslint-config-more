@@ -1,5 +1,16 @@
 
 
+## [26.2.1](https://github.com/MorevM/eslint-config/compare/v26.2.0...v26.2.1) (2024-01-01)
+
+
+### Chores
+* bump @typescript-eslint/eslint-plugin from 6.15.0 to 6.16.0 ([#728](https://github.com/MorevM/eslint-config/issues/728)) ([614929e](https://github.com/MorevM/eslint-config/commit/614929e02a9d460da104c21f012d721b7bc92e8f))
+* bump @typescript-eslint/parser from 6.15.0 to 6.16.0 ([#731](https://github.com/MorevM/eslint-config/issues/731)) ([b2f7eb1](https://github.com/MorevM/eslint-config/commit/b2f7eb13f0db4b2efeac9d58388a973607a436c6))
+
+### Bug fixes
+
+* **base:** Disable `regexp/require-unicode-sets-regexp` and `regexp/require-unicode-regexp` for a while ([4ca4575](https://github.com/MorevM/eslint-config/commit/4ca4575245449c0513be79dc74a0b7ccf936d8d1))
+
 ## [26.2.0](https://github.com/MorevM/eslint-config/compare/v26.1.1...v26.2.0) (2023-12-23)
 
 
