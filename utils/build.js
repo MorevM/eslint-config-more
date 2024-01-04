@@ -50,7 +50,7 @@ const getNames = (config, mode, isPresets = false) => {
 };
 
 const toConfigExports = (content) => {
-	const withUnwrappedPath = JSON.stringify(content, null, '\t').replace(/"(\[path\.resolve.*)"/gv, '$1');
+	const withUnwrappedPath = JSON.stringify(content, null, '\t').replaceAll(/"(\[path\.resolve.*)"/g, '$1');
 	return `const path = require('path');\n\nmodule.exports = ${withUnwrappedPath};`;
 };
 
