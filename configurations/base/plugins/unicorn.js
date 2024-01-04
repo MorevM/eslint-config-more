@@ -299,9 +299,7 @@ module.exports = {
 
 		// Prefer `.at()` method for index access and `String#charAt()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-at.md
-		// Fails on Node 14
-		// TODO: [2024-01-01] Review it again
-		'!unicorn/prefer-at': 'off',
+		'+unicorn/prefer-at': 'warn',
 
 		// Prefer `Blob#arrayBuffer()` over F`ileReader#readAsArrayBuffer(…)` and `Blob#text()` over `FileReader#readAsText(…)`.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-blob-reading-methods.md
