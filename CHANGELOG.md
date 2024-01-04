@@ -1,5 +1,19 @@
 
 
+## [26.3.0](https://github.com/MorevM/eslint-config/compare/v26.2.1...v26.3.0) (2024-01-04)
+
+
+### Features
+
+* **base:** Enable `unicorn/prefer-at` rule ([fef6fa7](https://github.com/MorevM/eslint-config/commit/fef6fa7eec5da74d331264e2ae0ed70b48cb32e7))
+* **base:** Enable `unicorn/prefer-string-replace-all` rule ([d093a49](https://github.com/MorevM/eslint-config/commit/d093a49081c29fec53c6feb85fc27826867d7d84))
+
+
+### Bug fixes
+
+* **typescript:** Disable `@typescript-eslint/unbound-method` ([18346fb](https://github.com/MorevM/eslint-config/commit/18346fb0984ad3b038459c4fdfcb806b0e900c41))
+
+
 ## [26.2.1](https://github.com/MorevM/eslint-config/compare/v26.2.0...v26.2.1) (2024-01-01)
 
 
