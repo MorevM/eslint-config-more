@@ -49,7 +49,7 @@ module.exports = {
 
 		// Report CommonJS `require()` calls and `module.exports` or `exports.*`
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-commonjs.md
-		// @TODO: [2024-01-01] Hmm... It seems to early to turn it on
+		// @TODO: [2025-01-01] Hmm... It seems to early to turn it on
 		'import/no-commonjs': 'off',
 
 		// Forbid imports with CommonJS exports
