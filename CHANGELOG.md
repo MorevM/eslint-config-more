@@ -1,5 +1,24 @@
 
 
+## [26.3.1](https://github.com/MorevM/eslint-config/compare/v26.3.0...v26.3.1) (2024-01-08)
+
+
+### Bug fixes
+
+* **base:** Use uppercase characters for unicode escape sequence in `regexp/letter-case` ([8b5b94b](https://github.com/MorevM/eslint-config/commit/8b5b94bd92fe8a9abe4f772b8256a2d746cf4269))
+
+
+### Chores
+
+* bump @stylistic/eslint-plugin-js from 1.5.1 to 1.5.3 ([#738](https://github.com/MorevM/eslint-config/issues/738)) ([343b48d](https://github.com/MorevM/eslint-config/commit/343b48d144212c23eb00af05bc5fecbb131188ed))
+* bump @stylistic/eslint-plugin-ts from 1.5.1 to 1.5.3 ([#737](https://github.com/MorevM/eslint-config/issues/737)) ([038ca88](https://github.com/MorevM/eslint-config/commit/038ca885a539bf78dbe18c4bc8897ab47dd6875b))
+* bump @typescript-eslint/eslint-plugin from 6.16.0 to 6.18.0 ([#740](https://github.com/MorevM/eslint-config/issues/740)) ([86a7334](https://github.com/MorevM/eslint-config/commit/86a7334552a49325de55d2cf8a5df62603bcb820))
+* bump @typescript-eslint/parser from 6.16.0 to 6.17.0 ([#733](https://github.com/MorevM/eslint-config/issues/733)) ([0633300](https://github.com/MorevM/eslint-config/commit/0633300929333ea72c7e91d00d3b2f2ca4fa537b))
+* bump @typescript-eslint/parser from 6.16.0 to 6.18.0 ([#741](https://github.com/MorevM/eslint-config/issues/741)) ([4c759fd](https://github.com/MorevM/eslint-config/commit/4c759fdce4f1ea549c4b19f88280c24fc3e43d71))
+* bump eslint-plugin-jest from 27.6.0 to 27.6.1 ([#735](https://github.com/MorevM/eslint-config/issues/735)) ([4095f69](https://github.com/MorevM/eslint-config/commit/4095f691e6a176ad23651993a1b7df0b941a5d57))
+* bump eslint-plugin-jsdoc from 46.9.1 to 48.0.2 ([#739](https://github.com/MorevM/eslint-config/issues/739)) ([1f165ff](https://github.com/MorevM/eslint-config/commit/1f165fffaf45a18e137538a4dd73a8ed13d914bc))
+* bump vue from 3.4.1 to 3.4.5 ([#734](https://github.com/MorevM/eslint-config/issues/734)) ([a5e590d](https://github.com/MorevM/eslint-config/commit/a5e590d06afad95082361c21e80c8ec52bcd9966))
+
 ## [26.3.0](https://github.com/MorevM/eslint-config/compare/v26.2.1...v26.3.0) (2024-01-04)
 
 
