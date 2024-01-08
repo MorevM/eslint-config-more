@@ -300,7 +300,7 @@ module.exports = {
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/letter-case.html
 		'+regexp/letter-case': ['warn', {
 			caseInsensitive: 'lowercase', // or "uppercase" or "ignore"
-			unicodeEscape: 'lowercase',
+			unicodeEscape: 'uppercase',
 			hexadecimalEscape: 'lowercase',
 			controlEscape: 'uppercase',
 		}],
