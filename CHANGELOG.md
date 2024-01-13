@@ -1,5 +1,24 @@
 
 
+## [26.4.0](https://github.com/MorevM/eslint-config/compare/v26.3.1...v26.4.0) (2024-01-13)
+
+
+### Features
+
+* **vue:** Add `vue/enforce-style-attribute` rule ([0f0ee02](https://github.com/MorevM/eslint-config/commit/0f0ee028553adeebd3df1064daf26b356f0dd6ba))
+* **vue:** Force `defineExpose` to be a last macro within script block via `vue/define-macros-order` ([46eaf54](https://github.com/MorevM/eslint-config/commit/46eaf54adebb0f48ca6becd880f88ce7c7d41407))
+
+
+### Chores
+
+* bump @typescript-eslint/eslint-plugin from 6.18.0 to 6.18.1 ([#744](https://github.com/MorevM/eslint-config/issues/744)) ([06b8767](https://github.com/MorevM/eslint-config/commit/06b87672e4771d2c86fb2d8b85cf57caf880eb96))
+* bump @typescript-eslint/parser from 6.18.0 to 6.18.1 ([#747](https://github.com/MorevM/eslint-config/issues/747)) ([a167f4e](https://github.com/MorevM/eslint-config/commit/a167f4e5f5e3672970cca6a4e489da018abb0db6))
+* Bump `eslint-plugin-vue` from 9.19.2 to 9.20.1 ([f6d20ce](https://github.com/MorevM/eslint-config/commit/f6d20ce6fbcd219208855390aaa7a6d6c55b159a))
+* bump eslint-plugin-chai-friendly from 0.7.2 to 0.7.4 ([#742](https://github.com/MorevM/eslint-config/issues/742)) ([1e816ef](https://github.com/MorevM/eslint-config/commit/1e816efa1011e56562294910ec94f1e85b5c8b51))
+* bump eslint-plugin-jest from 27.6.1 to 27.6.3 ([#749](https://github.com/MorevM/eslint-config/issues/749)) ([2e23ee4](https://github.com/MorevM/eslint-config/commit/2e23ee404d386cb814fb446bd80732ad88f0ac57))
+* bump eslint-plugin-regexp from 2.1.2 to 2.2.0 ([#745](https://github.com/MorevM/eslint-config/issues/745)) ([0201075](https://github.com/MorevM/eslint-config/commit/02010759c429a4f6d0285a48e310d164de79f18c))
+* bump vue-eslint-parser from 9.3.2 to 9.4.0 ([#750](https://github.com/MorevM/eslint-config/issues/750)) ([7887c25](https://github.com/MorevM/eslint-config/commit/7887c25c0dedce4efc40a18e1672976d9483d139))
+
 ## [26.3.1](https://github.com/MorevM/eslint-config/compare/v26.3.0...v26.3.1) (2024-01-08)
 
 
