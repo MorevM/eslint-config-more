@@ -53,6 +53,12 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/define-props-declaration.html
 		'vue/define-props-declaration': ['warn', 'type-based'],
 
+		// Enforce or forbid the use of the scoped and module attributes in SFC top level style tags.
+		// https://eslint.vuejs.org/rules/enforce-style-attribute.html
+		'vue/enforce-style-attribute': ['warn', {
+			allow: ['plain'],
+		}],
+
 		// Disallow usage of button without an explicit type attribute
 		// https://eslint.vuejs.org/rules/html-button-has-type.html
 		'vue/html-button-has-type': ['error', {
