@@ -4,6 +4,7 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/define-macros-order.html
 		'+vue/define-macros-order': ['warn', {
 			order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'],
+			defineExposeLast: true,
 		}],
 
 		// Disallow deprecated `model` definition (in Vue.js 3.0.0+)
