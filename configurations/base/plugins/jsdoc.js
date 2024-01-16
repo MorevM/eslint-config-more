@@ -252,6 +252,10 @@ module.exports = {
 					tags: [
 						// Supplementary descriptions
 						'see',
+					],
+				},
+				{
+					tags: [
 						'example',
 					],
 				},
