@@ -21,7 +21,7 @@ module.exports = {
 
 		// Enforces a maximum depth to nested describe calls
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/max-nested-describe.md
-		'jest/max-nested-describe': ['warn', { max: 3 }],
+		'jest/max-nested-describe': ['warn', { max: 4 }],
 
 		// Disallow alias methods (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-alias-methods.md
