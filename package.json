@@ -1,7 +1,7 @@
 {
 	"name": "@morev/eslint-config",
 	"description": "Strict shareable ESLint configuration that I personally use",
-	"version": "26.4.0",
+	"version": "27.0.0",
 	"private": false,
 	"engines": {
 		"node": "^18 || >=20"

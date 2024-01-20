@@ -1,5 +1,31 @@
 
 
+## [27.0.0](https://github.com/MorevM/eslint-config/compare/v26.4.0...v27.0.0) (2024-01-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* **typescript:** With new rule `@typescript-eslint/no-array-delete` TS-related configurations and presets become more strict by default.
+
+### Features
+
+* **typescript:** Add `@typescript-eslint/no-array-delete` rule ([2131534](https://github.com/MorevM/eslint-config/commit/2131534758c1d9664fc0643d57cf70fcc2cdef75))
+* **typescript:** Add `@typescript-eslint/prefer-promise-reject-errors` rule extending from the base one ([dc407d5](https://github.com/MorevM/eslint-config/commit/dc407d524a12835874eaf4c274149c39b98ca121))
+* **typescript:** Enable autofix for `@typescript-eslint/no-useless-template-literals` rule ([fc2ef35](https://github.com/MorevM/eslint-config/commit/fc2ef3506096ddb818120b11530c8d55719d3409))
+
+### Bug fixes
+
+* **base:** Add empty line between `see` and `example` tags within JSDocs ([29cbf1e](https://github.com/MorevM/eslint-config/commit/29cbf1e7e7f337bf8c636be31a525a575b462036))
+* **jest:** Disable `sonarjs/no-duplicated-string` for Jest config and related presets ([a821a30](https://github.com/MorevM/eslint-config/commit/a821a30e8bc14fe89b034d2ac9d4e9d3ce78fa0a))
+* **jest:** Increase maximum nested `describe` blocks count from 3 to 4 ([be6a5c7](https://github.com/MorevM/eslint-config/commit/be6a5c773aaa38c3c880f90b084b580d3132e460))
+
+### Chores
+
+* bump @stylistic/eslint-plugin-ts from 1.5.3 to 1.5.4 ([#758](https://github.com/MorevM/eslint-config/issues/758)) ([6d55a1a](https://github.com/MorevM/eslint-config/commit/6d55a1aee7e574f981add2a390c7d90cf3d69101))
+* Bump `[@typescript-eslint](https://github.com/typescript-eslint)` packages from 6.18.1 to 6.19.0 ([efee41e](https://github.com/MorevM/eslint-config/commit/efee41e29760771ecb080be33ea8938a25e8a6af))
+* bump eslint-plugin-jsonc from 2.11.2 to 2.12.2 ([#751](https://github.com/MorevM/eslint-config/issues/751)) ([7159ff5](https://github.com/MorevM/eslint-config/commit/7159ff557a78c77bc06e09a41878155dc381c0e9))
+* bump eslint-plugin-yml from 1.11.0 to 1.12.2 ([#757](https://github.com/MorevM/eslint-config/issues/757)) ([f3fd7a0](https://github.com/MorevM/eslint-config/commit/f3fd7a0a2d72b82544207e311a7fdeee28d9e771))
+
 ## [26.4.0](https://github.com/MorevM/eslint-config/compare/v26.3.1...v26.4.0) (2024-01-13)
 
 
