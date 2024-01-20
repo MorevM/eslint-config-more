@@ -645,6 +645,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/prefer-optional-chain
 		'@typescript-eslint/prefer-optional-chain': 'error',
 
+		// Require using Error objects as Promise rejection reasons
+		// https://typescript-eslint.io/rules/prefer-promise-reject-errors/
+		...extendFromBase('prefer-promise-reject-errors'),
+
 		// Requires that private members are marked as `readonly` if they're
 		// never modified outside of the constructor (autofixable but may be confusing while developing)
 		// https://typescript-eslint.io/rules/prefer-readonly
