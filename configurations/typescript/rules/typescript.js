@@ -293,10 +293,6 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-array-constructor
 		...extendFromBase('+no-array-constructor'),
 
-		// Disallow using the `delete` operator on array values
-		// https://typescript-eslint.io/rules/no-array-delete/
-		'@typescript-eslint/no-array-delete': 'error',
-
 		// Requires that `.toString()` is only called on objects which provide useful information when stringified
 		// https://typescript-eslint.io/rules/no-base-to-string
 		'@typescript-eslint/no-base-to-string': ['error', {
@@ -584,9 +580,9 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-useless-empty-export/
 		'!@typescript-eslint/no-useless-empty-export': 'warn',
 
-		// Disallow unnecessary template literals (autofixable)
+		// Disallow unnecessary template literals
 		// https://typescript-eslint.io/rules/no-useless-template-literals
-		'+@typescript-eslint/no-useless-template-literals': 'warn',
+		'@typescript-eslint/no-useless-template-literals': 'warn',
 
 		// Disallows the use of require statements except in import statements
 		// https://typescript-eslint.io/rules/no-var-requires
@@ -648,10 +644,6 @@ module.exports = {
 		// Prefer using concise optional chain expressions instead of chained logical ands
 		// https://typescript-eslint.io/rules/prefer-optional-chain
 		'@typescript-eslint/prefer-optional-chain': 'error',
-
-		// Require using Error objects as Promise rejection reasons
-		// https://typescript-eslint.io/rules/prefer-promise-reject-errors/
-		...extendFromBase('prefer-promise-reject-errors'),
 
 		// Requires that private members are marked as `readonly` if they're
 		// never modified outside of the constructor (autofixable but may be confusing while developing)
