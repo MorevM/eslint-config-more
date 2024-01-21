@@ -1,5 +1,10 @@
 
 
+## [27.0.1](https://github.com/MorevM/eslint-config/compare/v27.0.0...v27.0.1) (2024-01-21)
+
+Rollback of `@typescript-eslint` update due to internal package error \
+https://github.com/typescript-eslint/typescript-eslint/issues/8261
+
 ## [27.0.0](https://github.com/MorevM/eslint-config/compare/v26.4.0...v27.0.0) (2024-01-20)
 
 
