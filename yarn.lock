@@ -528,10 +528,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.56.0.tgz#ef20350fec605a7f7035a01764731b2de0f3782b"
   integrity sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==
 
-"@html-eslint/eslint-plugin@^0.22.0":
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/@html-eslint/eslint-plugin/-/eslint-plugin-0.22.0.tgz#c727c58b0f1cacd38a60e19d32cf85e21f876bff"
-  integrity sha512-6Q3uW5XeVmUGwH2t5lmt0q51x7dNiaV1GuYReuHOPn01tSn9vJ5OKs71t+OsQzhg+hUqpVrmBizkBJZkcpX/sA==
+"@html-eslint/eslint-plugin@^0.23.1":
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/@html-eslint/eslint-plugin/-/eslint-plugin-0.23.1.tgz#158c11069ee74734ea4daf8e0354fb6ab18ec4d3"
+  integrity sha512-2AU58FZSPPHjNJzuv08GfgU/nfrVgNI4Uj9y6KOaU5egzAf1DO5x6HeZwvS0MPBAduqoC0i1RqHNSQrzCcmB7A==
 
 "@html-eslint/parser@^0.22.0":
   version "0.22.0"
