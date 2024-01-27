@@ -147,7 +147,7 @@
 		"lodash.clonedeep": "^4.5.0",
 		"lodash.mergewith": "^4.6.2",
 		"resolve.exports": "^2.0.2",
-		"vue-eslint-parser": "^9.4.0",
+		"vue-eslint-parser": "^9.4.2",
 		"yaml-eslint-parser": "^1.2.2"
 	},
 	"devDependencies": {
