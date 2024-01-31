@@ -122,7 +122,7 @@ module.exports = {
 
 		// Prevents use of multiple asterisks at the beginning of lines (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-multi-asterisks
-		'+jsdoc/no-multi-asterisks': 'warn',
+		'+jsdoc/no-multi-asterisks': 'off',
 
 		// Reports when certain comment structures are present
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-restricted-syntax
