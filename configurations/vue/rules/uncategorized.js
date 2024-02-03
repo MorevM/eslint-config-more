@@ -213,6 +213,10 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/no-restricted-v-bind.html
 		'vue/no-restricted-v-bind': 'off',
 
+		// Disallow specific argument in `v-on`
+		// https://eslint.vuejs.org/rules/no-restricted-v-bind.html
+		'vue/no-restricted-v-on': 'off',
+
 		// Disallow v-if directives on `root` element
 		// https://eslint.vuejs.org/rules/no-root-v-if.html
 		// Although this is obviously should be an error in a new projects (especially written in TS),
