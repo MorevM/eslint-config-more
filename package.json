@@ -117,7 +117,7 @@
 	},
 	"dependencies": {
 		"@babel/core": "^7.23.9",
-		"@babel/eslint-parser": "^7.23.9",
+		"@babel/eslint-parser": "^7.23.10",
 		"@babel/plugin-syntax-jsx": "^7.23.3",
 		"@html-eslint/eslint-plugin": "^0.23.1",
 		"@html-eslint/parser": "^0.23.0",
@@ -154,7 +154,7 @@
 		"@eslint/eslintrc": "^3.0.0",
 		"@morev/commitlint-config": "^0.2.2",
 		"@release-it/conventional-changelog": "^8.0.1",
-		"@types/jest": "^29.5.11",
+		"@types/jest": "^29.5.12",
 		"eslint": "^8.56.0",
 		"eslint-find-rules": "^4.1.0",
 		"glob": "^10.3.10",
