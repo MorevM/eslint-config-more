@@ -25,6 +25,10 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/require-emit-validator.html
 		'vue/require-emit-validator': 'error',
 
+		// Require slots to be explicitly defined
+		// https://eslint.vuejs.org/rules/require-explicit-slots.html
+		'vue/require-explicit-slots': 'off',
+
 		// Enforce valid `defineOptions` compiler macro
 		// https://eslint.vuejs.org/rules/valid-define-options.html
 		'vue/valid-define-options': 'error',
