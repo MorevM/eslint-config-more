@@ -7,7 +7,7 @@
 ![GitHub Release Date](https://img.shields.io/github/release-date/morevm/eslint-config)
 ![Keywords](https://img.shields.io/github/package-json/keywords/morevm/eslint-config)
 
-Strict shareable ESLint configuration that I personally use.
+Strict shareable ESLint configuration with reasonable defaults.
 
 ## Install
 

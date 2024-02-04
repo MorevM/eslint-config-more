@@ -1,5 +1,26 @@
 
 
+## [28.0.0](https://github.com/MorevM/eslint-config/compare/v27.0.1...v28.0.0) (2024-02-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* **typescript:** With new rule `@typescript-eslint/no-array-delete` TS-related configurations and presets become more strict by default.
+
+### Features
+
+* **typescript:** Add `@typescript-eslint/no-array-delete` rule ([06cf611](https://github.com/MorevM/eslint-config/commit/06cf611b4a78567a23fc15ad115275a4ffb02d15))
+* **typescript:** Add `@typescript-eslint/prefer-promise-reject-errors` rule extending from the base one ([997f198](https://github.com/MorevM/eslint-config/commit/997f1989dff689ed4c6ba21ba0207c157b09d01c))
+* **typescript:** Enable autofix for `@typescript-eslint/no-useless-template-literals` rule ([e2d6220](https://github.com/MorevM/eslint-config/commit/e2d62200839bd6ee91db34249a31173f0256f962))
+* **vue:** Take account of `vue/no-restricted-v-on` rule ([05c3b7f](https://github.com/MorevM/eslint-config/commit/05c3b7f969305f60a6c8f883bae3962098b37cf4))
+* **vue:** Take account of `vue/require-explicit-slots` rule ([2de18c9](https://github.com/MorevM/eslint-config/commit/2de18c976a81fac8cbab69ac2d720ca53e6e2da6))
+
+
+### Bug fixes
+
+* **base:** Disable `jsdoc/no-multi-asterisks` rule ([904722c](https://github.com/MorevM/eslint-config/commit/904722c8d4a3deb557757bd08427a657f6e9fc65))
+
+
 ## [27.0.1](https://github.com/MorevM/eslint-config/compare/v27.0.0...v27.0.1) (2024-01-21)
 
 Rollback of `@typescript-eslint` update due to internal package error \
