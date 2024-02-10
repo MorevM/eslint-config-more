@@ -1,5 +1,21 @@
 
 
+## [28.1.0](https://github.com/MorevM/eslint-config/compare/v28.0.0...v28.1.0) (2024-02-10)
+
+
+### Features
+
+* **typescript:** Add `@stylistic/ts/quote-props` rule ([903b385](https://github.com/MorevM/eslint-config/commit/903b38525c76fd28ccbe672f099239d1764880bd))
+* **typescript:** Take account of `@typescript-eslint/prefer-find` rule ([b28a631](https://github.com/MorevM/eslint-config/commit/b28a63111306748d18fc13bdbd2716b2c0baf9ac))
+
+
+### Chores
+
+* Bump `[@typescript-eslint](https://github.com/typescript-eslint)` packages from 6.20.0 to 6.21.0 ([33cc9f1](https://github.com/MorevM/eslint-config/commit/33cc9f1b0b9900a195ae2fa1bfcdd9e169410548))
+* Bump `@stylistic/eslint-plugin` from 1.5.4 to 1.6.1 ([2f77cff](https://github.com/MorevM/eslint-config/commit/2f77cff565333e1d223073c655b927094eedf495))
+* bump eslint-plugin-jsdoc from 48.0.4 to 48.0.6 ([#779](https://github.com/MorevM/eslint-config/issues/779)) ([93f03ef](https://github.com/MorevM/eslint-config/commit/93f03efec494b55e380c93a307230ba17a997fdd))
+* bump eslint-plugin-unicorn from 50.0.1 to 51.0.1 ([#782](https://github.com/MorevM/eslint-config/issues/782)) ([7c34237](https://github.com/MorevM/eslint-config/commit/7c34237efcb957fb3abdf06370f9be8e7ef4fc04))
+
 ## [28.0.0](https://github.com/MorevM/eslint-config/compare/v27.0.1...v28.0.0) (2024-02-04)
 
 
