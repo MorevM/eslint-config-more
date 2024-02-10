@@ -621,6 +621,11 @@ module.exports = {
 		// https://typescript-eslint.io/rules/prefer-enum-initializers
 		'@typescript-eslint/prefer-enum-initializers': 'error',
 
+		// Prefer initializing each enums member value
+		// https://typescript-eslint.io/rules/prefer-find
+		// Note: `unicorn/prefer-array-find` does the same thing
+		'@typescript-eslint/prefer-find': 'off',
+
 		// Prefer a `for-of` loop over a standard `for` loop if the index is only used to access the array being iterated
 		// https://typescript-eslint.io/rules/prefer-for-of
 		'@typescript-eslint/prefer-for-of': 'warn',
