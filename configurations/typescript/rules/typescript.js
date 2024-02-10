@@ -605,6 +605,10 @@ module.exports = {
 		// https://typescript-eslint.io/rules/padding-line-between-statements
 		...extendFromBase('+padding-line-between-statements'),
 
+		// Require quotes around object literal property names (autofixable)
+		// https://eslint.style/rules/default/quote-props
+		...extendFromBase('+quote-props'),
+
 		// Require or disallow the use of parameter properties in class constructors
 		// https://typescript-eslint.io/rules/parameter-properties
 		'@typescript-eslint/parameter-properties': 'off',
