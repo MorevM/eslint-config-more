@@ -34,7 +34,7 @@ module.exports = {
 
 		// Disallow irregular whitespace
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/no-irregular-whitespace.html
-		'yml/no-irregular-whitespace': ['error', {
+		'yml/no-irregular-whitespace': ['warn', {
 			skipQuotedScalars: true,
 			skipComments: false,
 		}],

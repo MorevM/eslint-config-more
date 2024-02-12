@@ -126,7 +126,7 @@ module.exports = {
 
 		// Disallow irregular whitespace
 		// https://eslint.org/docs/rules/no-irregular-whitespace
-		'no-irregular-whitespace': 'error',
+		'no-irregular-whitespace': 'warn',
 
 		// Disallow number literals that lose precision
 		// https://eslint.org/docs/rules/no-loss-of-precision
