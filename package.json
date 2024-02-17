@@ -121,7 +121,7 @@
 		"@babel/plugin-syntax-jsx": "^7.23.3",
 		"@html-eslint/eslint-plugin": "^0.23.1",
 		"@html-eslint/parser": "^0.23.0",
-		"@stylistic/eslint-plugin-js": "^1.6.1",
+		"@stylistic/eslint-plugin-js": "^1.6.2",
 		"@stylistic/eslint-plugin-ts": "^1.6.1",
 		"@typescript-eslint/eslint-plugin": "^6.21.0",
 		"@typescript-eslint/parser": "^6.21.0",
