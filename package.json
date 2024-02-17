@@ -4,7 +4,7 @@
 	"version": "28.1.0",
 	"private": false,
 	"engines": {
-		"node": "^18 || >=20"
+		"node": "^18.18.0 || >=20.0.0"
 	},
 	"license": "MIT",
 	"publishConfig": {
