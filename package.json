@@ -139,7 +139,7 @@
 		"eslint-plugin-no-secrets": "^0.8.9",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-regexp": "^2.2.0",
-		"eslint-plugin-sonarjs": "^0.23.0",
+		"eslint-plugin-sonarjs": "^0.24.0",
 		"eslint-plugin-unicorn": "^51.0.1",
 		"eslint-plugin-vue": "^9.21.1",
 		"eslint-plugin-yml": "^1.12.2",
