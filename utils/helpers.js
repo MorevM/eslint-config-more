@@ -1,6 +1,6 @@
 const _mergeWith = require('lodash.mergewith');
 const _clonedeep = require('lodash.clonedeep');
-const { ESLINT_FORMATTING_RULES } = require('./constants');
+const { ESLINT_FORMATTING_RULES } = require('./constants.js');
 
 const mergeWithArrayComparer = (ov, sv, key) =>
 	Array.isArray(ov) && ['plugins', 'overrides'].includes(key)
