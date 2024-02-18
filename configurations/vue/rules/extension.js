@@ -47,6 +47,6 @@ const rulesToExtend = [
 
 module.exports = extensionFromBase({
 	prefix: 'vue',
-	baseRules: base('default').rules,
+	baseRules: base.rules,
 	rulesToExtend,
 });

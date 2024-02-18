@@ -1,7 +1,7 @@
 const { makeConfig } = require('../../../utils/tools.js');
 const { ESLINT_FORMATTING_RULES } = require('../../../utils/constants.js');
 
-const base = makeConfig([{ name: 'base', mode: 'strict' }]).rules;
+const base = makeConfig([{ name: 'base' }]).rules;
 
 const extendFromBase = (rule, extendWith = null) => {
 	const cleanRule = rule.replace(/^[!+]/v, '');
