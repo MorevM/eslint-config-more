@@ -1,5 +1,29 @@
 
 
+## [29.0.0](https://github.com/MorevM/eslint-config/compare/v28.1.0...v29.0.0) (2024-02-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* Minimal Node version now is 18.18.0
+
+### Chores
+
+* bump @stylistic/eslint-plugin-js from 1.6.1 to 1.6.2 ([#785](https://github.com/MorevM/eslint-config/issues/785)) ([9b2adf3](https://github.com/MorevM/eslint-config/commit/9b2adf39db73039ee95fb95b93bb142e792e28f8))
+* bump @stylistic/eslint-plugin-ts from 1.6.1 to 1.6.2 ([#790](https://github.com/MorevM/eslint-config/issues/790)) ([6c75335](https://github.com/MorevM/eslint-config/commit/6c75335121a7934d6a2f128eb549697ba687a858))
+* bump @typescript-eslint/eslint-plugin from 6.21.0 to 7.0.0 ([#783](https://github.com/MorevM/eslint-config/issues/783)) ([52c6866](https://github.com/MorevM/eslint-config/commit/52c68661ce1b2efb5130437a181303fdb78caf81))
+* bump eslint-plugin-jest from 27.6.3 to 27.9.0 ([#787](https://github.com/MorevM/eslint-config/issues/787)) ([8e247b1](https://github.com/MorevM/eslint-config/commit/8e247b17007345ad8cc0e5d64cf21480800b7bba))
+* bump eslint-plugin-jsdoc from 48.0.6 to 48.1.0 ([#784](https://github.com/MorevM/eslint-config/issues/784)) ([2b650c6](https://github.com/MorevM/eslint-config/commit/2b650c6512cd684565cc7ad55a8ceb939733db98))
+* bump eslint-plugin-sonarjs from 0.23.0 to 0.24.0 ([#786](https://github.com/MorevM/eslint-config/issues/786)) ([67526b4](https://github.com/MorevM/eslint-config/commit/67526b4aaf64599a73de9b05912fd1b4bdf9c85f))
+* Set minimal Node version to `18.18.0` to adjust with `[@typescript-eslint](https://github.com/typescript-eslint)` requirements ([6f1842d](https://github.com/MorevM/eslint-config/commit/6f1842df3f294913b1eaa7960a93eab3975e9dc5))
+
+
+### Bug fixes
+
+* **base, yaml:** Decrease severity for rules that handle irregular whitespaces ([90cfb42](https://github.com/MorevM/eslint-config/commit/90cfb429e75ce2a7dcb204ae79ca056331c42adc))
+* **base:** Extend `import/order` path groups ([67b84e1](https://github.com/MorevM/eslint-config/commit/67b84e14fb7176d01310a87a946248169e0cfaee))
+* **typescript:** Allow double leading underscore in variable names ([9a86a93](https://github.com/MorevM/eslint-config/commit/9a86a9331d18dc6d8d951f8a1e32fcc24707ad8b))
+
 ## [28.1.0](https://github.com/MorevM/eslint-config/compare/v28.0.0...v28.1.0) (2024-02-10)
 
 
