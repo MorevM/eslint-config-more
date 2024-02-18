@@ -19,7 +19,7 @@ const withOverrides = {
 	typescript: [
 		{
 			name: 'typescript',
-			overrides: { files: ['*.ts'] },
+			overrides: { files: ['*.ts', '*.cts', '*.mts'] },
 		},
 	],
 	vue2: [
@@ -58,7 +58,7 @@ const withOverrides = {
 	html: [
 		{
 			name: 'html',
-			overrides: { files: ['*.html'] },
+			overrides: { files: ['*.html', '*.htm'] },
 		},
 	],
 	assistive: [
