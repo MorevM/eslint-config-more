@@ -11,7 +11,7 @@ module.exports = {
 		// Enforce consistent spacing inside braces (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/flow-mapping-curly-spacing.html
 		'+yml/flow-mapping-curly-spacing': ['warn', 'always', {
-			arraysInObjects: false,
+			arraysInObjects: true,
 			objectsInObjects: true,
 		}],
 
