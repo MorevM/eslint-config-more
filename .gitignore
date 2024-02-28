@@ -17,6 +17,3 @@ yarn-error.log*
 
 # Misc
 todo
-
-# Editors
-.vscode/settings.json

@@ -58,7 +58,6 @@
 	"main": "./build/presets/common.js",
 	"scripts": {
 		"prepare": "lefthook install",
-		"vscode-settings": "cp .vscode/settings.template.json .vscode/settings.json",
 		"build": "node utils/build.js",
 		"test": "yarn build && jest",
 		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\"",
