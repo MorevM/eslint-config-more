@@ -20,11 +20,6 @@ const autofixableRulesToWarn = (rules, autofixableList) => Object.fromEntries(
 		}),
 );
 
-const autofixableRulesToOff = (rules, autofixableList) => Object.fromEntries(
-	Object.entries(rules)
-		.map(([rule, value]) => [rule, autofixableList.includes(rule) ? 'off' : value]),
-);
-
 const extensionFromBase = ({ prefix, baseRules, rulesToExtend }) => {
 	const rules = rulesToExtend.reduce((acc, rule) => {
 		const cleanRule = rule.replace(/^[!+]/v, '');
@@ -45,19 +40,15 @@ const extensionFromBase = ({ prefix, baseRules, rulesToExtend }) => {
 	return { rules };
 };
 
-const getProcessedRules = ({ mode, base, rules }) => {
-	if (mode === 'strict') return rules;
-
+const getProcessedRules = ({ base, rules }) => {
 	const autofixableRules = Object.entries(base.rules)
 		.filter(([key]) => key.startsWith('+'))
 		.map(([key]) => key.slice(1));
 
-	return mode === 'default'
-		? autofixableRulesToWarn(rules, autofixableRules) // default
-		: autofixableRulesToOff(rules, autofixableRules); // quiet
+	return autofixableRulesToWarn(rules, autofixableRules);
 };
 
-const processExports = ({ mode, base, parts }) => {
+const processExports = ({ base, parts }) => {
 	const initialClone = _clonedeep(base);
 	const mergedParts = _mergeWith(
 		{ plugins: ['no-autofix'] },
@@ -76,7 +67,7 @@ const processExports = ({ mode, base, parts }) => {
 			}, []),
 	);
 
-	const processedRules = getProcessedRules({ mode, base: mergedParts, rules });
+	const processedRules = getProcessedRules({ base: mergedParts, rules });
 
 	return _mergeWith(
 		initialClone,

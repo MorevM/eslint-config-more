@@ -5,8 +5,7 @@ const { processExports } = require('../../utils/helpers.js');
  * This congig should be included together with main JSON configuration.
  */
 
-module.exports = (mode) => processExports({
-	mode,
+module.exports = processExports({
 	base: {
 		plugins: ['jsonc'],
 		parser: 'jsonc-eslint-parser',

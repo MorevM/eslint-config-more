@@ -9,4 +9,4 @@ const vue2Parts = [
 
 const parts = [...commonParts, ...vue2Parts];
 
-module.exports = (mode) => processExports({ mode, base,	parts });
+module.exports = processExports({ base,	parts });

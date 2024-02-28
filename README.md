@@ -9,7 +9,7 @@
 
 Strict shareable ESLint configuration with reasonable defaults.
 
-## Install
+## Installation
 
 ### Using `yarn`
 
@@ -31,8 +31,7 @@ pnpm add -D eslint @morev/eslint-config
 
 ## Package contents
 
-The package provides many configurations, each can be used in three variations depending on how you feel
-about errors that can be fixed automatically ([details about autofixable mechanics](#autofixable-mechanics)).
+The package provides [many configurations](#configurations) and [pre-configured presets](#presets) described below.
 
 The rules don't intersect, so if you are working with `Vue2`, you need to include `vue2` and `base` configurations both.
 
@@ -83,9 +82,7 @@ It can be annoying and verbose to write it all the time (although it has advanta
 
 Usually you want to lint all `json` and `yaml` files based on its extension, all `vue` files have `.vue` extension,
 tests placed in `__tests__` folder or named with pattern `*.test.js`, etc. \
-So, presets just configurations with pre-defined `overrides`.
-
-All presets comes with `/strict` and `/quiet` variants exactly the same as individual configurations.
+So, presets are just configurations with pre-defined `overrides`.
 
 * <details>
     <summary><code>common</code></summary>
@@ -385,147 +382,40 @@ All presets comes with `/strict` and `/quiet` variants exactly the same as indiv
 
 ## Autofixable mechanics
 
-Let's take a look on [`no-trailing-spaces`](https://eslint.org/docs/rules/no-trailing-spaces) rule. \
-In my opinion, this rule should definitely have a maximum level of severity (`error`) because if at some point these spaces will be removed,
-then the git diff becomes completely unreadable.
-It makes review harder or forces to have commits only for linting that feels like unpleasant behavior.
+All rules that can be (safely) fixed automatically given a `warning` severity level.
 
-But, at the same time, do you need constant red underlines during development for a rule that can be easily fixed automatically? \
-Thats why all configurations and presets have a three variants:
+<details>
+  <summary>Show an explanation of this decision</summary>
 
-* `Default` \
-  The recommended option to use. \
-  All errors that can be fixed automatically are given a "warning" level.
+  ---
+
+  Let's take a look on [`no-trailing-spaces`](https://eslint.org/docs/rules/no-trailing-spaces) rule. \
+  In my opinion, this rule should definitely have a maximum level of severity (`error`) because if at some point these spaces will be removed,
+  then the git diff becomes completely unreadable.
+  It makes review harder or forces to have commits only for linting that feels like unpleasant behavior.
+
+  But, at the same time, do you need constant red underlines during development for a rule that can be easily fixed automatically? \
+  I believe not.
+
+  But at the same time, errors are still highlighted, but not as "loudly". \
   Thus, the every developer can clearly see which codestyle is considered good,
-  but at the same time not overloaded with an abundance of "red underlines". \
-  It's also recommended to use the "formatOnSave" editor feature (below) along with this option.
+  but at the same time not overloaded with an abundance of "red underlines".
 
-  > Keep in mind that many autofixable rules are actually "partially autofixable",
-  > meaning running the command `eslint --fix` will not reduce the number of warnings to zero in most cases.
-  >
-  > Also keep in mind that some rules marked as `autofixable` in the `ESLint` / `ESLint plugin` documentation
-  > will not be fixed when run with the `--fix` flag. \
-  > For example, the [eqeqeq](https://eslint.org/docs/rules/eqeqeq) rule can be fixed automatically,
-  > but this is dangerous because it can change the application logic. \
-  > Such rules marked with `!` sign in source.
+  ---
 
-  Configurations and presets that use this option are available without any suffix, just name.
+</details>
 
-  <details>
-    <summary>Show configurations / presets names</summary>
+It's also recommended to use ["formatOnSave" editor feature described below](#configure-vscode-to-auto-format-on-save-like-prettier)
+along with this configuration.
 
-    ```bash
-    # Configurations
-    '@morev/eslint-config/base'
-    '@morev/eslint-config/browser'
-    '@morev/eslint-config/cypress'
-    '@morev/eslint-config/html'
-    '@morev/eslint-config/jest'
-    '@morev/eslint-config/json'
-    '@morev/eslint-config/jsonc'
-    '@morev/eslint-config/package-json'
-    '@morev/eslint-config/markdown'
-    '@morev/eslint-config/node'
-    '@morev/eslint-config/typescript'
-    '@morev/eslint-config/vue2'
-    '@morev/eslint-config/vue3'
-    '@morev/eslint-config/yaml'
-
-    # Presets
-    '@morev/eslint-config/preset/common' # Also available as '@morev' - default export
-    '@morev/eslint-config/preset/assistive'
-    '@morev/eslint-config/preset/cypress'
-    '@morev/eslint-config/preset/html'
-    '@morev/eslint-config/preset/jest'
-    '@morev/eslint-config/preset/markdown'
-    '@morev/eslint-config/preset/typescript'
-    '@morev/eslint-config/preset/vue2'
-    '@morev/eslint-config/preset/vue3'
-    ```
-
-  </details>
-
-* `Strict` \
-  This is the most strict option which remains all warning levels "as is" based on personal feelings about the severity of the error. \
-  Configurations and presets that use this option are available with suffix `/strict`.
-
-  <details>
-    <summary>Show configurations / presets names</summary>
-
-    ```bash
-    # Configurations
-    '@morev/eslint-config/base/strict'
-    '@morev/eslint-config/browser/strict'
-    '@morev/eslint-config/cypress/strict'
-    '@morev/eslint-config/html/strict'
-    '@morev/eslint-config/jest/strict'
-    '@morev/eslint-config/json/strict'
-    '@morev/eslint-config/jsonc/strict'
-    '@morev/eslint-config/package-json/strict'
-    '@morev/eslint-config/markdown/strict'
-    '@morev/eslint-config/node/strict'
-    '@morev/eslint-config/typescript/strict'
-    '@morev/eslint-config/vue2/strict'
-    '@morev/eslint-config/vue3/strict'
-    '@morev/eslint-config/yaml/strict'
-
-    # Presets
-    '@morev/eslint-config/preset/common/strict'
-    '@morev/eslint-config/preset/assistive/strict'
-    '@morev/eslint-config/preset/cypress/strict'
-    '@morev/eslint-config/preset/html/strict'
-    '@morev/eslint-config/preset/jest/strict'
-    '@morev/eslint-config/preset/markdown/strict'
-    '@morev/eslint-config/preset/typescript/strict'
-    '@morev/eslint-config/preset/vue2/strict'
-    '@morev/eslint-config/preset/vue3/strict'
-    ```
-
-  </details>
-
-* `Quiet` \
-  Use this option if you think that all errors that can be fixed automatically shouldn't be highlighted at all. \
-  With this option, it's recommended to create another configuration file (for example, `.eslintrc-format.js`) and
-  put the most strict config in it, and run linting with `--fix` and `--config .eslintrc-format.js` flags on the pre-commit hook.
-
-  > Keep in mind that many autofixable rules are actually "partially autofixable",
-  > meaning running the command `eslint --fix` will not reduce the number of warnings to zero in most cases.
-
-  Configurations and presets that use this option are available with suffix `/quiet`:
-
-  <details>
-    <summary>Show configurations / presets names</summary>
-
-    ```bash
-    # Configurations
-    '@morev/eslint-config/base/quiet'
-    '@morev/eslint-config/browser/quiet'
-    '@morev/eslint-config/cypress/quiet'
-    '@morev/eslint-config/html/quiet'
-    '@morev/eslint-config/jest/quiet'
-    '@morev/eslint-config/json/quiet'
-    '@morev/eslint-config/jsonc/quiet'
-    '@morev/eslint-config/package-json/quiet'
-    '@morev/eslint-config/markdown/quiet'
-    '@morev/eslint-config/node/quiet'
-    '@morev/eslint-config/typescript/quiet'
-    '@morev/eslint-config/vue2/quiet'
-    '@morev/eslint-config/vue3/quiet'
-    '@morev/eslint-config/yaml/quiet'
-
-    # Presets
-    '@morev/eslint-config/preset/common/quiet'
-    '@morev/eslint-config/preset/assistive/quiet'
-    '@morev/eslint-config/preset/cypress/quiet'
-    '@morev/eslint-config/preset/html/quiet'
-    '@morev/eslint-config/preset/jest/quiet'
-    '@morev/eslint-config/preset/markdown/quiet'
-    '@morev/eslint-config/preset/typescript/quiet'
-    '@morev/eslint-config/preset/vue2/quiet'
-    '@morev/eslint-config/preset/vue3/quiet'
-    ```
-
-  </details>
+> Keep in mind that many autofixable rules are actually "partially autofixable",
+> meaning running the command `eslint --fix` will not reduce the number of warnings to zero in most cases.
+>
+> Also keep in mind that some rules marked as `autofixable` in the `ESLint` / `ESLint plugin` documentation
+> will not be fixed when run with the `--fix` flag. \
+> For example, the [eqeqeq](https://eslint.org/docs/rules/eqeqeq) rule can be fixed automatically,
+> but this is dangerous because it can change the application logic. \
+> Such rules marked with `!` sign in the source.
 
 ## Usage
 
@@ -590,7 +480,7 @@ Create `.vscode/settings.json`:
 {
   "prettier.enable": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": [
     "javascript",

@@ -33,18 +33,14 @@ fs.copyFileSync(
 
 let exportsField = {};
 
-const getNames = (config, mode, isPresets = false) => {
+const getNames = (config, isPresets = false) => {
 	const resolvedName = config.output || config.name;
 
-	const filename = (mode === 'default')
-		? `${resolvedName}.js`
-		: `${resolvedName}-${mode}.js`;
+	const filename = `${resolvedName}.js`;
 
 	const exportsPrefix = isPresets ? 'preset/' : '';
 
-	const exportsName = (mode === 'default')
-		? `./${exportsPrefix}${resolvedName}`
-		: `./${exportsPrefix}${resolvedName}/${mode}`;
+	const exportsName = `./${exportsPrefix}${resolvedName}`;
 
 	return { filename, exportsName };
 };
@@ -58,28 +54,24 @@ const toConfigExports = (content) => {
 (async () => {
 	// Create presets
 	await presets.forEach(async (preset) => {
-		await ['default', 'strict', 'quiet'].forEach(async (mode) => {
-			const configSource = toConfigExports(
-				makeConfig(preset.configurations.map(c => ({ ...c, mode }))),
-			);
+		const configSource = toConfigExports(
+			makeConfig(preset.configurations.map(c => ({ ...c }))),
+		);
 
-			const { filename, exportsName } = getNames(preset, mode, true);
-			exportsField[exportsName] = `${PRESETS_DIR_REL}${filename}`;
+		const { filename, exportsName } = getNames(preset, true);
+		exportsField[exportsName] = `${PRESETS_DIR_REL}${filename}`;
 
-			fs.writeFileSync(`${PRESETS_DIR}/${filename}`, configSource);
-		});
+		fs.writeFileSync(`${PRESETS_DIR}/${filename}`, configSource);
 	});
 
 	// Create configurations
 	await configurations.forEach(async (config) => {
-		await ['default', 'strict', 'quiet'].forEach(async (mode) => {
-			const configSource = toConfigExports(makeConfig([{ ...config, mode }]));
+		const configSource = toConfigExports(makeConfig([{ ...config }]));
 
-			const { filename, exportsName } = getNames(config, mode);
-			exportsField[exportsName] = `${CONFIGS_DIR_REL}${filename}`;
+		const { filename, exportsName } = getNames(config);
+		exportsField[exportsName] = `${CONFIGS_DIR_REL}${filename}`;
 
-			fs.writeFileSync(`${CONFIGS_DIR}/${filename}`, configSource);
-		});
+		fs.writeFileSync(`${CONFIGS_DIR}/${filename}`, configSource);
 	});
 
 	// Main export aliasing `/presets/common`
