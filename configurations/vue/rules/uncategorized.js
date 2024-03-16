@@ -3,7 +3,7 @@
  * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
  */
 
-const { SPECIAL_CHARACTERS } = require('../../../utils/constants.js');
+const { SPECIAL_CHARACTERS, DIGIT_CHARACTERS } = require('../../../utils/constants.js');
 
 module.exports = {
 	rules: {
@@ -113,7 +113,10 @@ module.exports = {
 		// Disallow the use of bare strings in <template>
 		// https://eslint.vuejs.org/rules/no-bare-strings-in-template.html
 		'vue/no-bare-strings-in-template': ['error', {
-			allowlist: SPECIAL_CHARACTERS,
+			allowlist: [
+				...SPECIAL_CHARACTERS,
+				...DIGIT_CHARACTERS,
+			],
 			attributes: {
 				'/.+/': ['title', 'aria-label', 'aria-placeholder', 'aria-roledescription', 'aria-valuetext'],
 				'input': ['placeholder'],

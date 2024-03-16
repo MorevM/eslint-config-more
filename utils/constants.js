@@ -22,7 +22,10 @@ const SPECIAL_CHARACTERS = [
 	'(', ')', ',', '.', '&', '+', '-', '=', '*', '/', '#', '№', '$',
 	'%', '!', '?', ':', '[', ']', '{', '}', '<', '>', '|',
 	'\u00B7', '\u2022', '\u2010', '\u2013', '\u2014', '\u2212',
+	'©', '®', '™',
 ];
+
+const DIGIT_CHARACTERS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 const ESLINT_FORMATTING_RULES = [
 	'array-bracket-newline', 'array-bracket-spacing', 'array-element-newline',
@@ -45,4 +48,10 @@ const ESLINT_FORMATTING_RULES = [
 	'wrap-iife', 'wrap-regex', 'yield-star-spacing',
 ];
 
-module.exports = { CONFUSING_BROWSER_GLOBALS, INLINE_ELEMENTS, SPECIAL_CHARACTERS, ESLINT_FORMATTING_RULES };
+module.exports = {
+	CONFUSING_BROWSER_GLOBALS,
+	INLINE_ELEMENTS,
+	SPECIAL_CHARACTERS,
+	DIGIT_CHARACTERS,
+	ESLINT_FORMATTING_RULES,
+};
