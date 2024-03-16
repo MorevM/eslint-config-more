@@ -1,5 +1,27 @@
 
 
+## [30.0.0](https://github.com/MorevM/eslint-config/compare/v29.0.0...v30.0.0) (2024-03-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* The configurations and presets with postfix `/quite` and `/strict` are no longer exists.
+
+Practice has shown that there are almost no use cases, so now every configuration and preset has the only export mapping.
+
+### Features
+
+* More `overrides.files` entries for presets ([6baf030](https://github.com/MorevM/eslint-config/commit/6baf0307322468019590510b5f0393ef159b702e))
+
+### Refactoring
+
+* Get rid of `quite / strict` configurations and presets ([0979814](https://github.com/MorevM/eslint-config/commit/0979814fc277f00f9112faa1d9c02ab80ef99c27))
+
+### Bug fixes
+
+* **vue:** Allow digits and more special characters within i18n ([9a5fb8a](https://github.com/MorevM/eslint-config/commit/9a5fb8ac188050488b6ec64893c12fc3bb260766))
+* **yaml:** Fix array spacings inside flow entry ([d140e09](https://github.com/MorevM/eslint-config/commit/d140e0989f38e4e22f05260f2c3ecfc95e1bce61))
+
 ## [29.0.0](https://github.com/MorevM/eslint-config/compare/v28.1.0...v29.0.0) (2024-02-18)
 
 
