@@ -1,5 +1,5 @@
 const _mergeWith = require('lodash.mergewith');
-const _clonedeep = require('lodash.clonedeep');
+const { deepClone } = require('@morev/utils');
 const { ESLINT_FORMATTING_RULES } = require('./constants.js');
 
 const mergeWithArrayComparer = (ov, sv, key) =>
@@ -49,7 +49,7 @@ const getProcessedRules = ({ base, rules }) => {
 };
 
 const processExports = ({ base, parts }) => {
-	const initialClone = _clonedeep(base);
+	const initialClone = deepClone(base);
 	const mergedParts = _mergeWith(
 		{ plugins: ['no-autofix'] },
 		...(parts || []),
