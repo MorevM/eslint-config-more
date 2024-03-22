@@ -4,6 +4,7 @@ const configurations = [
 	{ name: 'cypress' },
 	{ name: 'html' },
 	{ name: 'jest' },
+	{ name: 'vitest' },
 	{ name: 'json' },
 	{ name: 'json/jsonc', output: 'jsonc' },
 	{ name: 'json/package-json', output: 'package-json' },
@@ -39,6 +40,15 @@ const withOverrides = {
 			name: 'jest',
 			overrides: {
 				files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+				excludedFiles: ['**/cypress/**/*'],
+			},
+		},
+	],
+	vitest: [
+		{
+			name: 'vitest',
+			overrides: {
+				files: ['**/*.{test,spec}.?(c|m)[jt]s?(x)'],
 				excludedFiles: ['**/cypress/**/*'],
 			},
 		},
@@ -123,6 +133,12 @@ const presets = [
 		name: 'jest',
 		configurations: [
 			...withOverrides.jest,
+		],
+	},
+	{
+		name: 'vitest',
+		configurations: [
+			...withOverrides.vitest,
 		],
 	},
 	{

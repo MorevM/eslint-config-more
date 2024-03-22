@@ -42,6 +42,7 @@ The rules don't intersect, so if you are working with `Vue2`, you need to includ
 * `@morev/eslint-config/cypress` - for projects that use [Cypress](https://www.cypress.io/)
 * `@morev/eslint-config/html` - for projects that use pure HTML files
 * `@morev/eslint-config/jest` - for projects that use [Jest](https://jestjs.io/)
+* `@morev/eslint-config/vitest` - for projects that use [Vitest](https://vitest.dev/)
 * `@morev/eslint-config/json` - for projects that use [JSON files](https://en.wikipedia.org/wiki/JSON)
   * `@morev/eslint-config/jsonc` - superset of `json` for `.jsonc` and `.json5` files (also suitable for `[jt]sconfig.json` files)
   * `@morev/eslint-config/package-json` - superset of `json` for `package.json` file to keep consistent order of fields
@@ -221,6 +222,36 @@ So, presets are just configurations with pre-defined `overrides`.
           files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
           ignorePatterns: ['**/cypress/**/*'],
           extends: ['@morev/eslint-config/jest'],
+        },
+      ],
+    };
+    ```
+
+  </details>
+
+* <details>
+    <summary><code>vitest</code></summary>
+
+    This preset includes only `vitest` configuration. \
+    Files glob pattern is the same as [Vitest `include` default option](https://vitest.dev/config/#include). \
+    It ignores the `cypress` directory to prevent conflicts.
+
+    <br />
+
+    ```js
+    module.exports = {
+      root: true,
+      extends: ['@morev/eslint-config/preset/vitest'],
+    };
+
+    // It's the same as:
+    module.exports = {
+      root: true,
+      overrides: [
+        {
+          files: ['**/*.{test,spec}.?(c|m)[jt]s?(x)'],
+          ignorePatterns: ['**/cypress/**/*'],
+          extends: ['@morev/eslint-config/vitest'],
         },
       ],
     };
