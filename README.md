@@ -136,7 +136,7 @@ So, presets are just configurations with pre-defined `overrides`.
           extends: ['@morev/eslint-config/markdown'],
         },
         {
-          files: ['*.ts'],
+          files: ['*.ts', '*.cts', '*.mts'],
           extends: ['@morev/eslint-config/typescript'],
         },
         {
@@ -359,7 +359,7 @@ So, presets are just configurations with pre-defined `overrides`.
       root: true,
       overrides: [
         {
-          files: ['*.ts'],
+          files: ['*.ts', '*.cts', '*.mts'],
           extends: ['@morev/eslint-config/typescript'],
         },
       ],
@@ -386,7 +386,7 @@ So, presets are just configurations with pre-defined `overrides`.
       root: true,
       overrides: [
         {
-          files: ['*.html'],
+          files: ['*.html*'],
           extends: ['@morev/eslint-config/html'],
         },
       ],
