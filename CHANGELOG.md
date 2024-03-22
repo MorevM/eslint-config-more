@@ -1,5 +1,34 @@
 
 
+## [31.0.0](https://github.com/MorevM/eslint-config/compare/v30.0.0...v31.0.0) (2024-03-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* As part of the intention to make the config more granular configurations `jest`, `cypress`, `browser` and `node` has been removed from the `common` preset.
+All projects using it must reconfigure the configuration file.
+
+### Features
+
+* **vitest:** Add `vitest` configuration and preset ([7587586](https://github.com/MorevM/eslint-config/commit/7587586d9cf6a3d9181d8a8c0936a24ce4b9b059))
+
+
+### Refactoring
+
+* Remove `jest`, `cypress`, `browser` and `node` configs from `common` preset ([76904b7](https://github.com/MorevM/eslint-config/commit/76904b7a4e0b40ed4ac5c5792d824cdbdf98487a))
+
+
+### Documentation
+
+* Correct typescript and HTML files pattern ([dce8fe9](https://github.com/MorevM/eslint-config/commit/dce8fe948ef1cbbf0af11539fce680c737536e1f))
+
+
+### Chores
+
+* Bump `@html-eslint` packages from 0.23.1 to 0.24.0 ([9df0849](https://github.com/MorevM/eslint-config/commit/9df08492481ab334cd58e1f73ab693b7f456a3c0))
+* Bump `eslint-plugin-jsonc` from 2.13.0 to 2.14.1 ([3892cf3](https://github.com/MorevM/eslint-config/commit/3892cf3afb386a523c5947fc70bf647414d4c58d))
+* Bump `eslint-plugin-yml` from 1.12.2 to 1.13.2 ([ba0478b](https://github.com/MorevM/eslint-config/commit/ba0478bfd903bac040b000b012ca88cdb314f140))
+
 ## [30.0.0](https://github.com/MorevM/eslint-config/compare/v29.0.0...v30.0.0) (2024-03-16)
 
 
