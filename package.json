@@ -71,9 +71,9 @@
 		"typescript": "^5.4.2"
 	},
 	"dependencies": {
-		"@babel/core": "^7.24.0",
-		"@babel/eslint-parser": "^7.23.10",
-		"@babel/plugin-syntax-jsx": "^7.23.3",
+		"@babel/core": "^7.24.3",
+		"@babel/eslint-parser": "^7.24.1",
+		"@babel/plugin-syntax-jsx": "^7.24.1",
 		"@html-eslint/eslint-plugin": "^0.23.1",
 		"@html-eslint/parser": "^0.23.0",
 		"@stylistic/eslint-plugin-js": "^1.6.3",
