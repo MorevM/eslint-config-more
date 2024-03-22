@@ -2,10 +2,14 @@ module.exports = {
 	extends: [
 		'./build/presets/common.js',
 		'./build/presets/vue2.js',
+		'./build/presets/jest.js',
 	],
 	overrides: [
 		{
-			files: ['*.js'],
+			files: ['*.js', '*.cjs'],
+			extends: [
+				'./build/configurations/node.js',
+			],
 			rules: {
 				'node/global-require': 'off',
 				'import/no-dynamic-require': 'off',
