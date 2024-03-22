@@ -118,7 +118,7 @@
 		"jest": "^29.7.0",
 		"lefthook": "^1.6.7",
 		"release-it": "^17.1.1",
-		"typescript": "^5.4.2",
+		"typescript": "^5.4.3",
 		"vue": "^3.4.21"
 	}
 }
