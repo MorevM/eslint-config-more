@@ -61,7 +61,7 @@
 	"scripts": {
 		"prepare": "lefthook install",
 		"build": "node utils/build.js",
-		"test": "yarn build && jest",
+		"test": "yarn build && vitest",
 		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\"",
 		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\" --fix",
 		"release": "release-it --disable-metrics"
@@ -111,14 +111,13 @@
 		"@eslint/eslintrc": "^3.0.2",
 		"@morev/commitlint-config": "^0.2.2",
 		"@release-it/conventional-changelog": "^8.0.1",
-		"@types/jest": "^29.5.12",
 		"eslint": "^8.57.0",
 		"eslint-find-rules": "^4.1.0",
 		"glob": "^10.3.10",
-		"jest": "^29.7.0",
 		"lefthook": "^1.6.7",
 		"release-it": "^17.1.1",
 		"typescript": "^5.4.3",
+		"vitest": "^1.4.0",
 		"vue": "^3.4.21"
 	}
 }

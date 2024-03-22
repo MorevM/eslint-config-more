@@ -2,7 +2,7 @@ module.exports = {
 	extends: [
 		'./build/presets/common.js',
 		'./build/presets/vue2.js',
-		'./build/presets/jest.js',
+		'./build/presets/vitest.js',
 	],
 	overrides: [
 		{
