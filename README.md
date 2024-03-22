@@ -91,15 +91,11 @@ So, presets are just configurations with pre-defined `overrides`.
     It includes configurations:
 
     * `base`
-    * `browser`
-    * `cypress`
     * `html`
-    * `jest`
     * `json`
     * `jsonc`
     * `package-json`
     * `markdown`
-    * `node`
     * `typescript`
     * `yaml`
 
@@ -116,23 +112,11 @@ So, presets are just configurations with pre-defined `overrides`.
       root: true,
       extends: [
         '@morev/eslint-config/base',
-        '@morev/eslint-config/browser',
-        '@morev/eslint-config/node',
       ],
       overrides: [
         {
-          files: ['**/cypress/integration/**/*.*'],
-          ignorePatterns: ['*.hot-update.js'],
-          extends: ['@morev/eslint-config/cypress'],
-        },
-        {
           files: ['*.html*'],
           extends: ['@morev/eslint-config/html'],
-        },
-        {
-          files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-          ignorePatterns: ['**/cypress/**/*'],
-          extends: ['@morev/eslint-config/jest'],
         },
         {
           files: ['*.json', '*.json5', '*.jsonc'],

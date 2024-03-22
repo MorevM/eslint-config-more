@@ -96,11 +96,7 @@ const presets = [
 		name: 'common',
 		configurations: [
 			{ name: 'base' },
-			{ name: 'node' },
-			{ name: 'browser' },
 			...withOverrides.typescript,
-			...withOverrides.jest,
-			...withOverrides.cypress,
 			...withOverrides.assistive,
 			...withOverrides.html,
 		],
