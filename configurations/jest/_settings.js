@@ -3,7 +3,7 @@ const base = {
 		'jest/globals': true,
 	},
 	rules: {
-		'sonarjs/no-duplicated-string': 'off',
+		'sonarjs/no-duplicate-string': 'off',
 	},
 };
 

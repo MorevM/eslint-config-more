@@ -9,7 +9,7 @@ const base = {
 		},
 	},
 	rules: {
-		'sonarjs/no-duplicated-string': 'off',
+		'sonarjs/no-duplicate-string': 'off',
 	},
 };
 
