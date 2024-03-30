@@ -1,5 +1,12 @@
 
 
+## [31.0.2](https://github.com/MorevM/eslint-config/compare/v31.0.1...v31.0.2) (2024-03-30)
+
+
+### Bug fixes
+
+* **base:** Proper resolving of `pathGroups` within `import/order` rule ([13b255d](https://github.com/MorevM/eslint-config/commit/13b255d3ae687ef7863b0c3fdee28c1b3b84ec75)), closes [/github.com/import-js/eslint-plugin-import/issues/2892#issuecomment-1742987549](https://github.com/MorevM//github.com/import-js/eslint-plugin-import/issues/2892/issues/issuecomment-1742987549)
+
 ## [31.0.1](https://github.com/MorevM/eslint-config/compare/v31.0.0...v31.0.1) (2024-03-30)
 
 
