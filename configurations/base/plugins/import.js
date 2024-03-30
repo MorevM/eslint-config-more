@@ -233,11 +233,11 @@ module.exports = {
 			],
 			'pathGroups': [
 				{
-					pattern: '~**',
+					pattern: '~**/**',
 					group: 'internal',
 				},
 				{
-					pattern: '@**',
+					pattern: '@**/**',
 					group: 'internal',
 				},
 			],
