@@ -1,5 +1,21 @@
 
 
+## [31.0.1](https://github.com/MorevM/eslint-config/compare/v31.0.0...v31.0.1) (2024-03-30)
+
+
+### Bug fixes
+
+* Correct name of the disabled rule within testing presets ([026cd0b](https://github.com/MorevM/eslint-config/commit/026cd0bc765bac1ba0cb3e191e3c7b9e87551297))
+
+
+### Chores
+
+* bump eslint-plugin-jsdoc from 48.2.1 to 48.2.2 ([#814](https://github.com/MorevM/eslint-config/issues/814)) ([b81b69e](https://github.com/MorevM/eslint-config/commit/b81b69e19a298c1649be58ce776e4a0b3952f371))
+* bump eslint-plugin-regexp from 2.3.0 to 2.4.0 ([#815](https://github.com/MorevM/eslint-config/issues/815)) ([1f84e21](https://github.com/MorevM/eslint-config/commit/1f84e21d557d13f32a8cb98a60624584a4f62eb4))
+* bump eslint-plugin-sonarjs from 0.24.0 to 0.25.0 ([#813](https://github.com/MorevM/eslint-config/issues/813)) ([0588d25](https://github.com/MorevM/eslint-config/commit/0588d25b8f57987db5e15468c87141018e6b4f7e))
+* bump eslint-plugin-vitest from 0.3.26 to 0.4.0 ([#809](https://github.com/MorevM/eslint-config/issues/809)) ([4c0748a](https://github.com/MorevM/eslint-config/commit/4c0748ac873d43f32cc7660e17ad1885b96ab6ef))
+* bump eslint-plugin-vue from 9.23.0 to 9.24.0 ([#812](https://github.com/MorevM/eslint-config/issues/812)) ([fa2aa75](https://github.com/MorevM/eslint-config/commit/fa2aa752d20a1ff9471490c201981880d1d838d1))
+
 ## [31.0.0](https://github.com/MorevM/eslint-config/compare/v30.0.0...v31.0.0) (2024-03-22)
 
 
