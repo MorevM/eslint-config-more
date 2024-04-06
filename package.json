@@ -99,7 +99,7 @@
 		"eslint-plugin-vitest": "^0.4.0",
 		"eslint-plugin-vitest-globals": "^1.5.0",
 		"eslint-plugin-vue": "^9.24.0",
-		"eslint-plugin-yml": "^1.13.2",
+		"eslint-plugin-yml": "^1.14.0",
 		"jsonc-eslint-parser": "^2.4.0",
 		"lodash.mergewith": "^4.6.2",
 		"resolve.exports": "^2.0.2",
