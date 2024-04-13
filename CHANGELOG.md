@@ -1,5 +1,17 @@
 
 
+## [31.1.0](https://github.com/MorevM/eslint-config/compare/v31.0.2...v31.1.0) (2024-04-13)
+
+
+### Features
+
+* **base:** Add `regexp/unicode-property` rule ([a9a28d9](https://github.com/MorevM/eslint-config/commit/a9a28d9140f6f3e1c27e507eaf35fde078996dda))
+* **base:** Add `unicorn/no-anonymous-default-export` rule ([62eb987](https://github.com/MorevM/eslint-config/commit/62eb9874d352dbe5dae6d3c1e7e48211b7369494))
+* **base:** Add `unicorn/no-await-in-promise-methods` rule ([0648171](https://github.com/MorevM/eslint-config/commit/064817163f8881c3719283dac440e480fd4c55bc))
+* **base:** Take account of `unicorn/no-single-promise-in-promise-methods` rule ([c1bbfe7](https://github.com/MorevM/eslint-config/commit/c1bbfe757a75a9e755a85d573ab02a6bc2b41d94))
+* **jest:** Take account of `jest/prefer-importing-jest-globals` rule ([9e956ff](https://github.com/MorevM/eslint-config/commit/9e956ff887da535eb89893a247667c5ebaa4d4e6))
+
+
 ## [31.0.2](https://github.com/MorevM/eslint-config/compare/v31.0.1...v31.0.2) (2024-03-30)
 
 
