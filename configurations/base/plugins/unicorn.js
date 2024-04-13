@@ -98,6 +98,10 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-expression-member.md
 		'+unicorn/no-await-expression-member': 'error',
 
+		// Disallow using `await` in `Promise` method parameters
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-in-promise-methods.md
+		'unicorn/no-await-in-promise-methods': 'warn',
+
 		// Do not use leading/trailing space between `console.log` parameters (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-console-spaces.md
 		'+unicorn/no-console-spaces': 'warn',
