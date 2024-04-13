@@ -173,6 +173,10 @@ module.exports = {
 		// Note: dunno whats wrong with `process.exit()`
 		'unicorn/no-process-exit': 'off',
 
+		// Disallow passing single-element arrays to Promise methods (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-single-promise-in-promise-methods.md
+		'!unicorn/no-single-promise-in-promise-methods': 'off',
+
 		// Forbid classes that only have static members
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-static-only-class.md
 		'unicorn/no-static-only-class': 'error',
