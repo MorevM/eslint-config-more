@@ -696,15 +696,15 @@
     ohash "^1.1.3"
     type-fest "^4.3.1"
 
-"@morev/utils@^3.8.0":
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/@morev/utils/-/utils-3.8.0.tgz#678e4f5801361bb58f200f118e3cfaba53366a30"
-  integrity sha512-icpxCXZwbH5szXx6e2Rn+jfsQH7ZkV46Ggzdt4u7eXu94SFe8HjhmjLC29h83V6RkVfN1pmqAaZSiUUFlClJVA==
+"@morev/utils@^3.9.0":
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/@morev/utils/-/utils-3.9.0.tgz#53d98e091c017b9fa20085c41798fb2e6fcae048"
+  integrity sha512-P/eu1oBI44j7ABtjpZpwgAg1MsN1bvtYceQyuHDBJdQJYxmL95mlqEkMcuWeVOzt97aeqHFo7d4eS72nrbJagA==
   dependencies:
     fast-copy "^3.0.2"
     fast-equals "^5.0.1"
     ohash "^1.1.3"
-    type-fest "^4.13.1"
+    type-fest "^4.15.0"
 
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
   version "5.1.1-v1"
@@ -6117,10 +6117,10 @@ type-fest@^3.8.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.13.1.tgz#bb744c1f0678bea7543a2d1ec24e83e68e8c8706"
   integrity sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==
 
-type-fest@^4.13.1, type-fest@^4.2.0, type-fest@^4.3.1:
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.14.0.tgz#46f9a358e605f0ec5ca99ab83deaa7257a7ae379"
-  integrity sha512-on5/Cw89wwqGZQu+yWO0gGMGu8VNxsaW9SB2HE8yJjllEk7IDTwnSN1dUVldYILhYPN5HzD7WAaw2cc/jBfn0Q==
+type-fest@^4.15.0, type-fest@^4.2.0, type-fest@^4.3.1:
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.15.0.tgz#21da206b89c15774cc718c4f2d693e13a1a14a43"
+  integrity sha512-tB9lu0pQpX5KJq54g+oHOLumOx+pMep4RaM6liXh2PKmVRFF+/vAtUP0ZaJ0kOySfVNjF6doBWPHhBhISKdlIA==
 
 typed-array-buffer@^1.0.0:
   version "1.0.0"
