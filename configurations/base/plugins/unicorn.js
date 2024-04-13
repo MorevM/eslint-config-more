@@ -71,6 +71,10 @@ module.exports = {
 		// Note: it depends, i would like to enable it for all cases except `eslint-disable(-*)?-line`, but there is no option, so off
 		'unicorn/no-abusive-eslint-disable': 'off',
 
+		// Disallow anonymous functions and classes as the default export
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-anonymous-default-export.md
+		'unicorn/no-anonymous-default-export': 'warn',
+
 		// Prevent passing a function reference directly to iterator methods
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-callback-reference.md
 		// Note: not sure, but let this thing be `error` for a while
