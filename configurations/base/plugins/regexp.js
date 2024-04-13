@@ -391,5 +391,17 @@ module.exports = {
 		// Enforce consistent usage of unicode escape or unicode codepoint escape (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/unicode-escape.html
 		'regexp/unicode-escape': 'off',
+
+		// Enforce consistent naming of unicode properties (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/unicode-property.html
+		'+regexp/unicode-property': ['warn', {
+			generalCategory: 'never',
+			key: 'ignore',
+			property: {
+				binary: 'ignore',
+				generalCategory: 'ignore',
+				script: 'long',
+			},
+		}],
 	},
 };
