@@ -3,6 +3,7 @@ const configurations = [
 	{ name: 'browser' },
 	{ name: 'cypress' },
 	{ name: 'html' },
+	{ name: 'jsx-a11y' },
 	{ name: 'jest' },
 	{ name: 'vitest' },
 	{ name: 'json' },
@@ -71,6 +72,12 @@ const withOverrides = {
 			overrides: { files: ['*.html', '*.htm'] },
 		},
 	],
+	jsxA11y: [
+		{
+			name: 'jsx-a11y',
+			overrides: { files: ['*.jsx', '*.tsx'] },
+		},
+	],
 	assistive: [
 		{
 			name: 'json',
@@ -109,6 +116,7 @@ const presets = [
 			...withOverrides.typescript,
 			...withOverrides.assistive,
 			...withOverrides.html,
+			...withOverrides.jsxA11y,
 		],
 	},
 	{
@@ -127,6 +135,12 @@ const presets = [
 		name: 'html',
 		configurations: [
 			...withOverrides.html,
+		],
+	},
+	{
+		name: 'jsx-a11y',
+		configurations: [
+			...withOverrides.jsxA11y,
 		],
 	},
 	{

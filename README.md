@@ -41,6 +41,7 @@ The rules don't intersect, so if you are working with `Vue2`, you need to includ
 * `@morev/eslint-config/browser` - for projects that use DOM and other browser APIs
 * `@morev/eslint-config/cypress` - for projects that use [Cypress](https://www.cypress.io/)
 * `@morev/eslint-config/html` - for projects that use pure HTML files
+* `@morev/eslint-config/jsx-a11y` - for projects that use JSX/TSX
 * `@morev/eslint-config/jest` - for projects that use [Jest](https://jestjs.io/)
 * `@morev/eslint-config/vitest` - for projects that use [Vitest](https://vitest.dev/)
 * `@morev/eslint-config/json` - for projects that use [JSON files](https://en.wikipedia.org/wiki/JSON)
@@ -93,6 +94,7 @@ So, presets are just configurations with pre-defined `overrides`.
 
     * `base`
     * `html`
+    * `jsx-a11y`
     * `json`
     * `jsonc`
     * `package-json`
@@ -388,6 +390,33 @@ So, presets are just configurations with pre-defined `overrides`.
         {
           files: ['*.html*'],
           extends: ['@morev/eslint-config/html'],
+        },
+      ],
+    };
+    ```
+
+  </details>
+
+* <details>
+    <summary><code>jsx-a11y</code></summary>
+
+    Includes `jsx-a11y` rules for JSX/TSX files.
+
+    <br />
+
+    ```js
+    module.exports = {
+      root: true,
+      extends: ['@morev/eslint-config/preset/jsx-a11y'],
+    };
+
+    // It's the same as:
+    module.exports = {
+      root: true,
+      overrides: [
+        {
+          files: ['*.jsx, *.tsx'],
+          extends: ['@morev/eslint-config/jsx-a11y'],
         },
       ],
     };
