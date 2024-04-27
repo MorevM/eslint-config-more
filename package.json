@@ -90,7 +90,7 @@
 		"eslint-plugin-cypress": "^2.15.2",
 		"eslint-plugin-eslint-comments": "^3.2.0",
 		"eslint-plugin-import": "^2.29.1",
-		"eslint-plugin-jest": "^28.2.0",
+		"eslint-plugin-jest": "^28.3.0",
 		"eslint-plugin-jest-formatting": "^3.1.0",
 		"eslint-plugin-jsdoc": "^48.2.3",
 		"eslint-plugin-jsonc": "^2.15.1",
@@ -121,9 +121,9 @@
 		"eslint-find-rules": "^4.1.0",
 		"glob": "^10.3.12",
 		"lefthook": "^1.6.10",
-		"release-it": "^17.2.0",
+		"release-it": "^17.2.1",
 		"typescript": "^5.4.5",
-		"vitest": "^1.5.0",
-		"vue": "^3.4.23"
+		"vitest": "^1.5.2",
+		"vue": "^3.4.25"
 	}
 }
