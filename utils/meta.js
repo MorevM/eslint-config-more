@@ -12,6 +12,7 @@ const configurations = [
 	{ name: 'markdown' },
 	{ name: 'node' },
 	{ name: 'typescript' },
+	{ name: 'astro' },
 	{ name: 'vue/vue2', output: 'vue2' },
 	{ name: 'vue/vue3', output: 'vue3' },
 	{ name: 'yaml' },
@@ -22,6 +23,12 @@ const withOverrides = {
 		{
 			name: 'typescript',
 			overrides: { files: ['*.ts', '*.cts', '*.mts'] },
+		},
+	],
+	astro: [
+		{
+			name: 'astro',
+			overrides: { files: ['*.astro'] },
 		},
 	],
 	vue2: [
@@ -117,6 +124,7 @@ const presets = [
 			...withOverrides.assistive,
 			...withOverrides.html,
 			...withOverrides.jsxA11y,
+			...withOverrides.astro,
 		],
 	},
 	{
@@ -165,6 +173,12 @@ const presets = [
 		name: 'typescript',
 		configurations: [
 			...withOverrides.typescript,
+		],
+	},
+	{
+		name: 'astro',
+		configurations: [
+			...withOverrides.astro,
 		],
 	},
 	{

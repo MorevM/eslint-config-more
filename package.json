@@ -40,6 +40,7 @@
 		"./preset/vitest": "./build/presets/vitest.js",
 		"./preset/markdown": "./build/presets/markdown.js",
 		"./preset/typescript": "./build/presets/typescript.js",
+		"./preset/astro": "./build/presets/astro.js",
 		"./preset/vue2": "./build/presets/vue2.js",
 		"./preset/vue3": "./build/presets/vue3.js",
 		"./base": "./build/configurations/base.js",
@@ -55,6 +56,7 @@
 		"./markdown": "./build/configurations/markdown.js",
 		"./node": "./build/configurations/node.js",
 		"./typescript": "./build/configurations/typescript.js",
+		"./astro": "./build/configurations/astro.js",
 		"./vue2": "./build/configurations/vue2.js",
 		"./vue3": "./build/configurations/vue3.js",
 		"./yaml": "./build/configurations/yaml.js"
@@ -83,6 +85,7 @@
 		"@typescript-eslint/eslint-plugin": "^7.0.0",
 		"@typescript-eslint/parser": "^6.21.0",
 		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-astro": "^1.0.3",
 		"eslint-plugin-chai-friendly": "^0.7.4",
 		"eslint-plugin-cypress": "^2.15.2",
 		"eslint-plugin-eslint-comments": "^3.2.0",
