@@ -1,5 +1,21 @@
 
 
+## [32.0.0](https://github.com/MorevM/eslint-config/compare/v31.1.0...v32.0.0) (2024-04-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **cypress:** With new rule `cypress/no-async-before` preset for `cypress` becomes more strict.
+* Since the new `astro` configuration is included in the `common` preset, it becomes more strict.
+* Since the new `jsx-a11y` configuration is included in the `common` preset, it becomes more strict.
+
+### Features
+
+* Add `astro` configuration and preset ([8877b5f](https://github.com/MorevM/eslint-config/commit/8877b5f35f38d0416a6598e9e795c4eb3b2edf05))
+* Add `jsx-a11y` configuration and preset ([c938d7a](https://github.com/MorevM/eslint-config/commit/c938d7a3985b0b73f159835b95d891abc10e0fc3))
+* **cypress:** Add `cypress/no-async-before` rule ([67b44b5](https://github.com/MorevM/eslint-config/commit/67b44b511d8934ee0c81d2474fb03808d4ac8ea0))
+
+
 ## [31.1.0](https://github.com/MorevM/eslint-config/compare/v31.0.2...v31.1.0) (2024-04-13)
 
 
