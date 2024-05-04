@@ -43,6 +43,10 @@ module.exports = {
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-deprecated-getentrybyslug/
 		'astro/no-deprecated-getentrybyslug': 'error',
 
+		// Disallow value export
+		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-exports-from-components/
+		'astro/no-exports-from-components': 'error',
+
 		// Disallow unused `define:vars={...}` in `style` tag
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-unused-define-vars-in-style/
 		'astro/no-unused-define-vars-in-style': 'error',
