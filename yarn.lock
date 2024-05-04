@@ -1169,12 +1169,12 @@
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-7.0.0.tgz#2e5889c7fe3c873fc6dc6420aa77775f17cd5dc6"
   integrity sha512-9ZIJDqagK1TTs4W9IyeB2sH/s1fFhN9958ycW8NRTg1vXGzzH5PQNzq6KbsbVGMT+oyyfa17DfchHDidcmf5cg==
 
-"@typescript-eslint/types@7.7.1", "@typescript-eslint/types@^7.0.0", "@typescript-eslint/types@^7.7.1":
+"@typescript-eslint/types@7.7.1":
   version "7.7.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-7.7.1.tgz#f903a651fb004c75add08e4e9e207f169d4b98d7"
   integrity sha512-AmPmnGW1ZLTpWa+/2omPrPfR7BcbUU4oha5VIbSbS1a1Tv966bklvLNXxp3mrbc+P2j4MNOTfDffNsk4o0c6/w==
 
-"@typescript-eslint/types@7.8.0":
+"@typescript-eslint/types@7.8.0", "@typescript-eslint/types@^7.0.0", "@typescript-eslint/types@^7.7.1":
   version "7.8.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-7.8.0.tgz#1fd2577b3ad883b769546e2d1ef379f929a7091d"
   integrity sha512-wf0peJ+ZGlcH+2ZS23aJbOv+ztjeeP8uQ9GgwMJGVLx/Nj9CJt17GWgWWoSmoRVKAX2X+7fzEnAjxdvK2gqCLw==
@@ -1704,10 +1704,10 @@ ast-types@^0.13.4:
   dependencies:
     tslib "^2.0.1"
 
-astro-eslint-parser@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/astro-eslint-parser/-/astro-eslint-parser-1.0.1.tgz#9c7a7cc0ccce29d8debe08ead1b29e512cf0733d"
-  integrity sha512-dbBnHjxLjX4G6mFo9GCl8VcHIM8xwtxfqzqefUjOU1PwRJ48qWrVeIl2/mz4Usl3YyT+BFO2AP3it17oLjdqtQ==
+astro-eslint-parser@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/astro-eslint-parser/-/astro-eslint-parser-1.0.2.tgz#045ddc3378f679b80b58afd58cca738859cdc11e"
+  integrity sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==
   dependencies:
     "@astrojs/compiler" "^2.0.0"
     "@typescript-eslint/scope-manager" "^7.0.0"
@@ -2948,17 +2948,17 @@ eslint-module-utils@^2.7.4, eslint-module-utils@^2.8.0:
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-astro@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-astro/-/eslint-plugin-astro-1.0.3.tgz#4b30f80747cfdc1a487e88c971fdefc8ccd49501"
-  integrity sha512-+Nna5I9ypbYftyhmF6I9QbyK3o6m3PGfjgcgRzSF1TbHEXG5VI8z+nzsLywcvyVtGhcwmOpnB71iE7XDKnB94Q==
+eslint-plugin-astro@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-astro/-/eslint-plugin-astro-1.1.2.tgz#786d3709dc3adcb4680a46215f1805124178db11"
+  integrity sha512-bVKnu0SH5hMxiw0k/gOpbQxZMztW8EYOv1WnK+ofOP1offosmexbYz087kqZ7kFYe2j7Yoz6UIJxisdjFgdTbw==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
     "@typescript-eslint/types" "^7.7.1"
-    astro-eslint-parser "^1.0.1"
+    astro-eslint-parser "^1.0.2"
     eslint-compat-utils "^0.5.0"
-    globals "^13.0.0"
+    globals "^15.0.0"
     postcss "^8.4.14"
     postcss-selector-parser "^6.0.10"
 
@@ -3754,7 +3754,7 @@ globals@^11.1.0:
   resolved "https://registry.yarnpkg.com/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
 
-globals@^13.0.0, globals@^13.19.0, globals@^13.20.0, globals@^13.24.0:
+globals@^13.19.0, globals@^13.20.0, globals@^13.24.0:
   version "13.24.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-13.24.0.tgz#8432a19d78ce0c1e833949c36adb345400bb1171"
   integrity sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==
@@ -3765,6 +3765,11 @@ globals@^14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-14.0.0.tgz#898d7413c29babcf6bafe56fcadded858ada724e"
   integrity sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==
+
+globals@^15.0.0:
+  version "15.1.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-15.1.0.tgz#4e03d200c8362201636b8cdfaa316d6cef67ff1e"
+  integrity sha512-926gJqg+4mkxwYKiFvoomM4J0kWESfk3qfTvRL2/oc/tK/eTDBbrfcKnSa2KtfdxB5onoL7D3A3qIHQFpd4+UA==
 
 globalthis@^1.0.3:
   version "1.0.3"
@@ -5632,18 +5637,10 @@ possible-typed-array-names@^1.0.0:
   resolved "https://registry.yarnpkg.com/possible-typed-array-names/-/possible-typed-array-names-1.0.0.tgz#89bb63c6fada2c3e90adc4a647beeeb39cc7bf8f"
   integrity sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==
 
-postcss-selector-parser@^6.0.10:
+postcss-selector-parser@^6.0.10, postcss-selector-parser@^6.0.15:
   version "6.0.16"
   resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.16.tgz#3b88b9f5c5abd989ef4e2fc9ec8eedd34b20fb04"
   integrity sha512-A0RVJrX+IUkVZbW3ClroRWurercFhieevHB38sr2+l9eUClMqome3LmEmnhlNy+5Mr2EYN6B2Kaw9wYdd+VHiw==
-  dependencies:
-    cssesc "^3.0.0"
-    util-deprecate "^1.0.2"
-
-postcss-selector-parser@^6.0.15:
-  version "6.0.15"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.15.tgz#11cc2b21eebc0b99ea374ffb9887174855a01535"
-  integrity sha512-rEYkQOMUCEMhsKbK66tbEU9QVIxbhN18YiniAwA7XQYTVBqrBy+P2p5JcdqsHgKM2zWylp8d7J6eszocfds5Sw==
   dependencies:
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
