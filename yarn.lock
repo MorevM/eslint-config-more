@@ -718,10 +718,10 @@
     ohash "^1.1.3"
     type-fest "^4.3.1"
 
-"@morev/utils@^3.9.0":
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/@morev/utils/-/utils-3.9.0.tgz#53d98e091c017b9fa20085c41798fb2e6fcae048"
-  integrity sha512-P/eu1oBI44j7ABtjpZpwgAg1MsN1bvtYceQyuHDBJdQJYxmL95mlqEkMcuWeVOzt97aeqHFo7d4eS72nrbJagA==
+"@morev/utils@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@morev/utils/-/utils-3.10.0.tgz#ee12c4b35127948fd324a2087e879a7cdf880efb"
+  integrity sha512-u077GzZWxCQNoV5Y40FiBXKndiDj1o4TwtrtW9PTWHzDVSD1/W1C+2GJcNqKNFnDuj+RzW62YQGTJR74eUJHeg==
   dependencies:
     fast-copy "^3.0.2"
     fast-equals "^5.0.1"
