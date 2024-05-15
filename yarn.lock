@@ -3093,10 +3093,10 @@ eslint-plugin-no-autofix@^2.0.0:
     eslint-rule-composer "^0.3.0"
     find-up "^5.0.0"
 
-eslint-plugin-no-secrets@^0.8.9:
-  version "0.8.9"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-no-secrets/-/eslint-plugin-no-secrets-0.8.9.tgz#5a7cfdf8816dffdc0aa45cd2b28dfda249629523"
-  integrity sha512-CqaBxXrImABCtxMWspAnm8d5UKkpNylC7zqVveb+fJHEvsSiNGJlSWzdSIvBUnW1XhJXkzifNIZQC08rEII5Ng==
+eslint-plugin-no-secrets@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-no-secrets/-/eslint-plugin-no-secrets-1.0.2.tgz#a3860d547ee3be96adc002ec72ac1c6c875278aa"
+  integrity sha512-lXjGcPS6ZMxAouYWsuX5NGsLlOWQ5c+YFHHZFECzRCZIssYQgWVPINgZqAU7caquB32MoEAL+dXRQNDBX0fgwQ==
 
 eslint-plugin-node@^11.1.0:
   version "11.1.0"
