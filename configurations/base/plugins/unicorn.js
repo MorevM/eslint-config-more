@@ -450,6 +450,13 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-trim-start-end.md
 		'+unicorn/prefer-string-trim-start-end': 'warn',
 
+		// Prefer using `structuredClone` to create a deep clone (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-structured-clone.md
+		// Note: https://github.com/eslint/eslint/issues/18354
+		'unicorn/prefer-structured-clone': ['off', {
+			functions: ['deepClone', 'cloneDeep'],
+		}],
+
 		// Prefer `switch` over multiple `else-if` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-switch.md
 		// Note: opinions about that in community too different, so let this thing be `off`
