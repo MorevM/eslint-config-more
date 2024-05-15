@@ -1,5 +1,23 @@
 
 
+## [33.0.0](https://github.com/MorevM/eslint-config/compare/v32.0.0...v33.0.0) (2024-05-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **base:** With new rule `unicorn/no-invalid-fetch-options` preset `common` and `base` configuration become more strict.
+* **astro:** With new rule `astro/no-exports-from-components` configuration `astro` and `common` preset become more strict.
+
+### Features
+
+* **astro:** Add `astro/no-exports-from-components` rule ([5c968b6](https://github.com/MorevM/eslint-config/commit/5c968b663a3602152125aa58f0537c7c49517b28))
+* **base:** Add `unicorn/consistent-empty-array-spread` rule ([c57d901](https://github.com/MorevM/eslint-config/commit/c57d90166c68b3c004f04a203c85e0b138eb679e))
+* **base:** Add `unicorn/no-invalid-fetch-options` rule ([ac23cf3](https://github.com/MorevM/eslint-config/commit/ac23cf38f27d117b6a918451447466f6e3964972))
+* **base:** Add `unicorn/no-magic-array-flat-depth` rule ([3d84d08](https://github.com/MorevM/eslint-config/commit/3d84d08442c305a65d06abad67c629105a8418c4))
+* **base:** Enable `unicorn/no-typeof-undefined` rule ([5c6ce25](https://github.com/MorevM/eslint-config/commit/5c6ce257ed0c11229939aa0de0fc333fc2c0662a))
+* **base:** Take account of `unicorn/prefer-string-raw` rule ([4ab0d3c](https://github.com/MorevM/eslint-config/commit/4ab0d3cad4f0ec209cc639308fd005093d742eda))
+* **base:** Take account of `unicorn/prefer-structured-clone` rule ([7594017](https://github.com/MorevM/eslint-config/commit/7594017100e24616cf55512a47241b0d67888768))
+
 ## [32.0.0](https://github.com/MorevM/eslint-config/compare/v31.1.0...v32.0.0) (2024-04-27)
 
 
