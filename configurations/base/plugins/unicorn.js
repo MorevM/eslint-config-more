@@ -20,6 +20,10 @@ module.exports = {
 		// Reason for `off`: too much false-positive errors
 		'!unicorn/consistent-destructuring': 'off',
 
+		// Prefer consistent types when spreading a ternary in an array literal (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-empty-array-spread.md
+		'+unicorn/consistent-empty-array-spread': 'warn',
+
 		// Move function definitions to the highest possible scope
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-function-scoping.md
 		// Note: really not sure about that, let it be in warn for a while @todo:
