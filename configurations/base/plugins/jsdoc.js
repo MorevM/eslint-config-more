@@ -11,7 +11,7 @@ module.exports = {
 
 		// Ensures that (JavaScript) examples within JSDoc adhere to ESLint rules
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-examples
-		// TODO: [2024-05-11] Doesn't work with ESLint 8, waiting for resolve
+		// TODO: [2025-05-11] Doesn't work with ESLint 8, waiting for resolve
 		// Issue: https://github.com/gajus/eslint-plugin-jsdoc/issues/928
 		'jsdoc/check-examples': 'off',
 
