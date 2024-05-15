@@ -137,6 +137,10 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-instanceof-array.md
 		'+unicorn/no-instanceof-array': 'error',
 
+		// Disallow invalid options in `fetch()` and `new Request()`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-fetch-options.md
+		'unicorn/no-invalid-fetch-options': 'error',
+
 		// Prevent calling `EventTarget#removeEventListener()` with the result of an expression.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-remove-event-listener.md
 		'+unicorn/no-invalid-remove-event-listener': 'error',
