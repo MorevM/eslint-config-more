@@ -154,6 +154,10 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-lonely-if.md
 		'!unicorn/no-lonely-if': 'warn',
 
+		// Disallow a magic number as the `depth` argument in `Array#flat(…)`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-magic-array-flat-depth.md
+		'unicorn/no-magic-array-flat-depth': 'warn',
+
 		// Disallow negated conditions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-condition.md
 		// Note: this is `no-negated-condition` with autofix capacity.
