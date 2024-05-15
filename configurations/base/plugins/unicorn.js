@@ -420,6 +420,11 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-spread.md
 		'+unicorn/prefer-spread': 'error',
 
+		// Prefer using the `String.raw` tag to avoid escaping `\` (autofixable but confusing)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-raw.md
+		// Note: pretty rarely used thing that raises more questions than it does any benefit
+		'!unicorn/prefer-string-raw': 'off',
+
 		// Prefer `String#replaceAll()` over regex searches with the global flag (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-replace-all.md
 		'+unicorn/prefer-string-replace-all': 'warn',
