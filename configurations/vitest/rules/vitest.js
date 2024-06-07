@@ -60,7 +60,7 @@ module.exports = {
 
 		// Disallow focused tests
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-focused-tests.md
-		'vitest/no-focused-tests': 'error',
+		'vitest/no-focused-tests': ['error', { fixable: false }],
 
 		// Disallow setup and teardown hooks
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-hooks.md
