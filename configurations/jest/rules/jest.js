@@ -45,7 +45,7 @@ module.exports = {
 
 		// Disallow use of deprecated functions (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-deprecated-functions.md
-		'+jest/no-deprecated-functions': 'error',
+		'jest/no-deprecated-functions': 'error',
 
 		// Disallow disabled tests
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-disabled-tests.md
@@ -82,7 +82,7 @@ module.exports = {
 
 		// Disallow Jasmine globals (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-jasmine-globals.md
-		'+jest/no-jasmine-globals': 'error',
+		'jest/no-jasmine-globals': 'error',
 
 		// Disallow large snapshots
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-large-snapshots.md
@@ -170,7 +170,7 @@ module.exports = {
 
 		// Suggest using `jest.spyOn()` (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-spy-on.md
-		'+jest/prefer-spy-on': 'error',
+		'jest/prefer-spy-on': 'error',
 
 		// Suggest using `toStrictEqual()`
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-strict-equal.md

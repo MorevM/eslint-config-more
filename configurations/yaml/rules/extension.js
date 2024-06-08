@@ -26,7 +26,7 @@ module.exports = {
 
 		// Enforce consistent spacing between keys and values in mapping pairs (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/key-spacing.html
-		'+yml/key-spacing': ['error', {
+		'yml/key-spacing': ['error', {
 			beforeColon: false,
 			afterColon: true,
 			mode: 'minimum',

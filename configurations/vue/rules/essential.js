@@ -104,7 +104,7 @@ module.exports = {
 
 		// Enforce component's `data` property to be a function (autofixable)
 		// https://eslint.vuejs.org/rules/no-shared-component-data.html
-		'+vue/no-shared-component-data': 'error',
+		'vue/no-shared-component-data': 'error',
 
 		// Disallow side effects in computed properties
 		// https://eslint.vuejs.org/rules/no-side-effects-in-computed-properties.html
@@ -176,7 +176,7 @@ module.exports = {
 
 		// Enforce valid `nextTick` function calls (autofixable)
 		// https://eslint.vuejs.org/rules/valid-next-tick.html
-		'+vue/valid-next-tick': 'error',
+		'vue/valid-next-tick': 'error',
 
 		// Enforce valid template root
 		// https://eslint.vuejs.org/rules/valid-template-root.html

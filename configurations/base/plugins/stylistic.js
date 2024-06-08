@@ -145,7 +145,7 @@ module.exports = {
 
 		// Enforce consistent linebreak style (autofixable)
 		// https://eslint.style/rules/js/linebreak-style
-		'+@stylistic/js/linebreak-style': ['error', 'unix'],
+		'@stylistic/js/linebreak-style': ['error', 'unix'],
 
 		// Enforce empty lines around comments (autofixable)
 		// https://eslint.style/rules/js/lines-around-comment
@@ -189,7 +189,7 @@ module.exports = {
 
 		// Disallow arrow functions where they could be confused with comparisons (autofixable)
 		// https://eslint.style/rules/js/no-confusing-arrow
-		'+@stylistic/js/no-confusing-arrow': ['error', {
+		'@stylistic/js/no-confusing-arrow': ['error', {
 			allowParens: true,
 			onlyOneSimpleParam: true,
 		}],
@@ -257,18 +257,18 @@ module.exports = {
 
 		// Disallow trailing whitespace at the end of lines (autofixable)
 		// https://eslint.style/rules/js/no-trailing-spaces
-		'+@stylistic/js/no-trailing-spaces': ['error', {
+		'@stylistic/js/no-trailing-spaces': ['error', {
 			skipBlankLines: false,
 			ignoreComments: false,
 		}],
 
 		// Disallow whitespace before properties (autofixable)
 		// https://eslint.style/rules/js/no-whitespace-before-property
-		'+@stylistic/js/no-whitespace-before-property': 'error',
+		'@stylistic/js/no-whitespace-before-property': 'error',
 
 		// Enforce the location of single-line statements (autofixable)
 		// https://eslint.style/rules/js/nonblock-statement-body-position
-		'+@stylistic/js/nonblock-statement-body-position': ['error', 'beside', {
+		'@stylistic/js/nonblock-statement-body-position': ['error', 'beside', {
 			overrides: {},
 		}],
 
@@ -293,7 +293,7 @@ module.exports = {
 
 		// Require or disallow newlines around variable declarations (autofixable)
 		// https://eslint.style/rules/js/one-var-declaration-per-line
-		'+@stylistic/js/one-var-declaration-per-line': ['error', 'always'],
+		'@stylistic/js/one-var-declaration-per-line': ['error', 'always'],
 
 		// Requires operator at the beginning of the line in multiline statements (autofixable)
 		// https://eslint.style/rules/js/operator-linebreak

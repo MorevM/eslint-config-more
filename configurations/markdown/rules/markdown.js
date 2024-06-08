@@ -56,7 +56,7 @@ module.exports = {
 
 		// Reports reversed link syntax (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md011
-		'+markdownlint/md011': 'error',
+		'markdownlint/md011': 'error',
 
 		// Enforce multiple consecutive blank lines (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md012
@@ -174,7 +174,7 @@ module.exports = {
 
 		// Bare URL used (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md034
-		'+markdownlint/md034': 'error',
+		'markdownlint/md034': 'error',
 
 		// Horizontal rule style
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md035
@@ -188,7 +188,7 @@ module.exports = {
 
 		// Spaces inside emphasis markers (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md037
-		'+markdownlint/md037': 'error',
+		'markdownlint/md037': 'error',
 
 		// Spaces inside code span elements (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md038

@@ -72,7 +72,7 @@ module.exports = {
 
 		// Disallow importing `node:test` (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-import-node-test.md
-		'+vitest/no-import-node-test': 'error',
+		'vitest/no-import-node-test': 'error',
 
 		// Disallow string interpolation in snapshots (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-interpolation-in-snapshots.md
@@ -154,7 +154,7 @@ module.exports = {
 
 		// Suggest using `vi.spyOn()` (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-spy-on.md
-		'+vitest/prefer-spy-on': 'error',
+		'vitest/prefer-spy-on': 'error',
 
 		// Suggest using `toStrictEqual()`
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-strict-equal.md

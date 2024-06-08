@@ -47,13 +47,13 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-syntax
 		'jsdoc/check-syntax': 'error',
 
-		// Reports invalid block tag names (autofixable)
+		// Reports invalid block tag names
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-tag-names
-		'+jsdoc/check-tag-names': 'error',
+		'jsdoc/check-tag-names': 'error',
 
-		// Reports invalid types (autofixable)
+		// Reports invalid types
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-types
-		'+jsdoc/check-types': 'error',
+		'jsdoc/check-types': 'error',
 
 		// Reports invalid types
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-values
@@ -96,7 +96,7 @@ module.exports = {
 		// Checks for multi-line-style comments which fail
 		// to meet the criteria of a jsdoc block (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-bad-blocks
-		'+jsdoc/no-bad-blocks': ['error', {
+		'jsdoc/no-bad-blocks': ['error', {
 			ignore: ['ts-check', 'ts-expect-error', 'ts-ignore', 'ts-nocheck', 'vite-ignore'],
 		}],
 
@@ -183,7 +183,7 @@ module.exports = {
 		// Requires that all function parameters are documented (autofixable?)
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-param
 		// Note: document all or nothing!
-		'+jsdoc/require-param': ['error', {
+		'jsdoc/require-param': ['error', {
 			enableFixer: true,
 		}],
 

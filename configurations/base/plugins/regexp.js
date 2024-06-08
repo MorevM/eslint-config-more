@@ -63,13 +63,13 @@ module.exports = {
 
 		// Disallow multi-code-point characters in character classes and quantifiers (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-misleading-unicode-character.html
-		'+regexp/no-misleading-unicode-character': ['error', {
+		'regexp/no-misleading-unicode-character': ['error', {
 			fixable: true,
 		}],
 
 		// Disallow missing `g` flag in patterns used in `String#matchAll` and `String#replaceAll` (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-missing-g-flag.html
-		'+regexp/no-missing-g-flag': ['error', {
+		'regexp/no-missing-g-flag': ['error', {
 			strictTypes: true,
 		}],
 
@@ -122,7 +122,7 @@ module.exports = {
 
 		// Enforce consistent escaping of control characters (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/control-character-escape.html
-		'+regexp/control-character-escape': 'error',
+		'regexp/control-character-escape': 'error',
 
 		// Enforce use of escapes on negation (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/negation.html
@@ -138,11 +138,11 @@ module.exports = {
 
 		// Disallow unnecessary nested lookaround assertions (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-extra-lookaround-assertions.html
-		'+regexp/no-extra-lookaround-assertions': 'error',
+		'regexp/no-extra-lookaround-assertions': 'error',
 
 		// Disallow invisible raw character (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-invisible-character.html
-		'+regexp/no-invisible-character': 'error',
+		'regexp/no-invisible-character': 'error',
 
 		// Disallow legacy RegExp features
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-legacy-features.html
@@ -171,11 +171,11 @@ module.exports = {
 
 		// Disallow trivially nested assertions (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-trivially-nested-assertion.html
-		'+regexp/no-trivially-nested-assertion': 'error',
+		'regexp/no-trivially-nested-assertion': 'error',
 
 		// Disallow nested quantifiers that can be rewritten as one quantifier (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-trivially-nested-quantifier.html
-		'+regexp/no-trivially-nested-quantifier': 'error',
+		'regexp/no-trivially-nested-quantifier': 'error',
 
 		// Disallow unused capturing group (autofixable but may be confusing)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-unused-capturing-group.html
@@ -185,7 +185,7 @@ module.exports = {
 
 		// Disallow character class with one character (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-character-class.html
-		'+regexp/no-useless-character-class': 'error',
+		'regexp/no-useless-character-class': 'error',
 
 		// Disallow unnecessary regex flags (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-flag.html
@@ -196,15 +196,15 @@ module.exports = {
 
 		// Disallow unnecessarily non-greedy quantifiers (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-lazy.html
-		'+regexp/no-useless-lazy': 'error',
+		'regexp/no-useless-lazy': 'error',
 
 		// Disallow quantifiers that can be removed (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-quantifier.html
-		'+regexp/no-useless-quantifier': 'error',
+		'regexp/no-useless-quantifier': 'error',
 
 		// Disallow unnecessary range of characters by using a hyphen (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-range.html
-		'+regexp/no-useless-range': 'error',
+		'regexp/no-useless-range': 'error',
 
 		// Disallow unnecessary elements in expression character classes (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-set-operand.html
@@ -216,7 +216,7 @@ module.exports = {
 
 		// Disallow unnecessary `{n,m}` quantifier (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-two-nums-quantifier.html
-		'+regexp/no-useless-two-nums-quantifier': 'error',
+		'regexp/no-useless-two-nums-quantifier': 'error',
 
 		// Disallow quantifiers with a maximum of zero
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-zero-quantifier.html
@@ -238,7 +238,7 @@ module.exports = {
 
 		// Prefer predefined assertion over equivalent lookarounds (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-predefined-assertion.html
-		'+regexp/prefer-predefined-assertion': 'error',
+		'regexp/prefer-predefined-assertion': 'error',
 
 		// Enforce using quantifier (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-quantifier.html
@@ -318,13 +318,13 @@ module.exports = {
 
 		// Disallow unnecessary non-capturing group (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-non-capturing-group.html
-		'+regexp/no-useless-non-capturing-group': ['error', {
+		'regexp/no-useless-non-capturing-group': ['error', {
 			allowTop: 'partial', // or "always" or "never"
 		}],
 
 		// Enforce using character class (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-character-class.html
-		'+regexp/prefer-character-class': ['error', {
+		'regexp/prefer-character-class': ['error', {
 			minAlternatives: 2,
 		}],
 
@@ -341,7 +341,7 @@ module.exports = {
 
 		// Enforce using named backreferences (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-named-backreference.html
-		'+regexp/prefer-named-backreference': 'error',
+		'regexp/prefer-named-backreference': 'error',
 
 		// Enforce using named capture groups
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-named-capture-group.html
@@ -350,27 +350,27 @@ module.exports = {
 
 		// Enforce using named replacement (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-named-replacement.html
-		'+regexp/prefer-named-replacement': ['error', {
+		'regexp/prefer-named-replacement': ['error', {
 			strictTypes: true,
 		}],
 
 		// Enforce using `+` quantifier (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-plus-quantifier.html
-		'+regexp/prefer-plus-quantifier': 'error',
+		'regexp/prefer-plus-quantifier': 'error',
 
 		// Enforce using `?` quantifier (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-question-quantifier.html
-		'+regexp/prefer-question-quantifier': 'error',
+		'regexp/prefer-question-quantifier': 'error',
 
 		// Enforce using result array groups (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-result-array-groups.html
-		'+regexp/prefer-result-array-groups': ['error', {
+		'regexp/prefer-result-array-groups': ['error', {
 			strictTypes: true,
 		}],
 
 		// Enforce using `*` quantifier (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-star-quantifier.html
-		'+regexp/prefer-star-quantifier': 'error',
+		'regexp/prefer-star-quantifier': 'error',
 
 		// Enforce use of unicode codepoint escapes (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-unicode-codepoint-escapes.html

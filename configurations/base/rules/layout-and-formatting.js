@@ -13,6 +13,6 @@ module.exports = {
 
 		// Require or disallow Unicode byte order mark (BOM) (autofixable)
 		// https://eslint.org/docs/rules/unicode-bom
-		'+unicode-bom': ['error', 'never'],
+		'unicode-bom': ['error', 'never'],
 	},
 };

@@ -30,7 +30,7 @@ module.exports = {
 
 		// Disallow trailing whitespaces at the end of lines (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-trailing-spaces
-		'+@html-eslint/no-trailing-spaces': ['error'],
+		'@html-eslint/no-trailing-spaces': ['error'],
 
 		// Enforce consistent quoting attributes with double or single (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/quotes

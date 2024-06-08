@@ -8,12 +8,12 @@ module.exports = {
 
 		// Disallow using deprecated object declaration on `data`(autofixable)
 		// https://eslint.vuejs.org/rules/no-deprecated-data-object-declaration.html
-		'+vue/no-deprecated-data-object-declaration': 'error',
+		'vue/no-deprecated-data-object-declaration': 'error',
 
 		// Disallow using deprecated `destroyed` and `beforeDestroy` lifecycle hooks
 		// (autofixable)
 		// https://eslint.vuejs.org/rules/no-deprecated-destroyed-lifecycle.html
-		'+vue/no-deprecated-destroyed-lifecycle': 'error',
+		'vue/no-deprecated-destroyed-lifecycle': 'error',
 
 		// Disallow using deprecated `$listeners`
 		// https://eslint.vuejs.org/rules/no-deprecated-dollar-listeners-api.html
@@ -21,7 +21,7 @@ module.exports = {
 
 		// Disallow using deprecated `$scopedSlots` (autofixable)
 		// https://eslint.vuejs.org/rules/no-deprecated-dollar-scopedslots-api.html
-		'+vue/no-deprecated-dollar-scopedslots-api': 'error',
+		'vue/no-deprecated-dollar-scopedslots-api': 'error',
 
 		// Disallow using deprecated events api
 		// https://eslint.vuejs.org/rules/no-deprecated-events-api.html
@@ -55,20 +55,20 @@ module.exports = {
 
 		// Disallow deprecated `scope` attribute (autofixable)
 		// https://eslint.vuejs.org/rules/no-deprecated-scope-attribute.html
-		'+vue/no-deprecated-scope-attribute': 'error',
+		'vue/no-deprecated-scope-attribute': 'error',
 
 		// Disallow deprecated `slot` attribute (autofixable)
 		// https://eslint.vuejs.org/rules/no-deprecated-slot-attribute.html
-		'+vue/no-deprecated-slot-attribute': 'error',
+		'vue/no-deprecated-slot-attribute': 'error',
 
 		// Disallow deprecated `slot-scope` attribute (autofixable)
 		// https://eslint.vuejs.org/rules/no-deprecated-slot-scope-attribute.html
-		'+vue/no-deprecated-slot-scope-attribute': 'error',
+		'vue/no-deprecated-slot-scope-attribute': 'error',
 
 		// Disallow use of deprecated `.sync` modifier on `v-bind` directive
 		// (autofixable)
 		// https://eslint.vuejs.org/rules/no-deprecated-v-bind-sync.html
-		'+vue/no-deprecated-v-bind-sync': 'error',
+		'vue/no-deprecated-v-bind-sync': 'error',
 
 		// Disallow deprecated `v-is` directive (autofixable but seems broken)
 		// https://eslint.vuejs.org/rules/no-deprecated-v-is.html
@@ -97,7 +97,7 @@ module.exports = {
 		// Disallow use of value wrapped by `ref()` (Composition API) as an operand
 		// (autofixable)
 		// https://eslint.vuejs.org/rules/no-ref-as-operand.html
-		'+vue/no-ref-as-operand': 'error',
+		'vue/no-ref-as-operand': 'error',
 
 		// Disallow destructuring of props passed to setup
 		// https://eslint.vuejs.org/rules/no-setup-props-reactivity-loss.html

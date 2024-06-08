@@ -324,7 +324,7 @@ module.exports = {
 
 		// Disallow duplicate constituents of union or intersection types (autofixable)
 		// https://typescript-eslint.io/rules/no-duplicate-type-constituents
-		'+@typescript-eslint/no-duplicate-type-constituents': ['error', {
+		'@typescript-eslint/no-duplicate-type-constituents': ['error', {
 			ignoreIntersections: false,
 			ignoreUnions: false,
 		}],
@@ -426,7 +426,7 @@ module.exports = {
 
 		// Disallow the `void` operator except when used to discard a value (autofixable)
 		// https://typescript-eslint.io/rules/no-meaningless-void-operator
-		'+@typescript-eslint/no-meaningless-void-operator': ['error', {
+		'@typescript-eslint/no-meaningless-void-operator': ['error', {
 			checkNever: true,
 		}],
 
@@ -685,7 +685,7 @@ module.exports = {
 
 		// Enforce that `this` is used when only `this` type is returned (autofixable)
 		// https://typescript-eslint.io/rules/prefer-return-this-type
-		'+@typescript-eslint/prefer-return-this-type': 'error',
+		'@typescript-eslint/prefer-return-this-type': 'error',
 
 		// Enforce the use of `String#startsWith` and `String#endsWith` instead of
 		// other equivalent methods of checking substrings (autofixable)
@@ -694,7 +694,7 @@ module.exports = {
 
 		// Recommends using `@ts-expect-error` over `@ts-ignore` (autofixable)
 		// https://typescript-eslint.io/rules/prefer-ts-expect-error
-		'+@typescript-eslint/prefer-ts-expect-error': 'error',
+		'@typescript-eslint/prefer-ts-expect-error': 'error',
 
 		// Requires any function or method that returns a `Promise` to be marked `async` (autofixable but may be confusing)
 		// https://typescript-eslint.io/rules/promise-function-async

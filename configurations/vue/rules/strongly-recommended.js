@@ -132,15 +132,15 @@ module.exports = {
 
 		// Enforce `v-bind` directive style (autofixable)
 		// https://eslint.vuejs.org/rules/v-bind-style.html
-		'+vue/v-bind-style': ['error', 'shorthand'],
+		'vue/v-bind-style': ['error', 'shorthand'],
 
 		// Enforce `v-bind` directive style (autofixable)
 		// https://eslint.vuejs.org/rules/v-bind-style.html
-		'+vue/v-on-style': ['error', 'shorthand'],
+		'vue/v-on-style': ['error', 'shorthand'],
 
 		// Enforce `v-slot` directive style (autofixable)
 		// https://eslint.vuejs.org/rules/v-slot-style.html
-		'+vue/v-slot-style': ['error', {
+		'vue/v-slot-style': ['error', {
 			atComponent: 'shorthand',
 			default: 'shorthand',
 			named: 'shorthand',

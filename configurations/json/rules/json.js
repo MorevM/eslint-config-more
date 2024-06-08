@@ -16,11 +16,11 @@ module.exports = {
 
 		// Disallow binary expression (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-binary-expression.html
-		'+jsonc/no-binary-expression': 'error',
+		'jsonc/no-binary-expression': 'error',
 
 		// Disallow binary numeric literals (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-binary-numeric-literals.html
-		'+jsonc/no-binary-numeric-literals': 'error',
+		'jsonc/no-binary-numeric-literals': 'error',
 
 		// Disallow comments (rewritten for `.jsonc` files)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-comments.html
@@ -28,11 +28,11 @@ module.exports = {
 
 		// Disallow escape sequences in identifiers (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-escape-sequence-in-identifier.html
-		'+jsonc/no-escape-sequence-in-identifier': 'error',
+		'jsonc/no-escape-sequence-in-identifier': 'error',
 
 		// Disallow hexadecimal numeric literals (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-hexadecimal-numeric-literals.html
-		'+jsonc/no-hexadecimal-numeric-literals': 'error',
+		'jsonc/no-hexadecimal-numeric-literals': 'error',
 
 		// Disallow Infinity
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-infinity.html
@@ -44,23 +44,23 @@ module.exports = {
 
 		// Disallow number property keys (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-number-props.html
-		'+jsonc/no-number-props': 'error',
+		'jsonc/no-number-props': 'error',
 
 		// Disallow numeric separators (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-numeric-separators.html
-		'+jsonc/no-numeric-separators': 'error',
+		'jsonc/no-numeric-separators': 'error',
 
 		// Disallow octal numeric literals (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-octal-numeric-literals.html
-		'+jsonc/no-octal-numeric-literals': 'error',
+		'jsonc/no-octal-numeric-literals': 'error',
 
 		// Disallow parentheses around the expression (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-parenthesized.html
-		'+jsonc/no-parenthesized': 'error',
+		'jsonc/no-parenthesized': 'error',
 
 		// Disallow plus sign (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-plus-sign.html
-		'+jsonc/no-plus-sign': 'error',
+		'jsonc/no-plus-sign': 'error',
 
 		// Disallow RegExp literals
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-regexp-literals.html
@@ -68,7 +68,7 @@ module.exports = {
 
 		// Disallow template literals (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-template-literals.html
-		'+jsonc/no-template-literals': 'error',
+		'jsonc/no-template-literals': 'error',
 
 		// Disallow `undefined`
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-undefined-value.html
@@ -76,7 +76,7 @@ module.exports = {
 
 		// Disallow Unicode code point escape sequences (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-unicode-codepoint-escapes.html
-		'+jsonc/no-unicode-codepoint-escapes': 'error',
+		'jsonc/no-unicode-codepoint-escapes': 'error',
 
 		// Require array values to be sorted (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/sort-array-values.html
@@ -85,7 +85,7 @@ module.exports = {
 
 		// Disallow invalid number for JSON (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/valid-json-number.html
-		'+jsonc/valid-json-number': 'error',
+		'jsonc/valid-json-number': 'error',
 
 		// Disallow parsing errors in Vue custom blocks
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/vue-custom-block/no-parsing-error.html

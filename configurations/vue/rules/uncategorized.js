@@ -37,7 +37,7 @@ module.exports = {
 
 		// Enforce the casing of component name in `components` options (autofixable)
 		// https://eslint.vuejs.org/rules/component-options-name-casing.html
-		'+vue/component-options-name-casing': ['error', 'PascalCase'],
+		'vue/component-options-name-casing': ['error', 'PascalCase'],
 
 		// Enforce specific casing for custom event name
 		// https://eslint.vuejs.org/rules/custom-event-name-casing.html
@@ -309,7 +309,7 @@ module.exports = {
 
 		// Require or disallow padding lines between blocks (autofixable)
 		// https://eslint.vuejs.org/rules/padding-line-between-blocks.html
-		'+vue/padding-line-between-blocks': ['error', 'always'],
+		'vue/padding-line-between-blocks': ['error', 'always'],
 
 		// Require or disallow newlines between sibling tags in template (autofixable)
 		// https://eslint.vuejs.org/rules/padding-line-between-blocks.html

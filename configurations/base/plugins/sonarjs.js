@@ -145,6 +145,6 @@ module.exports = {
 
 		// A "while" loop should be used instead of a "for" loop (autofixable)
 		// https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/prefer-while.md
-		'+sonarjs/prefer-while': 'error',
+		'sonarjs/prefer-while': 'error',
 	},
 };

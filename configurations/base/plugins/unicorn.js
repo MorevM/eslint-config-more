@@ -31,7 +31,7 @@ module.exports = {
 
 		// Enforce correct `Error` subclassing (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/custom-error-definition.md
-		'+unicorn/custom-error-definition': 'error',
+		'unicorn/custom-error-definition': 'error',
 
 		// Enforce no spaces between braces (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/empty-brace-spaces.md
@@ -135,7 +135,7 @@ module.exports = {
 
 		// Require `Array.isArray()` instead of `instanceof Array` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-instanceof-array.md
-		'+unicorn/no-instanceof-array': 'error',
+		'unicorn/no-instanceof-array': 'error',
 
 		// Disallow invalid options in `fetch()` and `new Request()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-fetch-options.md
@@ -143,7 +143,7 @@ module.exports = {
 
 		// Prevent calling `EventTarget#removeEventListener()` with the result of an expression.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-remove-event-listener.md
-		'+unicorn/no-invalid-remove-event-listener': 'error',
+		'unicorn/no-invalid-remove-event-listener': 'error',
 
 		// Disallow identifiers starting with new or class
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-keyword-prefix.md
@@ -177,7 +177,7 @@ module.exports = {
 		// Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of the deprecated `new Buffer()`
 		// (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-new-buffer.md
-		'+unicorn/no-new-buffer': 'error',
+		'unicorn/no-new-buffer': 'error',
 
 		// Disallow the use of the `null` literal
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
@@ -252,7 +252,7 @@ module.exports = {
 
 		// Disallow useless spread (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-spread.md
-		'+unicorn/no-useless-spread': 'error',
+		'unicorn/no-useless-spread': 'error',
 
 		// Disallow useless case in switch statements
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-switch-case.md
@@ -275,7 +275,7 @@ module.exports = {
 		// Enforce the style of numeric separators by correctly grouping digits (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/numeric-separators-style.md
 		// Note: all default
-		'+unicorn/numeric-separators-style': ['error', {
+		'unicorn/numeric-separators-style': ['error', {
 			onlyIfContainsSeparator: true,
 			hexadecimal: {
 				minimumDigits: 0,
@@ -338,7 +338,7 @@ module.exports = {
 
 		// Prefer default parameters over reassignment (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-default-parameters.md
-		'+unicorn/prefer-default-parameters': 'error',
+		'unicorn/prefer-default-parameters': 'error',
 
 		// Prefer `export…from` when re-exporting (autofixable but might be confusing during development flow)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-export-from.md
@@ -349,7 +349,7 @@ module.exports = {
 		// Prefer `.includes()` over `.indexOf()` and `Array#some()` when checking for existence or non-existence
 		// (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes.md
-		'+unicorn/prefer-includes': 'error',
+		'unicorn/prefer-includes': 'error',
 
 		// Prefer reading a JSON file as a buffer (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-json-parse-buffer.md
@@ -379,7 +379,7 @@ module.exports = {
 		// Prefer negative index over `.length - index` for `{String,Array,TypedArray}#slice()`,
 		// `Array#splice()` and `Array#at()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-negative-index.md
-		'+unicorn/prefer-negative-index': 'error',
+		'unicorn/prefer-negative-index': 'error',
 
 		// Prefer `Number` static properties over global ones (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-number-properties.md
@@ -426,7 +426,7 @@ module.exports = {
 
 		// Prefer the spread operator over `Array.from(…)`, `Array#concat(…)` and `Array#slice()` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-spread.md
-		'+unicorn/prefer-spread': 'error',
+		'unicorn/prefer-spread': 'error',
 
 		// Prefer using the `String.raw` tag to avoid escaping `\` (autofixable but confusing)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-raw.md
@@ -444,7 +444,7 @@ module.exports = {
 
 		// Prefer `String#startsWith()` && `String#endsWith()` over `RegExp#test()` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-starts-ends-with.md
-		'+unicorn/prefer-string-starts-ends-with': 'error',
+		'unicorn/prefer-string-starts-ends-with': 'error',
 
 		// Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimLeft()` / `String#trimRight()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-trim-start-end.md
@@ -464,7 +464,7 @@ module.exports = {
 
 		// Prefer ternary expressions over simple if-else statements (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-ternary.md
-		'+unicorn/prefer-ternary': ['error', 'only-single-line'],
+		'unicorn/prefer-ternary': ['error', 'only-single-line'],
 
 		// Prefer top-level await over top-level promises and async function calls
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
@@ -509,7 +509,7 @@ module.exports = {
 
 		// Enforce using the separator argument with `Array#join()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-array-join-separator.md
-		'+unicorn/require-array-join-separator': 'error',
+		'unicorn/require-array-join-separator': 'error',
 
 		// Enforce using the digits argument with `Number#toFixed()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-number-to-fixed-digits-argument.md

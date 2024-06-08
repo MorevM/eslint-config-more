@@ -51,7 +51,7 @@ module.exports = {
 
 		// Require `<!DOCTYPE html>` in the document (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-doctype
-		'+@html-eslint/require-doctype': 'error',
+		'@html-eslint/require-doctype': 'error',
 
 		// Enforce `<li>` to be in `<ul>`, `<ol>` or `<menu>`
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-li-container

@@ -27,6 +27,6 @@ module.exports = {
 
 		// Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md
-		'+unicorn/prefer-keyboard-event-key': 'error',
+		'unicorn/prefer-keyboard-event-key': 'error',
 	},
 };

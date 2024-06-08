@@ -258,7 +258,7 @@ module.exports = {
 
 		// Disallow unnecessary boolean casts (autofixable)
 		// https://eslint.org/docs/rules/no-extra-boolean-cast
-		'+no-extra-boolean-cast': 'error',
+		'no-extra-boolean-cast': 'error',
 
 		// Disallow unnecessary labels (autofixable but unsafe)
 		// https://eslint.org/docs/rules/no-extra-label
@@ -404,7 +404,7 @@ module.exports = {
 
 		// Disallow multiple spaces in regular expressions (autofixable)
 		// https://eslint.org/docs/rules/no-regex-spaces
-		'+no-regex-spaces': 'error',
+		'no-regex-spaces': 'error',
 
 		// Disallow specified names in exports
 		// https://eslint.org/docs/rules/no-restricted-exports
@@ -542,7 +542,7 @@ module.exports = {
 		// Disallow ternary operators when simpler alternatives exist (autofixable)
 		// https://eslint.org/docs/rules/no-unneeded-ternary
 		// Note: e.g. `a || b` instead `a ? a : b`
-		'+no-unneeded-ternary': ['error', {
+		'no-unneeded-ternary': ['error', {
 			defaultAssignment: false,
 		}],
 
@@ -557,7 +557,7 @@ module.exports = {
 
 		// Disallow unused labels (autofixable)
 		// https://eslint.org/docs/rules/no-unused-labels
-		'+no-unused-labels': 'error',
+		'no-unused-labels': 'error',
 
 		// Disallow unnecessary calls to `.call()` and `.apply()`
 		// https://eslint.org/docs/rules/no-useless-call
@@ -569,7 +569,7 @@ module.exports = {
 
 		// Disallow unnecessary computed property keys in objects and classes (autofixable)
 		// https://eslint.org/docs/rules/no-useless-computed-key
-		'+no-useless-computed-key': 'error',
+		'no-useless-computed-key': 'error',
 
 		// Disallow unnecessary string concatenation
 		// https://eslint.org/docs/rules/no-useless-concat
@@ -585,7 +585,7 @@ module.exports = {
 
 		// Disallow renaming `import`, `export`, and destructured assignments to the same name (autofixable)
 		// https://eslint.org/docs/rules/no-useless-rename
-		'+no-useless-rename': ['error', {
+		'no-useless-rename': ['error', {
 			ignoreDestructuring: false,
 			ignoreImport: false,
 			ignoreExport: false,
@@ -615,7 +615,7 @@ module.exports = {
 
 		// Require method and property shorthand syntax for object literals (autofixable)
 		// https://eslint.org/docs/rules/object-shorthand
-		'+object-shorthand': ['error', 'always', {
+		'object-shorthand': ['error', 'always', {
 			ignoreConstructors: false,
 			avoidQuotes: false,
 		}],
@@ -623,7 +623,7 @@ module.exports = {
 		// Enforce variables to be declared either together or separately in functions (autofixable)
 		// https://eslint.org/docs/rules/one-var
 		// Note: set to `separately`
-		'+one-var': ['error', 'never'],
+		'one-var': ['error', 'never'],
 
 		// Require or disallow assignment operator shorthand where possible (autofixable)
 		// https://eslint.org/docs/rules/operator-assignment
@@ -632,7 +632,7 @@ module.exports = {
 
 		// Require using arrow functions for callbacks (autofixable)
 		// https://eslint.org/docs/rules/prefer-arrow-callback
-		'+prefer-arrow-callback': ['error', {
+		'prefer-arrow-callback': ['error', {
 			allowNamedFunctions: false,
 			allowUnboundThis: true,
 		}],
@@ -670,7 +670,7 @@ module.exports = {
 
 		// Disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals (autofixable)
 		// https://eslint.org/docs/rules/prefer-numeric-literals
-		'+prefer-numeric-literals': 'error',
+		'prefer-numeric-literals': 'error',
 
 		// Disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn()` (autofixable)
 		// https://eslint.org/docs/rules/prefer-object-has-own
@@ -678,7 +678,7 @@ module.exports = {
 
 		// Prefer use of an object spread over `Object.assign` (autofixable)
 		// https://eslint.org/docs/rules/prefer-object-spread
-		'+prefer-object-spread': 'error',
+		'prefer-object-spread': 'error',
 
 		// Require using Error objects as Promise rejection reasons
 		// https://eslint.org/docs/rules/prefer-promise-reject-errors
@@ -739,7 +739,7 @@ module.exports = {
 		// Require or disallow `strict` mode directives (autofixable)
 		// https://eslint.org/docs/rules/strict
 		// Note: Code processed by `babel` doesn't need it
-		'+strict': ['error', 'never'],
+		'strict': ['error', 'never'],
 
 		// Require a `Symbol` description
 		// https://eslint.org/docs/rules/symbol-description
@@ -751,6 +751,6 @@ module.exports = {
 
 		// Require or disallow "Yoda" conditions (autofixable)
 		// https://eslint.org/docs/rules/yoda
-		'+yoda': 'error',
+		'yoda': 'error',
 	},
 };

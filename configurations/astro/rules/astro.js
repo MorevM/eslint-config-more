@@ -33,7 +33,7 @@ module.exports = {
 
 		// Disallow using deprecated `Astro.fetchContent()` (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-deprecated-astro-fetchcontent/
-		'+astro/no-deprecated-astro-fetchcontent': 'error',
+		'astro/no-deprecated-astro-fetchcontent': 'error',
 
 		// Disallow using deprecated `Astro.resolve()`
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-deprecated-astro-resolve/
