@@ -2,7 +2,7 @@ module.exports = {
 	rules: {
 		// Require object keys to be sorted (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/sort-keys.html
-		'+jsonc/sort-keys': ['warn', {
+		'jsonc/sort-keys': ['warn', {
 			pathPattern: '^$',
 			order: [
 				'name',

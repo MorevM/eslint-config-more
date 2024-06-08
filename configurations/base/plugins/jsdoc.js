@@ -7,7 +7,7 @@ module.exports = {
 
 		// Reports invalid alignment of JSDoc block asterisks (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-alignment
-		'+jsdoc/check-alignment': 'warn',
+		'jsdoc/check-alignment': 'warn',
 
 		// Ensures that (JavaScript) examples within JSDoc adhere to ESLint rules
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-examples
@@ -22,7 +22,7 @@ module.exports = {
 
 		// Reports invalid alignment of JSDoc block lines (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-line-alignment
-		'+jsdoc/check-line-alignment': ['warn', 'always', {
+		'jsdoc/check-line-alignment': ['warn', 'always', {
 			customSpacings: {
 				postTag: 3,
 				postType: 3,
@@ -59,10 +59,9 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-values
 		'jsdoc/check-values': 'error',
 
-		// Expects the following tags to be empty of any content
-		// (autofixable)
+		// Expects the following tags to be empty of any content (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#empty-tags
-		'+jsdoc/empty-tags': 'warn',
+		'jsdoc/empty-tags': 'warn',
 
 		// Reports an issue with any non-constructor function using `@implements`
 		// https://github.com/gajus/eslint-plugin-jsdoc#implements-on-classes
@@ -89,7 +88,7 @@ module.exports = {
 		// Controls how and whether jsdoc blocks can be expressed
 		// as single or multiple line blocks (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#multiline-blocks
-		'+jsdoc/multiline-blocks': ['warn', {
+		'jsdoc/multiline-blocks': ['warn', {
 			noMultilineBlocks: false,
 			noSingleLineBlocks: true,
 		}],
@@ -105,16 +104,16 @@ module.exports = {
 		// If no tags are present, this rule will prevent extra empty lines in the block description.
 		// (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-blank-block-descriptions
-		'+jsdoc/no-blank-block-descriptions': ['warn'],
+		'jsdoc/no-blank-block-descriptions': ['warn'],
 
 		// Reports and optionally removes blocks with whitespace only (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-blank-blocks.md
-		'+jsdoc/no-blank-blocks': ['warn', { enableFixer: true }],
+		'jsdoc/no-blank-blocks': ['warn', { enableFixer: true }],
 
 		// Reports defaults being used on the relevant portion
 		// of `@param` or `@default` (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-defaults
-		'+jsdoc/no-defaults': 'warn',
+		'jsdoc/no-defaults': 'warn',
 
 		// Report if certain always expected comment structures are missing
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-missing-syntax
@@ -139,7 +138,7 @@ module.exports = {
 
 		// Requires that each JSDoc line starts with an `*` (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-asterisk-prefix
-		'+jsdoc/require-asterisk-prefix': ['warn', 'always'],
+		'jsdoc/require-asterisk-prefix': ['warn', 'always'],
 
 		// Requires that block description, explicit `@description`,
 		// and `@param`/`@returns` tag descriptions are written
@@ -163,7 +162,7 @@ module.exports = {
 		// Requires (or disallows) a hyphen before the `@param` description
 		// (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-hyphen-before-param-description
-		'+jsdoc/require-hyphen-before-param-description': ['warn', 'never'],
+		'jsdoc/require-hyphen-before-param-description': ['warn', 'never'],
 
 		// Checks for presence of jsdoc comments
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-jsdoc
@@ -239,7 +238,7 @@ module.exports = {
 		// Sorts tags by a specified sequence according to tag name (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#sort-tags
 		// Note: let it be here with default order for a while
-		'+jsdoc/sort-tags': ['warn', {
+		'jsdoc/sort-tags': ['warn', {
 			tagSequence: [
 				{
 					tags: [
@@ -433,7 +432,7 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#tag-lines
 		// Note: `any` because of previous `sort-tags` rule, which handles this much more granular
 		// Related: https://github.com/gajus/eslint-plugin-jsdoc/issues/782
-		'+jsdoc/tag-lines': ['warn', 'any', {
+		'jsdoc/tag-lines': ['warn', 'any', {
 			startLines: 1,
 			endLines: 0,
 		}],

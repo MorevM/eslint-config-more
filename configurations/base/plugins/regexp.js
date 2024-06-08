@@ -189,7 +189,7 @@ module.exports = {
 
 		// Disallow unnecessary regex flags (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-flag.html
-		'+regexp/no-useless-flag': ['warn', {
+		'regexp/no-useless-flag': ['warn', {
 			ignore: [], // An array of "i", "m", "s", "g" and "y".
 			strictTypes: true,
 		}], // just give it a chance for a while
@@ -208,11 +208,11 @@ module.exports = {
 
 		// Disallow unnecessary elements in expression character classes (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-set-operand.html
-		'+regexp/no-useless-set-operand': 'warn',
+		'regexp/no-useless-set-operand': 'warn',
 
 		// Disallow string disjunction of single characters in `\q{...}` (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-string-literal.html
-		'+regexp/no-useless-string-literal': 'warn',
+		'regexp/no-useless-string-literal': 'warn',
 
 		// Disallow unnecessary `{n,m}` quantifier (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-two-nums-quantifier.html
@@ -228,7 +228,7 @@ module.exports = {
 
 		// Require optimal quantifiers for concatenated quantifiers (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/optimal-quantifier-concatenation.html
-		'+regexp/optimal-quantifier-concatenation': ['warn', {
+		'regexp/optimal-quantifier-concatenation': ['warn', {
 			capturingGroups: 'report',
 		}],
 
@@ -246,7 +246,7 @@ module.exports = {
 
 		// Enforce using character class range (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-range.html
-		'+regexp/prefer-range': ['warn', {
+		'regexp/prefer-range': ['warn', {
 			target: 'alphanumeric',
 		}],
 
@@ -262,7 +262,7 @@ module.exports = {
 
 		// Prefer character class set operations instead of lookarounds (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-set-operation.html
-		'+regexp/prefer-set-operation': 'warn',
+		'regexp/prefer-set-operation': 'warn',
 
 		// Enforce the use of the `u` flag (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/require-unicode-regexp.html
@@ -276,15 +276,15 @@ module.exports = {
 
 		// Require simplify set operations (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/simplify-set-operations.html
-		'+regexp/simplify-set-operations': 'warn',
+		'regexp/simplify-set-operations': 'warn',
 
 		// Sort alternatives if order doesn't matter (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/sort-alternatives.html
-		'+regexp/sort-alternatives': 'warn',
+		'regexp/sort-alternatives': 'warn',
 
 		// Use the `i` flag if it simplifies the pattern (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/use-ignore-case.html
-		'+regexp/use-ignore-case': 'warn',
+		'regexp/use-ignore-case': 'warn',
 
 		// STYLISTIC ISSUES
 
@@ -298,7 +298,7 @@ module.exports = {
 
 		// Enforce into your favorite case (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/letter-case.html
-		'+regexp/letter-case': ['warn', {
+		'regexp/letter-case': ['warn', {
 			caseInsensitive: 'lowercase', // or "uppercase" or "ignore"
 			unicodeEscape: 'uppercase',
 			hexadecimalEscape: 'lowercase',
@@ -314,7 +314,7 @@ module.exports = {
 		// Disallow unnecessary escape characters in RegExp (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-escape.html
 		'no-useless-escape': 'off',
-		'+regexp/no-useless-escape': 'warn',
+		'regexp/no-useless-escape': 'warn',
 
 		// Disallow unnecessary non-capturing group (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-useless-non-capturing-group.html
@@ -330,7 +330,7 @@ module.exports = {
 
 		// Enforce using `\d` (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-d.html
-		'+regexp/prefer-d': ['warn', {
+		'regexp/prefer-d': ['warn', {
 			insideCharacterClass: 'ignore', // developer knows better
 		}],
 
@@ -378,15 +378,15 @@ module.exports = {
 
 		// Enforce using `\w` (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-w.html
-		'+regexp/prefer-w': 'warn',
+		'regexp/prefer-w': 'warn',
 
 		// Enforces elements order in character class (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/sort-character-class-elements.html
-		'+regexp/sort-character-class-elements': 'warn',
+		'regexp/sort-character-class-elements': 'warn',
 
 		// Require regex flags to be sorted (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/sort-flags.html
-		'+regexp/sort-flags': 'warn',
+		'regexp/sort-flags': 'warn',
 
 		// Enforce consistent usage of unicode escape or unicode codepoint escape (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/unicode-escape.html
@@ -394,7 +394,7 @@ module.exports = {
 
 		// Enforce consistent naming of unicode properties (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/unicode-property.html
-		'+regexp/unicode-property': ['warn', {
+		'regexp/unicode-property': ['warn', {
 			generalCategory: 'never',
 			key: 'ignore',
 			property: {

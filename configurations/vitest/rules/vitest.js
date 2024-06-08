@@ -10,7 +10,7 @@ module.exports = {
 
 		// Prefer `test` or `it` but not both (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-it.md
-		'+vitest/consistent-test-it': ['warn', {
+		'vitest/consistent-test-it': ['warn', {
 			fn: 'test',
 			withinDescribe: 'it',
 		}],
@@ -32,7 +32,7 @@ module.exports = {
 
 		// Disallow alias methods (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-alias-methods.md
-		'+vitest/no-alias-methods': 'warn',
+		'vitest/no-alias-methods': 'warn',
 
 		// Disallow commented out tests
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-commented-out-tests.md
@@ -76,7 +76,7 @@ module.exports = {
 
 		// Disallow string interpolation in snapshots (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-interpolation-in-snapshots.md
-		'+vitest/no-interpolation-in-snapshots': 'error',
+		'vitest/no-interpolation-in-snapshots': 'warn',
 
 		// Disallow large snapshots
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-large-snapshots.md
@@ -100,7 +100,7 @@ module.exports = {
 
 		// Use `.only` and `.skip` over `f` and `x` (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-test-prefixes.md
-		'+vitest/no-test-prefixes': 'error',
+		'vitest/no-test-prefixes': 'warn',
 
 		// Disallow return statements in tests
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-test-return-statement.md
@@ -112,7 +112,7 @@ module.exports = {
 
 		// Suggest using the built-in comparison matchers (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-comparison-matcher.md
-		'+vitest/prefer-comparison-matcher': 'warn',
+		'vitest/prefer-comparison-matcher': 'warn',
 
 		// Prefer `.each` rather than manual loops
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-each.md
@@ -130,7 +130,7 @@ module.exports = {
 
 		// Prefer `await expect(...).resolves` over `expect(await ...)` syntax (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-resolves.md
-		'+vitest/prefer-expect-resolves': 'error',
+		'vitest/prefer-expect-resolves': 'warn',
 
 		// Prefer having hooks in a consistent order
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-hooks-in-order.md
@@ -146,7 +146,7 @@ module.exports = {
 
 		// Prefer mock resolved/rejected shorthands for promises (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-mock-promise-shorthand.md
-		'+vitest/prefer-mock-promise-shorthand': 'warn',
+		'vitest/prefer-mock-promise-shorthand': 'warn',
 
 		// Prefer including a hint with external snapshots
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-snapshot-hint.md
@@ -162,7 +162,7 @@ module.exports = {
 
 		// Suggest using `toBe()` (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be.md
-		'+vitest/prefer-to-be': 'warn',
+		'vitest/prefer-to-be': 'warn',
 
 		// Suggest using `toBeFalsy()` (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-falsy.md
@@ -178,11 +178,11 @@ module.exports = {
 
 		// Suggest using `toContain()` (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-truthy.md
-		'+vitest/prefer-to-contain': 'warn',
+		'vitest/prefer-to-contain': 'warn',
 
 		// Suggest using `toHaveLength()` (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-have-length.md
-		'+vitest/prefer-to-have-length': 'warn',
+		'vitest/prefer-to-have-length': 'warn',
 
 		// Suggest using `test.todo` (autofixable but may be confusing)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-todo.md
@@ -218,7 +218,7 @@ module.exports = {
 
 		// Enforce valid titles (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/valid-title.md
-		'+vitest/valid-title': 'warn',
+		'vitest/valid-title': 'warn',
 
 		// Nothing jest-special inside
 
@@ -231,6 +231,6 @@ module.exports = {
 		// * padding-around-describe-blocks
 		// * padding-around-test-blocks
 		// https://github.com/dangreenisrael/eslint-plugin-jest-formatting/blob/master/docs/rules/padding-around-all.md
-		'+jest-formatting/padding-around-all': 'warn',
+		'jest-formatting/padding-around-all': 'warn',
 	},
 };

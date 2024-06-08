@@ -2,27 +2,27 @@ module.exports = {
 	rules: {
 		// Enforce consistent line breaks after `:` indicator (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/block-mapping-colon-indicator-newline.html
-		'+yml/block-mapping-colon-indicator-newline': ['warn', 'never'],
+		'yml/block-mapping-colon-indicator-newline': ['warn', 'never'],
 
 		// Enforce consistent line breaks after `?` indicator (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/block-mapping-question-indicator-newline.html
-		'+yml/block-mapping-question-indicator-newline': ['error', 'never'],
+		'yml/block-mapping-question-indicator-newline': ['warn', 'never'],
 
 		// Require or disallow block style mappings (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/block-mapping.html
-		'+yml/block-mapping': ['error', {
+		'yml/block-mapping': ['warn', {
 			singleline: 'ignore',
 			multiline: 'always',
 		}],
 
 		// Enforce consistent line breaks after `-` indicator (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/block-sequence-hyphen-indicator-newline.html
-		'+yml/block-sequence-hyphen-indicator-newline': ['error', 'never', { nestedHyphen: 'never' }],
+		'yml/block-sequence-hyphen-indicator-newline': ['warn', 'never', { nestedHyphen: 'never' }],
 
 		// Require or disallow block style sequences (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/block-sequence.html
 		// Reason for `ignore`: developer knows better which variant is more readable
-		'+yml/block-sequence': ['error', {
+		'yml/block-sequence': ['warn', {
 			singleline: 'ignore',
 			multiline: 'ignore',
 		}],
@@ -36,7 +36,7 @@ module.exports = {
 
 		// Enforce consistent indentation (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/indent.html
-		'+yml/indent': ['error', 2],
+		'yml/indent': ['warn', 2],
 
 		// Enforce naming convention to key names
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/key-name-casing.html
@@ -73,11 +73,11 @@ module.exports = {
 
 		// Disallow trailing zeros for floats (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/no-tab-indent.html
-		'+yml/no-trailing-zeros': 'error',
+		'yml/no-trailing-zeros': 'warn',
 
 		// Require or disallow plain style scalar (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/plain-scalar.html
-		'+yml/plain-scalar': ['warn', 'always', {
+		'yml/plain-scalar': ['warn', 'always', {
 			ignorePatterns: [
 				'[\\v\\f\\u0085\\u00a0\\u1680\\u180e\\u2000-\\u200b\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff]',
 				'^(?:y|Y|yes|Yes|YES)$',
@@ -97,7 +97,7 @@ module.exports = {
 
 		// Enforce the consistent use of either double, or single quotes (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/quotes.html
-		'+yml/quotes': ['warn', {
+		'yml/quotes': ['warn', {
 			prefer: 'single',
 			avoidEscape: true,
 		}],

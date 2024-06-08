@@ -15,7 +15,7 @@ module.exports = {
 
 		// Forbid empty named import blocks (autofixable)
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-empty-named-blocks.md
-		'+import/no-empty-named-blocks': 'warn',
+		'import/no-empty-named-blocks': 'warn',
 
 		// Forbid the use of extraneous packages
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
@@ -144,7 +144,7 @@ module.exports = {
 
 		// Enforce or ban the use of inline type-only markers for named imports (autofixable)
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/consistent-type-specifier-style.md
-		'+import/consistent-type-specifier-style': ['warn', 'prefer-top-level'],
+		'import/consistent-type-specifier-style': ['warn', 'prefer-top-level'],
 
 		// Enforce a leading comment with the webpackChunkName for dynamic imports
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/dynamic-import-chunkname.md
@@ -180,7 +180,7 @@ module.exports = {
 
 		// Enforce a newline after import statements (autofixable)
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/newline-after-import.md
-		'+import/newline-after-import': ['warn', {
+		'import/newline-after-import': ['warn', {
 			considerComments: true,
 		}],
 
@@ -195,7 +195,7 @@ module.exports = {
 
 		// Report repeated import of the same module in multiple places (autofixable)
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-duplicates.md
-		'+import/no-duplicates': 'error',
+		'import/no-duplicates': 'warn',
 
 		// Forbid named default exports
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-named-default.md
@@ -218,7 +218,7 @@ module.exports = {
 
 		// Enforce a convention in module import order (autofixable)
 		// https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md
-		'+import/order': ['error', {
+		'import/order': ['warn', {
 			'alphabetize': {
 				caseInsensitive: false,
 				order: 'ignore',

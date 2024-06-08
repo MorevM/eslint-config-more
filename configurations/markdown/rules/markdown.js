@@ -17,13 +17,13 @@ module.exports = {
 
 		// Enforce unordered list style (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md004
-		'+markdownlint/md004': ['warn', {
+		'markdownlint/md004': ['warn', {
 			style: 'asterisk',
 		}],
 
 		// Reports inconsistent indentation for list items at the same level (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md005
-		'+markdownlint/md005': 'warn',
+		'markdownlint/md005': 'warn',
 
 		// Consider starting bulleted lists at the beginning of the line (autofixable; deprecated)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md006
@@ -41,7 +41,7 @@ module.exports = {
 
 		// Disallow trailing spaces (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md009
-		'+markdownlint/md009': ['warn', {
+		'markdownlint/md009': ['warn', {
 			br_spaces: 0, // use `\` for hard break
 			list_item_empty_lines: false,
 			strict: true,
@@ -49,7 +49,7 @@ module.exports = {
 
 		// Disallow hard tab characters (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md010
-		'+markdownlint/md010': ['warn', {
+		'markdownlint/md010': ['warn', {
 			code_blocks: true,
 			spaces_per_tab: 2,
 		}],
@@ -62,7 +62,7 @@ module.exports = {
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md012
 		// TODO: Turned off due of wrong implementation, now replaced with standard `no-multiple-empty-lines`
 		// Related issue: https://gitlab.com/pawelbbdrozd/eslint-plugin-markdownlint/-/issues/6
-		// '+markdownlint/md012': ['warn', {
+		// 'markdownlint/md012': ['warn', {
 		// 	maximum: 2,
 		// }],
 
@@ -81,36 +81,36 @@ module.exports = {
 
 		// Dollar signs used before commands without showing output (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md014
-		'+markdownlint/md014': 'warn',
+		'markdownlint/md014': 'warn',
 
 		// Where is 'markdownlint/md015' - 'markdownlint/md017'? :)
 
 		// Requires space after hash on ATX style heading (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md018
-		'+markdownlint/md018': 'warn',
+		'markdownlint/md018': 'warn',
 
 		// Disallow multiple spaces after hash on ATX style heading (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md019
-		'+markdownlint/md019': 'warn',
+		'markdownlint/md019': 'warn',
 
 		// Requires space inside hashes on closed ATX style heading (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md020
-		'+markdownlint/md020': 'warn',
+		'markdownlint/md020': 'warn',
 
 		// Disallow multiple spaces after hash on closed ATX style heading (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md021
-		'+markdownlint/md021': 'warn',
+		'markdownlint/md021': 'warn',
 
 		// Headings should be surrounded by blank lines (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md022
-		'+markdownlint/md022': ['warn', {
+		'markdownlint/md022': ['warn', {
 			lines_above: 1,
 			lines_below: 1,
 		}],
 
 		// Headings must start at the beginning of the line (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md023
-		'+markdownlint/md023': 'warn',
+		'markdownlint/md023': 'warn',
 
 		// Multiple headings with the same content
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md024
@@ -128,13 +128,13 @@ module.exports = {
 
 		// Trailing punctuation in heading (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md026
-		'+markdownlint/md026': ['warn', {
+		'markdownlint/md026': ['warn', {
 			punctuation: '.,;',
 		}],
 
 		// Multiple spaces after blockquote symbol (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md027
-		'+markdownlint/md027': 'warn',
+		'markdownlint/md027': 'warn',
 
 		// Blank line inside blockquote
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md028
@@ -148,7 +148,7 @@ module.exports = {
 
 		// Spaces after list markers (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md030
-		'+markdownlint/md030': ['warn', {
+		'markdownlint/md030': ['warn', {
 			ul_single: 1,
 			ol_single: 1,
 			ul_multi: 1,
@@ -157,7 +157,7 @@ module.exports = {
 
 		// Fenced code blocks should be surrounded by blank lines (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md031
-		'+markdownlint/md031': ['warn', {
+		'markdownlint/md031': ['warn', {
 			list_items: true,
 		}],
 
@@ -192,11 +192,11 @@ module.exports = {
 
 		// Spaces inside code span elements (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md038
-		'+markdownlint/md038': 'warn',
+		'markdownlint/md038': 'warn',
 
 		// Spaces inside link text (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md039
-		'+markdownlint/md039': 'warn',
+		'markdownlint/md039': 'warn',
 
 		// Fenced code blocks should have a language specified
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md040
@@ -220,7 +220,7 @@ module.exports = {
 
 		// Proper names should have the correct capitalization (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md044
-		'+markdownlint/md044': ['warn', {
+		'markdownlint/md044': ['warn', {
 			names: [], // string[]
 			code_blocks: false,
 		}],
@@ -237,7 +237,7 @@ module.exports = {
 
 		// Files should end with a single newline character (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md047
-		'+markdownlint/md047': 'warn',
+		'markdownlint/md047': 'warn',
 
 		// Code fence style
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md048
@@ -247,7 +247,7 @@ module.exports = {
 
 		// Emphasis style should be consistent (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md049
-		'+markdownlint/md049': ['warn', {
+		'markdownlint/md049': ['warn', {
 			style: 'asterisk',
 		}],
 

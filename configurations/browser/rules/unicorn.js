@@ -3,15 +3,15 @@ module.exports = {
 	rules: {
 		// Prefer `Node#append()` over `Node#appendChild()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-append.md
-		'+unicorn/prefer-dom-node-append': 'warn',
+		'unicorn/prefer-dom-node-append': 'warn',
 
 		// Prefer using `.dataset` on DOM elements over `.setAttribute(…)` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-dataset.md
-		'+unicorn/prefer-dom-node-dataset': 'warn',
+		'unicorn/prefer-dom-node-dataset': 'warn',
 
 		// Prefer `childNode.remove()` over `parentNode.removeChild(childNode)` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-remove.md
-		'+unicorn/prefer-dom-node-remove': 'warn',
+		'unicorn/prefer-dom-node-remove': 'warn',
 
 		// Prefer `.textContent` over `.innerText`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-text-content.md
@@ -23,7 +23,7 @@ module.exports = {
 
 		// Prefer modern DOM APIs (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-dom-apis.md
-		'+unicorn/prefer-modern-dom-apis': 'warn',
+		'unicorn/prefer-modern-dom-apis': 'warn',
 
 		// Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md

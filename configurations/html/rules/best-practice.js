@@ -27,7 +27,7 @@ module.exports = {
 
 		// Disallow usage of type attributes for stylesheets and scripts (autofixable)
 		// https://html-eslint.org/docs/rules/no-script-style-type
-		'+@html-eslint/no-script-style-type': 'warn',
+		'@html-eslint/no-script-style-type': 'warn',
 
 		// Disallow usage of unsafe `target='_blank'`
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-target-blank
@@ -44,7 +44,7 @@ module.exports = {
 
 		// Require use of closing tag (autofixable for `void` elements)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-closing-tags
-		'+@html-eslint/require-closing-tags': ['warn', {
+		'@html-eslint/require-closing-tags': ['warn', {
 			selfClosing: 'always',
 			allowSelfClosingCustom: true,
 		}],

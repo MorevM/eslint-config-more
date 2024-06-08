@@ -58,7 +58,7 @@ module.exports = {
 
 		// Require following curly brace conventions (autofixable)
 		// https://eslint.org/docs/rules/curly
-		'+curly': ['warn', 'multi-line'],
+		'curly': ['warn', 'multi-line'],
 
 		// Require `default` case in `switch` statements
 		// https://eslint.org/docs/rules/default-case
@@ -76,7 +76,7 @@ module.exports = {
 
 		// Enforce dot notation whenever possible (autofixable)
 		// https://eslint.org/docs/rules/dot-notation
-		'+dot-notation': ['warn', {
+		'dot-notation': ['warn', {
 			allowKeywords: true,
 		}],
 
@@ -219,7 +219,7 @@ module.exports = {
 
 		// Disallow `return` before `else` (autofixable)
 		// https://eslint.org/docs/rules/no-else-return
-		'+no-else-return': ['warn', {
+		'no-else-return': ['warn', {
 			allowElseIf: true,
 		}],
 
@@ -661,7 +661,7 @@ module.exports = {
 
 		// Disallow the use of `Math.pow` in favor of the `**` operator (autofixable)
 		// https://eslint.org/docs/rules/prefer-exponentiation-operator
-		'+prefer-exponentiation-operator': 'warn',
+		'prefer-exponentiation-operator': 'warn',
 
 		// Enforce using named capture group in regular expression
 		// https://eslint.org/docs/rules/prefer-named-capture-group
@@ -674,7 +674,7 @@ module.exports = {
 
 		// Disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn()` (autofixable)
 		// https://eslint.org/docs/rules/prefer-object-has-own
-		'+prefer-object-has-own': 'warn',
+		'prefer-object-has-own': 'warn',
 
 		// Prefer use of an object spread over `Object.assign` (autofixable)
 		// https://eslint.org/docs/rules/prefer-object-spread

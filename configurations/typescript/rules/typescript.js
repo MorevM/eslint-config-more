@@ -42,7 +42,7 @@ module.exports = {
 
 		// Requires using either T[] or Array<T> for arrays (autofixable)
 		// https://typescript-eslint.io/rules/array-type
-		'+@typescript-eslint/array-type': ['warn', { default: 'array-simple' }],
+		'@typescript-eslint/array-type': ['warn', { default: 'array-simple' }],
 
 		// Disallows awaiting a value that is not a Thenable
 		// https://typescript-eslint.io/rules/await-thenable
@@ -64,7 +64,7 @@ module.exports = {
 		// Bans specific types from being used (autofixable)
 		// https://typescript-eslint.io/rules/ban-types
 		// Note: Defaults looks good
-		'+@typescript-eslint/ban-types': ['warn', {
+		'@typescript-eslint/ban-types': ['warn', {
 			types: {
 				'String': {
 					message: 'Use string instead',
@@ -142,7 +142,7 @@ module.exports = {
 
 		// Enforces specifying generic type arguments on type annotation or constructor name of a constructor call (autofixable)
 		// https://typescript-eslint.io/rules/consistent-generic-constructors
-		'+@typescript-eslint/consistent-generic-constructors': ['warn', 'constructor'],
+		'@typescript-eslint/consistent-generic-constructors': ['warn', 'constructor'],
 
 		// Enforce or disallow the use of the record type (autofixable)
 		// https://typescript-eslint.io/rules/consistent-indexed-object-style
@@ -153,7 +153,7 @@ module.exports = {
 
 		// Enforces consistent usage of type assertions (autofixable)
 		// https://typescript-eslint.io/rules/consistent-type-assertions
-		'+@typescript-eslint/consistent-type-assertions': ['warn', {
+		'@typescript-eslint/consistent-type-assertions': ['warn', {
 			assertionStyle: 'as',
 			objectLiteralTypeAssertions: 'allow',
 		}],
@@ -165,13 +165,13 @@ module.exports = {
 
 		// Enforces consistent usage of type exports (autofixable) (SETTINGS)
 		// https://typescript-eslint.io/rules/consistent-type-exports
-		'+@typescript-eslint/consistent-type-exports': ['warn', {
+		'@typescript-eslint/consistent-type-exports': ['warn', {
 			fixMixedExportsWithInlineTypeSpecifier: true,
 		}],
 
 		// Enforces consistent usage of type imports (autofixable)
 		// https://typescript-eslint.io/rules/consistent-type-imports
-		'+@typescript-eslint/consistent-type-imports': ['warn', {
+		'@typescript-eslint/consistent-type-imports': ['warn', {
 			prefer: 'type-imports',
 			disallowTypeAnnotations: false,
 		}],
@@ -305,7 +305,7 @@ module.exports = {
 
 		// Disallow non-null assertion in locations that may be confusing (autofixable)
 		// https://typescript-eslint.io/rules/no-confusing-non-null-assertion
-		'+@typescript-eslint/no-confusing-non-null-assertion': 'warn',
+		'@typescript-eslint/no-confusing-non-null-assertion': 'warn',
 
 		// Requires expressions of type void to appear in statement position (autofixable)
 		// https://typescript-eslint.io/rules/no-confusing-void-expression
@@ -339,7 +339,7 @@ module.exports = {
 
 		// Disallow the declaration of empty interfaces (autofixable)
 		// https://typescript-eslint.io/rules/no-empty-interface
-		'+@typescript-eslint/no-empty-interface': 'warn',
+		'@typescript-eslint/no-empty-interface': 'warn',
 
 		// Disallow usage of the `any` type (autofixable but may change the behavior)
 		// https://typescript-eslint.io/rules/no-explicit-any
@@ -350,7 +350,7 @@ module.exports = {
 
 		// Disallow extra non-null assertion (autofixable)
 		// https://typescript-eslint.io/rules/no-extra-non-null-assertion
-		'+@typescript-eslint/no-extra-non-null-assertion': 'warn',
+		'@typescript-eslint/no-extra-non-null-assertion': 'warn',
 
 		// Disallow unnecessary parentheses (autofixable)
 		// https://typescript-eslint.io/rules/no-extra-parens
@@ -392,7 +392,7 @@ module.exports = {
 		// Disallows explicit type declarations for variables or parameters
 		// initialized to a number, string, or boolean (autofixable)
 		// https://typescript-eslint.io/rules/no-inferrable-types
-		'+@typescript-eslint/no-inferrable-types': ['warn', {
+		'@typescript-eslint/no-inferrable-types': ['warn', {
 			ignoreParameters: true,
 			ignoreProperties: true,
 		}],
@@ -496,7 +496,7 @@ module.exports = {
 
 		// Flags unnecessary equality comparisons against boolean literals (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
-		'+@typescript-eslint/no-unnecessary-boolean-literal-compare': ['warn', {
+		'@typescript-eslint/no-unnecessary-boolean-literal-compare': ['warn', {
 			allowComparingNullableBooleansToTrue: true,
 			allowComparingNullableBooleansToFalse: true,
 		}],
@@ -507,7 +507,7 @@ module.exports = {
 
 		// Warns when a namespace qualifier is unnecessary (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-qualifier
-		'+@typescript-eslint/no-unnecessary-qualifier': 'warn',
+		'@typescript-eslint/no-unnecessary-qualifier': 'warn',
 
 		// Enforces that type arguments will not be used if not required (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-type-arguments
@@ -516,11 +516,11 @@ module.exports = {
 
 		// Warns if a type assertion does not change the type of an expression (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-type-assertion
-		'+@typescript-eslint/no-unnecessary-type-assertion': 'warn',
+		'@typescript-eslint/no-unnecessary-type-assertion': 'warn',
 
 		// Disallows unnecessary constraints on generic types (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-type-constraint
-		'+@typescript-eslint/no-unnecessary-type-constraint': 'warn',
+		'@typescript-eslint/no-unnecessary-type-constraint': 'warn',
 
 		// Disallows calling a function with an any type value
 		// https://typescript-eslint.io/rules/no-unsafe-argument
@@ -586,7 +586,7 @@ module.exports = {
 
 		// Disallow unnecessary template literals (autofixable)
 		// https://typescript-eslint.io/rules/no-useless-template-literals
-		'+@typescript-eslint/no-useless-template-literals': 'warn',
+		'@typescript-eslint/no-useless-template-literals': 'warn',
 
 		// Disallows the use of require statements except in import statements
 		// https://typescript-eslint.io/rules/no-var-requires
@@ -615,7 +615,7 @@ module.exports = {
 
 		// Prefer usage of `as const` over literal type (autofixable)
 		// https://typescript-eslint.io/rules/prefer-as-const
-		'+@typescript-eslint/prefer-as-const': 'warn',
+		'@typescript-eslint/prefer-as-const': 'warn',
 
 		// Prefer initializing each enums member value
 		// https://typescript-eslint.io/rules/prefer-enum-initializers
@@ -632,11 +632,11 @@ module.exports = {
 
 		// Use function types instead of interfaces with call signatures (autofixable)
 		// https://typescript-eslint.io/rules/prefer-function-type
-		'+@typescript-eslint/prefer-function-type': 'warn',
+		'@typescript-eslint/prefer-function-type': 'warn',
 
 		// Enforce `includes` method over `indexOf` method (autofixable)
 		// https://typescript-eslint.io/rules/prefer-includes
-		'+@typescript-eslint/prefer-includes': 'warn',
+		'@typescript-eslint/prefer-includes': 'warn',
 
 		// Require that all enum members be literal values to prevent unintended enum member name shadow issues
 		// https://typescript-eslint.io/rules/prefer-literal-enum-member
@@ -645,7 +645,7 @@ module.exports = {
 		// Require the use of the `namespace` keyword instead of the `module`
 		// keyword to declare custom TypeScript modules (autofixable)
 		// https://typescript-eslint.io/rules/prefer-namespace-keyword
-		'+@typescript-eslint/prefer-namespace-keyword': 'warn',
+		'@typescript-eslint/prefer-namespace-keyword': 'warn',
 
 		// Enforce the usage of the nullish coalescing operator instead of logical chaining
 		// https://typescript-eslint.io/rules/prefer-nullish-coalescing
@@ -676,7 +676,7 @@ module.exports = {
 
 		// Prefer using type parameter when calling `Array#reduce` instead of casting (autofixable)
 		// https://typescript-eslint.io/rules/prefer-reduce-type-parameter
-		'+@typescript-eslint/prefer-reduce-type-parameter': 'warn',
+		'@typescript-eslint/prefer-reduce-type-parameter': 'warn',
 
 		// Enforce that `RegExp#exec` is used instead of `String#match` if no global flag is provided (autofixable)
 		// https://typescript-eslint.io/rules/prefer-regexp-exec
@@ -690,7 +690,7 @@ module.exports = {
 		// Enforce the use of `String#startsWith` and `String#endsWith` instead of
 		// other equivalent methods of checking substrings (autofixable)
 		// https://typescript-eslint.io/rules/prefer-string-starts-ends-with
-		'+@typescript-eslint/prefer-string-starts-ends-with': 'warn',
+		'@typescript-eslint/prefer-string-starts-ends-with': 'warn',
 
 		// Recommends using `@ts-expect-error` over `@ts-ignore` (autofixable)
 		// https://typescript-eslint.io/rules/prefer-ts-expect-error
@@ -781,7 +781,7 @@ module.exports = {
 		// Require consistent spacing around type annotations (autofixable)
 		// https://typescript-eslint.io/rules/type-annotation-spacing
 		// Note: good with default options
-		'+@stylistic/ts/type-annotation-spacing': 'warn',
+		'@stylistic/ts/type-annotation-spacing': 'warn',
 
 		// Requires type annotations to exist
 		// https://typescript-eslint.io/rules/typedef

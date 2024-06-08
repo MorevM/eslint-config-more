@@ -12,7 +12,7 @@ module.exports = {
 
 		// Enforce the style of file extensions in `import` declarations (autofixable)
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/file-extension-in-import.md
-		'+node/file-extension-in-import': ['warn', 'always', {
+		'node/file-extension-in-import': ['warn', 'always', {
 			'.ts': 'never',
 		}],
 

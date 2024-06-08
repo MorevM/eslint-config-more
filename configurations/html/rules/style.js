@@ -12,21 +12,21 @@ module.exports = {
 
 		// Enforce consistent indentation (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/indent
-		'+@html-eslint/indent': ['warn', 'tab'],
+		'@html-eslint/indent': ['warn', 'tab'],
 
 		// Enforce to use lowercase for tag and attribute names (autofixable)
 		// https://html-eslint.org/docs/rules/lowercase
-		'+@html-eslint/lowercase': 'warn',
+		'@html-eslint/lowercase': 'warn',
 
 		// Disallow extra spaces around attributes (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-extra-spacing-attrs
-		'+@html-eslint/no-extra-spacing-attrs': ['warn', {
+		'@html-eslint/no-extra-spacing-attrs': ['warn', {
 			enforceBeforeSelfClose: true,
 		}],
 
 		// Disallows the use of multiple empty lines (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-multiple-empty-lines
-		'+@html-eslint/no-multiple-empty-lines': ['warn', { max: 2 }],
+		'@html-eslint/no-multiple-empty-lines': ['warn', { max: 2 }],
 
 		// Disallow trailing whitespaces at the end of lines (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-trailing-spaces
@@ -34,7 +34,7 @@ module.exports = {
 
 		// Enforce consistent quoting attributes with double or single (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/quotes
-		'+@html-eslint/quotes': ['warn', 'double'],
+		'@html-eslint/quotes': ['warn', 'double'],
 
 		// Enforce attributes alphabetical sorting (autofixable)
 		// https://html-eslint.org/docs/rules/sort-attrs

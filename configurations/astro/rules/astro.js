@@ -61,7 +61,7 @@ module.exports = {
 
 		// Disallow use of `set:text` (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-set-text-directive/
-		'+astro/no-set-text-directive': 'warn',
+		'astro/no-set-text-directive': 'warn',
 
 		// Disallow selectors defined in `style` tag that don’t use in HTML
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-unused-css-selector/
@@ -73,7 +73,7 @@ module.exports = {
 
 		// Require use object instead of ternary expression in `class:list` (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/prefer-object-class-list/
-		'+astro/prefer-object-class-list': 'warn',
+		'astro/prefer-object-class-list': 'warn',
 
 		// Require use split array elements in `class:list` (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/prefer-split-class-list/

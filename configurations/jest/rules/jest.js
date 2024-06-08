@@ -3,7 +3,7 @@ module.exports = {
 	rules: {
 		// Have control over `test` and `it` usages (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/consistent-test-it.md
-		'+jest/consistent-test-it': ['warn', {
+		'jest/consistent-test-it': ['warn', {
 			fn: 'test',
 			withinDescribe: 'it',
 		}],
@@ -25,7 +25,7 @@ module.exports = {
 
 		// Disallow alias methods (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-alias-methods.md
-		'+jest/no-alias-methods': 'warn',
+		'jest/no-alias-methods': 'warn',
 
 		// Disallow commented out tests
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-commented-out-tests.md
@@ -123,7 +123,7 @@ module.exports = {
 
 		// Suggest using the built-in comparison matchers (autofixable but may be confusing)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-comparison-matcher.md
-		'+jest/prefer-comparison-matcher': 'warn',
+		'jest/prefer-comparison-matcher': 'warn',
 
 		// Prefer using `.each` rather than manual loops
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-each.md
@@ -162,7 +162,7 @@ module.exports = {
 
 		// Prefer mock resolved/rejected shorthands for promises (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-mock-promise-shorthand.md
-		'+jest/prefer-mock-promise-shorthand': 'warn',
+		'jest/prefer-mock-promise-shorthand': 'warn',
 
 		// Prefer including a hint with external snapshots
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-snapshot-hint.md
@@ -178,15 +178,15 @@ module.exports = {
 
 		// Suggest using `toBe()` for primitive literals (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-be.md
-		'+jest/prefer-to-be': 'warn',
+		'jest/prefer-to-be': 'warn',
 
 		// Suggest using `toContain()` (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-contain.md
-		'+jest/prefer-to-contain': 'warn',
+		'jest/prefer-to-contain': 'warn',
 
 		// Suggest using `toHaveLength()` (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-have-length.md
-		'+jest/prefer-to-have-length': 'warn',
+		'jest/prefer-to-have-length': 'warn',
 
 		// Suggest using `test.todo` (autofixable but may be confusing)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-todo.md
@@ -222,7 +222,7 @@ module.exports = {
 
 		// Enforce valid titles (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/valid-title.md
-		'+jest/valid-title': 'warn',
+		'jest/valid-title': 'warn',
 
 		// Enforces unbound methods are called with their expected scope
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/unbound-method.md
@@ -238,6 +238,6 @@ module.exports = {
 		// * padding-around-describe-blocks
 		// * padding-around-test-blocks
 		// https://github.com/dangreenisrael/eslint-plugin-jest-formatting/blob/master/docs/rules/padding-around-all.md
-		'+jest-formatting/padding-around-all': 'warn',
+		'jest-formatting/padding-around-all': 'warn',
 	},
 };

@@ -7,7 +7,7 @@ module.exports = {
 	rules: {
 		// Enforce order of attributes (autofixable)
 		// https://eslint.vuejs.org/rules/attributes-order.html
-		'+vue/attributes-order': ['warn', {
+		'vue/attributes-order': ['warn', {
 			order: [
 				'DEFINITION',
 				'LIST_RENDERING',
@@ -42,7 +42,7 @@ module.exports = {
 
 		// Enforce order of properties in components (autofixable)
 		// https://eslint.vuejs.org/rules/order-in-components.html
-		'+vue/order-in-components': ['warn', {
+		'vue/order-in-components': ['warn', {
 			order: [
 				'el',
 				'name',
@@ -82,6 +82,6 @@ module.exports = {
 
 		// Disallow usage of this in template (autofixable)
 		// https://eslint.vuejs.org/rules/this-in-template.html
-		'+vue/this-in-template': ['warn', 'never'],
+		'vue/this-in-template': ['warn', 'never'],
 	},
 };

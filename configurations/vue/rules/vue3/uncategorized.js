@@ -2,7 +2,7 @@ module.exports = {
 	rules: {
 		// Enforce order of `defineEmits` and `defineProps` compiler macros (autofixable)
 		// https://eslint.vuejs.org/rules/define-macros-order.html
-		'+vue/define-macros-order': ['warn', {
+		'vue/define-macros-order': ['warn', {
 			order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'],
 			defineExposeLast: true,
 		}],
@@ -15,7 +15,7 @@ module.exports = {
 
 		// Enforce use of `defineOptions` instead of default export (autofixable)
 		// https://eslint.vuejs.org/rules/prefer-define-options.html
-		'+vue/prefer-define-options': 'error',
+		'vue/prefer-define-options': 'warn',
 
 		// Require declare public properties using `expose`
 		// https://eslint.vuejs.org/rules/require-expose.html

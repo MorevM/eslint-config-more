@@ -19,21 +19,21 @@ module.exports = {
 
 		// Enforce the location of first attribute (autofixable)
 		// https://eslint.vuejs.org/rules/first-attribute-linebreak.html
-		'+vue/first-attribute-linebreak': ['warn', {
+		'vue/first-attribute-linebreak': ['warn', {
 			singleline: 'ignore',
 			multiline: 'below',
 		}],
 
 		// Require or disallow a line break before tag's closing brackets (autofixable)
 		// https://eslint.vuejs.org/rules/html-closing-bracket-newline.html
-		'+vue/html-closing-bracket-newline': ['warn', {
+		'vue/html-closing-bracket-newline': ['warn', {
 			singleline: 'never',
 			multiline: 'always',
 		}],
 
 		// Require or disallow a space before tag's closing brackets (autofixable)
 		// https://eslint.vuejs.org/rules/html-closing-bracket-spacing.html
-		'+vue/html-closing-bracket-spacing': ['warn', {
+		'vue/html-closing-bracket-spacing': ['warn', {
 			startTag: 'never',
 			endTag: 'never',
 			selfClosingTag: 'always',
@@ -55,13 +55,13 @@ module.exports = {
 
 		// Enforce quotes style of HTML attributes (autofixable)
 		// https://eslint.vuejs.org/rules/html-quotes.html
-		'+vue/html-quotes': ['warn', 'double', {
+		'vue/html-quotes': ['warn', 'double', {
 			avoidEscape: true,
 		}],
 
 		// Enforce self-closing style (autofixable)
 		// https://eslint.vuejs.org/rules/html-self-closing.html
-		'+vue/html-self-closing': ['warn', {
+		'vue/html-self-closing': ['warn', {
 			html: {
 				void: 'always',
 				normal: 'never',
@@ -73,7 +73,7 @@ module.exports = {
 
 		// Enforce the maximum number of attributes per line (autofixable)
 		// https://eslint.vuejs.org/rules/max-attributes-per-line.html
-		'+vue/max-attributes-per-line': ['warn', {
+		'vue/max-attributes-per-line': ['warn', {
 			singleline: {
 				max: 4,
 			},
@@ -84,7 +84,7 @@ module.exports = {
 
 		// Require a line break before and after the contents of a multiline element (autofixable)
 		// https://eslint.vuejs.org/rules/multiline-html-element-content-newline.html
-		'+vue/multiline-html-element-content-newline': ['warn', {
+		'vue/multiline-html-element-content-newline': ['warn', {
 			ignoreWhenEmpty: true,
 			ignores: ['pre', 'textarea', ...INLINE_ELEMENTS],
 			allowEmptyLines: false,
@@ -96,13 +96,13 @@ module.exports = {
 
 		// Disallow multiple spaces (autofixable)
 		// https://eslint.vuejs.org/rules/no-multi-spaces.html
-		'+vue/no-multi-spaces': ['warn', {
+		'vue/no-multi-spaces': ['warn', {
 			ignoreProperties: true,
 		}],
 
 		// Disallow spaces around equal signs in attribute (autofixable)
 		// https://eslint.vuejs.org/rules/no-spaces-around-equal-signs-in-attribute.html
-		'+vue/no-spaces-around-equal-signs-in-attribute': 'warn',
+		'vue/no-spaces-around-equal-signs-in-attribute': 'warn',
 
 		// Disallow variable declarations from shadowing variables declared in the outer scope
 		// https://eslint.vuejs.org/rules/no-template-shadow.html

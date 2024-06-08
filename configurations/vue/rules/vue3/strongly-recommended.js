@@ -9,7 +9,7 @@ module.exports = {
 		// Enforce v-on event naming style on custom components in template
 		// (safely autofixable for `Vue3`)
 		// https://eslint.vuejs.org/rules/v-on-event-hyphenation.html
-		'+vue/v-on-event-hyphenation': ['error', 'always', {
+		'vue/v-on-event-hyphenation': ['warn', 'always', {
 			autofix: true,
 		}],
 	},

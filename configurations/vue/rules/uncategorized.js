@@ -13,13 +13,13 @@ module.exports = {
 
 		// Enforce order of component top-level elements (autofixable)
 		// https://eslint.vuejs.org/rules/block-order.html
-		'+vue/block-order': ['warn', {
+		'vue/block-order': ['warn', {
 			order: ['template', 'script', 'style', 'i18n'],
 		}],
 
 		// Enforce line breaks after opening and before closing block-level tags (autofixable)
 		// https://eslint.vuejs.org/rules/block-tag-newline.html
-		'+vue/block-tag-newline': ['warn', {
+		'vue/block-tag-newline': ['warn', {
 			singleline: 'always',
 			multiline: 'always',
 		}],
@@ -69,7 +69,7 @@ module.exports = {
 
 		// Enforce unified line brake in HTML comments (autofixable)
 		// https://eslint.vuejs.org/rules/html-comment-content-newline.html
-		'+vue/html-comment-content-newline': ['warn', {
+		'vue/html-comment-content-newline': ['warn', {
 			singleline: 'never',
 			multiline: 'ignore',
 		}, {
@@ -78,13 +78,13 @@ module.exports = {
 
 		// Enforce unified spacing in HTML comments (autofixable)
 		// https://eslint.vuejs.org/rules/html-comment-content-spacing.html
-		'+vue/html-comment-content-spacing': ['warn', 'always', {
+		'vue/html-comment-content-spacing': ['warn', 'always', {
 			exceptions: [],
 		}],
 
 		// Enforce consistent indentation in HTML comments (autofixable)
 		// https://eslint.vuejs.org/rules/html-comment-indent.html
-		'+vue/html-comment-indent': ['warn', 'tab'],
+		'vue/html-comment-indent': ['warn', 'tab'],
 
 		// Require component name property to match its file name
 		// https://eslint.vuejs.org/rules/match-component-file-name.html
@@ -319,7 +319,7 @@ module.exports = {
 
 		// Require or disallow padding lines in component definition (autofixable)
 		// https://eslint.vuejs.org/rules/padding-lines-in-component-definition.html
-		'+vue/padding-lines-in-component-definition': ['warn', {
+		'vue/padding-lines-in-component-definition': ['warn', {
 			betweenOptions: 'ignore',
 			withinOption: {
 				props: 'never',
@@ -408,7 +408,7 @@ module.exports = {
 
 		// Enforce `v-for` directive's delimiter style (autofixable)
 		// https://eslint.vuejs.org/rules/v-for-delimiter-style.html
-		'+vue/v-for-delimiter-style': ['warn', 'in'],
+		'vue/v-for-delimiter-style': ['warn', 'in'],
 
 		// Enforce writing style for handlers in v-on directives (autofixable)
 		// https://eslint.vuejs.org/rules/v-on-handler-style.html
