@@ -38,6 +38,6 @@ module.exports = {
 
 		// Enforce attributes alphabetical sorting (autofixable)
 		// https://html-eslint.org/docs/rules/sort-attrs
-		'+@html-eslint/sort-attrs': 'off',
+		'@html-eslint/sort-attrs': 'off',
 	},
 };

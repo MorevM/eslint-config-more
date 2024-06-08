@@ -166,7 +166,7 @@ module.exports = {
 
 		// Enforce a particular style for multiline comments (autofixable)
 		// https://eslint.org/docs/rules/multiline-comment-style
-		'+multiline-comment-style': 'off',
+		'multiline-comment-style': 'off',
 
 		// Require constructor names to begin with a capital letter
 		// https://eslint.org/docs/rules/new-cap
@@ -271,7 +271,7 @@ module.exports = {
 		// Disallow the type conversion with shorter notations (autofixable)
 		// https://eslint.org/docs/rules/no-implicit-coercion
 		// Note: everyone should know about this shorthands
-		'+no-implicit-coercion': 'off',
+		'no-implicit-coercion': 'off',
 
 		// Disallow declarations in the global scope
 		// https://eslint.org/docs/rules/no-implicit-globals
@@ -628,7 +628,7 @@ module.exports = {
 		// Require or disallow assignment operator shorthand where possible (autofixable)
 		// https://eslint.org/docs/rules/operator-assignment
 		// Note: on the conscience of the developer
-		'+operator-assignment': 'off',
+		'operator-assignment': 'off',
 
 		// Require using arrow functions for callbacks (autofixable)
 		// https://eslint.org/docs/rules/prefer-arrow-callback
@@ -726,7 +726,7 @@ module.exports = {
 		// Enforce sorted import declarations within modules (autofixable)
 		// https://eslint.org/docs/rules/sort-imports
 		// Note: developer knows better in common case
-		'+sort-imports': 'off',
+		'sort-imports': 'off',
 
 		// Require object keys to be sorted
 		// https://eslint.org/docs/rules/sort-keys
@@ -734,7 +734,7 @@ module.exports = {
 
 		// Require variables within the same declaration block to be sorted (autofixable)
 		// https://eslint.org/docs/rules/sort-vars
-		'+sort-vars': 'off',
+		'sort-vars': 'off',
 
 		// Require or disallow `strict` mode directives (autofixable)
 		// https://eslint.org/docs/rules/strict

@@ -104,11 +104,11 @@ module.exports = {
 		// Enforce new lines between multi-line properties in Vue components (autofixable)
 		// https://eslint.vuejs.org/rules/new-line-between-multi-line-property.html
 		// Note: developer knows better
-		'+vue/new-line-between-multi-line-property': 'off',
+		'vue/new-line-between-multi-line-property': 'off',
 
 		// Enforce Promise or callback style in nextTick (autofixable)
 		// https://eslint.vuejs.org/rules/next-tick-style.html
-		'+vue/next-tick-style': 'off',
+		'vue/next-tick-style': 'off',
 
 		// Disallow the use of bare strings in <template>
 		// https://eslint.vuejs.org/rules/no-bare-strings-in-template.html
@@ -313,7 +313,7 @@ module.exports = {
 
 		// Require or disallow newlines between sibling tags in template (autofixable)
 		// https://eslint.vuejs.org/rules/padding-line-between-blocks.html
-		'+vue/padding-line-between-tags': ['off', [
+		'vue/padding-line-between-tags': ['off', [
 			// { blankLine: 'always', prev: '*', next: '*' },
 		]],
 
@@ -404,7 +404,7 @@ module.exports = {
 
 		// Enforce static class names order (autofixable)
 		// https://eslint.vuejs.org/rules/static-class-names-order.html
-		'+vue/static-class-names-order': 'off', // who needs it?
+		'vue/static-class-names-order': 'off', // who needs it?
 
 		// Enforce `v-for` directive's delimiter style (autofixable)
 		// https://eslint.vuejs.org/rules/v-for-delimiter-style.html
@@ -413,6 +413,6 @@ module.exports = {
 		// Enforce writing style for handlers in v-on directives (autofixable)
 		// https://eslint.vuejs.org/rules/v-on-handler-style.html
 		// Note: this rule tries to limit too much at once :(
-		'+vue/v-on-handler-style': 'off',
+		'vue/v-on-handler-style': 'off',
 	},
 };

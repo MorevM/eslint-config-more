@@ -142,7 +142,7 @@ module.exports = {
 
 		// Enforce lowercase titles (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-lowercase-title.md
-		'+vitest/prefer-lowercase-title': 'off',
+		'vitest/prefer-lowercase-title': 'off',
 
 		// Prefer mock resolved/rejected shorthands for promises (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-mock-promise-shorthand.md
@@ -166,15 +166,15 @@ module.exports = {
 
 		// Suggest using `toBeFalsy()` (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-falsy.md
-		'+vitest/prefer-to-be-falsy': 'off',
+		'vitest/prefer-to-be-falsy': 'off',
 
 		// Suggest using `toBeObject()` (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-object.md
-		'+vitest/prefer-to-be-object': 'off',
+		'vitest/prefer-to-be-object': 'off',
 
 		// Suggest using `toBeTruthy()` (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-object.md
-		'+vitest/prefer-to-be-truthy': 'off',
+		'vitest/prefer-to-be-truthy': 'off',
 
 		// Suggest using `toContain()` (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-truthy.md

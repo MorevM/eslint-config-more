@@ -84,7 +84,7 @@ module.exports = {
 		// Reports the name portion of a JSDoc tag if matching
 		// or not matching a given regular expression (partly autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#match-name
-		'+jsdoc/match-name': 'off',
+		'jsdoc/match-name': 'off',
 
 		// Controls how and whether jsdoc blocks can be expressed
 		// as single or multiple line blocks (autofixable)
@@ -122,7 +122,7 @@ module.exports = {
 
 		// Prevents use of multiple asterisks at the beginning of lines (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-multi-asterisks
-		'+jsdoc/no-multi-asterisks': 'off',
+		'jsdoc/no-multi-asterisks': 'off',
 
 		// Reports when certain comment structures are present
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-restricted-syntax
@@ -441,7 +441,7 @@ module.exports = {
 		// Auto-escape certain characters that are input within block and tag descriptions (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/master/README.md#text-escaping
 		// Note: HTML tags should mostly be enclosed in backticks, and HTML tags display fine inside them.
-		'+jsdoc/text-escaping': ['off', {
+		'jsdoc/text-escaping': ['off', {
 			escapeHTML: true,
 			escapeMarkdown: false, // For a while, seems nothing wrong with it
 		}],

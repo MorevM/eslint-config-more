@@ -128,7 +128,7 @@ module.exports = {
 		// Require a line break before and after the contents of a singleline element (autofixable)
 		// https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html
 		// Note: let developer decide which variant will be more readable
-		'+vue/singleline-html-element-content-newline': 'off',
+		'vue/singleline-html-element-content-newline': 'off',
 
 		// Enforce `v-bind` directive style (autofixable)
 		// https://eslint.vuejs.org/rules/v-bind-style.html

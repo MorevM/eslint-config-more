@@ -83,7 +83,7 @@ module.exports = {
 
 		// Disallow exponential and polynomial backtracking (autofixable but too strict)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-super-linear-backtracking.html
-		'+regexp/no-super-linear-backtracking': ['off', {
+		'regexp/no-super-linear-backtracking': ['off', {
 			report: 'certain',
 		}],
 
@@ -374,7 +374,7 @@ module.exports = {
 
 		// Enforce use of unicode codepoint escapes (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-unicode-codepoint-escapes.html
-		'+regexp/prefer-unicode-codepoint-escapes': 'off',
+		'regexp/prefer-unicode-codepoint-escapes': 'off',
 
 		// Enforce using `\w` (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-w.html

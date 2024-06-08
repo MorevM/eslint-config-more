@@ -81,7 +81,7 @@ module.exports = {
 		// Require array values to be sorted (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/sort-array-values.html
 		// Note: should be configured individually
-		'+jsonc/sort-array-values': 'off',
+		'jsonc/sort-array-values': 'off',
 
 		// Disallow invalid number for JSON (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/valid-json-number.html

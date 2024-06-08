@@ -10,7 +10,7 @@ module.exports = {
 		// Enforce a specific parameter name in catch clauses (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/catch-error-name.md
 		// Note: developer knows better
-		'+unicorn/catch-error-name': ['off', {
+		'unicorn/catch-error-name': ['off', {
 			name: 'error',
 			ignore: [],
 		}],
@@ -51,7 +51,7 @@ module.exports = {
 
 		// Enforce explicitly comparing the length or size property of a value
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/explicit-length-check.md
-		'+unicorn/explicit-length-check': 'off',
+		'unicorn/explicit-length-check': 'off',
 
 		// Enforce a case style for filenames
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
@@ -87,7 +87,7 @@ module.exports = {
 		// Prefer `for…of` over `Array#forEach(…)` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-for-each.md
 		// Note: what's the problem with `forEach`?
-		'+unicorn/no-array-for-each': 'off',
+		'unicorn/no-array-for-each': 'off',
 
 		// Disallow using the this argument in array methods (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-method-this-argument.md
@@ -162,17 +162,17 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-condition.md
 		// Note: this is `no-negated-condition` with autofix capacity.
 		'no-negated-condition': 'off',
-		'+unicorn/no-negated-condition': 'off',
+		'unicorn/no-negated-condition': 'off',
 
 		// Disallow nested ternary expressions (partly autofixable).
 		// It allows nested, but they should be wrapped in parentheses (thats correct).
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-nested-ternary.md
 		'no-nested-ternary': 'off',
-		'+unicorn/no-nested-ternary': 'off',
+		'unicorn/no-nested-ternary': 'off',
 
 		// Disallow `new Array()` (partly autofixable)
 		// Note: no need, it's clear if only one parameter as defined in base `no-array-constructor`
-		'+unicorn/no-new-array': 'off',
+		'unicorn/no-new-array': 'off',
 
 		// Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of the deprecated `new Buffer()`
 		// (partly autofixable)
@@ -227,7 +227,7 @@ module.exports = {
 		// Disallow unreadable array destructuring (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-array-destructuring.md
 		// Note: developer knows better
-		'+unicorn/no-unreadable-array-destructuring': 'off',
+		'unicorn/no-unreadable-array-destructuring': 'off',
 
 		// Disallow unreadable IIFEs
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-iife.md
@@ -244,7 +244,7 @@ module.exports = {
 
 		// Disallow useless array length check (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-length-check.md
-		'+unicorn/no-useless-length-check': 'off',
+		'unicorn/no-useless-length-check': 'off',
 
 		// Disallow returning/yielding P`romise.resolve/reject()` in async functions or promise callbacks (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-promise-resolve-reject.md
@@ -261,12 +261,12 @@ module.exports = {
 		// Disallow useless undefined (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-undefined.md
 		// Note: as for `null`, developer should know better
-		'+unicorn/no-useless-undefined': 'off',
+		'unicorn/no-useless-undefined': 'off',
 
 		// Disallow number literals with zero fractions or dangling dots (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-zero-fractions.md
 		// Note: developer knows better, maybe we want to indicate number which `used as` double next
-		'+unicorn/no-zero-fractions': 'off',
+		'unicorn/no-zero-fractions': 'off',
 
 		// Enforce proper case for numeric literals (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/number-literal-case.md
@@ -384,7 +384,7 @@ module.exports = {
 		// Prefer `Number` static properties over global ones (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-number-properties.md
 		// Note: what's the problem with global functions? I'm serious.
-		'+unicorn/prefer-number-properties': 'off',
+		'unicorn/prefer-number-properties': 'off',
 
 		// Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object
 		// (autofixable for simple cases)
@@ -399,7 +399,7 @@ module.exports = {
 		// Prefer borrowing methods from the prototype instead of methods from an instance (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-prototype-methods.md
 		// Reason for `off`: Too verbose, would anyone seriously overwrite methods of global objects?
-		'+unicorn/prefer-prototype-methods': 'off',
+		'unicorn/prefer-prototype-methods': 'off',
 
 		// Prefer `.querySelector()` over `.getElementById()`,
 		// `.querySelectorAll()` over `.getElementsByClassName()` and .`getElementsByTagName()`. (partly autofixable)

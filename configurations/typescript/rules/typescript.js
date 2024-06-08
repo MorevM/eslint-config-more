@@ -149,7 +149,7 @@ module.exports = {
 		// Note: `record` is preferred as more readable, but the `index-signature` option
 		// provides extra information about the key name, that is necessary sometimes.
 		// In other words, "developer knows better"
-		'+@typescript-eslint/consistent-indexed-object-style': ['off', 'record'],
+		'@typescript-eslint/consistent-indexed-object-style': ['off', 'record'],
 
 		// Enforces consistent usage of type assertions (autofixable)
 		// https://typescript-eslint.io/rules/consistent-type-assertions
@@ -161,7 +161,7 @@ module.exports = {
 		// Consistent with type definition either interface or type (autofixable)
 		// https://typescript-eslint.io/rules/consistent-type-definitions
 		// Note: I believe it's really debatable on a holywar level
-		'+@typescript-eslint/consistent-type-definitions': 'off',
+		'@typescript-eslint/consistent-type-definitions': 'off',
 
 		// Enforces consistent usage of type exports (autofixable) (SETTINGS)
 		// https://typescript-eslint.io/rules/consistent-type-exports
@@ -309,7 +309,7 @@ module.exports = {
 
 		// Requires expressions of type void to appear in statement position (autofixable)
 		// https://typescript-eslint.io/rules/no-confusing-void-expression
-		'+@typescript-eslint/no-confusing-void-expression': ['off', {
+		'@typescript-eslint/no-confusing-void-expression': ['off', {
 			ignoreArrowShorthand: true,
 			ignoreVoidOperator: false,
 		}],
@@ -503,7 +503,7 @@ module.exports = {
 
 		// Prevents conditionals where the type is always truthy or always falsy (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-condition
-		'+@typescript-eslint/no-unnecessary-condition': 'off',
+		'@typescript-eslint/no-unnecessary-condition': 'off',
 
 		// Warns when a namespace qualifier is unnecessary (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-qualifier
@@ -512,7 +512,7 @@ module.exports = {
 		// Enforces that type arguments will not be used if not required (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-type-arguments
 		// Note: explicit better than implicit
-		'+@typescript-eslint/no-unnecessary-type-arguments': 'off',
+		'@typescript-eslint/no-unnecessary-type-arguments': 'off',
 
 		// Warns if a type assertion does not change the type of an expression (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-type-assertion
@@ -681,7 +681,7 @@ module.exports = {
 		// Enforce that `RegExp#exec` is used instead of `String#match` if no global flag is provided (autofixable)
 		// https://typescript-eslint.io/rules/prefer-regexp-exec
 		// Note: String#match more readable
-		'+@typescript-eslint/prefer-regexp-exec': 'off',
+		'@typescript-eslint/prefer-regexp-exec': 'off',
 
 		// Enforce that `this` is used when only `this` type is returned (autofixable)
 		// https://typescript-eslint.io/rules/prefer-return-this-type

@@ -154,11 +154,11 @@ module.exports = {
 
 		// Prefer importing Jest globals (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-importing-jest-globals.md
-		'+jest/prefer-importing-jest-globals': 'off',
+		'jest/prefer-importing-jest-globals': 'off',
 
 		// Enforce lowercase test names (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-lowercase-title.md
-		'+jest/prefer-lowercase-title': 'off',
+		'jest/prefer-lowercase-title': 'off',
 
 		// Prefer mock resolved/rejected shorthands for promises (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-mock-promise-shorthand.md

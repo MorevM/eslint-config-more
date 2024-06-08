@@ -18,7 +18,7 @@ module.exports = {
 		// Enforce linebreaks after opening and before closing flow sequence brackets (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/flow-sequence-bracket-newline.html
 		// Reason for `off`: developer knows better which variant is more readable
-		'+yml/flow-sequence-bracket-newline': ['off', 'consistent'],
+		'yml/flow-sequence-bracket-newline': ['off', 'consistent'],
 
 		// Enforce consistent spacing inside flow sequence brackets (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/flow-sequence-bracket-spacing.html
@@ -50,7 +50,7 @@ module.exports = {
 		// Require mapping keys to be sorted (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/sort-keys.html
 		// Reason for `off`: developer knows better which properties are more important to be on top
-		'+yml/sort-keys': ['off', 'asc'],
+		'yml/sort-keys': ['off', 'asc'],
 
 		// Enforce consistent spacing after the # in a comment (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/spaced-comment.html

@@ -12,12 +12,12 @@ module.exports = {
 
 		// Enforce line breaks between array elements (autofixable)
 		// https://eslint.style/rules/js/array-element-newline
-		'+@stylistic/js/array-element-newline': 'off',
+		'@stylistic/js/array-element-newline': 'off',
 
 		// Require or disallow parentheses around arrow function arguments (autofixable)
 		// https://eslint.style/rules/js/arrow-parens
 		// Note: it was an `error`, next it was `warn` but...developer knows better
-		'+@stylistic/js/arrow-parens': ['off', 'off'],
+		'@stylistic/js/arrow-parens': ['off', 'off'],
 
 		// Enforce spacing before and after the arrow in arrow functions (autofixable)
 		// https://eslint.style/rules/js/arrow-spacing
@@ -87,7 +87,7 @@ module.exports = {
 
 		// Require or disallow spacing between function identifiers and their invocations (autofixable)
 		// https://eslint.style/rules/js/func-call-spacing
-		'+@stylistic/js/func-call-spacing': 'off',
+		'@stylistic/js/func-call-spacing': 'off',
 
 		// Enforce linebreaks between arguments of a function call (autofixable)
 		// https://eslint.style/rules/js/function-call-argument-newline
@@ -149,7 +149,7 @@ module.exports = {
 
 		// Enforce empty lines around comments (autofixable)
 		// https://eslint.style/rules/js/lines-around-comment
-		'+@stylistic/js/lines-around-comment': 'off',
+		'@stylistic/js/lines-around-comment': 'off',
 
 		// Require or disallow an empty line between class members (autofixable)
 		// https://eslint.style/rules/js/lines-between-class-members
@@ -185,7 +185,7 @@ module.exports = {
 		// Require a newline after each call in a method chain (autofixable)
 		// https://eslint.style/rules/js/newline-per-chained-call
 		// Note: remain it on developers
-		'+@stylistic/js/newline-per-chained-call': 'off',
+		'@stylistic/js/newline-per-chained-call': 'off',
 
 		// Disallow arrow functions where they could be confused with comparisons (autofixable)
 		// https://eslint.style/rules/js/no-confusing-arrow
@@ -197,7 +197,7 @@ module.exports = {
 		// Disallow unnecessary parentheses (autofixable)
 		// https://eslint.style/rules/js/no-extra-parens
 		// Note: let developer decide which format is better
-		'+@stylistic/js/no-extra-parens': 'off',
+		'@stylistic/js/no-extra-parens': 'off',
 
 		// Disallow unnecessary semicolons (autofixable)
 		// https://eslint.style/rules/js/no-extra-semi
@@ -315,7 +315,7 @@ module.exports = {
 
 		// Require or disallow padding lines between statements (autofixable)
 		// https://eslint.style/rules/js/padding-line-between-statements
-		'+@stylistic/js/padding-line-between-statements': 'off',
+		'@stylistic/js/padding-line-between-statements': 'off',
 
 		// Require quotes around object literal property names (autofixable)
 		// https://eslint.style/rules/js/quote-props
@@ -416,7 +416,7 @@ module.exports = {
 
 		// Require parenthesis around regex literals (autofixable)
 		// https://eslint.style/rules/js/wrap-regex
-		'+@stylistic/js/wrap-regex': 'off',
+		'@stylistic/js/wrap-regex': 'off',
 
 		// Require or disallow spacing around the `*` in `yield*` expressions (autofixable)
 		// https://eslint.style/rules/js/yield-star-spacing
