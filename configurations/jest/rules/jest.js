@@ -106,7 +106,7 @@ module.exports = {
 
 		// Use `.only` and `.skip` over `f` and `x` (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-test-prefixes.md
-		'+jest/no-test-prefixes': 'error',
+		'jest/no-test-prefixes': 'warn',
 
 		// Disallow explicitly returning from tests
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-test-return-statement.md
@@ -142,7 +142,7 @@ module.exports = {
 
 		// Prefer `await expect(...).resolves` over `expect(await ...)` syntax (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-expect-resolves.md
-		'+jest/prefer-expect-resolves': 'error',
+		'jest/prefer-expect-resolves': 'warn',
 
 		// Prefer having hooks in a consistent order
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-hooks-in-order.md

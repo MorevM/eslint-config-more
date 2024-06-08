@@ -394,7 +394,7 @@ module.exports = {
 
 		// Prefer omitting the catch binding parameter. (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-optional-catch-binding.md
-		'+unicorn/prefer-optional-catch-binding': 'error',
+		'unicorn/prefer-optional-catch-binding': 'warn',
 
 		// Prefer borrowing methods from the prototype instead of methods from an instance (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-prototype-methods.md
@@ -404,7 +404,7 @@ module.exports = {
 		// Prefer `.querySelector()` over `.getElementById()`,
 		// `.querySelectorAll()` over `.getElementsByClassName()` and .`getElementsByTagName()`. (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-query-selector.md
-		'+unicorn/prefer-query-selector': 'error',
+		'unicorn/prefer-query-selector': 'warn',
 
 		// Prefer `Reflect.apply()` over `Function#apply()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-reflect-apply.md
@@ -472,7 +472,7 @@ module.exports = {
 
 		// Enforce throwing `TypeError` in type checking conditions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-type-error.md
-		'+unicorn/prefer-type-error': 'error',
+		'unicorn/prefer-type-error': 'warn',
 
 		// Prevent abbreviations (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md
@@ -557,6 +557,6 @@ module.exports = {
 
 		// Require new when throwing an error (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md
-		'+unicorn/throw-new-error': 'error',
+		'unicorn/throw-new-error': 'warn',
 	},
 };

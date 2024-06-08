@@ -9,13 +9,13 @@ module.exports = {
 	rules: {
 		// Enforce attribute naming style on custom components in template (autofixable)
 		// https://eslint.vuejs.org/rules/attribute-hyphenation.html
-		'+vue/attribute-hyphenation': ['error', 'always', {
+		'vue/attribute-hyphenation': ['warn', 'always', {
 			ignore: [],
 		}],
 
 		// Enforce specific casing for component definition name (autofixable)
 		// https://eslint.vuejs.org/rules/component-definition-name-casing.html
-		'+vue/component-definition-name-casing': ['error', 'kebab-case'],
+		'vue/component-definition-name-casing': ['warn', 'kebab-case'],
 
 		// Enforce the location of first attribute (autofixable)
 		// https://eslint.vuejs.org/rules/first-attribute-linebreak.html
@@ -45,7 +45,7 @@ module.exports = {
 
 		// Enforce consistent indentation in <template> (autofixable)
 		// https://eslint.vuejs.org/rules/html-indent.html
-		'+vue/html-indent': ['error', 'tab', {
+		'vue/html-indent': ['warn', 'tab', {
 			baseIndent: 1,
 			attribute: 1,
 			closeBracket: 0,
@@ -92,7 +92,7 @@ module.exports = {
 
 		// Enforce unified spacing in mustache interpolations (autofixable)
 		// https://eslint.vuejs.org/rules/mustache-interpolation-spacing.html
-		'+vue/mustache-interpolation-spacing': ['error', 'always'],
+		'vue/mustache-interpolation-spacing': ['warn', 'always'],
 
 		// Disallow multiple spaces (autofixable)
 		// https://eslint.vuejs.org/rules/no-multi-spaces.html

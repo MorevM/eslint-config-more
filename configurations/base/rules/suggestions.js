@@ -312,7 +312,7 @@ module.exports = {
 
 		// Disallow `if` statements as the only statement in `else` blocks (autofixable)
 		// https://eslint.org/docs/rules/no-lonely-if
-		'+no-lonely-if': 'error',
+		'no-lonely-if': 'warn',
 
 		// Disallow functions in loops
 		// https://eslint.org/docs/rules/no-loop-func

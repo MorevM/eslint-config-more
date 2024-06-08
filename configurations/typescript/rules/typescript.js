@@ -252,7 +252,7 @@ module.exports = {
 
 		// Require a specific member delimiter style for interfaces and type literals (autofixable)
 		// https://typescript-eslint.io/rules/member-delimiter-style
-		'+@stylistic/ts/member-delimiter-style': ['error', {
+		'@stylistic/ts/member-delimiter-style': ['warn', {
 			multiline: {
 				delimiter: 'semi',
 				requireLast: true,
@@ -649,7 +649,7 @@ module.exports = {
 
 		// Enforce the usage of the nullish coalescing operator instead of logical chaining
 		// https://typescript-eslint.io/rules/prefer-nullish-coalescing
-		'+@typescript-eslint/prefer-nullish-coalescing': ['error', {
+		'@typescript-eslint/prefer-nullish-coalescing': ['warn', {
 			ignoreConditionalTests: true,
 			ignoreMixedLogicalExpressions: true,
 		}],

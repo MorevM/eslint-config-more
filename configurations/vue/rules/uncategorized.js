@@ -30,7 +30,7 @@ module.exports = {
 
 		// Enforce specific casing for the component naming style in template (autofixable)
 		// https://eslint.vuejs.org/rules/component-name-in-template-casing.html
-		'+vue/component-name-in-template-casing': ['error', 'kebab-case', {
+		'vue/component-name-in-template-casing': ['warn', 'kebab-case', {
 			registeredComponentsOnly: false,
 			ignores: [],
 		}],
@@ -287,14 +287,14 @@ module.exports = {
 
 		// Disallow unnecessary mustache interpolations (autofixable)
 		// https://eslint.vuejs.org/rules/no-useless-mustaches.html
-		'+vue/no-useless-mustaches': ['error', {
+		'vue/no-useless-mustaches': ['warn', {
 			ignoreIncludesComment: false,
 			ignoreStringEscape: false,
 		}],
 
 		// Disallow unnecessary `v-bind` directives (autofixable)
 		// https://eslint.vuejs.org/rules/no-useless-v-bind.html
-		'+vue/no-useless-v-bind': ['error', {
+		'vue/no-useless-v-bind': ['warn', {
 			ignoreIncludesComment: false,
 			ignoreStringEscape: false,
 		}],
@@ -391,7 +391,7 @@ module.exports = {
 
 		// Enforce consistent indentation in `<script>` (autofixable)
 		// https://eslint.vuejs.org/rules/script-indent.html
-		'+vue/script-indent': ['error', 'tab', {
+		'vue/script-indent': ['warn', 'tab', {
 			baseIndent: 1,
 			switchCase: 1,
 			ignores: [],

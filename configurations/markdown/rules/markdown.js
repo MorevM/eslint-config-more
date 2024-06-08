@@ -163,7 +163,7 @@ module.exports = {
 
 		// Lists should be surrounded by blank lines (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md032
-		'+markdownlint/md032': 'error',
+		'markdownlint/md032': 'warn',
 
 		// Inline HTML
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md033
@@ -253,7 +253,7 @@ module.exports = {
 
 		// Strong style should be consistent (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md050
-		'+markdownlint/md050': ['error', {
+		'markdownlint/md050': ['warn', {
 			style: 'asterisk',
 		}],
 

@@ -126,11 +126,11 @@ module.exports = {
 
 		// Enforce use of escapes on negation (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/negation.html
-		'+regexp/negation': 'error',
+		'regexp/negation': 'warn',
 
 		// Disallow duplicate characters in the RegExp character class (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-dupe-characters-character-class.html
-		'+regexp/no-dupe-characters-character-class': 'error',
+		'regexp/no-dupe-characters-character-class': 'warn',
 
 		// Disallow empty string literals in character classes
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-empty-string-literal.html
@@ -242,7 +242,7 @@ module.exports = {
 
 		// Enforce using quantifier (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-quantifier.html
-		'+regexp/prefer-quantifier': 'error',
+		'regexp/prefer-quantifier': 'warn',
 
 		// Enforce using character class range (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-range.html
@@ -294,7 +294,7 @@ module.exports = {
 
 		// Enforce consistent usage of hexadecimal escape (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/hexadecimal-escape.html
-		'+regexp/hexadecimal-escape': ['error', 'never'],
+		'regexp/hexadecimal-escape': ['warn', 'never'],
 
 		// Enforce into your favorite case (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/letter-case.html
@@ -307,7 +307,7 @@ module.exports = {
 
 		// Enforce match any character style (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/match-any.html
-		'+regexp/match-any': ['error', {
+		'regexp/match-any': ['warn', {
 			allows: ['dotAll'],
 		}],
 
