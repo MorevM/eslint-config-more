@@ -1,5 +1,5 @@
 const base = {
-	plugins: ['vue'],
+	plugins: ['vue', 'no-autofix'],
 	parser: 'vue-eslint-parser',
 	parserOptions: {
 		parser: {

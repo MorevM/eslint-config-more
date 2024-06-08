@@ -2,6 +2,7 @@ const base = {
 	plugins: [
 		'@typescript-eslint',
 		'@stylistic/ts',
+		'no-autofix',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {

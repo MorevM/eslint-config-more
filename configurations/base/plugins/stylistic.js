@@ -1,6 +1,6 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 module.exports = {
-	plugins: ['@stylistic/js'],
+	plugins: ['@stylistic/js', 'no-autofix'],
 	rules: {
 		// Enforce linebreaks after opening and before closing array brackets (autofixable)
 		// https://eslint.style/rules/js/array-bracket-newline
@@ -111,7 +111,8 @@ module.exports = {
 		// Enforce the location of arrow function bodies (autofixable)
 		// https://eslint.style/rules/js/implicit-arrow-linebreak
 		// Note: Doesn't care about max-len when autofix
-		'!@stylistic/js/implicit-arrow-linebreak': ['off', 'beside'],
+		'@stylistic/js/implicit-arrow-linebreak': 'off',
+		'no-autofix/@stylistic/js/implicit-arrow-linebreak': ['off', 'beside'],
 
 		// Enforce consistent indentation (autofixable)
 		// https://eslint.style/rules/js/indent
@@ -205,7 +206,8 @@ module.exports = {
 
 		// Disallow floating decimals (autofixable but...I just hate a leading zeros)
 		// https://eslint.style/rules/js/no-floating-decimal
-		'!@stylistic/js/no-floating-decimal': 'off',
+		'@stylistic/js/no-floating-decimal': 'off',
+		'no-autofix/@stylistic/js/no-floating-decimal': 'off',
 
 		// Disallow mixes of different operators
 		// https://eslint.style/rules/js/no-mixed-operators

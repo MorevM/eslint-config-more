@@ -1,5 +1,5 @@
 module.exports = {
-	plugins: ['vitest', 'jest-formatting'],
+	plugins: ['vitest', 'jest-formatting', 'no-autofix'],
 	rules: {
 		// Forbidden `.spec` test file pattern
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-filename.md
@@ -186,7 +186,8 @@ module.exports = {
 
 		// Suggest using `test.todo` (autofixable but may be confusing)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-todo.md
-		'!vitest/prefer-todo': 'off',
+		'vitest/prefer-todo': 'off',
+		'no-autofix/vitest/prefer-todo': 'off',
 
 		// Require setup and teardown code to be within a hook
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/require-hook.md

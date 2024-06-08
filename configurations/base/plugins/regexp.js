@@ -1,5 +1,5 @@
 module.exports = {
-	plugins: ['regexp'],
+	plugins: ['regexp', 'no-autofix'],
 	rules: {
 		// POSSIBLE ERRORS
 
@@ -112,7 +112,8 @@ module.exports = {
 		// Disallow not strictly valid regular expressions (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/strict.html
 		// Note: Conflicts with time-tested `unicorn/better-regex` rule
-		'!regexp/strict': 'off',
+		'regexp/strict': 'off',
+		'no-autofix/regexp/strict': 'off',
 
 		// BEST PRACTICES
 
@@ -179,7 +180,7 @@ module.exports = {
 
 		// Disallow unused capturing group (autofixable but may be confusing)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/no-unused-capturing-group.html
-		'!regexp/no-unused-capturing-group': ['warn', {
+		'regexp/no-unused-capturing-group': ['warn', {
 			fixable: false,
 		}],
 
@@ -337,7 +338,8 @@ module.exports = {
 		// Prefer lookarounds over capturing group that do not replace (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-lookaround.html
 		// Lookarounds are much more complex to understand than substitutions
-		'!regexp/prefer-lookaround': 'off',
+		'regexp/prefer-lookaround': 'off',
+		'no-autofix/regexp/prefer-lookaround': 'off',
 
 		// Enforce using named backreferences (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-named-backreference.html

@@ -75,6 +75,7 @@ module.exports = {
 
 		// Suggest correct usage of shebang (autofixable but let this thing be turned off for a while)
 		// https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/shebang.md
-		'!node/shebang': 'error',
+		'node/shebang': 'off',
+		'no-autofix/node/shebang': 'error',
 	},
 };

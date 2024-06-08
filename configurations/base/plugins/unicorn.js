@@ -1,5 +1,5 @@
 module.exports = {
-	plugins: ['unicorn'],
+	plugins: ['unicorn', 'no-autofix'],
 	rules: {
 		// Improve regexes by making them shorter, consistent, and safer (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/better-regex.md
@@ -18,7 +18,8 @@ module.exports = {
 		// Use destructured variables over properties (partly autofixable, but might be confusing)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-destructuring.md
 		// Reason for `off`: too much false-positive errors
-		'!unicorn/consistent-destructuring': 'off',
+		'unicorn/consistent-destructuring': 'off',
+		'no-autofix/unicorn/consistent-destructuring': 'off',
 
 		// Prefer consistent types when spreading a ternary in an array literal (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-empty-array-spread.md
@@ -95,7 +96,8 @@ module.exports = {
 
 		// Enforce combining multiple `Array#push()` into one call (autofixable but doesn't care about comments, may be confusing)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-push-push.md
-		'!unicorn/no-array-push-push': 'warn',
+		'unicorn/no-array-push-push': 'off',
+		'no-autofix/unicorn/no-array-push-push': 'warn',
 
 		// Disallow `Array#reduce()` and `Array#reduceRight()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-reduce.md
@@ -152,7 +154,8 @@ module.exports = {
 
 		// Disallow `if` statements as the only statement in `if` blocks without `else` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-lonely-if.md
-		'!unicorn/no-lonely-if': 'warn',
+		'unicorn/no-lonely-if': 'off',
+		'no-autofix/unicorn/no-lonely-if': 'warn',
 
 		// Disallow a magic number as the `depth` argument in `Array#flat(…)`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-magic-array-flat-depth.md
@@ -195,7 +198,8 @@ module.exports = {
 
 		// Disallow passing single-element arrays to Promise methods (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-single-promise-in-promise-methods.md
-		'!unicorn/no-single-promise-in-promise-methods': 'off',
+		'unicorn/no-single-promise-in-promise-methods': 'off',
+		'no-autofix/unicorn/no-single-promise-in-promise-methods': 'off',
 
 		// Forbid classes that only have static members
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-static-only-class.md
@@ -298,7 +302,8 @@ module.exports = {
 		// Prefer `.addEventListener()` and `.removeEventListener()` over on-functions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener.md
 		// Doesn't set removeEventListener, so may be confusing to disable it
-		'!unicorn/prefer-add-event-listener': 'off', // may be really confusing when autofix
+		'unicorn/prefer-add-event-listener': 'off',
+		'no-autofix/unicorn/prefer-add-event-listener': 'off',
 
 		// Prefer `.find(…)` over the first element from `.filter(…)` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-find.md
@@ -342,7 +347,8 @@ module.exports = {
 
 		// Prefer `export…from` when re-exporting (autofixable but might be confusing during development flow)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-export-from.md
-		'!unicorn/prefer-export-from': ['warn', {
+		'unicorn/prefer-export-from': 'off',
+		'no-autofix/unicorn/prefer-export-from': ['warn', {
 			ignoreUsedVariables: true,
 		}],
 
@@ -390,7 +396,8 @@ module.exports = {
 		// (autofixable for simple cases)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-object-from-entries.md
 		// Reason: too many false-positive errors
-		'!unicorn/prefer-object-from-entries': 'off',
+		'unicorn/prefer-object-from-entries': 'off',
+		'no-autofix/unicorn/prefer-object-from-entries': 'off',
 
 		// Prefer omitting the catch binding parameter. (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-optional-catch-binding.md
@@ -408,17 +415,20 @@ module.exports = {
 
 		// Prefer `Reflect.apply()` over `Function#apply()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-reflect-apply.md
-		'!unicorn/prefer-reflect-apply': 'error',
+		'unicorn/prefer-reflect-apply': 'off',
+		'no-autofix/unicorn/prefer-reflect-apply': 'error',
 
 		// Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-regexp-test.md
 		// Note: just why?
-		'!unicorn/prefer-regexp-test': 'off',
+		'unicorn/prefer-regexp-test': 'off',
+		'no-autofix/unicorn/prefer-regexp-test': 'off',
 
 		// Prefer `Set#has()` over `Array#includes()` when checking for existence or non-existence (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-has.md
 		// Note: Set needed when Set needed, Array needed when Array needed...
-		'!unicorn/prefer-set-has': 'off',
+		'unicorn/prefer-set-has': 'off',
+		'no-autofix/unicorn/prefer-set-has': 'off',
 
 		// Prefer using `Set#size` instead of `Array#length` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-size.md
@@ -431,7 +441,8 @@ module.exports = {
 		// Prefer using the `String.raw` tag to avoid escaping `\` (autofixable but confusing)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-raw.md
 		// Note: pretty rarely used thing that raises more questions than it does any benefit
-		'!unicorn/prefer-string-raw': 'off',
+		'unicorn/prefer-string-raw': 'off',
+		'no-autofix/unicorn/prefer-string-raw': 'off',
 
 		// Prefer `String#replaceAll()` over regex searches with the global flag (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-replace-all.md
@@ -440,7 +451,8 @@ module.exports = {
 		// Prefer `String#slice()` over `String#substr()` and `String#substring()` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-slice.md
 		// Note: Autofix works strange replacing `s.substring(0, start)` to `s.slice(0, Math.max(0, start))` that impairs readability
-		'!unicorn/prefer-string-slice': 'error',
+		'unicorn/prefer-string-slice': 'off',
+		'no-autofix/unicorn/prefer-string-slice': 'error',
 
 		// Prefer `String#startsWith()` && `String#endsWith()` over `RegExp#test()` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-starts-ends-with.md
@@ -460,7 +472,8 @@ module.exports = {
 		// Prefer `switch` over multiple `else-if` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-switch.md
 		// Note: opinions about that in community too different, so let this thing be `off`
-		'!unicorn/prefer-switch': 'off',
+		'unicorn/prefer-switch': 'off',
+		'no-autofix/unicorn/prefer-switch': 'off',
 
 		// Prefer ternary expressions over simple if-else statements (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-ternary.md
@@ -553,7 +566,8 @@ module.exports = {
 		// Enforce consistent case for text encoding identifiers (autofixable but implementation is dumb simple)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/text-encoding-identifier-case.md
 		// Note: All that this rule does - replaces `utf-8` strings to `utf8`, no matter where it placed
-		'!unicorn/text-encoding-identifier-case': 'off',
+		'unicorn/text-encoding-identifier-case': 'off',
+		'no-autofix/unicorn/text-encoding-identifier-case': 'off',
 
 		// Require new when throwing an error (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md

@@ -1,6 +1,6 @@
 const base = {
 	parser: 'eslint-plugin-markdownlint/parser',
-	plugins: ['markdownlint'],
+	plugins: ['markdownlint', 'no-autofix', 'unicorn'],
 	rules: {
 		'@stylistic/js/no-trailing-spaces': 'off',
 		'@stylistic/js/max-len': 'off',

@@ -1,5 +1,5 @@
 module.exports = {
-	plugins: ['eslint-comments'],
+	plugins: ['eslint-comments', 'no-autofix'],
 	rules: {
 		// Require a `eslint-enable` comment for every `eslint-disable` comment
 		// https://mysticatea.github.io/eslint-plugin-eslint-comments/rules/disable-enable-pair.html
@@ -22,7 +22,8 @@ module.exports = {
 
 		// Disallow unused `eslint-disable` comments (autofixable but confusing)
 		// https://mysticatea.github.io/eslint-plugin-eslint-comments/rules/no-unused-disable.html
-		'!eslint-comments/no-unused-disable': 'warn',
+		'eslint-comments/no-unused-disable': 'off',
+		'no-autofix/eslint-comments/no-unused-disable': 'warn',
 
 		// Disallow unused `eslint-enable` comments
 		// https://mysticatea.github.io/eslint-plugin-eslint-comments/rules/no-unused-enable.html

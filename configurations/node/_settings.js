@@ -2,7 +2,7 @@ const base = {
 	env: {
 		node: true,
 	},
-	plugins: ['node'],
+	plugins: ['node', 'no-autofix'],
 	parserOptions: {
 		ecmaVersion: 2020,
 	},

@@ -127,7 +127,8 @@ module.exports = {
 
 		// Disallow boolean defaults (autofixable but may be unsafe)
 		// https://eslint.vuejs.org/rules/no-boolean-default.html
-		'!vue/no-boolean-default': ['error', 'default-false'],
+		'vue/no-boolean-default': 'off',
+		'no-autofix/vue/no-boolean-default': ['error', 'default-false'],
 
 		// Disallow element's child contents which would be overwritten by a directive like `v-html` or `v-text`
 		// https://eslint.vuejs.org/rules/no-child-content.html
@@ -338,7 +339,8 @@ module.exports = {
 		// Require static class names in template to be in a separate `class` attribute
 		// (autofixable but is it really needed?)
 		// https://eslint.vuejs.org/rules/prefer-separate-static-class.html
-		'!vue/prefer-separate-static-class': 'off',
+		'vue/prefer-separate-static-class': 'off',
+		'no-autofix/vue/prefer-separate-static-class': 'off',
 
 		// Require shorthand form attribute when v-bind value is true
 		// https://eslint.vuejs.org/rules/prefer-true-attribute-shorthand.html

@@ -1,5 +1,5 @@
 module.exports = {
-	plugins: ['jest', 'jest-formatting'],
+	plugins: ['jest', 'jest-formatting', 'no-autofix'],
 	rules: {
 		// Have control over `test` and `it` usages (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/consistent-test-it.md
@@ -190,7 +190,8 @@ module.exports = {
 
 		// Suggest using `test.todo` (autofixable but may be confusing)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-todo.md
-		'!jest/prefer-todo': 'error',
+		'jest/prefer-todo': 'off',
+		'no-autofix/jest/prefer-todo': 'error',
 
 		// Require setup and teardown code to be within a hook
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/require-hook.md

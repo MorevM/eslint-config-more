@@ -32,7 +32,8 @@ module.exports = {
 		// Enforce unordered list indentation (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md007
 		// Note: Doesn't work well with lists nested it HTML such as `details`
-		'!markdownlint/md007': ['error', {
+		'markdownlint/md007': 'off',
+		'no-autofix/markdownlint/md007': ['error', {
 			indent: 2,
 			start_indented: false,
 		}],

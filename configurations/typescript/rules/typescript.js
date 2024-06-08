@@ -59,7 +59,8 @@ module.exports = {
 
 		// Bans `// tslint:<rule-flag>` comments from being used (autofixable but may produce bugs)
 		// https://typescript-eslint.io/rules/ban-tslint-comment
-		'!@typescript-eslint/ban-tslint-comment': 'warn',
+		'@typescript-eslint/ban-tslint-comment': 'off',
+		'no-autofix/@typescript-eslint/ban-tslint-comment': 'warn',
 
 		// Bans specific types from being used (autofixable)
 		// https://typescript-eslint.io/rules/ban-types
@@ -200,7 +201,8 @@ module.exports = {
 
 		// Require explicit accessibility modifiers on class properties and methods (autofixable but confusing)
 		// https://typescript-eslint.io/rules/explicit-member-accessibility
-		'!@typescript-eslint/explicit-member-accessibility': 'error',
+		'@typescript-eslint/explicit-member-accessibility': 'off',
+		'no-autofix/@typescript-eslint/explicit-member-accessibility': 'error',
 
 		// MIXED
 		// Require explicit return and argument types on exported functions' and classes' public class methods
@@ -271,7 +273,8 @@ module.exports = {
 
 		// Enforces using a particular method signature syntax (autofixable)
 		// https://typescript-eslint.io/rules/method-signature-style
-		'!@typescript-eslint/method-signature-style': ['error', 'property'],
+		'@typescript-eslint/method-signature-style': 'off',
+		'no-autofix/@typescript-eslint/method-signature-style': ['error', 'property'],
 
 		// Enforces naming conventions for everything across a codebase
 		// https://typescript-eslint.io/rules/naming-convention
@@ -343,7 +346,8 @@ module.exports = {
 
 		// Disallow usage of the `any` type (autofixable but may change the behavior)
 		// https://typescript-eslint.io/rules/no-explicit-any
-		'!@typescript-eslint/no-explicit-any': ['off', {
+		'@typescript-eslint/no-explicit-any': 'off',
+		'no-autofix/@typescript-eslint/no-explicit-any': ['off', {
 			fixToUnknown: false,
 			ignoreRestArgs: true,
 		}],
@@ -383,7 +387,8 @@ module.exports = {
 		// Enforce the use of top-level import type qualifier
 		// when an import only has specifiers with inline type qualifiers (autofixable).
 		// https://typescript-eslint.io/rules/no-import-type-side-effects
-		'!@typescript-eslint/no-import-type-side-effects': 'off',
+		'@typescript-eslint/no-import-type-side-effects': 'off',
+		'no-autofix/@typescript-eslint/no-import-type-side-effects': 'off',
 
 		// Disallow the use of `eval()`-like methods
 		// https://typescript-eslint.io/rules/no-implied-eval
@@ -582,7 +587,8 @@ module.exports = {
 		// Disallow empty exports that don't change anything in a module file
 		// (autofixable but might be confusing during development)
 		// https://typescript-eslint.io/rules/no-useless-empty-export/
-		'!@typescript-eslint/no-useless-empty-export': 'warn',
+		'@typescript-eslint/no-useless-empty-export': 'off',
+		'no-autofix/@typescript-eslint/no-useless-empty-export': 'warn',
 
 		// Disallow unnecessary template literals (autofixable)
 		// https://typescript-eslint.io/rules/no-useless-template-literals
@@ -665,7 +671,8 @@ module.exports = {
 		// Requires that private members are marked as `readonly` if they're
 		// never modified outside of the constructor (autofixable but may be confusing while developing)
 		// https://typescript-eslint.io/rules/prefer-readonly
-		'!@typescript-eslint/prefer-readonly': ['warn', {
+		'@typescript-eslint/prefer-readonly': 'off',
+		'no-autofix/@typescript-eslint/prefer-readonly': ['warn', {
 			onlyInlineLambdas: false,
 		}],
 
@@ -744,7 +751,8 @@ module.exports = {
 
 		// Enforces consistent returning of awaited values (autofixable but may change behavior)
 		// https://typescript-eslint.io/rules/return-await
-		'!@typescript-eslint/return-await': ['error', 'in-try-catch'],
+		'@typescript-eslint/return-await': 'off',
+		'no-autofix/@typescript-eslint/return-await': ['error', 'in-try-catch'],
 
 		// Require or disallow semicolons instead of ASI (autofixable)
 		// https://typescript-eslint.io/rules/semi
