@@ -564,10 +564,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.0.tgz#a5417ae8427873f1dd08b70b3574b453e67b5f7f"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
-"@html-eslint/eslint-plugin@^0.24.1":
-  version "0.24.1"
-  resolved "https://registry.yarnpkg.com/@html-eslint/eslint-plugin/-/eslint-plugin-0.24.1.tgz#26766351e507a4ecfdbc2e4a033f2eefe4375217"
-  integrity sha512-JwNDQBrNIWEPcxgSpla/2jaUXyQCqL7Xp8CmON4Bk5qg8MwiDLXOgjylfVC+tN52i8JeHWMca34I9DqBGRj9Qg==
+"@html-eslint/eslint-plugin@^0.25.0":
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/@html-eslint/eslint-plugin/-/eslint-plugin-0.25.0.tgz#4d5e66d5a51334724ff1f07e61d44331125659e3"
+  integrity sha512-5DlvqO8bbe90cKSfFDuEblyrEnhAdgNTjWxXeUxt/XXC2OuMC8CsxzLZjtK3+0X6yM8m4xcE3fymCPwg7zdcXQ==
 
 "@html-eslint/parser@^0.24.1":
   version "0.24.1"
