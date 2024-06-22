@@ -144,6 +144,10 @@ module.exports = {
 			},
 		}],
 
+		// Enforce position of line comments (autofixable)
+		// https://eslint.style/rules/js/line-comment-position
+		'@stylistic/js/line-comment-position': 'off',
+
 		// Enforce consistent linebreak style (autofixable)
 		// https://eslint.style/rules/js/linebreak-style
 		'@stylistic/js/linebreak-style': ['error', 'unix'],
@@ -174,6 +178,10 @@ module.exports = {
 		'@stylistic/js/max-statements-per-line': ['warn', {
 			max: 3,
 		}],
+
+		// Enforce a particular style for multiline comments (autofixable)
+		// https://eslint.style/rules/js/multiline-comment-style
+		'@stylistic/js/multiline-comment-style': 'off',
 
 		// Enforce newlines between operands of ternary expressions (autofixable)
 		// https://eslint.style/rules/js/multiline-ternary
