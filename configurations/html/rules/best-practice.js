@@ -46,7 +46,7 @@ module.exports = {
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-closing-tags
 		'@html-eslint/require-closing-tags': ['warn', {
 			selfClosing: 'always',
-			allowSelfClosingCustom: true,
+			selfClosingCustomPatterns: [],
 		}],
 
 		// Require `<!DOCTYPE html>` in the document (autofixable)
