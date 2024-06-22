@@ -1,5 +1,12 @@
 module.exports = {
 	rules: {
+		// Require newline between attributes (autofixable)
+		// https://yeonjuan.github.io/html-eslint/docs/rules/attrs-newline
+		'@html-eslint/attrs-newline': ['warn', {
+			closeStyle: 'newline',
+			ifAttrsMoreThan: 5,
+		}],
+
 		// Require newline between elements (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/element-newline
 		'@html-eslint/element-newline': 'error',
