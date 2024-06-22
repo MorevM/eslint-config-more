@@ -1,6 +1,5 @@
 const jsxA11yConfig = require('../../jsx-a11y/index.js');
-const baseConfig = require('../../base/index.js');
-const { extensionFromBase } = require('../../../utils/helpers.js');
+const { extensionFromBase } = require('../../../utils/extension-from-base.js');
 
 const fromJsxA11y = (ruleNames) => {
 	return ruleNames.reduce((acc, ruleName) => {
@@ -120,10 +119,8 @@ module.exports = {
 			'tabindex-no-positive',
 		]),
 
-		...extensionFromBase({
-			prefix: 'astro',
-			baseRules: baseConfig.rules,
-			rulesToExtend: ['semi'],
-		}).rules,
+		// Require or disallow semicolons instead of ASI
+		// https://ota-meshi.github.io/eslint-plugin-astro/rules/semi/
+		'astro/semi': extensionFromBase('semi'),
 	},
 };

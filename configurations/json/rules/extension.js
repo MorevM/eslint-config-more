@@ -1,40 +1,91 @@
-const base = require('../../base/index.js');
-const { extensionFromBase } = require('../../../utils/helpers.js');
+const { extensionFromBase } = require('../../../utils/extension-from-base.js');
 
-const rulesToExtend = [
-	'+array-bracket-newline',
-	'+array-bracket-spacing',
-	'+array-element-newline',
-	'+comma-style',
-	'+indent',
-	'+key-spacing',
-	'no-dupe-keys',
-	'+no-floating-decimal',
-	'no-irregular-whitespace',
-	'no-multi-str',
-	'no-octal-escape',
-	'no-octal',
-	'no-sparse-arrays',
-	'no-useless-escape',
-	'+object-curly-newline',
-	'+object-curly-spacing',
-	'+object-property-newline',
-	// '+sort-keys', // may rewrite `package.json` sort options
-	'+space-unary-ops',
-	// Conflict with JSON
-	// 'comma-dangle',
-	// 'quote-props',
-	// 'quotes',
-];
+module.exports = {
+	plugins: ['jsonc'],
+	rules: {
+		// Enforce line breaks after opening and before closing array brackets (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/array-bracket-newline.html
+		'jsonc/array-bracket-newline': extensionFromBase('array-bracket-newline'),
 
-const extensionRules = extensionFromBase({
-	prefix: 'jsonc',
-	baseRules: base.rules,
-	rulesToExtend,
-});
+		// Disallow or enforce spaces inside of brackets (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/array-bracket-spacing.html
+		'jsonc/array-bracket-spacing': extensionFromBase('array-bracket-spacing'),
 
-extensionRules.rules['+jsonc/comma-dangle'] = ['error', 'never'];
-extensionRules.rules['+jsonc/quote-props'] = ['error', 'always'];
-extensionRules.rules['+jsonc/quotes'] = ['error', 'double', { avoidEscape: false }];
+		// Enforce line breaks between array elements (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/array-element-newline.html
+		'jsonc/array-element-newline': extensionFromBase('array-element-newline'),
 
-module.exports = extensionRules;
+		// Require or disallow trailing commas (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/comma-dangle.html
+		'jsonc/comma-dangle': ['warn', 'never'],
+
+		// Enforce consistent comma style (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/comma-style.html
+		'jsonc/comma-style': extensionFromBase('comma-style'),
+
+		// Enforce consistent indentation (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/indent.html
+		'jsonc/indent': extensionFromBase('indent'),
+
+		// Enforce consistent spacing between keys and values in object literal properties (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/key-spacing.html
+		'jsonc/key-spacing': extensionFromBase('key-spacing'),
+
+		// Disallow duplicate keys in object literals
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-dupe-keys.html
+		'jsonc/no-dupe-keys': extensionFromBase('no-dupe-keys'),
+
+		// Disallow leading or trailing decimal points in numeric literals (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-floating-decimal.html
+		'jsonc/no-floating-decimal': extensionFromBase('no-floating-decimal'),
+
+		// Disallow irregular whitespace
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-irregular-whitespace.html
+		'no-irregular-whitespace': 'off',
+		'jsonc/no-irregular-whitespace': extensionFromBase('no-irregular-whitespace'),
+
+		// Disallow multiline strings
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-multi-str.html
+		'jsonc/no-multi-str': extensionFromBase('no-multi-str'),
+
+		// Disallow octal escape sequences in string literals
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-octal-escape.html
+		'jsonc/no-octal-escape': extensionFromBase('no-octal-escape'),
+
+		// Disallow legacy octal literals
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-octal.html
+		'jsonc/no-octal': extensionFromBase('no-octal'),
+
+		// Disallow sparse arrays
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-sparse-arrays.html
+		'jsonc/no-sparse-arrays': extensionFromBase('no-sparse-arrays'),
+
+		// Disallow unnecessary escape usage
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-useless-escape.html
+		'jsonc/no-useless-escape': extensionFromBase('no-useless-escape'),
+
+		// Enforce consistent line breaks inside braces (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/object-curly-newline.html
+		'jsonc/object-curly-newline': extensionFromBase('object-curly-newline'),
+
+		// Enforce consistent spacing inside braces (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/object-curly-spacing.html
+		'jsonc/object-curly-spacing': extensionFromBase('object-curly-spacing'),
+
+		// Enforce placing object properties on separate lines (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/object-property-newline.html
+		'jsonc/object-property-newline': extensionFromBase('object-property-newline'),
+
+		// Require quotes around object literal property names (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/quote-props.html
+		'jsonc/quote-props': ['error', 'always'],
+
+		// Enforce use of double or single quotes (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/quotes.html
+		'jsonc/quotes': ['error', 'double', { avoidEscape: false }],
+
+		// Disallow spaces after unary operators (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/space-unary-ops.html
+		'jsonc/space-unary-ops': extensionFromBase('space-unary-ops'),
+	},
+};
