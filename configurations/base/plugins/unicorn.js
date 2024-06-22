@@ -167,6 +167,10 @@ module.exports = {
 		'no-negated-condition': 'off',
 		'unicorn/no-negated-condition': 'off',
 
+		// Disallow negated expression in equality check
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negation-in-equality-check.md
+		'unicorn/no-negation-in-equality-check': 'warn',
+
 		// Disallow nested ternary expressions (partly autofixable).
 		// It allows nested, but they should be wrapped in parentheses (thats correct).
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-nested-ternary.md
