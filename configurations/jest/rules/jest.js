@@ -156,6 +156,10 @@ module.exports = {
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-importing-jest-globals.md
 		'jest/prefer-importing-jest-globals': 'off',
 
+		// Prefer `jest.mocked()` over fn as `jest.Mock` (autofixable)
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-jest-mocked.md
+		'jest/prefer-jest-mocked': 'warn',
+
 		// Enforce lowercase test names (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-lowercase-title.md
 		'jest/prefer-lowercase-title': 'off',
