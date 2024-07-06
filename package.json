@@ -122,7 +122,7 @@
 		"glob": "^10.4.2",
 		"lefthook": "^1.6.18",
 		"release-it": "^17.4.0",
-		"typescript": "^5.5.2",
+		"typescript": "^5.5.3",
 		"vitest": "^1.6.0",
 		"vue": "^3.4.30"
 	}
