@@ -76,7 +76,7 @@
 	},
 	"dependencies": {
 		"@babel/core": "^7.24.7",
-		"@babel/eslint-parser": "^7.24.7",
+		"@babel/eslint-parser": "^7.25.1",
 		"@babel/plugin-syntax-jsx": "^7.24.7",
 		"@html-eslint/eslint-plugin": "^0.24.1",
 		"@html-eslint/parser": "^0.24.1",
