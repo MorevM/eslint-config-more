@@ -228,6 +228,11 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-returns-type
 		'jsdoc/require-returns-type': 'error',
 
+		// Requires `@template` tags be present when type parameters are used.
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-template.md#readme
+		// Note: Do not think this is required in a TS environment
+		'jsdoc/require-template': 'off',
+
 		// Requires that returns are documented
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-returns
 		'jsdoc/require-returns': 'error',
