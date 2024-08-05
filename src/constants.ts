@@ -1,4 +1,4 @@
-const CONFUSING_BROWSER_GLOBALS = [
+export const CONFUSING_BROWSER_GLOBALS = [
 	'addEventListener', 'blur', 'close', 'closed', 'confirm', 'defaultStatus',
 	'defaultstatus', 'event', 'external', 'find', 'focus', 'frameElement',
 	'frames', 'history', 'innerHeight', 'innerWidth', 'length', 'location',
@@ -9,25 +9,25 @@ const CONFUSING_BROWSER_GLOBALS = [
 	'screenLeft', 'screenTop', 'screenX', 'screenY', 'scroll', 'scrollbars',
 	'scrollBy', 'scrollTo', 'scrollX', 'scrollY', 'self', 'status',
 	'statusbar', 'stop', 'toolbar', 'top',
-];
+] as const;
 
-const INLINE_ELEMENTS = [
+export const INLINE_ELEMENTS = [
 	'a', 'abbr', 'audio', 'b', 'bdi', 'bdo', 'canvas', 'cite', 'code', 'data',
 	'del', 'dfn', 'em', 'i', 'iframe', 'ins', 'kbd', 'label', 'map', 'mark',
 	'noscript', 'object', 'output', 'picture', 'q', 'ruby', 's', 'samp', 'small',
 	'span', 'strong', 'sub', 'sup', 'svg', 'time', 'u', 'var', 'video',
-];
+] as const;
 
-const SPECIAL_CHARACTERS = [
+export const SPECIAL_CHARACTERS = [
 	'(', ')', ',', '.', '&', '+', '-', '=', '*', '/', '#', '№', '$',
 	'%', '!', '?', ':', '[', ']', '{', '}', '<', '>', '|',
 	'\u00B7', '\u2022', '\u2010', '\u2013', '\u2014', '\u2212',
 	'©', '®', '™',
-];
+] as const;
 
-const DIGIT_CHARACTERS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+export const DIGIT_CHARACTERS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-const ESLINT_FORMATTING_RULES = [
+export const ESLINT_FORMATTING_RULES = [
 	'array-bracket-newline', 'array-bracket-spacing', 'array-element-newline',
 	'arrow-parens', 'arrow-spacing', 'block-spacing', 'brace-style',
 	'comma-dangle', 'comma-spacing', 'comma-style', 'computed-property-spacing',
@@ -46,12 +46,4 @@ const ESLINT_FORMATTING_RULES = [
 	'space-before-blocks', 'space-before-function-paren', 'space-in-parens', 'space-infix-ops', 'space-unary-ops',
 	'spaced-comment', 'switch-colon-spacing', 'template-curly-spacing', 'template-tag-spacing',
 	'wrap-iife', 'wrap-regex', 'yield-star-spacing',
-];
-
-module.exports = {
-	CONFUSING_BROWSER_GLOBALS,
-	INLINE_ELEMENTS,
-	SPECIAL_CHARACTERS,
-	DIGIT_CHARACTERS,
-	ESLINT_FORMATTING_RULES,
-};
+] as const;
