@@ -1,9 +1,6 @@
-/**
- * Autofixable rules starts with `+` sign.
- * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
- */
+import { defineFlatConfig } from "eslint-define-config"
 
-module.exports = {
+export default defineFlatConfig({
 	rules: {
 		// Enforces return statements in callbacks of array's methods
 		// https://eslint.org/docs/rules/array-callback-return
@@ -258,4 +255,4 @@ module.exports = {
 			requireStringLiterals: true,
 		}],
 	},
-};
+});

@@ -1,9 +1,0 @@
-!.github
-!.vscode
-!.*
-
-coverage
-dist
-
-CHANGELOG.md
-LICENSE.md

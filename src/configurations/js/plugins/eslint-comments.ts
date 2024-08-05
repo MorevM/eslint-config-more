@@ -1,5 +1,12 @@
-module.exports = {
-	plugins: ['eslint-comments', 'no-autofix'],
+import eslintPluginComments from 'eslint-plugin-eslint-comments';
+import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import { defineFlatConfig } from 'eslint-define-config';
+
+export default defineFlatConfig({
+	plugins: {
+		'eslint-comments': eslintPluginComments,
+		'no-autofix': eslintPluginNoAutofix,
+	},
 	rules: {
 		// Require a `eslint-enable` comment for every `eslint-disable` comment
 		// https://mysticatea.github.io/eslint-plugin-eslint-comments/rules/disable-enable-pair.html
@@ -51,4 +58,4 @@ module.exports = {
 		// Note: Usually it's obvious
 		'eslint-comments/require-description': 'off',
 	},
-};
+})

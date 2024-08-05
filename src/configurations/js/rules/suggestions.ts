@@ -1,11 +1,11 @@
-/**
- * Autofixable rules starts with `+` sign.
- * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
- */
+import { defineFlatConfig } from "eslint-define-config"
+import { CONFUSING_BROWSER_GLOBALS } from '#constants';
+import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 
-const { CONFUSING_BROWSER_GLOBALS } = require('../../../utils/constants.js');
-
-module.exports = {
+export default defineFlatConfig({
+	plugins: {
+		'no-autofix': eslintPluginNoAutofix,
+	},
 	rules: {
 		// Enforces getter/setter pairs in objects and classes
 		// https://eslint.org/docs/rules/accessor-pairs
@@ -764,4 +764,4 @@ module.exports = {
 		// https://eslint.org/docs/rules/yoda
 		'yoda': 'error',
 	},
-};
+});

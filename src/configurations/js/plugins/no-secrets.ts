@@ -1,5 +1,10 @@
-module.exports = {
-	plugins: ['no-secrets'],
+import { defineFlatConfig } from "eslint-define-config";
+import eslintPluginNoSecrets from 'eslint-plugin-no-secrets';
+
+export default defineFlatConfig({
+	plugins: {
+		'no-secrets': eslintPluginNoSecrets,
+	},
 	rules: {
 		/**
 		 * Seems it doesn't work if `additionalDelimiters` isn't an empty array.
@@ -18,4 +23,4 @@ module.exports = {
 			additionalDelimiters: [],
 		}],
 	},
-};
+});

@@ -1,5 +1,12 @@
-module.exports = {
-	plugins: ['unicorn', 'no-autofix'],
+import { defineFlatConfig } from "eslint-define-config"
+import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+
+export default defineFlatConfig({
+	plugins: {
+		unicorn: eslintPluginUnicorn,
+		'no-autofix': eslintPluginNoAutofix,
+	},
 	rules: {
 		// Improve regexes by making them shorter, consistent, and safer (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/better-regex.md
@@ -581,4 +588,4 @@ module.exports = {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md
 		'unicorn/throw-new-error': 'warn',
 	},
-};
+});

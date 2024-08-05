@@ -1,5 +1,12 @@
-module.exports = {
-	plugins: ['regexp', 'no-autofix'],
+import { defineFlatConfig } from "eslint-define-config"
+import eslintPluginRegexp from 'eslint-plugin-regexp';
+import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+
+export default defineFlatConfig({
+	plugins: {
+		regexp: eslintPluginRegexp,
+		'no-autofix': eslintPluginNoAutofix,
+	},
 	rules: {
 		// POSSIBLE ERRORS
 
@@ -406,4 +413,4 @@ module.exports = {
 			},
 		}],
 	},
-};
+});

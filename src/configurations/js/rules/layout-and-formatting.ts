@@ -1,10 +1,6 @@
-/* eslint-disable sonarjs/no-duplicate-string */
-/**
- * Autofixable rules starts with `+` sign.
- * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
- */
+import { defineFlatConfig } from "eslint-define-config"
 
-module.exports = {
+export default defineFlatConfig({
 	rules: {
 		// Enforce position of line comments
 		// https://eslint.org/docs/rules/line-comment-position
@@ -15,4 +11,4 @@ module.exports = {
 		// https://eslint.org/docs/rules/unicode-bom
 		'unicode-bom': ['error', 'never'],
 	},
-};
+});

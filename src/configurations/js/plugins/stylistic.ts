@@ -1,6 +1,13 @@
+import { defineFlatConfig } from "eslint-define-config"
+import eslintPluginStylistic from '@stylistic/eslint-plugin-js';
+import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+
 /* eslint-disable sonarjs/no-duplicate-string */
-module.exports = {
-	plugins: ['@stylistic/js', 'no-autofix'],
+export default defineFlatConfig({
+	plugins: {
+		'@stylistic/js': eslintPluginStylistic,
+		'no-autofix': eslintPluginNoAutofix,
+	},
 	rules: {
 		// Enforce linebreaks after opening and before closing array brackets (autofixable)
 		// https://eslint.style/rules/js/array-bracket-newline
@@ -432,4 +439,4 @@ module.exports = {
 		// https://eslint.style/rules/js/yield-star-spacing
 		'@stylistic/js/yield-star-spacing': ['warn', 'after'],
 	},
-};
+});

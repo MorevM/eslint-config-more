@@ -1,5 +1,12 @@
-module.exports = {
-	plugins: ['jsdoc', 'no-autofix'],
+import { defineFlatConfig } from "eslint-define-config"
+import eslintPluginJsdoc from 'eslint-plugin-jsdoc';
+import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+
+export default defineFlatConfig({
+	plugins: {
+		jsdoc: eslintPluginJsdoc,
+		'no-autofix': eslintPluginNoAutofix,
+	},
 	rules: {
 		// Checks that `@access` tags use one of the correct values
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-access
@@ -469,4 +476,4 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#valid-types
 		'jsdoc/valid-types': 'error',
 	},
-};
+});

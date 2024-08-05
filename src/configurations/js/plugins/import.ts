@@ -1,5 +1,10 @@
-module.exports = {
-	plugins: ['import'],
+import { defineFlatConfig } from "eslint-define-config"
+import eslintPluginImport from 'eslint-plugin-import';
+
+export default defineFlatConfig({
+	plugins: {
+		import: eslintPluginImport,
+	},
 	rules: {
 		/**
 		 * Helpful warnings.
@@ -249,4 +254,4 @@ module.exports = {
 		// Note: I don't thinks it's a good practice as long as CommonJS still in use
 		'import/prefer-default-export': 'off',
 	},
-};
+});

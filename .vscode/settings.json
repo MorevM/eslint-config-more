@@ -16,5 +16,6 @@
 		"json",
 		"jsonc",
 		"json5"
-	]
+	],
+	"eslint.useFlatConfig": true
 }
