@@ -28,44 +28,18 @@
 		"codestyle"
 	],
 	"files": [
-		"build"
+		"dist"
 	],
 	"exports": {
-		".": "./build/presets/common.js",
-		"./preset/common": "./build/presets/common.js",
-		"./preset/assistive": "./build/presets/assistive.js",
-		"./preset/cypress": "./build/presets/cypress.js",
-		"./preset/html": "./build/presets/html.js",
-		"./preset/jsx-a11y": "./build/presets/jsx-a11y.js",
-		"./preset/jest": "./build/presets/jest.js",
-		"./preset/vitest": "./build/presets/vitest.js",
-		"./preset/markdown": "./build/presets/markdown.js",
-		"./preset/typescript": "./build/presets/typescript.js",
-		"./preset/astro": "./build/presets/astro.js",
-		"./preset/vue2": "./build/presets/vue2.js",
-		"./preset/vue3": "./build/presets/vue3.js",
-		"./base": "./build/configurations/base.js",
-		"./browser": "./build/configurations/browser.js",
-		"./cypress": "./build/configurations/cypress.js",
-		"./html": "./build/configurations/html.js",
-		"./jsx-a11y": "./build/configurations/jsx-a11y.js",
-		"./jest": "./build/configurations/jest.js",
-		"./vitest": "./build/configurations/vitest.js",
-		"./json": "./build/configurations/json.js",
-		"./jsonc": "./build/configurations/jsonc.js",
-		"./package-json": "./build/configurations/package-json.js",
-		"./markdown": "./build/configurations/markdown.js",
-		"./node": "./build/configurations/node.js",
-		"./typescript": "./build/configurations/typescript.js",
-		"./astro": "./build/configurations/astro.js",
-		"./vue2": "./build/configurations/vue2.js",
-		"./vue3": "./build/configurations/vue3.js",
-		"./yaml": "./build/configurations/yaml.js"
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
 	},
-	"main": "./build/presets/common.js",
+	"main": "./dist/index.js",
 	"scripts": {
 		"prepare": "lefthook install",
-		"build": "node utils/build.js",
+		"build": "tsup",
 		"test": "yarn build && vitest",
 		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\"",
 		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\" --fix",
@@ -123,6 +97,7 @@
 		"glob": "^11.0.0",
 		"lefthook": "^1.7.11",
 		"release-it": "^17.6.0",
+		"tsup": "^8.2.4",
 		"typescript": "^5.5.4",
 		"vitest": "^2.0.5",
 		"vue": "^3.4.35"

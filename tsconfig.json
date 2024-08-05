@@ -1,20 +1,29 @@
-// The file is needed here to test the functionality of typescript
-// rules that require type information
 {
 	"compilerOptions": {
 		"target": "ESNext",
-		"module": "CommonJS",
+		"module": "ESNext",
 		"moduleResolution": "Node",
 		"esModuleInterop": true,
 		"strict": true,
+		"strictNullChecks": true,
+		"noImplicitAny": true,
 		"forceConsistentCasingInFileNames": true,
 		"outDir": "./dist",
 		"checkJs": false,
-		"allowJs": false,
-		"skipLibCheck": true
+		"allowJs": true,
+		"skipLibCheck": true,
+		"types": ["node", "vitest/globals"],
+		"baseUrl": ".",
+		"paths": {
+			"~src/*": ["./src/*"],
+			"~configurations/*": ["./configurations/*"],
+			"#constants": ["./src/constants.ts"]
+		}
+	},
+	"ts-node": {
+		"esm": true
 	},
 	"exclude": [
-		"__tests__",
-		"build"
+		"dist"
 	]
 }
