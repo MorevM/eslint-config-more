@@ -152,6 +152,10 @@ module.exports = {
 		// Note: developer knows better
 		'unicorn/no-keyword-prefix': 'off',
 
+		// Disallow using `.length` as the end argument of `{Array,String,TypedArray}#slice()` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-length-as-slice-end.md
+		'unicorn/no-length-as-slice-end': 'warn',
+
 		// Disallow `if` statements as the only statement in `if` blocks without `else` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-lonely-if.md
 		'unicorn/no-lonely-if': 'off',
