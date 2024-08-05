@@ -53,6 +53,10 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-tag-names
 		'jsdoc/check-tag-names': 'error',
 
+		// Checks that any `@template` names are actually used in the connected `@typedef` or type alias.
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-template-names.md#readme
+		'jsdoc/check-template-names': 'error',
+
 		// Reports invalid types
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-types
 		'jsdoc/check-types': 'error',
