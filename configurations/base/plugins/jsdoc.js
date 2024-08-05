@@ -61,6 +61,11 @@ module.exports = {
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-values
 		'jsdoc/check-values': 'error',
 
+		// Converts line and block comments preceding or following specified nodes into JSDoc comments
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/convert-to-jsdoc-comments.md#readme
+		// Note: developer knows better
+		'jsdoc/convert-to-jsdoc-comments': 'off',
+
 		// Expects the following tags to be empty of any content (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#empty-tags
 		'jsdoc/empty-tags': 'warn',
