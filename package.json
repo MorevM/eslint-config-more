@@ -119,11 +119,11 @@
 		"@release-it/conventional-changelog": "^8.0.1",
 		"eslint": "^8.57.0",
 		"eslint-find-rules": "^4.1.0",
-		"glob": "^10.4.2",
-		"lefthook": "^1.6.18",
-		"release-it": "^17.4.0",
-		"typescript": "^5.5.2",
-		"vitest": "^1.6.0",
-		"vue": "^3.4.30"
+		"glob": "^11.0.0",
+		"lefthook": "^1.7.11",
+		"release-it": "^17.6.0",
+		"typescript": "^5.5.4",
+		"vitest": "^2.0.5",
+		"vue": "^3.4.35"
 	}
 }
