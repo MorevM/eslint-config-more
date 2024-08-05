@@ -1,5 +1,54 @@
 
 
+## [34.0.0](https://github.com/MorevM/eslint-config/compare/v33.0.0...v34.0.0) (2024-08-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* **jsdoc:** With the new rule `jsdoc/check-template-names` some of the existing JSDoc comments using `@template` declarations may produce an error.
+* As a part of the migration to ESLint 9 and making things more explicit, we decided to drop the special syntax from the configurations.
+  Some rules that previously had a severity of “warning” now have a severity of “error”. \
+  Although most of them were fixed automatically, something unexpected can happen. \
+  Autofix of such rules is still working.
+
+### Features
+
+* **base:** Add `unicorn/no-length-as-slice-end` rule ([e3bb7a2](https://github.com/MorevM/eslint-config/commit/e3bb7a250fd0bfdcf7b86af47fac732aeea6d4b4))
+* **base:** Add `unicorn/no-negation-in-equality-check` rule ([7d4081f](https://github.com/MorevM/eslint-config/commit/7d4081fc5fee645ddd87d0ee21969fe3f31b1d0c))
+* **base:** Take account of ported stylistic `line-comment-position` and `multiline-comment-style` rules ([dae9626](https://github.com/MorevM/eslint-config/commit/dae962699a4171427104bd3d18f4c4fc3d9ce89c))
+* **html:** Add `@html-eslint/attrs-newline` rule ([ac3de36](https://github.com/MorevM/eslint-config/commit/ac3de36996c5710f6e696a1b46ab03452770f16c))
+* **jest:** Add `jest/prefer-jest-mocked` rule ([ec187be](https://github.com/MorevM/eslint-config/commit/ec187bec692a7ebbae056b846bac0366e538bbb0))
+* **jsdoc:** Add `jsdoc/check-template-names` rule ([acfe4ec](https://github.com/MorevM/eslint-config/commit/acfe4ec2402b59cca881df29bbaab4fe5f8a5527))
+* **jsdoc:** Take account of `jsdoc/convert-to-jsdoc-comments` rule ([9a841f6](https://github.com/MorevM/eslint-config/commit/9a841f6ef1348dee0f3d5d556a0fbdaaea233e20))
+* **jsdoc:** Take account of `jsdoc/require-template` rule ([a3e9455](https://github.com/MorevM/eslint-config/commit/a3e9455fb36dc4b30ef8d74fbe81aabc066b939a))
+
+
+### CI improvements
+
+* Extract latest changelog entry as GH release description ([08b2caa](https://github.com/MorevM/eslint-config/commit/08b2caaf646eb96e18e1efb9cc7938c4ffdef14a))
+
+
+### Refactoring
+
+* Completely remove special syntax from the repo ([8259681](https://github.com/MorevM/eslint-config/commit/8259681e361b14fca1e3571c77aff7cd9e6b46a4))
+* Remove special syntax for a rules that should not be autofixed ([50fb12b](https://github.com/MorevM/eslint-config/commit/50fb12bdae79e285cbd1596e8adec60d8de5bcf3))
+* Remove special syntax for a rules turned off ([b4af41d](https://github.com/MorevM/eslint-config/commit/b4af41db702142a391f9444f964958da44d21bfc))
+* Remove special syntax for a rules with `error` severity ([f2d356b](https://github.com/MorevM/eslint-config/commit/f2d356b33f1844b29cac1ec8bb93eddaaa56afb6))
+* Remove special syntax for a rules with `warn` severity ([15d6025](https://github.com/MorevM/eslint-config/commit/15d6025247a679115099fa7fe4703a8a172c48a0))
+
+
+### Tests
+
+* Remove tests for removed autofixable mechanic ([c0fa73f](https://github.com/MorevM/eslint-config/commit/c0fa73f13a106a0f6bf75e04f47b4ef230f4ad9c))
+
+
+### Bug fixes
+
+* **html:** Fit new configuration object for `@html-eslint/require-closing-tags` rule ([b9b407c](https://github.com/MorevM/eslint-config/commit/b9b407cda74fa9b59391fb22314862d65ba18687))
+* **vitest:** Disable autofix for `vitest/no-focused-tests` rule ([5cb450b](https://github.com/MorevM/eslint-config/commit/5cb450b082caf5a6cf85f07d350c74709cdc725c))
+* **yaml:** Disable the base `no-irregular-whitespace` rule for `yaml` files ([b50dfc3](https://github.com/MorevM/eslint-config/commit/b50dfc3b9a15ff0731978bcc1d32a454cabd63e6))
+
+
 ## [33.0.0](https://github.com/MorevM/eslint-config/compare/v32.0.0...v33.0.0) (2024-05-15)
 
 
