@@ -1,4 +1,4 @@
-import configurationJs from '~configurations/js';
+import configurationJavascript from '~configurations/javascript';
 
 type Configuration = 'javascript';
 
@@ -9,13 +9,9 @@ type AllConfigurationOptions = {
 }
 
 type ConfigurationOptions<T extends Configuration> = T extends 'javascript'
-	? Parameters<typeof configurationJs>[0]
+	? Parameters<typeof configurationJavascript>[0]
 	: {};
 
 export const defineConfiguration = <T extends Configuration>(name: T, options: ConfigurationOptions<T>) => {
-	return configurationJs(options);
+	return configurationJavascript(options);
 }
-
-defineConfiguration('javascript', {
-
-})
