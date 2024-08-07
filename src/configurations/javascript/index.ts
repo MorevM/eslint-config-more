@@ -1,4 +1,3 @@
-import type { FlatESLintConfig } from 'eslint-define-config';
 /* @ts-expect-error -- No types https://github.com/babel/babel/issues/16221 */
 import babelEslintParser from '@babel/eslint-parser';
 
@@ -14,7 +13,6 @@ import eslintRegexp from "./plugins/regexp";
 import eslintSonarjs from "./plugins/sonarjs";
 import eslintStylistic from "./plugins/stylistic";
 import eslintUnicorn from "./plugins/unicorn";
-import { arrayUnique, createMergeObjects, mergeObjects } from '@morev/utils';
 import { AnyConfigurationOptions } from '#types';
 import { GLOB_ANY_JS } from '#globs';
 
@@ -32,49 +30,44 @@ export default function configurationJavascript(options: Partial<AnyConfiguratio
 		ignores = [],
 	} = options;
 
-	return [
-		{
-			name: 'morev/javascript/setup',
-			languageOptions: {
-				ecmaVersion: 'latest',
-				sourceType: 'module',
-				parser: babelEslintParser,
-				parserOptions: {
-					requireConfigFile: false,
-					babelOptions: {
-						babelrc: false,
-						configFile: false,
-						presets: ["@babel/preset-env"]
-					},
-					ecmaFeatures: {
-						globalReturn: false,
-						impliedStrict: true,
-						jsx: true,
-					},
-				}
+	return {
+		name: 'morev/javascript',
+		languageOptions: {
+			ecmaVersion: 'latest',
+			sourceType: 'module',
+			parser: babelEslintParser,
+			parserOptions: {
+				requireConfigFile: false,
+				babelOptions: {
+					babelrc: false,
+					configFile: false,
+					presets: ["@babel/preset-env"]
+				},
+				ecmaFeatures: {
+					globalReturn: false,
+					impliedStrict: true,
+					jsx: true,
+				},
 			}
 		},
-		{
-			name: 'morev/javascript/rules',
-			files,
-			ignores,
-			...mergeParts(
-				layoutAndFormatting,
-				possibleProblems,
-				suggestions,
-				//
-				eslintComments,
-				// eslintImport,
-				eslintJsdoc,
-				eslintNoSecrets,
-				eslintRegexp,
-				eslintSonarjs,
-				eslintStylistic,
-				eslintUnicorn,
-				{
-					rules: overrides,
-				}
-			),
-		}
-	]
+		files,
+		ignores,
+		...mergeParts(
+			layoutAndFormatting,
+			possibleProblems,
+			suggestions,
+			//
+			eslintComments,
+			// eslintImport,
+			eslintJsdoc,
+			eslintNoSecrets,
+			eslintRegexp,
+			eslintSonarjs,
+			eslintStylistic,
+			eslintUnicorn,
+			{
+				rules: overrides,
+			}
+		),
+	}
 }

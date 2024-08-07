@@ -1,8 +1,7 @@
-import { defineFlatConfig } from "eslint-define-config"
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 
-export default defineFlatConfig({
+export default {
 	plugins: {
 		unicorn: eslintPluginUnicorn,
 		'no-autofix': eslintPluginNoAutofix,
@@ -588,4 +587,4 @@ export default defineFlatConfig({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md
 		'unicorn/throw-new-error': 'warn',
 	},
-});
+}

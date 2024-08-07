@@ -1,8 +1,7 @@
-import { defineFlatConfig } from "eslint-define-config"
 import { CONFUSING_BROWSER_GLOBALS } from '#constants';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 
-export default defineFlatConfig({
+export default {
 	plugins: {
 		'no-autofix': eslintPluginNoAutofix,
 	},
@@ -764,4 +763,4 @@ export default defineFlatConfig({
 		// https://eslint.org/docs/rules/yoda
 		'yoda': 'error',
 	},
-});
+};

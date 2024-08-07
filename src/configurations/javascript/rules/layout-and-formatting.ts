@@ -1,6 +1,4 @@
-import { defineFlatConfig } from "eslint-define-config"
-
-export default defineFlatConfig({
+export default {
 	rules: {
 		// Enforce position of line comments
 		// https://eslint.org/docs/rules/line-comment-position
@@ -11,4 +9,4 @@ export default defineFlatConfig({
 		// https://eslint.org/docs/rules/unicode-bom
 		'unicode-bom': ['error', 'never'],
 	},
-});
+};

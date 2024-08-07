@@ -1,8 +1,7 @@
 import eslintPluginComments from 'eslint-plugin-eslint-comments';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
-import { defineFlatConfig } from 'eslint-define-config';
 
-export default defineFlatConfig({
+export default {
 	plugins: {
 		'eslint-comments': eslintPluginComments,
 		'no-autofix': eslintPluginNoAutofix,
@@ -58,4 +57,4 @@ export default defineFlatConfig({
 		// Note: Usually it's obvious
 		'eslint-comments/require-description': 'off',
 	},
-})
+}

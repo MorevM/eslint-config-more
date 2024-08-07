@@ -1,7 +1,6 @@
-import { defineFlatConfig } from "eslint-define-config";
 import eslintPluginNoSecrets from 'eslint-plugin-no-secrets';
 
-export default defineFlatConfig({
+export default {
 	plugins: {
 		'no-secrets': eslintPluginNoSecrets,
 	},
@@ -23,4 +22,4 @@ export default defineFlatConfig({
 			additionalDelimiters: [],
 		}],
 	},
-});
+};

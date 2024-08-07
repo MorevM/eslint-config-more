@@ -1,8 +1,7 @@
-import { defineFlatConfig } from "eslint-define-config"
-import eslintPluginSonarJs from 'eslint-plugin-sonarjs';
+import eslintPluginSonarJs from "eslint-plugin-sonarjs";
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 
-export default defineFlatConfig({
+export default {
 	plugins: {
 		sonarjs: eslintPluginSonarJs,
 		'no-autofix': eslintPluginNoAutofix,
@@ -156,4 +155,4 @@ export default defineFlatConfig({
 		// https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/prefer-while.md
 		'sonarjs/prefer-while': 'error',
 	},
-});
+};

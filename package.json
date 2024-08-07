@@ -91,9 +91,9 @@
 		"yaml-eslint-parser": "^1.2.3"
 	},
 	"devDependencies": {
-		"@morev/eslint-config": "./",
 		"@eslint/eslintrc": "^3.1.0",
 		"@morev/commitlint-config": "^0.2.2",
+		"@morev/eslint-config": "./",
 		"@morev/utils": "^3.11.1",
 		"@release-it/conventional-changelog": "^8.0.1",
 		"eslint": "^9.8.0",

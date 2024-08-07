@@ -1,8 +1,7 @@
-import { defineFlatConfig } from "eslint-define-config"
 import eslintPluginJsdoc from 'eslint-plugin-jsdoc';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 
-export default defineFlatConfig({
+export default {
 	plugins: {
 		jsdoc: eslintPluginJsdoc,
 		'no-autofix': eslintPluginNoAutofix,
@@ -476,4 +475,4 @@ export default defineFlatConfig({
 		// https://github.com/gajus/eslint-plugin-jsdoc#valid-types
 		'jsdoc/valid-types': 'error',
 	},
-});
+};

@@ -1,6 +1,4 @@
-import { defineFlatConfig } from "eslint-define-config"
-
-export default defineFlatConfig({
+export default {
 	rules: {
 		// Enforces return statements in callbacks of array's methods
 		// https://eslint.org/docs/rules/array-callback-return
@@ -255,4 +253,4 @@ export default defineFlatConfig({
 			requireStringLiterals: true,
 		}],
 	},
-});
+};
