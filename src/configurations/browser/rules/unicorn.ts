@@ -1,5 +1,9 @@
-module.exports = {
-	plugins: ['unicorn'],
+import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+
+export default {
+	plugins: {
+		unicorn: eslintPluginUnicorn,
+	},
 	rules: {
 		// Prefer `Node#append()` over `Node#appendChild()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-append.md
