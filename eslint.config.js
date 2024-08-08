@@ -2,6 +2,7 @@ import { defineConfiguration } from '@morev/eslint-config';
 
 export default [
 	defineConfiguration('javascript'),
+	defineConfiguration('node'),
 	// {
 	// 	files: ['*.md'],
 	// 	rules: {

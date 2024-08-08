@@ -15,13 +15,7 @@ import eslintStylistic from "./plugins/stylistic";
 import eslintUnicorn from "./plugins/unicorn";
 import { AnyConfigurationOptions } from '#types';
 import { GLOB_ANY_JS } from '#globs';
-
-const mergeParts = (...objects: any[]) => {
-	return {
-		plugins: objects.reduce((acc, curr) => ({ ...acc, ...curr.plugins }), {}),
-		rules: objects.reduce((acc, curr) => ({ ...acc, ...curr.rules }), {}),
-	}
-}
+import { mergeParts } from '#utils';
 
 export default function configurationJavascript(options: Partial<AnyConfigurationOptions> = {}) {
 	const {

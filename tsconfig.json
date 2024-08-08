@@ -19,7 +19,8 @@
 			"~configurations/*": ["./src/configurations/*"],
 			"#constants": ["./src/constants.ts"],
 			"#types": ["./src/types/index.ts"],
-			"#globs": ["./src/globs.ts"]
+			"#globs": ["./src/globs.ts"],
+			"#utils": ["./src/utils.ts"]
 		}
 	},
 	"ts-node": {
