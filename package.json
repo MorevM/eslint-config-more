@@ -78,7 +78,7 @@
 		"@babel/core": "^7.25.2",
 		"@babel/eslint-parser": "^7.25.1",
 		"@babel/plugin-syntax-jsx": "^7.24.7",
-		"@html-eslint/eslint-plugin": "^0.25.0",
+		"@html-eslint/eslint-plugin": "^0.26.0",
 		"@html-eslint/parser": "^0.25.0",
 		"@stylistic/eslint-plugin-js": "^2.2.2",
 		"@stylistic/eslint-plugin-ts": "^2.2.2",
