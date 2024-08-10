@@ -1,4 +1,4 @@
-import { defineConfiguration } from '@morev/eslint-config';
+import { defineConfiguration } from './dist/index.js';
 
 export default [
 	defineConfiguration('javascript'),
