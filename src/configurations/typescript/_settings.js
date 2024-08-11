@@ -24,13 +24,7 @@ const base = {
 		'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx', '.d.ts'],
 		'import/external-module-folders': ['node_modules', 'node_modules/@types'],
 	},
-	rules: {
-		'no-undef': 'off',
-		'no-duplicate-imports': 'off',
-		'unicorn/prefer-json-parse-buffer': 'off',
-		'jsdoc/require-returns-type': 'off',
-		'jsdoc/require-param-type': 'off',
-	},
+	rules: {},
 };
 
 const parts = [
