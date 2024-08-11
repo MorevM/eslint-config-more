@@ -6,7 +6,6 @@ export { default as pluginJsdoc } from 'eslint-plugin-jsdoc';
 export { default as pluginNoSecrets } from 'eslint-plugin-no-secrets';
 export { default as pluginRegexp } from 'eslint-plugin-regexp';
 export { default as pluginSonarjs } from 'eslint-plugin-sonarjs';
-export { default as pluginStylisticJs } from '@stylistic/eslint-plugin-js';
-export { default as pluginStylisticTs } from '@stylistic/eslint-plugin-ts';
+export { default as pluginStylistic } from '@stylistic/eslint-plugin';
 export { default as pluginN } from 'eslint-plugin-n';
 export { plugin as pluginTs } from 'typescript-eslint';

@@ -19,14 +19,8 @@ const KNOWN_UNUSED = [
 	'vue/prefer-template',
 	// Turned off due of wrong implementation, now replaced with standard `no-multiple-empty-lines`
 	'markdownlint/md012',
-	// Due of deprecation of stylistic rules
-	// https://eslint.org/blog/2023/10/deprecating-formatting-rules/
-	...ESLINT_FORMATTING_RULES,
 	// And their TS versions as well
 	...ESLINT_FORMATTING_RULES.map((rule) => `@typescript-eslint/${rule}`),
-	// And some only TS related that moved to the `@stylistic/ts/` scope
-	'@typescript-eslint/member-delimiter-style',
-	'@typescript-eslint/type-annotation-spacing',
 ];
 
 // eslint-disable-next-line unicorn/no-useless-spread

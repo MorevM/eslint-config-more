@@ -1,22 +1,19 @@
 import type { PlainObject } from '@morev/utils';
 import configurationJavascript from '~configurations/javascript';
-import { ESLINT_FORMATTING_RULES } from '#constants';
 import { defineConfigurationPart } from '#utils';
-import { pluginNoAutofix, pluginStylisticTs, pluginTs } from '#plugins';
+import { pluginNoAutofix, pluginStylistic, pluginTs } from '#plugins';
 
 const base = configurationJavascript().rules!;
 
 const extendFromBase = (rule: string, extendWith: PlainObject | null = null) => {
 	const baseRulename = base[rule]
 		? rule
-		: base[`@stylistic/js/${rule}`]
-			? `@stylistic/js/${rule}`
-			: null;
+		: null;
 	if (!baseRulename) throw new Error(`There is no rule ${rule} in a base configuration`);
 
 	const baseRule = base[baseRulename];
 
-	const result: PlainObject<string | any> = { [baseRulename]: 'off' }; // Disable the base rule
+	const result: PlainObject<any> = { [baseRulename]: 'off' }; // Disable the base rule
 
 	const severity = Array.isArray(baseRule) ? baseRule[0] : baseRule;
 	const baseOptions = Array.isArray(baseRule) ? baseRule.slice(1) : [];
@@ -25,19 +22,14 @@ const extendFromBase = (rule: string, extendWith: PlainObject | null = null) => 
 		? [{ ...baseOptions?.[0], ...extendWith }]
 		: baseOptions;
 
-	const isStylistic = ESLINT_FORMATTING_RULES.includes(rule as any);
-	const name = isStylistic
-		? `@stylistic/ts/${rule}`
-		: `@typescript-eslint/${rule}`;
-
-	result[name] = [severity, ...newOptions];
+	result[`@typescript-eslint/${rule}`] = [severity, ...newOptions];
 
 	return result;
 };
 
 export default defineConfigurationPart({
 	plugins: {
-		'@stylistic/ts': pluginStylisticTs,
+		'@stylistic': pluginStylistic,
 		'@typescript-eslint': pluginTs,
 		'no-autofix': pluginNoAutofix,
 	},
@@ -68,15 +60,6 @@ export default defineConfigurationPart({
 		'@typescript-eslint/ban-tslint-comment': 'off',
 		'no-autofix/@typescript-eslint/ban-tslint-comment': 'warn',
 
-		// Disallow or enforce spaces inside of blocks
-		// after opening block and before closing block (autofixable)
-		// https://typescript-eslint.io/rules/block-spacing
-		...extendFromBase('block-spacing'),
-
-		// Enforce consistent brace style for blocks (autofixable)
-		// https://typescript-eslint.io/rules/brace-style
-		...extendFromBase('brace-style'),
-
 		// Ensures that literals on classes are exposed in a consistent style (autofixable)
 		// https://typescript-eslint.io/rules/class-literal-property-style
 		'@typescript-eslint/class-literal-property-style': ['error', 'fields'],
@@ -84,18 +67,6 @@ export default defineConfigurationPart({
 		// Enforce that class methods utilize `this` (autofixable)
 		// https://typescript-eslint.io/rules/class-methods-use-this
 		...extendFromBase('class-methods-use-this'),
-
-		// Require or disallow trailing comma (autofixable)
-		// https://typescript-eslint.io/rules/comma-dangle
-		...extendFromBase('comma-dangle', {
-			enums: 'always-multiline',
-			generics: 'always-multiline',
-			tuples: 'always-multiline',
-		}),
-
-		// Enforces consistent spacing before and after commas (autofixable)
-		// https://typescript-eslint.io/rules/comma-spacing
-		...extendFromBase('comma-spacing'),
 
 		// Enforces specifying generic type arguments on type annotation or constructor name of a constructor call (autofixable)
 		// https://typescript-eslint.io/rules/consistent-generic-constructors
@@ -165,40 +136,9 @@ export default defineConfigurationPart({
 		// https://typescript-eslint.io/rules/explicit-module-boundary-types
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
 
-		// Require or disallow spacing between function identifiers and their invocations (autofixable)
-		// https://typescript-eslint.io/rules/func-call-spacing
-		...extendFromBase('func-call-spacing'),
-
-		// Require or disallow spacing between function identifiers and their invocations (autofixable)
-		// https://eslint.style/rules/default/function-call-spacing
-		...extendFromBase('function-call-spacing'),
-
-		// Enforce consistent indentation (autofixable)
-		// https://typescript-eslint.io/rules/indent
-		// Note: according to docs it may be broken, but let it be here for a while
-		...extendFromBase('indent'),
-
 		// Require or disallow initialization in variable declarations
 		// https://typescript-eslint.io/rules/init-declarations
 		...extendFromBase('init-declarations'),
-
-		// Enforce consistent spacing between property names
-		// and type annotations in types and interfaces. (autofixable)
-		// https://typescript-eslint.io/rules/key-spacing/
-		...extendFromBase('key-spacing'),
-
-		// Enforce consistent spacing before and after keywords (autofixable)
-		// https://typescript-eslint.io/rules/keyword-spacing/
-		...extendFromBase('keyword-spacing'),
-
-		// Require empty lines around comments (autofixable)
-		// https://typescript-eslint.io/rules/lines-around-comment/
-		...extendFromBase('lines-around-comment'),
-
-		// Require or disallow an empty line between class members (autofixable)
-		// https://typescript-eslint.io/rules/lines-between-class-members
-		// Note: has additional options, but the defaults are good
-		...extendFromBase('lines-between-class-members'),
 
 		// Enforce a maximum number of parameters in function definitions
 		// https://typescript-eslint.io/rules/max-params
@@ -210,7 +150,7 @@ export default defineConfigurationPart({
 
 		// Require a specific member delimiter style for interfaces and type literals (autofixable)
 		// https://typescript-eslint.io/rules/member-delimiter-style
-		'@stylistic/ts/member-delimiter-style': ['warn', {
+		'@stylistic/member-delimiter-style': ['warn', {
 			multiline: {
 				delimiter: 'semi',
 				requireLast: true,
@@ -318,14 +258,6 @@ export default defineConfigurationPart({
 		// Disallow extra non-null assertion (autofixable)
 		// https://typescript-eslint.io/rules/no-extra-non-null-assertion
 		'@typescript-eslint/no-extra-non-null-assertion': 'warn',
-
-		// Disallow unnecessary parentheses (autofixable)
-		// https://typescript-eslint.io/rules/no-extra-parens
-		...extendFromBase('no-extra-parens'),
-
-		// Disallow unnecessary parentheses (autofixable)
-		// https://typescript-eslint.io/rules/no-extra-semi
-		...extendFromBase('no-extra-semi'),
 
 		// Forbids the use of classes as namespaces
 		// https://typescript-eslint.io/rules/no-extraneous-class
@@ -532,7 +464,6 @@ export default defineConfigurationPart({
 
 		// Disallow unused variables
 		// https://typescript-eslint.io/rules/no-unused-vars
-		'no-unused-vars': 'off',
 		...extendFromBase('no-unused-vars'),
 
 		// Disallow the use of variables before they are defined
@@ -576,18 +507,6 @@ export default defineConfigurationPart({
 			allowThrowingAny: false,
 			allowThrowingUnknown: false,
 		}],
-
-		// Enforce consistent spacing inside braces (autofixable)
-		// https://typescript-eslint.io/rules/object-curly-spacing
-		...extendFromBase('object-curly-spacing'),
-
-		// Require or disallow padding lines between statements (autofixable)
-		// https://typescript-eslint.io/rules/padding-line-between-statements
-		...extendFromBase('padding-line-between-statements'),
-
-		// Require quotes around object literal property names (autofixable)
-		// https://eslint.style/rules/default/quote-props
-		...extendFromBase('quote-props'),
 
 		// Require or disallow the use of parameter properties in class constructors
 		// https://typescript-eslint.io/rules/parameter-properties
@@ -687,10 +606,6 @@ export default defineConfigurationPart({
 			checkMethodDeclarations: true,
 		}],
 
-		// Enforce the consistent use of either backticks, double, or single quotes (autofixable)
-		// https://typescript-eslint.io/rules/quotes
-		...extendFromBase('quotes'),
-
 		// Requires `Array#sort` calls to always provide a `compareFunction`
 		// https://typescript-eslint.io/rules/require-array-sort-compare
 		'@typescript-eslint/require-array-sort-compare': ['error', {
@@ -728,22 +643,6 @@ export default defineConfigurationPart({
 		'@typescript-eslint/return-await': 'off',
 		'no-autofix/@typescript-eslint/return-await': ['error', 'in-try-catch'],
 
-		// Require or disallow semicolons instead of ASI (autofixable)
-		// https://typescript-eslint.io/rules/semi
-		...extendFromBase('semi'),
-
-		// Enforces consistent spacing before blocks (autofixable)
-		// https://typescript-eslint.io/rules/space-before-blocks/
-		...extendFromBase('space-before-blocks'),
-
-		// Enforces consistent spacing before function parenthesis (autofixable)
-		// https://typescript-eslint.io/rules/space-before-function-paren
-		...extendFromBase('space-before-function-paren'),
-
-		// This rule is aimed at ensuring there are spaces around infix operators (autofixable)
-		// https://typescript-eslint.io/rules/space-infix-ops
-		...extendFromBase('space-infix-ops'),
-
 		// Restricts the types allowed in boolean expressions
 		// https://typescript-eslint.io/rules/strict-boolean-expressions
 		'@typescript-eslint/strict-boolean-expressions': 'off',
@@ -763,7 +662,7 @@ export default defineConfigurationPart({
 		// Require consistent spacing around type annotations (autofixable)
 		// https://typescript-eslint.io/rules/type-annotation-spacing
 		// Note: good with default options
-		'@stylistic/ts/type-annotation-spacing': 'warn',
+		'@stylistic/type-annotation-spacing': 'warn',
 
 		// Requires type annotations to exist
 		// https://typescript-eslint.io/rules/typedef
