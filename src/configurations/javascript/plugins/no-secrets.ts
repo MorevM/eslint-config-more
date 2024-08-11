@@ -1,9 +1,9 @@
-import eslintPluginNoSecrets from 'eslint-plugin-no-secrets';
+import { pluginNoSecrets } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'no-secrets': eslintPluginNoSecrets,
+		'no-secrets': pluginNoSecrets,
 	},
 	rules: {
 		/**

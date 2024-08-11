@@ -1,11 +1,10 @@
-import eslintPluginStylistic from '@stylistic/eslint-plugin-js';
-import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 import { defineConfigurationPart } from '#utils';
+import { pluginNoAutofix, pluginStylisticJs } from '#plugins';
 
 export default defineConfigurationPart({
 	plugins: {
-		'@stylistic/js': eslintPluginStylistic,
-		'no-autofix': eslintPluginNoAutofix,
+		'@stylistic/js': pluginStylisticJs,
+		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
 		// Enforce linebreaks after opening and before closing array brackets (autofixable)

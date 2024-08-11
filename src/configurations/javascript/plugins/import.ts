@@ -1,9 +1,9 @@
-import eslintPluginImport from 'eslint-plugin-import';
 import { defineConfigurationPart } from '#utils';
+import { pluginImport } from '#plugins';
 
 export default defineConfigurationPart({
 	plugins: {
-		import: eslintPluginImport,
+		import: pluginImport,
 	},
 	rules: {
 		/**

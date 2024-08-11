@@ -1,9 +1,9 @@
-import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+import { pluginUnicorn } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		unicorn: eslintPluginUnicorn,
+		unicorn: pluginUnicorn,
 	},
 	rules: {
 		// Prefer `Node#append()` over `Node#appendChild()` (autofixable)

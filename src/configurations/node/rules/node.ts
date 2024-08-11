@@ -1,9 +1,9 @@
-import eslintPluginN from 'eslint-plugin-n';
+import { pluginN } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		n: eslintPluginN,
+		n: pluginN,
 	},
 	rules: {
 		// Require `return` statements after callbacks

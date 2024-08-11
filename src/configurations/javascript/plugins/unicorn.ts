@@ -1,11 +1,10 @@
-import eslintPluginUnicorn from 'eslint-plugin-unicorn';
-import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import { pluginNoAutofix, pluginUnicorn } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'unicorn': eslintPluginUnicorn,
-		'no-autofix': eslintPluginNoAutofix,
+		'unicorn': pluginUnicorn,
+		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
 		// Improve regexes by making them shorter, consistent, and safer (autofixable)

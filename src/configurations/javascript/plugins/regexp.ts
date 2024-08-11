@@ -1,11 +1,10 @@
-import eslintPluginRegexp from 'eslint-plugin-regexp';
-import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import { pluginNoAutofix, pluginRegexp } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'regexp': eslintPluginRegexp,
-		'no-autofix': eslintPluginNoAutofix,
+		'regexp': pluginRegexp,
+		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
 		// POSSIBLE ERRORS

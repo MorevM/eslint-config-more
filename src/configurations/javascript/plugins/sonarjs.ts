@@ -1,11 +1,10 @@
-import eslintPluginSonarJs from 'eslint-plugin-sonarjs';
-import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 import { defineConfigurationPart } from '#utils';
+import { pluginNoAutofix, pluginSonarjs } from '#plugins';
 
 export default defineConfigurationPart({
 	plugins: {
-		'sonarjs': eslintPluginSonarJs,
-		'no-autofix': eslintPluginNoAutofix,
+		'sonarjs': pluginSonarjs,
+		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
 		//===============

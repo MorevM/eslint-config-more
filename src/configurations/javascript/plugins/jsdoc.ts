@@ -1,11 +1,10 @@
-import eslintPluginJsdoc from 'eslint-plugin-jsdoc';
-import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 import { defineConfigurationPart } from '#utils';
+import { pluginJsdoc, pluginNoAutofix } from '#plugins';
 
 export default defineConfigurationPart({
 	plugins: {
-		'jsdoc': eslintPluginJsdoc,
-		'no-autofix': eslintPluginNoAutofix,
+		'jsdoc': pluginJsdoc,
+		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
 		// Checks that `@access` tags use one of the correct values

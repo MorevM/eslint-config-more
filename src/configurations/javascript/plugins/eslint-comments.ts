@@ -1,11 +1,10 @@
-import eslintPluginComments from 'eslint-plugin-eslint-comments';
-import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import { pluginEslintComments, pluginNoAutofix } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'eslint-comments': eslintPluginComments,
-		'no-autofix': eslintPluginNoAutofix,
+		'eslint-comments': pluginEslintComments,
+		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
 		// Require a `eslint-enable` comment for every `eslint-disable` comment
