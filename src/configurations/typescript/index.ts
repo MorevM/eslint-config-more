@@ -1,4 +1,4 @@
-import typescriptParser from '@typescript-eslint/parser';
+import { parser } from 'typescript-eslint';
 
 import typescript from './rules/typescript';
 
@@ -22,7 +22,7 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 	return {
 		name: 'morev/typescript',
 		languageOptions: {
-			parser: typescriptParser,
+			parser,
 			ecmaVersion: 'latest',
 			sourceType: 'module',
 			parserOptions: {

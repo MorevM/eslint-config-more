@@ -6,11 +6,11 @@ import configurationTypescript from './configurations/typescript';
 type Configuration = 'javascript' | 'node' | 'browser' | 'typescript';
 
 type ConfigurationsMap = {
-	javascript: typeof configurationJavascript,
-	node: typeof configurationNode,
-	browser: typeof configurationBrowser,
-	typescript: typeof configurationTypescript,
-}
+	javascript: typeof configurationJavascript;
+	node: typeof configurationNode;
+	browser: typeof configurationBrowser;
+	typescript: typeof configurationTypescript;
+};
 
 type ConfigurationOptions<T extends Configuration> = Parameters<ConfigurationsMap[T]>[0];
 
@@ -22,4 +22,4 @@ export const defineConfiguration = <T extends Configuration>(name: T, options: C
 		case 'typescript': return configurationTypescript(options);
 		default: return {};
 	}
-}
+};

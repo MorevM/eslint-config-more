@@ -58,8 +58,6 @@
 		"@html-eslint/parser": "^0.25.0",
 		"@stylistic/eslint-plugin-js": "^2.2.2",
 		"@stylistic/eslint-plugin-ts": "^2.2.2",
-		"@typescript-eslint/eslint-plugin": "^8.0.1",
-		"@typescript-eslint/parser": "^8.0.1",
 		"eslint-define-config": "^2.1.0",
 		"eslint-import-resolver-typescript": "^3.6.1",
 		"eslint-plugin-astro": "^1.2.3",
@@ -87,6 +85,7 @@
 		"jsonc-eslint-parser": "^2.4.0",
 		"lodash.mergewith": "^4.6.2",
 		"resolve.exports": "^2.0.2",
+		"typescript-eslint": "^8.0.1",
 		"vue-eslint-parser": "^9.4.3",
 		"yaml-eslint-parser": "^1.2.3"
 	},

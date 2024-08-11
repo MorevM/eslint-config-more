@@ -1,5 +1,5 @@
 import type { PlainObject } from '@morev/utils';
-import eslintPluginTypescript from '@typescript-eslint/eslint-plugin';
+import { plugin } from 'typescript-eslint';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 import eslintPluginStylistic from '@stylistic/eslint-plugin-ts';
 import configurationJavascript from '~configurations/javascript';
@@ -39,7 +39,7 @@ const extendFromBase = (rule: string, extendWith: PlainObject | null = null) => 
 export default {
 	plugins: {
 		'@stylistic/ts': eslintPluginStylistic,
-		'@typescript-eslint': eslintPluginTypescript,
+		'@typescript-eslint': plugin,
 		'no-autofix': eslintPluginNoAutofix,
 	},
 	rules: {
