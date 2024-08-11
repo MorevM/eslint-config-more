@@ -1,7 +1,7 @@
 import configurationJavascript from '~configurations/javascript';
 import configurationNode from '~configurations/node';
 import configurationBrowser from '~configurations/browser';
-import configurationTypescript from './configurations/typescript';
+import configurationTypescript from '~configurations/typescript';
 
 type Configuration = 'javascript' | 'node' | 'browser' | 'typescript';
 

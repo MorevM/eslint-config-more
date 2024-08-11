@@ -6,12 +6,12 @@ import globals from 'globals';
 import unicorn from './rules/unicorn';
 
 import type { AnyConfigurationOptions } from '#types';
-import { GLOB_ANY_JS } from '#globs';
+import { GLOB_SRC } from '#globs';
 import { mergeParts } from '#utils';
 
 export default function configurationNode(options: Partial<AnyConfigurationOptions> = {}) {
 	const {
-		files = [GLOB_ANY_JS],
+		files = [GLOB_SRC],
 		overrides = {},
 		ignores = [],
 	} = options;
