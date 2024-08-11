@@ -34,6 +34,14 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js"
+		},
+		"./plugins": {
+			"types": "./dist/plugins.d.ts",
+			"import": "./dist/plugins.js"
+		},
+		"./parsers": {
+			"types": "./dist/parsers.d.ts",
+			"import": "./dist/parsers.js"
 		}
 	},
 	"main": "./dist/index.js",

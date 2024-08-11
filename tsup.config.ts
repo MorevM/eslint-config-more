@@ -5,11 +5,11 @@ export const tsup: Options = {
 	clean: true,
 	target: 'esnext',
 	format: ['esm'],
-	dts: {
-		entry: 'src/index.ts',
-	},
+	dts: true,
 	entryPoints: [
 		'src/index.ts',
+		'src/parsers.ts',
+		'src/plugins.ts',
 	],
 	external: [
 		'@morev/utils',
