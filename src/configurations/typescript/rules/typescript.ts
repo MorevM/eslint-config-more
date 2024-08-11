@@ -1,9 +1,13 @@
-const { makeConfig } = require('../../../utils/tools.js');
-const { ESLINT_FORMATTING_RULES } = require('../../../utils/constants.js');
+import type { PlainObject } from '@morev/utils';
+import eslintPluginTypescript from '@typescript-eslint/eslint-plugin';
+import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import eslintPluginStylistic from '@stylistic/eslint-plugin-ts';
+import configurationJavascript from '~configurations/javascript';
+import { ESLINT_FORMATTING_RULES } from '#constants';
 
-const base = makeConfig([{ name: 'base' }]).rules;
+const base = configurationJavascript().rules;
 
-const extendFromBase = (rule, extendWith = null) => {
+const extendFromBase = (rule: string, extendWith: PlainObject | null = null) => {
 	const baseRulename = base[rule]
 		? rule
 		: base[`@stylistic/js/${rule}`]
@@ -13,7 +17,7 @@ const extendFromBase = (rule, extendWith = null) => {
 
 	const baseRule = base[baseRulename];
 
-	const result = { [baseRulename]: 'off' }; // Disable the base rule
+	const result: PlainObject<string | any> = { [baseRulename]: 'off' }; // Disable the base rule
 
 	const severity = Array.isArray(baseRule) ? baseRule[0] : baseRule;
 	const baseOptions = Array.isArray(baseRule) ? baseRule.slice(1) : [];
@@ -22,7 +26,7 @@ const extendFromBase = (rule, extendWith = null) => {
 		? [{ ...baseOptions?.[0], ...extendWith }]
 		: baseOptions;
 
-	const isStylistic = ESLINT_FORMATTING_RULES.includes(rule);
+	const isStylistic = ESLINT_FORMATTING_RULES.includes(rule as any);
 	const name = isStylistic
 		? `@stylistic/ts/${rule}`
 		: `@typescript-eslint/${rule}`;
@@ -32,7 +36,12 @@ const extendFromBase = (rule, extendWith = null) => {
 	return result;
 };
 
-module.exports = {
+export default {
+	plugins: {
+		'@stylistic/ts': eslintPluginStylistic,
+		'@typescript-eslint': eslintPluginTypescript,
+		'no-autofix': eslintPluginNoAutofix,
+	},
 	rules: {
 		// Require that member overloads be consecutive
 		// https://typescript-eslint.io/rules/adjacent-overload-signatures
@@ -59,56 +68,6 @@ module.exports = {
 		// https://typescript-eslint.io/rules/ban-tslint-comment
 		'@typescript-eslint/ban-tslint-comment': 'off',
 		'no-autofix/@typescript-eslint/ban-tslint-comment': 'warn',
-
-		// Bans specific types from being used (autofixable)
-		// https://typescript-eslint.io/rules/ban-types
-		// Note: Defaults looks good
-		'@typescript-eslint/ban-types': ['warn', {
-			types: {
-				'String': {
-					message: 'Use string instead',
-					fixWith: 'string',
-				},
-				'Boolean': {
-					message: 'Use boolean instead',
-					fixWith: 'boolean',
-				},
-				'Number': {
-					message: 'Use number instead',
-					fixWith: 'number',
-				},
-				'Symbol': {
-					message: 'Use symbol instead',
-					fixWith: 'symbol',
-				},
-
-				// 'Function': {
-				// 	message: [
-				// 		'The `Function` type accepts any function-like value.',
-				// 		'It provides no type safety when calling the function, which can be a common source of bugs.',
-				// 		'It also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.',
-				// 		'If you are expecting the function to accept certain arguments, you should explicitly define the function shape.',
-				// 	].join('\n'),
-				// },
-
-				// object typing
-				'Object': {
-					message: [
-						'The `Object` type actually means "any non-nullish value", so it is marginally better than `unknown`.',
-						'- If you want a type meaning "any object", you probably want `Record<string, unknown>` instead.',
-						'- If you want a type meaning "any value", you probably want `unknown` instead.',
-					].join('\n'),
-				},
-				'{}': {
-					message: [
-						'`{}` actually means "any non-nullish value".',
-						'- If you want a type meaning "any object", you probably want `Record<string, unknown>` instead.',
-						'- If you want a type meaning "any value", you probably want `unknown` instead.',
-					].join('\n'),
-				},
-			},
-			extendDefaults: false,
-		}],
 
 		// Disallow or enforce spaces inside of blocks
 		// after opening block and before closing block (autofixable)
@@ -342,6 +301,13 @@ module.exports = {
 		// https://typescript-eslint.io/rules/no-empty-interface
 		'@typescript-eslint/no-empty-interface': 'warn',
 
+		// Disallow accidentally using the "empty object" type
+		// https://typescript-eslint.io/rules/no-empty-object-type
+		'@typescript-eslint/no-empty-object-type': ['warn', {
+			allowInterfaces: 'never',
+			allowObjectTypes: 'never',
+		}],
+
 		// Disallow usage of the `any` type (autofixable but may change the behavior)
 		// https://typescript-eslint.io/rules/no-explicit-any
 		'@typescript-eslint/no-explicit-any': 'off',
@@ -493,10 +459,6 @@ module.exports = {
 			allowedNames: ['self', '_this'],
 		}],
 
-		// Disallow throwing literals as exceptions
-		// https://typescript-eslint.io/rules/no-throw-literal
-		...extendFromBase('no-throw-literal'),
-
 		// Flags unnecessary equality comparisons against boolean literals (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': ['warn', {
@@ -511,6 +473,10 @@ module.exports = {
 		// Warns when a namespace qualifier is unnecessary (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-qualifier
 		'@typescript-eslint/no-unnecessary-qualifier': 'warn',
+
+		// Disallow unnecessary template expressions (autofixable)
+		// https://typescript-eslint.io/rules/no-unnecessary-template-expression
+		'@typescript-eslint/no-unnecessary-template-expression': 'warn',
 
 		// Enforces that type arguments will not be used if not required (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-type-arguments
@@ -544,6 +510,10 @@ module.exports = {
 		// Disallow comparing an enum value with a non-enum value
 		// https://typescript-eslint.io/rules/no-unsafe-enum-comparison
 		'@typescript-eslint/no-unsafe-enum-comparison': 'error',
+
+		// Disallow using the unsafe built-in Function type (autofixable)
+		// https://typescript-eslint.io/rules/no-unsafe-function-type
+		'@typescript-eslint/no-unsafe-function-type': 'warn',
 
 		// Disallows member access on any typed variables
 		// https://typescript-eslint.io/rules/no-unsafe-member-access
@@ -588,18 +558,25 @@ module.exports = {
 		'@typescript-eslint/no-useless-empty-export': 'off',
 		'no-autofix/@typescript-eslint/no-useless-empty-export': 'warn',
 
-		// Disallow unnecessary template literals (autofixable)
-		// https://typescript-eslint.io/rules/no-useless-template-literals
-		'@typescript-eslint/no-useless-template-literals': 'warn',
-
 		// Disallows the use of require statements except in import statements
 		// https://typescript-eslint.io/rules/no-var-requires
 		'@typescript-eslint/no-var-requires': 'error',
+
+		// Disallow using confusing built-in primitive class wrappers (autofixable)
+		// https://typescript-eslint.io/rules/no-wrapper-object-types
+		'@typescript-eslint/no-wrapper-object-types': 'error',
 
 		// Prefers a non-null assertion over explicit type cast when possible
 		// https://typescript-eslint.io/rules/non-nullable-type-assertion-style
 		// Note: explicit better
 		'@typescript-eslint/non-nullable-type-assertion-style': 'off',
+
+		// Disallow throwing non-Error values as exceptions
+		// https://typescript-eslint.io/rules/only-throw-error
+		'@typescript-eslint/only-throw-error': ['error', {
+			allowThrowingAny: false,
+			allowThrowingUnknown: false,
+		}],
 
 		// Enforce consistent spacing inside braces (autofixable)
 		// https://typescript-eslint.io/rules/object-curly-spacing

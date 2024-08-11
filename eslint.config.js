@@ -3,6 +3,7 @@ import { defineConfiguration } from './dist/index.js';
 export default [
 	defineConfiguration('javascript'),
 	defineConfiguration('node'),
+	defineConfiguration('typescript'),
 	// {
 	// 	files: ['*.md'],
 	// 	rules: {
