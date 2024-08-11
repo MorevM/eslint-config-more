@@ -1,7 +1,8 @@
 import eslintPluginRegexp from 'eslint-plugin-regexp';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import { defineConfigurationPart } from '#utils';
 
-export default {
+export default defineConfigurationPart({
 	plugins: {
 		'regexp': eslintPluginRegexp,
 		'no-autofix': eslintPluginNoAutofix,
@@ -412,4 +413,4 @@ export default {
 			},
 		}],
 	},
-};
+});

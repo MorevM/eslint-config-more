@@ -1,9 +1,8 @@
-import { defineFlatConfig } from 'eslint-define-config';
 import eslintPluginStylistic from '@stylistic/eslint-plugin-js';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import { defineConfigurationPart } from '#utils';
 
-/* eslint-disable sonarjs/no-duplicate-string */
-export default defineFlatConfig({
+export default defineConfigurationPart({
 	plugins: {
 		'@stylistic/js': eslintPluginStylistic,
 		'no-autofix': eslintPluginNoAutofix,

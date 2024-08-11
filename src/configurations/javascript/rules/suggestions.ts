@@ -1,7 +1,8 @@
 import { CONFUSING_BROWSER_GLOBALS } from '#constants';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import { defineConfigurationPart } from '#utils';
 
-export default {
+export default defineConfigurationPart({
 	plugins: {
 		'no-autofix': eslintPluginNoAutofix,
 	},
@@ -763,4 +764,4 @@ export default {
 		// https://eslint.org/docs/rules/yoda
 		'yoda': 'error',
 	},
-};
+});

@@ -1,7 +1,8 @@
 import eslintPluginComments from 'eslint-plugin-eslint-comments';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import { defineConfigurationPart } from '#utils';
 
-export default {
+export default defineConfigurationPart({
 	plugins: {
 		'eslint-comments': eslintPluginComments,
 		'no-autofix': eslintPluginNoAutofix,
@@ -57,4 +58,4 @@ export default {
 		// Note: Usually it's obvious
 		'eslint-comments/require-description': 'off',
 	},
-};
+});

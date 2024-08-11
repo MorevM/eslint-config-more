@@ -1,4 +1,6 @@
-export default {
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
 	rules: {
 		// Enforce position of line comments
 		// https://eslint.org/docs/rules/line-comment-position
@@ -9,4 +11,4 @@ export default {
 		// https://eslint.org/docs/rules/unicode-bom
 		'unicode-bom': ['error', 'never'],
 	},
-};
+});

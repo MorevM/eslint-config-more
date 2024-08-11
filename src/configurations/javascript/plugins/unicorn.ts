@@ -1,7 +1,8 @@
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import { defineConfigurationPart } from '#utils';
 
-export default {
+export default defineConfigurationPart({
 	plugins: {
 		'unicorn': eslintPluginUnicorn,
 		'no-autofix': eslintPluginNoAutofix,
@@ -587,4 +588,4 @@ export default {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md
 		'unicorn/throw-new-error': 'warn',
 	},
-};
+});

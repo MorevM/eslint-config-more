@@ -1,6 +1,7 @@
 import eslintPluginNoSecrets from 'eslint-plugin-no-secrets';
+import { defineConfigurationPart } from '#utils';
 
-export default {
+export default defineConfigurationPart({
 	plugins: {
 		'no-secrets': eslintPluginNoSecrets,
 	},
@@ -22,4 +23,4 @@ export default {
 			additionalDelimiters: [],
 		}],
 	},
-};
+});

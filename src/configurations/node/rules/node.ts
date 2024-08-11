@@ -1,6 +1,7 @@
 import eslintPluginN from 'eslint-plugin-n';
+import { defineConfigurationPart } from '#utils';
 
-export default {
+export default defineConfigurationPart({
 	plugins: {
 		n: eslintPluginN,
 	},
@@ -174,4 +175,4 @@ export default {
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/process-exit-as-throw.md
 		'n/process-exit-as-throw': 'error',
 	},
-};
+});

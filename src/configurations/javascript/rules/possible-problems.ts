@@ -1,4 +1,6 @@
-export default {
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
 	rules: {
 		// Enforces return statements in callbacks of array's methods
 		// https://eslint.org/docs/rules/array-callback-return
@@ -253,4 +255,4 @@ export default {
 			requireStringLiterals: true,
 		}],
 	},
-};
+});

@@ -1,7 +1,8 @@
 import eslintPluginSonarJs from 'eslint-plugin-sonarjs';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import { defineConfigurationPart } from '#utils';
 
-export default {
+export default defineConfigurationPart({
 	plugins: {
 		'sonarjs': eslintPluginSonarJs,
 		'no-autofix': eslintPluginNoAutofix,
@@ -155,4 +156,4 @@ export default {
 		// https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/prefer-while.md
 		'sonarjs/prefer-while': 'error',
 	},
-};
+});

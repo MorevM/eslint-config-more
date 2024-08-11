@@ -4,8 +4,9 @@ import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 import eslintPluginStylistic from '@stylistic/eslint-plugin-ts';
 import configurationJavascript from '~configurations/javascript';
 import { ESLINT_FORMATTING_RULES } from '#constants';
+import { defineConfigurationPart } from '#utils';
 
-const base = configurationJavascript().rules;
+const base = configurationJavascript().rules!;
 
 const extendFromBase = (rule: string, extendWith: PlainObject | null = null) => {
 	const baseRulename = base[rule]
@@ -36,7 +37,7 @@ const extendFromBase = (rule: string, extendWith: PlainObject | null = null) => 
 	return result;
 };
 
-export default {
+export default defineConfigurationPart({
 	plugins: {
 		'@stylistic/ts': eslintPluginStylistic,
 		'@typescript-eslint': plugin,
@@ -782,4 +783,4 @@ export default {
 			ignoreDifferentlyNamedParameters: true,
 		}],
 	},
-};
+});

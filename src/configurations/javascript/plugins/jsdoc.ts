@@ -1,7 +1,8 @@
 import eslintPluginJsdoc from 'eslint-plugin-jsdoc';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
+import { defineConfigurationPart } from '#utils';
 
-export default {
+export default defineConfigurationPart({
 	plugins: {
 		'jsdoc': eslintPluginJsdoc,
 		'no-autofix': eslintPluginNoAutofix,
@@ -475,4 +476,4 @@ export default {
 		// https://github.com/gajus/eslint-plugin-jsdoc#valid-types
 		'jsdoc/valid-types': 'error',
 	},
-};
+});

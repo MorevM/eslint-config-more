@@ -1,6 +1,7 @@
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+import { defineConfigurationPart } from '#utils';
 
-export default {
+export default defineConfigurationPart({
 	plugins: {
 		unicorn: eslintPluginUnicorn,
 	},
@@ -33,4 +34,4 @@ export default {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md
 		'unicorn/prefer-keyboard-event-key': 'error',
 	},
-};
+});

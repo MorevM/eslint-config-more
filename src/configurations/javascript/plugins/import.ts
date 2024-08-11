@@ -1,7 +1,7 @@
-import { defineFlatConfig } from 'eslint-define-config';
 import eslintPluginImport from 'eslint-plugin-import';
+import { defineConfigurationPart } from '#utils';
 
-export default defineFlatConfig({
+export default defineConfigurationPart({
 	plugins: {
 		import: eslintPluginImport,
 	},
