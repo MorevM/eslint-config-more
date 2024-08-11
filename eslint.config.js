@@ -1,6 +1,7 @@
-import { defineConfiguration } from './dist/index.js';
+import { defineConfiguration, defineIgnores } from './dist/index.js';
 
 export default [
+	defineIgnores(),
 	defineConfiguration('javascript'),
 	defineConfiguration('node'),
 	defineConfiguration('typescript'),

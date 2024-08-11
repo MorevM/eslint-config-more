@@ -2,6 +2,9 @@ import configurationJavascript from '~configurations/javascript';
 import configurationNode from '~configurations/node';
 import configurationBrowser from '~configurations/browser';
 import configurationTypescript from '~configurations/typescript';
+import gitignore from 'eslint-config-flat-gitignore';
+import { GLOB_EXCLUDE } from '#globs';
+import { arrayUnique } from '@morev/utils';
 
 type Configuration = 'javascript' | 'node' | 'browser' | 'typescript';
 
@@ -22,4 +25,15 @@ export const defineConfiguration = <T extends Configuration>(name: T, options: C
 		case 'typescript': return configurationTypescript(options);
 		default: return {};
 	}
+};
+
+export const defineIgnores = (extraIgnoredGlobs: string[] = []) => {
+	return {
+		name: 'morev/ignores',
+		ignores: arrayUnique([
+			...gitignore().ignores,
+			...GLOB_EXCLUDE,
+			...extraIgnoredGlobs,
+		]),
+	};
 };

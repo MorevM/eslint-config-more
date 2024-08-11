@@ -13,19 +13,28 @@ export const GLOB_ASTRO = '**/*.astro';
 export const GLOB_VUE = '**/*.vue';
 
 export const GLOB_EXCLUDE = [
+	// OS files
+	'.DS_Store',
+	'Thumbs.db',
+	// Dependencies
 	'**/node_modules',
-	//
+	// Artifacts
 	'**/dist',
 	'**/build',
 	'**/output',
-	//
+	// Lock files
 	'**/package-lock.json',
 	'**/yarn.lock',
 	'**/pnpm-lock.yaml',
 	'**/bun.lockb',
-	//
+	// Log files
+	'**/*.log',
+	'**/npm-debug.log*',
+	'**/yarn-debug.log*',
+	'**/yarn-error.log*',
+	// Test-related
 	'**/coverage',
-	//
+	// Temp files && meta artifacts
 	'**/temp',
 	'**/.temp',
 	'**/tmp',
