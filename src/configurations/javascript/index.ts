@@ -1,6 +1,3 @@
-/* @ts-expect-error -- No types https://github.com/babel/babel/issues/16221 */
-import babelEslintParser from '@babel/eslint-parser';
-
 import layoutAndFormatting from './rules/layout-and-formatting';
 import possibleProblems from './rules/possible-problems';
 import suggestions from './rules/suggestions';
@@ -29,14 +26,7 @@ export default function configurationJavascript(options: Partial<AnyConfiguratio
 		languageOptions: {
 			ecmaVersion: 'latest',
 			sourceType: 'module',
-			parser: babelEslintParser,
 			parserOptions: {
-				requireConfigFile: false,
-				babelOptions: {
-					babelrc: false,
-					configFile: false,
-					presets: ['@babel/preset-env'],
-				},
 				ecmaFeatures: {
 					globalReturn: false,
 					impliedStrict: true,

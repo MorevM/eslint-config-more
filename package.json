@@ -50,10 +50,6 @@
 		"typescript": "^5.4.2"
 	},
 	"dependencies": {
-		"@babel/core": "^7.25.2",
-		"@babel/eslint-parser": "^7.25.1",
-		"@babel/plugin-syntax-jsx": "^7.24.7",
-		"@babel/preset-env": "^7.25.3",
 		"@html-eslint/eslint-plugin": "^0.25.0",
 		"@html-eslint/parser": "^0.25.0",
 		"@stylistic/eslint-plugin-js": "^2.2.2",

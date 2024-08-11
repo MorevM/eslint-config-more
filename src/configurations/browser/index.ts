@@ -1,6 +1,3 @@
-/* @ts-expect-error -- No types https://github.com/babel/babel/issues/16221 */
-import babelEslintParser from '@babel/eslint-parser';
-
 import globals from 'globals';
 
 import unicorn from './rules/unicorn';
@@ -21,17 +18,10 @@ export default function configurationNode(options: Partial<AnyConfigurationOptio
 		languageOptions: {
 			ecmaVersion: 'latest',
 			sourceType: 'module',
-			parser: babelEslintParser,
 			globals: {
 				...globals.browser,
 			},
 			parserOptions: {
-				requireConfigFile: false,
-				babelOptions: {
-					babelrc: false,
-					configFile: false,
-					presets: ['@babel/preset-env'],
-				},
 				ecmaFeatures: {
 					globalReturn: false,
 					impliedStrict: true,
