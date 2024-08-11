@@ -57,4 +57,4 @@ export default {
 		// Note: Usually it's obvious
 		'eslint-comments/require-description': 'off',
 	},
-}
+};

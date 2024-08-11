@@ -1,9 +1,9 @@
-import eslintPluginSonarJs from "eslint-plugin-sonarjs";
+import eslintPluginSonarJs from 'eslint-plugin-sonarjs';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 
 export default {
 	plugins: {
-		sonarjs: eslintPluginSonarJs,
+		'sonarjs': eslintPluginSonarJs,
 		'no-autofix': eslintPluginNoAutofix,
 	},
 	rules: {

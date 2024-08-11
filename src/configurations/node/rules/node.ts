@@ -33,11 +33,11 @@ export default {
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/hashbang.md
 		'n/hashbang': ['error', {
 			// "convertPath": null,
-			"ignoreUnpublished": false,
-			"additionalExecutables": [],
-			"executableMap": {
-				".js": "node"
-			}
+			ignoreUnpublished: false,
+			additionalExecutables: [],
+			executableMap: {
+				'.js': 'node',
+			},
 		}],
 
 		// Ensure Node.js-style error-first callback pattern is followed
@@ -173,5 +173,5 @@ export default {
 		// Make `process.exit()` expressions the same code path as `throw`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/process-exit-as-throw.md
 		'n/process-exit-as-throw': 'error',
-	}
-}
+	},
+};

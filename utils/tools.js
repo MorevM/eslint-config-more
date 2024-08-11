@@ -1,4 +1,4 @@
-const { resolve, sep } = require('path');
+const { resolve, sep } = require('node:path');
 const _mergeWith = require('lodash.mergewith');
 const { mergeWithArrayComparer } = require('./helpers.js');
 

@@ -1,4 +1,4 @@
-import { defineFlatConfig } from "eslint-define-config"
+import { defineFlatConfig } from 'eslint-define-config';
 import eslintPluginImport from 'eslint-plugin-import';
 
 export default defineFlatConfig({

@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('node:fs');
 const RuleFinderFactory = require('eslint-find-rules');
 
 const { ESLINT_FORMATTING_RULES } = require('../utils/constants.js');

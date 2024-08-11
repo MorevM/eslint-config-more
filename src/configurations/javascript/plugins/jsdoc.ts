@@ -3,7 +3,7 @@ import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 
 export default {
 	plugins: {
-		jsdoc: eslintPluginJsdoc,
+		'jsdoc': eslintPluginJsdoc,
 		'no-autofix': eslintPluginNoAutofix,
 	},
 	rules: {

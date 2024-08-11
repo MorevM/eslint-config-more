@@ -5,7 +5,7 @@ import globals from 'globals';
 
 import node from './rules/node';
 
-import { AnyConfigurationOptions } from '#types';
+import type { AnyConfigurationOptions } from '#types';
 import { GLOB_ANY_JS } from '#globs';
 import { mergeParts } from '#utils';
 
@@ -30,14 +30,14 @@ export default function configurationNode(options: Partial<AnyConfigurationOptio
 				babelOptions: {
 					babelrc: false,
 					configFile: false,
-					presets: ["@babel/preset-env"]
+					presets: ['@babel/preset-env'],
 				},
 				ecmaFeatures: {
 					globalReturn: false,
 					impliedStrict: true,
 					jsx: true,
 				},
-			}
+			},
 		},
 		files,
 		ignores,
@@ -45,7 +45,7 @@ export default function configurationNode(options: Partial<AnyConfigurationOptio
 			node,
 			{
 				rules: overrides,
-			}
+			},
 		),
-	}
+	};
 }

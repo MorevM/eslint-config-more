@@ -1,4 +1,4 @@
-import { defineFlatConfig } from "eslint-define-config"
+import { defineFlatConfig } from 'eslint-define-config';
 import eslintPluginStylistic from '@stylistic/eslint-plugin-js';
 import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 

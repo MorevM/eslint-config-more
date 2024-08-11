@@ -1,5 +1,5 @@
-const { resolve, join } = require('path');
-const fs = require('fs');
+const { resolve, join } = require('node:path');
+const fs = require('node:fs');
 const { ESLint } = require('eslint');
 
 const eslint = new ESLint({ fix: true });

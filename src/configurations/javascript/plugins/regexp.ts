@@ -3,7 +3,7 @@ import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 
 export default {
 	plugins: {
-		regexp: eslintPluginRegexp,
+		'regexp': eslintPluginRegexp,
 		'no-autofix': eslintPluginNoAutofix,
 	},
 	rules: {

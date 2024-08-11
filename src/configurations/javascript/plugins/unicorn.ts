@@ -3,7 +3,7 @@ import eslintPluginNoAutofix from 'eslint-plugin-no-autofix';
 
 export default {
 	plugins: {
-		unicorn: eslintPluginUnicorn,
+		'unicorn': eslintPluginUnicorn,
 		'no-autofix': eslintPluginNoAutofix,
 	},
 	rules: {
@@ -587,4 +587,4 @@ export default {
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md
 		'unicorn/throw-new-error': 'warn',
 	},
-}
+};
