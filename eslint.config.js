@@ -2,7 +2,12 @@ import { defineConfiguration, defineIgnores } from './dist/index.js';
 
 export default [
 	defineIgnores(),
-	defineConfiguration('javascript'),
+	defineConfiguration('javascript', {
+		overrides: {
+			// It's ok here to be explicit
+			'sonarjs/no-duplicate-string': 'off',
+		},
+	}),
 	defineConfiguration('node'),
 	defineConfiguration('typescript'),
 	// {
