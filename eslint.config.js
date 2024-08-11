@@ -1,6 +1,6 @@
-import { defineConfiguration, defineIgnores } from './dist/index.js';
+import { combine, defineConfiguration, defineIgnores } from './dist/index.js';
 
-export default [
+export default combine([
 	defineIgnores(),
 	defineConfiguration('javascript', {
 		overrides: {
@@ -10,6 +10,7 @@ export default [
 	}),
 	defineConfiguration('node'),
 	defineConfiguration('typescript'),
+	defineConfiguration('yaml'),
 	// {
 	// 	files: ['*.md'],
 	// 	rules: {
@@ -18,4 +19,4 @@ export default [
 	// 		'no-autofix/markdownlint/md007': 'off',
 	// 	},
 	// },
-].flat(Infinity);
+]);

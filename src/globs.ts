@@ -12,6 +12,8 @@ export const GLOB_ASTRO = '**/*.astro';
 
 export const GLOB_VUE = '**/*.vue';
 
+export const GLOB_YAML = '**/*.y?(a)ml';
+
 export const GLOB_EXCLUDE = [
 	// OS files
 	'.DS_Store',
