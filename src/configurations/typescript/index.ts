@@ -1,10 +1,9 @@
-import { parser } from 'typescript-eslint';
-
 import typescript from './rules/typescript';
 
 import type { TypescriptConfigurationOptions } from '#types';
 import { GLOB_TS, GLOB_TSX } from '#globs';
 import { mergeParts } from '#utils';
+import { parserTypescript } from '#parsers';
 
 export default function configurationTypescript(options: Partial<TypescriptConfigurationOptions> = {}) {
 	const {
@@ -22,7 +21,7 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 	return {
 		name: 'morev/typescript',
 		languageOptions: {
-			parser,
+			parser: parserTypescript,
 			ecmaVersion: 'latest',
 			sourceType: 'module',
 			parserOptions: {

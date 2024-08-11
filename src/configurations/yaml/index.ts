@@ -1,4 +1,4 @@
-import parserYaml from 'yaml-eslint-parser';
+import { parserYaml } from '#parsers';
 
 import type { AnyConfigurationOptions } from '#types';
 import { GLOB_YAML } from '#globs';
