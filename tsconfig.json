@@ -18,7 +18,7 @@
 			"#constants": ["./src/constants.ts"],
 			"#types": ["./src/types/index.ts"],
 			"#globs": ["./src/globs.ts"],
-			"#utils": ["./src/utils.ts"],
+			"#utils": ["./src/utils/index.ts"],
 			"#plugins": ["./src/plugins.ts"],
 			"#parsers": ["./src/parsers.ts"],
 			"~src/*": ["./src/*"],

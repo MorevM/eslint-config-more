@@ -1,31 +1,10 @@
-import type { PlainObject } from '@morev/utils';
-import configurationJavascript from '~configurations/javascript';
-import { defineConfigurationPart } from '#utils';
+import { defineConfigurationPart, extensionFromBaseFactory } from '#utils';
 import { pluginNoAutofix, pluginStylistic, pluginTs } from '#plugins';
 
-const base = configurationJavascript().rules!;
-
-const extendFromBase = (rule: string, extendWith: PlainObject | null = null) => {
-	const baseRulename = base[rule]
-		? rule
-		: null;
-	if (!baseRulename) throw new Error(`There is no rule ${rule} in a base configuration`);
-
-	const baseRule = base[baseRulename];
-
-	const result: PlainObject<any> = { [baseRulename]: 'off' }; // Disable the base rule
-
-	const severity = Array.isArray(baseRule) ? baseRule[0] : baseRule;
-	const baseOptions = Array.isArray(baseRule) ? baseRule.slice(1) : [];
-
-	const newOptions = extendWith
-		? [{ ...baseOptions?.[0], ...extendWith }]
-		: baseOptions;
-
-	result[`@typescript-eslint/${rule}`] = [severity, ...newOptions];
-
-	return result;
-};
+const extensionFromBase = extensionFromBaseFactory({
+	prefix: '@typescript-eslint',
+	alwaysDisableBaseRule: true,
+});
 
 export default defineConfigurationPart({
 	plugins: {
@@ -66,7 +45,7 @@ export default defineConfigurationPart({
 
 		// Enforce that class methods utilize `this` (autofixable)
 		// https://typescript-eslint.io/rules/class-methods-use-this
-		...extendFromBase('class-methods-use-this'),
+		...extensionFromBase('class-methods-use-this'),
 
 		// Enforces specifying generic type arguments on type annotation or constructor name of a constructor call (autofixable)
 		// https://typescript-eslint.io/rules/consistent-generic-constructors
@@ -106,11 +85,11 @@ export default defineConfigurationPart({
 
 		// Enforce default parameters to be last
 		// https://typescript-eslint.io/rules/default-param-last
-		...extendFromBase('default-param-last'),
+		...extensionFromBase('default-param-last'),
 
 		// Enforce dot notation whenever possible (autofixable)
 		// https://typescript-eslint.io/rules/dot-notation
-		...extendFromBase('dot-notation', {
+		...extensionFromBase('dot-notation', {
 			allowPrivateClassPropertyAccess: false,
 			allowProtectedClassPropertyAccess: false,
 			allowIndexSignaturePropertyAccess: false,
@@ -138,7 +117,7 @@ export default defineConfigurationPart({
 
 		// Require or disallow initialization in variable declarations
 		// https://typescript-eslint.io/rules/init-declarations
-		...extendFromBase('init-declarations'),
+		...extensionFromBase('init-declarations'),
 
 		// Enforce a maximum number of parameters in function definitions
 		// https://typescript-eslint.io/rules/max-params
@@ -190,7 +169,7 @@ export default defineConfigurationPart({
 
 		// Disallow generic Array constructors (autofixable)
 		// https://typescript-eslint.io/rules/no-array-constructor
-		...extendFromBase('no-array-constructor'),
+		...extensionFromBase('no-array-constructor'),
 
 		// Disallow using the `delete` operator on array values
 		// https://typescript-eslint.io/rules/no-array-delete/
@@ -215,7 +194,7 @@ export default defineConfigurationPart({
 
 		// Disallow duplicate class members
 		// https://typescript-eslint.io/rules/no-dupe-class-members
-		...extendFromBase('no-dupe-class-members'),
+		...extensionFromBase('no-dupe-class-members'),
 
 		// Disallow duplicate enum member values
 		// https://typescript-eslint.io/rules/no-duplicate-enum-values
@@ -234,7 +213,7 @@ export default defineConfigurationPart({
 
 		// Disallow empty functions
 		// https://typescript-eslint.io/rules/no-empty-function
-		...extendFromBase('no-empty-function'),
+		...extensionFromBase('no-empty-function'),
 
 		// Disallow the declaration of empty interfaces (autofixable)
 		// https://typescript-eslint.io/rules/no-empty-interface
@@ -287,7 +266,7 @@ export default defineConfigurationPart({
 
 		// Disallow the use of `eval()`-like methods
 		// https://typescript-eslint.io/rules/no-implied-eval
-		...extendFromBase('no-implied-eval'),
+		...extensionFromBase('no-implied-eval'),
 
 		// Disallows explicit type declarations for variables or parameters
 		// initialized to a number, string, or boolean (autofixable)
@@ -299,7 +278,7 @@ export default defineConfigurationPart({
 
 		// Disallow `this` keywords outside of classes or class-like objects
 		// https://typescript-eslint.io/rules/no-invalid-this
-		...extendFromBase('no-invalid-this'),
+		...extensionFromBase('no-invalid-this'),
 
 		// Disallows usage of `void` type outside of generic or return types
 		// https://typescript-eslint.io/rules/no-invalid-void-type
@@ -310,15 +289,15 @@ export default defineConfigurationPart({
 
 		// Disallow function declarations that contain unsafe references inside loop statements
 		// https://typescript-eslint.io/rules/no-loop-func
-		...extendFromBase('no-loop-func'),
+		...extensionFromBase('no-loop-func'),
 
 		// Disallow literal numbers that lose precision
 		// https://typescript-eslint.io/rules/no-loss-of-precision
-		...extendFromBase('no-loss-of-precision'),
+		...extensionFromBase('no-loss-of-precision'),
 
 		// Disallow magic numbers
 		// https://typescript-eslint.io/rules/no-magic-numbers
-		...extendFromBase('no-magic-numbers', {
+		...extensionFromBase('no-magic-numbers', {
 			ignoreEnums: true,
 			ignoreNumericLiteralTypes: true,
 			ignoreReadonlyClassProperties: true,
@@ -365,7 +344,7 @@ export default defineConfigurationPart({
 
 		// Disallow variable re-declaration
 		// https://typescript-eslint.io/rules/no-redeclare
-		...extendFromBase('no-redeclare'),
+		...extensionFromBase('no-redeclare'),
 
 		// Disallow members of unions and intersections that do nothing or override type information
 		// https://typescript-eslint.io/rules/no-redundant-type-constituents
@@ -381,7 +360,7 @@ export default defineConfigurationPart({
 
 		// Disallow variable declarations from shadowing variables declared in the outer scope
 		// https://typescript-eslint.io/rules/no-shadow
-		...extendFromBase('no-shadow'),
+		...extensionFromBase('no-shadow'),
 
 		// Disallow aliasing `this`
 		// https://typescript-eslint.io/rules/no-this-alias
@@ -460,15 +439,15 @@ export default defineConfigurationPart({
 
 		// Disallow unused expressions
 		// https://typescript-eslint.io/rules/no-unused-expressions
-		...extendFromBase('no-unused-expressions'),
+		...extensionFromBase('no-unused-expressions'),
 
 		// Disallow unused variables
 		// https://typescript-eslint.io/rules/no-unused-vars
-		...extendFromBase('no-unused-vars'),
+		...extensionFromBase('no-unused-vars'),
 
 		// Disallow the use of variables before they are defined
 		// https://typescript-eslint.io/rules/no-use-before-define
-		...extendFromBase('no-use-before-define', {
+		...extensionFromBase('no-use-before-define', {
 			enums: true,
 			typedefs: true,
 			ignoreTypeReferences: false,
@@ -476,11 +455,11 @@ export default defineConfigurationPart({
 
 		// Disallow unnecessary constructors
 		// https://typescript-eslint.io/rules/no-useless-constructor
-		...extendFromBase('no-useless-constructor'),
+		...extensionFromBase('no-useless-constructor'),
 
 		// Require destructuring from arrays and/or objects (autofixable)
 		// https://typescript-eslint.io/rules/prefer-destructuring
-		...extendFromBase('prefer-destructuring'),
+		...extensionFromBase('prefer-destructuring'),
 
 		// Disallow empty exports that don't change anything in a module file
 		// (autofixable but might be confusing during development)
@@ -559,7 +538,7 @@ export default defineConfigurationPart({
 
 		// Require using Error objects as Promise rejection reasons
 		// https://typescript-eslint.io/rules/prefer-promise-reject-errors/
-		...extendFromBase('prefer-promise-reject-errors'),
+		...extensionFromBase('prefer-promise-reject-errors'),
 
 		// Requires that private members are marked as `readonly` if they're
 		// never modified outside of the constructor (autofixable but may be confusing while developing)
@@ -614,7 +593,7 @@ export default defineConfigurationPart({
 
 		// Disallow async functions which have no await expression
 		// https://typescript-eslint.io/rules/require-await
-		...extendFromBase('require-await'),
+		...extensionFromBase('require-await'),
 
 		// When adding two variables, operands must both be of type number or of type string
 		// https://typescript-eslint.io/rules/restrict-plus-operands
