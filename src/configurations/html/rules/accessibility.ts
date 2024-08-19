@@ -1,4 +1,10 @@
-module.exports = {
+import { pluginHtml } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		'@html-eslint': pluginHtml,
+	},
 	rules: {
 		// Disallow use of abstract roles
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-abstract-roles
@@ -36,4 +42,4 @@ module.exports = {
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-meta-viewport
 		'@html-eslint/require-meta-viewport': 'error',
 	},
-};
+});

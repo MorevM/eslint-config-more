@@ -32,3 +32,10 @@ declare module 'eslint-plugin-vue' {
 	declare const _default: ESLint.Plugin;
 	export default _default;
 }
+
+declare module '@html-eslint/eslint-plugin' {
+	import type { ESLint } from 'eslint';
+
+	declare const _default: ESLint.Plugin;
+	export default _default;
+}

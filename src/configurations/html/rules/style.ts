@@ -1,4 +1,10 @@
-module.exports = {
+import { pluginHtml } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		'@html-eslint': pluginHtml,
+	},
 	rules: {
 		// Require newline between attributes (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/attrs-newline
@@ -47,4 +53,4 @@ module.exports = {
 		// https://html-eslint.org/docs/rules/sort-attrs
 		'@html-eslint/sort-attrs': 'off',
 	},
-};
+});

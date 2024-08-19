@@ -1,4 +1,10 @@
-module.exports = {
+import { pluginHtml } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		'@html-eslint': pluginHtml,
+	},
 	rules: {
 		// Disallow duplicate attributes
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-duplicate-attrs
@@ -61,4 +67,4 @@ module.exports = {
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-meta-charset
 		'@html-eslint/require-meta-charset': 'error',
 	},
-};
+});

@@ -1,4 +1,10 @@
-module.exports = {
+import { pluginHtml } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		'@html-eslint': pluginHtml,
+	},
 	rules: {
 		// Disallow multiple `<h1>`
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-multiple-h1
@@ -20,4 +26,4 @@ module.exports = {
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-title
 		'@html-eslint/require-title': 'error',
 	},
-};
+});
