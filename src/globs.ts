@@ -16,6 +16,8 @@ export const GLOB_YAML = '**/*.y?(a)ml';
 
 export const GLOB_HTML = '**/*.htm?(l)';
 
+export const GLOB_MARKDOWN = '**/*.md';
+
 export const GLOB_EXCLUDE = [
 	// OS files
 	'.DS_Store',

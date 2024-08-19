@@ -12,3 +12,4 @@ export { plugin as pluginTs } from 'typescript-eslint';
 export { default as pluginYaml } from 'eslint-plugin-yml';
 export { default as pluginVue } from 'eslint-plugin-vue';
 export { default as pluginHtml } from '@html-eslint/eslint-plugin';
+export { default as pluginMarkdown } from 'eslint-plugin-markdownlint';

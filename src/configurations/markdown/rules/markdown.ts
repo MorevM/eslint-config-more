@@ -1,4 +1,11 @@
-module.exports = {
+import { pluginMarkdown, pluginNoAutofix } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		'markdownlint': pluginMarkdown,
+		'no-autofix': pluginNoAutofix,
+	},
 	rules: {
 	// Heading levels should only increment by one level at a time
 	// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md001
@@ -262,4 +269,4 @@ module.exports = {
 		// 'markdownlint/md051': 'error',
 		// https://gitlab.com/pawelbbdrozd/eslint-plugin-markdownlint/-/issues/10
 	},
-};
+});

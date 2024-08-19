@@ -11,6 +11,7 @@ export default combine([
 	defineConfiguration('node'),
 	defineConfiguration('typescript'),
 	defineConfiguration('yaml'),
+	defineConfiguration('markdown'),
 	// {
 	// 	files: ['*.md'],
 	// 	rules: {
