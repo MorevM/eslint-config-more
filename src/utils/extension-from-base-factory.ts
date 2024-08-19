@@ -66,7 +66,7 @@ export const extensionFromBaseFactory = (options: ExtensionFromBaseFactoryOption
 			? { ...baseOptions as object, ...extendWith }
 			: baseOptions;
 
-		result[`${prefix}/${ruleName}`] = isEmpty(newOptions)
+		result[`${prefix}/${cleanRule}`] = isEmpty(newOptions)
 			? severity
 			: [severity, newOptions];
 

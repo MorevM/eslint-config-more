@@ -1,4 +1,10 @@
-module.exports = {
+import { pluginVue } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		vue: pluginVue,
+	},
 	rules: {
 		// Enforce order of `defineEmits` and `defineProps` compiler macros (autofixable)
 		// https://eslint.vuejs.org/rules/define-macros-order.html
@@ -33,4 +39,4 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/valid-define-options.html
 		'vue/valid-define-options': 'error',
 	},
-};
+});

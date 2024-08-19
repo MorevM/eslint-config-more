@@ -25,3 +25,10 @@ declare module 'eslint-plugin-no-secrets' {
 	declare const _default: ESLint.Plugin;
 	export default _default;
 }
+
+declare module 'eslint-plugin-vue' {
+	import type { ESLint } from 'eslint';
+
+	declare const _default: ESLint.Plugin;
+	export default _default;
+}

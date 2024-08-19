@@ -1,4 +1,10 @@
-module.exports = {
+import { pluginVue } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		vue: pluginVue,
+	},
 	rules: {
 		// Disallow reserved names in props
 		// https://eslint.vuejs.org/rules/no-reserved-props.html
@@ -145,4 +151,4 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/valid-v-memo.html
 		'vue/valid-v-memo': 'error',
 	},
-};
+});

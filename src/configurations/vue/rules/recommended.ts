@@ -1,9 +1,10 @@
-/**
- * Autofixable rules starts with `+` sign.
- * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
- */
+import { pluginVue } from '#plugins';
+import { defineConfigurationPart } from '#utils';
 
-module.exports = {
+export default defineConfigurationPart({
+	plugins: {
+		vue: pluginVue,
+	},
 	rules: {
 		// Enforce order of attributes (autofixable)
 		// https://eslint.vuejs.org/rules/attributes-order.html
@@ -84,4 +85,4 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/this-in-template.html
 		'vue/this-in-template': ['warn', 'never'],
 	},
-};
+});

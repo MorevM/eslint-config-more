@@ -9,21 +9,21 @@ export const CONFUSING_BROWSER_GLOBALS = [
 	'screenLeft', 'screenTop', 'screenX', 'screenY', 'scroll', 'scrollbars',
 	'scrollBy', 'scrollTo', 'scrollX', 'scrollY', 'self', 'status',
 	'statusbar', 'stop', 'toolbar', 'top',
-] as const;
+];
 
 export const INLINE_ELEMENTS = [
 	'a', 'abbr', 'audio', 'b', 'bdi', 'bdo', 'canvas', 'cite', 'code', 'data',
 	'del', 'dfn', 'em', 'i', 'iframe', 'ins', 'kbd', 'label', 'map', 'mark',
 	'noscript', 'object', 'output', 'picture', 'q', 'ruby', 's', 'samp', 'small',
 	'span', 'strong', 'sub', 'sup', 'svg', 'time', 'u', 'var', 'video',
-] as const;
+];
 
 export const SPECIAL_CHARACTERS = [
 	'(', ')', ',', '.', '&', '+', '-', '=', '*', '/', '#', '№', '$',
 	'%', '!', '?', ':', '[', ']', '{', '}', '<', '>', '|',
 	'\u00B7', '\u2022', '\u2010', '\u2013', '\u2014', '\u2212',
 	'©', '®', '™',
-] as const;
+];
 
 export const DIGIT_CHARACTERS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
@@ -46,4 +46,4 @@ export const ESLINT_FORMATTING_RULES = [
 	'space-before-blocks', 'space-before-function-paren', 'space-in-parens', 'space-infix-ops', 'space-unary-ops',
 	'spaced-comment', 'switch-colon-spacing', 'template-curly-spacing', 'template-tag-spacing',
 	'wrap-iife', 'wrap-regex', 'yield-star-spacing',
-] as const;
+];

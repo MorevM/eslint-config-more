@@ -1,11 +1,12 @@
-/**
- * Autofixable rules starts with `+` sign.
- * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
- */
+import { DIGIT_CHARACTERS, SPECIAL_CHARACTERS } from '#constants';
+import { pluginNoAutofix, pluginVue } from '#plugins';
+import { defineConfigurationPart } from '#utils';
 
-const { SPECIAL_CHARACTERS, DIGIT_CHARACTERS } = require('../../../utils/constants.js');
-
-module.exports = {
+export default defineConfigurationPart({
+	plugins: {
+		'vue': pluginVue,
+		'no-autofix': pluginNoAutofix,
+	},
 	rules: {
 		// Disallow use other than available lang
 		// https://eslint.vuejs.org/rules/block-lang.html
@@ -417,4 +418,4 @@ module.exports = {
 		// Note: this rule tries to limit too much at once :(
 		'vue/v-on-handler-style': 'off',
 	},
-};
+});

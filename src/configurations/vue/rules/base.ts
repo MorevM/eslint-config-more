@@ -1,9 +1,10 @@
-/**
- * Autofixable rules starts with `+` sign.
- * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
- */
+import { pluginVue } from '#plugins';
+import { defineConfigurationPart } from '#utils';
 
-module.exports = {
+export default defineConfigurationPart({
+	plugins: {
+		vue: pluginVue,
+	},
 	rules: {
 		// Support comment-directives in <template>
 		// https://eslint.vuejs.org/rules/comment-directive.html
@@ -15,4 +16,4 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/jsx-uses-vars.html
 		'vue/jsx-uses-vars': 'error',
 	},
-};
+});

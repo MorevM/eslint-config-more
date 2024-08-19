@@ -1,4 +1,10 @@
-module.exports = {
+import { pluginVue } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		vue: pluginVue,
+	},
 	rules: {
 		// Require `emits` option with name triggered by `$emit()`
 		// https://eslint.vuejs.org/rules/require-explicit-emits.html
@@ -13,4 +19,4 @@ module.exports = {
 			autofix: true,
 		}],
 	},
-};
+});

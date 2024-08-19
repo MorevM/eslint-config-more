@@ -1,9 +1,10 @@
-/**
- * Autofixable rules starts with `+` sign.
- * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
- */
+import { pluginVue } from '#plugins';
+import { defineConfigurationPart } from '#utils';
 
-module.exports = {
+export default defineConfigurationPart({
+	plugins: {
+		vue: pluginVue,
+	},
 	rules: {
 		// Require component names to be always multi-word
 		// https://eslint.vuejs.org/rules/multi-word-component-names.html
@@ -242,4 +243,4 @@ module.exports = {
 		// https://eslint.vuejs.org/rules/valid-v-text.html
 		'vue/valid-v-text': 'error',
 	},
-};
+});

@@ -1,11 +1,12 @@
-/**
- * Autofixable rules starts with `+` sign.
- * Autofixable rules with (partially) incorrect behavior starts with `!` sign.
- */
+import { INLINE_ELEMENTS } from '#constants';
+import { pluginNoAutofix, pluginVue } from '#plugins';
+import { defineConfigurationPart } from '#utils';
 
-const { INLINE_ELEMENTS } = require('../../../utils/constants.js');
-
-module.exports = {
+export default defineConfigurationPart({
+	plugins: {
+		'vue': pluginVue,
+		'no-autofix': pluginNoAutofix,
+	},
 	rules: {
 		// Enforce attribute naming style on custom components in template (autofixable)
 		// https://eslint.vuejs.org/rules/attribute-hyphenation.html
@@ -147,4 +148,4 @@ module.exports = {
 			named: 'shorthand',
 		}],
 	},
-};
+});
