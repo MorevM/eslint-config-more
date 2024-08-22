@@ -3,12 +3,12 @@ import bestPractice from './rules/best-practice';
 import seo from './rules/seo';
 import style from './rules/style';
 
-import type { AnyConfigurationOptions } from '#types';
+import type { HtmlConfigurationOptions } from '#types';
 import { GLOB_HTML } from '#globs';
 import { mergeParts } from '#utils';
 import { parserHtml } from '#parsers';
 
-export default function configurationHtml(options: Partial<AnyConfigurationOptions> = {}) {
+export default function configurationHtml(options: Partial<HtmlConfigurationOptions> = {}) {
 	const {
 		files = [GLOB_HTML],
 		overrides = {},

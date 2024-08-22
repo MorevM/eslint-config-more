@@ -3,12 +3,10 @@ import globals from 'globals';
 import unicorn from './rules/unicorn';
 
 import type { AnyConfigurationOptions } from '#types';
-import { GLOB_SRC } from '#globs';
 import { mergeParts } from '#utils';
 
 export default function configurationBrowser(options: Partial<AnyConfigurationOptions> = {}) {
 	const {
-		files = [GLOB_SRC],
 		overrides = {},
 		ignores = [],
 	} = options;
@@ -29,7 +27,6 @@ export default function configurationBrowser(options: Partial<AnyConfigurationOp
 				},
 			},
 		},
-		files,
 		ignores,
 		...mergeParts(
 			unicorn,

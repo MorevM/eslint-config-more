@@ -1,11 +1,11 @@
 import { parserMarkdown } from '#parsers';
-import type { AnyConfigurationOptions } from '#types';
+import type { MarkdownConfigurationOptions } from '#types';
 import { GLOB_MARKDOWN } from '#globs';
 import { mergeParts } from '#utils';
 
 import markdown from './rules/markdown';
 
-export default function configurationMarkdown(options: Partial<AnyConfigurationOptions> = {}) {
+export default function configurationMarkdown(options: Partial<MarkdownConfigurationOptions> = {}) {
 	const {
 		files = [GLOB_MARKDOWN],
 		overrides = {},
