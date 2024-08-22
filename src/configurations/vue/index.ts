@@ -75,6 +75,11 @@ export default function configurationVue(options: Partial<VueConfigurationOption
 			...mergeParts(
 				rules,
 				{
+					rules: {
+						'@stylistic/indent': 'off',
+					},
+				},
+				{
 					rules: overrides,
 				},
 			),
