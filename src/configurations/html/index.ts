@@ -36,5 +36,12 @@ export default function configurationHtml(options: Partial<HtmlConfigurationOpti
 				},
 			),
 		},
+		{
+			name: 'morev/html/overrides',
+			rules: {
+				'capitalized-comments': 'off',
+				'@stylistic/spaced-comment': 'off',
+			},
+		},
 	];
 }
