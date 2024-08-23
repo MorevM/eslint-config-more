@@ -28,6 +28,16 @@ export default function configurationYaml(options: Partial<YamlConfigurationOpti
 			),
 		},
 		{
+			name: 'morev/yaml/overrides',
+			files: ['**/dependabot.yml', '**/.gitlab-ci.yml'],
+			rules: {
+				'@stylistic/spaced-comment': 'off',
+				'@stylistic/no-multiple-empty-lines': 'off',
+				'@stylistic/no-multi-spaces': 'off',
+				'@stylistic/max-len': 'off',
+			},
+		},
+		{
 			name: 'morev/yaml/exceptions',
 			files: ['**/dependabot.yml', '**/.gitlab-ci.yml'],
 			rules: {
