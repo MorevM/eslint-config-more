@@ -13,6 +13,7 @@ export default combine([
 	defineConfiguration('yaml'),
 	defineConfiguration('markdown'),
 	defineConfiguration('json'),
+	defineConfiguration('vitest'),
 	// {
 	// 	files: ['*.md'],
 	// 	rules: {

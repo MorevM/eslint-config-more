@@ -54,6 +54,11 @@ export type YamlConfigurationOptions = AnyConfigurationOptions & ConfigurationOp
 export type JsonConfigurationOptions = AnyConfigurationOptions;
 
 /**
+ * Options for YAML configuration.
+ */
+export type VitestConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
+
+/**
  * Options for Vue configuration.
  */
 export type VueConfigurationOptions = AnyConfigurationOptions

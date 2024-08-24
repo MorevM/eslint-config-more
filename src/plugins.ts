@@ -14,3 +14,5 @@ export { default as pluginVue } from 'eslint-plugin-vue';
 export { default as pluginHtml } from '@html-eslint/eslint-plugin';
 export { default as pluginMarkdown } from 'eslint-plugin-markdownlint';
 export { default as pluginJson } from 'eslint-plugin-jsonc';
+export { default as pluginVitest } from '@vitest/eslint-plugin';
+export { default as pluginJestFormatting } from 'eslint-plugin-jest-formatting';

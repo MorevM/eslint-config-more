@@ -1,3 +1,4 @@
+export const GLOB_SRC_EXT = '?([cm])[jt]s?(x)';
 export const GLOB_JS = '**/*.js';
 export const GLOB_CJS = '**/*.cjs';
 export const GLOB_MJS = '**/*.mjs';
@@ -24,6 +25,18 @@ export const GLOB_JSONC = '**/*.jsonc';
 export const GLOB_JS_CONFIG = '**/jsconfig.json';
 export const GLOB_TS_CONFIG = '**/tsconfig.json';
 export const GLOB_PACKAGE_JSON = '**/package.json';
+
+export const GLOB_TESTS = [
+	`**/__tests__/**/*.${GLOB_SRC_EXT}`,
+	`**/*.spec.${GLOB_SRC_EXT}`,
+	`**/*.test.${GLOB_SRC_EXT}`,
+	`**/*.bench.${GLOB_SRC_EXT}`,
+	`**/*.benchmark.${GLOB_SRC_EXT}`,
+];
+export const GLOB_CYPRESS = [
+	'**/cypress/integration/**/*.*', // Cypress < 10 defaults
+	'**/cypress/e2e/**/*.*', // Cypress >= 10 defaults
+];
 
 export const GLOB_EXCLUDE = [
 	// OS files

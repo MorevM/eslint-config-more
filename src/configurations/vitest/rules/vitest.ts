@@ -1,5 +1,12 @@
-module.exports = {
-	plugins: ['vitest', 'jest-formatting', 'no-autofix'],
+import { pluginJestFormatting, pluginNoAutofix, pluginVitest } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		'vitest': pluginVitest,
+		'jest-formatting': pluginJestFormatting,
+		'no-autofix': pluginNoAutofix,
+	},
 	rules: {
 		// Forbidden `.spec` test file pattern
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-filename.md
@@ -234,4 +241,4 @@ module.exports = {
 		// https://github.com/dangreenisrael/eslint-plugin-jest-formatting/blob/master/docs/rules/padding-around-all.md
 		'jest-formatting/padding-around-all': 'warn',
 	},
-};
+});
