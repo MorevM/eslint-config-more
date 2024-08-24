@@ -59,6 +59,11 @@ export type JsonConfigurationOptions = AnyConfigurationOptions;
 export type VitestConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
 
 /**
+ * Options for Jest configuration.
+ */
+export type JestConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
+
+/**
  * Options for Vue configuration.
  */
 export type VueConfigurationOptions = AnyConfigurationOptions

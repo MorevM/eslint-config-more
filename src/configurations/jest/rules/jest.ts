@@ -1,5 +1,12 @@
-module.exports = {
-	plugins: ['jest', 'jest-formatting', 'no-autofix'],
+import { pluginJest, pluginJestFormatting, pluginNoAutofix } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		'jest': pluginJest,
+		'jest-formatting': pluginJestFormatting,
+		'no-autofix': pluginNoAutofix,
+	},
 	rules: {
 		// Have control over `test` and `it` usages (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/consistent-test-it.md
@@ -245,4 +252,4 @@ module.exports = {
 		// https://github.com/dangreenisrael/eslint-plugin-jest-formatting/blob/master/docs/rules/padding-around-all.md
 		'jest-formatting/padding-around-all': 'warn',
 	},
-};
+});
