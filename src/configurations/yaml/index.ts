@@ -29,7 +29,7 @@ export default function configurationYaml(options: Partial<YamlConfigurationOpti
 		},
 		{
 			name: 'morev/yaml/overrides',
-			files: ['**/dependabot.yml', '**/.gitlab-ci.yml'],
+			files,
 			rules: {
 				'@stylistic/spaced-comment': 'off',
 				'@stylistic/no-multiple-empty-lines': 'off',
