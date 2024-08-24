@@ -64,6 +64,11 @@ export type VitestConfigurationOptions = AnyConfigurationOptions & Configuration
 export type JestConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
 
 /**
+ * Options for Cypress configuration.
+ */
+export type CypressConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
+
+/**
  * Options for Vue configuration.
  */
 export type VueConfigurationOptions = AnyConfigurationOptions

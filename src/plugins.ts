@@ -17,3 +17,5 @@ export { default as pluginJson } from 'eslint-plugin-jsonc';
 export { default as pluginVitest } from '@vitest/eslint-plugin';
 export { default as pluginJestFormatting } from 'eslint-plugin-jest-formatting';
 export { default as pluginJest } from 'eslint-plugin-jest';
+export { default as pluginCypress } from 'eslint-plugin-cypress';
+export { default as pluginChaiFriendly } from 'eslint-plugin-chai-friendly';

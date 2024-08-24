@@ -1,5 +1,11 @@
-module.exports = {
-	plugins: ['cypress', 'chai-friendly'],
+import { pluginChaiFriendly, pluginCypress } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		'cypress': pluginCypress,
+		'chai-friendly': pluginChaiFriendly,
+	},
 	rules: {
 		// Prevent assigning return values of cy calls
 		// https://docs.cypress.io/guides/references/best-practices#Assigning-Return-Values
@@ -41,8 +47,5 @@ module.exports = {
 		// https://github.com/ihordiachenko/eslint-plugin-chai-friendly#readme
 		'no-unused-expressions': 'off',
 		'chai-friendly/no-unused-expressions': 'warn',
-
-		// The chainers of `should` statements will fail that rule
-		'sonarjs/no-duplicate-string': 'off',
 	},
-};
+});
