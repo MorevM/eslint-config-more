@@ -6,12 +6,13 @@ import configurationYaml from '~configurations/yaml';
 import configurationVue from '~configurations/vue';
 import configurationHtml from '~configurations/html';
 import configurationMarkdown from '~configurations/markdown';
+import configurationJson from '~configurations/json';
 import gitignore from 'eslint-config-flat-gitignore';
 import { GLOB_EXCLUDE } from '#globs';
 import { arrayUnique } from '@morev/utils';
 import type { FlatConfig } from '#types';
 
-type Configuration = 'javascript' | 'node' | 'browser' | 'typescript' | 'yaml' | 'vue' | 'html' | 'markdown';
+type Configuration = 'javascript' | 'node' | 'browser' | 'typescript' | 'yaml' | 'vue' | 'html' | 'markdown' | 'json';
 
 type ConfigurationsMap = {
 	javascript: typeof configurationJavascript;
@@ -22,6 +23,7 @@ type ConfigurationsMap = {
 	vue: typeof configurationVue;
 	html: typeof configurationHtml;
 	markdown: typeof configurationMarkdown;
+	json: typeof configurationJson;
 };
 
 type ConfigurationOptions<T extends Configuration> = Parameters<ConfigurationsMap[T]>[0];
@@ -40,6 +42,7 @@ export const defineConfiguration = <T extends Configuration>(name: T, options: C
 		case 'vue': return configurationVue(options);
 		case 'html': return configurationHtml(options);
 		case 'markdown': return configurationMarkdown(options);
+		case 'json': return configurationJson(options);
 		default: return {};
 	}
 };

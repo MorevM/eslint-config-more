@@ -12,6 +12,7 @@ export default combine([
 	defineConfiguration('typescript'),
 	defineConfiguration('yaml'),
 	defineConfiguration('markdown'),
+	defineConfiguration('json'),
 	// {
 	// 	files: ['*.md'],
 	// 	rules: {

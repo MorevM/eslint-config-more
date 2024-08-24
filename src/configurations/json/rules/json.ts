@@ -1,4 +1,10 @@
-module.exports = {
+import { pluginJson } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		jsonc: pluginJson,
+	},
 	rules: {
 		// Apply jsonc rules similar to your configured ESLint core rules
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/auto.html
@@ -95,4 +101,4 @@ module.exports = {
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/vue-custom-block/no-parsing-error.html
 		'jsonc/vue-custom-block/no-parsing-error': 'error',
 	},
-};
+});

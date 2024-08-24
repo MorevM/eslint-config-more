@@ -1,4 +1,10 @@
-module.exports = {
+import { pluginJson } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		jsonc: pluginJson,
+	},
 	rules: {
 		// Require object keys to be sorted (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/sort-keys.html
@@ -52,4 +58,4 @@ module.exports = {
 			order: { type: 'asc' },
 		}],
 	},
-};
+});

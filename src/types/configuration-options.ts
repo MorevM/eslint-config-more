@@ -49,6 +49,11 @@ export type MarkdownConfigurationOptions = AnyConfigurationOptions & Configurati
 export type YamlConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
 
 /**
+ * Options for YAML configuration.
+ */
+export type JsonConfigurationOptions = AnyConfigurationOptions;
+
+/**
  * Options for Vue configuration.
  */
 export type VueConfigurationOptions = AnyConfigurationOptions
