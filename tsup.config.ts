@@ -15,6 +15,8 @@ export const tsup: Options = {
 		'@morev/utils',
 		'@eslint/eslintrc',
 		'eslint-plugin-chai-friendly',
+		'eslint-plugin-astro',
+		'astro-eslint-parser',
 		'eslint-plugin-cypress',
 		'eslint-plugin-eslint-comments',
 		'eslint-plugin-import',

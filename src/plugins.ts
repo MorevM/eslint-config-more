@@ -20,3 +20,4 @@ export { default as pluginJest } from 'eslint-plugin-jest';
 export { default as pluginCypress } from 'eslint-plugin-cypress';
 export { default as pluginChaiFriendly } from 'eslint-plugin-chai-friendly';
 export { default as pluginJsxA11y } from 'eslint-plugin-jsx-a11y';
+export { default as pluginAstro } from 'eslint-plugin-astro';

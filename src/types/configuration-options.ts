@@ -74,6 +74,11 @@ export type CypressConfigurationOptions = AnyConfigurationOptions & Configuratio
 export type JsxConfigurationOptions = AnyConfigurationOptions;
 
 /**
+ * Options for JSX syntax.
+ */
+export type AstroConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
+
+/**
  * Options for Vue configuration.
  */
 export type VueConfigurationOptions = AnyConfigurationOptions

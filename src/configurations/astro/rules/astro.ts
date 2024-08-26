@@ -1,22 +1,30 @@
-const jsxA11yConfig = require('../../jsx-a11y/index.js');
-const { extensionFromBase } = require('../../../utils/extension-from-base.js');
+import jsxConfig from '~configurations/jsx';
+import { defineConfigurationPart, extensionFromBaseFactory } from '#utils';
+import type { RuleValue } from '#types';
+import { pluginAstro } from '#plugins';
 
-const fromJsxA11y = (ruleNames) => {
-	return ruleNames.reduce((acc, ruleName) => {
+const extensionFromBase = extensionFromBaseFactory({
+	prefix: 'astro',
+});
+
+const fromJsxA11y = (ruleNames: string[]) => {
+	return ruleNames.reduce<Record<string, RuleValue>>((acc, ruleName) => {
 		const fullRuleName = `jsx-a11y/${ruleName}`;
-		const rule = jsxA11yConfig.rules[fullRuleName];
+		const rule = jsxConfig().rules![fullRuleName];
 
 		if (!rule) {
 			throw new Error(`There is no rule named \`${fullRuleName}\` in the \`jsx-a11y\` config`);
 		}
 
-		acc[`astro/${fullRuleName}`] = rule;
+		acc[`astro/${fullRuleName}`] = rule as any;
 		return acc;
 	}, {});
 };
 
-module.exports = {
-	plugins: ['astro'],
+export default defineConfigurationPart({
+	plugins: {
+		astro: pluginAstro,
+	},
 	rules: {
 		// The `client:only` directive is missing the correct component's framework value
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/missing-client-only-directive-value/
@@ -121,6 +129,6 @@ module.exports = {
 
 		// Require or disallow semicolons instead of ASI
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/semi/
-		'astro/semi': extensionFromBase('semi'),
+		...extensionFromBase('semi'),
 	},
-};
+});
