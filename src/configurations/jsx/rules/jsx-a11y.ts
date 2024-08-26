@@ -1,5 +1,10 @@
-module.exports = {
-	plugins: ['jsx-a11y'],
+import { pluginJsxA11y } from '#plugins';
+import { defineConfigurationPart } from '#utils';
+
+export default defineConfigurationPart({
+	plugins: {
+		'jsx-a11y': pluginJsxA11y,
+	},
 	rules: {
 		// Enforce all elements that require alternative text have meaningful information to relay back to end user
 		// https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/alt-text.md
@@ -270,4 +275,4 @@ module.exports = {
 		// https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/tabindex-no-positive.md
 		'jsx-a11y/tabindex-no-positive': 'error',
 	},
-};
+});

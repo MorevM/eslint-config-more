@@ -69,6 +69,11 @@ export type JestConfigurationOptions = AnyConfigurationOptions & ConfigurationOp
 export type CypressConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
 
 /**
+ * Options for JSX syntax.
+ */
+export type JsxConfigurationOptions = AnyConfigurationOptions;
+
+/**
  * Options for Vue configuration.
  */
 export type VueConfigurationOptions = AnyConfigurationOptions

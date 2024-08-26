@@ -14,6 +14,7 @@ export default combine([
 	defineConfiguration('markdown'),
 	defineConfiguration('json'),
 	defineConfiguration('vitest'),
+	defineConfiguration('jsx'),
 	// {
 	// 	files: ['*.md'],
 	// 	rules: {

@@ -10,12 +10,13 @@ import configurationJson from '~configurations/json';
 import configurationVitest from '~configurations/vitest';
 import configurationJest from '~configurations/jest';
 import configurationCypress from '~configurations/cypress';
+import configurationJsx from '~configurations/jsx';
 import gitignore from 'eslint-config-flat-gitignore';
 import { GLOB_EXCLUDE } from '#globs';
 import { arrayUnique } from '@morev/utils';
 import type { FlatConfig } from '#types';
 
-type Configuration = 'javascript' | 'node' | 'browser' | 'typescript' | 'yaml' | 'vue' | 'html' | 'markdown' | 'json' | 'vitest' | 'jest' | 'cypress';
+type Configuration = 'javascript' | 'node' | 'browser' | 'typescript' | 'yaml' | 'vue' | 'html' | 'markdown' | 'json' | 'vitest' | 'jest' | 'cypress' | 'jsx';
 
 type ConfigurationsMap = {
 	javascript: typeof configurationJavascript;
@@ -30,6 +31,7 @@ type ConfigurationsMap = {
 	vitest: typeof configurationVitest;
 	jest: typeof configurationJest;
 	cypress: typeof configurationCypress;
+	jsx: typeof configurationJsx;
 };
 
 type ConfigurationOptions<T extends Configuration> = Parameters<ConfigurationsMap[T]>[0];
@@ -52,6 +54,7 @@ export const defineConfiguration = <T extends Configuration>(name: T, options: C
 		case 'vitest': return configurationVitest(options);
 		case 'jest': return configurationJest(options);
 		case 'cypress': return configurationCypress(options);
+		case 'jsx': return configurationJsx(options);
 		default: return {};
 	}
 };
