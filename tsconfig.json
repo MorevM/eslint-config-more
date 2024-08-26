@@ -15,10 +15,11 @@
 		"types": ["node", "vitest/globals"],
 		"baseUrl": ".",
 		"paths": {
-			"#constants": ["./src/constants.ts"],
+			"#configurations": ["./src/configurations/index.ts"],
+			"#utils": ["./src/utils/index.ts"],
 			"#types": ["./src/types/index.ts"],
 			"#globs": ["./src/globs.ts"],
-			"#utils": ["./src/utils/index.ts"],
+			"#constants": ["./src/constants.ts"],
 			"#plugins": ["./src/plugins.ts"],
 			"#parsers": ["./src/parsers.ts"],
 			"~src/*": ["./src/*"],

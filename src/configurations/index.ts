@@ -1,0 +1,14 @@
+export { default as configurationAstro } from './astro';
+export { default as configurationBrowser } from './browser';
+export { default as configurationCypress } from './cypress';
+export { default as configurationHtml } from './html';
+export { default as configurationJavascript } from './javascript';
+export { default as configurationJest } from './jest';
+export { default as configurationJson } from './json';
+export { default as configurationJsx } from './jsx';
+export { default as configurationMarkdown } from './markdown';
+export { default as configurationNode } from './node';
+export { default as configurationTypescript } from './typescript';
+export { default as configurationVitest } from './vitest';
+export { default as configurationVue } from './vue';
+export { default as configurationYaml } from './yaml';

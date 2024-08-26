@@ -1,4 +1,4 @@
-import jsxConfig from '~configurations/jsx';
+import configurationJsx from '~configurations/jsx';
 import { defineConfigurationPart, extensionFromBaseFactory } from '#utils';
 import type { RuleValue } from '#types';
 import { pluginAstro } from '#plugins';
@@ -10,7 +10,7 @@ const extensionFromBase = extensionFromBaseFactory({
 const fromJsxA11y = (ruleNames: string[]) => {
 	return ruleNames.reduce<Record<string, RuleValue>>((acc, ruleName) => {
 		const fullRuleName = `jsx-a11y/${ruleName}`;
-		const rule = jsxConfig().rules![fullRuleName];
+		const rule = configurationJsx().rules![fullRuleName];
 
 		if (!rule) {
 			throw new Error(`There is no rule named \`${fullRuleName}\` in the \`jsx-a11y\` config`);

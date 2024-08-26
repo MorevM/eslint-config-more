@@ -1,23 +1,24 @@
-import configurationJavascript from '~configurations/javascript';
-import configurationNode from '~configurations/node';
-import configurationBrowser from '~configurations/browser';
-import configurationTypescript from '~configurations/typescript';
-import configurationYaml from '~configurations/yaml';
-import configurationVue from '~configurations/vue';
-import configurationHtml from '~configurations/html';
-import configurationMarkdown from '~configurations/markdown';
-import configurationJson from '~configurations/json';
-import configurationVitest from '~configurations/vitest';
-import configurationJest from '~configurations/jest';
-import configurationCypress from '~configurations/cypress';
-import configurationJsx from '~configurations/jsx';
-import configurationAstro from '~configurations/astro';
+import {
+	configurationAstro,
+	configurationBrowser,
+	configurationCypress,
+	configurationHtml,
+	configurationJavascript,
+	configurationJest,
+	configurationJson,
+	configurationJsx,
+	configurationMarkdown,
+	configurationNode,
+	configurationTypescript,
+	configurationVitest,
+	configurationVue,
+	configurationYaml,
+} from '#configurations';
+
 import gitignore from 'eslint-config-flat-gitignore';
 import { GLOB_EXCLUDE } from '#globs';
 import { arrayUnique } from '@morev/utils';
 import type { FlatConfig } from '#types';
-
-type Configuration = 'javascript' | 'node' | 'browser' | 'typescript' | 'yaml' | 'vue' | 'html' | 'markdown' | 'json' | 'vitest' | 'jest' | 'cypress' | 'jsx' | 'astro';
 
 type ConfigurationsMap = {
 	javascript: typeof configurationJavascript;
@@ -36,6 +37,7 @@ type ConfigurationsMap = {
 	astro: typeof configurationAstro;
 };
 
+type Configuration = keyof ConfigurationsMap;
 type ConfigurationOptions<T extends Configuration> = Parameters<ConfigurationsMap[T]>[0];
 
 export const combine = (...configurations: FlatConfig[]) => {
