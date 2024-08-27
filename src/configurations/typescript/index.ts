@@ -1,9 +1,9 @@
-import typescript from './rules/typescript';
-
+import { parserTypescript } from '#parsers';
 import type { TypescriptConfigurationOptions } from '#types';
 import { GLOB_TS, GLOB_TSX } from '#globs';
 import { mergeParts } from '#utils';
-import { parserTypescript } from '#parsers';
+
+import typescript from './rules/typescript';
 
 export default function configurationTypescript(options: Partial<TypescriptConfigurationOptions> = {}) {
 	const {

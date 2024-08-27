@@ -1,7 +1,7 @@
-import { ESLINT_FORMATTING_RULES } from '#constants';
-import type { RuleValue } from '#types';
 import type { PlainObject } from '@morev/utils';
 import { isArray, isEmpty } from '@morev/utils';
+import { ESLINT_FORMATTING_RULES } from '#constants';
+import type { RuleValue } from '#types';
 import configurationJavascript from '~configurations/javascript';
 
 type ExtensionFromBaseFactoryOptions = {

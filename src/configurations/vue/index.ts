@@ -1,5 +1,5 @@
+import { pluginVue } from '#plugins';
 import { parserVue, parserTypescript } from '#parsers';
-
 import type { VueConfigurationOptions } from '#types';
 import { GLOB_VUE } from '#globs';
 import { mergeParts } from '#utils';
@@ -18,7 +18,6 @@ import uncategorizedVue2 from './rules/vue2/uncategorized';
 import essentialVue3 from './rules/vue3/essential';
 import stronglyRecommendedVue3 from './rules/vue3/strongly-recommended';
 import uncategorizedVue3 from './rules/vue3/uncategorized';
-import { pluginVue } from '#plugins';
 
 export default function configurationVue(options: Partial<VueConfigurationOptions> = {}) {
 	const {

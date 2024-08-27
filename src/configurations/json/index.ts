@@ -6,7 +6,7 @@ import { mergeParts } from '#utils';
 
 import json from './rules/json';
 import extension from './rules/extension';
-import jsonc from './rules/json';
+import jsonc from './rules/jsonc';
 import packageJson from './rules/package-json';
 
 export default function configurationJson(options: Partial<JsonConfigurationOptions> = {}) {

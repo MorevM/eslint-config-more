@@ -19,7 +19,7 @@ export const tsup: Options = {
 		'astro-eslint-parser',
 		'eslint-plugin-cypress',
 		'eslint-plugin-eslint-comments',
-		'eslint-plugin-import',
+		'eslint-plugin-import-x',
 		'eslint-plugin-jest',
 		'eslint-plugin-jest-formatting',
 		'eslint-plugin-jsdoc',

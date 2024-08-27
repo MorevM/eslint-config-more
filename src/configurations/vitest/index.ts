@@ -1,9 +1,10 @@
+import { pluginVitest } from '#plugins';
+import { parserTypescript } from '#parsers';
 import type { VitestConfigurationOptions } from '#types';
 import { GLOB_CYPRESS, GLOB_TESTS } from '#globs';
 import { mergeParts } from '#utils';
+
 import vitest from './rules/vitest';
-import { pluginVitest } from '#plugins';
-import { parserTypescript } from '#parsers';
 
 export default function configurationVitest(options: Partial<VitestConfigurationOptions> = {}) {
 	const {

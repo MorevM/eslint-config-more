@@ -1,9 +1,10 @@
+import { pluginJest } from '#plugins';
+import { parserTypescript } from '#parsers';
 import type { JestConfigurationOptions } from '#types';
 import { GLOB_CYPRESS, GLOB_TESTS } from '#globs';
 import { mergeParts } from '#utils';
+
 import jest from './rules/jest';
-import { pluginJest } from '#plugins';
-import { parserTypescript } from '#parsers';
 
 export default function configurationJest(options: Partial<JestConfigurationOptions> = {}) {
 	const {

@@ -1,10 +1,10 @@
+import globals from 'globals';
 import { parserAstro, parserTypescript } from '#parsers';
 import type { AstroConfigurationOptions } from '#types';
 import { GLOB_ASTRO } from '#globs';
 import { mergeParts } from '#utils';
-import astro from './rules/astro';
 import { pluginAstro } from '#plugins';
-import globals from 'globals';
+import astro from './rules/astro';
 
 export default function configurationAstro(options: Partial<AstroConfigurationOptions> = {}) {
 	const {

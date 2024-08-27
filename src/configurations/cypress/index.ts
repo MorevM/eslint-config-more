@@ -1,8 +1,9 @@
+import { pluginCypress } from '#plugins';
 import type { CypressConfigurationOptions } from '#types';
 import { GLOB_CYPRESS } from '#globs';
 import { mergeParts } from '#utils';
+
 import cypress from './rules/cypress';
-import { pluginCypress } from '#plugins';
 
 export default function configurationCypress(options: Partial<CypressConfigurationOptions> = {}) {
 	const {

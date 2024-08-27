@@ -1,9 +1,8 @@
 import globals from 'globals';
-
-import unicorn from './rules/unicorn';
-
 import type { AnyConfigurationOptions } from '#types';
 import { mergeParts } from '#utils';
+
+import unicorn from './rules/unicorn';
 
 export default function configurationBrowser(options: Partial<AnyConfigurationOptions> = {}) {
 	const {

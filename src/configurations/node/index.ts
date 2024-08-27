@@ -1,9 +1,8 @@
 import globals from 'globals';
-
-import node from './rules/node';
-
 import type { AnyConfigurationOptions } from '#types';
 import { mergeParts } from '#utils';
+
+import node from './rules/node';
 
 const tryExtensions = ['.js', '.mjs', '.cjs', '.ts', '.mts', '.cts'];
 

@@ -1,6 +1,7 @@
-import jsxA11y from './rules/jsx-a11y';
-import { mergeParts } from '#utils';
 import type { JsxConfigurationOptions } from '#types';
+import { mergeParts } from '#utils';
+
+import jsxA11y from './rules/jsx-a11y';
 
 export default function configurationJsx(options: Partial<JsxConfigurationOptions> = {}) {
 	const {

@@ -1,12 +1,12 @@
+import { parserHtml } from '#parsers';
+import type { HtmlConfigurationOptions } from '#types';
+import { GLOB_HTML } from '#globs';
+import { mergeParts } from '#utils';
+
 import accessibility from './rules/accessibility';
 import bestPractice from './rules/best-practice';
 import seo from './rules/seo';
 import style from './rules/style';
-
-import type { HtmlConfigurationOptions } from '#types';
-import { GLOB_HTML } from '#globs';
-import { mergeParts } from '#utils';
-import { parserHtml } from '#parsers';
 
 export default function configurationHtml(options: Partial<HtmlConfigurationOptions> = {}) {
 	const {

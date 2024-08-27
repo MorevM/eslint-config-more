@@ -1,5 +1,5 @@
-import type { FlatConfig } from '#types';
 import type { NonEmptyArray } from '@morev/utils';
+import type { FlatConfig } from '#types';
 
 /**
  * Utility function to merge configuration parts defined in the `configurations` folder.
