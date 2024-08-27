@@ -12,4 +12,6 @@ type Severity = 0 | 1 | 2;
 type RuleLevel = Severity | 'off' | 'warn' | 'error';
 
 export type FlatConfig = ElementOf<Awaited<Config>>;
-export type RuleValue = RuleLevel | [RuleLevel, any];
+
+// Actually `undefined` is not valid, but presented in some configuration types ¯\_(ツ)_/¯
+export type RuleValue = RuleLevel | [RuleLevel, any] | [RuleLevel, ...unknown[]] | undefined;
