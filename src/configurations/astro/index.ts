@@ -4,6 +4,7 @@ import type { AstroConfigurationOptions } from '#types';
 import { GLOB_ASTRO } from '#globs';
 import { mergeParts } from '#utils';
 import { pluginAstro } from '#plugins';
+
 import astro from './rules/astro';
 
 export default function configurationAstro(options: Partial<AstroConfigurationOptions> = {}) {

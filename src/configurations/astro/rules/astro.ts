@@ -1,25 +1,19 @@
+import configurationJavascript from '~configurations/javascript';
 import configurationJsx from '~configurations/jsx';
-import { defineConfigurationPart, extensionFromBaseFactory } from '#utils';
-import type { RuleValue } from '#types';
+
+import { defineConfigurationPart, extensionFactory } from '#utils';
 import { pluginAstro } from '#plugins';
 
-const extensionFromBase = extensionFromBaseFactory({
+const extensionFromBase = extensionFactory({
+	baseRules: configurationJavascript().rules!,
 	prefix: 'astro',
 });
 
-const fromJsxA11y = (ruleNames: string[]) => {
-	return ruleNames.reduce<Record<string, RuleValue>>((acc, ruleName) => {
-		const fullRuleName = `jsx-a11y/${ruleName}`;
-		const rule = configurationJsx().rules![fullRuleName];
-
-		if (!rule) {
-			throw new Error(`There is no rule named \`${fullRuleName}\` in the \`jsx-a11y\` config`);
-		}
-
-		acc[`astro/${fullRuleName}`] = rule as any;
-		return acc;
-	}, {});
-};
+const extensionFromJsxA11y = extensionFactory({
+	baseRules: configurationJsx().rules!,
+	baseRulePrefix: 'jsx-a11y',
+	prefix: 'astro',
+});
 
 export default defineConfigurationPart({
 	plugins: {
@@ -88,7 +82,7 @@ export default defineConfigurationPart({
 			splitLiteral: true,
 		}],
 
-		...fromJsxA11y([
+		...extensionFromJsxA11y([
 			'alt-text',
 			'anchor-ambiguous-text',
 			'anchor-has-content',

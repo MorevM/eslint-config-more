@@ -1,7 +1,12 @@
-import { pluginJson } from '#plugins';
-import { defineConfigurationPart, extensionFromBaseFactory } from '#utils';
+import configurationJavascript from '~configurations/javascript';
 
-const extensionFromBase = extensionFromBaseFactory({ prefix: 'jsonc' });
+import { pluginJson } from '#plugins';
+import { defineConfigurationPart, extensionFactory } from '#utils';
+
+const extensionFromBase = extensionFactory({
+	baseRules: configurationJavascript().rules!,
+	prefix: 'jsonc',
+});
 
 export default defineConfigurationPart({
 	plugins: {

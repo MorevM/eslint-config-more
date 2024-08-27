@@ -1,3 +1,3 @@
 export * from './define-configuration-part';
-export * from './extension-from-base-factory';
+export * from './extension-factory';
 export * from './merge-parts';

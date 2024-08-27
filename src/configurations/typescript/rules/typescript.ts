@@ -1,7 +1,10 @@
-import { defineConfigurationPart, extensionFromBaseFactory } from '#utils';
+import configurationJavascript from '~configurations/javascript';
+
+import { defineConfigurationPart, extensionFactory } from '#utils';
 import { pluginNoAutofix, pluginStylistic, pluginTs } from '#plugins';
 
-const extensionFromBase = extensionFromBaseFactory({
+const extensionFromBase = extensionFactory({
+	baseRules: configurationJavascript().rules!,
 	prefix: '@typescript-eslint',
 	alwaysDisableBaseRule: true,
 });
