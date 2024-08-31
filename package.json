@@ -84,7 +84,7 @@
 		"@stylistic/eslint-plugin-ts": "^2.2.2",
 		"@typescript-eslint/eslint-plugin": "^7.0.0",
 		"@typescript-eslint/parser": "^6.21.0",
-		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-import-resolver-typescript": "^3.6.3",
 		"eslint-plugin-astro": "^1.2.3",
 		"eslint-plugin-chai-friendly": "^1.0.1",
 		"eslint-plugin-cypress": "^3.4.0",
