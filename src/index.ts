@@ -43,7 +43,7 @@ export const combine = (...configurations: FlatConfig[]) => {
 	return configurations.flat(Infinity);
 };
 
-export const defineConfiguration = <T extends Configuration>(name: T, options: ConfigurationOptions<T>) => {
+export const defineConfiguration = <T extends Configuration>(name: T, options: ConfigurationOptions<T> = {}) => {
 	switch (name) {
 		case 'javascript': return configurationJavascript(options);
 		case 'node': return configurationNode(options);
