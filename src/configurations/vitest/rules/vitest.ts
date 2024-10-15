@@ -1,10 +1,9 @@
-import { pluginJest, pluginNoAutofix, pluginVitest } from '#plugins';
+import { pluginNoAutofix, pluginVitest } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
 		'vitest': pluginVitest,
-		'jest': pluginJest,
 		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
@@ -230,6 +229,6 @@ export default defineConfigurationPart({
 
 		// Enable all `padding-around-*` rules of `jest`, all are autofixable (nothing `jest`-special inside)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/padding-around-all.md
-		'jest/padding-around-all': 'warn',
+		'vitest/padding-around-all': 'warn',
 	},
 });
