@@ -21,8 +21,7 @@ export default defineConfigurationPart({
 
 		// Require or disallow parentheses around arrow function arguments (autofixable)
 		// https://eslint.style/rules/js/arrow-parens
-		// Note: it was an `error`, next it was `warn` but...developer knows better
-		'@stylistic/arrow-parens': ['off', 'off'],
+		'@stylistic/arrow-parens': ['warn', 'always'],
 
 		// Enforce spacing before and after the arrow in arrow functions (autofixable)
 		// https://eslint.style/rules/js/arrow-spacing
