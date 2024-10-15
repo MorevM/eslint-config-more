@@ -137,10 +137,6 @@ export default defineConfigurationPart({
 		// https://eslint.org/docs/latest/rules/no-new-native-nonconstructor
 		'no-new-native-nonconstructor': 'error',
 
-		// Disallow `Symbol` constructor
-		// https://eslint.org/docs/rules/no-new-symbol
-		'no-new-symbol': 'error',
-
 		// Disallow calling global object properties as functions
 		// https://eslint.org/docs/rules/no-obj-calls
 		'no-obj-calls': 'error',

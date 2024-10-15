@@ -166,10 +166,6 @@ export default defineConfigurationPart({
 		// https://eslint.org/docs/rules/max-statements
 		'max-statements': 'off',
 
-		// Enforce a particular style for multiline comments (autofixable)
-		// https://eslint.org/docs/rules/multiline-comment-style
-		'multiline-comment-style': 'off',
-
 		// Require constructor names to begin with a capital letter
 		// https://eslint.org/docs/rules/new-cap
 		'new-cap': ['error', {
