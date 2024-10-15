@@ -659,5 +659,10 @@ export default defineConfigurationPart({
 		'@typescript-eslint/unified-signatures': ['warn', {
 			ignoreDifferentlyNamedParameters: true,
 		}],
+
+		//Enforce typing arguments in Promise rejection callbacks as `unknown`
+		// https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable
+		// Note: I believe in most scenarios it leads to (unreasonably) overly verbose code
+		'@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
 	},
 });
