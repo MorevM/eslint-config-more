@@ -410,6 +410,11 @@ export default defineConfigurationPart({
 		// https://typescript-eslint.io/rules/no-unnecessary-type-constraint
 		'@typescript-eslint/no-unnecessary-type-constraint': 'warn',
 
+		// Disallow type parameters that aren't used multiple times
+		// https://typescript-eslint.io/rules/no-unnecessary-type-parameters
+		// Note: Explicit is better (if any), also we don't want notifications when we're just starting out
+		'@typescript-eslint/no-unnecessary-type-parameters': 'off',
+
 		// Disallows calling a function with an any type value
 		// https://typescript-eslint.io/rules/no-unsafe-argument
 		'@typescript-eslint/no-unsafe-argument': 'off',
