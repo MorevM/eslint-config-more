@@ -61,6 +61,10 @@ export default defineConfigurationPart({
 		// In other words, "developer knows better"
 		'@typescript-eslint/consistent-indexed-object-style': ['off', 'record'],
 
+		// Require `return` statements to either always or never specify values
+		// https://typescript-eslint.io/rules/consistent-return/
+		...extensionFromBase('consistent-return'),
+
 		// Enforces consistent usage of type assertions (autofixable)
 		// https://typescript-eslint.io/rules/consistent-type-assertions
 		'@typescript-eslint/consistent-type-assertions': ['warn', {
