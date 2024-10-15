@@ -22,7 +22,7 @@ const ruleFinder = new RulesFinder(
 	),
 );
 
-describe('Check unused and deprecated rules', () => {
+describe('Check unknown, unused and deprecated rules', () => {
 	beforeAll(() => {
 		ruleFinder.setKnownUnusedRules([
 			// These rules covered with single `(jest|vitest)/padding-around-all` rule
