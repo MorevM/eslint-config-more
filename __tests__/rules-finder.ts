@@ -49,6 +49,13 @@ export default class RulesFinder {
 		this.configuredRules = this.loadConfiguredRules(config);
 	}
 
+	/**
+	 * Creates an empty provider for future work.
+	 *
+	 * @param   options   Partial options of the new provider.
+	 *
+	 * @returns           Provider object.
+	 */
 	private createProvider(options: Partial<Provider>): Provider {
 		return ({
 			name: '',
@@ -155,13 +162,13 @@ export default class RulesFinder {
 	}
 
 	/**
-	 * Deprecated rules list collected from all plugins and ESLint itself.
+	 * All rules presented in all plugins and ESLint itself.
 	 *
-	 * @returns   List of all deprecated rules.
+	 * @returns   List of all rules.
 	 */
-	public get deprecatedRules() {
+	public get allRules() {
 		return Object.values(this.rulesData).reduce<string[]>((acc, pluginData) => {
-			acc.push(...pluginData.deprecatedRules);
+			acc.push(...pluginData.allRules);
 			return acc;
 		}, []);
 	}
@@ -176,6 +183,29 @@ export default class RulesFinder {
 			acc.push(...pluginData.activeRules);
 			return acc;
 		}, []);
+	}
+
+	/**
+	 * Deprecated rules list collected from all plugins and ESLint itself.
+	 *
+	 * @returns   List of all deprecated rules.
+	 */
+	public get deprecatedRules() {
+		return Object.values(this.rulesData).reduce<string[]>((acc, pluginData) => {
+			acc.push(...pluginData.deprecatedRules);
+			return acc;
+		}, []);
+	}
+
+	/**
+	 * Unknown rules list presented in the config.
+	 * Used to prevent typos.
+	 *
+	 * @returns   List of all unknown rules.
+	 */
+	public get unknownRules() {
+		return this.configuredRules
+			.filter((rule) => !this.allRules.includes(rule));
 	}
 
 	/**

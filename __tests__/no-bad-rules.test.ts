@@ -52,4 +52,8 @@ describe('Check unused and deprecated rules', () => {
 	it('Has no unconfigured rules', async () => {
 		expect(ruleFinder.readableUnconfiguredRules).toBe('');
 	});
+
+	it('Has no unknown rules', async () => {
+		expect(ruleFinder.unknownRules).toStrictEqual([]);
+	});
 });
