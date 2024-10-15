@@ -98,7 +98,6 @@
 		"@morev/utils": "^3.11.1",
 		"@release-it/conventional-changelog": "^8.0.1",
 		"eslint": "^9.8.0",
-		"eslint-find-rules": "^4.1.0",
 		"glob": "^11.0.0",
 		"lefthook": "^1.7.11",
 		"release-it": "^17.6.0",

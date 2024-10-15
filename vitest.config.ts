@@ -4,6 +4,9 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
 	plugins: [tsconfigPaths()],
 	test: {
+		chaiConfig: {
+			truncateThreshold: 1000000,
+		},
 		globals: true,
 		watch: false,
 	},
