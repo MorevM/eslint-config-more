@@ -232,6 +232,10 @@ export default defineConfigurationPart({
 			allowNamedExports: true,
 		}],
 
+		// Disallow variable assignments when the value is not used
+		// https://eslint.org/docs/latest/rules/no-useless-assignment
+		'no-useless-assignment': 'error',
+
 		// Disallow useless backreferences in regular expressions
 		// https://eslint.org/docs/rules/no-useless-backreference
 		'no-useless-backreference': 'error',
