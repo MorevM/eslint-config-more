@@ -1,10 +1,9 @@
-import { pluginJest, pluginJestFormatting, pluginNoAutofix } from '#plugins';
+import { pluginJest, pluginNoAutofix } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
 		'jest': pluginJest,
-		'jest-formatting': pluginJestFormatting,
 		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
@@ -241,15 +240,8 @@ export default defineConfigurationPart({
 		'@typescript-eslint/unbound-method': 'off',
 		'jest/unbound-method': 'off', // has no options unlike `@typescript-eslint/unbound-method`
 
-		// Enable all of the rules of `jest-formatting`, all is autofixable:
-		// * padding-around-after-all-blocks
-		// * padding-around-after-each-blocks
-		// * padding-around-before-all-blocks
-		// * padding-around-before-each-blocks
-		// * padding-around-expect-groups
-		// * padding-around-describe-blocks
-		// * padding-around-test-blocks
-		// https://github.com/dangreenisrael/eslint-plugin-jest-formatting/blob/master/docs/rules/padding-around-all.md
-		'jest-formatting/padding-around-all': 'warn',
+		// Enable all `padding-around-*` rules of `jest`, all are autofixable
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/padding-around-all.md
+		'jest/padding-around-all': 'warn',
 	},
 });

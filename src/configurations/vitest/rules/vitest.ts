@@ -1,10 +1,10 @@
-import { pluginJestFormatting, pluginNoAutofix, pluginVitest } from '#plugins';
+import { pluginJest, pluginNoAutofix, pluginVitest } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
 		'vitest': pluginVitest,
-		'jest-formatting': pluginJestFormatting,
+		'jest': pluginJest,
 		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
@@ -228,17 +228,8 @@ export default defineConfigurationPart({
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/valid-title.md
 		'vitest/valid-title': 'warn',
 
-		// Nothing jest-special inside
-
-		// Enable all of the rules of `jest-formatting`, all is autofixable:
-		// * padding-around-after-all-blocks
-		// * padding-around-after-each-blocks
-		// * padding-around-before-all-blocks
-		// * padding-around-before-each-blocks
-		// * padding-around-expect-groups
-		// * padding-around-describe-blocks
-		// * padding-around-test-blocks
-		// https://github.com/dangreenisrael/eslint-plugin-jest-formatting/blob/master/docs/rules/padding-around-all.md
-		'jest-formatting/padding-around-all': 'warn',
+		// Enable all `padding-around-*` rules of `jest`, all are autofixable (nothing `jest`-special inside)
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/padding-around-all.md
+		'jest/padding-around-all': 'warn',
 	},
 });

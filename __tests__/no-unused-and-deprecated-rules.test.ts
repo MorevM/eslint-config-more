@@ -25,14 +25,14 @@ const ruleFinder = new RulesFinder(
 describe('Check unused and deprecated rules', () => {
 	beforeAll(() => {
 		ruleFinder.setKnownUnusedRules([
-			// These rules covered with single `jest-formatting/all` rule
-			'jest-formatting/padding-around-after-all-blocks',
-			'jest-formatting/padding-around-after-each-blocks',
-			'jest-formatting/padding-around-before-all-blocks',
-			'jest-formatting/padding-around-before-each-blocks',
-			'jest-formatting/padding-around-describe-blocks',
-			'jest-formatting/padding-around-expect-groups',
-			'jest-formatting/padding-around-test-blocks',
+			// These rules covered with single `jest/padding-around-all` rule
+			'jest/padding-around-after-all-blocks',
+			'jest/padding-around-after-each-blocks',
+			'jest/padding-around-before-all-blocks',
+			'jest/padding-around-before-each-blocks',
+			'jest/padding-around-expect-groups',
+			'jest/padding-around-describe-blocks',
+			'jest/padding-around-test-blocks',
 			// It seems https://github.com/JuniorTour/vue-template-babel-compiler not stable,
 			// turned off for a while
 			'vue/prefer-template',

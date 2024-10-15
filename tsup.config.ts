@@ -21,7 +21,6 @@ export const tsup: Options = {
 		'eslint-plugin-eslint-comments',
 		'eslint-plugin-import-x',
 		'eslint-plugin-jest',
-		'eslint-plugin-jest-formatting',
 		'eslint-plugin-jsdoc',
 		'eslint-plugin-jsonc',
 		'eslint-plugin-markdownlint',
