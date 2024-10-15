@@ -195,6 +195,10 @@ export default defineConfigurationPart({
 		'vitest/prefer-todo': 'off',
 		'no-autofix/vitest/prefer-todo': 'off',
 
+		// Prefer `vi.mocked()` over `fn as Mock` (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-vi-mocked.md
+		'vitest/prefer-vi-mocked': 'warn',
+
 		// Require setup and teardown code to be within a hook
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/require-hook.md
 		'vitest/require-hook': ['error', {
