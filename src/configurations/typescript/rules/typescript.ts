@@ -384,6 +384,11 @@ export default defineConfigurationPart({
 		// https://typescript-eslint.io/rules/no-unnecessary-condition
 		'@typescript-eslint/no-unnecessary-condition': 'off',
 
+		// Disallow unnecessary assignment of constructor property parameter
+		// https://typescript-eslint.io/rules/no-unnecessary-parameter-property-assignment
+		// Note: Explicit is better than implicit
+		'@typescript-eslint/no-unnecessary-parameter-property-assignment': 'off',
+
 		// Warns when a namespace qualifier is unnecessary (autofixable)
 		// https://typescript-eslint.io/rules/no-unnecessary-qualifier
 		'@typescript-eslint/no-unnecessary-qualifier': 'warn',
