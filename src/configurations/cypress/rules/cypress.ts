@@ -19,6 +19,10 @@ export default defineConfigurationPart({
 		// https://github.com/cypress-io/eslint-plugin-cypress/blob/HEAD/docs/rules/no-async-tests.md
 		'cypress/no-async-tests': 'error',
 
+		// Disallow using `cy.debug()` calls
+		// https://github.com/cypress-io/eslint-plugin-cypress/blob/master/docs/rules/no-debug.md
+		'cypress/no-debug': 'error',
+
 		// Prevent using async/await in Cypress test cases
 		// https://github.com/cypress-io/eslint-plugin-cypress/blob/master/docs/rules/no-async-before.md
 		'cypress/no-async-before': 'error',
