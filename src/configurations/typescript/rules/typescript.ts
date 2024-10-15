@@ -357,6 +357,11 @@ export default defineConfigurationPart({
 		// https://typescript-eslint.io/rules/no-restricted-imports
 		'@typescript-eslint/no-restricted-imports': 'off',
 
+		// Disallow certain types
+		// https://typescript-eslint.io/rules/no-restricted-types/
+		// Note: Should be configured for each project
+		'@typescript-eslint/no-restricted-types': 'off',
+
 		// Disallow variable declarations from shadowing variables declared in the outer scope
 		// https://typescript-eslint.io/rules/no-shadow
 		...extensionFromBase('no-shadow'),
