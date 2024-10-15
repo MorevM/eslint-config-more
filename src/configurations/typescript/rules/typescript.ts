@@ -218,10 +218,6 @@ export default defineConfigurationPart({
 		// https://typescript-eslint.io/rules/no-empty-function
 		...extensionFromBase('no-empty-function'),
 
-		// Disallow the declaration of empty interfaces (autofixable)
-		// https://typescript-eslint.io/rules/no-empty-interface
-		'@typescript-eslint/no-empty-interface': 'warn',
-
 		// Disallow accidentally using the "empty object" type
 		// https://typescript-eslint.io/rules/no-empty-object-type
 		'@typescript-eslint/no-empty-object-type': ['warn', {
@@ -293,10 +289,6 @@ export default defineConfigurationPart({
 		// Disallow function declarations that contain unsafe references inside loop statements
 		// https://typescript-eslint.io/rules/no-loop-func
 		...extensionFromBase('no-loop-func'),
-
-		// Disallow literal numbers that lose precision
-		// https://typescript-eslint.io/rules/no-loss-of-precision
-		...extensionFromBase('no-loss-of-precision'),
 
 		// Disallow magic numbers
 		// https://typescript-eslint.io/rules/no-magic-numbers
@@ -470,10 +462,6 @@ export default defineConfigurationPart({
 		'@typescript-eslint/no-useless-empty-export': 'off',
 		'no-autofix/@typescript-eslint/no-useless-empty-export': 'warn',
 
-		// Disallows the use of require statements except in import statements
-		// https://typescript-eslint.io/rules/no-var-requires
-		'@typescript-eslint/no-var-requires': 'error',
-
 		// Disallow using confusing built-in primitive class wrappers (autofixable)
 		// https://typescript-eslint.io/rules/no-wrapper-object-types
 		'@typescript-eslint/no-wrapper-object-types': 'error',
@@ -574,10 +562,6 @@ export default defineConfigurationPart({
 		// https://typescript-eslint.io/rules/prefer-string-starts-ends-with
 		'@typescript-eslint/prefer-string-starts-ends-with': 'warn',
 
-		// Recommends using `@ts-expect-error` over `@ts-ignore` (autofixable)
-		// https://typescript-eslint.io/rules/prefer-ts-expect-error
-		'@typescript-eslint/prefer-ts-expect-error': 'error',
-
 		// Requires any function or method that returns a `Promise` to be marked `async` (autofixable but may be confusing)
 		// https://typescript-eslint.io/rules/promise-function-async
 		'@typescript-eslint/promise-function-async': ['off', {
@@ -614,11 +598,6 @@ export default defineConfigurationPart({
 			allowNullish: false,
 			allowRegExp: true,
 		}],
-
-		// Enforce constituents of a type union/intersection to be sorted alphabetically (autofixable)
-		// https://typescript-eslint.io/rules/sort-type-constituents
-		// Note: The ordering is good, but alphabetical sort within...
-		'@typescript-eslint/sort-type-constituents': 'off',
 
 		// Enforces consistent returning of awaited values (autofixable but may change behavior)
 		// https://typescript-eslint.io/rules/return-await
