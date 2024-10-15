@@ -67,7 +67,7 @@ export default defineConfigurationPart({
 
 		// Enforce multiple consecutive blank lines (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md012
-		// TODO: Turned off due of wrong implementation, now replaced with standard `no-multiple-empty-lines`
+		// TODO: Turned off due to wrong implementation, replaced with `@stylistic/no-multiple-empty-lines`
 		// Related issue: https://gitlab.com/pawelbbdrozd/eslint-plugin-markdownlint/-/issues/6
 		// 'markdownlint/md012': ['warn', {
 		// 	maximum: 2,
