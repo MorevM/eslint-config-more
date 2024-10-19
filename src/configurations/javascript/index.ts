@@ -5,6 +5,7 @@ import layoutAndFormatting from './rules/layout-and-formatting';
 import possibleProblems from './rules/possible-problems';
 import suggestions from './rules/suggestions';
 
+import eslintCommand from './plugins/command';
 import eslintComments from './plugins/eslint-comments';
 import eslintImportX from './plugins/import-x';
 import eslintJsdoc from './plugins/jsdoc';
@@ -59,6 +60,7 @@ export default function configurationJavascript(options: Partial<AnyConfiguratio
 			eslintSonarjs,
 			eslintStylistic,
 			eslintUnicorn,
+			eslintCommand,
 			{
 				rules: overrides,
 			},
