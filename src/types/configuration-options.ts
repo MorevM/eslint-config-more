@@ -49,12 +49,12 @@ export type MarkdownConfigurationOptions = AnyConfigurationOptions & Configurati
 export type YamlConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
 
 /**
- * Options for YAML configuration.
+ * Options for JSON configuration.
  */
 export type JsonConfigurationOptions = AnyConfigurationOptions;
 
 /**
- * Options for YAML configuration.
+ * Options for Vitest configuration.
  */
 export type VitestConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
 
@@ -74,7 +74,7 @@ export type CypressConfigurationOptions = AnyConfigurationOptions & Configuratio
 export type JsxConfigurationOptions = AnyConfigurationOptions;
 
 /**
- * Options for JSX syntax.
+ * Options for Astro configuration.
  */
 export type AstroConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
 
