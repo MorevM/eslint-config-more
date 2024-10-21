@@ -1,4 +1,4 @@
-# @morev/eslint-config
+![Promo image of @morev/eslint-config package](./.github/images/banner.svg)
 
 ![Stability of "master" branch](https://img.shields.io/github/actions/workflow/status/MorevM/eslint-config/build.yaml?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -6,6 +6,8 @@
 ![Release version](https://img.shields.io/github/v/release/morevm/eslint-config?include_prereleases)
 ![GitHub Release Date](https://img.shields.io/github/release-date/morevm/eslint-config)
 ![Keywords](https://img.shields.io/github/package-json/keywords/morevm/eslint-config)
+
+# @morev/eslint-config
 
 Strict shareable ESLint configuration with reasonable defaults.
 
