@@ -355,6 +355,10 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/prefer-true-attribute-shorthand.html
 		'vue/prefer-true-attribute-shorthand': 'warn',
 
+		// Require components to be the default export
+		// https://eslint.vuejs.org/rules/require-default-export.html
+		'vue/require-default-export': 'error',
+
 		// Require the component to be directly exported
 		// https://eslint.vuejs.org/rules/require-direct-export.html
 		'vue/require-direct-export': ['error', {
