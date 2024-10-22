@@ -37,6 +37,13 @@ export default defineConfigurationPart({
 			enforceBeforeSelfClose: true,
 		}],
 
+		// Disallow multiple consecutive spaces or tabs in text and comments (autofixable)
+		// https://github.com/yeonjuan/html-eslint/blob/main/docs/rules/no-extra-spacing-text.md
+		// Note: as they are ignored, the developer must make a decision about readability
+		'@html-eslint/no-extra-spacing-text': ['off', {
+			skip: ['pre'],
+		}],
+
 		// Disallows the use of multiple empty lines (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-multiple-empty-lines
 		'@html-eslint/no-multiple-empty-lines': ['warn', { max: 2 }],
