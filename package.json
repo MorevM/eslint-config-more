@@ -94,9 +94,9 @@
 	},
 	"devDependencies": {
 		"@morev/commitlint-config": "^0.2.2",
-		"@release-it/conventional-changelog": "^8.0.1",
+		"@release-it/conventional-changelog": "^9.0.1",
 		"eslint": "^9.13.0",
-		"lefthook": "^1.7.22",
+		"lefthook": "^1.8.0",
 		"release-it": "^17.10.0",
 		"ts-node": "^10.9.2",
 		"tsup": "^8.3.0",
