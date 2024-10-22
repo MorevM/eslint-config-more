@@ -31,6 +31,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-empty-array-spread.md
 		'unicorn/consistent-empty-array-spread': 'warn',
 
+		// Enforce consistent style for element existence checks with `indexOf()`, `lastIndexOf()`, `findIndex()`, and `findLastIndex()` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-existence-index-check.md
+		'unicorn/consistent-existence-index-check': 'warn',
+
 		// Move function definitions to the highest possible scope
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-function-scoping.md
 		// Note: really not sure about that, let it be in warn for a while @todo:
