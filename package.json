@@ -66,7 +66,7 @@
 		"@vitest/eslint-plugin": "^1.1.7",
 		"eslint-config-flat-gitignore": "^0.3.0",
 		"eslint-define-config": "^2.1.0",
-		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-import-resolver-typescript": "^3.6.3",
 		"eslint-plugin-astro": "^1.2.3",
 		"eslint-plugin-chai-friendly": "^1.0.1",
 		"eslint-plugin-command": "^0.2.6",
