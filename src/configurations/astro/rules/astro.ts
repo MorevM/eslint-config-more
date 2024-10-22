@@ -82,6 +82,10 @@ export default defineConfigurationPart({
 			splitLiteral: true,
 		}],
 
+		// Enforce sorting of attributes (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-astro/rules/sort-attributes/
+		'astro/sort-attributes': 'off',
+
 		...extensionFromJsxA11y([
 			'alt-text',
 			'anchor-ambiguous-text',
