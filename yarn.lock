@@ -2812,10 +2812,10 @@ eslint-plugin-n@^17.10.2:
     minimatch "^9.0.5"
     semver "^7.5.3"
 
-eslint-plugin-no-autofix@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-no-autofix/-/eslint-plugin-no-autofix-2.0.0.tgz#d5824933404299c7742a7c359b2b823c8d0dfb57"
-  integrity sha512-x9dbjpWVp/lg9vZ5161W29vDTjSw0MJRc6OQxV54pcY1y+zxZWmjq7WJ1UxA96DSZ74k1aBLFGjMV8UlAoofyQ==
+eslint-plugin-no-autofix@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-no-autofix/-/eslint-plugin-no-autofix-2.1.0.tgz#a7028cdb5502cbb47de6a214b17709ddd161e727"
+  integrity sha512-JAg9OhE1QkaqlSOWTx/AdOk+1pS/ZZvBCGYa052d/vXB1oKJux0Jyj/VDl7hYjp+qxcLX6EyKXC8jtxmiVDEpA==
   dependencies:
     eslint-rule-composer "^0.3.0"
     find-up "^5.0.0"
