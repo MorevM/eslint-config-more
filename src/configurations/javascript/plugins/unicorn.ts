@@ -384,6 +384,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-logical-operator-over-ternary.md
 		'unicorn/prefer-logical-operator-over-ternary': 'warn',
 
+		// Prefer `Math.min()` and `Math.max()` over ternaries for simple comparisons (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-min-max.md
+		'unicorn/prefer-math-min-max': 'warn',
+
 		// Enforce the use of `Math.trunc` instead of bitwise operators (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-trunc.md
 		'unicorn/prefer-math-trunc': 'warn',
