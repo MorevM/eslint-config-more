@@ -13,6 +13,10 @@ export default defineConfigurationPart({
 			defineExposeLast: true,
 		}],
 
+		// Disallow using deprecated `$delete` and `$set` (in Vue.js 3.0.0+)
+		// https://eslint.vuejs.org/rules/no-deprecated-delete-set.html
+		'vue/no-deprecated-delete-set': 'error',
+
 		// Disallow deprecated `model` definition (in Vue.js 3.0.0+)
 		// https://eslint.vuejs.org/rules/no-deprecated-model-definition.html
 		'vue/no-deprecated-model-definition': ['error', {
