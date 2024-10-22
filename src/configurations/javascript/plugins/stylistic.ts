@@ -123,6 +123,7 @@ export default defineConfigurationPart({
 		// Note: let's care about all people
 		'@stylistic/indent': ['warn', 'tab', {
 			SwitchCase: 1,
+			tabLength: 2,
 		}],
 
 		// Enforce the consistent use of either double or single quotes in JSX attributes (autofixable)
