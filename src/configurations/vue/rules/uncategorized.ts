@@ -102,6 +102,14 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/max-lines-per-block.html
 		'vue/max-lines-per-block': 'off',
 
+		// Enforce maximum number of props in Vue component
+		// https://eslint.vuejs.org/rules/max-props.html
+		'vue/max-props': 'off',
+
+		// Enforce maximum depth of template
+		// https://eslint.vuejs.org/rules/max-template-depth.html
+		'vue/max-template-depth': 'off',
+
 		// Enforce new lines between multi-line properties in Vue components (autofixable)
 		// https://eslint.vuejs.org/rules/new-line-between-multi-line-property.html
 		// Note: developer knows better
