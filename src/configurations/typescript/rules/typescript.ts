@@ -199,6 +199,10 @@ export default defineConfigurationPart({
 			ignoreVoidOperator: false,
 		}],
 
+		// Disallow using code marked as `@deprecated`
+		// https://typescript-eslint.io/rules/no-deprecated
+		'@typescript-eslint/no-deprecated': 'warn',
+
 		// Disallow duplicate class members
 		// https://typescript-eslint.io/rules/no-dupe-class-members
 		...extensionFromBase('no-dupe-class-members'),
