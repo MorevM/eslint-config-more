@@ -366,6 +366,11 @@ export default defineConfigurationPart({
 			ignoreUsedVariables: true,
 		}],
 
+		// Prefer `globalThis` over `window`, `self`, and `global` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-global-this.md
+		// Note: I think it's better to be explicit, especially when working with mixed environments (Vue/React + SSR for example)
+		'unicorn/prefer-global-this': 'off',
+
 		// Prefer `.includes()` over `.indexOf()` and `Array#some()` when checking for existence or non-existence
 		// (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes.md
