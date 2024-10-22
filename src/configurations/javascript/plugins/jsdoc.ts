@@ -89,9 +89,17 @@ export default defineConfigurationPart({
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/imports-as-dependencies.md
 		'jsdoc/imports-as-dependencies': 'error',
 
-		// Reports on JSDoc texts that serve only to restart their attached name.
+		// Reports on JSDoc texts that serve only to restart their attached name
 		// https://github.com/gajus/eslint-plugin-jsdoc#informative-docs
 		'jsdoc/informative-docs': 'off',
+
+		// Enforces minimum number of newlines before JSDoc comment blocks (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/lines-before-block.md
+		// Note: I would like to enable with exception for the first property within a nested structure..
+		'jsdoc/lines-before-block': ['off', {
+			lines: 1,
+			ignoreSameLine: false,
+		}],
 
 		// Enforces a regular expression pattern on descriptions
 		// https://github.com/gajus/eslint-plugin-jsdoc#match-description
