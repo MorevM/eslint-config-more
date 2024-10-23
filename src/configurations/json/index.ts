@@ -1,7 +1,7 @@
 import { parserJson } from '#parsers';
 
 import type { JsonConfigurationOptions } from '#types';
-import { GLOB_JS_CONFIG, GLOB_JSON, GLOB_JSON5, GLOB_JSONC, GLOB_PACKAGE_JSON, GLOB_TS_CONFIG } from '#globs';
+import { GLOB_JS_CONFIG, GLOB_JSON, GLOB_JSON5, GLOB_JSONC, GLOB_PACKAGE_JSON, GLOB_TS_CONFIG, GLOB_VSCODE_DIR } from '#globs';
 import { mergeParts } from '#utils';
 
 import json from './rules/json';
@@ -36,7 +36,7 @@ export default function configurationJson(options: Partial<JsonConfigurationOpti
 		},
 		{
 			name: 'morev/jsonc',
-			files: [GLOB_JSON5, GLOB_JSONC, GLOB_JS_CONFIG, GLOB_TS_CONFIG],
+			files: [GLOB_JSON5, GLOB_JSONC, GLOB_JS_CONFIG, GLOB_TS_CONFIG, GLOB_VSCODE_DIR],
 			languageOptions: {
 				parser: parserJson,
 				sourceType: 'module',
