@@ -26,9 +26,6 @@
 			"~configurations/*": ["./src/configurations/*"]
 		}
 	},
-	"ts-node": {
-		"esm": true
-	},
 	"exclude": [
 		"dist"
 	]

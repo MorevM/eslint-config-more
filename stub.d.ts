@@ -1,3 +1,5 @@
+import '@total-typescript/ts-reset';
+
 declare module 'eslint-plugin-no-autofix' {
 	import type { ESLint } from 'eslint';
 
