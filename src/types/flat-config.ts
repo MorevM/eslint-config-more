@@ -1,6 +1,8 @@
 import type { Linter } from 'eslint';
+import type { ElementOf } from '@morev/utils';
+import type { Config } from 'typescript-eslint';
 
-export type FlatConfig = Linter.Config;
+export type FlatConfig = ElementOf<Awaited<Config>>;
 
 export type RuleValue = Linter.RuleSeverity
 	| [Linter.RuleSeverity, any]
