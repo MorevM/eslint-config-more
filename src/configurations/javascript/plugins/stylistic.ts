@@ -81,6 +81,13 @@ export default defineConfigurationPart({
 		// https://eslint.style/rules/js/computed-property-spacing
 		'@stylistic/computed-property-spacing': ['warn', 'never'],
 
+		// Enforce consistent line breaks after opening and before closing braces (autofixable)
+		// https://eslint.style/rules/default/curly-newline
+		'@stylistic/curly-newline': ['warn', {
+			multiline: true,
+			consistent: true,
+		}],
+
 		// Enforces consistent newlines before or after dots (autofixable)
 		// https://eslint.style/rules/js/dot-location
 		'@stylistic/dot-location': ['warn', 'property'],
