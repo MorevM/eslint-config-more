@@ -38,6 +38,10 @@ export default defineConfigurationPart({
 		// https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-named-as-default-member.md
 		'import-x/no-named-as-default-member': 'error',
 
+		// Forbid importing a default export by a different name.
+		// https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-rename-default.md
+		'import-x/no-rename-default': 'off',
+
 		// Report modules without exports, or exports without matching import in another module
 		// https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-unused-modules.md
 		// Note: should be configured individually per project
