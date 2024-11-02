@@ -71,7 +71,7 @@ export type CypressConfigurationOptions = AnyConfigurationOptions & Configuratio
 /**
  * Options for JSX syntax.
  */
-export type JsxConfigurationOptions = AnyConfigurationOptions;
+export type JsxConfigurationOptions = AnyConfigurationOptions & ConfigurationOptionFiles;
 
 /**
  * Options for Astro configuration.

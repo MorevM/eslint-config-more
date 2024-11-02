@@ -1,5 +1,6 @@
 export const GLOB_SRC_EXT = '?([cm])[jt]s?(x)';
 export const GLOB_JS = '**/*.js';
+export const GLOB_JSX = '**/*.?([cm])js?(x)';
 export const GLOB_CJS = '**/*.cjs';
 export const GLOB_MJS = '**/*.mjs';
 export const GLOB_ANY_JS = '**/*.?([cm])js';
