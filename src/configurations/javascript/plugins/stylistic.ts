@@ -133,6 +133,10 @@ export default defineConfigurationPart({
 			tabLength: 2,
 		}],
 
+		// Indentation for binary operators in multiline expressions (autofixable)
+		// https://eslint.style/rules/default/indent-binary-ops
+		'@stylistic/indent-binary-ops': ['warn', 'tab'],
+
 		// Enforce the consistent use of either double or single quotes in JSX attributes (autofixable)
 		// https://eslint.style/rules/js/jsx-quotes
 		'@stylistic/jsx-quotes': ['warn', 'prefer-double'],
