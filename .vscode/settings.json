@@ -1,21 +1,41 @@
 {
+	// Enable flat configuration format.
+	"eslint.useFlatConfig": true,
+
+	// ESLint handles formatting.
 	"prettier.enable": false,
+
+	// Turn autofix on.
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": "explicit"
 	},
+
+	// Enable ESLint for all files that could
+	// potentially be processed by ESLint.
 	"eslint.validate": [
 		"javascript",
 		"javascriptreact",
 		"typescript",
 		"typescriptreact",
+		"vue",
 		"astro",
 		"html",
-		"vue",
 		"markdown",
-		"yaml",
 		"json",
 		"jsonc",
-		"json5"
+		"yaml"
 	],
-	"eslint.useFlatConfig": true
+
+	// Suppress stylistic errors, but still autofix them.
+	"eslint.rules.customizations": [
+		{ "rule": "@stylistic/*", "severity": "off", "fixable": true },
+		{ "rule": "*-indent", "severity": "off", "fixable": true },
+		{ "rule": "*-spacing", "severity": "off", "fixable": true },
+		{ "rule": "*-spaces", "severity": "off", "fixable": true },
+		{ "rule": "*-order", "severity": "off", "fixable": true },
+		{ "rule": "*-dangle", "severity": "off", "fixable": true },
+		{ "rule": "*-newline", "severity": "off", "fixable": true },
+		{ "rule": "*quotes", "severity": "off", "fixable": true },
+		{ "rule": "*semi", "severity": "off", "fixable": true }
+	]
 }
