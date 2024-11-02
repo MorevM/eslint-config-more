@@ -1,7 +1,7 @@
 import configurationJavascript from '~configurations/javascript';
 
 import { defineConfigurationPart, extensionFactory } from '#utils';
-import { pluginNoAutofix, pluginStylistic, pluginTs } from '#plugins';
+import { pluginNoAutofix, pluginTs } from '#plugins';
 
 const extensionFromBase = extensionFactory({
 	baseRules: configurationJavascript().rules!,
@@ -11,7 +11,6 @@ const extensionFromBase = extensionFactory({
 
 export default defineConfigurationPart({
 	plugins: {
-		'@stylistic': pluginStylistic,
 		'@typescript-eslint': pluginTs,
 		'no-autofix': pluginNoAutofix,
 	},
@@ -132,20 +131,6 @@ export default defineConfigurationPart({
 		'@typescript-eslint/max-params': ['warn', {
 			countVoidThis: false,
 			maximum: 5,
-		}],
-
-		// Require a specific member delimiter style for interfaces and type literals (autofixable)
-		// https://typescript-eslint.io/rules/member-delimiter-style
-		'@stylistic/member-delimiter-style': ['warn', {
-			multiline: {
-				delimiter: 'semi',
-				requireLast: true,
-			},
-			singleline: {
-				delimiter: 'semi',
-				requireLast: false,
-			},
-			multilineDetection: 'brackets',
 		}],
 
 		// Require a consistent member declaration order
@@ -642,11 +627,6 @@ export default defineConfigurationPart({
 			path: 'never',
 			types: 'never',
 		}],
-
-		// Require consistent spacing around type annotations (autofixable)
-		// https://typescript-eslint.io/rules/type-annotation-spacing
-		// Note: good with default options
-		'@stylistic/type-annotation-spacing': 'warn',
 
 		// Requires type annotations to exist
 		// https://typescript-eslint.io/rules/typedef

@@ -4,6 +4,7 @@ import { GLOB_TS, GLOB_TSX } from '#globs';
 import { mergeParts } from '#utils';
 
 import typescript from './rules/typescript';
+import stylistic from './plugins/stylistic';
 
 export default function configurationTypescript(options: Partial<TypescriptConfigurationOptions> = {}) {
 	const {
@@ -36,6 +37,7 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 			ignores,
 			...mergeParts(
 				typescript,
+				stylistic,
 				{
 					rules: overrides,
 				},
