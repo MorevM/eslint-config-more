@@ -72,6 +72,7 @@ export default class RulesFinder {
 	 * @returns   ESLint provider object.
 	 */
 	private loadEslintRulesData() {
+		// eslint-disable-next-line @typescript-eslint/no-deprecated -- There's no other way
 		const eslintRules = [...riskyEslint.builtinRules.entries()];
 
 		return eslintRules.reduce<Provider>((acc, [ruleName, ruleDefinition]) => {
