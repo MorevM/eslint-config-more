@@ -17,6 +17,7 @@ import eslintUnicorn from './plugins/unicorn';
 
 export default function configurationJavascript(options: Partial<AnyConfigurationOptions> = {}) {
 	const {
+		files = ['**/*.*'],
 		overrides = {},
 		ignores = [],
 	} = options;
@@ -46,6 +47,7 @@ export default function configurationJavascript(options: Partial<AnyConfiguratio
 			'import-x/external-module-folders': ['node_modules', 'node_modules/@types'],
 			'import-x/ignore': ['node_modules'],
 		},
+		files,
 		ignores,
 		...mergeParts(
 			layoutAndFormatting,

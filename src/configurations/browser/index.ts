@@ -6,6 +6,7 @@ import unicorn from './rules/unicorn';
 
 export default function configurationBrowser(options: Partial<AnyConfigurationOptions> = {}) {
 	const {
+		files = ['**/*.*'],
 		overrides = {},
 		ignores = [],
 	} = options;
@@ -26,6 +27,7 @@ export default function configurationBrowser(options: Partial<AnyConfigurationOp
 				},
 			},
 		},
+		files,
 		ignores,
 		...mergeParts(
 			unicorn,
