@@ -39,6 +39,23 @@ type ConfigurationsMap = {
 type Configuration = keyof ConfigurationsMap;
 type ConfigurationOptions<T extends Configuration> = Parameters<ConfigurationsMap[T]>[0];
 
+type DefineIgnoreOptions = {
+	/**
+	 * Extra globs to ignore by all rules.
+	 *
+	 * Expected [minimatch](https://github.com/isaacs/minimatch)-compatible array of strings.
+	 *
+	 * @see https://globster.xyz/
+	 */
+	extraIgnoredGlobs: string[];
+
+	/**
+	 * Paths to all `.gitignore` files (relative to the root, **INCLUDING** the root one)
+	 * whose files should be added to the `ESLint` ignore list,
+	 */
+	gitignoreFiles: string[];
+};
+
 /**
  * High-order function for flattening the configurations.
  * Configurations can consist of several parts,
@@ -83,21 +100,31 @@ export const defineConfiguration = <T extends Configuration>(name: T, options: C
 
 /**
  * A function that disables all rules for some files.
- * By default inherits all patterns from `.gitignore` as well as popular artifacts destinations.
- * This list can be extended via `extraIgnoredGlobs` argument.
+ * By default inherits all patterns from the root `.gitignore` as well as popular artifacts destinations.
+ * This list can be extended via `extraIgnoredGlobs` option.
  *
- * @see https://globster.xyz/
+ * **IMPORTANT**: \
+ * By default considers only the root `.gitignore` file. \
+ * If your `.gitignore` is not located in the project root and/or child categories
+ * contain their own `.gitignore` files, use the option `gitignoreFiles`.
  *
- * @param   extraIgnoredGlobs   Extra files to ignore by all rules. \
- *                              Expected [minimatch](https://github.com/isaacs/minimatch)-compatible array of strings.
+ * @param   options   Additional options for fine-tuning.
  *
- * @returns                     FlatConfig-compatible configuration.
+ * @returns           FlatConfig-compatible configuration.
  */
-export const defineIgnores = (extraIgnoredGlobs: string[] = []) => {
+export const defineIgnores = (options: Partial<DefineIgnoreOptions>) => {
+	const {
+		extraIgnoredGlobs = [],
+		gitignoreFiles,
+	} = options;
+
 	return {
 		name: 'morev/ignores',
 		ignores: arrayUnique([
-			...gitignore().ignores,
+			...gitignore({
+				files: gitignoreFiles,
+				strict: false,
+			}).ignores,
 			...GLOB_EXCLUDE,
 			...extraIgnoredGlobs,
 		]),
