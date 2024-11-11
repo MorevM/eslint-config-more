@@ -28,8 +28,10 @@
 		"codestyle"
 	],
 	"files": [
-		"dist"
+		"dist",
+		"bin"
 	],
+	"bin": "./bin/index.js",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",

@@ -1,7 +1,11 @@
 import { combine, defineConfiguration, defineIgnores } from './dist/index.js';
 
 export default combine([
-	defineIgnores(),
+	defineIgnores({
+		extraIgnoredGlobs: [
+			'bin',
+		],
+	}),
 	defineConfiguration('javascript', {
 		overrides: {
 			// It's ok here to be explicit
