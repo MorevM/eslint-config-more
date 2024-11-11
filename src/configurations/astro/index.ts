@@ -25,7 +25,7 @@ export default function configurationAstro(options: Partial<AstroConfigurationOp
 				parser: parserAstro,
 				sourceType: 'module',
 				parserOptions: {
-					parser: parserTypescript ?? undefined,
+					parser: parserTypescript,
 					extraFileExtensions: ['.astro'],
 				},
 			},
