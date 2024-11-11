@@ -33,6 +33,7 @@ export default function configurationJavascript(options: Partial<AnyConfiguratio
 					impliedStrict: true,
 					jsx: true,
 				},
+				ecmaVersion: 'latest',
 			},
 		},
 		settings: {
