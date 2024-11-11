@@ -6,12 +6,12 @@ export const tsup: Options = {
 	target: 'esnext',
 	format: ['esm'],
 	dts: true,
-	entryPoints: [
-		'src/index.ts',
-		'src/globs.ts',
-		'src/parsers.ts',
-		'src/plugins.ts',
-	],
+	entry: {
+		index: './src/index.ts',
+		plugins: './src/plugins.ts',
+		parsers: './src/parsers.ts',
+		globs: './src/globs.ts',
+	},
 	external: [
 		'@morev/utils',
 		'@eslint/eslintrc',
