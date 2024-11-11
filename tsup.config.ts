@@ -8,6 +8,7 @@ export const tsup: Options = {
 	dts: true,
 	entryPoints: [
 		'src/index.ts',
+		'src/globs.ts',
 		'src/parsers.ts',
 		'src/plugins.ts',
 	],
