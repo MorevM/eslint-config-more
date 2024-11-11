@@ -8,7 +8,7 @@ export { default as pluginRegexp } from 'eslint-plugin-regexp';
 export { default as pluginSonarjs } from 'eslint-plugin-sonarjs';
 export { default as pluginStylistic } from '@stylistic/eslint-plugin';
 export { default as pluginN } from 'eslint-plugin-n';
-export { plugin as pluginTs } from 'typescript-eslint';
+export { plugin as pluginTypescript } from 'typescript-eslint';
 export { default as pluginYaml } from 'eslint-plugin-yml';
 export { default as pluginVue } from 'eslint-plugin-vue';
 export { default as pluginHtml } from '@html-eslint/eslint-plugin';

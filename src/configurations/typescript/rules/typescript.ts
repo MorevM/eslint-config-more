@@ -1,7 +1,7 @@
 import configurationJavascript from '~configurations/javascript';
 
 import { defineConfigurationPart, extensionFactory } from '#utils';
-import { pluginNoAutofix, pluginTs } from '#plugins';
+import { pluginNoAutofix, pluginTypescript } from '#plugins';
 
 const extensionFromBase = extensionFactory({
 	baseRules: configurationJavascript().rules!,
@@ -11,7 +11,7 @@ const extensionFromBase = extensionFactory({
 
 export default defineConfigurationPart({
 	plugins: {
-		'@typescript-eslint': pluginTs,
+		'@typescript-eslint': pluginTypescript,
 		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
