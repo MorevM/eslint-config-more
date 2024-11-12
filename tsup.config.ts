@@ -11,6 +11,7 @@ export const tsup: Options = {
 		plugins: './src/plugins.ts',
 		parsers: './src/parsers.ts',
 		globs: './src/globs.ts',
+		cli: './src/cli/index.ts',
 	},
 	external: [
 		'@morev/utils',
