@@ -60,7 +60,7 @@
 		"release": "release-it --disable-metrics"
 	},
 	"peerDependencies": {
-		"eslint": "^9.9.1",
+		"eslint": "^9.14.0",
 		"typescript": "^5.4.2"
 	},
 	"dependencies": {
