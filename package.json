@@ -55,8 +55,8 @@
 		"prepare": "lefthook install",
 		"build": "tsup",
 		"test": "yarn build && vitest",
-		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\"",
-		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\" --fix",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
 		"release": "release-it --disable-metrics"
 	},
 	"peerDependencies": {
