@@ -1,12 +1,13 @@
 import globals from 'globals';
 import type { AnyConfigurationOptions } from '#types';
 import { mergeParts } from '#utils';
+import { GLOB_ANY_CONTAINING_JS } from '#globs';
 
 import unicorn from './rules/unicorn';
 
 export default function configurationBrowser(options: Partial<AnyConfigurationOptions> = {}) {
 	const {
-		files = ['**/*.*'],
+		files = [GLOB_ANY_CONTAINING_JS],
 		overrides = {},
 		ignores = [],
 	} = options;

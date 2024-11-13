@@ -1,5 +1,6 @@
 import type { AnyConfigurationOptions } from '#types';
 import { mergeParts } from '#utils';
+import { GLOB_ANY_CONTAINING_JS } from '#globs';
 
 import layoutAndFormatting from './rules/layout-and-formatting';
 import possibleProblems from './rules/possible-problems';
@@ -17,7 +18,7 @@ import eslintUnicorn from './plugins/unicorn';
 
 export default function configurationJavascript(options: Partial<AnyConfigurationOptions> = {}) {
 	const {
-		files = ['**/*.*'],
+		files = [GLOB_ANY_CONTAINING_JS],
 		overrides = {},
 		ignores = [],
 	} = options;

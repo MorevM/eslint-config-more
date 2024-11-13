@@ -1,6 +1,7 @@
 import globals from 'globals';
 import type { AnyConfigurationOptions } from '#types';
 import { mergeParts } from '#utils';
+import { GLOB_ANY_CONTAINING_JS } from '#globs';
 
 import node from './rules/node';
 
@@ -11,7 +12,7 @@ export default function configurationNode(options: Partial<AnyConfigurationOptio
 	// to respect `allowImportingTsExtensions` tsconfig.json setting,
 	// and maybe for all the rest options in https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/shared-settings.md
 	const {
-		files = ['**/*.*'],
+		files = [GLOB_ANY_CONTAINING_JS],
 		overrides = {},
 		ignores = [],
 	} = options;
