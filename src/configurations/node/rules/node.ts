@@ -56,7 +56,8 @@ export default defineConfigurationPart({
 
 		// Disallow `import` declarations which import extraneous modules
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-extraneous-import.md
-		'n/no-extraneous-import': 'error',
+		// TODO: `off` until this is resolved https://github.com/eslint-community/eslint-plugin-n/issues/379
+		'n/no-extraneous-import': 'off',
 
 		// Disallow `require()` declarations which import extraneous modules
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-extraneous-require.md
