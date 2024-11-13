@@ -21,7 +21,7 @@ export const runAgentCommand = (agent: Agent, action: AgentCommand, args: string
 		},
 		yarn: {
 			'add-dev': { command: 'add', flags: ['--dev'] },
-			'upgrade': { command: 'upgrade', flags: [] },
+			'upgrade': { command: 'upgrade', flags: ['--caret'] },
 		},
 		pnpm: {
 			'add-dev': { command: 'add', flags: ['--save-dev'] },
