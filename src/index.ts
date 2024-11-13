@@ -112,11 +112,11 @@ export const defineConfiguration = <T extends Configuration>(name: T, options: C
  *
  * @returns           FlatConfig-compatible configuration.
  */
-export const defineIgnores = (options: Partial<DefineIgnoreOptions>) => {
+export const defineIgnores = (options?: Partial<DefineIgnoreOptions>) => {
 	const {
 		extraIgnoredGlobs = [],
 		gitignoreFiles,
-	} = options;
+	} = options ?? {};
 
 	return {
 		name: 'morev/ignores',
