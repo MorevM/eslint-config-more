@@ -149,7 +149,8 @@ export default defineConfigurationPart({
 
 		// Disallow the `<template>` `<script>` `<style>` block to be empty
 		// https://eslint.vuejs.org/rules/no-empty-component-block.html
-		'vue/no-empty-component-block': 'error',
+		'vue/no-empty-component-block': 'off',
+		'no-autofix/vue/no-empty-component-block': 'warn',
 
 		// Disallow asynchronously registered expose
 		// https://eslint.vuejs.org/rules/no-expose-after-await.html
