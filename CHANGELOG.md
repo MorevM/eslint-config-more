@@ -1,5 +1,16 @@
 
 
+## 35.0.0 (2024-11-13)
+
+The package has been completely rewritten to fit new flat ESLint config format. \
+Check out README.md for further setup instructions.
+
+### ⚠ BREAKING CHANGES
+
+* The config only works with Node 20+ and ESLint >=9.14.0
+* Added some new rules, changed some stylistic rules. Run the fixer in `--fix-dry-run` mode first.
+
+
 ## [34.0.0](https://github.com/MorevM/eslint-config/compare/v33.0.0...v34.0.0) (2024-08-05)
 
 
