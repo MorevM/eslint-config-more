@@ -1,2 +1,2 @@
-export * from './configuration-options';
-export * from './flat-config';
+export type * from './configuration-options';
+export type * from './flat-config';
