@@ -137,7 +137,7 @@ export const install = async (options: StepOptions) => {
 		);
 
 		const shouldUpdateEslint = await confirm({
-			message: formatCliMessage(`Update to <c>eslint@^${MINIMAL_ESLINT_VERSION}</c>?`),
+			message: formatCliMessage(`Update to <c>eslint@${MINIMAL_ESLINT_VERSION}</c>?`),
 		});
 		if (isCancel(shouldUpdateEslint)) return;
 
@@ -169,12 +169,12 @@ export const install = async (options: StepOptions) => {
 		);
 
 		const shouldUpdateTypescript = await confirm({
-			message: formatCliMessage(`Update to <c>typescript@^${MINIMAL_TYPESCRIPT_VERSION}</c>?`),
+			message: formatCliMessage(`Update to <c>typescript@${MINIMAL_TYPESCRIPT_VERSION}</c>?`),
 		});
 		if (isCancel(shouldUpdateTypescript)) return;
 
 		if (shouldUpdateTypescript) {
-			dependenciesToUpdate.push(`typescript@^${MINIMAL_TYPESCRIPT_VERSION}`);
+			dependenciesToUpdate.push(`typescript@${MINIMAL_TYPESCRIPT_VERSION}`);
 		}
 	}
 
