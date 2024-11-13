@@ -165,6 +165,7 @@ export const createConfig = async (stepOptions: StepOptions) => {
 	await sleep(delay);
 
 	// TODO: Simplify the type of the `pick` utility
+	// eslint-disable-next-line no-autofix/prefer-template -- Better to do this way
 	const configurationsToAdd = tsObject.entries(pick(configurations, ...configurationsToEnable as any[]))
 		// Bloody perfectionism is here :)
 		.sort(([name1], [name2]) =>
@@ -188,7 +189,7 @@ export const createConfig = async (stepOptions: StepOptions) => {
 				.join('\n');
 
 			return `defineConfiguration('${name}', {\n${optionsString}\n})`;
-		}).join(',\n');
+		}).join(',\n') + ',';
 
 	const fileContents = stripIndent(`
 		import { combine, defineIgnores, defineConfiguration } from '@morev/eslint-config';
