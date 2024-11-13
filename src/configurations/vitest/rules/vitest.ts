@@ -223,6 +223,10 @@ export default defineConfigurationPart({
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/valid-describe-callback.md
 		'vitest/valid-describe-callback': 'error',
 
+		// Require promises that have expectations in their chain to be valid
+		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/valid-expect-in-promise.md
+		'vitest/valid-expect-in-promise': 'error',
+
 		// Enforce valid `expect()` usage
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/valid-expect.md
 		'vitest/valid-expect': 'error',
