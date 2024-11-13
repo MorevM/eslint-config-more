@@ -27,6 +27,10 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/prefer-define-options.html
 		'vue/prefer-define-options': 'warn',
 
+		// Enforce use of `defineOptions` instead of default export (autofixable)
+		// https://eslint.vuejs.org/rules/prefer-use-template-ref.html
+		'vue/prefer-use-template-ref': 'warn',
+
 		// Require declare public properties using `expose`
 		// https://eslint.vuejs.org/rules/require-expose.html
 		'vue/require-expose': 'error',
