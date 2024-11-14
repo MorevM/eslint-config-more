@@ -1,5 +1,13 @@
 
 
+## [35.0.1](https://github.com/MorevM/eslint-config/compare/v35.0.0...v35.0.1)
+
+### Fixes
+
+* fix: Make `defineIgnores` argument optional ([35dbbfc](https://github.com/MorevM/eslint-config/commit/35dbbfc))
+* Minor CLI improvements
+
+
 ## 35.0.0 (2024-11-13)
 
 The package has been completely rewritten to fit new flat ESLint config format. \
