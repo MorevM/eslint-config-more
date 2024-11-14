@@ -49,6 +49,9 @@ export default defineConfigurationPart({
 			imports: 'always-multiline',
 			exports: 'always-multiline',
 			functions: 'always-multiline',
+			enums: 'always-multiline',
+			generics: 'always-multiline',
+			tuples: 'always-multiline',
 		}],
 
 		// Enforce spacing before and after commas (autofixable)
