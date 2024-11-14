@@ -181,12 +181,14 @@ export default defineConfigurationPart({
 		// Enforce a maximum line length
 		// https://eslint.style/rules/js/max-len
 		// Note: 80 or 100 is not enough, comments are ignored
-		'@stylistic/max-len': ['warn', 120, 2, {
-			ignoreUrls: true,
+		'@stylistic/max-len': ['warn', {
+			code: 120,
+			tabWidth: 2,
 			ignoreComments: true,
-			ignoreRegExpLiterals: true,
+			ignoreUrls: true,
 			ignoreStrings: true,
 			ignoreTemplateLiterals: true,
+			ignoreRegExpLiterals: true,
 		}],
 
 		// Enforce a maximum number of statements allowed per line
