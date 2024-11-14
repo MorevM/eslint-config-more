@@ -426,7 +426,7 @@ export default defineConfigurationPart({
 
 		// Disallow using the unsafe built-in Function type (autofixable)
 		// https://typescript-eslint.io/rules/no-unsafe-function-type
-		'@typescript-eslint/no-unsafe-function-type': 'warn',
+		'@typescript-eslint/no-unsafe-function-type': 'off',
 
 		// Disallows member access on any typed variables
 		// https://typescript-eslint.io/rules/no-unsafe-member-access
