@@ -64,6 +64,7 @@ export default function configurationVue(options: Partial<VueConfigurationOption
 					ecmaFeatures: {
 						jsx: true,
 					},
+					sourceType: 'module',
 					extraFileExtensions: ['.vue'],
 					parser: typescript ? parserTypescript : null,
 				},
