@@ -1,5 +1,17 @@
 
 
+## [35.0.2](https://github.com/MorevM/eslint-config/compare/v35.0.1...v35.0.2) (2024-11-15)
+
+
+### Bug fixes
+
+* **javascript, vue:** Use proper `@stylistic/max-len` interface for proper extension ([d15c5a0](https://github.com/MorevM/eslint-config/commit/d15c5a0d95f42500fd248b7cfe14191313b5216b))
+* **typescript:** Setup `@stylistic/comma-dangle` rule to work with TS entities ([4271cb3](https://github.com/MorevM/eslint-config/commit/4271cb3aba2b49704be31e1c276917d50c9d8e87))
+* **typescript:** Turn off `@typescript-eslint/no-unsafe-function-type` rule ([05760a8](https://github.com/MorevM/eslint-config/commit/05760a8364889c7f1c67787e2535e2af6744122a))
+* **vue:** Pass `sourceType: module` to the parser options as well ([ea39461](https://github.com/MorevM/eslint-config/commit/ea394611cb836ea6c7d8ed6082e32cd36a016417))
+
+
+
 ## [35.0.1](https://github.com/MorevM/eslint-config/compare/v35.0.0...v35.0.1)
 
 ### Fixes
