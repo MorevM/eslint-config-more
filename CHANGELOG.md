@@ -1,5 +1,19 @@
 
 
+## [35.1.0](https://github.com/MorevM/eslint-config/compare/v35.0.3...v35.1.0) (2024-11-16)
+
+
+### Features
+
+* **vitest:** Allow to disable declaring testing functions as ESLint globals ([bc2301b](https://github.com/MorevM/eslint-config/commit/bc2301bb3b5bb8e212c8a9aa88fa85b43dfdde1d))
+
+
+### Bug fixes
+
+* **cli:** Validate `json5` files in VSCode, update corresponding CLI ([57c827f](https://github.com/MorevM/eslint-config/commit/57c827f5a1bd96f03b2a05261c16d71fe532c2c6))
+* **vitest:** Do not use `parserTypescript` if there is no `tsconfig.json` ([b9d1da3](https://github.com/MorevM/eslint-config/commit/b9d1da3e6117776c7454a5e5949d15b1939808d0))
+
+
 ## [35.0.3](https://github.com/MorevM/eslint-config/compare/v35.0.2...v35.0.3) (2024-11-16)
 
 
