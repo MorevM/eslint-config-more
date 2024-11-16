@@ -1,5 +1,12 @@
 
 
+## [35.0.3](https://github.com/MorevM/eslint-config/compare/v35.0.2...v35.0.3) (2024-11-16)
+
+
+### Bug fixes
+
+* **node:** Do not crash if `tsconfig.json` is missing ([98d3ae9](https://github.com/MorevM/eslint-config/commit/98d3ae99aa5ae4261d2c0a1e396fb2dcc94220e5))
+
 ## [35.0.2](https://github.com/MorevM/eslint-config/compare/v35.0.1...v35.0.2) (2024-11-15)
 
 
