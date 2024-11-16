@@ -50,7 +50,16 @@ export type JsonConfigurationOptions = AnyConfigurationOptions;
 /**
  * Options for Vitest configuration.
  */
-export type VitestConfigurationOptions = AnyConfigurationOptions;
+export type VitestConfigurationOptions = AnyConfigurationOptions & {
+	/**
+	 * Whether to declare `vitest` testing functions as ESLint globals.
+	 *
+	 * @see https://eslint.org/docs/latest/use/configure/language-options#using-configuration-files
+	 *
+	 * @default true
+	 */
+	globals: boolean;
+};
 
 /**
  * Options for Jest configuration.

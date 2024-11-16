@@ -11,14 +11,16 @@ export default function configurationVitest(options: Partial<VitestConfiguration
 		files = [...GLOB_TESTS],
 		overrides = {},
 		ignores = [...GLOB_CYPRESS],
+		globals = true,
 	} = options;
 
-	// TODO: An option to disable globals
-	const languageOptions: Record<string, any> = {
-		globals: {
+	const languageOptions: Record<string, any> = {};
+
+	if (globals) {
+		languageOptions.globals = {
 			...pluginVitest.environments.env.globals,
-		},
-	};
+		};
+	}
 
 	if (hasTsconfig()) {
 		languageOptions.parser = parserTypescript;

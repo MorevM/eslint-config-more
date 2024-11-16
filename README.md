@@ -676,10 +676,14 @@ Let's take a more detailed look:
 
     This configuration enables Vitest-specific rules.
 
-    By default, the rules apply to popular test file names, which in turn are driven by the tool's defaults.
+    By default, the rules apply to popular test file names, which in turn are driven by the tool's defaults. \
     By default, the configuration ignores Cypress default test filename pattern.
 
     > You can see these globs in the source code [here](./src/globs.ts) (`GLOB_TESTS` and `GLOB_CYPRESS` constants).
+
+    It also declares `vitest` testing functions as
+    [ESLint globals](https://eslint.org/docs/latest/use/configure/language-options#using-configuration-files) by default. \
+    You can turn this behavior off by using `globals: false` option.
 
     If you have non-standard test file name pattern or a custom ignores,
     then specify files and exceptions explicitly using the `files` and `ignores` options.
