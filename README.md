@@ -266,6 +266,7 @@ to enforce the extension to check all files supported by this package:
     "html",
     "markdown",
     "json",
+    "json5",
     "jsonc",
     "yaml"
   ],
