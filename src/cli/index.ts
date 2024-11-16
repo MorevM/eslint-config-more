@@ -42,7 +42,7 @@ const steps = {
 	},
 } as const;
 
-const actions = await multiselect<any, keyof typeof steps>({
+const actions = await multiselect({
 	message: 'What would you like to do?\n',
 	required: true,
 	options: tsObject.entries(steps).map(([key, value]) => ({
