@@ -3,10 +3,9 @@ import path from 'node:path';
 import { formatSlashes, isArray, pick, quote, sleep, stripIndent, tsObject  } from '@morev/utils';
 import type { PlainObject } from '@morev/utils';
 import { confirm, isCancel, log, multiselect } from '@clack/prompts';
+import { hasTsconfig } from '#utils';
 import { formatCliMessage, getPackageJson, loadModule, prependTabs } from './utils';
 import type { StepOptions } from './types';
-
-const TS_CONFIG_PATH = path.join(process.cwd(), 'tsconfig.json');
 
 const getVueVersion = async () => {
 	const vuePackage = await loadModule('vue');
@@ -113,7 +112,7 @@ export const createConfig = async (stepOptions: StepOptions) => {
 	dependenciesList.includes('cypress') && (configurations.cypress = {});
 
 	// Typescript
-	if (dependenciesList.includes('typescript') || fs.existsSync(TS_CONFIG_PATH)) {
+	if (dependenciesList.includes('typescript') || hasTsconfig()) {
 		configurations.typescript = {};
 	}
 
