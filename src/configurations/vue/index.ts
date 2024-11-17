@@ -2,7 +2,9 @@ import { pluginVue } from '#plugins';
 import { parserVue, parserTypescript } from '#parsers';
 import type { VueConfigurationOptions } from '#types';
 import { GLOB_VUE } from '#globs';
-import { mergeParts } from '#utils';
+import { defineConfigurationPart, mergeParts } from '#utils';
+
+import { universalRules } from '~configurations/universal-rules';
 
 import base from './rules/base';
 import essential from './rules/essential';
@@ -54,8 +56,14 @@ export default function configurationVue(options: Partial<VueConfigurationOption
 		: mergeParts(baseRules, vue3Rules);
 
 	return [
-		{
-			name: 'morev/vue',
+		defineConfigurationPart({
+			name: 'morev/vue/universal',
+			files,
+			ignores,
+			...universalRules,
+		}),
+		defineConfigurationPart({
+			name: 'morev/vue/core',
 			languageOptions: {
 				parser: parserVue,
 				sourceType: 'module',
@@ -83,6 +91,6 @@ export default function configurationVue(options: Partial<VueConfigurationOption
 					rules: overrides,
 				},
 			),
-		},
+		}),
 	];
 }

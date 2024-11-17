@@ -2,7 +2,9 @@ import { pluginJest } from '#plugins';
 import { parserTypescript } from '#parsers';
 import type { JestConfigurationOptions } from '#types';
 import { GLOB_CYPRESS, GLOB_TESTS } from '#globs';
-import { mergeParts } from '#utils';
+import { defineConfigurationPart, mergeParts } from '#utils';
+
+import { universalRules } from '~configurations/universal-rules';
 
 import jest from './rules/jest';
 
@@ -14,8 +16,14 @@ export default function configurationJest(options: Partial<JestConfigurationOpti
 	} = options;
 
 	return [
-		{
-			name: 'morev/jest',
+		defineConfigurationPart({
+			name: 'morev/jest/universal',
+			files,
+			ignores,
+			...universalRules,
+		}),
+		defineConfigurationPart({
+			name: 'morev/jest/core',
 			languageOptions: {
 				globals: {
 					// @ts-expect-errorr -- Trust me they exist
@@ -36,14 +44,14 @@ export default function configurationJest(options: Partial<JestConfigurationOpti
 					rules: overrides,
 				},
 			),
-		},
-		{
+		}),
+		defineConfigurationPart({
 			name: 'morev/jest/overrides',
 			files,
 			ignores,
 			rules: {
 				'sonarjs/no-duplicate-string': 'off',
 			},
-		},
+		}),
 	];
 }

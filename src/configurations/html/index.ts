@@ -1,7 +1,9 @@
 import { parserHtml } from '#parsers';
 import type { HtmlConfigurationOptions } from '#types';
 import { GLOB_HTML } from '#globs';
-import { mergeParts } from '#utils';
+import { defineConfigurationPart, mergeParts } from '#utils';
+
+import { universalRules } from '~configurations/universal-rules';
 
 import accessibility from './rules/accessibility';
 import bestPractice from './rules/best-practice';
@@ -16,8 +18,14 @@ export default function configurationHtml(options: Partial<HtmlConfigurationOpti
 	} = options;
 
 	return [
-		{
-			name: 'morev/html',
+		defineConfigurationPart({
+			name: 'morev/html/universal',
+			files,
+			ignores,
+			...universalRules,
+		}),
+		defineConfigurationPart({
+			name: 'morev/html/core',
 			languageOptions: {
 				parser: parserHtml,
 				ecmaVersion: 'latest',
@@ -35,13 +43,13 @@ export default function configurationHtml(options: Partial<HtmlConfigurationOpti
 					rules: overrides,
 				},
 			),
-		},
-		{
+		}),
+		defineConfigurationPart({
 			name: 'morev/html/overrides',
 			rules: {
 				'capitalized-comments': 'off',
 				'@stylistic/spaced-comment': 'off',
 			},
-		},
+		}),
 	];
 }

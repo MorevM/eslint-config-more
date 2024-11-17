@@ -1,7 +1,9 @@
 import { parserMarkdown } from '#parsers';
 import type { MarkdownConfigurationOptions } from '#types';
 import { GLOB_MARKDOWN } from '#globs';
-import { mergeParts } from '#utils';
+import { defineConfigurationPart, mergeParts } from '#utils';
+
+import { universalRules } from '~configurations/universal-rules';
 
 import markdown from './rules/markdown';
 
@@ -13,8 +15,14 @@ export default function configurationMarkdown(options: Partial<MarkdownConfigura
 	} = options;
 
 	return [
-		{
-			name: 'morev/markdown',
+		defineConfigurationPart({
+			name: 'morev/markdown/universal',
+			files,
+			ignores,
+			...universalRules,
+		}),
+		defineConfigurationPart({
+			name: 'morev/markdown/core',
 			languageOptions: {
 				parser: parserMarkdown,
 			},
@@ -33,6 +41,6 @@ export default function configurationMarkdown(options: Partial<MarkdownConfigura
 					rules: overrides,
 				},
 			),
-		},
+		}),
 	];
 }

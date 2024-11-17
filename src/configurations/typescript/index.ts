@@ -1,7 +1,9 @@
 import { parserTypescript } from '#parsers';
 import type { TypescriptConfigurationOptions } from '#types';
 import { GLOB_TS, GLOB_TSX } from '#globs';
-import { mergeParts } from '#utils';
+import { defineConfigurationPart, mergeParts } from '#utils';
+
+import { universalRules } from '~configurations/universal-rules';
 
 import typescript from './rules/typescript';
 import stylistic from './plugins/stylistic';
@@ -20,8 +22,14 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 	];
 
 	return [
-		{
-			name: 'morev/typescript',
+		defineConfigurationPart({
+			name: 'morev/typescript/universal',
+			files,
+			ignores,
+			...universalRules,
+		}),
+		defineConfigurationPart({
+			name: 'morev/typescript/core',
 			languageOptions: {
 				parser: parserTypescript,
 				ecmaVersion: 'latest',
@@ -42,8 +50,8 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 					rules: overrides,
 				},
 			),
-		},
-		{
+		}),
+		defineConfigurationPart({
 			name: 'morev/typescript/disables',
 			files,
 			ignores,
@@ -54,6 +62,6 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 				'jsdoc/require-returns-type': 'off',
 				'jsdoc/require-param-type': 'off',
 			},
-		},
+		}),
 	];
 }

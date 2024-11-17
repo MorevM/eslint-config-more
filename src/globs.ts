@@ -28,6 +28,7 @@ export const GLOB_JS_CONFIG = '**/jsconfig.json';
 export const GLOB_TS_CONFIG = '**/tsconfig.json';
 export const GLOB_VSCODE_DIR = '**/.vscode/*.json';
 export const GLOB_PACKAGE_JSON = '**/package.json';
+export const GLOB_ANY_JSON = ['**/*.json?([5c])'];
 
 export const GLOB_TESTS = [
 	`**/__tests__/**/*.${GLOB_SRC_EXT}`,

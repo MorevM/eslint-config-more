@@ -1,7 +1,9 @@
 import { pluginCypress } from '#plugins';
 import type { CypressConfigurationOptions } from '#types';
 import { GLOB_CYPRESS } from '#globs';
-import { mergeParts } from '#utils';
+import { defineConfigurationPart, mergeParts } from '#utils';
+
+import { universalRules } from '~configurations/universal-rules';
 
 import cypress from './rules/cypress';
 
@@ -13,8 +15,14 @@ export default function configurationCypress(options: Partial<CypressConfigurati
 	} = options;
 
 	return [
-		{
-			name: 'morev/cypress',
+		defineConfigurationPart({
+			name: 'morev/cypress/universal',
+			files,
+			ignores,
+			...universalRules,
+		}),
+		defineConfigurationPart({
+			name: 'morev/cypress/core',
 			languageOptions: {
 				globals: {
 					...pluginCypress.environments!.globals.globals,
@@ -28,14 +36,14 @@ export default function configurationCypress(options: Partial<CypressConfigurati
 					rules: overrides,
 				},
 			),
-		},
-		{
+		}),
+		defineConfigurationPart({
 			name: 'morev/cypress/overrides',
 			files,
 			ignores,
 			rules: {
 				'sonarjs/no-duplicate-string': 'off',
 			},
-		},
+		}),
 	];
 }

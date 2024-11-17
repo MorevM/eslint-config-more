@@ -1,7 +1,9 @@
 import globals from 'globals';
 import type { AnyConfigurationOptions } from '#types';
-import { hasTsconfig, mergeParts } from '#utils';
+import { defineConfigurationPart, hasTsconfig, mergeParts } from '#utils';
 import { GLOB_ANY_CONTAINING_JS } from '#globs';
+
+import { universalRules } from '~configurations/universal-rules';
 
 import node from './rules/node';
 
@@ -25,32 +27,40 @@ export default function configurationNode(options: Partial<AnyConfigurationOptio
 	};
 	hasTsconfig() && (nSettings.tsconfigPath = './tsconfig.json');
 
-	return {
-		name: 'morev/node',
-		settings: {
-			n: nSettings,
-		},
-		languageOptions: {
-			ecmaVersion: 'latest',
-			sourceType: 'module',
-			globals: {
-				...globals.node,
+	return [
+		defineConfigurationPart({
+			name: 'morev/node/universal',
+			files,
+			ignores,
+			...universalRules,
+		}),
+		defineConfigurationPart({
+			name: 'morev/node/core',
+			settings: {
+				n: nSettings,
 			},
-			parserOptions: {
-				ecmaFeatures: {
-					globalReturn: false,
-					impliedStrict: true,
-					jsx: true,
+			languageOptions: {
+				ecmaVersion: 'latest',
+				sourceType: 'module',
+				globals: {
+					...globals.node,
+				},
+				parserOptions: {
+					ecmaFeatures: {
+						globalReturn: false,
+						impliedStrict: true,
+						jsx: true,
+					},
 				},
 			},
-		},
-		files,
-		ignores,
-		...mergeParts(
-			node,
-			{
-				rules: overrides,
-			},
-		),
-	};
+			files,
+			ignores,
+			...mergeParts(
+				node,
+				{
+					rules: overrides,
+				},
+			),
+		}),
+	];
 }

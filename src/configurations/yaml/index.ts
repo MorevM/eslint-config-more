@@ -2,7 +2,10 @@ import { parserYaml } from '#parsers';
 
 import type { YamlConfigurationOptions } from '#types';
 import { GLOB_YAML } from '#globs';
-import { mergeParts } from '#utils';
+import { defineConfigurationPart, mergeParts } from '#utils';
+
+import { universalRules } from '~configurations/universal-rules';
+
 import yaml from './rules/yaml';
 
 export default function configurationYaml(options: Partial<YamlConfigurationOptions> = {}) {
@@ -13,8 +16,14 @@ export default function configurationYaml(options: Partial<YamlConfigurationOpti
 	} = options;
 
 	return [
-		{
-			name: 'morev/yaml',
+		defineConfigurationPart({
+			name: 'morev/yaml/universal',
+			files,
+			ignores,
+			...universalRules,
+		}),
+		defineConfigurationPart({
+			name: 'morev/yaml/core',
 			languageOptions: {
 				parser: parserYaml,
 			},
@@ -26,9 +35,9 @@ export default function configurationYaml(options: Partial<YamlConfigurationOpti
 					rules: overrides,
 				},
 			),
-		},
-		{
-			name: 'morev/yaml/overrides',
+		}),
+		defineConfigurationPart({
+			name: 'morev/yaml/disables',
 			files,
 			rules: {
 				'@stylistic/spaced-comment': 'off',
@@ -36,13 +45,13 @@ export default function configurationYaml(options: Partial<YamlConfigurationOpti
 				'@stylistic/no-multi-spaces': 'off',
 				'@stylistic/max-len': 'off',
 			},
-		},
-		{
+		}),
+		defineConfigurationPart({
 			name: 'morev/yaml/exceptions',
 			files: ['**/dependabot.yml', '**/.gitlab-ci.yml'],
 			rules: {
 				'yml/file-extension': 'off',
 			},
-		},
+		}),
 	];
 }

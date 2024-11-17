@@ -2,8 +2,10 @@ import globals from 'globals';
 import { parserAstro, parserTypescript } from '#parsers';
 import type { AstroConfigurationOptions } from '#types';
 import { GLOB_ASTRO } from '#globs';
-import { mergeParts } from '#utils';
+import { defineConfigurationPart, mergeParts } from '#utils';
 import { pluginAstro } from '#plugins';
+
+import { universalRules } from '~configurations/universal-rules';
 
 import astro from './rules/astro';
 
@@ -15,8 +17,14 @@ export default function configurationAstro(options: Partial<AstroConfigurationOp
 	} = options;
 
 	return [
-		{
-			name: 'morev/astro',
+		defineConfigurationPart({
+			name: 'morev/astro/universal',
+			files,
+			ignores,
+			...universalRules,
+		}),
+		defineConfigurationPart({
+			name: 'morev/astro/core',
 			languageOptions: {
 				globals: {
 					...pluginAstro.environments.astro.globals,
@@ -38,6 +46,6 @@ export default function configurationAstro(options: Partial<AstroConfigurationOp
 					rules: overrides,
 				},
 			),
-		},
+		}),
 	];
 }
