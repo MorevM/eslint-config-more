@@ -1,6 +1,5 @@
 import path from 'node:path';
 import fs from 'node:fs';
-import { exec } from 'node:child_process';
 import { safeJsonParse, sleep, stripIndent } from '@morev/utils';
 import type { PackageJson } from '@morev/utils';
 import ansis from 'ansis';
@@ -41,16 +40,6 @@ export const runAgentCommand = (agent: Agent, action: AgentCommand, args: string
 
 	return stack.filter(Boolean).join(' ');
 };
-
-export const customExec = (command: string) => new Promise<string>((resolve, reject) => {
-	exec(command, (error, stdout, stderr) => {
-		if (error === null) {
-			resolve(stdout.trim());
-			return;
-		}
-		reject(error);
-	});
-});
 
 export const loadModule = async (name: string) => {
 	try {

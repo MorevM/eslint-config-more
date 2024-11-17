@@ -3,7 +3,8 @@ import { isNull, sleep } from '@morev/utils';
 import { confirm, isCancel, log, select, spinner } from '@clack/prompts';
 import * as semver from 'semver';
 import { detect } from 'package-manager-detector';
-import { customExec, formatCliMessage, getPackageJson, loadModule, runAgentCommand } from './utils';
+import { customExec } from '#utils';
+import { formatCliMessage, getPackageJson, loadModule, runAgentCommand } from './utils';
 import type { StepOptions } from './types';
 
 export const install = async (options: StepOptions) => {
