@@ -23,10 +23,10 @@
 			"#plugins": ["./src/plugins.ts"],
 			"#parsers": ["./src/parsers.ts"],
 			"~src/*": ["./src/*"],
-			"~configurations/*": ["./src/configurations/*"]
-		}
+			"~configurations/*": ["./src/configurations/*"],
+		},
 	},
 	"exclude": [
-		"dist"
-	]
+		"dist",
+	],
 }
