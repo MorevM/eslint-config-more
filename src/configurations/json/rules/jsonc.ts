@@ -8,8 +8,12 @@ export default defineConfigurationPart({
 	rules: {
 		// Disallow comments
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/no-comments.html
-		'jsonc/no-comments': 'off', // JSON5 and JSONC allow comments
+		// JSON5 and JSONC allow comments
+		'jsonc/no-comments': 'off',
 
-		// TODO: Enable some of rules of `jsonc` package specially for JSON5
+		// Require or disallow trailing commas (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/comma-dangle.html
+		// JSON5 and JSONC allow trailing commas
+		'jsonc/comma-dangle': ['warn', 'always-multiline'],
 	},
 });
