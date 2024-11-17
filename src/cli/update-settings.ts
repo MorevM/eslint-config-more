@@ -198,7 +198,9 @@ export const updateSettings = async (stepOptions: StepOptions) => {
 		.replace(/(\t"eslint\.validate")/, '\n\t// Enable ESLint for all files that could\n\t// potentially be processed by ESLint.\n$1')
 		.replace(/(\t"eslint\.rules\.customizations")/, '\n\t// Just warn about stylistic errors that will be fixed automatically on save.\n$1')
 		// Put each customization on one line
-		.replaceAll(/{\s*"rule.*?}/gs, (substring) => substring.replaceAll(/\s+/g, ' '));
+		.replaceAll(/{\s*"rule.*?}/gs, (substring) => substring.replaceAll(/\s+/g, ' '))
+		// Append trailing commas
+		.replaceAll(/(\n\s*[\]}])/g, ',$1');
 
 	log.success(formatCliMessage(`New contents of the <c>${FULL_FILE_NAME}</c> file:`));
 	log.message(newContentsWithComments);
