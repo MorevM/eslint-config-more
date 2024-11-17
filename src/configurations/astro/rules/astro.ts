@@ -1,8 +1,8 @@
+import { pluginAstro } from '#plugins';
+import { defineConfigurationPart, extensionFactory } from '#utils';
+
 import configurationJavascript from '~configurations/javascript';
 import configurationJsx from '~configurations/jsx';
-
-import { defineConfigurationPart, extensionFactory } from '#utils';
-import { pluginAstro } from '#plugins';
 
 const extensionFromBase = extensionFactory({
 	baseConfig: configurationJavascript(),

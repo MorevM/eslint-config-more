@@ -1,6 +1,6 @@
-import type { Arrayable, PlainObject } from '@morev/utils';
 import { isArray, isEmpty, toArray } from '@morev/utils';
 import { ESLINT_FORMATTING_RULES } from '#constants';
+import type { Arrayable, PlainObject } from '@morev/utils';
 import type { FlatConfig, RuleValue } from '#types';
 
 type ExtensionFactoryOptions = {

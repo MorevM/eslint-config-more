@@ -1,13 +1,14 @@
 import { isEmpty } from '@morev/utils';
-import { parserTypescript } from '#parsers';
-import type { TypescriptConfigurationOptions } from '#types';
 import { GLOB_TS, GLOB_TSX } from '#globs';
+import { parserTypescript } from '#parsers';
 import { defineConfigurationPart, mergeParts } from '#utils';
-
 import { universalRules } from '~configurations/universal-rules';
 
-import typescript from './rules/typescript';
 import stylistic from './plugins/stylistic';
+
+import typescript from './rules/typescript';
+
+import type { TypescriptConfigurationOptions } from '#types';
 
 export default function configurationTypescript(options: Partial<TypescriptConfigurationOptions> = {}) {
 	const {

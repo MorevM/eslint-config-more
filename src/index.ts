@@ -1,7 +1,5 @@
-import gitignore from 'eslint-config-flat-gitignore';
 import { arrayUnique } from '@morev/utils';
-import { GLOB_EXCLUDE } from '#globs';
-import type { FlatConfig } from '#types';
+import gitignore from 'eslint-config-flat-gitignore';
 import {
 	configurationAstro,
 	configurationBrowser,
@@ -18,6 +16,8 @@ import {
 	configurationVue,
 	configurationYaml,
 } from '#configurations';
+import { GLOB_EXCLUDE } from '#globs';
+import type { FlatConfig } from '#types';
 
 type ConfigurationsMap = {
 	javascript: typeof configurationJavascript;

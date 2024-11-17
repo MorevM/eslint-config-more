@@ -1,10 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import type { PlainObject } from '@morev/utils';
+import { confirm, isCancel, log } from '@clack/prompts';
 import { formatSlashes, mergeObjects, sleep } from '@morev/utils';
-import { log, confirm, isCancel } from '@clack/prompts';
 import { parse } from 'jsonc-parser';
 import { formatCliMessage } from './utils';
+import type { PlainObject } from '@morev/utils';
 import type { StepOptions } from './types';
 
 const DIRECTORY_NAME = `.vscode`;

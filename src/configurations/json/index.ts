@@ -1,16 +1,15 @@
 import { isEmpty } from '@morev/utils';
-import { parserJson } from '#parsers';
-
-import type { JsonConfigurationOptions } from '#types';
 import { GLOB_ANY_JSON, GLOB_JS_CONFIG, GLOB_JSON5, GLOB_JSONC, GLOB_PACKAGE_JSON, GLOB_TS_CONFIG, GLOB_VSCODE_DIR } from '#globs';
+import { parserJson } from '#parsers';
 import { defineConfigurationPart, mergeParts } from '#utils';
-
 import { universalRules } from '~configurations/universal-rules';
 
-import json from './rules/json';
 import extension from './rules/extension';
+import json from './rules/json';
 import jsonc from './rules/jsonc';
 import packageJson from './rules/package-json';
+
+import type { JsonConfigurationOptions } from '#types';
 
 export default function configurationJson(options: Partial<JsonConfigurationOptions> = {}) {
 	const {

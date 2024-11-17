@@ -1,8 +1,8 @@
 import fs from 'node:fs';
-import type { PackageJson } from '@morev/utils';
-import { formatSlashes, isEmpty, mergeObjects, quote, sleep, tsObject  } from '@morev/utils';
 import { confirm, isCancel, log, select, text } from '@clack/prompts';
+import { formatSlashes, isEmpty, mergeObjects, quote, sleep, tsObject  } from '@morev/utils';
 import { formatCliMessage, getPackageJson, getPackageJsonPath } from './utils';
+import type { PackageJson } from '@morev/utils';
 import type { StepOptions } from './types';
 
 export const addScripts = async (stepOptions: StepOptions) => {

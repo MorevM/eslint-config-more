@@ -1,13 +1,13 @@
 import { isEmpty } from '@morev/utils';
-import { pluginJest } from '#plugins';
-import { parserTypescript } from '#parsers';
-import type { JestConfigurationOptions } from '#types';
 import { GLOB_CYPRESS, GLOB_TESTS } from '#globs';
+import { parserTypescript } from '#parsers';
+import { pluginJest } from '#plugins';
 import { defineConfigurationPart, mergeParts } from '#utils';
-
 import { universalRules } from '~configurations/universal-rules';
 
 import jest from './rules/jest';
+
+import type { JestConfigurationOptions } from '#types';
 
 export default function configurationJest(options: Partial<JestConfigurationOptions> = {}) {
 	const {

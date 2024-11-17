@@ -1,9 +1,9 @@
-import path from 'node:path';
 import fs from 'node:fs';
-import { safeJsonParse, sleep, stripIndent } from '@morev/utils';
-import type { PackageJson } from '@morev/utils';
-import ansis from 'ansis';
+import path from 'node:path';
 import { log } from '@clack/prompts';
+import { safeJsonParse, sleep, stripIndent } from '@morev/utils';
+import ansis from 'ansis';
+import type { PackageJson } from '@morev/utils';
 
 type Agent = 'npm' | 'yarn' | 'pnpm' | 'bun';
 type AgentCommand = 'add-dev' | 'upgrade';

@@ -1,12 +1,12 @@
-import globals from 'globals';
 import { isEmpty } from '@morev/utils';
-import type { AnyConfigurationOptions } from '#types';
-import { defineConfigurationPart, hasTsconfig, mergeParts } from '#utils';
+import globals from 'globals';
 import { GLOB_ANY_CONTAINING_JS } from '#globs';
-
+import { defineConfigurationPart, hasTsconfig, mergeParts } from '#utils';
 import { universalRules } from '~configurations/universal-rules';
 
 import node from './rules/node';
+
+import type { AnyConfigurationOptions } from '#types';
 
 const tryExtensions = ['.js', '.mjs', '.cjs', '.ts', '.mts', '.cts'];
 

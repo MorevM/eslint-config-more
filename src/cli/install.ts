@@ -1,10 +1,10 @@
-import type { ExecException } from 'node:child_process';
-import { isNull, sleep } from '@morev/utils';
 import { confirm, isCancel, log, select, spinner } from '@clack/prompts';
-import * as semver from 'semver';
+import { isNull, sleep } from '@morev/utils';
 import { detect } from 'package-manager-detector';
+import * as semver from 'semver';
 import { customExec } from '#utils';
 import { formatCliMessage, getPackageJson, loadModule, runAgentCommand } from './utils';
+import type { ExecException } from 'node:child_process';
 import type { StepOptions } from './types';
 
 export const install = async (options: StepOptions) => {

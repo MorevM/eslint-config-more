@@ -1,12 +1,12 @@
-import { outro, note, multiselect, cancel, isCancel, log } from '@clack/prompts';
+import { cancel, isCancel, log, multiselect, note, outro } from '@clack/prompts';
 import { tsObject } from '@morev/utils';
-import type { PackageJson } from '@morev/utils';
 import selfPackageJson from '../../package.json';
-import { createStepMessage, formatCliMessage } from './utils';
-import { install } from './install';
-import { createConfig } from './create-config';
-import { updateSettings } from './update-settings';
 import { addScripts } from './add-scripts';
+import { createConfig } from './create-config';
+import { install } from './install';
+import { updateSettings } from './update-settings';
+import { createStepMessage, formatCliMessage } from './utils';
+import type { PackageJson } from '@morev/utils';
 
 // TODO: Custom flag to skip the prompts
 const cleanArguments = process.argv.slice(2);

@@ -1,12 +1,12 @@
 import { isEmpty } from '@morev/utils';
-import { pluginCypress } from '#plugins';
-import type { CypressConfigurationOptions } from '#types';
 import { GLOB_CYPRESS } from '#globs';
+import { pluginCypress } from '#plugins';
 import { defineConfigurationPart, mergeParts } from '#utils';
-
 import { universalRules } from '~configurations/universal-rules';
 
 import cypress from './rules/cypress';
+
+import type { CypressConfigurationOptions } from '#types';
 
 export default function configurationCypress(options: Partial<CypressConfigurationOptions> = {}) {
 	const {

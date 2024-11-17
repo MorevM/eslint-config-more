@@ -1,5 +1,5 @@
-import riskyEslint from 'eslint/use-at-your-own-risk';
 import { arrayUnique, isObject, quote } from '@morev/utils';
+import riskyEslint from 'eslint/use-at-your-own-risk';
 import type { FlatConfig } from '#types';
 
 type Provider = {

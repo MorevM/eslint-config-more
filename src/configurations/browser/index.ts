@@ -1,12 +1,12 @@
-import globals from 'globals';
 import { isEmpty } from '@morev/utils';
-import type { AnyConfigurationOptions } from '#types';
-import { defineConfigurationPart, mergeParts } from '#utils';
+import globals from 'globals';
 import { GLOB_ANY_CONTAINING_JS } from '#globs';
-
+import { defineConfigurationPart, mergeParts } from '#utils';
 import { universalRules } from '~configurations/universal-rules';
 
 import unicorn from './rules/unicorn';
+
+import type { AnyConfigurationOptions } from '#types';
 
 export default function configurationBrowser(options: Partial<AnyConfigurationOptions> = {}) {
 	const {

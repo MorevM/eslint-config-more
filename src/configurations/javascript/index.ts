@@ -1,13 +1,11 @@
+import { isEmpty } from '@morev/utils';
 import { GLOB_ANY_CONTAINING_JS } from '#globs';
 import { defineConfigurationPart, mergeParts } from '#utils';
-import { isEmpty } from '@morev/utils';
 import { universalRules } from '~configurations/universal-rules';
 
 import eslintCommand from './plugins/command';
-
 import eslintComments from './plugins/eslint-comments';
 import eslintImportX from './plugins/import-x';
-
 import eslintJsdoc from './plugins/jsdoc';
 import eslintNoSecrets from './plugins/no-secrets';
 import eslintPerfectionist from './plugins/perfectionist';
@@ -15,8 +13,10 @@ import eslintRegexp from './plugins/regexp';
 import eslintSonarjs from './plugins/sonarjs';
 import eslintStylistic from './plugins/stylistic';
 import eslintUnicorn from './plugins/unicorn';
+
 import possibleProblems from './rules/possible-problems';
 import suggestions from './rules/suggestions';
+
 import type { AnyConfigurationOptions } from '#types';
 
 export default function configurationJavascript(options: Partial<AnyConfigurationOptions> = {}) {

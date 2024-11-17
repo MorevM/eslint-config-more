@@ -1,8 +1,7 @@
 import { isEmpty } from '@morev/utils';
-import { pluginVue } from '#plugins';
-import { parserVue, parserTypescript } from '#parsers';
-import type { VueConfigurationOptions } from '#types';
 import { GLOB_VUE } from '#globs';
+import { parserTypescript, parserVue } from '#parsers';
+import { pluginVue } from '#plugins';
 import { defineConfigurationPart, mergeParts } from '#utils';
 
 import { universalRules } from '~configurations/universal-rules';
@@ -21,6 +20,8 @@ import uncategorizedVue2 from './rules/vue2/uncategorized';
 import essentialVue3 from './rules/vue3/essential';
 import stronglyRecommendedVue3 from './rules/vue3/strongly-recommended';
 import uncategorizedVue3 from './rules/vue3/uncategorized';
+
+import type { VueConfigurationOptions } from '#types';
 
 export default function configurationVue(options: Partial<VueConfigurationOptions> = {}) {
 	const {
@@ -93,7 +94,7 @@ export default function configurationVue(options: Partial<VueConfigurationOption
 				'@stylistic/indent': 'off',
 			},
 		}),
-		defineConfigurationPart({
+		!isEmpty(overrides) && defineConfigurationPart({
 			name: 'morev/vue/user-overrides',
 			files,
 			ignores,

@@ -1,5 +1,5 @@
-import { defineConfigurationPart } from '#utils';
 import { pluginJsdoc, pluginNoAutofix } from '#plugins';
+import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {

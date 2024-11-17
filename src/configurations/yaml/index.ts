@@ -1,12 +1,11 @@
-import { parserYaml } from '#parsers';
-
-import type { YamlConfigurationOptions } from '#types';
 import { GLOB_YAML } from '#globs';
+import { parserYaml } from '#parsers';
 import { defineConfigurationPart, mergeParts } from '#utils';
-
 import { universalRules } from '~configurations/universal-rules';
 
 import yaml from './rules/yaml';
+
+import type { YamlConfigurationOptions } from '#types';
 
 export default function configurationYaml(options: Partial<YamlConfigurationOptions> = {}) {
 	const {

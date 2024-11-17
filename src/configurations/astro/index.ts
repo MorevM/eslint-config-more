@@ -1,14 +1,12 @@
-import globals from 'globals';
 import { isEmpty } from '@morev/utils';
-import { parserAstro, parserTypescript } from '#parsers';
-import type { AstroConfigurationOptions } from '#types';
+import globals from 'globals';
 import { GLOB_ASTRO } from '#globs';
-import { defineConfigurationPart, mergeParts } from '#utils';
+import { parserAstro, parserTypescript } from '#parsers';
 import { pluginAstro } from '#plugins';
-
+import { defineConfigurationPart, mergeParts } from '#utils';
 import { universalRules } from '~configurations/universal-rules';
-
 import astro from './rules/astro';
+import type { AstroConfigurationOptions } from '#types';
 
 export default function configurationAstro(options: Partial<AstroConfigurationOptions> = {}) {
 	const {

@@ -1,15 +1,15 @@
 import { isEmpty } from '@morev/utils';
-import { parserHtml } from '#parsers';
-import type { HtmlConfigurationOptions } from '#types';
 import { GLOB_HTML } from '#globs';
+import { parserHtml } from '#parsers';
 import { defineConfigurationPart, mergeParts } from '#utils';
-
 import { universalRules } from '~configurations/universal-rules';
 
 import accessibility from './rules/accessibility';
 import bestPractice from './rules/best-practice';
 import seo from './rules/seo';
 import style from './rules/style';
+
+import type { HtmlConfigurationOptions } from '#types';
 
 export default function configurationHtml(options: Partial<HtmlConfigurationOptions> = {}) {
 	const {

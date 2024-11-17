@@ -1,12 +1,12 @@
 import { isEmpty } from '@morev/utils';
-import { parserMarkdown } from '#parsers';
-import type { MarkdownConfigurationOptions } from '#types';
 import { GLOB_MARKDOWN } from '#globs';
+import { parserMarkdown } from '#parsers';
 import { defineConfigurationPart, mergeParts } from '#utils';
-
 import { universalRules } from '~configurations/universal-rules';
 
 import markdown from './rules/markdown';
+
+import type { MarkdownConfigurationOptions } from '#types';
 
 export default function configurationMarkdown(options: Partial<MarkdownConfigurationOptions> = {}) {
 	const {

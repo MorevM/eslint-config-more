@@ -1,7 +1,6 @@
-import configurationJavascript from '~configurations/javascript';
-
-import { defineConfigurationPart, extensionFactory } from '#utils';
 import { pluginNoAutofix, pluginTypescript } from '#plugins';
+import { defineConfigurationPart, extensionFactory } from '#utils';
+import configurationJavascript from '~configurations/javascript';
 
 const extensionFromBase = extensionFactory({
 	baseConfig: configurationJavascript(),

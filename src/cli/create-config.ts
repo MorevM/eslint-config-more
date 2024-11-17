@@ -1,10 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { formatSlashes, isArray, pick, quote, sleep, stripIndent, tsObject  } from '@morev/utils';
-import type { PlainObject } from '@morev/utils';
 import { confirm, isCancel, log, multiselect } from '@clack/prompts';
+import { formatSlashes, isArray, pick, quote, sleep, stripIndent, tsObject  } from '@morev/utils';
 import { hasTsconfig } from '#utils';
 import { formatCliMessage, getPackageJson, loadModule, prependTabs } from './utils';
+import type { PlainObject } from '@morev/utils';
 import type { StepOptions } from './types';
 
 const getVueVersion = async () => {

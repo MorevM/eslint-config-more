@@ -1,13 +1,13 @@
 import { isEmpty } from '@morev/utils';
-import { pluginVitest } from '#plugins';
-import { parserTypescript } from '#parsers';
-import type { VitestConfigurationOptions } from '#types';
 import { GLOB_CYPRESS, GLOB_TESTS } from '#globs';
+import { parserTypescript } from '#parsers';
+import { pluginVitest } from '#plugins';
 import { defineConfigurationPart, hasTsconfig, mergeParts } from '#utils';
-
 import { universalRules } from '~configurations/universal-rules';
 
 import vitest from './rules/vitest';
+
+import type { VitestConfigurationOptions } from '#types';
 
 export default function configurationVitest(options: Partial<VitestConfigurationOptions> = {}) {
 	const {
