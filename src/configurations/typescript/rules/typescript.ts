@@ -4,7 +4,7 @@ import { defineConfigurationPart, extensionFactory } from '#utils';
 import { pluginNoAutofix, pluginTypescript } from '#plugins';
 
 const extensionFromBase = extensionFactory({
-	baseRules: configurationJavascript().rules!,
+	baseConfig: configurationJavascript(),
 	prefix: '@typescript-eslint',
 	alwaysDisableBaseRule: true,
 });

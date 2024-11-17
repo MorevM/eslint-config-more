@@ -1,15 +1,15 @@
-import type { PlainObject } from '@morev/utils';
+import type { Arrayable, PlainObject } from '@morev/utils';
 import { isArray, isEmpty, toArray } from '@morev/utils';
 import { ESLINT_FORMATTING_RULES } from '#constants';
-import type { RuleValue } from '#types';
+import type { FlatConfig, RuleValue } from '#types';
 
 type ExtensionFactoryOptions = {
 	/**
-	 * The rules among which to search for a base rule.
+	 * The configuration among whose rules to search for a base rule.
 	 *
-	 * @example configurationJavascript().rules!
+	 * @example configurationJavascript()
 	 */
-	baseRules: Record<string, RuleValue>;
+	baseConfig: Arrayable<FlatConfig>;
 
 	/**
 	 * The prefix of base rule to search. \
@@ -44,7 +44,11 @@ type ExtensionFactoryOptions = {
  * @returns           The function to define extension rule.
  */
 export const extensionFactory = (options: ExtensionFactoryOptions) => {
-	const { prefix, alwaysDisableBaseRule = false, baseRules, baseRulePrefix = '' } = options;
+	const { prefix, alwaysDisableBaseRule = false, baseConfig, baseRulePrefix = '' } = options;
+
+	const baseRules = toArray(baseConfig).reduce<FlatConfig['rules']>((acc, item) => {
+		return { ...acc, ...item.rules };
+	}, {});
 
 	/**
 	 * Function to define extension rule based on the original ESLint rule value.
@@ -67,7 +71,7 @@ export const extensionFactory = (options: ExtensionFactoryOptions) => {
 				? `@stylistic/${cleanRule}`
 				: cleanRule;
 
-			const ruleValue = baseRules[ruleName];
+			const ruleValue = baseRules?.[ruleName];
 			if (!ruleValue) {
 				throw new Error(`There is no rule '${ruleName}' to extend.`);
 			}

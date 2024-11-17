@@ -4,7 +4,7 @@ import { pluginJson } from '#plugins';
 import { defineConfigurationPart, extensionFactory } from '#utils';
 
 const extensionFromBase = extensionFactory({
-	baseRules: configurationJavascript().rules!,
+	baseConfig: configurationJavascript(),
 	prefix: 'jsonc',
 });
 

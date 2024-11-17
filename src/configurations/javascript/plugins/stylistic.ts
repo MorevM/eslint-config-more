@@ -95,10 +95,6 @@ export default defineConfigurationPart({
 		// https://eslint.style/rules/js/dot-location
 		'@stylistic/dot-location': ['warn', 'property'],
 
-		// Require or disallow newline at the end of files (autofixable)
-		// https://eslint.style/rules/js/eol-last
-		'@stylistic/eol-last': ['warn', 'always'],
-
 		// Require or disallow spacing between function identifiers and their invocations (autofixable)
 		// https://eslint.style/rules/js/func-call-spacing
 		'@stylistic/func-call-spacing': 'off',
@@ -166,10 +162,6 @@ export default defineConfigurationPart({
 		// Enforce position of line comments (autofixable)
 		// https://eslint.style/rules/js/line-comment-position
 		'@stylistic/line-comment-position': 'off',
-
-		// Enforce consistent linebreak style (autofixable)
-		// https://eslint.style/rules/js/linebreak-style
-		'@stylistic/linebreak-style': ['error', 'unix'],
 
 		// Enforce empty lines around comments (autofixable)
 		// https://eslint.style/rules/js/lines-around-comment
@@ -272,26 +264,10 @@ export default defineConfigurationPart({
 			},
 		}],
 
-		// Disallow multiple empty lines (autofixable)
-		// https://eslint.style/rules/js/no-multiple-empty-lines
-		// Note: only one newline at the end, and no new lines at the beginning
-		'@stylistic/no-multiple-empty-lines': ['warn', {
-			max: 2,
-			maxBOF: 0,
-			maxEOF: 0,
-		}],
-
 		// Disallow all tabs
 		// https://eslint.style/rules/js/no-tabs
 		// Note: tabs are better :)
 		'@stylistic/no-tabs': 'off',
-
-		// Disallow trailing whitespace at the end of lines (autofixable)
-		// https://eslint.style/rules/js/no-trailing-spaces
-		'@stylistic/no-trailing-spaces': ['error', {
-			skipBlankLines: false,
-			ignoreComments: false,
-		}],
 
 		// Disallow whitespace before properties (autofixable)
 		// https://eslint.style/rules/js/no-whitespace-before-property

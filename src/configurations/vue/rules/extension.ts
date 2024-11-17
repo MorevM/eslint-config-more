@@ -4,7 +4,7 @@ import { defineConfigurationPart, extensionFactory } from '#utils';
 import { pluginNoAutofix, pluginVue } from '#plugins';
 
 const extensionFromBase = extensionFactory({
-	baseRules: configurationJavascript().rules!,
+	baseConfig: configurationJavascript(),
 	prefix: 'vue',
 });
 

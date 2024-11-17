@@ -5,12 +5,12 @@ import { defineConfigurationPart, extensionFactory } from '#utils';
 import { pluginAstro } from '#plugins';
 
 const extensionFromBase = extensionFactory({
-	baseRules: configurationJavascript().rules!,
+	baseConfig: configurationJavascript(),
 	prefix: 'astro',
 });
 
 const extensionFromJsxA11y = extensionFactory({
-	baseRules: configurationJsx().rules!,
+	baseConfig: configurationJsx(),
 	baseRulePrefix: 'jsx-a11y',
 	prefix: 'astro',
 });
