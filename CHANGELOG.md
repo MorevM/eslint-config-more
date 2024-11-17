@@ -1,5 +1,26 @@
 
 
+## [35.2.0](https://github.com/MorevM/eslint-config/compare/v35.1.0...v35.2.0) (2024-11-17)
+
+
+### Features
+
+* Apply universal rules individually to each configuration ([e887b1a](https://github.com/MorevM/eslint-config/commit/e887b1a74bab47e096d2565014ac88cca37a173d))
+* **javascript:** Add `eslint-plugin-perfectionist`, replace `import-x/order` rule with it ([dbcbbee](https://github.com/MorevM/eslint-config/commit/dbcbbee7d18c41bc72d407afdb1d986b23abd5c2))
+* **json:** Enforce trailing commas in JSON5 and JSONC files ([0bd7c7f](https://github.com/MorevM/eslint-config/commit/0bd7c7fcdedee7968ee8884d508dabca0d287dbc))
+
+
+### Bug fixes
+
+* **base:** Disable `unicorn/better-regex` if favor of using only `eslint-plugin-regexp` for such purposes ([e35cfc5](https://github.com/MorevM/eslint-config/commit/e35cfc5c04bdb42f126ed88b0b340a50537b213c))
+* **cli:** Append trailing commas in generated VSCode settings ([a0cfc82](https://github.com/MorevM/eslint-config/commit/a0cfc82a07e4f7f584b90f06fc6c8cce0105f3fe))
+
+
+### Tests
+
+* Add a repository typo-safety test ([3171f50](https://github.com/MorevM/eslint-config/commit/3171f503a87b1652f3065d9e406e4e10afaa8f0c))
+
+
 ## [35.1.0](https://github.com/MorevM/eslint-config/compare/v35.0.3...v35.1.0) (2024-11-16)
 
 
