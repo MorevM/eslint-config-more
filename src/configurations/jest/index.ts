@@ -1,3 +1,4 @@
+import { isEmpty } from '@morev/utils';
 import { pluginJest } from '#plugins';
 import { parserTypescript } from '#parsers';
 import type { JestConfigurationOptions } from '#types';
@@ -40,18 +41,22 @@ export default function configurationJest(options: Partial<JestConfigurationOpti
 			ignores,
 			...mergeParts(
 				jest,
-				{
-					rules: overrides,
-				},
 			),
 		}),
 		defineConfigurationPart({
-			name: 'morev/jest/overrides',
+			name: 'morev/jest/disables',
 			files,
 			ignores,
 			rules: {
+				// It's better to be explicit in tests.
 				'sonarjs/no-duplicate-string': 'off',
 			},
 		}),
-	];
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/jest/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

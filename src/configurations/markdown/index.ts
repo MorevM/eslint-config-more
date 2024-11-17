@@ -1,3 +1,4 @@
+import { isEmpty } from '@morev/utils';
 import { parserMarkdown } from '#parsers';
 import type { MarkdownConfigurationOptions } from '#types';
 import { GLOB_MARKDOWN } from '#globs';
@@ -30,17 +31,23 @@ export default function configurationMarkdown(options: Partial<MarkdownConfigura
 			ignores,
 			...mergeParts(
 				markdown,
-				{
-					rules: {
-						'@stylistic/no-trailing-spaces': 'off',
-						'@stylistic/max-len': 'off',
-						'unicorn/filename-case': 'off',
-					},
-				},
-				{
-					rules: overrides,
-				},
 			),
 		}),
-	];
+		defineConfigurationPart({
+			name: 'morev/markdown/disables',
+			files,
+			ignores,
+			rules: {
+				'@stylistic/no-trailing-spaces': 'off',
+				'@stylistic/max-len': 'off',
+				'unicorn/filename-case': 'off',
+			},
+		}),
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/markdown/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

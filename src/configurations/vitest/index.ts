@@ -1,3 +1,4 @@
+import { isEmpty } from '@morev/utils';
 import { pluginVitest } from '#plugins';
 import { parserTypescript } from '#parsers';
 import type { VitestConfigurationOptions } from '#types';
@@ -54,9 +55,6 @@ export default function configurationVitest(options: Partial<VitestConfiguration
 			ignores,
 			...mergeParts(
 				vitest,
-				{
-					rules: overrides,
-				},
 			),
 		}),
 		defineConfigurationPart({
@@ -68,5 +66,11 @@ export default function configurationVitest(options: Partial<VitestConfiguration
 				'sonarjs/no-duplicate-string': 'off',
 			},
 		}),
-	];
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/vitest/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

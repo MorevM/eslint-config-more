@@ -1,3 +1,4 @@
+import { isEmpty } from '@morev/utils';
 import { parserHtml } from '#parsers';
 import type { HtmlConfigurationOptions } from '#types';
 import { GLOB_HTML } from '#globs';
@@ -39,17 +40,20 @@ export default function configurationHtml(options: Partial<HtmlConfigurationOpti
 				bestPractice,
 				seo,
 				style,
-				{
-					rules: overrides,
-				},
 			),
 		}),
 		defineConfigurationPart({
-			name: 'morev/html/overrides',
+			name: 'morev/html/disables',
 			rules: {
 				'capitalized-comments': 'off',
 				'@stylistic/spaced-comment': 'off',
 			},
 		}),
-	];
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/html/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

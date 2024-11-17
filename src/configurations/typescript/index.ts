@@ -1,3 +1,4 @@
+import { isEmpty } from '@morev/utils';
 import { parserTypescript } from '#parsers';
 import type { TypescriptConfigurationOptions } from '#types';
 import { GLOB_TS, GLOB_TSX } from '#globs';
@@ -46,9 +47,6 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 			...mergeParts(
 				typescript,
 				stylistic,
-				{
-					rules: overrides,
-				},
 			),
 		}),
 		defineConfigurationPart({
@@ -63,5 +61,11 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 				'jsdoc/require-param-type': 'off',
 			},
 		}),
-	];
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/typescript/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

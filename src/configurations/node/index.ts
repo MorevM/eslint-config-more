@@ -1,4 +1,5 @@
 import globals from 'globals';
+import { isEmpty } from '@morev/utils';
 import type { AnyConfigurationOptions } from '#types';
 import { defineConfigurationPart, hasTsconfig, mergeParts } from '#utils';
 import { GLOB_ANY_CONTAINING_JS } from '#globs';
@@ -57,10 +58,13 @@ export default function configurationNode(options: Partial<AnyConfigurationOptio
 			ignores,
 			...mergeParts(
 				node,
-				{
-					rules: overrides,
-				},
 			),
 		}),
-	];
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/node/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

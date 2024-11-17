@@ -31,9 +31,6 @@ export default function configurationYaml(options: Partial<YamlConfigurationOpti
 			ignores,
 			...mergeParts(
 				yaml,
-				{
-					rules: overrides,
-				},
 			),
 		}),
 		defineConfigurationPart({
@@ -53,5 +50,11 @@ export default function configurationYaml(options: Partial<YamlConfigurationOpti
 				'yml/file-extension': 'off',
 			},
 		}),
-	];
+		defineConfigurationPart({
+			name: 'morev/yaml/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

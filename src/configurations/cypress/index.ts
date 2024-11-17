@@ -1,3 +1,4 @@
+import { isEmpty } from '@morev/utils';
 import { pluginCypress } from '#plugins';
 import type { CypressConfigurationOptions } from '#types';
 import { GLOB_CYPRESS } from '#globs';
@@ -32,9 +33,6 @@ export default function configurationCypress(options: Partial<CypressConfigurati
 			ignores,
 			...mergeParts(
 				cypress,
-				{
-					rules: overrides,
-				},
 			),
 		}),
 		defineConfigurationPart({
@@ -42,8 +40,15 @@ export default function configurationCypress(options: Partial<CypressConfigurati
 			files,
 			ignores,
 			rules: {
+				// It's better to be explicit in tests.
 				'sonarjs/no-duplicate-string': 'off',
 			},
 		}),
-	];
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/cypress/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

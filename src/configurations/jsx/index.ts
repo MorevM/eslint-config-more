@@ -1,3 +1,4 @@
+import { isEmpty } from '@morev/utils';
 import { GLOB_JSX, GLOB_TSX } from '#globs';
 import type { JsxConfigurationOptions } from '#types';
 import { defineConfigurationPart, mergeParts } from '#utils';
@@ -37,10 +38,13 @@ export default function configurationJsx(options: Partial<JsxConfigurationOption
 			...mergeParts(
 				jsxA11y,
 				stylistic,
-				{
-					rules: overrides,
-				},
 			),
 		}),
-	];
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/jsx/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

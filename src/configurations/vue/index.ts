@@ -1,3 +1,4 @@
+import { isEmpty } from '@morev/utils';
 import { pluginVue } from '#plugins';
 import { parserVue, parserTypescript } from '#parsers';
 import type { VueConfigurationOptions } from '#types';
@@ -82,15 +83,21 @@ export default function configurationVue(options: Partial<VueConfigurationOption
 			ignores,
 			...mergeParts(
 				rules,
-				{
-					rules: {
-						'@stylistic/indent': 'off',
-					},
-				},
-				{
-					rules: overrides,
-				},
 			),
 		}),
-	];
+		defineConfigurationPart({
+			name: 'morev/vue/disables',
+			files,
+			ignores,
+			rules: {
+				'@stylistic/indent': 'off',
+			},
+		}),
+		defineConfigurationPart({
+			name: 'morev/vue/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

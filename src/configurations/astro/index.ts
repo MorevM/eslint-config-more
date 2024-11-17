@@ -1,4 +1,5 @@
 import globals from 'globals';
+import { isEmpty } from '@morev/utils';
 import { parserAstro, parserTypescript } from '#parsers';
 import type { AstroConfigurationOptions } from '#types';
 import { GLOB_ASTRO } from '#globs';
@@ -42,10 +43,13 @@ export default function configurationAstro(options: Partial<AstroConfigurationOp
 			ignores,
 			...mergeParts(
 				astro,
-				{
-					rules: overrides,
-				},
 			),
 		}),
-	];
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/astro/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

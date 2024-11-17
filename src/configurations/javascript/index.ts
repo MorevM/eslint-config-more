@@ -1,3 +1,4 @@
+import { isEmpty } from '@morev/utils';
 import type { AnyConfigurationOptions } from '#types';
 import { defineConfigurationPart, mergeParts } from '#utils';
 import { GLOB_ANY_CONTAINING_JS } from '#globs';
@@ -72,10 +73,13 @@ export default function configurationJavascript(options: Partial<AnyConfiguratio
 				eslintStylistic,
 				eslintUnicorn,
 				eslintCommand,
-				{
-					rules: overrides,
-				},
 			),
 		}),
-	];
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/javascript/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

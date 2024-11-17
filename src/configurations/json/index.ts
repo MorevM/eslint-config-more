@@ -1,3 +1,4 @@
+import { isEmpty } from '@morev/utils';
 import { parserJson } from '#parsers';
 
 import type { JsonConfigurationOptions } from '#types';
@@ -37,9 +38,6 @@ export default function configurationJson(options: Partial<JsonConfigurationOpti
 			...mergeParts(
 				json,
 				extension,
-				{
-					rules: overrides,
-				},
 			),
 		}),
 		defineConfigurationPart({
@@ -70,5 +68,11 @@ export default function configurationJson(options: Partial<JsonConfigurationOpti
 				packageJson,
 			),
 		}),
-	];
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/json/user-overrides',
+			files: [GLOB_ANY_JSON],
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }

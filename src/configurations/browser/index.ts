@@ -1,4 +1,5 @@
 import globals from 'globals';
+import { isEmpty } from '@morev/utils';
 import type { AnyConfigurationOptions } from '#types';
 import { defineConfigurationPart, mergeParts } from '#utils';
 import { GLOB_ANY_CONTAINING_JS } from '#globs';
@@ -41,10 +42,13 @@ export default function configurationBrowser(options: Partial<AnyConfigurationOp
 			ignores,
 			...mergeParts(
 				unicorn,
-				{
-					rules: overrides,
-				},
 			),
 		}),
-	];
+		!isEmpty(overrides) && defineConfigurationPart({
+			name: 'morev/browser/user-overrides',
+			files,
+			ignores,
+			rules: overrides,
+		}),
+	].filter(Boolean);
 }
