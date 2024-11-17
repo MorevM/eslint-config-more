@@ -9,7 +9,8 @@ export default defineConfigurationPart({
 	rules: {
 		// Improve regexes by making them shorter, consistent, and safer (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/better-regex.md
-		'unicorn/better-regex': ['warn', {
+		// Note: there is a plugin `eslint-plugin-regexp` providing more functionality
+		'unicorn/better-regex': ['off', {
 			sortCharacterClasses: false,
 		}],
 
