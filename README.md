@@ -110,7 +110,7 @@ Create the [`eslint.config.js`](https://eslint.org/docs/latest/use/configure/con
 with the following content as a starting point:
 
 ```js
-import { combine, defineIgnores, defineConfiguration } from '@morev/eslint-config';
+import { combine, defineConfiguration, defineIgnores } from '@morev/eslint-config';
 
 export default combine([
   defineIgnores(),
