@@ -1,5 +1,5 @@
-import { defineConfigurationPart } from '#utils';
 import { pluginImportX } from '#plugins';
+import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
@@ -227,7 +227,8 @@ export default defineConfigurationPart({
 
 		// Enforce a convention in module import order (autofixable)
 		// https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/order.md
-		'import-x/order': ['warn', {
+		// Note: There is `eslint-plugin-perfectionist` that does it in much more configurable way.
+		'import-x/order': ['off', {
 			'alphabetize': {
 				caseInsensitive: false,
 				order: 'ignore',
