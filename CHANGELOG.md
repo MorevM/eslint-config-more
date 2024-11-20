@@ -1,5 +1,20 @@
 
 
+## [35.2.1](https://github.com/MorevM/eslint-config/compare/v35.2.0...v35.2.1) (2024-11-20)
+
+
+### Documentation
+
+* Use natural sorting order in docs ([e3fba0b](https://github.com/MorevM/eslint-config/commit/e3fba0b291711547ae930c69b685bc4baf348a31))
+
+
+### Bug fixes
+
+* **cli:** Use natural import sorting order in generated `eslint.config.js` ([4653dcd](https://github.com/MorevM/eslint-config/commit/4653dcd4bfce9c3439066d25d6ae6582929ed88e))
+* **json:** Add `packageManager` to the list of sorted `package.json` keys ([29b90de](https://github.com/MorevM/eslint-config/commit/29b90de0d654f6b739c9fb9b79ff76a3217e3ca4))
+* **yaml:** Add `.yarnrc.yml` to the exceptions of `yml/file-extension` rule ([fb826c4](https://github.com/MorevM/eslint-config/commit/fb826c496063522e7318b51087573bb3b83eda6a))
+
+
 ## [35.2.0](https://github.com/MorevM/eslint-config/compare/v35.1.0...v35.2.0) (2024-11-17)
 
 
