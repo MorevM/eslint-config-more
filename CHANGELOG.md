@@ -1,5 +1,13 @@
 
 
+## [35.2.2](https://github.com/MorevM/eslint-config/compare/v35.2.1...v35.2.2) (2024-11-20)
+
+No notable changes, just CI fix.
+
+### CI improvements
+
+* Rename publish command ([4ac792a](https://github.com/MorevM/eslint-config/commit/4ac792a7b72b7f7afeb99811881ec8665b014c6a))
+
 ## [35.2.1](https://github.com/MorevM/eslint-config/compare/v35.2.0...v35.2.1) (2024-11-20)
 
 
