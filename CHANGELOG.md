@@ -1,5 +1,10 @@
 
 
+## [35.2.3](https://github.com/MorevM/eslint-config/compare/v35.2.2...v35.2.3) (2024-11-20)
+
+
+No notable changes, attempt to fix CI.
+
 ## [35.2.2](https://github.com/MorevM/eslint-config/compare/v35.2.1...v35.2.2) (2024-11-20)
 
 No notable changes, just CI fix.
