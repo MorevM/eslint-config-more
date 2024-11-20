@@ -3,7 +3,7 @@
 	"description": "Strict shareable ESLint configuration with reasonable defaults",
 	"type": "module",
 	"version": "35.2.0",
-	"private": false,
+	"packageManager": "yarn@4.5.1",
 	"engines": {
 		"node": ">=20"
 	},

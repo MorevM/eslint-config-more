@@ -48,3 +48,7 @@
 *.tgz binary
 *.7z binary
 *.rar binary
+
+# Yarn-specific
+/.yarn/releases/** binary
+/.yarn/plugins/** binary
