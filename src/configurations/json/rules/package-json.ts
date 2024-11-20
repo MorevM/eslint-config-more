@@ -15,6 +15,7 @@ export default defineConfigurationPart({
 				'description',
 				'type',
 				'version',
+				'packageManager',
 				'private',
 				'workspaces',
 				'engines',
