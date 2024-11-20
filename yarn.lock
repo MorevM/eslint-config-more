@@ -1109,7 +1109,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@morev/eslint-config@workspace:.":
+"@morev/eslint-config@workspace:., @morev/eslint-config@workspace:^":
   version: 0.0.0-use.local
   resolution: "@morev/eslint-config@workspace:."
   dependencies:
@@ -1117,6 +1117,7 @@ __metadata:
     "@html-eslint/eslint-plugin": "npm:^0.27.0"
     "@html-eslint/parser": "npm:^0.27.0"
     "@morev/commitlint-config": "npm:^0.2.2"
+    "@morev/eslint-config": "workspace:^"
     "@morev/utils": "npm:^3.11.1"
     "@release-it/conventional-changelog": "npm:8"
     "@stylistic/eslint-plugin": "npm:^2.10.1"

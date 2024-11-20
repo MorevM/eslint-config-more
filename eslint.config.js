@@ -1,4 +1,4 @@
-import { combine, defineConfiguration, defineIgnores } from './dist/index.js';
+import { combine, defineConfiguration, defineIgnores } from '@morev/eslint-config';
 
 export default combine([
 	defineIgnores({
