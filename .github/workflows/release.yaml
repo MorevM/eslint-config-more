@@ -51,6 +51,6 @@ jobs:
           body: ${{steps.latest-changelog-entry.outputs.result}}
 
       - name: Publish package
-        run: yarn publish --access public
+        run: yarn npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
