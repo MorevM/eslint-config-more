@@ -19,8 +19,6 @@ jobs:
         with:
           node-version: 20
           cache: yarn
-          scope: '@morev'
-          registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -50,7 +48,13 @@ jobs:
         with:
           body: ${{steps.latest-changelog-entry.outputs.result}}
 
+      - name: Setup .yarnrc.yml
+        run: |
+          yarn config set npmScopes.morev.npmRegistryServer "https://registry.npmjs.org"
+          yarn config set npmScopes.morev.npmAlwaysAuth true
+          yarn config set npmScopes.morev.npmAuthToken $NPM_AUTH_TOKEN
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Publish package
         run: yarn npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
