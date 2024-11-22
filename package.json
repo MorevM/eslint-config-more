@@ -37,17 +37,17 @@
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js"
 		},
-		"./plugins": {
-			"types": "./dist/plugins.d.ts",
-			"import": "./dist/plugins.js"
+		"./globs": {
+			"types": "./dist/globs.d.ts",
+			"import": "./dist/globs.js"
 		},
 		"./parsers": {
 			"types": "./dist/parsers.d.ts",
 			"import": "./dist/parsers.js"
 		},
-		"./globs": {
-			"types": "./dist/globs.d.ts",
-			"import": "./dist/globs.js"
+		"./plugins": {
+			"types": "./dist/plugins.d.ts",
+			"import": "./dist/plugins.js"
 		}
 	},
 	"main": "./dist/index.js",
