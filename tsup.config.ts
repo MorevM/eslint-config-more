@@ -37,5 +37,6 @@ export const tsup: Options = {
 		'eslint-plugin-vue',
 		'eslint-plugin-yml',
 		'eslint-plugin-perfectionist',
+		'eslint-plugin-package-json',
 	],
 };

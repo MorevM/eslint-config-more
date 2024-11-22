@@ -14,6 +14,7 @@ export { default as pluginMarkdown } from 'eslint-plugin-markdownlint';
 export { default as pluginN } from 'eslint-plugin-n';
 export { default as pluginNoAutofix } from 'eslint-plugin-no-autofix';
 export { default as pluginNoSecrets } from 'eslint-plugin-no-secrets';
+export { default as pluginPackageJson } from 'eslint-plugin-package-json';
 export { default as pluginPerfectionist } from 'eslint-plugin-perfectionist';
 export { default as pluginRegexp } from 'eslint-plugin-regexp';
 export { default as pluginSonarjs } from 'eslint-plugin-sonarjs';

@@ -13,6 +13,7 @@
 		"allowJs": true,
 		"skipLibCheck": true,
 		"types": ["node", "vitest/globals"],
+		"rootDir": ".",
 		"baseUrl": ".",
 		"paths": {
 			"#configurations": ["./src/configurations/index.ts"],
