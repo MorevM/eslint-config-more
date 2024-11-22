@@ -1,5 +1,23 @@
 
 
+## [36.0.0](https://github.com/MorevM/eslint-config/compare/v35.2.3...v36.0.0) (2024-11-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **json:** With new rules that comes with `eslint-plugin-package-json` configuration for `package.json` become more strict. \
+Should actually be backwards compatible, as the things being validated are mostly things that will prevent normal workflow if used incorrectly. \
+But just in case, check your `package.json` after the upgrade.
+
+### Features
+
+* **json:** Add new keys ordering rules: `$schema`, `displayName`, `sideEffects` ([5422839](https://github.com/MorevM/eslint-config/commit/5422839ee0803a404733a29c00af949e2de2467f))
+* **json:** Consistent order of `author`, `contributors` and `maintainers` keys of `package.json` ([cc368c5](https://github.com/MorevM/eslint-config/commit/cc368c5228a690ce6aa875711481d0f8ecab05d7))
+* **json:** Consistent order of `exports` and `config` keys of `package.json` ([4b2bb49](https://github.com/MorevM/eslint-config/commit/4b2bb4939be7e58d7f5a3e2c3675173ea925dfe5))
+* **json:** Consistent order of `repository`, `funding` and `license` keys of `package.json` ([4bfed7a](https://github.com/MorevM/eslint-config/commit/4bfed7a7ecb3547205bf54053409cfa34f499a8b))
+* **json:** Setup `eslint-plugin-package-json` ([375810f](https://github.com/MorevM/eslint-config/commit/375810f9fea21d42cbbe3055d5e1bd93c4b2c3f0))
+
+
 ## [35.2.3](https://github.com/MorevM/eslint-config/compare/v35.2.2...v35.2.3) (2024-11-20)
 
 
