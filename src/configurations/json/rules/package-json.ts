@@ -64,6 +64,18 @@ export default defineConfigurationPart({
 				pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
 				order: { type: 'asc' },
 			},
+			{
+				pathPattern: '^author$',
+				order: ['name', 'email', 'url'],
+			},
+			{
+				pathPattern: '^contributors\\[\\d+\\]',
+				order: ['name', 'email', 'url'],
+			},
+			{
+				pathPattern: '^maintainers\\[\\d+\\]',
+				order: ['name', 'email', 'url'],
+			},
 		],
 	},
 });
