@@ -80,6 +80,18 @@ export default defineConfigurationPart({
 				pathPattern: '^(?:repository|funding|license)$',
 				order: ['type', 'url'],
 			},
+			{
+				pathPattern: '^(?:config|exports)$',
+				order: { type: 'asc' },
+			},
+			{
+				pathPattern: '^exports(?:\\[[^\\]]+\\]|\\.[^.]+)$',
+				order: [
+					'types',
+					'import',
+					'require',
+				],
+			},
 		],
 	},
 });
