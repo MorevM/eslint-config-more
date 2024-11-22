@@ -76,6 +76,10 @@ export default defineConfigurationPart({
 				pathPattern: '^maintainers\\[\\d+\\]',
 				order: ['name', 'email', 'url'],
 			},
+			{
+				pathPattern: '^(?:repository|funding|license)$',
+				order: ['type', 'url'],
+			},
 		],
 	},
 });
