@@ -1161,7 +1161,7 @@ __metadata:
     jsonc-eslint-parser: "npm:^2.4.0"
     jsonc-parser: "npm:^3.3.1"
     lefthook: "npm:^1.8.2"
-    package-manager-detector: "npm:^0.2.2"
+    package-manager-detector: "npm:^0.2.4"
     release-it: "npm:^17.10.0"
     semver: "npm:^7.6.3"
     tsup: "npm:^8.3.5"
@@ -7630,10 +7630,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"package-manager-detector@npm:^0.2.2":
-  version: 0.2.2
-  resolution: "package-manager-detector@npm:0.2.2"
-  checksum: 10c0/c2ba6c8910278b478f16454fba670790e8c173905378104d769ad369492c830a23ffdaf6b010bf7df2b4a64a2d875ba563a9bdf3f3ed3cd19312e047d192d382
+"package-manager-detector@npm:^0.2.4":
+  version: 0.2.4
+  resolution: "package-manager-detector@npm:0.2.4"
+  checksum: 10c0/a777b8758afd9372874909becf7ba72616b1a8d568c48ab3dce6028e9937973f75f6d3af714090a3577693307318fe657035e0ecd12610b64fc99e02419db7b1
   languageName: node
   linkType: hard
 
