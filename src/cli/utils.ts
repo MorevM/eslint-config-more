@@ -5,7 +5,7 @@ import { safeJsonParse, sleep, stripIndent } from '@morev/utils';
 import ansis from 'ansis';
 import type { PackageJson } from '@morev/utils';
 
-type Agent = 'npm' | 'yarn' | 'pnpm' | 'bun';
+type Agent = 'npm' | 'yarn' | 'pnpm' | 'bun' | 'deno';
 type AgentCommand = 'add-dev' | 'upgrade';
 type AgentCommandDeclaration = {
 	command: string;
@@ -27,6 +27,10 @@ export const runAgentCommand = (agent: Agent, action: AgentCommand, args: string
 			'upgrade': { command: 'update', flags: [] },
 		},
 		bun: {
+			'add-dev': { command: 'add', flags: ['--dev'] },
+			'upgrade': { command: 'update', flags: [] },
+		},
+		deno: {
 			'add-dev': { command: 'add', flags: ['--dev'] },
 			'upgrade': { command: 'update', flags: [] },
 		},

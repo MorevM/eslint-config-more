@@ -84,6 +84,10 @@ export const install = async (options: StepOptions) => {
 				value: 'bun',
 				label: 'bun',
 			},
+			{
+				value: 'deno',
+				label: 'deno',
+			},
 		],
 	});
 	if (isCancel(packageManager)) return;
