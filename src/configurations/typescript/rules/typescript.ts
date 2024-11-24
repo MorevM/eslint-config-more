@@ -585,6 +585,10 @@ export default defineConfigurationPart({
 			ignoreStringArrays: true,
 		}],
 
+		// Enforce that `get()` types should be assignable to their equivalent `set()` type
+		// https://typescript-eslint.io/rules/related-getter-setter-pairs/
+		'@typescript-eslint/related-getter-setter-pairs': 'off',
+
 		// Disallow async functions which have no await expression
 		// https://typescript-eslint.io/rules/require-await
 		...extensionFromBase('require-await'),
