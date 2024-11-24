@@ -34,6 +34,10 @@ export default defineConfigurationPart({
 			partitionByNewLine: true,
 		}],
 
+		// Enforce sorted heritage clauses (autofixable)
+		// https://perfectionist.dev/rules/sort-heritage-clauses
+		'perfectionist/sort-heritage-clauses': 'off',
+
 		// Enforce sorted imports (autofixable)
 		// https://perfectionist.dev/rules/sort-imports
 		'perfectionist/sort-imports': ['warn', {
