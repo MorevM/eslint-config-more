@@ -105,6 +105,10 @@ export default defineConfigurationPart({
 		// https://perfectionist.dev/rules/sort-maps
 		'perfectionist/sort-maps': 'off',
 
+		// Enforce sorted module members (autofixable)
+		// https://perfectionist.dev/rules/sort-modules
+		'perfectionist/sort-modules': 'off',
+
 		// Enforce sorted named exports (autofixable)
 		// https://perfectionist.dev/rules/sort-named-exports
 		'perfectionist/sort-named-exports': ['warn', {
