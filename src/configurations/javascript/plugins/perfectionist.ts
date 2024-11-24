@@ -14,6 +14,10 @@ export default defineConfigurationPart({
 		// https://perfectionist.dev/rules/sort-classes
 		'perfectionist/sort-classes': 'off',
 
+		// Enforce sorted decorators. (autofixable)
+		// https://perfectionist.dev/rules/sort-decorators
+		'perfectionist/sort-decorators': 'off',
+
 		// Enforce sorted TypeScript enum members (autofixable)
 		// https://perfectionist.dev/rules/sort-enums
 		'perfectionist/sort-enums': 'off',
