@@ -41,7 +41,6 @@ export default defineConfigurationPart({
 			order: 'asc',
 			ignoreCase: true,
 			specialCharacters: 'keep',
-			matcher: 'regex',
 			internalPattern: [
 				'^~.*',
 				'^@/.*',
@@ -49,6 +48,8 @@ export default defineConfigurationPart({
 			],
 			sortSideEffects: false,
 			newlinesBetween: 'ignore',
+			partitionByComment: false,
+			partitionByNewLine: false,
 			groups: [
 				['vitest', 'jest'],
 				['vite'],
