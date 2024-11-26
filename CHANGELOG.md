@@ -1,5 +1,16 @@
 
 
+## [36.1.0](https://github.com/MorevM/eslint-config/compare/v36.0.0...v36.1.0) (2024-11-26)
+
+### Refactoring
+
+* Fix `GLOB_ANY_JS` to include jsx/tsx files ([a3e7431](https://github.com/MorevM/eslint-config/commit/a3e7431ec549e7c5944b553103f9415b266f9f55))
+
+### Bug fixes
+
+* **vitest:** Do not require `.js` files to be included in `tsconfig.json` using Vitest `js` files ([2a2a1f1](https://github.com/MorevM/eslint-config/commit/2a2a1f13223443c344d4b821c82dd8c2a82ee906))
+
+
 ## [36.0.0](https://github.com/MorevM/eslint-config/compare/v35.2.3...v36.0.0) (2024-11-22)
 
 
