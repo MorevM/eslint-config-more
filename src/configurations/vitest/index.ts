@@ -1,8 +1,8 @@
 import { isEmpty } from '@morev/utils';
-import { GLOB_CYPRESS, GLOB_TESTS } from '#globs';
+import { GLOB_ANY_JS, GLOB_ANY_TS, GLOB_CYPRESS, GLOB_TESTS } from '#globs';
 import { parserTypescript } from '#parsers';
 import { pluginVitest } from '#plugins';
-import { defineConfigurationPart, hasTsconfig, mergeParts } from '#utils';
+import { defineConfigurationPart, mergeParts } from '#utils';
 import { universalRules } from '~configurations/universal-rules';
 
 import vitest from './rules/vitest';
@@ -25,19 +25,6 @@ export default function configurationVitest(options: Partial<VitestConfiguration
 		};
 	}
 
-	if (hasTsconfig()) {
-		languageOptions.parser = parserTypescript;
-		languageOptions.parserOptions = {
-			project: true,
-			projectService: true,
-			tsconfigRootDir: process.cwd(),
-		};
-	}
-
-	const settingsVitest = hasTsconfig()
-		? { typecheck: true }
-		: {};
-
 	return [
 		defineConfigurationPart({
 			name: 'morev/vitest/universal',
@@ -46,16 +33,31 @@ export default function configurationVitest(options: Partial<VitestConfiguration
 			...universalRules,
 		}),
 		defineConfigurationPart({
-			name: 'morev/vitest/core',
+			name: 'morev/vitest/core-js',
 			languageOptions,
+			files,
+			ignores: [...ignores, GLOB_ANY_TS],
+			...mergeParts(vitest),
+		}),
+		defineConfigurationPart({
+			name: 'morev/vitest/core-ts',
+			languageOptions: {
+				...languageOptions,
+				parser: parserTypescript,
+				parserOptions: {
+					project: true,
+					projectService: true,
+					tsconfigRootDir: process.cwd(),
+				},
+			},
 			settings: {
-				vitest: settingsVitest,
+				vitest: {
+					typecheck: true,
+				},
 			},
 			files,
-			ignores,
-			...mergeParts(
-				vitest,
-			),
+			ignores: [...ignores, GLOB_ANY_JS],
+			...mergeParts(vitest),
 		}),
 		defineConfigurationPart({
 			name: 'morev/vitest/disables',

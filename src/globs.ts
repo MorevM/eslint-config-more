@@ -4,6 +4,7 @@ export const GLOB_JSX = '**/*.?([cm])js?(x)';
 export const GLOB_CJS = '**/*.cjs';
 export const GLOB_MJS = '**/*.mjs';
 export const GLOB_ANY_JS = '**/*.?([cm])js?(x)';
+export const GLOB_ANY_TS = '**/*.?([cm])ts?(x)';
 
 export const GLOB_SRC = `**/*.${GLOB_SRC_EXT}`;
 export const GLOB_ANY_CONTAINING_JS = `**/*.{${GLOB_SRC_EXT},vue,astro}`;
