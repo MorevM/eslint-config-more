@@ -189,9 +189,7 @@ export default defineConfigurationPart({
 
 		// Enforce a newline after import statements (autofixable)
 		// https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/newline-after-import.md
-		'import-x/newline-after-import': ['warn', {
-			considerComments: true,
-		}],
+		'import-x/newline-after-import': 'warn',
 
 		// Forbid anonymous values as default exports
 		// https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-anonymous-default-export.md
