@@ -1,5 +1,12 @@
 
 
+## [36.1.1](https://github.com/MorevM/eslint-config/compare/v36.1.0...v36.1.1) (2024-11-28)
+
+
+### Bug fixes
+
+* **javascript:** Remove misconfigured `considerComments` option of `import-x/newline-after-import` rule ([95843a0](https://github.com/MorevM/eslint-config/commit/95843a0a3194c129fea6984512bfa12f30d5350f))
+
 ## [36.1.0](https://github.com/MorevM/eslint-config/compare/v36.0.0...v36.1.0) (2024-11-26)
 
 ### Refactoring
