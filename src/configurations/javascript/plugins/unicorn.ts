@@ -89,7 +89,7 @@ export default defineConfigurationPart({
 
 		// Disallow anonymous functions and classes as the default export
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-anonymous-default-export.md
-		'unicorn/no-anonymous-default-export': 'warn',
+		'unicorn/no-anonymous-default-export': 'off',
 
 		// Prevent passing a function reference directly to iterator methods
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-callback-reference.md
