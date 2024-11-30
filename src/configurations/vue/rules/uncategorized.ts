@@ -417,6 +417,10 @@ export default defineConfigurationPart({
 			ignores: [],
 		}],
 
+		// Enforce specific casing for slot names
+		// https://eslint.vuejs.org/rules/slot-name-casing.html
+		'vue/slot-name-casing': ['warn', 'kebab-case'],
+
 		// Enforce sort-keys in a manner that is compatible with order-in-components
 		// https://eslint.vuejs.org/rules/sort-keys.html
 		// Note: developer knows better
