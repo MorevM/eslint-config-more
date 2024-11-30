@@ -405,6 +405,10 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/require-typed-ref.html
 		'vue/require-typed-ref': 'warn',
 
+		// Enforce using only specific component names
+		// https://eslint.vuejs.org/rules/restricted-component-names.html
+		'vue/restricted-component-names': 'off',
+
 		// Enforce consistent indentation in `<script>` (autofixable)
 		// https://eslint.vuejs.org/rules/script-indent.html
 		'vue/script-indent': ['warn', 'tab', {
