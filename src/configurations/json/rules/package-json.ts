@@ -66,6 +66,10 @@ export default defineConfigurationPart({
 				order: { type: 'asc' },
 			},
 			{
+				pathPattern: '^(?:resolutions|overrides)$',
+				order: { type: 'asc' },
+			},
+			{
 				pathPattern: '^author$',
 				order: ['name', 'email', 'url'],
 			},
