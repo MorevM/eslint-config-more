@@ -2,7 +2,7 @@
 	"name": "@morev/eslint-config",
 	"description": "Strict shareable ESLint configuration with reasonable defaults",
 	"type": "module",
-	"version": "36.1.1",
+	"version": "36.2.0",
 	"packageManager": "yarn@4.5.1",
 	"engines": {
 		"node": ">=20"

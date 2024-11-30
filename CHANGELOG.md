@@ -1,5 +1,20 @@
 
 
+## [36.2.0](https://github.com/MorevM/eslint-config/compare/v36.1.1...v36.2.0) (2024-11-30)
+
+
+### Features
+
+* **json:** Sort `resolutions` and `overrides` alphabetically as well as dependencies ([c8e3f12](https://github.com/MorevM/eslint-config/commit/c8e3f12e33a015284f828ec9f185d77b1ba91c3e))
+* **vue:** Add `vue/slot-name-casing` rule ([6a7dab4](https://github.com/MorevM/eslint-config/commit/6a7dab494135ddc599591c6471a5fd250eb24109))
+* **vue:** Take account of `vue/restricted-component-names` rule ([1c609c1](https://github.com/MorevM/eslint-config/commit/1c609c156b6b56837105b7475a375e05658f533b))
+
+
+### Bug fixes
+
+* **javascript:** Turn off `unicorn/no-anonymous-default-export` rule ([43656dc](https://github.com/MorevM/eslint-config/commit/43656dce973d9036fd69a6cc51cbfd8da59f8068))
+
+
 ## [36.1.1](https://github.com/MorevM/eslint-config/compare/v36.1.0...v36.1.1) (2024-11-28)
 
 
