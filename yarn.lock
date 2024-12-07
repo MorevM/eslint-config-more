@@ -968,7 +968,7 @@ __metadata:
     "@stylistic/eslint-plugin": "npm:^2.11.0"
     "@total-typescript/ts-reset": "npm:^0.6.1"
     "@types/node": "npm:^22.10.1"
-    "@vitest/eslint-plugin": "npm:^1.1.12"
+    "@vitest/eslint-plugin": "npm:^1.1.14"
     ansis: "npm:^3.3.2"
     eslint: "npm:9.16.0"
     eslint-config-flat-gitignore: "npm:^0.3.0"
@@ -1977,9 +1977,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/eslint-plugin@npm:^1.1.12":
-  version: 1.1.12
-  resolution: "@vitest/eslint-plugin@npm:1.1.12"
+"@vitest/eslint-plugin@npm:^1.1.14":
+  version: 1.1.14
+  resolution: "@vitest/eslint-plugin@npm:1.1.14"
   peerDependencies:
     "@typescript-eslint/utils": ">= 8.0"
     eslint: ">= 8.57.0"
@@ -1990,7 +1990,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 10c0/8eca47da72e51d300234bd21c15e66055ad811c75ab623962eb5ba45e4bb1ce59ecf735aa3b4e53b9d2fe8efb1f013c07c2a302b2a9427362f8f55b1d283a14f
+  checksum: 10c0/83fe9dfa2b5d22f576cbd89c7f039c79f81c172552972aa4688d098dac712a0d35e10f54e9626928598da8615f768a88d637aa873c2bb8fe409684b8349dae67
   languageName: node
   linkType: hard
 
