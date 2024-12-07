@@ -802,10 +802,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@html-eslint/eslint-plugin@npm:^0.27.0":
-  version: 0.27.0
-  resolution: "@html-eslint/eslint-plugin@npm:0.27.0"
-  checksum: 10c0/9b675bc66998fe931ca267925355283042b782ffee2e52896cf57b2fc61a4e24adc845983150b6582476261d4647b38ea3512b044a44d325d1bfbbb54e35e0a7
+"@html-eslint/eslint-plugin@npm:^0.30.0":
+  version: 0.30.0
+  resolution: "@html-eslint/eslint-plugin@npm:0.30.0"
+  dependencies:
+    "@html-eslint/template-parser": "npm:^0.30.0"
+  checksum: 10c0/703ba4e260a399f8420e4bd460ddee0dc1a56b0f8bac1ac48ea1b7b13e0e4c31c98387df075b9d707308cab7ba730f320b47316c03c5f4d5df16f138d8223391
   languageName: node
   linkType: hard
 
@@ -815,6 +817,15 @@ __metadata:
   dependencies:
     es-html-parser: "npm:^0.0.9"
   checksum: 10c0/abaaee268fce9987231b06ac45a1096701fab6f2ed586ebddffee2ddc6f088380d43166732a54665cfe87bb8165a19bbcd05dea554038852e551d7610ce660ae
+  languageName: node
+  linkType: hard
+
+"@html-eslint/template-parser@npm:^0.30.0":
+  version: 0.30.0
+  resolution: "@html-eslint/template-parser@npm:0.30.0"
+  dependencies:
+    es-html-parser: "npm:^1.0.0-alpha.4"
+  checksum: 10c0/b0c4feee4c254e8ac8afd30ccf9b72251cf3fc0bcf72a77ca07544c2ee5c38c6650c1f8dfa119fe394816a0fcefde8b6466a42f3674d26d7ad24a04726d69fe1
   languageName: node
   linkType: hard
 
@@ -959,7 +970,7 @@ __metadata:
   resolution: "@morev/eslint-config@workspace:."
   dependencies:
     "@clack/prompts": "npm:^0.8.2"
-    "@html-eslint/eslint-plugin": "npm:^0.27.0"
+    "@html-eslint/eslint-plugin": "npm:^0.30.0"
     "@html-eslint/parser": "npm:^0.27.0"
     "@morev/commitlint-config": "npm:^0.2.2"
     "@morev/eslint-config": "workspace:^"
@@ -3770,6 +3781,13 @@ __metadata:
   version: 0.0.9
   resolution: "es-html-parser@npm:0.0.9"
   checksum: 10c0/7bcf9d39bb8bd9ff2052d2c7d1211a5ce1514e4c51cb12bdcfc0a564cc1218d307f4a8c719d9cd8d0eda6f0a6218b10ec0ecef91c0df9ba654da68e4869a63c9
+  languageName: node
+  linkType: hard
+
+"es-html-parser@npm:^1.0.0-alpha.4":
+  version: 1.0.0-alpha.4
+  resolution: "es-html-parser@npm:1.0.0-alpha.4"
+  checksum: 10c0/4ed0a0b336ae650e1c39df73b7cad6c850349690455b11e556bd7cf6fa1d5965b310711335f286cfa26c18a0a2f16503ac7461297ff02a7690b08328a71f6e3a
   languageName: node
   linkType: hard
 
