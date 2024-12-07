@@ -972,12 +972,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@html-eslint/parser@npm:^0.27.0":
-  version: 0.27.0
-  resolution: "@html-eslint/parser@npm:0.27.0"
+"@html-eslint/parser@npm:^0.30.0":
+  version: 0.30.0
+  resolution: "@html-eslint/parser@npm:0.30.0"
   dependencies:
-    es-html-parser: "npm:^0.0.9"
-  checksum: 10c0/abaaee268fce9987231b06ac45a1096701fab6f2ed586ebddffee2ddc6f088380d43166732a54665cfe87bb8165a19bbcd05dea554038852e551d7610ce660ae
+    es-html-parser: "npm:^1.0.0-alpha.4"
+  checksum: 10c0/ed5d448b261303da4b82788d481c46bfec525ed10c029eb32131ef9c26fd351b7cd7f93d4a58e2e035afb00cc54d9acba648bc3ac497151c5d1d0abcdf06cb9a
   languageName: node
   linkType: hard
 
@@ -1132,7 +1132,7 @@ __metadata:
   dependencies:
     "@clack/prompts": "npm:^0.8.2"
     "@html-eslint/eslint-plugin": "npm:^0.30.0"
-    "@html-eslint/parser": "npm:^0.27.0"
+    "@html-eslint/parser": "npm:^0.30.0"
     "@morev/commitlint-config": "npm:^0.2.2"
     "@morev/eslint-config": "workspace:^"
     "@morev/utils": "npm:^3.11.1"
@@ -3930,13 +3930,6 @@ __metadata:
   version: 1.3.0
   resolution: "es-errors@npm:1.3.0"
   checksum: 10c0/0a61325670072f98d8ae3b914edab3559b6caa980f08054a3b872052640d91da01d38df55df797fcc916389d77fc92b8d5906cf028f4db46d7e3003abecbca85
-  languageName: node
-  linkType: hard
-
-"es-html-parser@npm:^0.0.9":
-  version: 0.0.9
-  resolution: "es-html-parser@npm:0.0.9"
-  checksum: 10c0/7bcf9d39bb8bd9ff2052d2c7d1211a5ce1514e4c51cb12bdcfc0a564cc1218d307f4a8c719d9cd8d0eda6f0a6218b10ec0ecef91c0df9ba654da68e4869a63c9
   languageName: node
   linkType: hard
 
