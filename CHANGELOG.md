@@ -1,5 +1,13 @@
 
 
+## [36.3.0](https://github.com/MorevM/eslint-config/compare/v36.2.0...v36.3.0) (2024-12-14)
+
+
+### Features
+
+* **javascript:** Set up `no-secrets/no-secrets` rule properly ([1399298](https://github.com/MorevM/eslint-config/commit/1399298a786323c13960a3f740ebab6530eb281e))
+
+
 ## [36.2.0](https://github.com/MorevM/eslint-config/compare/v36.1.1...v36.2.0) (2024-11-30)
 
 
