@@ -20,7 +20,7 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 	const files = options.files ?? [
 		GLOB_TS,
 		GLOB_TSX,
-		...extraFileExtensions.map((extension) => `../*.${extension}`),
+		...extraFileExtensions.map((extension) => `**/*.${extension}`),
 	];
 
 	return [
