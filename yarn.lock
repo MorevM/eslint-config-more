@@ -972,12 +972,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@html-eslint/parser@npm:^0.30.0":
-  version: 0.30.0
-  resolution: "@html-eslint/parser@npm:0.30.0"
+"@html-eslint/parser@npm:^0.31.0":
+  version: 0.31.0
+  resolution: "@html-eslint/parser@npm:0.31.0"
   dependencies:
     es-html-parser: "npm:^1.0.0-alpha.4"
-  checksum: 10c0/ed5d448b261303da4b82788d481c46bfec525ed10c029eb32131ef9c26fd351b7cd7f93d4a58e2e035afb00cc54d9acba648bc3ac497151c5d1d0abcdf06cb9a
+  checksum: 10c0/f4fe10bf859a8c98789b660e61316fc857104f516a14eaf35aa60a0ad374ebd8c79d6030a51e865f9d69e30eaa2d975ca37d0c3cf42b32f9a5684877402d5b56
   languageName: node
   linkType: hard
 
@@ -1132,7 +1132,7 @@ __metadata:
   dependencies:
     "@clack/prompts": "npm:^0.8.2"
     "@html-eslint/eslint-plugin": "npm:^0.30.0"
-    "@html-eslint/parser": "npm:^0.30.0"
+    "@html-eslint/parser": "npm:^0.31.0"
     "@morev/commitlint-config": "npm:^0.2.2"
     "@morev/eslint-config": "workspace:^"
     "@morev/utils": "npm:^3.11.1"
