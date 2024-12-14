@@ -68,7 +68,7 @@
 		"@html-eslint/eslint-plugin": "^0.30.0",
 		"@html-eslint/parser": "^0.31.0",
 		"@morev/utils": "^3.11.1",
-		"@stylistic/eslint-plugin": "^2.11.0",
+		"@stylistic/eslint-plugin": "^2.12.1",
 		"@vitest/eslint-plugin": "^1.1.14",
 		"ansis": "^3.3.2",
 		"eslint-config-flat-gitignore": "^0.3.0",
