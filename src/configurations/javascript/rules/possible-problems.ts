@@ -234,7 +234,7 @@ export default defineConfigurationPart({
 
 		// Disallow variable assignments when the value is not used
 		// https://eslint.org/docs/latest/rules/no-useless-assignment
-		'no-useless-assignment': 'error',
+		'no-useless-assignment': 'off',
 
 		// Disallow useless backreferences in regular expressions
 		// https://eslint.org/docs/rules/no-useless-backreference
