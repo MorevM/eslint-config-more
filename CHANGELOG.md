@@ -1,5 +1,14 @@
 
 
+## [36.3.1](https://github.com/MorevM/eslint-config/compare/v36.3.0...v36.3.1) (2024-12-16)
+
+
+### Bug fixes
+
+* **javascript:** Disable `no-useless-assignment` rule ([1d08c77](https://github.com/MorevM/eslint-config/commit/1d08c77fcf871e84dd32394c1ad03883aa583ce0))
+* **typescript:** Correct `extraFileExtensions` paths within TS config ([7f03e51](https://github.com/MorevM/eslint-config/commit/7f03e51b4e89052cd41c06a13e54f1f53cf3c551))
+
+
 ## [36.3.0](https://github.com/MorevM/eslint-config/compare/v36.2.0...v36.3.0) (2024-12-14)
 
 
