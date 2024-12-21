@@ -338,18 +338,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@es-joy/jsdoccomment@npm:^0.48.0":
-  version: 0.48.0
-  resolution: "@es-joy/jsdoccomment@npm:0.48.0"
-  dependencies:
-    comment-parser: "npm:1.4.1"
-    esquery: "npm:^1.6.0"
-    jsdoc-type-pratt-parser: "npm:~4.1.0"
-  checksum: 10c0/8d87c7c0426fade009c30ab429d4ede53fd253d40b55079c02bdacdaa4c0fe904aaea5e3084cd98052f2bed6b3030c381d84f4a3251b343a71fee6f681a08bee
-  languageName: node
-  linkType: hard
-
-"@es-joy/jsdoccomment@npm:~0.49.0":
+"@es-joy/jsdoccomment@npm:^0.49.0, @es-joy/jsdoccomment@npm:~0.49.0":
   version: 0.49.0
   resolution: "@es-joy/jsdoccomment@npm:0.49.0"
   dependencies:
@@ -1148,7 +1137,7 @@ __metadata:
     eslint-import-resolver-typescript: "npm:^3.7.0"
     eslint-plugin-astro: "npm:^1.3.1"
     eslint-plugin-chai-friendly: "npm:^1.0.1"
-    eslint-plugin-command: "npm:^0.2.6"
+    eslint-plugin-command: "npm:^0.2.7"
     eslint-plugin-cypress: "npm:^4.1.0"
     eslint-plugin-eslint-comments: "npm:^3.2.0"
     eslint-plugin-import-x: "npm:^4.5.0"
@@ -4416,14 +4405,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-command@npm:^0.2.6":
-  version: 0.2.6
-  resolution: "eslint-plugin-command@npm:0.2.6"
+"eslint-plugin-command@npm:^0.2.7":
+  version: 0.2.7
+  resolution: "eslint-plugin-command@npm:0.2.7"
   dependencies:
-    "@es-joy/jsdoccomment": "npm:^0.48.0"
+    "@es-joy/jsdoccomment": "npm:^0.49.0"
   peerDependencies:
     eslint: "*"
-  checksum: 10c0/29d7884fe7a7752a248dc64c660a513a4b20f8009733d74bdb743bf75c35e10980b526a0d6d009bbd06dcd4d642bc426eefac8215e317a3bdc9889522dd14c59
+  checksum: 10c0/551c481192b49f7e738652955b285564c6df645a392a8251b2d5b6fdc250a26b073a5416ffe21d55fca93f023aaf90d9b5787758d5722b0ecc66ca54c257e397
   languageName: node
   linkType: hard
 
