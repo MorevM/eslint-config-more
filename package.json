@@ -70,7 +70,7 @@
 		"@morev/utils": "^3.12.1",
 		"@stylistic/eslint-plugin": "^2.12.1",
 		"@vitest/eslint-plugin": "^1.1.20",
-		"ansis": "^3.4.0",
+		"ansis": "^3.5.2",
 		"eslint-config-flat-gitignore": "^0.3.0",
 		"eslint-define-config": "^2.1.0",
 		"eslint-import-resolver-typescript": "^3.7.0",
