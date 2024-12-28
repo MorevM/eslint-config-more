@@ -1,5 +1,9 @@
 
 
+## [36.3.2](https://github.com/MorevM/eslint-config/compare/v36.3.1...v36.3.2) (2024-12-28)
+
+No notable changes in this release, just dependencies update.
+
 ## [36.3.1](https://github.com/MorevM/eslint-config/compare/v36.3.0...v36.3.1) (2024-12-16)
 
 
