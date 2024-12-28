@@ -21,7 +21,7 @@ export default function configurationVitest(options: Partial<VitestConfiguration
 
 	if (globals) {
 		languageOptions.globals = {
-			...pluginVitest.environments.env.globals,
+			...pluginVitest.environments?.env.globals,
 		};
 	}
 
