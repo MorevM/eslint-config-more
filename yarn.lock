@@ -1130,7 +1130,7 @@ __metadata:
     "@total-typescript/ts-reset": "npm:^0.6.1"
     "@types/node": "npm:^22.10.5"
     "@vitest/eslint-plugin": "npm:^1.1.24"
-    ansis: "npm:^3.5.2"
+    ansis: "npm:^3.8.1"
     eslint: "npm:9.17.0"
     eslint-config-flat-gitignore: "npm:^0.3.0"
     eslint-define-config: "npm:^2.1.0"
@@ -2511,10 +2511,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansis@npm:^3.5.2":
-  version: 3.5.2
-  resolution: "ansis@npm:3.5.2"
-  checksum: 10c0/2433dec4298874b66480e435f11029da004f91ec953eb3076601f8140899c2b158d58a29ed77343006eedbb04459b150a01f1a5715e38d03fab1285bb6d21523
+"ansis@npm:^3.8.1":
+  version: 3.8.1
+  resolution: "ansis@npm:3.8.1"
+  checksum: 10c0/f21a237b5af65465391e856592dbe0fba24e89456348f01277fe3b4b42496648fb832df92b714782ecb27670aa5cadbe50bf1f2a1271c70d15371863fa00166b
   languageName: node
   linkType: hard
 
