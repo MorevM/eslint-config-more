@@ -882,15 +882,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/compat@npm:^1.1.1":
-  version: 1.2.1
-  resolution: "@eslint/compat@npm:1.2.1"
+"@eslint/compat@npm:^1.2.4":
+  version: 1.2.5
+  resolution: "@eslint/compat@npm:1.2.5"
   peerDependencies:
     eslint: ^9.10.0
   peerDependenciesMeta:
     eslint:
       optional: true
-  checksum: 10c0/50b0aa4e1472e76b175de4e15c2a0e3a9702560635c9e3aec69e36da32dc6970eaff43e6427371c36539ec827754d113fb92b97c42a67d4fc241f51b24732bbb
+  checksum: 10c0/c7cd6c623b850e7507fdaf26298b42b07012a65b57f6abbdd1e968eb281756bb94024f162a661ffcc7ad8b2949832aec5078a9fdefa87081e127d392842d0048
   languageName: node
   linkType: hard
 
@@ -1132,7 +1132,7 @@ __metadata:
     "@vitest/eslint-plugin": "npm:^1.1.24"
     ansis: "npm:^3.5.2"
     eslint: "npm:9.17.0"
-    eslint-config-flat-gitignore: "npm:^0.3.0"
+    eslint-config-flat-gitignore: "npm:^1.0.0"
     eslint-define-config: "npm:^2.1.0"
     eslint-import-resolver-typescript: "npm:^3.7.0"
     eslint-plugin-astro: "npm:^1.3.1"
@@ -4336,15 +4336,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-flat-gitignore@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "eslint-config-flat-gitignore@npm:0.3.0"
+"eslint-config-flat-gitignore@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "eslint-config-flat-gitignore@npm:1.0.0"
   dependencies:
-    "@eslint/compat": "npm:^1.1.1"
+    "@eslint/compat": "npm:^1.2.4"
     find-up-simple: "npm:^1.0.0"
   peerDependencies:
     eslint: ^9.5.0
-  checksum: 10c0/0fd0f9c7839dec4adef633ee23c6c3aacd6edbdfc09f0f464e7d2c8e20abd514f7a6bd822fb21535f0532cf4abc49302d7334af21fcbfaedc5fbcdc8c5f1d169
+  checksum: 10c0/46798f10ef7149167485e5279cdfcfeaadbe3a811032e15e71b9dbc29071139e3f5229490c1ff0df247401ff029f42f191a10877d500fbcc5e31024560264ec0
   languageName: node
   linkType: hard
 
