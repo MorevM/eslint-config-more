@@ -113,7 +113,7 @@
 		"eslint": "9.17.0",
 		"lefthook": "^1.10.10",
 		"release-it": "^18.1.2",
-		"tsup": "^8.3.5",
+		"tsup": "^8.3.6",
 		"tsx": "^4.19.2",
 		"typescript": "^5.7.3",
 		"vite-tsconfig-paths": "^5.1.4",
