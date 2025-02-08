@@ -64,7 +64,7 @@
 		"typescript": "^5.4.2"
 	},
 	"dependencies": {
-		"@clack/prompts": "^0.9.1",
+		"@clack/prompts": "^0.10.0",
 		"@html-eslint/eslint-plugin": "^0.31.1",
 		"@html-eslint/parser": "^0.31.0",
 		"@morev/utils": "^3.12.1",
