@@ -109,7 +109,7 @@
 		"@morev/eslint-config": "workspace:^",
 		"@release-it/conventional-changelog": "8.0.2",
 		"@total-typescript/ts-reset": "^0.6.1",
-		"@types/node": "^22.12.0",
+		"@types/node": "^22.13.1",
 		"eslint": "9.17.0",
 		"lefthook": "^1.10.10",
 		"release-it": "^18.1.2",
